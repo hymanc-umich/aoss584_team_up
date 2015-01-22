@@ -53,8 +53,9 @@ def writeToFile(dataFile, temps, press, humd, acc):
     dataFile.write(line)
     pass
 
-def main():
-    s = initSerial('/dev/ttyUSB0', 9600)
+
+def main(port='/dev/ttyUSB0', baud=9600):
+    s = initSerial(port, baud)
     if(s == None): # Check that port was created appropriately
         print 'ERROR: Specified serial device could not be opened'
     f = open('data.csv','w')

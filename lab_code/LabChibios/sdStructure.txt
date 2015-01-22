@@ -1,0 +1,20 @@
+SD Structure
+This document outlines the basic structure for the
+generally confusing SD/MMC data logging system
+built on top of ChibiOS
+
+=== Data Logger Application ===
+This application manages logfile instance creation and writing
+
+=== FATFS ===
+Middle Layer FAT Filesystem API
+
+=== Low Level Driver ===
+HAL MMC-SPI Driver MMCD
+    SPI Driver SPID
+    
+    
+General order of things:
+1. Initialize SPI and MMC-SPI drivers
+2. Mount FAT-32 FS
+3. Pass file system/driver to data logger
