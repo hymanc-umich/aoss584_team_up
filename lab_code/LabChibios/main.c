@@ -194,6 +194,8 @@ void initialize()
 	dlIni = dataLoggerInitialize(&logger, "0:", &sd, &SD2);
     }
     lfIni = logfileNew(&sensorLog, &logger, &lFile);
+    logfileWrite(&sensorLog, "THIS IS A TEST\n", 15);
+    //logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
     logfileClose(&sensorLog);
     chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     /* ADC Startup */

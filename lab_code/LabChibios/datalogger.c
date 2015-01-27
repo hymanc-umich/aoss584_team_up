@@ -121,7 +121,8 @@ int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length)
 {
     FRESULT res;
     int written;
-    res = fwrite(log->file, buf, length, &written);
+    res = f_write(log->file, buf, length, &written);
+    //res = fputs(log->file, buf);
     if(res || (written != length))
 	return 1;
     return 0;
