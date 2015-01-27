@@ -47,9 +47,13 @@ typedef struct
 static sdmmc_t sd;
 static datalogger_t logger;
 
+static logfile_t sensorLog;
+
 void initialize();
 
 static sensorMeasurement_t SENSORS;
+
+MMCDriver MMCD1;
 
 /**
  * @brief Accelerometer ADC callback
@@ -135,6 +139,7 @@ static SerialConfig serGpsCfg =
     0,
 };
 
+
 /**
  * @brief Initialization routine for OS and peripherals
  */
@@ -147,7 +152,7 @@ void initialize()
      * Configure I/O 
      */
     // LED
-    //palSetPadMode(GPIOA, GPIOA_LED_GREEN, PAL_MODE_OUTPUT_PUSHPULL); // LED
+    palSetPadMode(GPIOA, GPIOA_LED_GREEN, PAL_MODE_OUTPUT_PUSHPULL); // LED
     
     // Serial I/O Cfg
     palSetPadMode(GPIOA, 2, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // VCP Tx
@@ -181,15 +186,26 @@ void initialize()
     sdStart(&SD2, &serCfg);	// Activate VCP USART2 driver
     
     /* SPI/MMC Logger Startup */
-    sdmmcInitialize(&sd);
+    int8_t sdIni, dlIni, lfIni;
+    sdIni = sdmmcInitialize(&sd, &MMCD1, &SD2);
     if(sdmmcFSMounted(&sd))
     {
-	dataLoggerInitialize(&logger, "0:", &sd);
+	dlIni = dataLoggerInitialize(&logger, "0:", &sd, &SD2);
     }
-    
+    lfIni = logfileNew(&sensorLog, &logger);
+    logfileClose(&sensorLog);
+    chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
     
+}
+
+void printData(void)
+{
+    chprintf((BaseSequentialStream *) &SD2, "AccX:%03x   AccY:%03x   AccZ:%03x",
+		accSamples[0], accSamples[1], accSamples[2]);
+    chprintf((BaseSequentialStream *) &SD2, "   Temp1:%03x   Temp2:%03x   Press:%03x   Humd:%03x\n", 
+		SENSORS.temp[0], SENSORS.temp[1], SENSORS.press, SENSORS.humd); 
 }
 
 /*
@@ -202,6 +218,8 @@ int main(void)
     uint8_t serialIn;
     uint16_t serialLen;
     
+    char buffer[100]; // Buffer for misc things
+    
     while (TRUE) 
     {
 
@@ -213,12 +231,8 @@ int main(void)
 	adcConvert(&ADCD1, &sensorConvGrp, sensorSamples, ADC_BUF_DEPTH);
 	chThdSleepMilliseconds(10);
 	// Write serial data to VCP terminal
-	chprintf((BaseSequentialStream *) &SD2, "AccX:%3x   AccY:%3x   AccZ:%3x",accSamples[0], accSamples[1], accSamples[2]);
-	//chprintf((BaseSequentialStream *) &SD2, "    T1:%3x    T2:%3x    P:%3x    H:%3x", 
-		// sensorSamples[2], sensorSamples[3], sensorSamples[1], sensorSamples[0]);
-	chprintf((BaseSequentialStream *) &SD2, "   Temp1:%3x   Temp2:%3x   Press:%3x   Humd:%3x", 
-		 SENSORS.temp[0], SENSORS.temp[1], SENSORS.press, SENSORS.humd);
-	chprintf((BaseSequentialStream *) &SD2, "\n");
+	
+	printData();
 	
 	palTogglePad(GPIOA, GPIOA_LED_GREEN);
 	// TODO: Write data to SD

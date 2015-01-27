@@ -1,5 +1,5 @@
 #include "sdmmcsimple.h"
-
+#include "chprintf.h"
 #include "evtimer.h"
 
 /**
@@ -15,9 +15,9 @@ struct sdmmc
     bool fsReady;	// Filesystem ready flag    
 };*/
 
-static MMCDriver MMCD1;
-
 static sdmmc_t *SD;
+
+static SerialDriver *serialPort;
 
 /** Low Speed SPI Configuration */
 static SPIConfig lsCfg =
@@ -108,15 +108,19 @@ struct event_listener_t elIns, elRem;
 /**
  * @brief Initializes an SD card
  */
-bool sdmmcInitialize(sdmmc_t *sd)
+int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
 {    
+    serialPort = sp;
     // Initialze SD object
-    sd->mmcd = &MMCD1;
+    sd->mmcd = mld;
     sd->spid = &SD_SPID;
     sd->filesys = NULL;
     sd->fsReady = false;
     
     SD = sd;
+    
+    int8_t status;
+    
     // MMCSPI I/O Initialization
     palSetPadMode(SD_CS_PORT, SD_CS_PIN, PAL_MODE_OUTPUT_PUSHPULL);
     palSetPadMode(SD_CD_PORT, SD_CD_PIN, PAL_MODE_INPUT_PULLUP);
@@ -130,27 +134,38 @@ bool sdmmcInitialize(sdmmc_t *sd)
 		  sdmmcCardProtected, sdmmcCardInserted);*/
     mmcObjectInit(sd->mmcd);
     mmcStart(sd->mmcd, &mmcCfg);
-    
+
     // Try to connect
     if(mmc_lld_is_card_inserted(sd->mmcd))
     {
+	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Card Found\n");
 	palClearPad(SD_CS_PORT, SD_CS_PIN);
-	// TODO wait
+	chThdSleepMilliseconds(100); // wait
 	FRESULT err;
-	if(mmcConnect(sd->mmcd))
+	status = mmcConnect(sd->mmcd);
+	if(status == HAL_FAILED)
 	{
-	    return false;
+	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Connect Error,ERR%02d\n", status);
+	    return status;
 	}
 	err = f_mount(sd->filesys, "/", 0);
 	if(err != FR_OK)
 	{
+	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:File System Mount Error\n");
 	    mmcDisconnect(sd->mmcd);
-	    return false;
+	    return -2;
 	}
+	else
+	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:File System Mounted\n");
 	sd->fsReady = true;
     }
+    else
+    {
+	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:No SD Card Found\n");
+	return -3;
+    }
     
-    return true;
+    return 0;
 }
 
 /**

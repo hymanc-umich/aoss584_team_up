@@ -57,7 +57,7 @@ struct separatedLog
 };
 typedef struct separatedLog separatedLog_t;
 
-bool dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd);
+int8_t dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd, SerialDriver *dbg);
 bool dataLoggerStop(datalogger_t *logger);
 
 int8_t logfileNew(logfile_t *log, datalogger_t *logger);

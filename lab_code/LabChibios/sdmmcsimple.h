@@ -27,6 +27,8 @@
 #define SD_CD_PIN	7
 #define SD_WP_PIN	9
 
+extern MMCDriver MMCD1;
+
 struct sdmmc
 {
     MMCDriver *mmcd;	// HAL MMC-SPI Driver
@@ -35,14 +37,15 @@ struct sdmmc
     bool mmcReady; 	// MMC Driver ready flag
     bool fsReady;	// Filesystem ready flag    
 };
-//struct sdmmc;
+
 typedef struct sdmmc sdmmc_t;
 
-bool sdmmcInitialize(sdmmc_t *sd);
+int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp);
 bool sdmmcCardInserted(sdmmc_t *sd);
 bool sdmmcCardProtected(sdmmc_t *sd);
 MMCDriver * sdmmGetMMCDriver(sdmmc_t *sd);
 FATFS * sdmmcGetFS(sdmmc_t *sd);
 bool sdmmcFSMounted(sdmmc_t *sd);
 
+bool mmc_lld_is_card_inserted(MMCDriver *mmcd);
 #endif

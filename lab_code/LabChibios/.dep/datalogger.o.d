@@ -98,7 +98,8 @@ build/obj/datalogger.o: datalogger.c datalogger.h \
  /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
  /home/cody/dev/chibios/trunk/os/ext/fatfs/src/ff.h \
  /home/cody/dev/chibios/trunk/os/ext/fatfs/src/integer.h ffconf.h \
- sdmmcsimple.h
+ sdmmcsimple.h /home/cody/dev/chibios/trunk/os/various/chprintf.h \
+ /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h
 
 datalogger.h:
 
@@ -311,3 +312,7 @@ mcuconf.h:
 ffconf.h:
 
 sdmmcsimple.h:
+
+/home/cody/dev/chibios/trunk/os/various/chprintf.h:
+
+/usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h:

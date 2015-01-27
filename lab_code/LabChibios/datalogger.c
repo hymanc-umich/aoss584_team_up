@@ -1,5 +1,9 @@
 #include "datalogger.h"
 
+#include "chprintf.h"
+
+static SerialDriver *DEBUG; // Debug
+
 /**
  * @brief Datalogger instance
  */
@@ -45,26 +49,29 @@ struct separatedLog
  * @param logger
  * @param logPath Path to store logs to
  * @param sd SD Card container
+ * @param dbg Debug Serial Port
  * @return Success state of data logger initialization
  */
-bool dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd)
+int8_t dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd, SerialDriver *dbg)
 {
     if(sd == NULL || logger == NULL)
 	return false;
+    DEBUG = dbg;
     if(logPath == NULL)
 	logPath = "0:";
     FRESULT err;
-    //disk_initialize(0);
     logger->sdc = sd;
     logger->filesys = sdmmcGetFS(sd);
     logger->logPath = logPath;
     err = f_mount(logger->filesys, logPath, 0);
     if(err != FR_OK)
     {
-	return false;
+	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error Mounting Filesystem,ERR%20d\n",err);
+	return -1;
     }
     logger->driveMounted = true;
-    return true;
+    chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Datalogger Started\n");
+    return 0;
 }
 
 /**
@@ -73,6 +80,7 @@ bool dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd)
 bool dataLoggerStop(datalogger_t *logger)
 {
     // TODO: Close all files
+    chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Datalogger Stopped\n");
     f_mount(NULL, NULL, 0);
     logger->driveMounted = false;
     return false;
@@ -84,9 +92,9 @@ bool dataLoggerStop(datalogger_t *logger)
 int8_t logfileNew(logfile_t *log, datalogger_t *logger)
 {
     FRESULT res;
-    if(!logger->driveMounted)
+    if(!(logger->driveMounted))
 	return false;
-    res = f_open(log->file, "0:testfile.txt", FA_CREATE_ALWAYS | FA_WRITE);
+    res = f_open(log->file, "testLog.txt", FA_CREATE_ALWAYS | FA_WRITE);
     if(res)
     {
 	return res;

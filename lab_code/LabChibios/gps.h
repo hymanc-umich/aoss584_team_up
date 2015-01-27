@@ -4,7 +4,8 @@
 #include "hal.h"
 
 // NMEA 
-#define "$GPG
+#define GPGSTR "$GPG"
+
 void gpsInit(void); // TODO: Serial Driver
 
 void gpsParseNMEA(char *nmeaStr);
