@@ -58,12 +58,12 @@ int8_t dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd, Se
 	return false;
     DEBUG = dbg;
     if(logPath == NULL)
-	logPath = "0:";
+	logPath = "";
     FRESULT err;
     logger->sdc = sd;
     logger->filesys = sdmmcGetFS(sd);
     logger->logPath = logPath;
-    err = f_mount(logger->filesys, logPath, 0);
+    err = f_mount(logger->filesys, logPath, 1);
     if(err != FR_OK)
     {
 	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error Mounting Filesystem,ERR%20d\n",err);
@@ -89,14 +89,17 @@ bool dataLoggerStop(datalogger_t *logger)
 /**
  * @brief Creates a new logfile instance
  */
-int8_t logfileNew(logfile_t *log, datalogger_t *logger)
+int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file)
 {
+    chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Creating New Logfile\n");
     FRESULT res;
     if(!(logger->driveMounted))
 	return false;
-    res = f_open(log->file, "testLog.txt", FA_CREATE_ALWAYS | FA_WRITE);
+    log->file = file;
+    res = f_open(log->file, "/testLog.txt", FA_CREATE_ALWAYS | FA_WRITE);
     if(res)
     {
+	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error creating Logfile, ERR%02d\n",res);
 	return res;
     }
     return 0;

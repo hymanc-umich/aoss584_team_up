@@ -48,6 +48,7 @@ static sdmmc_t sd;
 static datalogger_t logger;
 
 static logfile_t sensorLog;
+FIL lFile;
 
 void initialize();
 
@@ -192,7 +193,7 @@ void initialize()
     {
 	dlIni = dataLoggerInitialize(&logger, "0:", &sd, &SD2);
     }
-    lfIni = logfileNew(&sensorLog, &logger);
+    lfIni = logfileNew(&sensorLog, &logger, &lFile);
     logfileClose(&sensorLog);
     chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     /* ADC Startup */

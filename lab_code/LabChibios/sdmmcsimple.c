@@ -19,6 +19,8 @@ static sdmmc_t *SD;
 
 static SerialDriver *serialPort;
 
+static FATFS FS;
+
 /** Low Speed SPI Configuration */
 static SPIConfig lsCfg =
 {
@@ -148,11 +150,13 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
 	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Connect Error,ERR%02d\n", status);
 	    return status;
 	}
+	sd->filesys = &FS;
 	err = f_mount(sd->filesys, "/", 0);
 	if(err != FR_OK)
 	{
 	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:File System Mount Error\n");
 	    mmcDisconnect(sd->mmcd);
+	    sd->filesys = NULL;
 	    return -2;
 	}
 	else
