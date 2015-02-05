@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc4vPuoi.s 			page 1
+ARM GAS  /tmp/cc6YJDqb.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"chmemcore.c"
-  17              		.section	.gnu.lto_.jmpfuncs.c3a9452b5d08a798,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.90635c06359c3303,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006\270\2404\013\003\003+#\033#;\003\003"
   18      6062C006 
   18      B8A0340B 
@@ -26,7 +26,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   19 0015 00020A00 		.ascii	"\000\002\012\000'"
   19      27
   20              		.text
-  21              		.section	.gnu.lto_.inline.c3a9452b5d08a798,"",%progbits
+  21              		.section	.gnu.lto_.inline.90635c06359c3303,"",%progbits
   22 0000 789C6362 		.ascii	"x\234cb`b\300\006\222\2414\013\003\003+\013#\003\023"
   22      6062C006 
   22      92A1340B 
@@ -49,7 +49,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   26      0C00E867 
   26      09DB
   27              		.text
-  28              		.section	.gnu.lto_.pureconst.c3a9452b5d08a798,"",%progbits
+  28              		.section	.gnu.lto_.pureconst.90635c06359c3303,"",%progbits
   29 0000 789C6362 		.ascii	"x\234cb`b\340d\200\000\026\006\011V+6\011v\026\000\003"
   29      6062E064 
   29      80001606 
@@ -57,8 +57,8 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   29      09761600 
   30 0015 7C0092   		.ascii	"|\000\222"
   31              		.text
-  32              		.section	.gnu.lto__core_init.c3a9452b5d08a798,"",%progbits
-ARM GAS  /tmp/cc4vPuoi.s 			page 2
+  32              		.section	.gnu.lto__core_init.90635c06359c3303,"",%progbits
+ARM GAS  /tmp/cc6YJDqb.s 			page 2
 
 
   33 0000 789C8D51 		.ascii	"x\234\215Q=H\303P\020\276{I5E\360gt\023\335\033\177"
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   44      6C274592 
   44      55E4A112 
   45 00d6 B24B483D 		.ascii	"\262KH=\345=\312\232\004\243\364\330\247\007E\004\212"
-ARM GAS  /tmp/cc4vPuoi.s 			page 3
+ARM GAS  /tmp/cc6YJDqb.s 			page 3
 
 
   45      E53DCA9A 
@@ -178,14 +178,14 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   56      328C5867 
   56      3465CD64 
   56      898E7535 
-ARM GAS  /tmp/cc4vPuoi.s 			page 4
+ARM GAS  /tmp/cc6YJDqb.s 			page 4
 
 
   57 01bd 4659E23D 		.ascii	"FY\342=\357\324\365\305E"
   57      EFD4F5C5 
   57      45
   58              		.text
-  59              		.section	.gnu.lto_chCoreAlloc.c3a9452b5d08a798,"",%progbits
+  59              		.section	.gnu.lto_chCoreAlloc.90635c06359c3303,"",%progbits
   60 0000 789C9D53 		.ascii	"x\234\235S]H\024Q\024>\347\336\331_w\325\300\207$\220"
   60      5D481451 
   60      143EE7DE 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   70 00bf ADCB4CE0 		.ascii	"\255\313L\340\032j\27608w\265\372B\211\2520h\332\\R"
   70      1A6ABE30 
   70      3877B5FA 
-ARM GAS  /tmp/cc4vPuoi.s 			page 5
+ARM GAS  /tmp/cc6YJDqb.s 			page 5
 
 
   70      4289AA30 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   81      D9175323 
   81      DF
   82 019f 991BE01F 		.ascii	"\231\033\340\037\204\353\031!*\351\326\317\302\017\321"
-ARM GAS  /tmp/cc4vPuoi.s 			page 6
+ARM GAS  /tmp/cc6YJDqb.s 			page 6
 
 
   82      84EB1921 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   94 026e B4F614AD 		.ascii	"\264\366\024\255\006\277\236\214Ic\267k\354j\334(\021"
   94      06BF9E8C 
   94      4963B76B 
-ARM GAS  /tmp/cc4vPuoi.s 			page 7
+ARM GAS  /tmp/cc6YJDqb.s 			page 7
 
 
   94      EC6ADC28 
@@ -379,7 +379,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
   97      3DF007
   98 02b1 BC253B28 		.ascii	"\274%;("
   99              		.text
- 100              		.section	.gnu.lto_chCoreAllocI.c3a9452b5d08a798,"",%progbits
+ 100              		.section	.gnu.lto_chCoreAllocI.90635c06359c3303,"",%progbits
  101 0000 789C9D53 		.ascii	"x\234\235SAk\023Q\020\236yo\327M\322\204\212xQAJ\177"
  101      416B1351 
  101      109E796F 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  108      698767CE 
  108      B2247187 
  108      69D99885 
-ARM GAS  /tmp/cc4vPuoi.s 			page 8
+ARM GAS  /tmp/cc6YJDqb.s 			page 8
 
 
  109 0092 CDD5956F 		.ascii	"\315\325\225o\352F\2733\267d\266\322\2249b\024\034c"
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  120      C5F36296 
  121 015e CB243AEF 		.ascii	"\313$:\357\367F!\373\2443M\256\"8\240\223\031\222\337"
  121      F74621FB 
-ARM GAS  /tmp/cc4vPuoi.s 			page 9
+ARM GAS  /tmp/cc6YJDqb.s 			page 9
 
 
  121      A4334DAE 
@@ -526,7 +526,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  130 0208 D19F610E 		.ascii	"\321\237a\016\342\036"
  130      E21E
  131              		.text
- 132              		.section	.gnu.lto_chCoreGetStatusX.c3a9452b5d08a798,"",%progbits
+ 132              		.section	.gnu.lto_chCoreGetStatusX.90635c06359c3303,"",%progbits
  133 0000 789C9D52 		.ascii	"x\234\235R1K\303@\030\375\276K\316\266\016\"N\272\225"
  133      314BC340 
  133      18FDBE4B 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  134      696883A4 
  134      81
  135 0024 B48AE2D0 		.ascii	"\264\212\342\320\253\355\240[).\352b\221\242\"(898t"
-ARM GAS  /tmp/cc4vPuoi.s 			page 10
+ARM GAS  /tmp/cc6YJDqb.s 			page 10
 
 
  135      ABEDA05B 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  146      FB8A7157 
  146      5BD5C678 
  146      7F43647B 
-ARM GAS  /tmp/cc4vPuoi.s 			page 11
+ARM GAS  /tmp/cc6YJDqb.s 			page 11
 
 
  147 0100 7A0CB269 		.ascii	"z\014\262i)9P\314\357S\360\247\024\236U\373mC\345`("
@@ -631,7 +631,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  152      F8A473EF 
  153 016a 6DE598C3 		.ascii	"m\345\230\303"
  154              		.text
- 155              		.section	.gnu.lto_.symbol_nodes.c3a9452b5d08a798,"",%progbits
+ 155              		.section	.gnu.lto_.symbol_nodes.90635c06359c3303,"",%progbits
  156 0000 789C4DCA 		.ascii	"x\234M\312\311\015\2000\020CQ\333\3034I3\276\346H\005"
  156      C90D8030 
  156      104351DB 
@@ -653,12 +653,12 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  159      01713B19 
  159      CD
  160              		.text
- 161              		.section	.gnu.lto_.refs.c3a9452b5d08a798,"",%progbits
+ 161              		.section	.gnu.lto_.refs.90635c06359c3303,"",%progbits
  162 0000 789C6362 		.ascii	"x\234cb`bPd\200\000\026\006&FF&&fF\026fV0\207\211\231"
  162      60625064 
  162      80001606 
  162      26464626 
-ARM GAS  /tmp/cc4vPuoi.s 			page 12
+ARM GAS  /tmp/cc6YJDqb.s 			page 12
 
 
  162      26664616 
@@ -666,7 +666,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  163      83680600 
  163      0ADA006C 
  164              		.text
- 165              		.section	.gnu.lto_.decls.c3a9452b5d08a798,"",%progbits
+ 165              		.section	.gnu.lto_.decls.90635c06359c3303,"",%progbits
  166 0000 789C9D55 		.ascii	"x\234\235UMl\033E\024~\263vlomB8P\225S\243\252p(jVj"
  166      4D6C1B45 
  166      147EB376 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  176 00c8 95FF5E10 		.ascii	"\225\377^\020\230>~V\340\366\211\272a\316a\274+\011"
  176      983E7E56 
  176      E0F689BA 
-ARM GAS  /tmp/cc4vPuoi.s 			page 13
+ARM GAS  /tmp/cc6YJDqb.s 			page 13
 
 
  176      61CE61BC 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  188      C2136ED8 
  188      059C5212 
  188      5D2FCA1F 
-ARM GAS  /tmp/cc4vPuoi.s 			page 14
+ARM GAS  /tmp/cc6YJDqb.s 			page 14
 
 
  188      6D9B
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  200 027b C2D1E002 		.ascii	"\302\321\340\002{CI;\352\353\244\030\224\371\274\327"
  200      7B43493B 
  200      EAEBA418 
-ARM GAS  /tmp/cc4vPuoi.s 			page 15
+ARM GAS  /tmp/cc6YJDqb.s 			page 15
 
 
  200      94F9BCD7 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  212      66D49B8A 
  212      D56899AF 
  212      2BE8
-ARM GAS  /tmp/cc4vPuoi.s 			page 16
+ARM GAS  /tmp/cc6YJDqb.s 			page 16
 
 
  213 035c 342CA5D9 		.ascii	"4,\245\331\320p\277\246\327\264zC\037\322`\223\312\035"
@@ -952,13 +952,13 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  223      FD1795A7 
  223      394A
  224              		.text
- 225              		.section	.gnu.lto_.symtab.c3a9452b5d08a798,"",%progbits
+ 225              		.section	.gnu.lto_.symtab.90635c06359c3303,"",%progbits
  226 0000 5F636F72 		.ascii	"_core_init\000\000\000\000\000\000\000\000\000\000\000"
  226      655F696E 
  226      69740000 
  226      00000000 
  226      00000000 
-ARM GAS  /tmp/cc4vPuoi.s 			page 17
+ARM GAS  /tmp/cc6YJDqb.s 			page 17
 
 
  227 0015 00A10000 		.ascii	"\000\241\000\000\000chCoreAlloc\000\000\000\000\000"
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  239      20272D66 
  240 0099 2D736563 		.ascii	"-sections' '-fdata-sections' '-fno-common' '-flto' "
  240      74696F6E 
-ARM GAS  /tmp/cc4vPuoi.s 			page 18
+ARM GAS  /tmp/cc6YJDqb.s 			page 18
 
 
  240      73272027 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  287 0006 094A     		ldr	r2, .L7
  288 0008 0949     		ldr	r1, .L7+4
  289 000a 1368     		ldr	r3, [r2]
-ARM GAS  /tmp/cc4vPuoi.s 			page 19
+ARM GAS  /tmp/cc6YJDqb.s 			page 19
 
 
  290 000c 0968     		ldr	r1, [r1]
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  342              		.size	chCoreAllocI, .-chCoreAllocI
  343 0028 AFF30080 		.section	.text.chCoreGetStatusX,"ax",%progbits
  343      AFF30080 
-ARM GAS  /tmp/cc4vPuoi.s 			page 20
+ARM GAS  /tmp/cc6YJDqb.s 			page 20
 
 
  344              		.align	2
@@ -1181,32 +1181,32 @@ ARM GAS  /tmp/cc4vPuoi.s 			page 1
  379 0000 00000000 		.space	4
  380              		.comm	__gnu_lto_v1,1,1
  381              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cc4vPuoi.s 			page 21
+ARM GAS  /tmp/cc6YJDqb.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chmemcore.c
-     /tmp/cc4vPuoi.s:244    .text._core_init:0000000000000000 $t
-     /tmp/cc4vPuoi.s:250    .text._core_init:0000000000000000 _core_init
-     /tmp/cc4vPuoi.s:266    .text._core_init:0000000000000018 $d
-     /tmp/cc4vPuoi.s:272    .text.chCoreAlloc:0000000000000000 $t
-     /tmp/cc4vPuoi.s:278    .text.chCoreAlloc:0000000000000000 chCoreAlloc
-     /tmp/cc4vPuoi.s:309    .text.chCoreAlloc:000000000000002c $d
-     /tmp/cc4vPuoi.s:313    .text.chCoreAllocI:0000000000000000 $t
-     /tmp/cc4vPuoi.s:319    .text.chCoreAllocI:0000000000000000 chCoreAllocI
-     /tmp/cc4vPuoi.s:340    .text.chCoreAllocI:0000000000000020 $d
-     /tmp/cc4vPuoi.s:344    .text.chCoreGetStatusX:0000000000000000 $t
-     /tmp/cc4vPuoi.s:350    .text.chCoreGetStatusX:0000000000000000 chCoreGetStatusX
-     /tmp/cc4vPuoi.s:363    .text.chCoreGetStatusX:000000000000000c $d
-     /tmp/cc4vPuoi.s:367    .bss.endmem:0000000000000000 $d
-     /tmp/cc4vPuoi.s:371    .bss.endmem:0000000000000000 endmem
-     /tmp/cc4vPuoi.s:374    .bss.nextmem:0000000000000000 $d
-     /tmp/cc4vPuoi.s:378    .bss.nextmem:0000000000000000 nextmem
+     /tmp/cc6YJDqb.s:244    .text._core_init:0000000000000000 $t
+     /tmp/cc6YJDqb.s:250    .text._core_init:0000000000000000 _core_init
+     /tmp/cc6YJDqb.s:266    .text._core_init:0000000000000018 $d
+     /tmp/cc6YJDqb.s:272    .text.chCoreAlloc:0000000000000000 $t
+     /tmp/cc6YJDqb.s:278    .text.chCoreAlloc:0000000000000000 chCoreAlloc
+     /tmp/cc6YJDqb.s:309    .text.chCoreAlloc:000000000000002c $d
+     /tmp/cc6YJDqb.s:313    .text.chCoreAllocI:0000000000000000 $t
+     /tmp/cc6YJDqb.s:319    .text.chCoreAllocI:0000000000000000 chCoreAllocI
+     /tmp/cc6YJDqb.s:340    .text.chCoreAllocI:0000000000000020 $d
+     /tmp/cc6YJDqb.s:344    .text.chCoreGetStatusX:0000000000000000 $t
+     /tmp/cc6YJDqb.s:350    .text.chCoreGetStatusX:0000000000000000 chCoreGetStatusX
+     /tmp/cc6YJDqb.s:363    .text.chCoreGetStatusX:000000000000000c $d
+     /tmp/cc6YJDqb.s:367    .bss.endmem:0000000000000000 $d
+     /tmp/cc6YJDqb.s:371    .bss.endmem:0000000000000000 endmem
+     /tmp/cc6YJDqb.s:374    .bss.nextmem:0000000000000000 $d
+     /tmp/cc6YJDqb.s:378    .bss.nextmem:0000000000000000 nextmem
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/cc4vPuoi.s:271    .text._core_init:0000000000000028 $t
-     /tmp/cc4vPuoi.s:312    .text.chCoreAlloc:0000000000000034 $t
-     /tmp/cc4vPuoi.s:343    .text.chCoreAllocI:0000000000000028 $t
-     /tmp/cc4vPuoi.s:366    .text.chCoreGetStatusX:0000000000000014 $t
+     /tmp/cc6YJDqb.s:271    .text._core_init:0000000000000028 $t
+     /tmp/cc6YJDqb.s:312    .text.chCoreAlloc:0000000000000034 $t
+     /tmp/cc6YJDqb.s:343    .text.chCoreAllocI:0000000000000028 $t
+     /tmp/cc6YJDqb.s:366    .text.chCoreGetStatusX:0000000000000014 $t
 
 UNDEFINED SYMBOLS
 __heap_base__

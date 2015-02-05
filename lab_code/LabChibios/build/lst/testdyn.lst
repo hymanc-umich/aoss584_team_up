@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccsa2nyi.s 			page 1
+ARM GAS  /tmp/ccCH7KaV.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"testdyn.c"
-  17              		.section	.gnu.lto_.jmpfuncs.90002a6b458a2d19,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.54c458b9bb83d602,"",%progbits
   18 0000 789CAD53 		.ascii	"x\234\255S;R\3030\020}\273\262b%v\230\014\223\031\206"
   18      3B52C330 
   18      107DBBB2 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   25      87
   26 0089 A6411517 		.ascii	"\246A\025\027\357\257\310-\011jbL\214\344wx\267\326"
   26      EFAFC82D 
-ARM GAS  /tmp/ccsa2nyi.s 			page 2
+ARM GAS  /tmp/ccCH7KaV.s 			page 2
 
 
   26      096A624C 
@@ -101,7 +101,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   34 011d 06067ADF 		.ascii	"\006\006z\337\373"
   34      FB
   35              		.text
-  36              		.section	.gnu.lto_.inline.90002a6b458a2d19,"",%progbits
+  36              		.section	.gnu.lto_.inline.54c458b9bb83d602,"",%progbits
   37 0000 789C8D51 		.ascii	"x\234\215Q\313\015\3020\014}N?\211hK\331\2005\030\201"
   37      CB0DC230 
   37      0C7D4E3F 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   39      7ECFF173 
   39      ADA030F4 
   40 003a ED7CDAC0 		.ascii	"\355|\332\300t\330\023A\255\333\253B~\\Z\"\255\300\205"
-ARM GAS  /tmp/ccsa2nyi.s 			page 3
+ARM GAS  /tmp/ccCH7KaV.s 			page 3
 
 
   40      74D81341 
@@ -162,7 +162,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   48 00cc 182C191F 		.ascii	"\030,\031\037\2072<\237"
   48      87323C9F 
   49              		.text
-  50              		.section	.gnu.lto_.pureconst.90002a6b458a2d19,"",%progbits
+  50              		.section	.gnu.lto_.pureconst.54c458b9bb83d602,"",%progbits
   51 0000 789C6362 		.ascii	"x\234cb`b\020d\200\000\016\006IfIV\011v\011\016In\011"
   51      60621064 
   51      80000E06 
@@ -172,13 +172,13 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   52      000ABA01 
   52      3D
   53              		.text
-  54              		.section	.gnu.lto_dyn1_execute.90002a6b458a2d19,"",%progbits
+  54              		.section	.gnu.lto_dyn1_execute.54c458b9bb83d602,"",%progbits
   55 0000 789CB556 		.ascii	"x\234\265V[L\\U\024\335\373\334\231;\303\314\000\005"
   55      5B4C5C55 
   55      14DDFBDC 
   55      993BC3CC 
   55      0005
-ARM GAS  /tmp/ccsa2nyi.s 			page 4
+ARM GAS  /tmp/ccCH7KaV.s 			page 4
 
 
   56 0012 11868723 		.ascii	"\021\206\207#\257\3206X\006\032\265\372\243\266\215"
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   67      7C1E
   68 00e1 B928B516 		.ascii	"\271(\265\026f\014cr\365\273\033\347\305\233o\304F\247"
   68      660C6372 
-ARM GAS  /tmp/ccsa2nyi.s 			page 5
+ARM GAS  /tmp/ccCH7KaV.s 			page 5
 
 
   68      F5BB1BE7 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   79      28BD
   80 01bc BDEA363C 		.ascii	"\275\3526<Fs\332\360\270\264L\000\2704z\366\220\345"
   80      4673DAF0 
-ARM GAS  /tmp/ccsa2nyi.s 			page 6
+ARM GAS  /tmp/ccCH7KaV.s 			page 6
 
 
   80      B8B44C00 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
   91      98D7C12A 
   91      D6
   92 028e D0E56079 		.ascii	"\320\345`yS\200x1\234S8\2255x\217\206n\207\305M#\250"
-ARM GAS  /tmp/ccsa2nyi.s 			page 7
+ARM GAS  /tmp/ccCH7KaV.s 			page 7
 
 
   92      53807831 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  103      6F345F81 
  103      2FDAB382 
  103      39A2E11A 
-ARM GAS  /tmp/ccsa2nyi.s 			page 8
+ARM GAS  /tmp/ccCH7KaV.s 			page 8
 
 
  104 0370 2EF8EA91 		.ascii	".\370\352\221\024\260\362\034\301D2\330\267\277;`\345"
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  115 043c 0F7FCACD 		.ascii	"\017\177\312\315\263\370\301\200=m\263}\233R\370i;\270"
  115      B3F8C180 
  115      3D6DB37D 
-ARM GAS  /tmp/ccsa2nyi.s 			page 9
+ARM GAS  /tmp/ccCH7KaV.s 			page 9
 
 
  115      9B52F869 
@@ -535,10 +535,10 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  126      036ED0E5 
  126      56
  127              		.text
- 128              		.section	.gnu.lto_thread.90002a6b458a2d19,"",%progbits
+ 128              		.section	.gnu.lto_thread.54c458b9bb83d602,"",%progbits
  129 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\274\021\210\015\201\230\221\231"
  129      60624007 
-ARM GAS  /tmp/ccsa2nyi.s 			page 10
+ARM GAS  /tmp/ccCH7KaV.s 			page 10
 
 
  129      9240BC11 
@@ -598,10 +598,10 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  140      99010030 
  141 00db 3BF9     		.ascii	";\371"
  142              		.text
-ARM GAS  /tmp/ccsa2nyi.s 			page 11
+ARM GAS  /tmp/ccCH7KaV.s 			page 11
 
 
- 143              		.section	.gnu.lto_dyn1_setup.90002a6b458a2d19,"",%progbits
+ 143              		.section	.gnu.lto_dyn1_setup.54c458b9bb83d602,"",%progbits
  144 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\274\037\210\015\201\230\221\231"
  144      60624007 
  144      9240BC1F 
@@ -658,12 +658,12 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  155      12309D
  156 00d6 5299A797 		.ascii	"R\231\247\227\314\000\000G\034C\246"
  156      CC000047 
-ARM GAS  /tmp/ccsa2nyi.s 			page 12
+ARM GAS  /tmp/ccCH7KaV.s 			page 12
 
 
  156      1C43A6
  157              		.text
- 158              		.section	.gnu.lto_dyn3_setup.90002a6b458a2d19,"",%progbits
+ 158              		.section	.gnu.lto_dyn3_setup.54c458b9bb83d602,"",%progbits
  159 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\274\037\210\015\201\230\221\231"
  159      60624007 
  159      9240BC1F 
@@ -718,14 +718,14 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  170      6CFD92D4 
  170      E212FDA2 
  170      12309D
-ARM GAS  /tmp/ccsa2nyi.s 			page 13
+ARM GAS  /tmp/ccCH7KaV.s 			page 13
 
 
  171 00d6 5299A797 		.ascii	"R\231\247\227\314\000\000m\270C\326"
  171      CC00006D 
  171      B843D6
  172              		.text
- 173              		.section	.gnu.lto_dyn2_execute.90002a6b458a2d19,"",%progbits
+ 173              		.section	.gnu.lto_dyn2_execute.54c458b9bb83d602,"",%progbits
  174 0000 789CB557 		.ascii	"x\234\265W\333O\034e\024?\347\233\275\316^fw\021a\213"
  174      DB4F1C65 
  174      143FE79B 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  184      8BC429EA 
  184      E5C837A4 
  184      0B
-ARM GAS  /tmp/ccsa2nyi.s 			page 14
+ARM GAS  /tmp/ccCH7KaV.s 			page 14
 
 
  185 00ca 4730C646 		.ascii	"G0\306F\030\025\2113\022i\225\363g\331W\261\324\247"
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  196      3B65D900 
  196      53A56F0F 
  196      B554FC7E 
-ARM GAS  /tmp/ccsa2nyi.s 			page 15
+ARM GAS  /tmp/ccCH7KaV.s 			page 15
 
 
  196      14D4
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  208      014B433B 
  208      E2844451 
  208      A49B5E76 
-ARM GAS  /tmp/ccsa2nyi.s 			page 16
+ARM GAS  /tmp/ccCH7KaV.s 			page 16
 
 
  209 0293 5AD34929 		.ascii	"Z\323I)\256\315\354u|\2512}l\354)\321\247\230\320\335"
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  220      C247EE23 
  220      8E516A83 
  220      C9709564 
-ARM GAS  /tmp/ccsa2nyi.s 			page 17
+ARM GAS  /tmp/ccCH7KaV.s 			page 17
 
 
  220      A91592F9 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  232 0443 6EF2E4E8 		.ascii	"n\362\344\350\346\234V\3249\275J\235%\366\251\256sz"
  232      E69C56D4 
  232      39BD4A9D 
-ARM GAS  /tmp/ccsa2nyi.s 			page 18
+ARM GAS  /tmp/ccCH7KaV.s 			page 18
 
 
  232      25F6A9AE 
@@ -1073,12 +1073,12 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  243 0504 2F6DB0DE 		.ascii	"/m\260\336\313"
  243      CB
  244              		.text
- 245              		.section	.gnu.lto_dyn2_setup.90002a6b458a2d19,"",%progbits
+ 245              		.section	.gnu.lto_dyn2_setup.54c458b9bb83d602,"",%progbits
  246 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\027\210\015\201\230\221\231\201"
  246      60624007 
  246      92403C17 
  246      880D8198 
-ARM GAS  /tmp/ccsa2nyi.s 			page 19
+ARM GAS  /tmp/ccCH7KaV.s 			page 19
 
 
  246      919981
@@ -1130,7 +1130,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  256      0300C18A 
  256      3AB2
  257              		.text
- 258              		.section	.gnu.lto_regfind.90002a6b458a2d19,"",%progbits
+ 258              		.section	.gnu.lto_regfind.54c458b9bb83d602,"",%progbits
  259 0000 789C5D51 		.ascii	"x\234]Q\261n\023A\020}o\357\366l9)\220(h(\242\224\024"
  259      B16E1341 
  259      107D6FEF 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  259      90286828 
  260 0017 39898206 		.ascii	"9\211\202\006\032\376!\226\240\303\3349\227S\022\033"
  260      1AFE2196 
-ARM GAS  /tmp/ccsa2nyi.s 			page 20
+ARM GAS  /tmp/ccCH7KaV.s 			page 20
 
 
  260      A0C3DC39 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  272      D0916025 
  272      C516E596 
  272      C9AB5402 
-ARM GAS  /tmp/ccsa2nyi.s 			page 21
+ARM GAS  /tmp/ccCH7KaV.s 			page 21
 
 
  272      DE
@@ -1254,11 +1254,11 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  283      FC07
  284 01b2 811F8EBD 		.ascii	"\201\037\216\275"
  285              		.text
- 286              		.section	.gnu.lto_dyn3_execute.90002a6b458a2d19,"",%progbits
+ 286              		.section	.gnu.lto_dyn3_execute.54c458b9bb83d602,"",%progbits
  287 0000 789C9556 		.ascii	"x\234\225V\337k\034u\020\237\331\037\267\267\367c\223"
  287      DF6B1C75 
  287      109FD91F 
-ARM GAS  /tmp/ccsa2nyi.s 			page 22
+ARM GAS  /tmp/ccCH7KaV.s 			page 22
 
 
  287      B7B7F763 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  298      6FABCD95 
  298      35F577B3 
  299 00df 89182275 		.ascii	"\211\030\"u\341\011\204\000\3419\002X\225\223a\265\267"
-ARM GAS  /tmp/ccsa2nyi.s 			page 23
+ARM GAS  /tmp/ccCH7KaV.s 			page 23
 
 
  299      E1098400 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  310      AE74FA0C 
  310      E319BC4A 
  310      89
-ARM GAS  /tmp/ccsa2nyi.s 			page 24
+ARM GAS  /tmp/ccCH7KaV.s 			page 24
 
 
  311 01b9 698DF11A 		.ascii	"i\215\361\032\200\013\\\375\350\320\014^#<\207'u\342"
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  322      888F444A 
  322      EEEF2929 
  322      1E584989 
-ARM GAS  /tmp/ccsa2nyi.s 			page 25
+ARM GAS  /tmp/ccCH7KaV.s 			page 25
 
 
  322      824489D1 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  334      927A3C85 
  334      BA088650 
  334      7F97DC5D 
-ARM GAS  /tmp/ccsa2nyi.s 			page 26
+ARM GAS  /tmp/ccCH7KaV.s 			page 26
 
 
  334      8F05
@@ -1554,11 +1554,11 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  345      BF3F6F42 
  345      A1
  346              		.text
- 347              		.section	.gnu.lto_.symbol_nodes.90002a6b458a2d19,"",%progbits
+ 347              		.section	.gnu.lto_.symbol_nodes.54c458b9bb83d602,"",%progbits
  348 0000 789C4D8F 		.ascii	"x\234M\217\313R\324@\024\206\317\337=\231\011\220Q$"
  348      CB52D440 
  348      1486CFDF 
-ARM GAS  /tmp/ccsa2nyi.s 			page 27
+ARM GAS  /tmp/ccCH7KaV.s 			page 27
 
 
  348      3D990990 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  359      765FF148 
  359      B0
  360 00df 7B8A3BC1 		.ascii	"{\212;\301\214\342,\330\274\342\321`w\025\217\3757M"
-ARM GAS  /tmp/ccsa2nyi.s 			page 28
+ARM GAS  /tmp/ccCH7KaV.s 			page 28
 
 
  360      8CE22CD8 
@@ -1678,11 +1678,11 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  371      BDB21EA7 
  371      4B5195F9 
  371      DB
-ARM GAS  /tmp/ccsa2nyi.s 			page 29
+ARM GAS  /tmp/ccCH7KaV.s 			page 29
 
 
  372              		.text
- 373              		.section	.gnu.lto_.refs.90002a6b458a2d19,"",%progbits
+ 373              		.section	.gnu.lto_.refs.54c458b9bb83d602,"",%progbits
  374 0000 789C758D 		.ascii	"x\234u\215Q\016\200 \014C\273N\004!(\306\037/\355\235"
  374      510E8020 
  374      0C43BB4E 
@@ -1706,7 +1706,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  378 004c 1BDA7802 		.ascii	"\033\332x\002\317"
  378      CF
  379              		.text
- 380              		.section	.gnu.lto_.decls.90002a6b458a2d19,"",%progbits
+ 380              		.section	.gnu.lto_.decls.54c458b9bb83d602,"",%progbits
  381 0000 789CBD5C 		.ascii	"x\234\275\\yt\024U\272\257\252\356N\247\223\310\346"
  381      79741455 
  381      BAAFAAEE 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  386      F96ABD
  387 006b F777BFFD 		.ascii	"\367w\277\375\336\272u\2539\206c\202>\206i\207\337W"
  387      DEBA75AB 
-ARM GAS  /tmp/ccsa2nyi.s 			page 30
+ARM GAS  /tmp/ccCH7KaV.s 			page 30
 
 
  387      39866382 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  399      05E8065C 
  399      3F0EFB53 
  399      4877B0DF 
-ARM GAS  /tmp/ccsa2nyi.s 			page 31
+ARM GAS  /tmp/ccCH7KaV.s 			page 31
 
 
  399      06
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  411 020b 5F515DFE 		.ascii	"_Q]\376\326P\037\305b*\325\217\2523\244\247\363P.\007"
  411      D6501FC5 
  411      622AD58F 
-ARM GAS  /tmp/ccsa2nyi.s 			page 32
+ARM GAS  /tmp/ccCH7KaV.s 			page 32
 
 
  411      AA33A4A7 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  423      93E93E66 
  423      1A6A1B
  424 02ed 4E6456E2 		.ascii	"NdV\342\331\201\351*\003A\265}/\306\340\331O\330\373"
-ARM GAS  /tmp/ccsa2nyi.s 			page 33
+ARM GAS  /tmp/ccCH7KaV.s 			page 33
 
 
  424      D981E92A 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  435      4F14161B 
  435      30D0748F 
  435      D1DB02
-ARM GAS  /tmp/ccsa2nyi.s 			page 34
+ARM GAS  /tmp/ccCH7KaV.s 			page 34
 
 
  436 03d0 066F0BE8 		.ascii	"\006o\013\350\275-\020\210\037\264\253?}\334\376S\353"
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  446      273E48AE 
  447 04a4 8F80ABDF 		.ascii	"\217\200\253\337\007 \000L\2322\313r3Z\232\273o\225"
  447      0720004C 
-ARM GAS  /tmp/ccsa2nyi.s 			page 35
+ARM GAS  /tmp/ccCH7KaV.s 			page 35
 
 
  447      9A32CB72 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  458      63DEC76D 
  458      5D377AF2 
  459 057f C93F96B1 		.ascii	"\311?\226\261c\260\001\256;r\345\325\333g8\013\310\024"
-ARM GAS  /tmp/ccsa2nyi.s 			page 36
+ARM GAS  /tmp/ccCH7KaV.s 			page 36
 
 
  459      63B001AE 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  470      83E9399B 
  470      A5055BE1 
  470      046C8035 
-ARM GAS  /tmp/ccsa2nyi.s 			page 37
+ARM GAS  /tmp/ccCH7KaV.s 			page 37
 
 
  471 065b 73B460AB 		.ascii	"s\264`\253\\\203\3519[\246\005\253s\0026\310\232\263"
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  482 0721 01ECAB5A 		.ascii	"\001\354\253Zy\302:N\343\011W\234\250\311\246k?\276"
  482      79C23A4E 
  482      E309579C 
-ARM GAS  /tmp/ccsa2nyi.s 			page 38
+ARM GAS  /tmp/ccCH7KaV.s 			page 38
 
 
  482      A8C9A66B 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  495      86DADC61 
  495      A8CAA6D5 
  495      24585B30 
-ARM GAS  /tmp/ccsa2nyi.s 			page 39
+ARM GAS  /tmp/ccCH7KaV.s 			page 39
 
 
  495      D08E
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  507      49826E8D 
  507      13E66C9E 
  507      A9AB
-ARM GAS  /tmp/ccsa2nyi.s 			page 40
+ARM GAS  /tmp/ccCH7KaV.s 			page 40
 
 
  508 08d6 091871F8 		.ascii	"\011\030q\370\015\256\301\202:\260u\223L\337\2545Y\000"
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  519      ABC1268D 
  519      060F610D 
  519      1EC61A
-ARM GAS  /tmp/ccsa2nyi.s 			page 41
+ARM GAS  /tmp/ccCH7KaV.s 			page 41
 
 
  520 09a8 9C803DE6 		.ascii	"\234\200=\346]\275\036\357\004\014\357e\365\257B5\207"
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  531      9ACD7B7C 
  531      BB61DE76 
  532 0a87 E907C6B6 		.ascii	"\351\007\306\266/\241\205\017\0378j\371\247\326\255"
-ARM GAS  /tmp/ccsa2nyi.s 			page 42
+ARM GAS  /tmp/ccCH7KaV.s 			page 42
 
 
  532      2FA1850F 
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  543      B2C2315F 
  543      61A5AD
  544 0b5e 8CBBAFA1 		.ascii	"\214\273\257\241\335d\321%+s^(\037\237A\230\343\230"
-ARM GAS  /tmp/ccsa2nyi.s 			page 43
+ARM GAS  /tmp/ccCH7KaV.s 			page 43
 
 
  544      DD64D125 
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  555      426F34A2 
  555      EF36456F 
  555      DC66405F 
-ARM GAS  /tmp/ccsa2nyi.s 			page 44
+ARM GAS  /tmp/ccCH7KaV.s 			page 44
 
 
  556 0c4e 7DAF117D 		.ascii	"}\257\021}\237)\372*#\372zG\350\007\214\350M\246\350"
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  567      172C74BC 
  567      B5633ABE 
  567      68AD6383 
-ARM GAS  /tmp/ccsa2nyi.s 			page 45
+ARM GAS  /tmp/ccCH7KaV.s 			page 45
 
 
  567      248ACD
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  579      5A29CCC6 
  579      94554646 
  580 0dfa 7912A2F0 		.ascii	"y\022\242\360G\013Nf\231rr\350\354\326\036\035\212\302"
-ARM GAS  /tmp/ccsa2nyi.s 			page 46
+ARM GAS  /tmp/ccCH7KaV.s 			page 46
 
 
  580      470B4E66 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  591      13C6A295 
  591      236CBB47 
  591      FDF67C75 
-ARM GAS  /tmp/ccsa2nyi.s 			page 47
+ARM GAS  /tmp/ccCH7KaV.s 			page 47
 
 
  591      0C469D0A 
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  603      D2F8C21E 
  603      CD4AE3
  604 0faf A9AEC1F4 		.ascii	"\251\256\301\364\314]\321\202\315q\002f\266\036\327"
-ARM GAS  /tmp/ccsa2nyi.s 			page 48
+ARM GAS  /tmp/ccCH7KaV.s 			page 48
 
 
  604      CC5DD182 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  615      2143DCF4 
  615      5AFF9D88 
  616 1084 E11EC4B9 		.ascii	"\341\036\304\271kQu\252C_\207?\247~=\201g\352\347;\001"
-ARM GAS  /tmp/ccsa2nyi.s 			page 49
+ARM GAS  /tmp/ccCH7KaV.s 			page 49
 
 
  616      6B5175AA 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  627 1152 872C3751 		.ascii	"\207,7Qo\247SF;\231\265g\371\205\247\2544\035 n\354"
  627      6FA75346 
  627      3B99B567 
-ARM GAS  /tmp/ccsa2nyi.s 			page 50
+ARM GAS  /tmp/ccCH7KaV.s 			page 50
 
 
  627      F985A7AC 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  638      9C01
  639 122e 8B5CD370 		.ascii	"\213\\\323p\274L\201\347\344\326\201;\312\320;w\243"
  639      BC4C81E7 
-ARM GAS  /tmp/ccsa2nyi.s 			page 51
+ARM GAS  /tmp/ccCH7KaV.s 			page 51
 
 
  639      E4D6813B 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  651 1300 51697B67 		.ascii	"Qi{g.<\231\322tB4\3071\267\2227W\007\315=\310\274}\317"
  651      2E3C99D2 
  651      744234C7 
-ARM GAS  /tmp/ccsa2nyi.s 			page 52
+ARM GAS  /tmp/ccCH7KaV.s 			page 52
 
 
  651      31B79237 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  662      5A4B8CBD 
  662      975862BF 
  663 13e0 250E7456 		.ascii	"%\016tVu\333\350\300\022\207c\245O$Z\202x\236\232\242"
-ARM GAS  /tmp/ccsa2nyi.s 			page 53
+ARM GAS  /tmp/ccCH7KaV.s 			page 53
 
 
  663      75DBE8C0 
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  674      DAD4BA60 
  674      596BAD4D 
  674      AD36CB5A 
-ARM GAS  /tmp/ccsa2nyi.s 			page 54
+ARM GAS  /tmp/ccCH7KaV.s 			page 54
 
 
  674      876DC2ED 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  685      FF4CBF90 
  686 159e D4CFA674 		.ascii	"\324\317\246t!\017\014\024\011Y!P\000_Z \205\244\321"
  686      210F0C14 
-ARM GAS  /tmp/ccsa2nyi.s 			page 55
+ARM GAS  /tmp/ccCH7KaV.s 			page 55
 
 
  686      09592150 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  698 1677 0E94CB81 		.ascii	"\016\224\313\201r}\241\\\337lN\354\307\211Os\3423\234"
  698      727DA15C 
  698      DF6C4EEC 
-ARM GAS  /tmp/ccsa2nyi.s 			page 56
+ARM GAS  /tmp/ccCH7KaV.s 			page 56
 
 
  698      C7894F73 
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  710      F2E5A33A 
  710      EE02
  711 175a 00D20C42 		.ascii	"\000\322\014B\214j\262 :\017!\037\201\035I4\376\222"
-ARM GAS  /tmp/ccsa2nyi.s 			page 57
+ARM GAS  /tmp/ccCH7KaV.s 			page 57
 
 
  711      8C6AB220 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  723      C4E242C4 
  723      4F3A616B 
  723      70414171 
-ARM GAS  /tmp/ccsa2nyi.s 			page 58
+ARM GAS  /tmp/ccCH7KaV.s 			page 58
 
 
  723      B833665A 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  735 1914 F0623AEC 		.ascii	"\360b:\354\012\370\250\204j\303%\324H'*t\2560\274t\004"
  735      0AF8A884 
  735      6AC325D4 
-ARM GAS  /tmp/ccsa2nyi.s 			page 59
+ARM GAS  /tmp/ccCH7KaV.s 			page 59
 
 
  735      48272A74 
@@ -3534,11 +3534,11 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  745      01
  746 19e0 D82E45FD 		.ascii	"\330.E\375"
  747              		.text
- 748              		.section	.gnu.lto_.symtab.90002a6b458a2d19,"",%progbits
+ 748              		.section	.gnu.lto_.symtab.54c458b9bb83d602,"",%progbits
  749 0000 70617474 		.ascii	"patterndyn\000\000\000\000\000\000\000\000\000\000\000"
  749      65726E64 
  749      796E0000 
-ARM GAS  /tmp/ccsa2nyi.s 			page 60
+ARM GAS  /tmp/ccCH7KaV.s 			page 60
 
 
  749      00000000 
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  761      73000002 
  761      00000000 
  762 00e2 000000EB 		.ascii	"\000\000\000\353\001\000\000_test_assert_sequence\000"
-ARM GAS  /tmp/ccsa2nyi.s 			page 61
+ARM GAS  /tmp/ccCH7KaV.s 			page 61
 
 
  762      0100005F 
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  773      02000000 
  774 01d8 00000000 		.ascii	"\000\000\000\000\000\027\002\000\000chThdCreateFrom"
  774      00170200 
-ARM GAS  /tmp/ccsa2nyi.s 			page 62
+ARM GAS  /tmp/ccCH7KaV.s 			page 62
 
 
  774      00636854 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  785      00000000 
  786 02cf 003F0200 		.ascii	"\000?\002\000\000"
  786      00
-ARM GAS  /tmp/ccsa2nyi.s 			page 63
+ARM GAS  /tmp/ccCH7KaV.s 			page 63
 
 
  787              		.text
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  821 0028 2060     		str	r0, [r4]
  822 002a AA1E     		subs	r2, r5, #2
  823 002c 0093     		str	r3, [sp]
-ARM GAS  /tmp/ccsa2nyi.s 			page 64
+ARM GAS  /tmp/ccCH7KaV.s 			page 64
 
 
  824 002e 4FF4E871 		mov	r1, #464
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  878 00aa 0299     		ldr	r1, [sp, #8]
  879 00ac 039B     		ldr	r3, [sp, #12]
  880 00ae CB1A     		subs	r3, r1, r3
-ARM GAS  /tmp/ccsa2nyi.s 			page 65
+ARM GAS  /tmp/ccCH7KaV.s 			page 65
 
 
  881 00b0 5942     		rsbs	r1, r3, #0
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  935 0008 FFF7FEBF 		b	chHeapObjectInit
  936              	.L17:
  937              		.align	2
-ARM GAS  /tmp/ccsa2nyi.s 			page 66
+ARM GAS  /tmp/ccCH7KaV.s 			page 66
 
 
  938              	.L16:
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  988 0026 FFF7FEFF 		bl	chThdCreateFromMemoryPool
  989 002a A91E     		subs	r1, r5, #2
  990 002c 2060     		str	r0, [r4]
-ARM GAS  /tmp/ccsa2nyi.s 			page 67
+ARM GAS  /tmp/ccCH7KaV.s 			page 67
 
 
  991 002e 2A4A     		ldr	r2, .L35+12
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  1045 00a4 0320     		movs	r0, #3
  1046 00a6 FFF7FEFF 		bl	_test_assert
  1047 00aa 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccsa2nyi.s 			page 68
+ARM GAS  /tmp/ccCH7KaV.s 			page 68
 
 
  1048 00ac EAD1     		bne	.L21
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  1101              		@ frame_needed = 0, uses_anonymous_args = 0
  1102 0000 38B5     		push	{r3, r4, r5, lr}
  1103 0002 0546     		mov	r5, r0
-ARM GAS  /tmp/ccsa2nyi.s 			page 69
+ARM GAS  /tmp/ccCH7KaV.s 			page 69
 
 
  1104 0004 FFF7FEFF 		bl	chRegFirstThread
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  1156 0040 0220     		movs	r0, #2
  1157 0042 B1EB000E 		subs	lr, r1, r0
  1158 0046 DEF10001 		rsbs	r1, lr, #0
-ARM GAS  /tmp/ccsa2nyi.s 			page 70
+ARM GAS  /tmp/ccCH7KaV.s 			page 70
 
 
  1159 004a 51EB0E01 		adcs	r1, r1, lr
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  1213 00d4 FFF7FEFF 		bl	regfind
  1214 00d8 0146     		mov	r1, r0
  1215 00da 0920     		movs	r0, #9
-ARM GAS  /tmp/ccsa2nyi.s 			page 71
+ARM GAS  /tmp/ccCH7KaV.s 			page 71
 
 
  1216 00dc FFF7FEFF 		bl	_test_assert
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  1270              	testdyn2:
  1271 0000 48000000 		.word	.LC8
  1272 0004 00000000 		.word	dyn2_setup
-ARM GAS  /tmp/ccsa2nyi.s 			page 72
+ARM GAS  /tmp/ccCH7KaV.s 			page 72
 
 
  1273 0008 00000000 		.word	0
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  1318      41504973 
  1318      2C207468 
  1318      72656164 
-ARM GAS  /tmp/ccsa2nyi.s 			page 73
+ARM GAS  /tmp/ccCH7KaV.s 			page 73
 
 
  1319              	.LC9:
@@ -4349,51 +4349,51 @@ ARM GAS  /tmp/ccsa2nyi.s 			page 1
  1336      00000000 
  1337              		.comm	__gnu_lto_v1,1,1
  1338              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccsa2nyi.s 			page 74
+ARM GAS  /tmp/ccCH7KaV.s 			page 74
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 testdyn.c
-     /tmp/ccsa2nyi.s:796    .text.dyn1_execute:0000000000000000 $t
-     /tmp/ccsa2nyi.s:801    .text.dyn1_execute:0000000000000000 dyn1_execute
-     /tmp/ccsa2nyi.s:898    .text.dyn1_execute:00000000000000d0 $d
-     /tmp/ccsa2nyi.s:913    .text.thread:0000000000000000 thread
-     /tmp/ccsa2nyi.s:908    .text.thread:0000000000000000 $t
-     /tmp/ccsa2nyi.s:923    .text.dyn1_setup:0000000000000000 $t
-     /tmp/ccsa2nyi.s:928    .text.dyn1_setup:0000000000000000 dyn1_setup
-     /tmp/ccsa2nyi.s:939    .text.dyn1_setup:000000000000000c $d
-     /tmp/ccsa2nyi.s:943    .text.dyn3_setup:0000000000000000 $t
-     /tmp/ccsa2nyi.s:948    .text.dyn3_setup:0000000000000000 dyn3_setup
-     /tmp/ccsa2nyi.s:959    .text.dyn3_setup:000000000000000c $d
-     /tmp/ccsa2nyi.s:963    .text.dyn2_execute:0000000000000000 $t
-     /tmp/ccsa2nyi.s:968    .text.dyn2_execute:0000000000000000 dyn2_execute
-     /tmp/ccsa2nyi.s:1062   .text.dyn2_execute:00000000000000cc $d
-     /tmp/ccsa2nyi.s:1075   .text.dyn2_setup:0000000000000000 $t
-     /tmp/ccsa2nyi.s:1080   .text.dyn2_setup:0000000000000000 dyn2_setup
-     /tmp/ccsa2nyi.s:1091   .text.dyn2_setup:000000000000000c $d
-     /tmp/ccsa2nyi.s:1094   .text.regfind:0000000000000000 $t
-     /tmp/ccsa2nyi.s:1099   .text.regfind:0000000000000000 regfind
-     /tmp/ccsa2nyi.s:1120   .text.dyn3_execute:0000000000000000 $t
-     /tmp/ccsa2nyi.s:1125   .text.dyn3_execute:0000000000000000 dyn3_execute
-     /tmp/ccsa2nyi.s:1248   .text.dyn3_execute:000000000000012c $d
-     /tmp/ccsa2nyi.s:1325   .rodata.patterndyn:0000000000000000 patterndyn
-     /tmp/ccsa2nyi.s:1279   .rodata.testdyn3:0000000000000000 testdyn3
-     /tmp/ccsa2nyi.s:1270   .rodata.testdyn2:0000000000000000 testdyn2
-     /tmp/ccsa2nyi.s:1261   .rodata.testdyn1:0000000000000000 testdyn1
-     /tmp/ccsa2nyi.s:1258   .rodata.testdyn1:0000000000000000 $d
-     /tmp/ccsa2nyi.s:1267   .rodata.testdyn2:0000000000000000 $d
-     /tmp/ccsa2nyi.s:1276   .rodata.testdyn3:0000000000000000 $d
-     /tmp/ccsa2nyi.s:1285   .bss.mp1:0000000000000000 $d
-     /tmp/ccsa2nyi.s:1289   .bss.mp1:0000000000000000 mp1
-     /tmp/ccsa2nyi.s:1292   .rodata.str1.4:0000000000000000 $d
-     /tmp/ccsa2nyi.s:1322   .rodata.patterndyn:0000000000000000 $d
-     /tmp/ccsa2nyi.s:1331   .bss.heap1:0000000000000000 $d
-     /tmp/ccsa2nyi.s:1335   .bss.heap1:0000000000000000 heap1
+     /tmp/ccCH7KaV.s:796    .text.dyn1_execute:0000000000000000 $t
+     /tmp/ccCH7KaV.s:801    .text.dyn1_execute:0000000000000000 dyn1_execute
+     /tmp/ccCH7KaV.s:898    .text.dyn1_execute:00000000000000d0 $d
+     /tmp/ccCH7KaV.s:913    .text.thread:0000000000000000 thread
+     /tmp/ccCH7KaV.s:908    .text.thread:0000000000000000 $t
+     /tmp/ccCH7KaV.s:923    .text.dyn1_setup:0000000000000000 $t
+     /tmp/ccCH7KaV.s:928    .text.dyn1_setup:0000000000000000 dyn1_setup
+     /tmp/ccCH7KaV.s:939    .text.dyn1_setup:000000000000000c $d
+     /tmp/ccCH7KaV.s:943    .text.dyn3_setup:0000000000000000 $t
+     /tmp/ccCH7KaV.s:948    .text.dyn3_setup:0000000000000000 dyn3_setup
+     /tmp/ccCH7KaV.s:959    .text.dyn3_setup:000000000000000c $d
+     /tmp/ccCH7KaV.s:963    .text.dyn2_execute:0000000000000000 $t
+     /tmp/ccCH7KaV.s:968    .text.dyn2_execute:0000000000000000 dyn2_execute
+     /tmp/ccCH7KaV.s:1062   .text.dyn2_execute:00000000000000cc $d
+     /tmp/ccCH7KaV.s:1075   .text.dyn2_setup:0000000000000000 $t
+     /tmp/ccCH7KaV.s:1080   .text.dyn2_setup:0000000000000000 dyn2_setup
+     /tmp/ccCH7KaV.s:1091   .text.dyn2_setup:000000000000000c $d
+     /tmp/ccCH7KaV.s:1094   .text.regfind:0000000000000000 $t
+     /tmp/ccCH7KaV.s:1099   .text.regfind:0000000000000000 regfind
+     /tmp/ccCH7KaV.s:1120   .text.dyn3_execute:0000000000000000 $t
+     /tmp/ccCH7KaV.s:1125   .text.dyn3_execute:0000000000000000 dyn3_execute
+     /tmp/ccCH7KaV.s:1248   .text.dyn3_execute:000000000000012c $d
+     /tmp/ccCH7KaV.s:1325   .rodata.patterndyn:0000000000000000 patterndyn
+     /tmp/ccCH7KaV.s:1279   .rodata.testdyn3:0000000000000000 testdyn3
+     /tmp/ccCH7KaV.s:1270   .rodata.testdyn2:0000000000000000 testdyn2
+     /tmp/ccCH7KaV.s:1261   .rodata.testdyn1:0000000000000000 testdyn1
+     /tmp/ccCH7KaV.s:1258   .rodata.testdyn1:0000000000000000 $d
+     /tmp/ccCH7KaV.s:1267   .rodata.testdyn2:0000000000000000 $d
+     /tmp/ccCH7KaV.s:1276   .rodata.testdyn3:0000000000000000 $d
+     /tmp/ccCH7KaV.s:1285   .bss.mp1:0000000000000000 $d
+     /tmp/ccCH7KaV.s:1289   .bss.mp1:0000000000000000 mp1
+     /tmp/ccCH7KaV.s:1292   .rodata.str1.4:0000000000000000 $d
+     /tmp/ccCH7KaV.s:1322   .rodata.patterndyn:0000000000000000 $d
+     /tmp/ccCH7KaV.s:1331   .bss.heap1:0000000000000000 $d
+     /tmp/ccCH7KaV.s:1335   .bss.heap1:0000000000000000 heap1
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccsa2nyi.s:942    .text.dyn1_setup:0000000000000014 $t
-     /tmp/ccsa2nyi.s:962    .text.dyn3_setup:0000000000000014 $t
-     /tmp/ccsa2nyi.s:1074   .text.dyn2_execute:00000000000000f8 $t
-     /tmp/ccsa2nyi.s:1257   .text.dyn3_execute:000000000000013c $t
+     /tmp/ccCH7KaV.s:942    .text.dyn1_setup:0000000000000014 $t
+     /tmp/ccCH7KaV.s:962    .text.dyn3_setup:0000000000000014 $t
+     /tmp/ccCH7KaV.s:1074   .text.dyn2_execute:00000000000000f8 $t
+     /tmp/ccCH7KaV.s:1257   .text.dyn3_execute:000000000000013c $t
 
 UNDEFINED SYMBOLS
 chHeapStatus
@@ -4409,7 +4409,7 @@ test_emit_token
 chHeapObjectInit
 test
 chPoolFree
-ARM GAS  /tmp/ccsa2nyi.s 			page 75
+ARM GAS  /tmp/ccCH7KaV.s 			page 75
 
 
 chThdCreateFromMemoryPool

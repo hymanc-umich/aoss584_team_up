@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccdQxGOX.s 			page 1
+ARM GAS  /tmp/ccsGIVX6.s 			page 1
 
 
    1              	# 1 "/home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s"
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccdQxGOX.s 			page 1
   12              	    ChibiOS/RT is distributed in the hope that it will be useful,
   13              	    but WITHOUT ANY WARRANTY; without even the implied warranty of
   14              	    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-ARM GAS  /tmp/ccdQxGOX.s 			page 2
+ARM GAS  /tmp/ccsGIVX6.s 			page 2
 
 
   15              	    GNU General Public License for more details.
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccdQxGOX.s 			page 1
   69              	
   70              	/**
   71              	 * @name    Cortex-M variants
-ARM GAS  /tmp/ccdQxGOX.s 			page 3
+ARM GAS  /tmp/ccsGIVX6.s 			page 3
 
 
   72              	 * @{
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccdQxGOX.s 			page 1
  125              	/*===========================================================================*/
  126              	
  127              	/* The following code is not processed when the file is included from an
-ARM GAS  /tmp/ccdQxGOX.s 			page 4
+ARM GAS  /tmp/ccsGIVX6.s 			page 4
 
 
  128              	   asm module.*/
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccdQxGOX.s 			page 1
  182              	 */
  183              	#define CORTEX_PRIORITY_LEVELS          (1 << CORTEX_PRIORITY_BITS)
  184              	
-ARM GAS  /tmp/ccdQxGOX.s 			page 5
+ARM GAS  /tmp/ccsGIVX6.s 			page 5
 
 
  185              	/**
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccdQxGOX.s 			page 1
   47              	                .syntax unified
   48              	                .cpu    cortex-m4
   49              	#if CORTEX_USE_FPU
-ARM GAS  /tmp/ccdQxGOX.s 			page 6
+ARM GAS  /tmp/ccsGIVX6.s 			page 6
 
 
   50              	                .fpu    fpv4-sp-d16
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccdQxGOX.s 			page 1
  104              	 *
  105              	 * Exception handlers return here for context switching.
  106              	 *--------------------------------------------------------------------------*/
-ARM GAS  /tmp/ccdQxGOX.s 			page 7
+ARM GAS  /tmp/ccsGIVX6.s 			page 7
 
 
  107              	                .thumb_func
@@ -389,7 +389,7 @@ ARM GAS  /tmp/ccdQxGOX.s 			page 1
  132 002a 00DF     	                svc     #0
  133              	#endif /* !CORTEX_SIMPLIFIED_PRIORITY */
  134 002c FEE7     	.L1:            b       .L1
-ARM GAS  /tmp/ccdQxGOX.s 			page 8
+ARM GAS  /tmp/ccsGIVX6.s 			page 8
 
 
 DEFINED SYMBOLS

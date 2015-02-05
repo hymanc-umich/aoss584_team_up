@@ -24,6 +24,7 @@
 
 #define NSAMPLES 30
 
+static THD_WORKING_AREA(waGps, 256);
 
 /* Accelerometer Measurement */
 typedef struct
@@ -56,6 +57,8 @@ MMCDriver MMCD1;
  */
 static void accCallback(ADCDriver *adcd, adcsample_t *buf, size_t n)
 {
+    (void) adcd;
+    (void) n;
     ACC.x = buf[0];
     ACC.y = buf[1];
     ACC.z = buf[2];
@@ -66,6 +69,8 @@ static void accCallback(ADCDriver *adcd, adcsample_t *buf, size_t n)
  */
 static void anaSensorCallback(ADCDriver *adcd, adcsample_t *buf, size_t n)
 {
+    (void) adcd;
+    (void) n;
     SENSORS.temp[0] = buf[2];
     SENSORS.temp[1] = buf[3];
     SENSORS.press = buf[1];
@@ -170,8 +175,9 @@ void initialize(void)
     /* Real Time Clock */
     //rtcGetTime(&RTCD1, &timespec);
     
-    /* GPS Startup */
-    gpsStart(&UARTD1, &SD2);
+    /* GPS Driver Startup */
+    gpsStart(&UARTD1);
+    
     /* VCP Serial Port Startup */
     sdStart(&SD2, &serCfg);	// Activate VCP USART2 driver
     
@@ -238,24 +244,24 @@ void printData(void)
 		SENSORS.temp[0], SENSORS.temp[1], SENSORS.press, SENSORS.humd); 
 }
 
+
 /*
  * Application entry point.
  */
 int main(void) 
 {
     initialize(); // Initialize OS/Peripherals
+    gpsThread_t gpsThd;
     
-    uint8_t serialIn;
-    uint16_t serialLen;
-    
-    char buffer[100]; // Buffer for misc things
     
     uint32_t timeCounter = 0;
+    chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd);
     
+    gpsLocation_t location;
     while (TRUE) 
     {
 
-	// TODO: Check for new GPS NMEA sentence
+	gpsGetLocation(&location);// TODO: Check for new GPS NMEA sentence
 	
 	// Perform sensor ADC reads
 	adcConvert(&ADCD1, &accelConvGrp, accSamples, ADC_BUF_DEPTH);

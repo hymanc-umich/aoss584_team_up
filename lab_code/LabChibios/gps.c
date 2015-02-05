@@ -9,6 +9,10 @@
 #include "gps.h"
 #include <string.h>
 #include <stdlib.h>
+#include "chbsem.h"
+
+#define DEBUG_GPS
+#define DEBUG_SERIAL &SD2
 
 /**
  * @brief GPS Receiver interface struct
@@ -28,7 +32,9 @@ typedef struct gpsThread gpsThread_t;
 
 static gpsReceiver_t GPS;
 
-static SerialDriver *DEBUG;
+#ifdef DEBUG_GPS
+    static SerialDriver *DEBUG = DEBUG_SERIAL;
+#endif
 
 binary_semaphore_t gpsSem;
 
@@ -136,16 +142,14 @@ static UARTConfig serGpsCfg = {
 /**
  * @brief GPS interface startup
  * @param gpsUART GPS UART driver
- * @param debug Debug serial driver
  * @return Initialization success status
  */
-int8_t gpsStart(UARTDriver *gpsUart, SerialDriver *debug)
+int8_t gpsStart(UARTDriver *gpsUart)
 {
     if(gpsUart == NULL)
 	return -1;
     GPS.gpsUart = gpsUart;
-    chMtxInit(&(GPS.dataMutex));
-    DEBUG = debug;
+    chMtxObjectInit(&(GPS.dataMutex));
     uartStart(GPS.gpsUart, &serGpsCfg); // Start GPS Serial port
     return 0;
 }
@@ -297,7 +301,7 @@ msg_t gpsThread(void *arg)
 {
     gpsThread_t *thread = (gpsThread_t *) arg;
     msg_t message;
-    chBSemInit(&gpsSem, false);
+    chBSemObjectInit(&gpsSem, false);
     // GPS Loop
     while(thread->running)
     {

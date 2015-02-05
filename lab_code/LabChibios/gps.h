@@ -68,9 +68,10 @@ struct gpsThread
     uint16_t sleepTime;
     bool running;
 };
+typedef struct gpsThread gpsThread_t;
 
 /**  Function Declarations */
-int8_t gpsStart(UARTDriver *gpsUart, SerialDriver *debug); 
+int8_t gpsStart(UARTDriver *gpsUart); 
 sentenceType_t gpsParseNMEAType(char *nmeaStr);
 int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc);
 uint8_t gpsNMEAChecksum(char *nmeaStr);
