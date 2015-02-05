@@ -24,7 +24,7 @@
 
 #define NSAMPLES 30
 
-static THD_WORKING_AREA(waGps, 256);
+static THD_WORKING_AREA(waGps, 512);
 
 /* Accelerometer Measurement */
 typedef struct

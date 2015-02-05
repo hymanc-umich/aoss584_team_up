@@ -48,17 +48,17 @@ typedef enum
 }sentenceType_t;
 
 /**
- * @brief GPS Location container
+ * @brief GPS Location string container
  */
-struct gpsLocation
+struct gpsLocationStr
 {
-    uint32_t 	time;		// Time hhmmssss
-    int32_t 	latitude;	// Latitude
-    int32_t 	longitude;	// Longitude
-    int32_t 	altitude;	// Altitude
-    uint8_t 	satCount;	// Satellite count
+    char time[12];
+    char latitude[15];
+    char longitude[15];
+    char altitude[8];
+    char satCount[3];
 };
-typedef struct gpsLocation gpsLocation_t;
+typedef struct gpsLocationStr gpsLocation_t;
 
 /**
  * @brief GPS thread structure
@@ -73,15 +73,15 @@ typedef struct gpsThread gpsThread_t;
 /**  Function Declarations */
 int8_t gpsStart(UARTDriver *gpsUart); 
 sentenceType_t gpsParseNMEAType(char *nmeaStr);
-int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc);
+int8_t gpsParseFixStr(char *nmeaGGAStr, gpsLocation_t *loc);
 uint8_t gpsNMEAChecksum(char *nmeaStr);
 msg_t gpsThread(void *arg);
 
 // Thread safe data accessors
-int32_t gpsGetLatitude(void);
-int32_t gpsGetLongitude(void);
-int32_t gpsGetAltitude(void);
-uint32_t gpsGetTime(void);
-uint8_t gpsGetSatellites(void);
-void gpsGetLocation(gpsLocation_t *dest);
+void gpsGetLatitude(char *dest);
+void gpsGetLongitude(char *dest);
+void gpsGetAltitude(char *dest);
+void gpsGetTime(char *dest);
+void gpsGetSatellites(char *dest);
+void gpsGetLocationStr(gpsLocation_t *dest);
 #endif

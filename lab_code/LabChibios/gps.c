@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include "chbsem.h"
 
-#define DEBUG_GPS
+//#define DEBUG_GPS
 #define DEBUG_SERIAL &SD2
 
 /**
@@ -226,70 +226,90 @@ sentenceType_t gpsParseNMEAType(char *nmeaStr)
  * @param loc Location to store to
  * @return Parse success status
  */
+
 int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 {
     // Verify GGA Sentence
     if(strncmp(nmeaGGAStr+3, NMEA_FIX_DATA, 3)) 
 	return -1;
-    
-    char buffer[16];
     // Parse sentence
-    char * itok = strtok(nmeaGGAStr,",");
     uint8_t i = 0;
-    chMtxLock(&(GPS.dataMutex));
-    while((itok != NULL) && (i < 8))
+    char tokBuf[17];
+    uint8_t pos = 7;
+    uint8_t bufferCount;
+    for(i = 1; i<10; i++)
     {
+	bufferCount = 0;
+	while((nmeaGGAStr[pos] != ',') 
+	    && (nmeaGGAStr[pos] != '\0') 
+	    && (bufferCount < 16))
+	{
+	    tokBuf[bufferCount++] = nmeaGGAStr[pos++];
+	}
+	tokBuf[bufferCount] = '\0';
+	pos++;
 	switch(i)
 	{
 	    case 1: // Time
-		// HHMMSS
-		strncpy(buffer, itok, 6);
-		loc->time = atoi(buffer);
+		// HHMMSS.SS
+		if(strlen(tokBuf) > 0))
+		{
+		    loc->time[0] = tokBuf[0]; // H1
+		    loc->time[1] = tokBuf[1]; // H2
+		    loc->time[2] = ':';
+		    loc->time[3] = tokBuf[2]; // M1
+		    loc->time[4] = tokBuf[3]; // M2
+		    loc->time[5] = ':';
+		    loc->time[6] = tokBuf[4]; // S1
+		    loc->time[7] = tokBuf[5]; // S2
+		    loc->time[8] = '.';
+		    loc->time[9] = tokBuf[7];  // MS1
+		    loc->time[10] = tokBuf[8]; // MS2
+		    loc->time[11] = '\0';
+		}
+		else
+		    loc->time[0] = '\0';
+		strcpy(loc->time,tokBuf);
 		break;
-	    case 2: // Latitude
-		strncpy(buffer, itok, 4);
-		strncpy(buffer+4, itok+5,2);
-		loc->latitude = atoi(buffer);
+	    case 2: // Latitude;
+		strcpy(loc->latitude, tokBuf);
 		break;
 	    case 3: // Latitude Hemisphere
-		if(strncmp(itok, "S", 1) == 0)
-		    loc->latitude = -1 * loc->latitude;
+		strcat(loc->latitude, tokBuf);
 		break;
 	    case 4: // Longitude
-		strncpy(buffer, itok, 5);
-		strncpy(buffer+5, itok+6, 2);
-		loc->longitude = atoi(buffer);
+		strcpy(loc->longitude, tokBuf);
 		break;
 	    case 5: // Longitude Hemisphere
-		if(strncmp(itok, "W", 1) == 0)
-		    loc->longitude = -1 * loc->latitude;
+		strcat(loc->longitude, tokBuf);
 		break;
 	    case 6: // Quality Indicator (Do nothing for now)
 		break;
 	    case 7: // Satellite count
-		strncpy(buffer, itok, 1);
-		loc->satCount = atoi(buffer);
+		strcpy(loc->satCount, tokBuf);
+		break;
+	    case 8: // HDOP
+		break;
+	    case 9: // Altitude
+		strcpy(loc->altitude, tokBuf);
 		break;
 	    default:
 		break;
 	}
-	itok = strtok(NULL,",");
-	i++;
-	// 
     }
-    chMtxUnlock(&(GPS.dataMutex));
     return 0;
 }
 
 /**
  * @brief Computes the NMEA-0183 sentence checksum
+ * @param nmeaStr String to parse checksum
  */
 uint8_t gpsNMEAChecksum(char *nmeaStr)
 {
     uint8_t checksum = 0;
     nmeaStr++; // Skip initial character
     while(*nmeaStr)
-	checksum ^= *nmeaStr++;
+	checksum ^= *(nmeaStr++);
     return checksum;
 }
 
@@ -310,7 +330,9 @@ msg_t gpsThread(void *arg)
 	// Parse Fix data if sentence is correct
 	if(gpsParseNMEAType(gpsGetActiveRxBuffer()) == FIX_DATA)
 	{
+	    chMtxLock(&(GPS.mutex));
 	    gpsParseFix(gpsGetActiveRxBuffer(), &(GPS.location));
+	    chMtxUnlock(&(GPS.mutex));
 	}
     }
     gpsStop(&GPS);
@@ -319,62 +341,57 @@ msg_t gpsThread(void *arg)
 
 /**
  * @brief Thread safe accessor for GPS latitude
- * @return GPS latitude (integerized)
+ * @param dest GPS return latitude DDMMM.MMMMMN
  */
-int32_t gpsGetLatitude(void)
+void gpsGetLatitude(char *dest)
 {
     chMtxLock((&GPS.dataMutex));
-    int32_t latitude = GPS.location.latitude;
+    strcpy(dest, GPS.location.latitude);
     chMtxUnlock((&GPS.dataMutex));
-    return latitude;
 }
 
 /**
  * @brief Thread safe accessor for GPS longitude
- * @return GPS longitude (integerized)
+ * @param GPS return longitude DDDMMM.MMMMMW
  */
-int32_t gpsGetLongitude(void)
+void gpsGetLongitude(char *dest)
 {
     chMtxLock(&(GPS.dataMutex));
-    int32_t longitude = GPS.location.longitude;
+    strcpy(dest, GPS.location.longitude);
     chMtxUnlock(&(GPS.dataMutex));
-    return longitude;
 }
 
 /**
  * @brief Thread safe accessor for GPS altitude
- * @return GPS altitude (integerized)
+ * @param dest GPS return altitude in receiver units, typ. meters
  */
-int32_t gpsGetAltitude(void)
+void gpsGetAltitude(char *dest)
 {
     chMtxLock(&(GPS.dataMutex));
-    int32_t altitude = GPS.location.altitude;
+    strcpy(dest, GPS.location.altitude);
     chMtxUnlock(&(GPS.dataMutex));
-    return altitude;
 }
 
 /**
  * @brief Thread safe accessor for GPS time
- * @return GPS time (hhmmss)
+ * @param dest GPS return time (hh:mm:ss.ss)
  */
-uint32_t gpsGetTime(void)
+void gpsGetTime(char *dest)
 {
     chMtxLock(&(GPS.dataMutex));
-    uint32_t time = GPS.location.time;
+    strcpy(dest, GPS.location.time);
     chMtxUnlock(&(GPS.dataMutex));
-    return time;
 }
 
 /**
  * @brief Thread safe accessor for GPS satellite count
- * @return Number of visible GPS satellites
+ * @param dest Number of visible GPS satellites return
  */
-uint8_t gpsGetSatellites(void)
+void gpsGetSatellites(char *dest)
 {
     chMtxLock(&(GPS.dataMutex));
-    uint8_t satCount = GPS.location.satCount;
+    strcpy(dest, GPS.location.satCount);
     chMtxUnlock(&(GPS.dataMutex));
-    return satCount;
 }
 
 /**
@@ -384,10 +401,10 @@ uint8_t gpsGetSatellites(void)
 void gpsGetLocation(gpsLocation_t *dest)
 {
     chMtxLock(&(GPS.dataMutex));
-    dest->latitude  = GPS.location.latitude;
-    dest->longitude = GPS.location.longitude;
-    dest->altitude  = GPS.location.altitude;
-    dest->time      = GPS.location.time;
-    dest->satCount  = GPS.location.satCount;
+    strcpy(dest->latitude  , GPS.location.latitude);
+    strcpy(dest->longitude , GPS.location.longitude);
+    strcpy(dest->altitude  , GPS.location.altitude);
+    strcpy(dest->time      , GPS.location.time);
+    strcpy(dest->satCount  , GPS.location.satCount);
     chMtxUnlock(&(GPS.dataMutex));
 }

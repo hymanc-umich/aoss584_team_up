@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccDVMGmI.s 			page 1
+ARM GAS  /tmp/ccVKoyCo.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"chevents.c"
-  17              		.section	.gnu.lto_.jmpfuncs.a83ca9317d739591,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.2cdcd5aae6ce50ae,"",%progbits
   18 0000 789C6D8C 		.ascii	"x\234m\214\335\021\200 \014\203\223\326_P\221\355\\"
   18      DD118020 
   18      0C8393D6 
@@ -46,7 +46,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   23      8B70039E 
   23      950B1B
   24              		.text
-  25              		.section	.gnu.lto_.inline.a83ca9317d739591,"",%progbits
+  25              		.section	.gnu.lto_.inline.2cdcd5aae6ce50ae,"",%progbits
   26 0000 789C8552 		.ascii	"x\234\205R\277K\034A\024\376\336\333\331\331\037\267"
   26      BF4B1C41 
   26      14FEDEDB 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   27      75421A
   28 0023 214D8829 		.ascii	"!M\210)\362'\004\256SR\204M*\261\220kl%e0\020\266\011"
   28      F22704AE 
-ARM GAS  /tmp/ccDVMGmI.s 			page 2
+ARM GAS  /tmp/ccVKoyCo.s 			page 2
 
 
   28      5352844D 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   39      F502D79D 
   39      36A3A3C4 
   39      0B20F71B 
-ARM GAS  /tmp/ccDVMGmI.s 			page 3
+ARM GAS  /tmp/ccVKoyCo.s 			page 3
 
 
   40 0108 6FA1FE7D 		.ascii	"o\241\376}\347.\342a\023\304NG+v\335\253{1\222\025\201"
@@ -165,7 +165,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   48      EF57C31D 
   49 01ae 8D4B6AB8 		.ascii	"\215Kj\270"
   50              		.text
-  51              		.section	.gnu.lto_.pureconst.a83ca9317d739591,"",%progbits
+  51              		.section	.gnu.lto_.pureconst.2cdcd5aae6ce50ae,"",%progbits
   52 0000 789C6362 		.ascii	"x\234cb`bPf\200\000A\006+&+f+\026+V+6)v)\016+N+.)nI"
   52      60625066 
   52      80004106 
@@ -177,8 +177,8 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   53      0048F804 
   53      2A
   54              		.text
-  55              		.section	.gnu.lto_chEvtRegisterMaskWithFlags.a83ca9317d739591,"",%progbits
-ARM GAS  /tmp/ccDVMGmI.s 			page 4
+  55              		.section	.gnu.lto_chEvtRegisterMaskWithFlags.2cdcd5aae6ce50ae,"",%progbits
+ARM GAS  /tmp/ccVKoyCo.s 			page 4
 
 
   56 0000 789C8D92 		.ascii	"x\234\215\222?h\024A\024\306\2777\263\353\255\227\034"
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   67      B373C796 
   67      F50E2B1F 
   67      3F
-ARM GAS  /tmp/ccDVMGmI.s 			page 5
+ARM GAS  /tmp/ccVKoyCo.s 			page 5
 
 
   68 00dc 6DDE3B67 		.ascii	"m\336;gS\206\344\314\340\024\033]\307CF\335\220\244"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   78      BACD6B8A 
   79 01a4 D251EDC4 		.ascii	"\322Q\355\304\347\375\240\0274;\355Y\037s\377C\202\233"
   79      E7FDA017 
-ARM GAS  /tmp/ccDVMGmI.s 			page 6
+ARM GAS  /tmp/ccVKoyCo.s 			page 6
 
 
   79      343BED59 
@@ -319,7 +319,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   82      9225FC04 
   83 01e7 1DA4CE55 		.ascii	"\035\244\316U"
   84              		.text
-  85              		.section	.gnu.lto_chEvtUnregister.a83ca9317d739591,"",%progbits
+  85              		.section	.gnu.lto_chEvtUnregister.2cdcd5aae6ce50ae,"",%progbits
   86 0000 789C8D50 		.ascii	"x\234\215P\315KTQ\024\377\235{\337\3070\030\264h\341"
   86      CD4B5451 
   86      14FF9D7B 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
   93      99A415C1 
   93      7A2CA228 
   93      0C424348 
-ARM GAS  /tmp/ccDVMGmI.s 			page 7
+ARM GAS  /tmp/ccVKoyCo.s 			page 7
 
 
   94 0096 362D6ADC 		.ascii	"6-j\334\241\270\321s\361\352\333\321\321\306\352\334"
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  105      9152EB7F 
  106 016d F79EA3C7 		.ascii	"\367\236\243\307\\*\3363\272\366\234\243\026\365\353"
  106      5C2ADE33 
-ARM GAS  /tmp/ccDVMGmI.s 			page 8
+ARM GAS  /tmp/ccVKoyCo.s 			page 8
 
 
  106      BAF69CA3 
@@ -454,7 +454,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  112      0F9DC4
  113 01e9 AD59     		.ascii	"\255Y"
  114              		.text
- 115              		.section	.gnu.lto_chEvtGetAndClearEvents.a83ca9317d739591,"",%progbits
+ 115              		.section	.gnu.lto_chEvtGetAndClearEvents.2cdcd5aae6ce50ae,"",%progbits
  116 0000 789C8D51 		.ascii	"x\234\215QAk\023Q\020\376\346m\222M+B\361P\364R\026"
  116      416B1351 
  116      10FEE66D 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  120      F3DE6E82 
  120      7A50DFB2 
  120      33B333F3 
-ARM GAS  /tmp/ccDVMGmI.s 			page 9
+ARM GAS  /tmp/ccVKoyCo.s 			page 9
 
 
  120      7DF3
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  132      ED3E61CA 
  132      5281A918 
  132      728E
-ARM GAS  /tmp/ccDVMGmI.s 			page 10
+ARM GAS  /tmp/ccVKoyCo.s 			page 10
 
 
  133 0134 0718A893 		.ascii	"\007\030\250\223@D\037\322\332o\015\367 \031F\315\231"
@@ -593,12 +593,12 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  142      8C
  143 01e7 ACE3     		.ascii	"\254\343"
  144              		.text
- 145              		.section	.gnu.lto_chEvtAddEvents.a83ca9317d739591,"",%progbits
+ 145              		.section	.gnu.lto_chEvtAddEvents.2cdcd5aae6ce50ae,"",%progbits
  146 0000 789C8D51 		.ascii	"x\234\215Q=K\003A\020}\263\227/\261\320R\013C\032\033"
  146      3D4B0341 
  146      107DB397 
  146      2FB1D052 
-ARM GAS  /tmp/ccDVMGmI.s 			page 11
+ARM GAS  /tmp/ccVKoyCo.s 			page 11
 
 
  146      0B431A1B 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  158 00df 123EBC35 		.ascii	"\022>\2745\205\302\216\256X\011\207\265@\306o\224\375"
  158      85C28EAE 
  158      580987B5 
-ARM GAS  /tmp/ccDVMGmI.s 			page 12
+ARM GAS  /tmp/ccVKoyCo.s 			page 12
 
 
  158      40C66F94 
@@ -709,7 +709,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  167      05E93F91 
  167      E4
  168              		.text
- 169              		.section	.gnu.lto_chEvtGetAndClearFlags.a83ca9317d739591,"",%progbits
+ 169              		.section	.gnu.lto_chEvtGetAndClearFlags.2cdcd5aae6ce50ae,"",%progbits
  170 0000 789C8D50 		.ascii	"x\234\215P;H\003A\020\235\331K\374\024\202`c\0329\004"
  170      3B480341 
  170      109DD94B 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  171 0014 2B252B82 		.ascii	"+%+\202\245 \010\202E\032\243\240\225\\6gr\350%r\227"
  171      A5200882 
  171      451AA3A0 
-ARM GAS  /tmp/ccDVMGmI.s 			page 13
+ARM GAS  /tmp/ccVKoyCo.s 			page 13
 
 
  171      955C3667 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  183      9C391443 
  183      E46E0F76 
  183      89DF1443 
-ARM GAS  /tmp/ccDVMGmI.s 			page 14
+ARM GAS  /tmp/ccVKoyCo.s 			page 14
 
 
  183      45EA34BB 
@@ -823,7 +823,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  191      37E8
  192 0198 E59523   		.ascii	"\345\225#"
  193              		.text
- 194              		.section	.gnu.lto_chEvtSignalI.a83ca9317d739591,"",%progbits
+ 194              		.section	.gnu.lto_chEvtSignalI.2cdcd5aae6ce50ae,"",%progbits
  195 0000 789CAD52 		.ascii	"x\234\255R\275kTA\020\237\331}_\367\336I,\222\302B\320"
  195      BD6B5441 
  195      109FD97D 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  197      922B6217 
  197      521D49A3 
  197      AD450E02 
-ARM GAS  /tmp/ccDVMGmI.s 			page 15
+ARM GAS  /tmp/ccVKoyCo.s 			page 15
 
 
  198 003b 161E09C1 		.ascii	"\026\036\011\301\257(^%W\035)bc\221\322\017$\316\354"
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  209      6FB43161 
  209      F386E19A 
  209      42FBE4
-ARM GAS  /tmp/ccDVMGmI.s 			page 16
+ARM GAS  /tmp/ccVKoyCo.s 			page 16
 
 
  210 011c BA44C01B 		.ascii	"\272D\300\033\330\375Z=\327+\341\024\364S\017\225C\011"
@@ -958,13 +958,13 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  221      4B11ED
  222 01ee E7E7F2B3 		.ascii	"\347\347\362\263\225\362\215\010\376\000eS\305G"
  222      95F28D08 
-ARM GAS  /tmp/ccDVMGmI.s 			page 17
+ARM GAS  /tmp/ccVKoyCo.s 			page 17
 
 
  222      FE006553 
  222      C547
  223              		.text
- 224              		.section	.gnu.lto_chEvtBroadcastFlagsI.a83ca9317d739591,"",%progbits
+ 224              		.section	.gnu.lto_chEvtBroadcastFlagsI.2cdcd5aae6ce50ae,"",%progbits
  225 0000 789C8D53 		.ascii	"x\234\215S\315k\023A\024\177ofgw\223lJ\274\350\305C"
  225      CD6B1341 
  225      147F6F66 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  235      41F49124 
  235      1E417010 
  235      4E9283FD 
-ARM GAS  /tmp/ccDVMGmI.s 			page 18
+ARM GAS  /tmp/ccVKoyCo.s 			page 18
 
 
  235      E1C6
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  247      C8A91167 
  247      9DBA3BFB 
  248 01a3 372F4F79 		.ascii	"7/Oy\033k\337\263IY_X\226\211\313\356\357\2427yP\257"
-ARM GAS  /tmp/ccDVMGmI.s 			page 19
+ARM GAS  /tmp/ccVKoyCo.s 			page 19
 
 
  248      1B6BDFB3 
@@ -1124,7 +1124,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  256      36CBB7D5 
  256      A3
  257              		.text
- 258              		.section	.gnu.lto_chEvtSignal.a83ca9317d739591,"",%progbits
+ 258              		.section	.gnu.lto_chEvtSignal.2cdcd5aae6ce50ae,"",%progbits
  259 0000 789C8D50 		.ascii	"x\234\215P=K\003A\020\235\331\315\251\244J\251M\270"
  259      3D4B0341 
  259      109DD9CD 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  261 0023 E8DDC9DD 		.ascii	"\350\335\311\335%\030Dr\361\003E\020\023\260\260\261"
  261      25184472 
  261      F1034510 
-ARM GAS  /tmp/ccDVMGmI.s 			page 20
+ARM GAS  /tmp/ccVKoyCo.s 			page 20
 
 
  261      13B0B0B1 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  272      0C662136 
  272      06B5211A 
  273 0105 C5CAAE2D 		.ascii	"\305\312\256-\030w\2135V\024U\306\313\262 ]\237\005"
-ARM GAS  /tmp/ccDVMGmI.s 			page 21
+ARM GAS  /tmp/ccVKoyCo.s 			page 21
 
 
  273      18778B35 
@@ -1225,7 +1225,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  277      7A35F804 
  277      6DCA7C0D 
  278              		.text
- 279              		.section	.gnu.lto_chEvtBroadcastFlags.a83ca9317d739591,"",%progbits
+ 279              		.section	.gnu.lto_chEvtBroadcastFlags.2cdcd5aae6ce50ae,"",%progbits
  280 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\306\310\3000\021H32302M8\307"
  280      60624007 
  280      92401CC6 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  285      721933C4 
  286 0079 720CED8C 		.ascii	"r\014\355\214s\033f8dB,\215`\314ddT\000\261\340\362"
  286      731B6638 
-ARM GAS  /tmp/ccDVMGmI.s 			page 22
+ARM GAS  /tmp/ccVKoyCo.s 			page 22
 
 
  286      64422C8D 
@@ -1318,12 +1318,12 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  298      06F6DCD4 
  298      DCFCA2
  299 015b 4A0600B4 		.ascii	"J\006\000\264\305|\257"
-ARM GAS  /tmp/ccDVMGmI.s 			page 23
+ARM GAS  /tmp/ccVKoyCo.s 			page 23
 
 
  299      C57CAF
  300              		.text
- 301              		.section	.gnu.lto_chEvtGetAndClearFlagsI.a83ca9317d739591,"",%progbits
+ 301              		.section	.gnu.lto_chEvtGetAndClearFlagsI.2cdcd5aae6ce50ae,"",%progbits
  302 0000 789C8590 		.ascii	"x\234\205\220\277K\303@\024\307\337\367\305\200\213"
  302      BF4BC340 
  302      14C7DFF7 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  313      6C4F3618 
  313      D295409D 
  314 00c5 6CE125BB 		.ascii	"l\341%\273\206\005\\\224\343\361|\312\245\362[\266\362"
-ARM GAS  /tmp/ccDVMGmI.s 			page 24
+ARM GAS  /tmp/ccVKoyCo.s 			page 24
 
 
  314      86055C94 
@@ -1403,7 +1403,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  318 0112 C91701C5 		.ascii	"\311\027\001\305Yy"
  318      5979
  319              		.text
- 320              		.section	.gnu.lto_chEvtDispatch.a83ca9317d739591,"",%progbits
+ 320              		.section	.gnu.lto_chEvtDispatch.2cdcd5aae6ce50ae,"",%progbits
  321 0000 789C8553 		.ascii	"x\234\205SMk\023Q\024\275\367\275y3\3234\375\242Et!"
  321      4D6B1351 
  321      14BDF7BD 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  327      8A6815C5 
  327      F76D53C8 
  327      DA7B82
-ARM GAS  /tmp/ccDVMGmI.s 			page 25
+ARM GAS  /tmp/ccVKoyCo.s 			page 25
 
 
  328 008b C0AA5A10 		.ascii	"\300\252Z\020X\314\232'\246\025!\015eZ\274r\217u\037"
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  339      CFB14107 
  339      5368
  340 015e 5769069B 		.ascii	"Wi\006\233\215\213\261p\030\371\375\242\217b.\031\322"
-ARM GAS  /tmp/ccDVMGmI.s 			page 26
+ARM GAS  /tmp/ccVKoyCo.s 			page 26
 
 
  340      8D8BB170 
@@ -1558,11 +1558,11 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  351      D6CBCC5E 
  351      95C03F72 
  351      59BCCB
-ARM GAS  /tmp/ccDVMGmI.s 			page 27
+ARM GAS  /tmp/ccVKoyCo.s 			page 27
 
 
  352              		.text
- 353              		.section	.gnu.lto_chEvtWaitOne.a83ca9317d739591,"",%progbits
+ 353              		.section	.gnu.lto_chEvtWaitOne.2cdcd5aae6ce50ae,"",%progbits
  354 0000 789C8D53 		.ascii	"x\234\215SMHTQ\024>\347\2767\3164\316\214\343Fj\321"
  354      4D485451 
  354      143EE7BE 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  365      985FA9D5 
  365      AECDFD58 
  365      1DC7A6
-ARM GAS  /tmp/ccDVMGmI.s 			page 28
+ARM GAS  /tmp/ccVKoyCo.s 			page 28
 
 
  366 00d6 2684144E 		.ascii	"&\204\024Na3\250d'\311\326\201\211j\020-\204\220{R\317"
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  377 01a2 B84D6F36 		.ascii	"\270Mo6j\353\302It{\324N\227\272\356Q\023#\377\277_"
  377      6AEBC249 
  377      747BD44E 
-ARM GAS  /tmp/ccDVMGmI.s 			page 29
+ARM GAS  /tmp/ccVKoyCo.s 			page 29
 
 
  377      97BAEE51 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  389      05ED4457 
  389      7767B766 
  390 028b F44B837D 		.ascii	"\364K\203}\234\2333\316\353\326\311\301\214\336\332"
-ARM GAS  /tmp/ccDVMGmI.s 			page 30
+ARM GAS  /tmp/ccVKoyCo.s 			page 30
 
 
  390      9C9B33CE 
@@ -1753,7 +1753,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  392      6E18FE00 
  392      2C221BCD 
  393              		.text
- 394              		.section	.gnu.lto_chEvtWaitAny.a83ca9317d739591,"",%progbits
+ 394              		.section	.gnu.lto_chEvtWaitAny.2cdcd5aae6ce50ae,"",%progbits
  395 0000 789C8D53 		.ascii	"x\234\215SMh\023Q\020\236y\273Mb~\332\036D\364`\010"
  395      4D681351 
  395      109E79BB 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  403      CBFD65BC 
  403      216727A7 
  403      E45A
-ARM GAS  /tmp/ccDVMGmI.s 			page 31
+ARM GAS  /tmp/ccVKoyCo.s 			page 31
 
 
  404 00a2 B3896822 		.ascii	"\263\211h\"\325;\200\240#\234\240\015\246\034\303\305"
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  415      FB9C430E 
  415      51858812 
  416 0177 34463D70 		.ascii	"4F=p\012\237\220\377N\3520\361t\342\264\017\211\020"
-ARM GAS  /tmp/ccDVMGmI.s 			page 32
+ARM GAS  /tmp/ccVKoyCo.s 			page 32
 
 
  416      0A9F90FF 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  427      A39A3E64 
  427      0E9AF982 
  427      56B44772 
-ARM GAS  /tmp/ccDVMGmI.s 			page 33
+ARM GAS  /tmp/ccVKoyCo.s 			page 33
 
 
  427      673472EC 
@@ -1945,7 +1945,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  432 029a 7F00FDF7 		.ascii	"\177\000\375\367\020U"
  432      1055
  433              		.text
- 434              		.section	.gnu.lto_chEvtWaitAll.a83ca9317d739591,"",%progbits
+ 434              		.section	.gnu.lto_chEvtWaitAll.2cdcd5aae6ce50ae,"",%progbits
  435 0000 789C8D51 		.ascii	"x\234\215QMh\023Q\020\236yo\223\324$\325x\021A,A\360"
  435      4D681351 
  435      109E796F 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  441      501B628C 
  441      B73220E2 
  441      5AEB2888 
-ARM GAS  /tmp/ccDVMGmI.s 			page 34
+ARM GAS  /tmp/ccVKoyCo.s 			page 34
 
 
  441      2447CDBF 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  453      D65F1F09 
  453      3847
  454 014c 3CA27122 		.ascii	"<\242q\"J\245\011\232AB\004\204\202}\266\241\361\246"
-ARM GAS  /tmp/ccDVMGmI.s 			page 35
+ARM GAS  /tmp/ccVKoyCo.s 			page 35
 
 
  454      4AA5099A 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  465      9DCA4E66 
  465      75AB
  466 0225 645CAB16 		.ascii	"d\\\253\026d\256c^1\354s\325\2221V\204\324T\366B:\237"
-ARM GAS  /tmp/ccDVMGmI.s 			page 36
+ARM GAS  /tmp/ccVKoyCo.s 			page 36
 
 
  466      64AE635E 
@@ -2112,7 +2112,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  467      01FE00
  468 024e 0C44E8AD 		.ascii	"\014D\350\255"
  469              		.text
- 470              		.section	.gnu.lto_chEvtWaitOneTimeout.a83ca9317d739591,"",%progbits
+ 470              		.section	.gnu.lto_chEvtWaitOneTimeout.2cdcd5aae6ce50ae,"",%progbits
  471 0000 789CAD54 		.ascii	"x\234\255TMH\024q\024\177\357?;\273\263\253\266~[P\313"
  471      4D481471 
  471      147FEF3F 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  480      D27A1439 
  480      BE288401 
  480      C3B834FD 
-ARM GAS  /tmp/ccDVMGmI.s 			page 37
+ARM GAS  /tmp/ccVKoyCo.s 			page 37
 
 
  480      FCEB0C
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  491      82
  492 018d 4C25F5DD 		.ascii	"L%\365\335\266>\315\362\3159O-<\331\342\344\254\230"
  492      B63ECDF2 
-ARM GAS  /tmp/ccDVMGmI.s 			page 38
+ARM GAS  /tmp/ccVKoyCo.s 			page 38
 
 
  492      CD394F2D 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  503      78660A69 
  504 026f 241EB78F 		.ascii	"$\036\267\217$\277\250|\362i\3476\230\024\026\220?R"
  504      24BFA87C 
-ARM GAS  /tmp/ccDVMGmI.s 			page 39
+ARM GAS  /tmp/ccVKoyCo.s 			page 39
 
 
  504      F269E736 
@@ -2330,7 +2330,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  514      FC0194F9 
  514      5B48
  515              		.text
- 516              		.section	.gnu.lto_chEvtWaitAnyTimeout.a83ca9317d739591,"",%progbits
+ 516              		.section	.gnu.lto_chEvtWaitAnyTimeout.2cdcd5aae6ce50ae,"",%progbits
  517 0000 789CAD54 		.ascii	"x\234\255T[H\024a\024>\347\237\235\331\331\365~\243"
  517      5B481461 
  517      143EE79F 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  517      7EA3
  518 0012 1E4A1621 		.ascii	"\036J\026!\204\014'\213\240\350!!\010|\360%\223\352"
  518      840C278B 
-ARM GAS  /tmp/ccDVMGmI.s 			page 40
+ARM GAS  /tmp/ccVKoyCo.s 			page 40
 
 
  518      A0E82121 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  529      D793C919 
  529      9C
  530 00ee 9EF2EC42 		.ascii	"\236\362\354B\010\342\010\226PZ\212WH\031&E%\305\343"
-ARM GAS  /tmp/ccDVMGmI.s 			page 41
+ARM GAS  /tmp/ccVKoyCo.s 			page 41
 
 
  530      08E20896 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  541      5A94A0A7 
  541      5462B799 
  541      A72B
-ARM GAS  /tmp/ccDVMGmI.s 			page 42
+ARM GAS  /tmp/ccVKoyCo.s 			page 42
 
 
  542 01ca 09743D33 		.ascii	"\011t=3\266\360\364\300\367\035R:\314\203\370\230`-"
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  553      AE82
  554 0297 B1E8D8F3 		.ascii	"\261\350\330\363\356\246\342\210\312\203~\205\330\251"
  554      EEA6E288 
-ARM GAS  /tmp/ccDVMGmI.s 			page 43
+ARM GAS  /tmp/ccVKoyCo.s 			page 43
 
 
  554      CA837E85 
@@ -2556,7 +2556,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  561      FE02E121 
  561      526C
  562              		.text
- 563              		.section	.gnu.lto_chEvtWaitAllTimeout.a83ca9317d739591,"",%progbits
+ 563              		.section	.gnu.lto_chEvtWaitAllTimeout.2cdcd5aae6ce50ae,"",%progbits
  564 0000 789CAD54 		.ascii	"x\234\255TMHTQ\024>\347\375;\3524\012B-\222A\210 \303"
  564      4D485451 
  564      143EE7FD 
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  567      6D5A1408 
  567      5904
  568 0050 D339EFBD 		.ascii	"\3239\357\275y\215\0218\213.\314\275\347\376\234\357"
-ARM GAS  /tmp/ccDVMGmI.s 			page 44
+ARM GAS  /tmp/ccVKoyCo.s 			page 44
 
 
  568      798D1138 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  579      1EA66C6A 
  579      A7896B3D 
  580 012a B0501987 		.ascii	"\260P\031\207\273\031\333\016Y\250^\201\237\3665\216"
-ARM GAS  /tmp/ccDVMGmI.s 			page 45
+ARM GAS  /tmp/ccVKoyCo.s 			page 45
 
 
  580      BB19DB0E 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  591      FA96
  592 01f7 060DCF3A 		.ascii	"\006\015\317:F\330U\316\032-\014\361\355,|\3124\372"
  592      46D855CE 
-ARM GAS  /tmp/ccDVMGmI.s 			page 46
+ARM GAS  /tmp/ccVKoyCo.s 			page 46
 
 
  592      1A2D0CF1 
@@ -2757,8 +2757,8 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  603      EC83DF1D 
  603      922772
  604              		.text
- 605              		.section	.gnu.lto_.symbol_nodes.a83ca9317d739591,"",%progbits
-ARM GAS  /tmp/ccDVMGmI.s 			page 47
+ 605              		.section	.gnu.lto_.symbol_nodes.2cdcd5aae6ce50ae,"",%progbits
+ARM GAS  /tmp/ccVKoyCo.s 			page 47
 
 
  606 0000 789C4DC9 		.ascii	"x\234M\311INBQ\020\205\341:\267\036\257\241\357\334"
@@ -2818,11 +2818,11 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  617      D7CAA98F 
  617      81FC02
  618 00d2 A13E87A2 		.ascii	"\241>\207\242"
-ARM GAS  /tmp/ccDVMGmI.s 			page 48
+ARM GAS  /tmp/ccVKoyCo.s 			page 48
 
 
  619              		.text
- 620              		.section	.gnu.lto_.refs.a83ca9317d739591,"",%progbits
+ 620              		.section	.gnu.lto_.refs.2cdcd5aae6ce50ae,"",%progbits
  621 0000 789C6362 		.ascii	"x\234cb`bPe\200\000F bd\006b\026 \346\001b^ \346\003"
  621      60625065 
  621      80004620 
@@ -2833,7 +2833,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  622      12000E1D 
  622      009A
  623              		.text
- 624              		.section	.gnu.lto_.decls.a83ca9317d739591,"",%progbits
+ 624              		.section	.gnu.lto_.decls.2cdcd5aae6ce50ae,"",%progbits
  625 0000 789CBD5B 		.ascii	"x\234\275[{t\024U\232\257\252\356t'\004\003\212\272"
  625      7B741455 
  625      9AAFAAEE 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  633      A08850A0 
  633      19FE
  634 00a0 6E81B209 		.ascii	"n\201\262\011\312\223p\262\026\312R(\365P\032\240\254"
-ARM GAS  /tmp/ccDVMGmI.s 			page 49
+ARM GAS  /tmp/ccVKoyCo.s 			page 49
 
 
  634      CA9370B2 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  645 016b 6A8F0CC5 		.ascii	"j\217\014\305\253\247\373\325\016\2334P\256a\332\336"
  645      ABA7FBD5 
  645      0E9B3450 
-ARM GAS  /tmp/ccDVMGmI.s 			page 50
+ARM GAS  /tmp/ccVKoyCo.s 			page 50
 
 
  645      AE61DADE 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  657 0240 89F6F11D 		.ascii	"\211\366\361\035\255\037\343\304y\327\017\300\241\213"
  657      AD1FE3C4 
  657      79D70FC0 
-ARM GAS  /tmp/ccDVMGmI.s 			page 51
+ARM GAS  /tmp/ccVKoyCo.s 			page 51
 
 
  657      A18B
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  669      1F5C0EB5 
  670 0314 AED1B34D 		.ascii	"\256\321\263M\372m\313\007\264.\266\264\026\031\327"
  670      FA6DCB07 
-ARM GAS  /tmp/ccDVMGmI.s 			page 52
+ARM GAS  /tmp/ccVKoyCo.s 			page 52
 
 
  670      B42EB6B4 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  683      F2BF2897 
  683      9B
  684 03ed 670BB3BF 		.ascii	"g\013\263\277\374Y\253\250\327\015\227\305\235\240\200"
-ARM GAS  /tmp/ccDVMGmI.s 			page 53
+ARM GAS  /tmp/ccVKoyCo.s 			page 53
 
 
  684      FC59ABA8 
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  695      695E2A1C 
  696 04c0 C8CD6DCB 		.ascii	"\310\315m\313\274%\246\220\325}\014\273\237]D\272\357"
  696      BC25A690 
-ARM GAS  /tmp/ccDVMGmI.s 			page 54
+ARM GAS  /tmp/ccVKoyCo.s 			page 54
 
 
  696      D57D0CBB 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  707      D8D35EC0 
  707      C6BB
  708 0590 335BC982 		.ascii	"3[\311\202\325\372\006\2633{\203\005[\342\005l\242;"
-ARM GAS  /tmp/ccDVMGmI.s 			page 55
+ARM GAS  /tmp/ccVKoyCo.s 			page 55
 
 
  708      D5FA06B3 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  719      9FDCB7F2 
  719      6FF4
  720 0667 AC215AEB 		.ascii	"\254!Z\3537\307\235x6\235\013\337\335/\355+}\343\267"
-ARM GAS  /tmp/ccDVMGmI.s 			page 56
+ARM GAS  /tmp/ccVKoyCo.s 			page 56
 
 
  720      37C79D78 
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  731      F5678735 
  731      3C3CDDB7 
  732 0741 48AB3468 		.ascii	"H\2534h\235\352=k\235\212\\\363\360xo[\247\222\305\243"
-ARM GAS  /tmp/ccDVMGmI.s 			page 57
+ARM GAS  /tmp/ccVKoyCo.s 			page 57
 
 
  732      9DEA3D6B 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  744      E631759E 
  744      68B9
  745 0813 6A2DD99B 		.ascii	"j-\331\2333\315\016'\\\301\211\260\035\356\272\207%"
-ARM GAS  /tmp/ccDVMGmI.s 			page 58
+ARM GAS  /tmp/ccVKoyCo.s 			page 58
 
 
  745      33CD0E27 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  756      F6BEBAE4 
  756      7B99
  757 08e5 5DBDE65B 		.ascii	"]\275\346[\011\247Y\366\346\314b\022\333\344\005\221"
-ARM GAS  /tmp/ccDVMGmI.s 			page 59
+ARM GAS  /tmp/ccVKoyCo.s 			page 59
 
 
  757      09A759F6 
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  769 09b5 843F046C 		.ascii	"\204?\004l\337&\230\226s:\321\341\244\313\\'\351\253"
  769      DF269896 
  769      733AD1E1 
-ARM GAS  /tmp/ccDVMGmI.s 			page 60
+ARM GAS  /tmp/ccVKoyCo.s 			page 60
 
 
  769      A4CB5C27 
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  780      C14DA5BB 
  780      F8CA
  781 0a8c 5F8D4DB2 		.ascii	"_\215M\262f\323G\260E\203\253\362\255\314(mqF\210\273"
-ARM GAS  /tmp/ccDVMGmI.s 			page 61
+ARM GAS  /tmp/ccVKoyCo.s 			page 61
 
 
  781      66D347B0 
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  792      134DCEE7 
  792      091F
  793 0b62 9FD5DA52 		.ascii	"\237\325\332RE\036\022\235u\307f\343\247b\216o\177\210"
-ARM GAS  /tmp/ccDVMGmI.s 			page 62
+ARM GAS  /tmp/ccVKoyCo.s 			page 62
 
 
  793      451E129D 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  804      AF7EE22F 
  804      93
  805 0c3e F5328477 		.ascii	"\3652\204w\027#\255\334\374\345&E\3258\303\365\327\362"
-ARM GAS  /tmp/ccDVMGmI.s 			page 63
+ARM GAS  /tmp/ccVKoyCo.s 			page 63
 
 
  805      1723ADDC 
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  816      24D22F1B 
  817 0d11 C539F816 		.ascii	"\3059\370\026jA\220\274\203\231{\003\367\205\250;\220"
  817      6A4190BC 
-ARM GAS  /tmp/ccDVMGmI.s 			page 64
+ARM GAS  /tmp/ccVKoyCo.s 			page 64
 
 
  817      83997B03 
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  828      6F566168 
  828      F7CE16E7 
  829 0de0 610CBF80 		.ascii	"a\014\277\200\303\343\363\302\303\303\371\356Z/#\"M"
-ARM GAS  /tmp/ccDVMGmI.s 			page 65
+ARM GAS  /tmp/ccVKoyCo.s 			page 65
 
 
  829      C3E3F3C2 
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  840      43A22E87 
  840      BD2128D1 
  840      A13EB448 
-ARM GAS  /tmp/ccDVMGmI.s 			page 66
+ARM GAS  /tmp/ccVKoyCo.s 			page 66
 
 
  841 0eb8 3610C9B2 		.ascii	"6\020\311\262\370\246o0\233!\215E\355l$\313\342f/xy"
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  852      F1F12019 
  852      5B5F3808 
  853 0f89 0FF1D393 		.ascii	"\017\361\323\223\213\010\323\361}\271\271\203qs'\272"
-ARM GAS  /tmp/ccDVMGmI.s 			page 67
+ARM GAS  /tmp/ccVKoyCo.s 			page 67
 
 
  853      8B08D3F1 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  866      D1871E9D 
  866      092DABD2 
  866      F184A2
-ARM GAS  /tmp/ccDVMGmI.s 			page 68
+ARM GAS  /tmp/ccVKoyCo.s 			page 68
 
 
  867 1069 662A1E7E 		.ascii	"f*\036~\350!h\256\315J+\231\237V\012EU\231i\021-\364"
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  878      D26A3C05 
  878      F6ADA686 
  878      1E66DA95 
-ARM GAS  /tmp/ccDVMGmI.s 			page 69
+ARM GAS  /tmp/ccVKoyCo.s 			page 69
 
 
  879 1140 54B1493C 		.ascii	"T\261I<\025\216\246\222\032H\334\357;\210*\243)U\201"
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  890 1209 E9D90CC6 		.ascii	"\351\331\014\306MD\033\221\363\265y\246$\035\231!\307"
  890      4D441B91 
  890      F3B579A6 
-ARM GAS  /tmp/ccDVMGmI.s 			page 70
+ARM GAS  /tmp/ccVKoyCo.s 			page 70
 
 
  890      241D9921 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  902 12f0 5C82DCE3 		.ascii	"\\\202\334\3430\276!2*\345d,A\222\310\015\330\370\347"
  902      30BE2132 
  902      2AE5642C 
-ARM GAS  /tmp/ccDVMGmI.s 			page 71
+ARM GAS  /tmp/ccVKoyCo.s 			page 71
 
 
  902      4192C80D 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  914 13c7 F0339186 		.ascii	"\3603\221\206S\244\2232\252tL\231R=\315\034\317\354"
  914      53A49332 
  914      AA744C99 
-ARM GAS  /tmp/ccDVMGmI.s 			page 72
+ARM GAS  /tmp/ccVKoyCo.s 			page 72
 
 
  914      523DCD1C 
@@ -4280,7 +4280,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  918 140c 68E5FF01 		.ascii	"h\345\377\001\357\273v\010"
  918      EFBB7608 
  919              		.text
- 920              		.section	.gnu.lto_.symtab.a83ca9317d739591,"",%progbits
+ 920              		.section	.gnu.lto_.symtab.2cdcd5aae6ce50ae,"",%progbits
  921 0000 63684576 		.ascii	"chEvtRegisterMaskWithFlags\000\000\000\000\000\000\000"
  921      74526567 
  921      69737465 
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  928 00a5 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000\232\001\000\000"
  928      00000000 
  928      009A0100 
-ARM GAS  /tmp/ccDVMGmI.s 			page 73
+ARM GAS  /tmp/ccVKoyCo.s 			page 73
 
 
  928      00
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  940      00000000 
  940      000000D8 
  940      01
-ARM GAS  /tmp/ccDVMGmI.s 			page 74
+ARM GAS  /tmp/ccVKoyCo.s 			page 74
 
 
  941 01a9 00006368 		.ascii	"\000\000chEvtWaitAll\000\000\000\000\000\000\000\000"
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  952      000000FD 
  952      01
  953 0298 00006368 		.ascii	"\000\000chSchGoSleepTimeoutS\000\000\002\000\000\000"
-ARM GAS  /tmp/ccDVMGmI.s 			page 75
+ARM GAS  /tmp/ccVKoyCo.s 			page 75
 
 
  953      53636847 
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  982 000c AD69     		ldr	r5, [r5, #24]
  983 000e 0C60     		str	r4, [r1]
  984 0010 0024     		movs	r4, #0
-ARM GAS  /tmp/ccDVMGmI.s 			page 76
+ARM GAS  /tmp/ccVKoyCo.s 			page 76
 
 
  985 0012 0160     		str	r1, [r0]
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1038 0024 83F31188 		MSR basepri, r3
  1039              	@ 0 "" 2
  1040              		.thumb
-ARM GAS  /tmp/ccDVMGmI.s 			page 77
+ARM GAS  /tmp/ccVKoyCo.s 			page 77
 
 
  1041 0028 7047     		bx	lr
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1094 000a 5A6B     		ldr	r2, [r3, #52]
  1095 000c 1043     		orrs	r0, r0, r2
  1096 000e 5863     		str	r0, [r3, #52]
-ARM GAS  /tmp/ccDVMGmI.s 			page 78
+ARM GAS  /tmp/ccVKoyCo.s 			page 78
 
 
  1097 0010 0023     		movs	r3, #0
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1149 0008 4163     		str	r1, [r0, #52]
  1150 000a 0AD0     		beq	.L22
  1151 000c 0B2B     		cmp	r3, #11
-ARM GAS  /tmp/ccDVMGmI.s 			page 79
+ARM GAS  /tmp/ccVKoyCo.s 			page 79
 
 
  1152 000e 00D0     		beq	.L23
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1205 002a 00BFAFF3 		.section	.text.chEvtSignal,"ax",%progbits
  1205      0080
  1206              		.align	2
-ARM GAS  /tmp/ccDVMGmI.s 			page 80
+ARM GAS  /tmp/ccVKoyCo.s 			page 80
 
 
  1207              		.p2align 4,,15
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1259              		.thumb
  1260              		.thumb_func
  1261              		.type	chEvtGetAndClearFlagsI, %function
-ARM GAS  /tmp/ccDVMGmI.s 			page 81
+ARM GAS  /tmp/ccVKoyCo.s 			page 81
 
 
  1262              	chEvtGetAndClearFlagsI:
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1315              		@ frame_needed = 0, uses_anonymous_args = 0
  1316 0000 38B5     		push	{r3, r4, r5, lr}
  1317 0002 0D4B     		ldr	r3, .L52
-ARM GAS  /tmp/ccDVMGmI.s 			page 82
+ARM GAS  /tmp/ccVKoyCo.s 			page 82
 
 
  1318 0004 0546     		mov	r5, r0
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1372 0016 2562     		str	r5, [r4, #32]
  1373 0018 FFF7FEFF 		bl	chSchGoSleepS
  1374 001c 636B     		ldr	r3, [r4, #52]
-ARM GAS  /tmp/ccDVMGmI.s 			page 83
+ARM GAS  /tmp/ccVKoyCo.s 			page 83
 
 
  1375 001e 05EA0300 		and	r0, r5, r3
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1427              	.L61:
  1428 0032 00BF     		.align	2
  1429              	.L60:
-ARM GAS  /tmp/ccDVMGmI.s 			page 84
+ARM GAS  /tmp/ccVKoyCo.s 			page 84
 
 
  1430 0034 00000000 		.word	ch
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1483              	@ 0 "" 2
  1484              		.thumb
  1485 0048 3046     		mov	r0, r6
-ARM GAS  /tmp/ccDVMGmI.s 			page 85
+ARM GAS  /tmp/ccVKoyCo.s 			page 85
 
 
  1486 004a 70BD     		pop	{r4, r5, r6, pc}
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1540              	@ 546 "/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h" 1
  1541 0042 86F31188 		MSR basepri, r6
  1542              	@ 0 "" 2
-ARM GAS  /tmp/ccDVMGmI.s 			page 86
+ARM GAS  /tmp/ccVKoyCo.s 			page 86
 
 
  1543              		.thumb
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1597 003c 2046     		mov	r0, r4
  1598 003e 38BD     		pop	{r3, r4, r5, pc}
  1599              	.L82:
-ARM GAS  /tmp/ccDVMGmI.s 			page 87
+ARM GAS  /tmp/ccVKoyCo.s 			page 87
 
 
  1600 0040 0020     		movs	r0, #0
@@ -5171,67 +5171,67 @@ ARM GAS  /tmp/ccDVMGmI.s 			page 1
  1607              		.comm	__gnu_lto_v1,1,1
  1608 0048 AFF30080 		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
  1608      AFF30080 
-ARM GAS  /tmp/ccDVMGmI.s 			page 88
+ARM GAS  /tmp/ccVKoyCo.s 			page 88
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chevents.c
-     /tmp/ccDVMGmI.s:964    .text.chEvtRegisterMaskWithFlags:0000000000000000 $t
-     /tmp/ccDVMGmI.s:970    .text.chEvtRegisterMaskWithFlags:0000000000000000 chEvtRegisterMaskWithFlags
-     /tmp/ccDVMGmI.s:999    .text.chEvtRegisterMaskWithFlags:0000000000000024 $d
-     /tmp/ccDVMGmI.s:1002   .text.chEvtUnregister:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1008   .text.chEvtUnregister:0000000000000000 chEvtUnregister
-     /tmp/ccDVMGmI.s:1044   .text.chEvtGetAndClearEvents:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1050   .text.chEvtGetAndClearEvents:0000000000000000 chEvtGetAndClearEvents
-     /tmp/ccDVMGmI.s:1074   .text.chEvtGetAndClearEvents:000000000000001c $d
-     /tmp/ccDVMGmI.s:1077   .text.chEvtAddEvents:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1083   .text.chEvtAddEvents:0000000000000000 chEvtAddEvents
-     /tmp/ccDVMGmI.s:1106   .text.chEvtAddEvents:0000000000000018 $d
-     /tmp/ccDVMGmI.s:1109   .text.chEvtGetAndClearFlags:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1115   .text.chEvtGetAndClearFlags:0000000000000000 chEvtGetAndClearFlags
-     /tmp/ccDVMGmI.s:1135   .text.chEvtSignalI:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1141   .text.chEvtSignalI:0000000000000000 chEvtSignalI
-     /tmp/ccDVMGmI.s:1171   .text.chEvtBroadcastFlagsI:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1177   .text.chEvtBroadcastFlagsI:0000000000000000 chEvtBroadcastFlagsI
-     /tmp/ccDVMGmI.s:1206   .text.chEvtSignal:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1212   .text.chEvtSignal:0000000000000000 chEvtSignal
-     /tmp/ccDVMGmI.s:1231   .text.chEvtBroadcastFlags:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1237   .text.chEvtBroadcastFlags:0000000000000000 chEvtBroadcastFlags
-     /tmp/ccDVMGmI.s:1256   .text.chEvtGetAndClearFlagsI:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1262   .text.chEvtGetAndClearFlagsI:0000000000000000 chEvtGetAndClearFlagsI
-     /tmp/ccDVMGmI.s:1273   .text.chEvtDispatch:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1279   .text.chEvtDispatch:0000000000000000 chEvtDispatch
-     /tmp/ccDVMGmI.s:1307   .text.chEvtWaitOne:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1313   .text.chEvtWaitOne:0000000000000000 chEvtWaitOne
-     /tmp/ccDVMGmI.s:1347   .text.chEvtWaitOne:0000000000000038 $d
-     /tmp/ccDVMGmI.s:1350   .text.chEvtWaitAny:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1356   .text.chEvtWaitAny:0000000000000000 chEvtWaitAny
-     /tmp/ccDVMGmI.s:1388   .text.chEvtWaitAny:0000000000000030 $d
-     /tmp/ccDVMGmI.s:1391   .text.chEvtWaitAll:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1397   .text.chEvtWaitAll:0000000000000000 chEvtWaitAll
-     /tmp/ccDVMGmI.s:1430   .text.chEvtWaitAll:0000000000000034 $d
-     /tmp/ccDVMGmI.s:1433   .text.chEvtWaitOneTimeout:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1439   .text.chEvtWaitOneTimeout:0000000000000000 chEvtWaitOneTimeout
-     /tmp/ccDVMGmI.s:1490   .text.chEvtWaitOneTimeout:000000000000004c $d
-     /tmp/ccDVMGmI.s:1493   .text.chEvtWaitAnyTimeout:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1499   .text.chEvtWaitAnyTimeout:0000000000000000 chEvtWaitAnyTimeout
-     /tmp/ccDVMGmI.s:1549   .text.chEvtWaitAnyTimeout:000000000000004c $d
-     /tmp/ccDVMGmI.s:1552   .text.chEvtWaitAllTimeout:0000000000000000 $t
-     /tmp/ccDVMGmI.s:1558   .text.chEvtWaitAllTimeout:0000000000000000 chEvtWaitAllTimeout
-     /tmp/ccDVMGmI.s:1605   .text.chEvtWaitAllTimeout:0000000000000044 $d
+     /tmp/ccVKoyCo.s:964    .text.chEvtRegisterMaskWithFlags:0000000000000000 $t
+     /tmp/ccVKoyCo.s:970    .text.chEvtRegisterMaskWithFlags:0000000000000000 chEvtRegisterMaskWithFlags
+     /tmp/ccVKoyCo.s:999    .text.chEvtRegisterMaskWithFlags:0000000000000024 $d
+     /tmp/ccVKoyCo.s:1002   .text.chEvtUnregister:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1008   .text.chEvtUnregister:0000000000000000 chEvtUnregister
+     /tmp/ccVKoyCo.s:1044   .text.chEvtGetAndClearEvents:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1050   .text.chEvtGetAndClearEvents:0000000000000000 chEvtGetAndClearEvents
+     /tmp/ccVKoyCo.s:1074   .text.chEvtGetAndClearEvents:000000000000001c $d
+     /tmp/ccVKoyCo.s:1077   .text.chEvtAddEvents:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1083   .text.chEvtAddEvents:0000000000000000 chEvtAddEvents
+     /tmp/ccVKoyCo.s:1106   .text.chEvtAddEvents:0000000000000018 $d
+     /tmp/ccVKoyCo.s:1109   .text.chEvtGetAndClearFlags:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1115   .text.chEvtGetAndClearFlags:0000000000000000 chEvtGetAndClearFlags
+     /tmp/ccVKoyCo.s:1135   .text.chEvtSignalI:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1141   .text.chEvtSignalI:0000000000000000 chEvtSignalI
+     /tmp/ccVKoyCo.s:1171   .text.chEvtBroadcastFlagsI:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1177   .text.chEvtBroadcastFlagsI:0000000000000000 chEvtBroadcastFlagsI
+     /tmp/ccVKoyCo.s:1206   .text.chEvtSignal:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1212   .text.chEvtSignal:0000000000000000 chEvtSignal
+     /tmp/ccVKoyCo.s:1231   .text.chEvtBroadcastFlags:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1237   .text.chEvtBroadcastFlags:0000000000000000 chEvtBroadcastFlags
+     /tmp/ccVKoyCo.s:1256   .text.chEvtGetAndClearFlagsI:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1262   .text.chEvtGetAndClearFlagsI:0000000000000000 chEvtGetAndClearFlagsI
+     /tmp/ccVKoyCo.s:1273   .text.chEvtDispatch:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1279   .text.chEvtDispatch:0000000000000000 chEvtDispatch
+     /tmp/ccVKoyCo.s:1307   .text.chEvtWaitOne:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1313   .text.chEvtWaitOne:0000000000000000 chEvtWaitOne
+     /tmp/ccVKoyCo.s:1347   .text.chEvtWaitOne:0000000000000038 $d
+     /tmp/ccVKoyCo.s:1350   .text.chEvtWaitAny:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1356   .text.chEvtWaitAny:0000000000000000 chEvtWaitAny
+     /tmp/ccVKoyCo.s:1388   .text.chEvtWaitAny:0000000000000030 $d
+     /tmp/ccVKoyCo.s:1391   .text.chEvtWaitAll:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1397   .text.chEvtWaitAll:0000000000000000 chEvtWaitAll
+     /tmp/ccVKoyCo.s:1430   .text.chEvtWaitAll:0000000000000034 $d
+     /tmp/ccVKoyCo.s:1433   .text.chEvtWaitOneTimeout:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1439   .text.chEvtWaitOneTimeout:0000000000000000 chEvtWaitOneTimeout
+     /tmp/ccVKoyCo.s:1490   .text.chEvtWaitOneTimeout:000000000000004c $d
+     /tmp/ccVKoyCo.s:1493   .text.chEvtWaitAnyTimeout:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1499   .text.chEvtWaitAnyTimeout:0000000000000000 chEvtWaitAnyTimeout
+     /tmp/ccVKoyCo.s:1549   .text.chEvtWaitAnyTimeout:000000000000004c $d
+     /tmp/ccVKoyCo.s:1552   .text.chEvtWaitAllTimeout:0000000000000000 $t
+     /tmp/ccVKoyCo.s:1558   .text.chEvtWaitAllTimeout:0000000000000000 chEvtWaitAllTimeout
+     /tmp/ccVKoyCo.s:1605   .text.chEvtWaitAllTimeout:0000000000000044 $d
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccDVMGmI.s:1001   .text.chEvtRegisterMaskWithFlags:0000000000000028 $t
-     /tmp/ccDVMGmI.s:1108   .text.chEvtAddEvents:000000000000001c $t
-     /tmp/ccDVMGmI.s:1349   .text.chEvtWaitOne:000000000000003c $t
-     /tmp/ccDVMGmI.s:1390   .text.chEvtWaitAny:0000000000000034 $t
-     /tmp/ccDVMGmI.s:1432   .text.chEvtWaitAll:0000000000000038 $t
-     /tmp/ccDVMGmI.s:1608   .text.chEvtWaitAllTimeout:0000000000000048 $t
+     /tmp/ccVKoyCo.s:1001   .text.chEvtRegisterMaskWithFlags:0000000000000028 $t
+     /tmp/ccVKoyCo.s:1108   .text.chEvtAddEvents:000000000000001c $t
+     /tmp/ccVKoyCo.s:1349   .text.chEvtWaitOne:000000000000003c $t
+     /tmp/ccVKoyCo.s:1390   .text.chEvtWaitAny:0000000000000034 $t
+     /tmp/ccVKoyCo.s:1432   .text.chEvtWaitAll:0000000000000038 $t
+     /tmp/ccVKoyCo.s:1608   .text.chEvtWaitAllTimeout:0000000000000048 $t
 
 UNDEFINED SYMBOLS
 ch
 chSchReadyI
 chSchRescheduleS
-ARM GAS  /tmp/ccDVMGmI.s 			page 89
+ARM GAS  /tmp/ccVKoyCo.s 			page 89
 
 
 chSchGoSleepS
