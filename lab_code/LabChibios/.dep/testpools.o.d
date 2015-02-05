@@ -10,19 +10,21 @@ build/obj/testpools.o: /home/cody/dev/chibios/trunk/test/rt/testpools.c \
  /home/cody/dev/chibios/trunk/os/rt/include/chlicense.h \
  /home/cody/dev/chibios/trunk/os/rt/include/chsystypes.h \
  /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/chcore.h \
- /home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F1xx/cmparams.h \
- /home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F103RB/board.h \
- /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f10x.h \
- /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm3.h \
+ /home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F4xx/cmparams.h \
+ /home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.h \
+ /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h \
+ /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f401xe.h \
+ /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm4.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmInstr.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h \
- /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/system_stm32f10x.h \
+ /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm4_simd.h \
+ /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/system_stm32f4xx.h \
  /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/chcore_v7m.h \
  /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/chcore_timer.h \
  /home/cody/dev/chibios/trunk/os/hal/include/st.h \
  /home/cody/dev/chibios/trunk/os/hal/ports/STM32/LLD/TIMv1/st_lld.h \
  mcuconf.h \
- /home/cody/dev/chibios/trunk/os/hal/ports/STM32/STM32F1xx/stm32_registry.h \
+ /home/cody/dev/chibios/trunk/os/hal/ports/STM32/STM32F4xx/stm32_registry.h \
  /home/cody/dev/chibios/trunk/os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h \
  /home/cody/dev/chibios/trunk/os/rt/include/chdebug.h \
  /home/cody/dev/chibios/trunk/os/rt/include/chtm.h \
@@ -71,19 +73,23 @@ chconf.h:
 
 /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/chcore.h:
 
-/home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F1xx/cmparams.h:
+/home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F4xx/cmparams.h:
 
-/home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F103RB/board.h:
+/home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.h:
 
-/home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f10x.h:
+/home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h:
 
-/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm3.h:
+/home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f401xe.h:
+
+/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm4.h:
 
 /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmInstr.h:
 
 /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h:
 
-/home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/system_stm32f10x.h:
+/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm4_simd.h:
+
+/home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/system_stm32f4xx.h:
 
 /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/chcore_v7m.h:
 
@@ -95,7 +101,7 @@ chconf.h:
 
 mcuconf.h:
 
-/home/cody/dev/chibios/trunk/os/hal/ports/STM32/STM32F1xx/stm32_registry.h:
+/home/cody/dev/chibios/trunk/os/hal/ports/STM32/STM32F4xx/stm32_registry.h:
 
 /home/cody/dev/chibios/trunk/os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h:
 

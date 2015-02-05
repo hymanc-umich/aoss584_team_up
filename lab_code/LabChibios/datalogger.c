@@ -4,6 +4,8 @@
 
 static SerialDriver *DEBUG; // Debug
 
+//static WORKING_AREA(datalogThreadArea, 512);
+
 /**
  * @brief Datalogger instance
  */
@@ -89,14 +91,16 @@ bool dataLoggerStop(datalogger_t *logger)
 /**
  * @brief Creates a new logfile instance
  */
-int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file)
+int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file, char *fname)
 {
     chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Creating New Logfile\n");
     FRESULT res;
     if(!(logger->driveMounted))
 	return false;
     log->file = file;
-    res = f_open(log->file, "/testLog.txt", FA_CREATE_ALWAYS | FA_WRITE);
+    log->wrCount = 0;
+    log->name = fname;
+    res = f_open(log->file, fname, FA_CREATE_ALWAYS | FA_WRITE);
     if(res)
     {
 	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error creating Logfile, ERR%02d\n",res);
@@ -123,6 +127,7 @@ int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length)
     int written;
     res = f_write(log->file, buf, length, &written);
     //res = fputs(log->file, buf);
+    log->wrCount++;
     if(res || (written != length))
 	return 1;
     return 0;
@@ -160,6 +165,14 @@ int8_t logfileWriteCsv(logfile_t *log, char **items, char separator, uint16_t ni
 }
 
 /**
+ * @brief Accessor for logfile write count
+ */
+uint32_t logfileGetWrCount(logfile_t *log)
+{
+    return log->wrCount;
+}
+
+/**
  * @brief Closes a logfile
  * @param log Logfile to close
  * @return Success status
@@ -168,6 +181,41 @@ int8_t logfileClose(logfile_t *log)
 {
     FRESULT res;
     if(f_close(log->file))
+    {
+	log->wrCount = 0;
 	return 1;
+    }
     return 0;
+}
+
+/**
+ * @brief Opens a logfile and seeks to the end for appending
+ * @param log Logfile container
+ * @return Status of successful open
+ */
+int8_t logfileOpenAppend(logfile_t *log)
+{
+    FRESULT res;
+    res = f_open(log->file, log->name, FA_WRITE | FA_OPEN_ALWAYS);
+    if(res == FR_OK)
+    {
+	res = f_lseek(log->file, f_size(log->file));
+	if(res != FR_OK)
+	    f_close(log->file);
+    }
+    return res;
+}
+
+/**
+ * @brief Data Logger Thread
+ * @param arg Data thread structure pointer
+ */
+msg_t dataloggerThread(void *arg)
+{
+    dataThread_t *thread = (dataThread_t *) arg;
+    while(thread->running)
+    {
+	// Write data to storage
+	chThdSleepMilliseconds(thread->sleepTime); // Sleep
+    }
 }

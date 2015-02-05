@@ -1,81 +1,90 @@
-ARM GAS  /tmp/ccLtq440.s 			page 1
+ARM GAS  /tmp/cc63UcA5.s 			page 1
 
 
    1              		.syntax unified
-   2              		.cpu cortex-m3
-   3              		.fpu softvfp
-   4              		.eabi_attribute 20, 1
-   5              		.eabi_attribute 21, 1
-   6              		.eabi_attribute 23, 3
-   7              		.eabi_attribute 24, 1
-   8              		.eabi_attribute 25, 1
-   9              		.eabi_attribute 26, 1
-  10              		.eabi_attribute 30, 2
-  11              		.eabi_attribute 34, 1
-  12              		.eabi_attribute 18, 4
-  13              		.thumb
-  14              		.file	"pwm_lld.c"
-  15              		.section	.gnu.lto_.inline.555c7f7d8d537b85,"",%progbits
-  16 0000 789C6362 		.ascii	"x\234cb`b\300\006\020\242\000\000\272\000\007"
-  16      6062C006 
-  16      10A20000 
-  16      BA0007
-  17              		.text
-  18              		.section	.gnu.lto_.pureconst.555c7f7d8d537b85,"",%progbits
-  19 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
-  19      60626064 
-  19      80020000 
-  19      460006
-  20              		.text
-  21              		.section	.gnu.lto_.symbol_nodes.555c7f7d8d537b85,"",%progbits
-  22 0000 789C6362 		.ascii	"x\234cb`\002B\030\000\000\000V\000\007"
-  22      60024218 
-  22      00000056 
-  22      0007
-  23              		.text
-  24              		.section	.gnu.lto_.refs.555c7f7d8d537b85,"",%progbits
-  25 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
-  25      60626064 
-  25      80020000 
-  25      460006
-  26              		.text
-  27              		.section	.gnu.lto_.decls.555c7f7d8d537b85,"",%progbits
-  28 0000 789C6362 		.ascii	"x\234cb`bPa``\370\017\004@\212\201\021\212\355\030\010"
-  28      60625061 
-  28      6060F80F 
-  28      04408A81 
-  28      118AED18 
-  29 0015 0000CE1B 		.ascii	"\000\000\316\033\004e"
-  29      0465
-  30              		.text
-  31              		.section	.gnu.lto_.symtab.555c7f7d8d537b85,"",%progbits
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 3
+   4              		.eabi_attribute 28, 1
+   5              		.fpu fpv4-sp-d16
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 2
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.thumb
+  16              		.file	"pwm_lld.c"
+  17              		.section	.gnu.lto_.inline.e75ac991577a95e8,"",%progbits
+  18 0000 789C6362 		.ascii	"x\234cb`b\300\006\020\242\000\000\272\000\007"
+  18      6062C006 
+  18      10A20000 
+  18      BA0007
+  19              		.text
+  20              		.section	.gnu.lto_.pureconst.e75ac991577a95e8,"",%progbits
+  21 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
+  21      60626064 
+  21      80020000 
+  21      460006
+  22              		.text
+  23              		.section	.gnu.lto_.symbol_nodes.e75ac991577a95e8,"",%progbits
+  24 0000 789C6362 		.ascii	"x\234cb`\002B\030\000\000\000V\000\007"
+  24      60024218 
+  24      00000056 
+  24      0007
+  25              		.text
+  26              		.section	.gnu.lto_.refs.e75ac991577a95e8,"",%progbits
+  27 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
+  27      60626064 
+  27      80020000 
+  27      460006
+  28              		.text
+  29              		.section	.gnu.lto_.decls.e75ac991577a95e8,"",%progbits
+  30 0000 789C6362 		.ascii	"x\234cb`bPa``\370\017\004@\212\201\021\212\355\030\010"
+  30      60625061 
+  30      6060F80F 
+  30      04408A81 
+  30      118AED18 
+  31 0015 0000CE1B 		.ascii	"\000\000\316\033\004e"
+  31      0465
   32              		.text
-  33              		.section	.gnu.lto_.opts,"",%progbits
-  34 0000 272D6D63 		.ascii	"'-mcpu=cortex-m3' '-mno-thumb-interwork' '-mthumb' "
-  34      70753D63 
-  34      6F727465 
-  34      782D6D33 
-  34      2720272D 
-  35 0033 272D4F32 		.ascii	"'-O2' '-fomit-frame-pointer' '-falign-functions=16'"
-  35      2720272D 
-ARM GAS  /tmp/ccLtq440.s 			page 2
+  33              		.section	.gnu.lto_.symtab.e75ac991577a95e8,"",%progbits
+  34              		.text
+  35              		.section	.gnu.lto_.opts,"",%progbits
+  36 0000 272D6D63 		.ascii	"'-mcpu=cortex-m4' '-mfloat-abi=hard' '-mfpu=fpv4-sp"
+  36      70753D63 
+  36      6F727465 
+  36      782D6D34 
+  36      2720272D 
+ARM GAS  /tmp/cc63UcA5.s 			page 2
 
 
-  35      666F6D69 
-  35      742D6672 
-  35      616D652D 
-  36 0066 20272D66 		.ascii	" '-ffunction-sections' '-fdata-sections' '-fno-comm"
-  36      66756E63 
-  36      74696F6E 
-  36      2D736563 
-  36      74696F6E 
-  37 0099 6F6E2720 		.ascii	"on' '-flto'\000"
-  37      272D666C 
-  37      746F2700 
-  38              		.text
-  39              		.comm	__gnu_lto_v1,1,1
-  40              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccLtq440.s 			page 3
+  37 0033 2D643136 		.ascii	"-d16' '-mno-thumb-interwork' '-mthumb' '-O2' '-fomi"
+  37      2720272D 
+  37      6D6E6F2D 
+  37      7468756D 
+  37      622D696E 
+  38 0066 742D6672 		.ascii	"t-frame-pointer' '-falign-functions=16' '-ffunction"
+  38      616D652D 
+  38      706F696E 
+  38      74657227 
+  38      20272D66 
+  39 0099 2D736563 		.ascii	"-sections' '-fdata-sections' '-fno-common' '-flto' "
+  39      74696F6E 
+  39      73272027 
+  39      2D666461 
+  39      74612D73 
+  40 00cc 272D6673 		.ascii	"'-fsingle-precision-constant'\000"
+  40      696E676C 
+  40      652D7072 
+  40      65636973 
+  40      696F6E2D 
+  41              		.text
+  42              		.comm	__gnu_lto_v1,1,1
+  43              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  /tmp/cc63UcA5.s 			page 3
 
 
 DEFINED SYMBOLS

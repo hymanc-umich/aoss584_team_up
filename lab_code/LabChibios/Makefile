@@ -66,7 +66,7 @@ endif
 
 # Enables the use of FPU on Cortex-M4.
 ifeq ($(USE_FPU),)
-  USE_FPU = no
+  USE_FPU = hard
 endif
 
 #
@@ -85,16 +85,16 @@ CHIBIOS = /home/cody/dev/chibios/trunk
 FATFS = $(CHIBIOS)/community/ext/fatfs
 
 include $(CHIBIOS)/os/hal/hal.mk
-include $(CHIBIOS)/os/hal/boards/ST_NUCLEO_F103RB/board.mk
-include $(CHIBIOS)/os/hal/ports/STM32/STM32F1xx/platform.mk
+include $(CHIBIOS)/os/hal/boards/ST_NUCLEO_F401RE/board.mk
+include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
 include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 include $(CHIBIOS)/os/rt/rt.mk
-include $(CHIBIOS)/os/rt/ports/ARMCMx/compilers/GCC/mk/port_stm32f1xx.mk
+include $(CHIBIOS)/os/rt/ports/ARMCMx/compilers/GCC/mk/port_stm32f4xx.mk
 include $(CHIBIOS)/test/rt/test.mk
 include $(CHIBIOS)/os/various/fatfs_bindings/fatfs.mk
 
 # Define linker script file here
-LDSCRIPT = $(PORTLD)/STM32F103xB.ld
+LDSCRIPT = $(PORTLD)/STM32F401xE.ld
 
 # C sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
@@ -107,7 +107,8 @@ CSRC = $(PORTSRC) \
        $(BOARDSRC) \
        $(FATFSSRC) \
        $(CHIBIOS)/os/various/chprintf.c \
-       $(CHIBIOS)/os/various/shell.c \
+       $(CHIBIOS)/os/various/memstreams.c \
+       gps.c \
        sdmmcsimple.c \
        datalogger.c \
        main.c \
@@ -153,7 +154,7 @@ INCDIR = $(PORTINC) $(KERNINC) $(TESTINC) \
 # Compiler settings
 #
 
-MCU  = cortex-m3
+MCU  = cortex-m4
 
 #TRGT = arm-elf-
 TRGT = arm-none-eabi-

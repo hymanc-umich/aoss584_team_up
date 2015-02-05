@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccZZznV3.s 			page 1
+ARM GAS  /tmp/ccdQxGOX.s 			page 1
 
 
    1              	# 1 "/home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s"
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
   12              	    ChibiOS/RT is distributed in the hope that it will be useful,
   13              	    but WITHOUT ANY WARRANTY; without even the implied warranty of
   14              	    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-ARM GAS  /tmp/ccZZznV3.s 			page 2
+ARM GAS  /tmp/ccdQxGOX.s 			page 2
 
 
   15              	    GNU General Public License for more details.
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
   69              	
   70              	/**
   71              	 * @name    Cortex-M variants
-ARM GAS  /tmp/ccZZznV3.s 			page 3
+ARM GAS  /tmp/ccdQxGOX.s 			page 3
 
 
   72              	 * @{
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
  125              	/*===========================================================================*/
  126              	
  127              	/* The following code is not processed when the file is included from an
-ARM GAS  /tmp/ccZZznV3.s 			page 4
+ARM GAS  /tmp/ccdQxGOX.s 			page 4
 
 
  128              	   asm module.*/
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
  182              	 */
  183              	#define CORTEX_PRIORITY_LEVELS          (1 << CORTEX_PRIORITY_BITS)
  184              	
-ARM GAS  /tmp/ccZZznV3.s 			page 5
+ARM GAS  /tmp/ccdQxGOX.s 			page 5
 
 
  185              	/**
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
   47              	                .syntax unified
   48              	                .cpu    cortex-m4
   49              	#if CORTEX_USE_FPU
-ARM GAS  /tmp/ccZZznV3.s 			page 6
+ARM GAS  /tmp/ccdQxGOX.s 			page 6
 
 
   50              	                .fpu    fpv4-sp-d16
@@ -317,14 +317,14 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
   63              	_port_switch:
   64 0000 2DE9F04F 	                push    {r4, r5, r6, r7, r8, r9, r10, r11, lr}
   65              	#if CORTEX_USE_FPU
-  66              	                vpush   {s16-s31}
+  66 0004 2DED108A 	                vpush   {s16-s31}
   67              	#endif
-  68 0004 C1F80CD0 	                str     sp, [r1, #CONTEXT_OFFSET]
-  69 0008 D0F80CD0 	                ldr     sp, [r0, #CONTEXT_OFFSET]
+  68 0008 C1F80CD0 	                str     sp, [r1, #CONTEXT_OFFSET]
+  69 000c D0F80CD0 	                ldr     sp, [r0, #CONTEXT_OFFSET]
   70              	#if CORTEX_USE_FPU
-  71              	                vpop    {s16-s31}
+  71 0010 BDEC108A 	                vpop    {s16-s31}
   72              	#endif
-  73 000c BDE8F08F 	                pop     {r4, r5, r6, r7, r8, r9, r10, r11, pc}
+  73 0014 BDE8F08F 	                pop     {r4, r5, r6, r7, r8, r9, r10, r11, pc}
   74              	
   75              	/*--------------------------------------------------------------------------*
   76              	 * Start a thread by invoking its work function.
@@ -344,21 +344,21 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
   90              	                bl      _stats_stop_measure_crit_thd
   91              	#endif
   92              	#if !CORTEX_SIMPLIFIED_PRIORITY
-  93 0010 0023     	                movs    r3, #0
-  94 0012 83F31188 	                msr     BASEPRI, r3
+  93 0018 0023     	                movs    r3, #0
+  94 001a 83F31188 	                msr     BASEPRI, r3
   95              	#else /* CORTEX_SIMPLIFIED_PRIORITY */
   96              	                cpsie   i
   97              	#endif /* CORTEX_SIMPLIFIED_PRIORITY */
-  98 0016 2846     	                mov     r0, r5
-  99 0018 A047     	                blx     r4
- 100 001a FFF7FEFF 	                bl      chThdExit
+  98 001e 2846     	                mov     r0, r5
+  99 0020 A047     	                blx     r4
+ 100 0022 FFF7FEFF 	                bl      chThdExit
  101              	
  102              	/*--------------------------------------------------------------------------*
  103              	 * Post-IRQ switch code.
  104              	 *
  105              	 * Exception handlers return here for context switching.
  106              	 *--------------------------------------------------------------------------*/
-ARM GAS  /tmp/ccZZznV3.s 			page 7
+ARM GAS  /tmp/ccdQxGOX.s 			page 7
 
 
  107              	                .thumb_func
@@ -370,7 +370,7 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
  113              	#if CH_DBG_SYSTEM_STATE_CHECK
  114              	                bl      _dbg_check_lock
  115              	#endif
- 116 001e FFF7FEFF 	                bl      chSchDoReschedule
+ 116 0026 FFF7FEFF 	                bl      chSchDoReschedule
  117              	#if CH_DBG_SYSTEM_STATE_CHECK
  118              	                bl      _dbg_check_unlock
  119              	#endif
@@ -386,10 +386,10 @@ ARM GAS  /tmp/ccZZznV3.s 			page 1
  129              	                str     r2, [r3, #0]
  130              	                cpsie   i
  131              	#else /* !CORTEX_SIMPLIFIED_PRIORITY */
- 132 0022 00DF     	                svc     #0
+ 132 002a 00DF     	                svc     #0
  133              	#endif /* !CORTEX_SIMPLIFIED_PRIORITY */
- 134 0024 FEE7     	.L1:            b       .L1
-ARM GAS  /tmp/ccZZznV3.s 			page 8
+ 134 002c FEE7     	.L1:            b       .L1
+ARM GAS  /tmp/ccdQxGOX.s 			page 8
 
 
 DEFINED SYMBOLS
@@ -398,9 +398,9 @@ DEFINED SYMBOLS
 /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:45     *ABS*:0000000010000000 ICSR_PENDSVSET
 /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:63     .text:0000000000000000 _port_switch
 /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:64     .text:0000000000000000 $t
-/home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:85     .text:0000000000000010 _port_thread_start
-/home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:109    .text:000000000000001e _port_switch_from_isr
-/home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:124    .text:0000000000000022 _port_exit_from_isr
+/home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:85     .text:0000000000000018 _port_thread_start
+/home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:109    .text:0000000000000026 _port_switch_from_isr
+/home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.s:124    .text:000000000000002a _port_exit_from_isr
 
 UNDEFINED SYMBOLS
 chThdExit

@@ -5,6 +5,7 @@
 #include <chstreams.h>
 #include <string.h>
 
+#include "gps.h"
 #include "sdmmcsimple.h"
 #include "datalogger.h"
 
@@ -17,7 +18,12 @@
 #define SENSOR_ADC_CH_NUM 4
 #define ACC_ADC_CH_NUM 3
 
-// TODO: Time values
+/* LED Define */
+#define LED_PORT GPIOA
+#define LED_PIN 10
+
+#define NSAMPLES 30
+
 
 /* Accelerometer Measurement */
 typedef struct
@@ -35,23 +41,12 @@ typedef struct
     uint16_t press;	// Raw pressure
 }sensorMeasurement_t;
 
-/* GPS Location */
-typedef struct
-{
-    int32_t lat;	// Latitude (x10^6)
-    int32_t lon;	// Longitude (x10^6)
-    int32_t alt;	// Altitude
-    uint8_t sat; 	// Satellite count
-}gpsLocation_t;
-
 static sdmmc_t sd;
 static datalogger_t logger;
-
 static logfile_t sensorLog;
 FIL lFile;
 
-void initialize();
-
+static accMeasurement_t ACC;
 static sensorMeasurement_t SENSORS;
 
 MMCDriver MMCD1;
@@ -61,7 +56,9 @@ MMCDriver MMCD1;
  */
 static void accCallback(ADCDriver *adcd, adcsample_t *buf, size_t n)
 {
-    // TODO: Format and store accelerometer data
+    ACC.x = buf[0];
+    ACC.y = buf[1];
+    ACC.z = buf[2];
 }
 
 /**
@@ -89,11 +86,11 @@ static const ADCConversionGroup accelConvGrp =
     accCallback,				// Read Callback
     NULL,					// Error Callback
     0,						// ADC CR1
-    0, 						// ADC CR2
+    ADC_CR2_SWSTART, 				// ADC CR2
     0,						// ADC_SMPR1
-    ADC_SMPR2_SMP_AN0(ADC_SAMPLE_239P5) |	// ADC SMPR2
-    ADC_SMPR2_SMP_AN1(ADC_SAMPLE_239P5) |
-    ADC_SMPR2_SMP_AN4(ADC_SAMPLE_239P5),
+    ADC_SMPR2_SMP_AN0(ADC_SAMPLE_56) |		// ADC SMPR2
+    ADC_SMPR2_SMP_AN1(ADC_SAMPLE_56) |
+    ADC_SMPR2_SMP_AN4(ADC_SAMPLE_56),
     ADC_SQR1_NUM_CH(ACC_ADC_CH_NUM),		// ADC SQR1						// ADC SQR1
     0,						// ADC SQR2
     ADC_SQR3_SQ1_N(ADC_CHANNEL_IN0) |		// ADC SQR3
@@ -109,11 +106,11 @@ static const ADCConversionGroup sensorConvGrp =
     anaSensorCallback,				// Read Callback
     NULL,					// Error Callback
     0,						// ADC CR1
-    0, 						// ADC CR2
-    ADC_SMPR1_SMP_AN10(ADC_SAMPLE_239P5)  |	// ADC SMPR1
-    ADC_SMPR1_SMP_AN11(ADC_SAMPLE_239P5)  |
-    ADC_SMPR1_SMP_AN13(ADC_SAMPLE_239P5),
-    ADC_SMPR2_SMP_AN8(ADC_SAMPLE_239P5),		// ADC SMPR2
+    ADC_CR2_SWSTART, 				// ADC CR2
+    ADC_SMPR1_SMP_AN10(ADC_SAMPLE_56)  |	// ADC SMPR1
+    ADC_SMPR1_SMP_AN11(ADC_SAMPLE_56)  |
+    ADC_SMPR1_SMP_AN13(ADC_SAMPLE_56),
+    ADC_SMPR2_SMP_AN8(ADC_SAMPLE_56),		// ADC SMPR2
     ADC_SQR1_NUM_CH(SENSOR_ADC_CH_NUM),		// ADC SQR1
     0,						// ADC SQR2					
     ADC_SQR3_SQ1_N(ADC_CHANNEL_IN8)  |		// ADC SQR3 (Channel Sequence)
@@ -131,20 +128,10 @@ static SerialConfig serCfg =
    0,
 };
 
-/* GPS Serial configuration 4k8, 8N1*/
-static SerialConfig serGpsCfg =
-{
-    4800,
-    0,
-    0,
-    0,
-};
-
-
 /**
  * @brief Initialization routine for OS and peripherals
  */
-void initialize()
+void initialize(void)
 {
     halInit();    	// ChibiOS HAL initialization
     chSysInit();	// ChibiOS System Initialization
@@ -153,36 +140,38 @@ void initialize()
      * Configure I/O 
      */
     // LED
-    palSetPadMode(GPIOA, GPIOA_LED_GREEN, PAL_MODE_OUTPUT_PUSHPULL); // LED
+    palSetPadMode(LED_PORT, LED_PIN, PAL_MODE_OUTPUT_PUSHPULL); // LED
     
     // Serial I/O Cfg
-    palSetPadMode(GPIOA, 2, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // VCP Tx
-    palSetPadMode(GPIOA, 3, PAL_MODE_INPUT);			// VCP Rx
-    palSetPadMode(GPIOA, 9, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // GPS Tx
-    palSetPadMode(GPIOA, 10, PAL_MODE_INPUT); 			// GPS Rx
+    palSetPadMode(GPIOA, 2, PAL_MODE_ALTERNATE(7)); 	// VCP Tx
+    palSetPadMode(GPIOA, 3, PAL_MODE_INPUT);		// VCP Rx
+    palSetPadMode(GPIOA, 9, PAL_MODE_ALTERNATE(7)); 	// GPS Tx
+    palSetPadMode(GPIOA, 10, PAL_MODE_INPUT); 		// GPS Rx
     
     // ADC I/O Cfg
-    palSetPadMode(GPIOA, 0, PAL_MODE_INPUT_ANALOG); 		// A1.0 ACC_X
-    palSetPadMode(GPIOA, 1, PAL_MODE_INPUT_ANALOG); 		// A1.1 ACC_Y
-    palSetPadMode(GPIOA, 4, PAL_MODE_INPUT_ANALOG); 		// A1.4 ACC_Z
-    palSetPadMode(GPIOB, 0, PAL_MODE_INPUT_ANALOG); 		// A1.8 HUMD
-    palSetPadMode(GPIOC, 0, PAL_MODE_INPUT_ANALOG); 		// A1.10 PRESS
-    palSetPadMode(GPIOC, 1, PAL_MODE_INPUT_ANALOG); 		// A1.11 TEMP1
-    palSetPadMode(GPIOC, 3, PAL_MODE_INPUT_ANALOG); 		// A1.13 TEMP2
+    palSetPadMode(GPIOA, 0, PAL_MODE_INPUT_ANALOG); 	// A1.0 ACC_X
+    palSetPadMode(GPIOA, 1, PAL_MODE_INPUT_ANALOG); 	// A1.1 ACC_Y
+    palSetPadMode(GPIOA, 4, PAL_MODE_INPUT_ANALOG); 	// A1.4 ACC_Z
+    palSetPadMode(GPIOB, 0, PAL_MODE_INPUT_ANALOG); 	// A1.8 HUMD
+    palSetPadMode(GPIOC, 0, PAL_MODE_INPUT_ANALOG); 	// A1.10 PRESS
+    palSetPadMode(GPIOC, 1, PAL_MODE_INPUT_ANALOG); 	// A1.11 TEMP1
+    palSetPadMode(GPIOC, 3, PAL_MODE_INPUT_ANALOG); 	// A1.13 TEMP2
     
     // SPI/MMC I/O Cfg
-    palSetPadMode(GPIOA, 5, PAL_MODE_STM32_ALTERNATE_PUSHPULL);	// PA5 SCK1
-    palSetPadMode(GPIOA, 6, PAL_MODE_INPUT); 			// PA6 MISO1
-    palSetPadMode(GPIOA, 7, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // PA7 MOSI1
-    palSetPadMode(GPIOB, 6, PAL_MODE_OUTPUT_PUSHPULL);		// PB6 NCS
+    palSetPadMode(GPIOA, 5, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);	// PA5 SCK1
+    palSetPadMode(GPIOA, 6, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST); 	// PA6 MISO1
+    palSetPadMode(GPIOA, 7, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST); 	// PA7 MOSI1
+    palSetPadMode(GPIOB, 6, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);	// PB6 NCS
     
     /*
      * Driver Startup
      */
     
-    /* GPS UART Startup */
-    sdStart(&SD1, &serGpsCfg);
+    /* Real Time Clock */
+    //rtcGetTime(&RTCD1, &timespec);
     
+    /* GPS Startup */
+    gpsStart(&UARTD1, &SD2);
     /* VCP Serial Port Startup */
     sdStart(&SD2, &serCfg);	// Activate VCP USART2 driver
     
@@ -191,18 +180,56 @@ void initialize()
     sdIni = sdmmcInitialize(&sd, &MMCD1, &SD2);
     if(sdmmcFSMounted(&sd))
     {
-	dlIni = dataLoggerInitialize(&logger, "0:", &sd, &SD2);
+	dlIni = dataLoggerInitialize(&logger, "", &sd, &SD2);
     }
-    lfIni = logfileNew(&sensorLog, &logger, &lFile);
-    logfileWrite(&sensorLog, "THIS IS A TEST\n", 15);
+    lfIni = logfileNew(&sensorLog, &logger, &lFile, "logs/log_001.csv");
+    logfileWrite(&sensorLog, "TIME,ACC.X,ACC.Y,ACC.Z,TEMP1,TEMP2,PRESSURE,HUMIDITY\n", 53);
     //logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
-    logfileClose(&sensorLog);
+    //logfileClose(&sensorLog);
     chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
     
 }
 
+/**
+ * @brief Turn LED on/off
+ * @param on On state flag
+ */
+void setLED(bool on)
+{
+   if(on)
+       palClearPad(LED_PORT, LED_PIN);
+   else
+       palClearPad(LED_PORT, LED_PIN);
+}
+
+/**
+ * @brief Toggle the LED
+ */
+inline void toggleLED(void)
+{
+    palTogglePad(LED_PORT, LED_PIN);
+}
+
+/**
+ * @brief Writes data to log file
+ * @param log Logfile to write to
+ * @param time Time to write
+ * @param sens Environmental sensor data
+ * @param acc Accelerometer data
+ */
+void writeToLog(logfile_t *log, uint32_t time, sensorMeasurement_t *sens, accMeasurement_t *acc)
+{
+    char line[80];
+    int len;
+    len = chsnprintf(line, 80, "%d,%d,%d,%d,%d,%d,%d,%d\n",time, acc->x, acc->y, acc->z, sens->temp[0], sens->temp[1], sens->press, sens->humd);
+    logfileWrite(log, line, len);
+}
+
+/**
+ * @brief Prints ADC data to debug serial port
+ */
 void printData(void)
 {
     chprintf((BaseSequentialStream *) &SD2, "AccX:%03x   AccY:%03x   AccZ:%03x",
@@ -223,6 +250,8 @@ int main(void)
     
     char buffer[100]; // Buffer for misc things
     
+    uint32_t timeCounter = 0;
+    
     while (TRUE) 
     {
 
@@ -236,11 +265,16 @@ int main(void)
 	// Write serial data to VCP terminal
 	
 	printData();
-	
-	palTogglePad(GPIOA, GPIOA_LED_GREEN);
-	// TODO: Write data to SD
-	chThdSleepMilliseconds(500);
-	
+	writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
+	//logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
+	toggleLED();
+	chThdSleepMilliseconds(250);
+	if(timeCounter++ >= NSAMPLES)
+	{
+	    chprintf((BaseSequentialStream *) &SD2, "CLOSING FILE\n");
+	    logfileClose(&sensorLog);
+	    break;
+	}
     }
   return 0;
 }

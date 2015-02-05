@@ -49,16 +49,20 @@ static MMCConfig mmcCfg =
 /**
  * @brief Checks if an SD card is inserted
  */
-bool mmc_lld_is_card_inserted(MMCDriver *mmcd)
+
+bool sd_is_card_inserted(MMCDriver *mmcd)
 {
+    (void) mmcd;
     return palReadPad(SD_CD_PORT, SD_CD_PIN);
 }
 
 /**
  * @brief Checks if an SD write protect flag is on
  */
-bool mmc_lld_is_write_protected(MMCDriver *mmcd)
+
+bool sd_is_write_protected(MMCDriver *mmcd)
 {
+    (void) mmcd;
     return !palReadPad(SD_WP_PORT, SD_WP_PIN);
 }
 
@@ -124,11 +128,11 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
     int8_t status;
     
     // MMCSPI I/O Initialization
-    palSetPadMode(SD_CS_PORT, SD_CS_PIN, PAL_MODE_OUTPUT_PUSHPULL);
+    palSetPadMode(SD_CS_PORT, SD_CS_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
     palSetPadMode(SD_CD_PORT, SD_CD_PIN, PAL_MODE_INPUT_PULLUP);
-    palSetPadMode(SD_SCK_PORT, SD_SCK_PIN, PAL_MODE_STM32_ALTERNATE_PUSHPULL);
-    palSetPadMode(SD_MOSI_PORT, SD_MOSI_PIN, PAL_MODE_STM32_ALTERNATE_PUSHPULL);
-    palSetPadMode(SD_MISO_PORT, SD_MISO_PIN, PAL_MODE_INPUT);
+    palSetPadMode(SD_SCK_PORT, SD_SCK_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
+    palSetPadMode(SD_MOSI_PORT, SD_MOSI_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
+    palSetPadMode(SD_MISO_PORT, SD_MISO_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
     
     // Initialize MMC Driver
     /*mmcObjectInit(sd->mmcd, sd->spid, 
@@ -189,7 +193,7 @@ MMCDriver * sdmmGetMMCDriver(sdmmc_t *sd)
  * @param sd SD/MMC card object to check
  * @return Pointer to SD/MMC filesystem, returns NULL if not mounted
  */
-inline FATFS * sdmmcGetFS(sdmmc_t *sd)
+FATFS * sdmmcGetFS(sdmmc_t *sd)
 {
     if(sd->fsReady)
 	return sd->filesys; 
@@ -201,7 +205,7 @@ inline FATFS * sdmmcGetFS(sdmmc_t *sd)
  * @param sd SD/MMC card object to check
  * @return Status of FAT file system being mounted
  */
-inline bool sdmmcFSMounted(sdmmc_t *sd)
+bool sdmmcFSMounted(sdmmc_t *sd)
 {
    return sd->fsReady;  
 }
