@@ -13,18 +13,16 @@
 #include <math.h>
 #include <stdint.h>
 
+#include "board.h"
+
 /* ADC Defines */
 #define ADC_BUF_DEPTH 1 // Double buffered ADC
 #define SENSOR_ADC_CH_NUM 4
 #define ACC_ADC_CH_NUM 3
 
-/* LED Define */
-#define LED_PORT GPIOA
-#define LED_PIN 10
-
 #define NSAMPLES 30
 
-static THD_WORKING_AREA(waGps, 512);
+static THD_WORKING_AREA(waGps, 1284);
 
 /* Accelerometer Measurement */
 typedef struct
@@ -52,6 +50,23 @@ static accMeasurement_t ACC;
 static sensorMeasurement_t SENSORS;
 
 MMCDriver MMCD1;
+
+// Temporary sample struct
+typedef struct
+{
+    char time[9];	// HH:MM:SS
+    char latitude[13];	// DDMMM.MMMMMN
+    char longitude[14]; // DDDMMM.MMMMME
+    char altitude[9];   // +AAAAA.A	(m)
+    char satCount[3];   // SS		(Count)
+    char temp1[7]; 	// +TTT.T	(C)
+    char temp2[7];	// +TTT.T	(C)
+    char press[7];	// PPP.PP	(kPa)
+    char humd[6];	// RRR.R	(%RH)
+    char accX[6];	// +XX.X	(g)
+    char accY[6];	// +YY.Y	(g)
+    char accZ[6];	// +ZZ.Z	(g)
+}dataSample_t;
 
 /**
  * @brief Accelerometer ADC callback
@@ -128,7 +143,7 @@ static const ADCConversionGroup sensorConvGrp =
 /* VCP Serial configuration, 57k6, 8N1 */
 static SerialConfig serCfg = 
 {
-   19200,
+   460800,
    0,
    0,
    0,
@@ -150,9 +165,9 @@ void initialize(void)
     
     // Serial I/O Cfg
     palSetPadMode(GPIOA, 2, PAL_MODE_ALTERNATE(7)); 	// VCP Tx
-    palSetPadMode(GPIOA, 3, PAL_MODE_INPUT);		// VCP Rx
+    palSetPadMode(GPIOA, 3, PAL_MODE_ALTERNATE(7));		// VCP Rx
     palSetPadMode(GPIOA, 9, PAL_MODE_ALTERNATE(7)); 	// GPS Tx
-    palSetPadMode(GPIOA, 10, PAL_MODE_INPUT); 		// GPS Rx
+    palSetPadMode(GPIOA, 10, PAL_MODE_ALTERNATE(7)); 		// GPS Rx
     
     // ADC I/O Cfg
     palSetPadMode(GPIOA, 0, PAL_MODE_INPUT_ANALOG); 	// A1.0 ACC_X
@@ -164,10 +179,12 @@ void initialize(void)
     palSetPadMode(GPIOC, 3, PAL_MODE_INPUT_ANALOG); 	// A1.13 TEMP2
     
     // SPI/MMC I/O Cfg
+    /*
     palSetPadMode(GPIOA, 5, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);	// PA5 SCK1
     palSetPadMode(GPIOA, 6, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST); 	// PA6 MISO1
     palSetPadMode(GPIOA, 7, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST); 	// PA7 MOSI1
     palSetPadMode(GPIOB, 6, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);	// PB6 NCS
+    */
     
     /*
      * Driver Startup
@@ -183,8 +200,10 @@ void initialize(void)
     sdStart(&SD2, &serCfg);	// Activate VCP USART2 driver
     
     /* SPI/MMC Logger Startup */
+    
     int8_t sdIni, dlIni, lfIni;
     sdIni = sdmmcInitialize(&sd, &MMCD1, &SD2);
+    chThdSleepMilliseconds(500);
     if(sdmmcFSMounted(&sd))
     {
 	dlIni = dataLoggerInitialize(&logger, "", &sd, &SD2);
@@ -194,6 +213,7 @@ void initialize(void)
     //logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
     //logfileClose(&sensorLog);
     chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
+   
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
     
@@ -225,6 +245,19 @@ void printData(void)
 		SENSORS.temp[0], SENSORS.temp[1], SENSORS.press, SENSORS.humd); 
 }
 
+/**
+ * @brief Prints GPS Data to the serial port
+ */
+void printGps(gpsLocation_t *loc)
+{
+    chprintf((BaseSequentialStream *) &SD2, "TIME:%s, LAT:%s, LONG:%s, ALT:%s, SAT:%s\n",
+	     (char *)(loc->time),
+	     (char *)(loc->latitude),
+	     (char *)(loc->longitude),
+	     (char *)(loc->altitude),
+	     (char *)(loc->satCount)
+    );
+}
 
 /**
  * Application entry point.
@@ -234,6 +267,7 @@ int main(void)
     initialize(); // Initialize OS/Peripherals
     gpsThread_t gpsThd;
     
+    dataSample_t masterSample;
     
     uint32_t timeCounter = 0;
     chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd);
@@ -242,7 +276,7 @@ int main(void)
     while (TRUE) 
     {
 	gpsGetLocation(&location);// TODO: Check for new GPS NMEA sentence
-	
+	printGps(&location);
 	// Perform sensor ADC reads
 	adcConvert(&ADCD1, &accelConvGrp, accSamples, ADC_BUF_DEPTH);
 	chThdSleepMilliseconds(10);
@@ -251,17 +285,20 @@ int main(void)
 	// Write serial data to VCP terminal
 	
 	printData();
-	writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
-	writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
-	//logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
+	
+	//writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
+	//writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
+	
 	toggleLED();
-	chThdSleepMilliseconds(250);
+	chThdSleepMilliseconds(1000);
+	/*
 	if(timeCounter++ >= NSAMPLES)
 	{
 	    chprintf((BaseSequentialStream *) &SD2, "CLOSING FILE\n");
 	    logfileClose(&sensorLog);
 	    break;
 	}
+	*/
     }
   return 0;
 }

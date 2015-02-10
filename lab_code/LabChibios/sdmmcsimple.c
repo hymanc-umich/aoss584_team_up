@@ -53,7 +53,9 @@ static MMCConfig mmcCfg =
 bool sd_is_card_inserted(MMCDriver *mmcd)
 {
     (void) mmcd;
-    return palReadPad(SD_CD_PORT, SD_CD_PIN);
+    if(palReadPad(SD_CD_PORT, SD_CD_PIN) == PAL_HIGH)
+	return TRUE;
+    return FALSE;
 }
 
 /**
@@ -63,7 +65,7 @@ bool sd_is_card_inserted(MMCDriver *mmcd)
 bool sd_is_write_protected(MMCDriver *mmcd)
 {
     (void) mmcd;
-    return !palReadPad(SD_WP_PORT, SD_WP_PIN);
+    return palReadPad(SD_WP_PORT, SD_WP_PIN);
 }
 
 /**
@@ -142,11 +144,11 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
     mmcStart(sd->mmcd, &mmcCfg);
 
     // Try to connect
-    if(mmc_lld_is_card_inserted(sd->mmcd))
+    if(sd_is_card_inserted(sd->mmcd))
     {
 	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Card Found\n");
 	palClearPad(SD_CS_PORT, SD_CS_PIN);
-	chThdSleepMilliseconds(100); // wait
+	chThdSleepMilliseconds(200); // wait
 	FRESULT err;
 	status = mmcConnect(sd->mmcd);
 	if(status == HAL_FAILED)

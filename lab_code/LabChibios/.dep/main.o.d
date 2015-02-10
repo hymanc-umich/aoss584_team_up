@@ -103,7 +103,8 @@ build/obj/main.o: main.c /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
  /usr/arm-none-eabi/include/sys/string.h gps.h sdmmcsimple.h datalogger.h \
  /usr/arm-none-eabi/include/stdlib.h \
  /usr/arm-none-eabi/include/machine/stdlib.h \
- /usr/arm-none-eabi/include/alloca.h /usr/arm-none-eabi/include/math.h
+ /usr/arm-none-eabi/include/alloca.h /usr/arm-none-eabi/include/math.h \
+ board.h
 
 /home/cody/dev/chibios/trunk/os/rt/include/ch.h:
 
@@ -336,3 +337,5 @@ datalogger.h:
 /usr/arm-none-eabi/include/alloca.h:
 
 /usr/arm-none-eabi/include/math.h:
+
+board.h:

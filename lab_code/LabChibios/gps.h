@@ -1,5 +1,5 @@
 /**
- * gps.c
+ * gps.h
  * NMEA-0183 GPS Interface
  * AOSS 584, Winter 2015
  * University of Michigan
@@ -27,7 +27,7 @@
 #define NMEA_HEADING		"HDT"
 #define NMEA_DATE_TIME		"ZDA"
 
-#define GPS_BUFFER_SIZE 82 	// Maximum NMEA0183 length
+#define GPS_BUFFER_SIZE 100 	// Maximum NMEA0183 length
 
 #define NMEA_0183_BAUD 9600	// NMEA0183 baud rate (device dependent)
 
@@ -52,11 +52,11 @@ typedef enum
  */
 struct gpsLocationStr
 {
-    char time[9];
-    char latitude[15];
-    char longitude[15];
-    char altitude[8];
-    char satCount[3];
+    char time[10];
+    char latitude[20];
+    char longitude[20];
+    char altitude[12];
+    char satCount[10];
 };
 typedef struct gpsLocationStr gpsLocation_t;
 

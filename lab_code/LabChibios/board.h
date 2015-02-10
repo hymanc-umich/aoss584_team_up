@@ -24,24 +24,9 @@
 /*
  * Board identifier.
  */
-#define BOARD_ST_NUCLEO_F401RE
-#define BOARD_NAME                  "STMicroelectronics NUCLEO-F401RE"
+#define BOARD_AOSS584_TEAMUP
+#define BOARD_NAME                  "AOSS584_TEAMUP_BOARD"
 
-#define SD_SPID SPID1
-
-#define SD_SCK_PORT	GPIOA
-#define SD_MOSI_PORT	GPIOA
-#define SD_MISO_PORT	GPIOA
-#define SD_CS_PORT	GPIOB
-#define SD_CD_PORT	GPIOC
-#define SD_WP_PORT	GPIOA
-
-#define SD_SCK_PIN	5
-#define SD_MOSI_PIN	7
-#define SD_MISO_PIN	6
-#define SD_CS_PIN	6
-#define SD_CD_PIN	7
-#define SD_WP_PIN	9
 
 /*
  * Board oscillators-related settings.
@@ -1297,6 +1282,7 @@
                                      PIN_AFIO_AF(GPIOI_PIN15, 0))
 
 
+                    
 #if !defined(_FROM_ASM_)
 #ifdef __cplusplus
 extern "C" {
@@ -1307,4 +1293,30 @@ extern "C" {
 #endif
 #endif /* _FROM_ASM_ */
 
+
+#ifndef LED_DEF
+#define LED_DEF
+    /* LED Define */
+    #define LED_PORT GPIOB
+    #define LED_PIN 3
+#endif
+
+#define SD_SPID SPID1
+
+#define SD_SCK_PORT	GPIOA
+#define SD_MOSI_PORT	GPIOA
+#define SD_MISO_PORT	GPIOA
+#define SD_CS_PORT	GPIOB
+#define SD_CD_PORT	GPIOC
+#define SD_WP_PORT	GPIOA
+
+#define SD_SCK_PIN	5
+#define SD_MOSI_PIN	7
+#define SD_MISO_PIN	6
+#define SD_CS_PIN	6
+#define SD_CD_PIN	7
+#define SD_WP_PIN	9
+
+void setLED(bool on);
+inline void toggleLED(void);
 #endif /* _BOARD_H_ */

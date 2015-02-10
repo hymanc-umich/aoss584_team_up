@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccQqFOyP.s 			page 1
+ARM GAS  /tmp/cc2YbDQY.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"pal.c"
-  17              		.section	.gnu.lto_.jmpfuncs.1a0f9cf7202c3d1d,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.ea2e5820ab729096,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006D\24043\003##3\02333\204\315\300X\006"
   18      6062C006 
   18      44A03433 
@@ -26,7 +26,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   19 0018 A4010623 		.ascii	"\244\001\006#\000\243"
   19      00A3
   20              		.text
-  21              		.section	.gnu.lto_.inline.1a0f9cf7202c3d1d,"",%progbits
+  21              		.section	.gnu.lto_.inline.ea2e5820ab729096,"",%progbits
   22 0000 789C6362 		.ascii	"x\234cb`b\300\006\276Cif\006\006N\016Ff\006F0\023D:"
   22      6062C006 
   22      BE436966 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   28 006e 7202E588 		.ascii	"r\002\345\210s\036\320&\011\220I,\274@}\023\374@\220"
   28      731ED026 
   28      0990492C 
-ARM GAS  /tmp/ccQqFOyP.s 			page 2
+ARM GAS  /tmp/cc2YbDQY.s 			page 2
 
 
   28      BC407D13 
@@ -66,14 +66,14 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   29 0081 01003C62 		.ascii	"\001\000<b\037\210"
   29      1F88
   30              		.text
-  31              		.section	.gnu.lto_.pureconst.1a0f9cf7202c3d1d,"",%progbits
+  31              		.section	.gnu.lto_.pureconst.ea2e5820ab729096,"",%progbits
   32 0000 789C6362 		.ascii	"x\234cb`b`g\200\000f\006)F)&I\000\001\312\000_"
   32      60626067 
   32      80006606 
   32      29462926 
   32      490001CA 
   33              		.text
-  34              		.section	.gnu.lto_palReadBus.1a0f9cf7202c3d1d,"",%progbits
+  34              		.section	.gnu.lto_palReadBus.ea2e5820ab729096,"",%progbits
   35 0000 789C6D90 		.ascii	"x\234m\2201O\3030\020\205\337\235\223&\351\300\316\306"
   35      314FC330 
   35      1085DF9D 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   43      42BA129B 
   43      0EA91A
   44 00a0 3613722F 		.ascii	"6\023r/1\245\204*\035\342\035\211\236\235\241I\305\344"
-ARM GAS  /tmp/ccQqFOyP.s 			page 3
+ARM GAS  /tmp/cc2YbDQY.s 			page 3
 
 
   44      31A5842A 
@@ -159,7 +159,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   51      1EE11B21 
   51      715ACC
   52              		.text
-  53              		.section	.gnu.lto_palWriteBus.1a0f9cf7202c3d1d,"",%progbits
+  53              		.section	.gnu.lto_palWriteBus.ea2e5820ab729096,"",%progbits
   54 0000 789C6D91 		.ascii	"x\234m\221\277O\302P\020\307\357\336kK)\277t\323\315"
   54      BF4FC250 
   54      10C7EFDE 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   57 003a 02076713 		.ascii	"\002\007g\023\274{\245%\022\232\364\356\336\367\335"
   57      BC7BA525 
   57      129AF4EE 
-ARM GAS  /tmp/ccQqFOyP.s 			page 4
+ARM GAS  /tmp/cc2YbDQY.s 			page 4
 
 
   57      DEF7DD
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   69      ACE63437 
   69      CBEAF366 
   69      28E6E1BA 
-ARM GAS  /tmp/ccQqFOyP.s 			page 5
+ARM GAS  /tmp/cc2YbDQY.s 			page 5
 
 
   69      D3
@@ -264,7 +264,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   73      FC01
   74 016b 85E47B54 		.ascii	"\205\344{T"
   75              		.text
-  76              		.section	.gnu.lto_palSetBusMode.1a0f9cf7202c3d1d,"",%progbits
+  76              		.section	.gnu.lto_palSetBusMode.ea2e5820ab729096,"",%progbits
   77 0000 789C6D90 		.ascii	"x\234m\220\277N\0031\014\306?;\367\217N\214\260!\261"
   77      BF4E0331 
   77      0CC63F3B 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   83      38F2C571 
   83      204E856E 
   83      1BC9A9C3 
-ARM GAS  /tmp/ccQqFOyP.s 			page 6
+ARM GAS  /tmp/cc2YbDQY.s 			page 6
 
 
   83      7C5CE6
@@ -342,7 +342,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   91      F8066F81 
   91      5586
   92              		.text
-  93              		.section	.gnu.lto_.symbol_nodes.1a0f9cf7202c3d1d,"",%progbits
+  93              		.section	.gnu.lto_.symbol_nodes.ea2e5820ab729096,"",%progbits
   94 0000 789C4DC7 		.ascii	"x\234M\307\261\021@\000\020D\321\277{\265\251k\317\214"
   94      B1114000 
   94      1044D1BF 
@@ -358,19 +358,19 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
   96      F1574D
   97 0030 4E3DED56 		.ascii	"N=\355V\271\330\216S\334\343\365\024\320"
   97      B9D88E53 
-ARM GAS  /tmp/ccQqFOyP.s 			page 7
+ARM GAS  /tmp/cc2YbDQY.s 			page 7
 
 
   97      DCE3F514 
   97      D0
   98              		.text
-  99              		.section	.gnu.lto_.refs.1a0f9cf7202c3d1d,"",%progbits
+  99              		.section	.gnu.lto_.refs.ea2e5820ab729096,"",%progbits
  100 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
  100      60626064 
  100      80020000 
  100      460006
  101              		.text
- 102              		.section	.gnu.lto_.decls.1a0f9cf7202c3d1d,"",%progbits
+ 102              		.section	.gnu.lto_.decls.ea2e5820ab729096,"",%progbits
  103 0000 789CB558 		.ascii	"x\234\265Xkl\024U\024\276wf\267t\333\025\032\010\244"
  103      6B6C1455 
  103      14BE7766 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  112      01B9A3BD 
  112      3F0C721A 
  112      E436C8
-ARM GAS  /tmp/ccQqFOyP.s 			page 8
+ARM GAS  /tmp/cc2YbDQY.s 			page 8
 
 
  113 00b2 2D10AC61 		.ascii	"-\020\254a\321\337\273&\033\324\2763\205\015=~\227\206"
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  124      B833D0FF 
  124      3C3C952F 
  124      54F3133C 
-ARM GAS  /tmp/ccQqFOyP.s 			page 9
+ARM GAS  /tmp/cc2YbDQY.s 			page 9
 
 
  124      87F57896 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  137 0258 05426C08 		.ascii	"\005Bl\010I;D\304\303x\226\261H/n\235N\213\224>\317"
  137      493B44C4 
  137      C37896B1 
-ARM GAS  /tmp/ccQqFOyP.s 			page 10
+ARM GAS  /tmp/cc2YbDQY.s 			page 10
 
 
  137      482F6E9D 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  148      25C5909F 
  148      E46E28E2 
  148      E36CBB
-ARM GAS  /tmp/ccQqFOyP.s 			page 11
+ARM GAS  /tmp/cc2YbDQY.s 			page 11
 
 
  149 0343 FA8A65EA 		.ascii	"\372\212e\352\004k#\254=\305\332\323\254\375\226\265"
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  160      94464BA3 
  160      338A0DDF 
  160      35EA
-ARM GAS  /tmp/ccQqFOyP.s 			page 12
+ARM GAS  /tmp/cc2YbDQY.s 			page 12
 
 
  161 041a C754647C 		.ascii	"\307Td|K\024\266\177\362\210\256\346\206o)\021/\237"
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  172      54A8
  173 04eb 0F344842 		.ascii	"\0174HBm\300\273Y\360J\233\204\332z_\215/ \013J0\324"
  173      6DC0BB59 
-ARM GAS  /tmp/ccQqFOyP.s 			page 13
+ARM GAS  /tmp/cc2YbDQY.s 			page 13
 
 
  173      F04A9B84 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  184      CCD32E2F 
  185 05cb 8ABDD62F 		.ascii	"\212\275\326/\211A\\n[Q\355v\333*V\276\346\266\275\362"
  185      89415C6E 
-ARM GAS  /tmp/ccQqFOyP.s 			page 14
+ARM GAS  /tmp/cc2YbDQY.s 			page 14
 
 
  185      5B51ED76 
@@ -812,7 +812,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  191      72DEE5
  192 063e 88       		.ascii	"\210"
  193              		.text
- 194              		.section	.gnu.lto_.symtab.1a0f9cf7202c3d1d,"",%progbits
+ 194              		.section	.gnu.lto_.symtab.ea2e5820ab729096,"",%progbits
  195 0000 70616C52 		.ascii	"palReadBus\000\000\000\000\000\000\000\000\000\000\000"
  195      65616442 
  195      75730000 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  199      5F6C6C64 
  199      5F736574 
  199      67726F75 
-ARM GAS  /tmp/ccQqFOyP.s 			page 15
+ARM GAS  /tmp/cc2YbDQY.s 			page 15
 
 
  200 006b 00000000 		.ascii	"\000\000\000\000\000\000\000\000\011\001\000\000"
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  232              		.thumb
  233              		.thumb_func
  234              		.type	palWriteBus, %function
-ARM GAS  /tmp/ccQqFOyP.s 			page 16
+ARM GAS  /tmp/cc2YbDQY.s 			page 16
 
 
  235              	palWriteBus:
@@ -941,17 +941,17 @@ ARM GAS  /tmp/ccQqFOyP.s 			page 1
  272 0016 00BFAFF3 		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
  272      0080AFF3 
  272      0080
-ARM GAS  /tmp/ccQqFOyP.s 			page 17
+ARM GAS  /tmp/cc2YbDQY.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 pal.c
-     /tmp/ccQqFOyP.s:210    .text.palReadBus:0000000000000000 $t
-     /tmp/ccQqFOyP.s:216    .text.palReadBus:0000000000000000 palReadBus
-     /tmp/ccQqFOyP.s:229    .text.palWriteBus:0000000000000000 $t
-     /tmp/ccQqFOyP.s:235    .text.palWriteBus:0000000000000000 palWriteBus
-     /tmp/ccQqFOyP.s:252    .text.palSetBusMode:0000000000000000 $t
-     /tmp/ccQqFOyP.s:258    .text.palSetBusMode:0000000000000000 palSetBusMode
+     /tmp/cc2YbDQY.s:210    .text.palReadBus:0000000000000000 $t
+     /tmp/cc2YbDQY.s:216    .text.palReadBus:0000000000000000 palReadBus
+     /tmp/cc2YbDQY.s:229    .text.palWriteBus:0000000000000000 $t
+     /tmp/cc2YbDQY.s:235    .text.palWriteBus:0000000000000000 palWriteBus
+     /tmp/cc2YbDQY.s:252    .text.palSetBusMode:0000000000000000 $t
+     /tmp/cc2YbDQY.s:258    .text.palSetBusMode:0000000000000000 palSetBusMode
                             *COM*:0000000000000001 __gnu_lto_v1
 
 UNDEFINED SYMBOLS

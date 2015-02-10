@@ -10,6 +10,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "chbsem.h"
+#include "chprintf.h"
 
 //#define DEBUG_GPS
 #define DEBUG_SERIAL &SD2
@@ -97,7 +98,10 @@ static void gpsRxChar(UARTDriver *uartp, uint16_t c)
     if(c == '\n')
     {
 	gpsAddToBuffer('\0');
+	gpsToggleBuffer();
+	chSysLock();
 	chBSemSignal(&gpsSem);
+	chSysUnlock();
     }
     else
     {
@@ -134,7 +138,7 @@ static UARTConfig serGpsCfg = {
   gpsRxErr,
   NMEA_0183_BAUD,
   0,
-  0,	// No LIN
+  USART_CR2_LINEN,	// No LIN
   0
 };
 
@@ -149,6 +153,7 @@ int8_t gpsStart(UARTDriver *gpsUart)
     if(gpsUart == NULL)
 	return -1;
     GPS.gpsUart = gpsUart;
+    GPS.activeBuffer = 0;
     chMtxObjectInit(&(GPS.dataMutex));
     uartStart(GPS.gpsUart, &serGpsCfg); // Start GPS Serial port
     return 0;
@@ -228,12 +233,35 @@ uint8_t gpsParseToken(char *str, char token, char **splitStr, uint8_t maxTok)
 */
 
 /**
+ * @brief Simple string copy
+ */
+static void gpsStrCpy(char *dest, char *src)
+{
+    int len = strlen(src);
+    uint16_t i;
+    for(i = 0; i <= len; i++)
+    {
+	dest[i] = src[i];
+    } 
+}
+
+/**
+ * @brief Simple string character append
+ */
+static void gpsStrAppendChar(char *dest, char appChar)
+{
+    int len = strlen(dest);
+    dest[len] = appChar;
+    dest[len+1] = '\0';
+}
+
+/**
  * @brief Parse GPS GGA Sentence for location
  * @param nmeaGGAstr NMEA GPS Fix ($GPGGA) string
  * @param loc Location to store to
  * @return Parse success status
  */
-
+static char tokBuf[20];
 int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 {
     // Verify GGA Sentence
@@ -241,17 +269,17 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 	return -1;
     // Parse sentence
     uint8_t i = 0;
-    char tokBuf[17];
-    uint8_t pos = 7;
+    //char tokBuf[17];
+    char *pos = nmeaGGAStr + 7;
     uint8_t bufferCount;
     for(i = 1; i<10; i++)
     {
 	bufferCount = 0;
-	while((nmeaGGAStr[pos] != ',') 
-	    && (nmeaGGAStr[pos] != '\0') 
+	while((*pos != ',') 
+	    && (*pos != '\0') 
 	    && (bufferCount < 16))
 	{
-	    tokBuf[bufferCount++] = nmeaGGAStr[pos++];
+	    tokBuf[bufferCount++] = *(pos++);
 	}
 	tokBuf[bufferCount] = '\0';
 	pos++;
@@ -273,29 +301,28 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 		}
 		else
 		    loc->time[0] = '\0';
-		strcpy(loc->time,tokBuf);
 		break;
 	    case 2: // Latitude;
-		strcpy(loc->latitude, tokBuf);
+		gpsStrCpy(loc->latitude, tokBuf);
 		break;
 	    case 3: // Latitude Hemisphere
-		strcat(loc->latitude, tokBuf);
+		gpsStrAppendChar(loc->latitude, *tokBuf);
 		break;
 	    case 4: // Longitude
-		strcpy(loc->longitude, tokBuf);
+		gpsStrCpy(loc->longitude, tokBuf);
 		break;
 	    case 5: // Longitude Hemisphere
-		strcat(loc->longitude, tokBuf);
+		gpsStrAppendChar(loc->longitude, *tokBuf);
 		break;
 	    case 6: // Quality Indicator (Do nothing for now)
 		break;
 	    case 7: // Satellite count
-		strcpy(loc->satCount, tokBuf);
+		gpsStrCpy(loc->satCount, tokBuf);
 		break;
 	    case 8: // HDOP
 		break;
 	    case 9: // Altitude
-		strcpy(loc->altitude, tokBuf);
+		gpsStrCpy(loc->altitude, tokBuf);
 		break;
 	    default:
 		break;
@@ -329,16 +356,25 @@ msg_t gpsThread(void *arg)
     // GPS Loop
     while(thread->running)
     {
+	//chprintf((BaseSequentialStream *) &SD2, "STGPS1\n");
+	//uartStartReceive(GPS.gpsUart, GPS_BUFFER_SIZE, gpsGetActiveRxBuffer());
 	chBSemWait(&gpsSem); 		// Wait for new NMEA string
 	chBSemReset(&gpsSem, false);	// Clear semaphore
+	uartStopReceive(GPS.gpsUart);
+	//chprintf((BaseSequentialStream *) &SD2, "GPS2\n");
 	// Parse Fix data if sentence is correct
 	if(gpsParseNMEAType(gpsGetActiveRxBuffer()) == FIX_DATA)
 	{
+	    //chprintf((BaseSequentialStream *) &SD2, "GPS3\n");
 	    chMtxLock(&(GPS.dataMutex));
 	    gpsParseFix(gpsGetActiveRxBuffer(), &(GPS.location));
 	    chMtxUnlock(&(GPS.dataMutex));
+	    //chprintf((BaseSequentialStream *) &SD2, "GPS4\n");
 	}
+	//chprintf((BaseSequentialStream *) &SD2, "GPS5\n");
+	chThdSleepMilliseconds(20);
     }
+    //chprintf((BaseSequentialStream *) &SD2, "EXIT\n");
     gpsStop(&GPS);
     return message;
 }
