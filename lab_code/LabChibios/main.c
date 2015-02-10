@@ -203,17 +203,23 @@ void initialize(void)
     
     int8_t sdIni, dlIni, lfIni;
     sdIni = sdmmcInitialize(&sd, &MMCD1, &SD2);
-    chThdSleepMilliseconds(500);
-    if(sdmmcFSMounted(&sd))
+    chThdSleepMilliseconds(250);
+    if(!sdIni)
     {
-	dlIni = dataLoggerInitialize(&logger, "", &sd, &SD2);
+	if(sdmmcFSMounted(&sd))
+	{
+	    dlIni = dataLoggerInitialize(&logger, "", &sd, &SD2);
+	}
+	lfIni = logfileNew(&sensorLog, &logger, &lFile, "logs/log_001.csv");
+	logfileWrite(&sensorLog, "TIME,ACC.X,ACC.Y,ACC.Z,TEMP1,TEMP2,PRESSURE,HUMIDITY\n", 53, false);
+	//logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
+	logfileClose(&sensorLog);
+	chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     }
-    lfIni = logfileNew(&sensorLog, &logger, &lFile, "logs/log_001.csv");
-    logfileWrite(&sensorLog, "TIME,ACC.X,ACC.Y,ACC.Z,TEMP1,TEMP2,PRESSURE,HUMIDITY\n", 53, false);
-    //logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
-    //logfileClose(&sensorLog);
-    chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
-   
+    else
+    {
+	chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization Failed\n");
+    }
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
     

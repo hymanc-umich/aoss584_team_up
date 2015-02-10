@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccFjKlH2.s 			page 1
+ARM GAS  /tmp/ccpatPqJ.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"gps.c"
-  17              		.section	.gnu.lto_.jmpfuncs.776bdff3d1b7e3dc,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.8ec1137bfebb561e,"",%progbits
   18 0000 789CB593 		.ascii	"x\234\265\223\277N\3030\020\306\277\263\235\204\266"
   18      BF4EC330 
   18      10C6BFB3 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   25      FE
   26 008f 9CC95FB4 		.ascii	"\234\311_\264\362#\022%g\275v2\262f\357\330\357^\343"
   26      F2231225 
-ARM GAS  /tmp/ccFjKlH2.s 			page 2
+ARM GAS  /tmp/ccpatPqJ.s 			page 2
 
 
   26      67BD7632 
@@ -112,13 +112,13 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   36      BF8D5960 
   36      70
   37              		.text
-  38              		.section	.gnu.lto_.inline.776bdff3d1b7e3dc,"",%progbits
+  38              		.section	.gnu.lto_.inline.8ec1137bfebb561e,"",%progbits
   39 0000 789C9D53 		.ascii	"x\234\235S\253N\003A\024=wf\366\321.\335n)}\2204-\242"
   39      AB4E0341 
   39      143D7766 
   39      F6D12EDD 
   39      6E297D90 
-ARM GAS  /tmp/ccFjKlH2.s 			page 3
+ARM GAS  /tmp/ccpatPqJ.s 			page 3
 
 
   40 0017 A10E8740 		.ascii	"\241\016\207@CH0\325|\001\024O\320\010\002\225\015?"
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   51      3BCAAC48 
   51      67E7A3E2 
   51      9232
-ARM GAS  /tmp/ccFjKlH2.s 			page 4
+ARM GAS  /tmp/ccpatPqJ.s 			page 4
 
 
   52 00ec E99A5D86 		.ascii	"\351\232]\206\233|\306\324|\235\326\236\021\011\004"
@@ -223,7 +223,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   60 017e 00B25559 		.ascii	"\000\262UY<"
   60      3C
   61              		.text
-  62              		.section	.gnu.lto_.pureconst.776bdff3d1b7e3dc,"",%progbits
+  62              		.section	.gnu.lto_.pureconst.8ec1137bfebb561e,"",%progbits
   63 0000 789C6362 		.ascii	"x\234cb`b\320f\200\000Q\006\006F \227\231\201\305\212"
   63      6062D066 
   63      80005106 
@@ -238,12 +238,12 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   65      44425442 
   65      4C425C42 
   65      4202003F 
-ARM GAS  /tmp/ccFjKlH2.s 			page 5
+ARM GAS  /tmp/ccpatPqJ.s 			page 5
 
 
   65      A10340
   66              		.text
-  67              		.section	.gnu.lto_gpsTxbufEnd.776bdff3d1b7e3dc,"",%progbits
+  67              		.section	.gnu.lto_gpsTxbufEnd.8ec1137bfebb561e,"",%progbits
   68 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\004\304\034@\314\310\314\300"
   68      60624007 
   68      92401C04 
@@ -274,7 +274,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   73      000A1018 
   73      80
   74              		.text
-  75              		.section	.gnu.lto_gpsTxC.776bdff3d1b7e3dc,"",%progbits
+  75              		.section	.gnu.lto_gpsTxC.8ec1137bfebb561e,"",%progbits
   76 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\004\304\034@\314\310\314\300"
   76      60624007 
   76      92401C04 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   80      2B142809 
   80      A4992F32 
   80      3026322E 
-ARM GAS  /tmp/ccFjKlH2.s 			page 6
+ARM GAS  /tmp/ccpatPqJ.s 			page 6
 
 
   80      6464855B 
@@ -308,7 +308,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   81      00182018 
   81      B0
   82              		.text
-  83              		.section	.gnu.lto_gpsRxEnd.776bdff3d1b7e3dc,"",%progbits
+  83              		.section	.gnu.lto_gpsRxEnd.8ec1137bfebb561e,"",%progbits
   84 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\004\304\034@\314\310\314\300"
   84      60624007 
   84      92401C04 
@@ -338,7 +338,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   89      66000020 
   89      1F18CD
   90              		.text
-  91              		.section	.gnu.lto_gpsRxErr.776bdff3d1b7e3dc,"",%progbits
+  91              		.section	.gnu.lto_gpsRxErr.8ec1137bfebb561e,"",%progbits
   92 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\004\304\034@\314\310\314\300"
   92      60624007 
   92      92401C04 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   95      86968686 
   95      090A0C0C 
   95      C9
-ARM GAS  /tmp/ccFjKlH2.s 			page 7
+ARM GAS  /tmp/ccpatPqJ.s 			page 7
 
 
   96 0045 60052140 		.ascii	"`\005!@\022\244+\024(\011\244\231/20&2.dd\205[\026\302"
@@ -372,7 +372,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
   97      00002E78 
   97      18FE
   98              		.text
-  99              		.section	.gnu.lto_chBSemSignal.776bdff3d1b7e3dc,"",%progbits
+  99              		.section	.gnu.lto_chBSemSignal.8ec1137bfebb561e,"",%progbits
  100 0000 789C8D52 		.ascii	"x\234\215R\275k\024A\024\377\275\231]\357<\223\220F"
  100      BD6B1441 
  100      14FFBD99 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  109      0C2421AB 
  109      275362A3 
  109      A1D4721E 
-ARM GAS  /tmp/ccFjKlH2.s 			page 8
+ARM GAS  /tmp/ccpatPqJ.s 			page 8
 
 
  109      1031E0B6 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  121 0172 520F709C 		.ascii	"R\017p\234;r\351\265\206\304w\202#w\342\322\032\015"
  121      3B72E9B5 
  121      86C47782 
-ARM GAS  /tmp/ccFjKlH2.s 			page 9
+ARM GAS  /tmp/ccpatPqJ.s 			page 9
 
 
  121      2377E2D2 
@@ -513,7 +513,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  127      0504CD
  128 01ef B75A     		.ascii	"\267Z"
  129              		.text
- 130              		.section	.gnu.lto_gpsStrCpy.776bdff3d1b7e3dc,"",%progbits
+ 130              		.section	.gnu.lto_gpsStrCpy.8ec1137bfebb561e,"",%progbits
  131 0000 789C5D52 		.ascii	"x\234]R\277O\024A\030}ofgw\357\3668)-\011\215\235\377"
  131      BF4F1441 
  131      187D6F66 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  135      190585BB 
  135      6346BE05 
  135      81
-ARM GAS  /tmp/ccFjKlH2.s 			page 10
+ARM GAS  /tmp/ccpatPqJ.s 			page 10
 
 
  136 005d BB323306 		.ascii	"\27323\006U\377\007P\246\212\221_h\277\370\232FJ\277"
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  147      30D2DC19 
  147      1CA3DAD0 
  148 0135 016AE76C 		.ascii	"\001j\347l\345\336\253\332\250^\0078\223\024cx\365\213"
-ARM GAS  /tmp/ccFjKlH2.s 			page 11
+ARM GAS  /tmp/ccpatPqJ.s 			page 11
 
 
  148      E5DEABDA 
@@ -636,7 +636,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  154      C57F
  155 01b2 81008DDA 		.ascii	"\201\000\215\332"
  156              		.text
- 157              		.section	.gnu.lto_gpsRxChar.part.0.776bdff3d1b7e3dc,"",%progbits
+ 157              		.section	.gnu.lto_gpsRxChar.part.0.8ec1137bfebb561e,"",%progbits
  158 0000 789CB554 		.ascii	"x\234\265T\315KTQ\024?\347\276\217\231\261\3241\203"
  158      CD4B5451 
  158      143FE7BE 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  161      CA080CFA 
  161      58244952 
  162 004b 9B9ADA44 		.ascii	"\233\232\332D\3661\235{\357\314\233AZh\320\2039\367"
-ARM GAS  /tmp/ccFjKlH2.s 			page 12
+ARM GAS  /tmp/ccpatPqJ.s 			page 12
 
 
  162      F6319D7B 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  174      42F70B33 
  174      2004051B 
  174      708AF3
-ARM GAS  /tmp/ccFjKlH2.s 			page 13
+ARM GAS  /tmp/ccpatPqJ.s 			page 13
 
 
  175 0129 91908DE3 		.ascii	"\221\220\215\343\344h\343e\2222\037}\255$\305\024[\311"
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  186      A084BBE6 
  186      1E478590 
  186      45751793 
-ARM GAS  /tmp/ccFjKlH2.s 			page 14
+ARM GAS  /tmp/ccpatPqJ.s 			page 14
 
 
  186      9851
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  197      D3DB
  198 02d7 E0003A46 		.ascii	"\340\000:F\312N${\314p\252\2633\222h\264\272\342\261"
  198      CA4E247B 
-ARM GAS  /tmp/ccFjKlH2.s 			page 15
+ARM GAS  /tmp/ccpatPqJ.s 			page 15
 
 
  198      CC70AAB3 
@@ -865,7 +865,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  203 0334 873F0404 		.ascii	"\207?\004\004\2234"
  203      9334
  204              		.text
- 205              		.section	.gnu.lto_gpsRxChar.776bdff3d1b7e3dc,"",%progbits
+ 205              		.section	.gnu.lto_gpsRxChar.8ec1137bfebb561e,"",%progbits
  206 0000 789C9592 		.ascii	"x\234\225\222?h\024A\024\306\2777\263\273\331\273\354"
  206      3F681441 
  206      14C6BF37 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  212 006b E8BC0412 		.ascii	"\350\274\004\022_\010\331o@\225\235\356$T \311\323i"
  212      5F08D96F 
  212      40959DEE 
-ARM GAS  /tmp/ccFjKlH2.s 			page 16
+ARM GAS  /tmp/ccpatPqJ.s 			page 16
 
 
  212      245420C9 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  223      5A141CC2 
  224 0146 526AE367 		.ascii	"Rj\343g;\246\322u\254$J\273\226\007\376\303mS\251\231"
  224      3BA6D275 
-ARM GAS  /tmp/ccFjKlH2.s 			page 17
+ARM GAS  /tmp/ccpatPqJ.s 			page 17
 
 
  224      AC244ABB 
@@ -1018,10 +1018,10 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  236      CE5EF803 
  236      9C74D506 
  237              		.text
-ARM GAS  /tmp/ccFjKlH2.s 			page 18
+ARM GAS  /tmp/ccpatPqJ.s 			page 18
 
 
- 238              		.section	.gnu.lto_gpsParseNMEAType.part.1.776bdff3d1b7e3dc,"",%progbits
+ 238              		.section	.gnu.lto_gpsParseNMEAType.part.1.8ec1137bfebb561e,"",%progbits
  239 0000 789C8D94 		.ascii	"x\234\215\224=h\024A\024\307\337\233\257\335\231\335"
  239      3D681441 
  239      14C7DF9B 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  250      BBDB454C 
  250      D09D4823 
  250      D410
-ARM GAS  /tmp/ccFjKlH2.s 			page 19
+ARM GAS  /tmp/ccpatPqJ.s 			page 19
 
 
  251 00d1 2EBA80C3 		.ascii	".\272\200\303\2760\361\367\021\3370\333\351vW~\352\030"
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  262 019c 870A1383 		.ascii	"\207\012\023\203\014b\000K\350\211\017\006\3040\207"
  262      0C62004B 
  262      E8890F06 
-ARM GAS  /tmp/ccFjKlH2.s 			page 20
+ARM GAS  /tmp/ccpatPqJ.s 			page 20
 
 
  262      C43087
@@ -1177,7 +1177,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  269      C36FFCE9 
  269      0BCE
  270              		.text
- 271              		.section	.gnu.lto_gpsStart.776bdff3d1b7e3dc,"",%progbits
+ 271              		.section	.gnu.lto_gpsStart.8ec1137bfebb561e,"",%progbits
  272 0000 789C9591 		.ascii	"x\234\225\221\275K\003A\020\305\337\333\275\213gbaa"
  272      BD4B0341 
  272      10C5DFDB 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  275      74E06EE7 
  275      1E6F7E33 
  275      B7A3
-ARM GAS  /tmp/ccFjKlH2.s 			page 21
+ARM GAS  /tmp/ccpatPqJ.s 			page 21
 
 
  276 004e A0F03B96 		.ascii	"\240\360;\226\3543k\345\310\236\014AU\277\007\252\221"
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  287 0112 0FCA3CE1 		.ascii	"\017\312<\341\330,\223q\332\3152\275h\266\022f\313T"
  287      D82C9371 
  287      DACD32BD 
-ARM GAS  /tmp/ccFjKlH2.s 			page 22
+ARM GAS  /tmp/ccpatPqJ.s 			page 22
 
 
  287      68B61266 
@@ -1276,7 +1276,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  290 014c 62FC000E 		.ascii	"b\374\000\016\352\211\243"
  290      EA89A3
  291              		.text
- 292              		.section	.gnu.lto_gpsStop.776bdff3d1b7e3dc,"",%progbits
+ 292              		.section	.gnu.lto_gpsStop.8ec1137bfebb561e,"",%progbits
  293 0000 789C5D8E 		.ascii	"x\234]\2161\017\001A\024\204g\336:Qj\025\0225\211?\203"
  293      310F0141 
  293      148467DE 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  300      35B3823D 
  300      FEEA
  301 0093 DD101DCB 		.ascii	"\335\020\035\313Y\012\030\341e\246\246\250\251|f\016"
-ARM GAS  /tmp/ccFjKlH2.s 			page 23
+ARM GAS  /tmp/ccpatPqJ.s 			page 23
 
 
  301      590A18E1 
@@ -1333,7 +1333,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  303      EB3E3E15 
  303      1731BE
  304              		.text
- 305              		.section	.gnu.lto_gpsParseNMEAType.776bdff3d1b7e3dc,"",%progbits
+ 305              		.section	.gnu.lto_gpsParseNMEAType.8ec1137bfebb561e,"",%progbits
  306 0000 789C5D91 		.ascii	"x\234]\221=K\003A\020\206\337\331\217\273K<\3212\202"
  306      3D4B0341 
  306      1086DFD9 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  314      6B1A8832 
  314      7385A560 
  314      AB
-ARM GAS  /tmp/ccFjKlH2.s 			page 24
+ARM GAS  /tmp/ccpatPqJ.s 			page 24
 
 
  315 00ac A444EB27 		.ascii	"\244D\353'\354\\\357^\265g\327\351\224\223c2G8$\006"
@@ -1427,7 +1427,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  324      CBF801C6 
  324      D35DB5
  325              		.text
- 326              		.section	.gnu.lto_gpsParseFix.776bdff3d1b7e3dc,"",%progbits
+ 326              		.section	.gnu.lto_gpsParseFix.8ec1137bfebb561e,"",%progbits
  327 0000 789CAD57 		.ascii	"x\234\255W[lTU\024\335\373>f\356\314\264\235g\037\224"
  327      5B6C5455 
  327      14DDFB3E 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  328      282D8F1A 
  328      63FC3691 
  328      44BE4C29 
-ARM GAS  /tmp/ccFjKlH2.s 			page 25
+ARM GAS  /tmp/ccpatPqJ.s 			page 25
 
 
  329 002b 84807C20 		.ascii	"\204\200| \037\334\3226i\202h\003\301\326W\200`\255"
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  340      EC50D889 
  340      446345C5 
  340      25F14432 
-ARM GAS  /tmp/ccFjKlH2.s 			page 26
+ARM GAS  /tmp/ccpatPqJ.s 			page 26
 
 
  341 0109 CE94E2E1 		.ascii	"\316\224\342\341\355\31053\253\341\214\353\036\037\373"
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  352      DBCA734D 
  352      ACD1E66D 
  352      6877DDAE 
-ARM GAS  /tmp/ccFjKlH2.s 			page 27
+ARM GAS  /tmp/ccpatPqJ.s 			page 27
 
 
  352      E5325E46 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  364 02b4 A9E2F22B 		.ascii	"\251\342\362+\023gSj\265W\227\0210\262X\237ABl\365w"
  364      1367536A 
  364      B5579711 
-ARM GAS  /tmp/ccFjKlH2.s 			page 28
+ARM GAS  /tmp/ccpatPqJ.s 			page 28
 
 
  364      30B2589F 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  375      615306F2 
  376 0399 8A920F37 		.ascii	"\212\222\0177{\270\347\342\270\221\327\330\347\250K"
  376      7BB8E7E2 
-ARM GAS  /tmp/ccFjKlH2.s 			page 29
+ARM GAS  /tmp/ccpatPqJ.s 			page 29
 
 
  376      B891D7D8 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  388      D4CD06BC 
  388      EE
  389 0478 54B4A0A1 		.ascii	"T\264\240\241*\267R\035\304\007e\317\224k\016\027i`"
-ARM GAS  /tmp/ccFjKlH2.s 			page 30
+ARM GAS  /tmp/ccpatPqJ.s 			page 30
 
 
  389      2AB7521D 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  400      88D26E30 
  400      A82D64A0 
  401 0552 209F283C 		.ascii	" \237(<\035\354\346\226 Q\326\004\211\"\023l\245\350"
-ARM GAS  /tmp/ccFjKlH2.s 			page 31
+ARM GAS  /tmp/ccpatPqJ.s 			page 31
 
 
  401      1DECE696 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  412      CAEEDDFF 
  412      780B60CE 
  412      DCBB677F 
-ARM GAS  /tmp/ccFjKlH2.s 			page 32
+ARM GAS  /tmp/ccpatPqJ.s 			page 32
 
 
  412      6CC7
@@ -1869,7 +1869,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  413      F01F
  414 063d B12FD489 		.ascii	"\261/\324\211"
  415              		.text
- 416              		.section	.gnu.lto_gpsNMEAChecksum.776bdff3d1b7e3dc,"",%progbits
+ 416              		.section	.gnu.lto_gpsNMEAChecksum.8ec1137bfebb561e,"",%progbits
  417 0000 789C5D51 		.ascii	"x\234]Q=K\003A\020\2357\273{9\305\306\336B\354\325\312"
  417      3D4B0341 
  417      109D37BB 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  426      5DC6A312 
  427 00b5 C931D4B0 		.ascii	"\3111\324\260\2665\237\305\301\250m^\376\242\264\000"
  427      B6359FC5 
-ARM GAS  /tmp/ccFjKlH2.s 			page 33
+ARM GAS  /tmp/ccpatPqJ.s 			page 33
 
 
  427      C1A86D5E 
@@ -1959,7 +1959,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  435 014a 07674C67 		.ascii	"\007gLg\375"
  435      FD
  436              		.text
- 437              		.section	.gnu.lto_gpsThread.776bdff3d1b7e3dc,"",%progbits
+ 437              		.section	.gnu.lto_gpsThread.8ec1137bfebb561e,"",%progbits
  438 0000 789C9D54 		.ascii	"x\234\235TKL\023Q\024\275w\276\375YT\344\253(\376E\002"
  438      4B4C1351 
  438      14BD77BE 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  441 0038 BF1B3194 		.ascii	"\277\0331\224H$j\374\220\0304\24611\006\301Ot'&x\337"
  441      48246AFC 
  441      901834A6 
-ARM GAS  /tmp/ccFjKlH2.s 			page 34
+ARM GAS  /tmp/ccpatPqJ.s 			page 34
 
 
  441      313106C1 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  453 010f D0F963A0 		.ascii	"\320\371c\240\347b\211\035\352\344\214L|\232T\001\302"
  453      E762891D 
  453      EAE48C4C 
-ARM GAS  /tmp/ccFjKlH2.s 			page 35
+ARM GAS  /tmp/ccpatPqJ.s 			page 35
 
 
  453      7C9A5401 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  464      1569CE0D 
  464      D765
  465 01e4 8BF48884 		.ascii	"\213\364\210\204RQ\302\310\3444\221\255\3717-\022G\271"
-ARM GAS  /tmp/ccFjKlH2.s 			page 36
+ARM GAS  /tmp/ccpatPqJ.s 			page 36
 
 
  465      5251C2C8 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  476      CC227064 
  476      796031CB 
  476      1B97B65C 
-ARM GAS  /tmp/ccFjKlH2.s 			page 37
+ARM GAS  /tmp/ccpatPqJ.s 			page 37
 
 
  476      6CA4EA
@@ -2215,10 +2215,10 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  487      EA5BE02F 
  487      4AD3C330 
  488              		.text
- 489              		.section	.gnu.lto_gpsGetLatitude.776bdff3d1b7e3dc,"",%progbits
+ 489              		.section	.gnu.lto_gpsGetLatitude.8ec1137bfebb561e,"",%progbits
  490 0000 789C7550 		.ascii	"x\234uP\273n\0021\020\234\261s\276S\252\264t\364\021"
  490      BB6E0231 
-ARM GAS  /tmp/ccFjKlH2.s 			page 38
+ARM GAS  /tmp/ccpatPqJ.s 			page 38
 
 
  490      109CB173 
@@ -2278,13 +2278,13 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  501      53889693 
  501      76BFE275 
  502 00e1 7F386A66 		.ascii	"\1778jf8\001\373\002S\210"
-ARM GAS  /tmp/ccFjKlH2.s 			page 39
+ARM GAS  /tmp/ccpatPqJ.s 			page 39
 
 
  502      3801FB02 
  502      5388
  503              		.text
- 504              		.section	.gnu.lto_gpsGetLongitude.776bdff3d1b7e3dc,"",%progbits
+ 504              		.section	.gnu.lto_gpsGetLongitude.8ec1137bfebb561e,"",%progbits
  505 0000 789C7550 		.ascii	"x\234uP1n\0021\020\234\2619s\242\242\245K\037\301k\240"
  505      316E0231 
  505      109CB139 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  516 00c3 1AB1D7C8 		.ascii	"\032\261\327\310\355\356\245q\317\256\274gw\370\277"
  516      EDEEA571 
  516      CFAEBC67 
-ARM GAS  /tmp/ccFjKlH2.s 			page 40
+ARM GAS  /tmp/ccpatPqJ.s 			page 40
 
 
  516      77F8BF
@@ -2350,7 +2350,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  518      0F89C254 
  518      2D
  519              		.text
- 520              		.section	.gnu.lto_gpsGetAltitude.776bdff3d1b7e3dc,"",%progbits
+ 520              		.section	.gnu.lto_gpsGetAltitude.8ec1137bfebb561e,"",%progbits
  521 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\302\310\300\300\001\244\031"
  521      60624007 
  521      92401CC2 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  530      4199D199 
  530      8CEC60B3 
  530      21862741 
-ARM GAS  /tmp/ccFjKlH2.s 			page 41
+ARM GAS  /tmp/ccpatPqJ.s 			page 41
 
 
  530      B5C1
@@ -2415,7 +2415,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  533      060020EA 
  533      54CA
  534              		.text
- 535              		.section	.gnu.lto_gpsGetTime.776bdff3d1b7e3dc,"",%progbits
+ 535              		.section	.gnu.lto_gpsGetTime.8ec1137bfebb561e,"",%progbits
  536 0000 789C7550 		.ascii	"x\234uP\261\212\0021\024\234I\334\270X\331\332\331\213"
  536      B18A0231 
  536      149C49DC 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  544 0098 1F9A28F6 		.ascii	"\037\232(\366\264\363\206\0143{\274\252\177T\245\204"
  544      B4F3860C 
  544      337BBCAA 
-ARM GAS  /tmp/ccFjKlH2.s 			page 42
+ARM GAS  /tmp/ccpatPqJ.s 			page 42
 
 
  544      7F54A584 
@@ -2480,7 +2480,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  548 00e0 D147825F 		.ascii	"\321G\202_\377\351T\340"
  548      FFE954E0 
  549              		.text
- 550              		.section	.gnu.lto_gpsGetSatellites.776bdff3d1b7e3dc,"",%progbits
+ 550              		.section	.gnu.lto_gpsGetSatellites.8ec1137bfebb561e,"",%progbits
  551 0000 789C7550 		.ascii	"x\234uP\273n\0021\020\234\2619s\242\242M\227>\"_\003"
  551      BB6E0231 
  551      109CB139 
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  557      3346
  558 0083 AEDDC3AF 		.ascii	"\256\335\303\257\031\231\262\246\033\017\254\036\211"
  558      1999B2A6 
-ARM GAS  /tmp/ccFjKlH2.s 			page 43
+ARM GAS  /tmp/ccpatPqJ.s 			page 43
 
 
  558      1B0FAC1E 
@@ -2548,7 +2548,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  563      7CBE27B8 
  563      028C2155 
  564              		.text
- 565              		.section	.gnu.lto_gpsGetLocation.776bdff3d1b7e3dc,"",%progbits
+ 565              		.section	.gnu.lto_gpsGetLocation.8ec1137bfebb561e,"",%progbits
  566 0000 789C95D3 		.ascii	"x\234\225\323\275J\003A\020\007\360\371\357\336\227"
  566      BD4A0341 
  566      1007F0F9 
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  571      1638
  572 0066 2E419F7D 		.ascii	".A\237}\022\355\336p\370\370\365q\333\204\273 Q\005"
  572      12EDDE70 
-ARM GAS  /tmp/ccFjKlH2.s 			page 44
+ARM GAS  /tmp/ccpatPqJ.s 			page 44
 
 
  572      F8F8F571 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  583      98CAB4B3 
  583      99F7AF23 
  583      6630
-ARM GAS  /tmp/ccFjKlH2.s 			page 45
+ARM GAS  /tmp/ccpatPqJ.s 			page 45
 
 
  584 0144 23D3C9C1 		.ascii	"#\323\311\301\014\3622\235\011\246\352\306\213K?\253"
@@ -2655,7 +2655,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  586      C17A483F 
  586      F1ABF730 
  587              		.text
- 588              		.section	.gnu.lto_.symbol_nodes.776bdff3d1b7e3dc,"",%progbits
+ 588              		.section	.gnu.lto_.symbol_nodes.8ec1137bfebb561e,"",%progbits
  589 0000 789C4DCF 		.ascii	"x\234M\317\313n\323@\024\006\340\343\177\354@S\032\203"
  589      CB6ED340 
  589      1406E0E3 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  597      AE828BA6 
  597      C535F0A8 
  598 009e C575F009 		.ascii	"\305u\360\011kg\015*\335\331\000\217YC\327\301%\213"
-ARM GAS  /tmp/ccFjKlH2.s 			page 46
+ARM GAS  /tmp/ccpatPqJ.s 			page 46
 
 
  598      6B670D2A 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  609      8ABFE579 
  609      98667026 
  609      BF
-ARM GAS  /tmp/ccFjKlH2.s 			page 47
+ARM GAS  /tmp/ccpatPqJ.s 			page 47
 
 
  610 0171 67304FC9 		.ascii	"g0O\311\237\337\347Tp\232\372Y\316\351\347\244Y\242"
@@ -2793,7 +2793,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  616      804EFA0F 
  616      5C6B35A3 
  617              		.text
- 618              		.section	.gnu.lto_.refs.776bdff3d1b7e3dc,"",%progbits
+ 618              		.section	.gnu.lto_.refs.8ec1137bfebb561e,"",%progbits
  619 0000 789C4D8C 		.ascii	"x\234M\214[\016\2000\010\004\227\255\22566\332\370\276"
  619      5B0E8030 
  619      080497AD 
@@ -2818,11 +2818,11 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  623      7C98F5A4 
  623      FEC10D
  624 0054 A3350475 		.ascii	"\2435\004u"
-ARM GAS  /tmp/ccFjKlH2.s 			page 48
+ARM GAS  /tmp/ccpatPqJ.s 			page 48
 
 
  625              		.text
- 626              		.section	.gnu.lto_.decls.776bdff3d1b7e3dc,"",%progbits
+ 626              		.section	.gnu.lto_.decls.8ec1137bfebb561e,"",%progbits
  627 0000 789CBD5D 		.ascii	"x\234\275]\011x\024U\236\257\252\276r\011\001Aq\277"
  627      09781455 
  627      9EAFAABE 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  637      09D50769 
  637      03212C86 
  638 00cc E72CB877 		.ascii	"\347,\270w\205\360\000\204\373 <\014\341.H\377w\270"
-ARM GAS  /tmp/ccFjKlH2.s 			page 49
+ARM GAS  /tmp/ccpatPqJ.s 			page 49
 
 
  638      85F00084 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  649      F8D6119E 
  649      7301
  650 01a3 E3122D27 		.ascii	"\343\022-'\3212\027i}a\210\236g0\221\256;R\034\025\023"
-ARM GAS  /tmp/ccFjKlH2.s 			page 50
+ARM GAS  /tmp/ccpatPqJ.s 			page 50
 
 
  650      D1321769 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  662 0271 F6950CED 		.ascii	"\366\225\014\355\253\251\034*\251\356\333S\373-\241"
  662      ABA91C2A 
  662      A9EEDB53 
-ARM GAS  /tmp/ccFjKlH2.s 			page 51
+ARM GAS  /tmp/ccpatPqJ.s 			page 51
 
 
  662      FB2DA1
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  674      6C0D
  675 034c A52FD6D9 		.ascii	"\245/\326\331q/I\353\253\306\240\276\202\3624\216\366"
  675      712F49EB 
-ARM GAS  /tmp/ccFjKlH2.s 			page 52
+ARM GAS  /tmp/ccpatPqJ.s 			page 52
 
 
  675      ABC6A0BE 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  686      169EC30F 
  686      69C9B871 
  686      FF467853 
-ARM GAS  /tmp/ccFjKlH2.s 			page 53
+ARM GAS  /tmp/ccpatPqJ.s 			page 53
 
 
  687 0428 26351EFF 		.ascii	"&5\036\377\276\223\342\226\305\205b{\200}H\004\037\360"
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  698 04f7 1BD7291B 		.ascii	"\033\327)\033\262\270\026X\221\204\0151\\Zq\206Z/jM"
  698      B2B81658 
  698      91840D31 
-ARM GAS  /tmp/ccFjKlH2.s 			page 54
+ARM GAS  /tmp/ccpatPqJ.s 			page 54
 
 
  698      5C5A7186 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  710      62E67958 
  710      D3783CD5 
  710      A83C78D7 
-ARM GAS  /tmp/ccFjKlH2.s 			page 55
+ARM GAS  /tmp/ccpatPqJ.s 			page 55
 
 
  710      65908445 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  722      29FB580F 
  722      76D13198 
  722      91B2F57A 
-ARM GAS  /tmp/ccFjKlH2.s 			page 56
+ARM GAS  /tmp/ccpatPqJ.s 			page 56
 
 
  723 06b4 2B76C09E 		.ascii	"+v\300\2361\247\354\023=\330\317\216\301\214\224\355"
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  734      C740F331 
  734      D0C70C
  735 0789 902C8ACC 		.ascii	"\220,\212\314|H4\316X\304d\355\241\305\250\256\177h"
-ARM GAS  /tmp/ccFjKlH2.s 			page 57
+ARM GAS  /tmp/ccpatPqJ.s 			page 57
 
 
  735      7C4834CE 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  746      45ED4989 
  746      92C6FD5D 
  746      8895
-ARM GAS  /tmp/ccFjKlH2.s 			page 58
+ARM GAS  /tmp/ccpatPqJ.s 			page 58
 
 
  747 085e D155AFAA 		.ascii	"\321U\257\252\213p\217\243\276t\352\337\011\267s\233"
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  758      A2CA7979 
  758      928A6A21 
  758      679E9DA8 
-ARM GAS  /tmp/ccFjKlH2.s 			page 59
+ARM GAS  /tmp/ccpatPqJ.s 			page 59
 
 
  758      FB02
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  770      25B906CB 
  770      EDA4D18D 
  770      9F495277 
-ARM GAS  /tmp/ccFjKlH2.s 			page 60
+ARM GAS  /tmp/ccpatPqJ.s 			page 60
 
 
  770      6A5BE3
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  781      1123A6BB 
  782 0ae6 08BC59BA 		.ascii	"\010\274Y\272\005?\271\360\331\227\204Rh\214\365\302"
  782      053FB9F0 
-ARM GAS  /tmp/ccFjKlH2.s 			page 61
+ARM GAS  /tmp/ccpatPqJ.s 			page 61
 
 
  782      D9978452 
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  793      94B0736C 
  793      2B9470F5 
  794 0bcd 88121660 		.ascii	"\210\022\026`%li\235\022\336d\225\260\217(\341M[J\330"
-ARM GAS  /tmp/ccFjKlH2.s 			page 62
+ARM GAS  /tmp/ccpatPqJ.s 			page 62
 
 
  794      256C699D 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  805 0c9c 8A00F7B1 		.ascii	"\212\000\367\261\021\356'\307pF\352\326\033\341\316"
  805      11EE27C7 
  805      7046EAD6 
-ARM GAS  /tmp/ccFjKlH2.s 			page 63
+ARM GAS  /tmp/ccpatPqJ.s 			page 63
 
 
  805      1BE1CE
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  817      971C8365 
  817      F0D42BC4 
  817      5987
-ARM GAS  /tmp/ccFjKlH2.s 			page 64
+ARM GAS  /tmp/ccpatPqJ.s 			page 64
 
 
  818 0d7d 2CEEC3AE 		.ascii	",\356\303\256f?v&\007q|\030\307\0158n\304\361Q;Nf\227"
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  829      9BAE64ED 
  829      A1A5
  830 0e57 05FF2069 		.ascii	"\005\377 i\003\243\024\033\340\261s4o\223\337\025\\"
-ARM GAS  /tmp/ccFjKlH2.s 			page 65
+ARM GAS  /tmp/ccpatPqJ.s 			page 65
 
 
  830      03A3141B 
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  841      A0ED65FA 
  841      E8EED73B 
  841      22
-ARM GAS  /tmp/ccFjKlH2.s 			page 66
+ARM GAS  /tmp/ccpatPqJ.s 			page 66
 
 
  842 0f32 C94DC6CB 		.ascii	"\311M\306\3134\223\333\376\003\316\2148P\333:\242\266"
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  854      AD
  855 1000 FCB61BCD 		.ascii	"\374\266\033\315\265\2670-?!\020t\337\270\310\0227\373"
  855      B5B7302D 
-ARM GAS  /tmp/ccFjKlH2.s 			page 67
+ARM GAS  /tmp/ccpatPqJ.s 			page 67
 
 
  855      3F211074 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  866      B5F62A18 
  866      FA6B3C68 
  866      B70FEB
-ARM GAS  /tmp/ccFjKlH2.s 			page 68
+ARM GAS  /tmp/ccpatPqJ.s 			page 68
 
 
  867 10dd 221AD7E6 		.ascii	"\"\032\327\346\237\313 \2516\366\341k\350\2218\005\317"
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  878      E92E59DC 
  878      E536FCB9 
  878      244A5743 
-ARM GAS  /tmp/ccFjKlH2.s 			page 69
+ARM GAS  /tmp/ccpatPqJ.s 			page 69
 
 
  879 11b6 DAA4918D 		.ascii	"\332\244\221\215--w\250D5\361\211\232\254\022%\213_"
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  890      C6
  891 1289 B79AD3AC 		.ascii	"\267\232\323\254X\233xb\2156\327\216O\"M\300\276H/S"
  891      589B7862 
-ARM GAS  /tmp/ccFjKlH2.s 			page 70
+ARM GAS  /tmp/ccpatPqJ.s 			page 70
 
 
  891      8D36D78E 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  902      FDD11DE7 
  902      50DF68CF 
  902      3367F071 
-ARM GAS  /tmp/ccFjKlH2.s 			page 71
+ARM GAS  /tmp/ccpatPqJ.s 			page 71
 
 
  903 136c EEAF47C6 		.ascii	"\356\257G\306\257\266\377u8\237\342\261\323\376\247"
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  914      E36D38FE 
  914      0AC7F538 
  914      E6
-ARM GAS  /tmp/ccFjKlH2.s 			page 72
+ARM GAS  /tmp/ccpatPqJ.s 			page 72
 
 
  915 1440 8DEEE318 		.ascii	"\215\356\343\030Y\352\341oU\301\010\235\253\260\350"
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  926      8859FCAB 
  926      BDF538C3 
  927 1515 36535E1F 		.ascii	"6S^\037\327+\366\375\252\321\351nB\223`Q\212\222\267"
-ARM GAS  /tmp/ccFjKlH2.s 			page 73
+ARM GAS  /tmp/ccpatPqJ.s 			page 73
 
 
  927      D72BF6FD 
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  938      D8193CC9 
  938      D1C4AD7A 
  938      57D50971 
-ARM GAS  /tmp/ccFjKlH2.s 			page 74
+ARM GAS  /tmp/ccpatPqJ.s 			page 74
 
 
  938      B6
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  950      B52A75A1 
  950      7CBE09C4 
  950      742EC4F2 
-ARM GAS  /tmp/ccFjKlH2.s 			page 75
+ARM GAS  /tmp/ccpatPqJ.s 			page 75
 
 
  950      D33F3CDE 
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  962      33F2D87A 
  962      8B6D9FCE 
  962      BF
-ARM GAS  /tmp/ccFjKlH2.s 			page 76
+ARM GAS  /tmp/ccpatPqJ.s 			page 76
 
 
  963 1792 7E252C50 		.ascii	"~%,P\032w4\356\\\370\331&q\212\242\324)\012HK\274C\375"
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  973      3DBC2098 
  974 1871 EFEBAE16 		.ascii	"\357\353\256\026\365\321\002\333\274N\317G|\351\345"
  974      F5D102DB 
-ARM GAS  /tmp/ccFjKlH2.s 			page 77
+ARM GAS  /tmp/ccpatPqJ.s 			page 77
 
 
  974      BC4ECF47 
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  986      9D742609 
  986      43547E8D 
  986      8A71F7B7 
-ARM GAS  /tmp/ccFjKlH2.s 			page 78
+ARM GAS  /tmp/ccpatPqJ.s 			page 78
 
 
  986      91B5
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  998      5A6851AA 
  998      C5B4D41A 
  998      8B06ABF8 
-ARM GAS  /tmp/ccFjKlH2.s 			page 79
+ARM GAS  /tmp/ccpatPqJ.s 			page 79
 
 
  998      CC
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1009      0267
  1010 1af5 70F96D99 		.ascii	"p\371m\231h\034\346 }KBe'{\204\316\266\245\301\033\250"
  1010      681CE620 
-ARM GAS  /tmp/ccFjKlH2.s 			page 80
+ARM GAS  /tmp/ccpatPqJ.s 			page 80
 
 
  1010      7D4B4265 
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1021      67F6C9CE 
  1021      86EC2A
  1022 1bd0 FDBE4859 		.ascii	"\375\276HY\250\260\324\037\271+\263<\034\312\224C\305"
-ARM GAS  /tmp/ccFjKlH2.s 			page 81
+ARM GAS  /tmp/ccpatPqJ.s 			page 81
 
 
  1022      A8B0D41F 
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1033      3902D6E4 
  1033      4302EB0E 
  1033      66404407 
-ARM GAS  /tmp/ccFjKlH2.s 			page 82
+ARM GAS  /tmp/ccpatPqJ.s 			page 82
 
 
  1034 1caf 901D7FF3 		.ascii	"\220\035\177\363E\212K\363\203\370}h\221<,\354\213\204"
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1045      860BFF02 
  1045      C2EE9388 
  1045      8902
-ARM GAS  /tmp/ccFjKlH2.s 			page 83
+ARM GAS  /tmp/ccpatPqJ.s 			page 83
 
 
  1046 1d84 B9889A58 		.ascii	"\271\210\232Xn^\377\256]2\237z\252g\346\340\334\036"
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1057      C7531E06 
  1057      7A7DF9C5 
  1057      326A33BD 
-ARM GAS  /tmp/ccFjKlH2.s 			page 84
+ARM GAS  /tmp/ccpatPqJ.s 			page 84
 
 
  1057      9D2A11C7 
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1069      3502869A 
  1069      5C545A32 
  1069      0C3F25C9 
-ARM GAS  /tmp/ccFjKlH2.s 			page 85
+ARM GAS  /tmp/ccpatPqJ.s 			page 85
 
 
  1069      45242929 
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1083      F0809EBD 
  1083      7ADF0A55 
  1083      0C9243E1 
-ARM GAS  /tmp/ccFjKlH2.s 			page 86
+ARM GAS  /tmp/ccpatPqJ.s 			page 86
 
 
  1083      E0
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1095 20e4 8D0B815D 		.ascii	"\215\013\201]h\243\201\202\274\202\374\334\242`\260"
  1095      68A38182 
  1095      BC82FCDC 
-ARM GAS  /tmp/ccFjKlH2.s 			page 87
+ARM GAS  /tmp/ccpatPqJ.s 			page 87
 
 
  1095      A260B0
@@ -5206,7 +5206,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1104      F9BFDC20 
  1104      8195
  1105              		.text
- 1106              		.section	.gnu.lto_.symtab.776bdff3d1b7e3dc,"",%progbits
+ 1106              		.section	.gnu.lto_.symtab.8ec1137bfebb561e,"",%progbits
  1107 0000 67707353 		.ascii	"gpsSem\000\000\000\000\000\000\000\000\000\000\000\000"
  1107      656D0000 
  1107      00000000 
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1108      00000000 
  1108      00000000 
  1109 0026 00000000 		.ascii	"\000\000\000\000\236\002\000\000gpsStop\000\000\000"
-ARM GAS  /tmp/ccFjKlH2.s 			page 88
+ARM GAS  /tmp/ccpatPqJ.s 			page 88
 
 
  1109      9E020000 
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1120      00000000 
  1121 010d 0000DC02 		.ascii	"\000\000\334\002\000\000gpsGetTime\000\000\000\000\000"
  1121      00006770 
-ARM GAS  /tmp/ccFjKlH2.s 			page 89
+ARM GAS  /tmp/ccpatPqJ.s 			page 89
 
 
  1121      73476574 
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1132      00000014 
  1132      03
  1133 01f5 00006368 		.ascii	"\000\000chThdSleep\000\000\002\000\000\000\000\000\000"
-ARM GAS  /tmp/ccFjKlH2.s 			page 90
+ARM GAS  /tmp/ccpatPqJ.s 			page 90
 
 
  1133      54686453 
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1146      2720272D 
  1146      6D6E6F2D 
  1146      7468756D 
-ARM GAS  /tmp/ccFjKlH2.s 			page 91
+ARM GAS  /tmp/ccpatPqJ.s 			page 91
 
 
  1146      622D696E 
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1182              		@ args = 0, pretend = 0, frame = 0
  1183              		@ frame_needed = 0, uses_anonymous_args = 0
  1184              		@ link register save eliminated.
-ARM GAS  /tmp/ccFjKlH2.s 			page 92
+ARM GAS  /tmp/ccpatPqJ.s 			page 92
 
 
  1185 0000 7047     		bx	lr
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1231              		.align	2
  1232              		.p2align 4,,15
  1233              		.thumb
-ARM GAS  /tmp/ccFjKlH2.s 			page 93
+ARM GAS  /tmp/ccpatPqJ.s 			page 93
 
 
  1234              		.thumb_func
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1288              	@ 546 "/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h" 1
  1289 0068 83F31188 		MSR basepri, r3
  1290              	@ 0 "" 2
-ARM GAS  /tmp/ccFjKlH2.s 			page 94
+ARM GAS  /tmp/ccpatPqJ.s 			page 94
 
 
  1291              		.thumb
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1343              		.type	gpsStop, %function
  1344              	gpsStop:
  1345              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccFjKlH2.s 			page 95
+ARM GAS  /tmp/ccpatPqJ.s 			page 95
 
 
  1346              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1400 004a 0120     		movs	r0, #1
  1401 004c 10BD     		pop	{r4, pc}
  1402              	.L41:
-ARM GAS  /tmp/ccFjKlH2.s 			page 96
+ARM GAS  /tmp/ccpatPqJ.s 			page 96
 
 
  1403 004e 2046     		mov	r0, r4
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1455              	gpsParseFix:
  1456              		@ args = 0, pretend = 0, frame = 0
  1457              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccFjKlH2.s 			page 97
+ARM GAS  /tmp/ccpatPqJ.s 			page 97
 
 
  1458 0000 2DE9F84F 		push	{r3, r4, r5, r6, r7, r8, r9, r10, fp, lr}
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1512 006c 53       		.byte	(.L62-.L56)/2
  1513 006d 00       		.p2align 1
  1514              	.L61:
-ARM GAS  /tmp/ccFjKlH2.s 			page 98
+ARM GAS  /tmp/ccpatPqJ.s 			page 98
 
 
  1515 006e 0AF13E00 		add	r0, r10, #62
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1569              	.L54:
  1570 0100 B9F10A0F 		cmp	r9, #10
  1571 0104 B7D1     		bne	.L66
-ARM GAS  /tmp/ccFjKlH2.s 			page 99
+ARM GAS  /tmp/ccpatPqJ.s 			page 99
 
 
  1572 0106 0020     		movs	r0, #0
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1625              		.type	gpsThread, %function
  1626              	gpsThread:
  1627              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccFjKlH2.s 			page 100
+ARM GAS  /tmp/ccpatPqJ.s 			page 100
 
 
  1628              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1682 0080 00000000 		.word	.LANCHOR1
  1683 0084 18010000 		.word	.LANCHOR1+280
  1684 0088 CE000000 		.word	.LANCHOR1+206
-ARM GAS  /tmp/ccFjKlH2.s 			page 101
+ARM GAS  /tmp/ccpatPqJ.s 			page 101
 
 
  1685              		.size	gpsThread, .-gpsThread
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1738 0024 00000000 		.word	.LANCHOR1
  1739              		.size	gpsGetLongitude, .-gpsGetLongitude
  1740 0028 AFF30080 		.section	.text.gpsGetAltitude,"ax",%progbits
-ARM GAS  /tmp/ccFjKlH2.s 			page 102
+ARM GAS  /tmp/ccpatPqJ.s 			page 102
 
 
  1740      AFF30080 
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1793              		.size	gpsGetTime, .-gpsGetTime
  1794 0028 AFF30080 		.section	.text.gpsGetSatellites,"ax",%progbits
  1794      AFF30080 
-ARM GAS  /tmp/ccFjKlH2.s 			page 103
+ARM GAS  /tmp/ccpatPqJ.s 			page 103
 
 
  1795              		.align	2
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1848 003a FFF7FEFF 		bl	strcpy
  1849 003e 05F13E00 		add	r0, r5, #62
  1850 0042 04F58671 		add	r1, r4, #268
-ARM GAS  /tmp/ccFjKlH2.s 			page 104
+ARM GAS  /tmp/ccpatPqJ.s 			page 104
 
 
  1851 0046 FFF7FEFF 		bl	strcpy
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1894 0018 0000     		.short	0
  1895 001a 0040     		.short	16384
  1896 001c 0000     		.short	0
-ARM GAS  /tmp/ccFjKlH2.s 			page 105
+ARM GAS  /tmp/ccpatPqJ.s 			page 105
 
 
  1897 001e 0000     		.space	2
@@ -6263,87 +6263,87 @@ ARM GAS  /tmp/ccFjKlH2.s 			page 1
  1916 001c 5A444100 		.ascii	"ZDA\000"
  1917              		.comm	__gnu_lto_v1,1,1
  1918              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccFjKlH2.s 			page 106
+ARM GAS  /tmp/ccpatPqJ.s 			page 106
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gps.c
-     /tmp/ccFjKlH2.s:1152   .text.gpsTxbufEnd:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1157   .text.gpsTxbufEnd:0000000000000000 gpsTxbufEnd
-     /tmp/ccFjKlH2.s:1164   .text.gpsTxC:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1169   .text.gpsTxC:0000000000000000 gpsTxC
-     /tmp/ccFjKlH2.s:1176   .text.gpsRxEnd:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1181   .text.gpsRxEnd:0000000000000000 gpsRxEnd
-     /tmp/ccFjKlH2.s:1188   .text.gpsRxErr:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1193   .text.gpsRxErr:0000000000000000 gpsRxErr
-     /tmp/ccFjKlH2.s:1200   .text.gpsStrCpy.constprop.2:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1205   .text.gpsStrCpy.constprop.2:0000000000000000 gpsStrCpy.constprop.2
-     /tmp/ccFjKlH2.s:1228   .text.gpsStrCpy.constprop.2:0000000000000020 $d
-     /tmp/ccFjKlH2.s:1231   .text.gpsRxChar:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1236   .text.gpsRxChar:0000000000000000 gpsRxChar
-     /tmp/ccFjKlH2.s:1299   .text.gpsRxChar:0000000000000074 $d
-     /tmp/ccFjKlH2.s:1303   .text.gpsStart:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1309   .text.gpsStart:0000000000000000 gpsStart
-     /tmp/ccFjKlH2.s:1334   .text.gpsStart:000000000000002c $d
-     /tmp/ccFjKlH2.s:1338   .text.gpsStop:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1344   .text.gpsStop:0000000000000000 gpsStop
-     /tmp/ccFjKlH2.s:1354   .text.gpsParseNMEAType:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1360   .text.gpsParseNMEAType:0000000000000000 gpsParseNMEAType
-     /tmp/ccFjKlH2.s:1439   .text.gpsParseNMEAType:0000000000000094 $d
-     /tmp/ccFjKlH2.s:1449   .text.gpsParseFix:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1455   .text.gpsParseFix:0000000000000000 gpsParseFix
-     /tmp/ccFjKlH2.s:1504   .text.gpsParseFix:0000000000000064 $d
-     /tmp/ccFjKlH2.s:1590   .text.gpsParseFix:0000000000000124 $d
-     /tmp/ccFjKlH2.s:1594   .text.gpsNMEAChecksum:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1600   .text.gpsNMEAChecksum:0000000000000000 gpsNMEAChecksum
-     /tmp/ccFjKlH2.s:1620   .text.gpsThread:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1626   .text.gpsThread:0000000000000000 gpsThread
-     /tmp/ccFjKlH2.s:1681   .text.gpsThread:000000000000007c $d
-     /tmp/ccFjKlH2.s:1687   .text.gpsGetLatitude:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1693   .text.gpsGetLatitude:0000000000000000 gpsGetLatitude
-     /tmp/ccFjKlH2.s:1711   .text.gpsGetLatitude:0000000000000024 $d
-     /tmp/ccFjKlH2.s:1714   .text.gpsGetLongitude:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1720   .text.gpsGetLongitude:0000000000000000 gpsGetLongitude
-     /tmp/ccFjKlH2.s:1738   .text.gpsGetLongitude:0000000000000024 $d
-     /tmp/ccFjKlH2.s:1741   .text.gpsGetAltitude:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1747   .text.gpsGetAltitude:0000000000000000 gpsGetAltitude
-     /tmp/ccFjKlH2.s:1765   .text.gpsGetAltitude:0000000000000024 $d
-     /tmp/ccFjKlH2.s:1768   .text.gpsGetTime:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1774   .text.gpsGetTime:0000000000000000 gpsGetTime
-     /tmp/ccFjKlH2.s:1792   .text.gpsGetTime:0000000000000024 $d
-     /tmp/ccFjKlH2.s:1795   .text.gpsGetSatellites:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1801   .text.gpsGetSatellites:0000000000000000 gpsGetSatellites
-     /tmp/ccFjKlH2.s:1819   .text.gpsGetSatellites:0000000000000024 $d
-     /tmp/ccFjKlH2.s:1822   .text.gpsGetLocation:0000000000000000 $t
-     /tmp/ccFjKlH2.s:1828   .text.gpsGetLocation:0000000000000000 gpsGetLocation
-     /tmp/ccFjKlH2.s:1858   .text.gpsGetLocation:0000000000000054 $d
-     /tmp/ccFjKlH2.s:1866   .bss.gpsSem:0000000000000000 gpsSem
-     /tmp/ccFjKlH2.s:1862   .bss.gpsSem:0000000000000000 $d
-     /tmp/ccFjKlH2.s:1869   .bss.GPS:0000000000000000 $d
-     /tmp/ccFjKlH2.s:1873   .bss.GPS:0000000000000000 GPS
-     /tmp/ccFjKlH2.s:1876   .bss.tokBuf:0000000000000000 $d
-     /tmp/ccFjKlH2.s:1880   .bss.tokBuf:0000000000000000 tokBuf
-ARM GAS  /tmp/ccFjKlH2.s 			page 107
+     /tmp/ccpatPqJ.s:1152   .text.gpsTxbufEnd:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1157   .text.gpsTxbufEnd:0000000000000000 gpsTxbufEnd
+     /tmp/ccpatPqJ.s:1164   .text.gpsTxC:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1169   .text.gpsTxC:0000000000000000 gpsTxC
+     /tmp/ccpatPqJ.s:1176   .text.gpsRxEnd:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1181   .text.gpsRxEnd:0000000000000000 gpsRxEnd
+     /tmp/ccpatPqJ.s:1188   .text.gpsRxErr:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1193   .text.gpsRxErr:0000000000000000 gpsRxErr
+     /tmp/ccpatPqJ.s:1200   .text.gpsStrCpy.constprop.2:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1205   .text.gpsStrCpy.constprop.2:0000000000000000 gpsStrCpy.constprop.2
+     /tmp/ccpatPqJ.s:1228   .text.gpsStrCpy.constprop.2:0000000000000020 $d
+     /tmp/ccpatPqJ.s:1231   .text.gpsRxChar:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1236   .text.gpsRxChar:0000000000000000 gpsRxChar
+     /tmp/ccpatPqJ.s:1299   .text.gpsRxChar:0000000000000074 $d
+     /tmp/ccpatPqJ.s:1303   .text.gpsStart:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1309   .text.gpsStart:0000000000000000 gpsStart
+     /tmp/ccpatPqJ.s:1334   .text.gpsStart:000000000000002c $d
+     /tmp/ccpatPqJ.s:1338   .text.gpsStop:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1344   .text.gpsStop:0000000000000000 gpsStop
+     /tmp/ccpatPqJ.s:1354   .text.gpsParseNMEAType:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1360   .text.gpsParseNMEAType:0000000000000000 gpsParseNMEAType
+     /tmp/ccpatPqJ.s:1439   .text.gpsParseNMEAType:0000000000000094 $d
+     /tmp/ccpatPqJ.s:1449   .text.gpsParseFix:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1455   .text.gpsParseFix:0000000000000000 gpsParseFix
+     /tmp/ccpatPqJ.s:1504   .text.gpsParseFix:0000000000000064 $d
+     /tmp/ccpatPqJ.s:1590   .text.gpsParseFix:0000000000000124 $d
+     /tmp/ccpatPqJ.s:1594   .text.gpsNMEAChecksum:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1600   .text.gpsNMEAChecksum:0000000000000000 gpsNMEAChecksum
+     /tmp/ccpatPqJ.s:1620   .text.gpsThread:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1626   .text.gpsThread:0000000000000000 gpsThread
+     /tmp/ccpatPqJ.s:1681   .text.gpsThread:000000000000007c $d
+     /tmp/ccpatPqJ.s:1687   .text.gpsGetLatitude:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1693   .text.gpsGetLatitude:0000000000000000 gpsGetLatitude
+     /tmp/ccpatPqJ.s:1711   .text.gpsGetLatitude:0000000000000024 $d
+     /tmp/ccpatPqJ.s:1714   .text.gpsGetLongitude:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1720   .text.gpsGetLongitude:0000000000000000 gpsGetLongitude
+     /tmp/ccpatPqJ.s:1738   .text.gpsGetLongitude:0000000000000024 $d
+     /tmp/ccpatPqJ.s:1741   .text.gpsGetAltitude:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1747   .text.gpsGetAltitude:0000000000000000 gpsGetAltitude
+     /tmp/ccpatPqJ.s:1765   .text.gpsGetAltitude:0000000000000024 $d
+     /tmp/ccpatPqJ.s:1768   .text.gpsGetTime:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1774   .text.gpsGetTime:0000000000000000 gpsGetTime
+     /tmp/ccpatPqJ.s:1792   .text.gpsGetTime:0000000000000024 $d
+     /tmp/ccpatPqJ.s:1795   .text.gpsGetSatellites:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1801   .text.gpsGetSatellites:0000000000000000 gpsGetSatellites
+     /tmp/ccpatPqJ.s:1819   .text.gpsGetSatellites:0000000000000024 $d
+     /tmp/ccpatPqJ.s:1822   .text.gpsGetLocation:0000000000000000 $t
+     /tmp/ccpatPqJ.s:1828   .text.gpsGetLocation:0000000000000000 gpsGetLocation
+     /tmp/ccpatPqJ.s:1858   .text.gpsGetLocation:0000000000000054 $d
+     /tmp/ccpatPqJ.s:1866   .bss.gpsSem:0000000000000000 gpsSem
+     /tmp/ccpatPqJ.s:1862   .bss.gpsSem:0000000000000000 $d
+     /tmp/ccpatPqJ.s:1869   .bss.GPS:0000000000000000 $d
+     /tmp/ccpatPqJ.s:1873   .bss.GPS:0000000000000000 GPS
+     /tmp/ccpatPqJ.s:1876   .bss.tokBuf:0000000000000000 $d
+     /tmp/ccpatPqJ.s:1880   .bss.tokBuf:0000000000000000 tokBuf
+ARM GAS  /tmp/ccpatPqJ.s 			page 107
 
 
-     /tmp/ccFjKlH2.s:1883   .data.serGpsCfg:0000000000000000 $d
-     /tmp/ccFjKlH2.s:1887   .data.serGpsCfg:0000000000000000 serGpsCfg
-     /tmp/ccFjKlH2.s:1899   .rodata.str1.4:0000000000000000 $d
+     /tmp/ccpatPqJ.s:1883   .data.serGpsCfg:0000000000000000 $d
+     /tmp/ccpatPqJ.s:1887   .data.serGpsCfg:0000000000000000 serGpsCfg
+     /tmp/ccpatPqJ.s:1899   .rodata.str1.4:0000000000000000 $d
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccFjKlH2.s:1230   .text.gpsStrCpy.constprop.2:0000000000000024 $t
-     /tmp/ccFjKlH2.s:1302   .text.gpsRxChar:000000000000007c $t
-     /tmp/ccFjKlH2.s:1337   .text.gpsStart:0000000000000034 $t
-     /tmp/ccFjKlH2.s:1448   .text.gpsParseNMEAType:00000000000000b4 $t
-     /tmp/ccFjKlH2.s:1593   .text.gpsParseFix:000000000000012c $t
-     /tmp/ccFjKlH2.s:1686   .text.gpsThread:000000000000008c $t
-     /tmp/ccFjKlH2.s:1713   .text.gpsGetLatitude:0000000000000028 $t
-     /tmp/ccFjKlH2.s:1740   .text.gpsGetLongitude:0000000000000028 $t
-     /tmp/ccFjKlH2.s:1767   .text.gpsGetAltitude:0000000000000028 $t
-     /tmp/ccFjKlH2.s:1794   .text.gpsGetTime:0000000000000028 $t
-     /tmp/ccFjKlH2.s:1821   .text.gpsGetSatellites:0000000000000028 $t
-     /tmp/ccFjKlH2.s:1861   .text.gpsGetLocation:0000000000000058 $t
-     /tmp/ccFjKlH2.s:1513   .text.gpsParseFix:000000000000006d $d
-     /tmp/ccFjKlH2.s:1513   .text.gpsParseFix:000000000000006e $t
+     /tmp/ccpatPqJ.s:1230   .text.gpsStrCpy.constprop.2:0000000000000024 $t
+     /tmp/ccpatPqJ.s:1302   .text.gpsRxChar:000000000000007c $t
+     /tmp/ccpatPqJ.s:1337   .text.gpsStart:0000000000000034 $t
+     /tmp/ccpatPqJ.s:1448   .text.gpsParseNMEAType:00000000000000b4 $t
+     /tmp/ccpatPqJ.s:1593   .text.gpsParseFix:000000000000012c $t
+     /tmp/ccpatPqJ.s:1686   .text.gpsThread:000000000000008c $t
+     /tmp/ccpatPqJ.s:1713   .text.gpsGetLatitude:0000000000000028 $t
+     /tmp/ccpatPqJ.s:1740   .text.gpsGetLongitude:0000000000000028 $t
+     /tmp/ccpatPqJ.s:1767   .text.gpsGetAltitude:0000000000000028 $t
+     /tmp/ccpatPqJ.s:1794   .text.gpsGetTime:0000000000000028 $t
+     /tmp/ccpatPqJ.s:1821   .text.gpsGetSatellites:0000000000000028 $t
+     /tmp/ccpatPqJ.s:1861   .text.gpsGetLocation:0000000000000058 $t
+     /tmp/ccpatPqJ.s:1513   .text.gpsParseFix:000000000000006d $d
+     /tmp/ccpatPqJ.s:1513   .text.gpsParseFix:000000000000006e $t
 
 UNDEFINED SYMBOLS
 strlen
