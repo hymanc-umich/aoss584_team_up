@@ -85,7 +85,8 @@ CHIBIOS = /home/cody/dev/chibios/trunk
 FATFS = $(CHIBIOS)/community/ext/fatfs
 
 include $(CHIBIOS)/os/hal/hal.mk
-include $(CHIBIOS)/os/hal/boards/ST_NUCLEO_F401RE/board.mk
+#include $(CHIBIOS)/os/hal/boards/ST_NUCLEO_F401RE/board.mk
+include board.mk # Use local board library
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
 include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 include $(CHIBIOS)/os/rt/rt.mk

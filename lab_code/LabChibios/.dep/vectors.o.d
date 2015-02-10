@@ -6,8 +6,7 @@ build/obj/vectors.o: \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/features.h \
  /home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F4xx/cmparams.h \
- /home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.h \
- /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h \
+ board.h /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f401xe.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm4.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmInstr.h \
@@ -27,7 +26,7 @@ build/obj/vectors.o: \
 
 /home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F4xx/cmparams.h:
 
-/home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.h:
+board.h:
 
 /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h:
 

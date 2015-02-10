@@ -151,7 +151,7 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
 	status = mmcConnect(sd->mmcd);
 	if(status == HAL_FAILED)
 	{
-	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Connect Error,ERR%02d\n", status);
+	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:ERROR Connect,ERR%02d\n", status);
 	    return status;
 	}
 	sd->filesys = &FS;

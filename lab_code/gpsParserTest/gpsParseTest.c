@@ -124,6 +124,21 @@ sentenceType_t gpsParseNMEAType(char *nmeaStr)
 	return UNDEF;
 }
 
+uint8_t gpsParseToken(char *str, char token, char **splitStr, uint8_t maxTok)
+{
+    uint8_t i, j;
+    while((*str != '\n') && (i<maxTok))
+    {
+	while((*str != token) && (j<20))
+	{
+	    splitStr[i][j++] = *(str++);
+	}
+	str++;
+	splitStr[i++][++j] = '\0'; // Terminate string
+    }
+    return i; // Return split string count
+}
+
 int8_t gpsParseFixStr(char *nmeaGGAStr, gpsLocationStr_t *loc)
 {
     // Verify GGA Sentence
@@ -273,8 +288,18 @@ int main(void)
     char *buffer= "$GPGLL,001038.00,3334.2313457,S,11211.0576940,W,2,04,5.4,354.682,M,-26.574,M,7.0,0138*79";
     
     int bufLen = strlen(buffer);
-    printf("Sentence size:%d\n", bufLen);
-    gpsParseFixStr(buffer, &location);
-    printLocationStr(&location);
+    //printf("Sentence size:%d\n", bufLen);
+    //gpsParseFixStr(buffer, &location);
+    //printLocationStr(&location);
+    
+    char gpsTok[15][20];
+    gpsParseToken(buffer, ',', (char **)gpsTok, 15);
+    
+    int i;
+    for(i=0;i<15;i++)
+    {
+	printf("%s\n",gpsTok[i]);
+    }
+    
     return 0;
 }

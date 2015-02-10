@@ -179,46 +179,53 @@ sentenceType_t gpsParseNMEAType(char *nmeaStr)
 	{
 	    stypeIndex = nmeaStr + 3;
 	    if(strncmp(stypeIndex, NMEA_GPS_ALM, 3) == 0)
-	    {
 		return GPS_ALM;
-	    }
 	    else if(strncmp(stypeIndex, NMEA_FIX_DATA, 3) == 0)
-	    {
 		return FIX_DATA;
-	    }
 	    else if(strncmp(stypeIndex, NMEA_GEO_POS,3) == 0)
-	    {
 		return GEO_POS;
-	    }
 	    else if(strncmp(stypeIndex, NMEA_ACT_SAT, 3) == 0)
-	    {
 		return ACT_SAT;
-	    }
 	    else if(strncmp(stypeIndex, NMEA_SAT_VIEW, 3) == 0)
-	    {
 		return SAT_VIEW;
-	    }
 	    else if(strncmp(stypeIndex, NMEA_HEADING, 3) == 0)
-	    {
 		return HEADING;
-	    }
 	    else if(strncmp(stypeIndex, NMEA_DATE_TIME, 3) == 0)
-	    {
 		return DATE_TIME;
-	    }
 	    else
-	    {
 		return OTHER;
-	    }
 	}
 	else
-	{
 	    return OTHER;
-	}
     }
     else
 	return UNDEF;
 }
+
+/** //TODO: Fix seg faults with this if it will ever get used
+ * @brief Simple token parser for comma separated tokens
+ * @param str String to split
+ * @param token Token character to use
+ * @param splitStr Split string return buffer
+ * @param maxTok Maximum number of token separated strings
+ * @return Number of token separated strings returned
+ */
+/*
+uint8_t gpsParseToken(char *str, char token, char **splitStr, uint8_t maxTok)
+{
+    uint8_t i, j;
+    while((*str != '\n') && (i<maxTok))
+    {
+	while((*str != token) && (j<20))
+	{
+	    splitStr[i][j++] = *(str++);
+	}
+	str++;
+	splitStr[i++][++j] = '\0'; // Terminate string
+    }
+    return i; // Return split string count
+}
+*/
 
 /**
  * @brief Parse GPS GGA Sentence for location
@@ -252,7 +259,7 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 	{
 	    case 1: // Time
 		// HHMMSS.SS
-		if(strlen(tokBuf) > 0))
+		if(strlen(tokBuf) > 0)
 		{
 		    loc->time[0] = tokBuf[0]; // H1
 		    loc->time[1] = tokBuf[1]; // H2
@@ -262,10 +269,7 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 		    loc->time[5] = ':';
 		    loc->time[6] = tokBuf[4]; // S1
 		    loc->time[7] = tokBuf[5]; // S2
-		    loc->time[8] = '.';
-		    loc->time[9] = tokBuf[7];  // MS1
-		    loc->time[10] = tokBuf[8]; // MS2
-		    loc->time[11] = '\0';
+		    loc->time[8] = '\0';
 		}
 		else
 		    loc->time[0] = '\0';
@@ -330,9 +334,9 @@ msg_t gpsThread(void *arg)
 	// Parse Fix data if sentence is correct
 	if(gpsParseNMEAType(gpsGetActiveRxBuffer()) == FIX_DATA)
 	{
-	    chMtxLock(&(GPS.mutex));
+	    chMtxLock(&(GPS.dataMutex));
 	    gpsParseFix(gpsGetActiveRxBuffer(), &(GPS.location));
-	    chMtxUnlock(&(GPS.mutex));
+	    chMtxUnlock(&(GPS.dataMutex));
 	}
     }
     gpsStop(&GPS);

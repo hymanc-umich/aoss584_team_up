@@ -1,5 +1,4 @@
-build/obj/board.o: \
- /home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.c \
+build/obj/board.o: board.c \
  /home/cody/dev/chibios/trunk/os/hal/include/hal.h \
  /home/cody/dev/chibios/trunk/os/hal/osal/rt/osal.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include/stddef.h \
@@ -14,8 +13,7 @@ build/obj/board.o: \
  /home/cody/dev/chibios/trunk/os/rt/include/chsystypes.h \
  /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/chcore.h \
  /home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F4xx/cmparams.h \
- /home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.h \
- /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h \
+ board.h /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f401xe.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm4.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmInstr.h \
@@ -88,7 +86,9 @@ build/obj/board.o: \
  /home/cody/dev/chibios/trunk/os/hal/include/usb.h \
  /home/cody/dev/chibios/trunk/os/hal/include/st.h \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
- /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h
+ /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h sdmmcsimple.h \
+ /home/cody/dev/chibios/trunk/os/ext/fatfs/src/ff.h \
+ /home/cody/dev/chibios/trunk/os/ext/fatfs/src/integer.h ffconf.h
 
 /home/cody/dev/chibios/trunk/os/hal/include/hal.h:
 
@@ -120,7 +120,7 @@ chconf.h:
 
 /home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F4xx/cmparams.h:
 
-/home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.h:
+board.h:
 
 /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h:
 
@@ -271,3 +271,11 @@ mcuconf.h:
 /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h:
 
 /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h:
+
+sdmmcsimple.h:
+
+/home/cody/dev/chibios/trunk/os/ext/fatfs/src/ff.h:
+
+/home/cody/dev/chibios/trunk/os/ext/fatfs/src/integer.h:
+
+ffconf.h:

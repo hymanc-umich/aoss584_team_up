@@ -34,7 +34,7 @@ static void sdfatRemoveHandler(eventid_t id)
 /**
  * @brief Checks for SD Card inserted
  */
-bool sdfatCardInserted(void)
+inline bool sdfatCardInserted(void)
 {
     return palReadPad(SDC.CDPort, SDC.CDPin);
 }
@@ -42,7 +42,7 @@ bool sdfatCardInserted(void)
 /**
  * @brief Checks the write-protected SD card flag
  */
-bool sdfatCardProtected(void)
+inline bool sdfatCardProtected(void)
 {
     return !palReadPad(SDC.WPPort, SDC.WPPin);
 }

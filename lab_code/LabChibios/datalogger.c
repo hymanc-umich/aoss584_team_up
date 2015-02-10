@@ -4,48 +4,6 @@
 
 static SerialDriver *DEBUG; // Debug
 
-//static WORKING_AREA(datalogThreadArea, 512);
-
-/**
- * @brief Datalogger instance
- */
-/*
-struct datalogger
-{
-   sdmmc_t *sdc; 	// SD structure
-   FATFS *filesys;	// Filesystem
-   uint16_t nfiles; 	// Number of logfiles open
-   char *logPath; 	// Logfile path
-   bool driveMounted;	// Drive mounted
-};
-*/
-
-/**
- * @brief Logfile instance 
- */
-/*
-struct logfile
-{
-    uint16_t id;		// Instance ID
-    char *name; 		// Instance name
-    datalogger_t *logger; 	// Logger parent
-    FIL *file;			// File pointer
-};
-*/
-
-/**
- * @brief Subclassed separated value log
- */
-/*
-struct separatedLog
-{
-    uint16_t id;	// Instance ID
-    char separator;	// Separator character
-    uint16_t ncols;	// Number of columns
-    logfile_t logfile;	// Parent items
-};
-*/
-
 /**
  * @brief Initializes a Data Logger instance
  * @param logger
@@ -121,15 +79,26 @@ size_t logfileSize(logfile_t *log)
 /**
  * @brief Writes a buffer to a logfile
  */
-int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length)
+int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length, bool openClose)
 {
     FRESULT res;
     int written;
+    if(openClose)
+    {
+	res = logfileOpenAppend(log->file);
+	if(res)
+	    return res;
+    }
     res = f_write(log->file, buf, length, &written);
-    //res = fputs(log->file, buf);
-    log->wrCount++;
     if(res || (written != length))
 	return 1;
+    log->wrCount++;
+    if(openClose)
+    {
+	res = f_close(log->file);
+	if(res)
+	    return res;
+    }
     return 0;
 }
 
@@ -158,7 +127,7 @@ int8_t logfileWriteCsv(logfile_t *log, char **items, char separator, uint16_t ni
 	buf[length++] = separator;
     }
     // TODO: Write CSV line to buffer
-    //res = fwrite(log->file, bufLen, &written);
+    //res = f_write(log->file, bufLen, &written);
     //if(res || (written != length))
 	//return 1;
     return 0;
@@ -179,7 +148,6 @@ uint32_t logfileGetWrCount(logfile_t *log)
  */
 int8_t logfileClose(logfile_t *log)
 {
-    FRESULT res;
     if(f_close(log->file))
     {
 	log->wrCount = 0;

@@ -10,8 +10,7 @@ build/obj/main.o: main.c /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
  /home/cody/dev/chibios/trunk/os/rt/include/chsystypes.h \
  /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/chcore.h \
  /home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F4xx/cmparams.h \
- /home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.h \
- /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h \
+ board.h /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f401xe.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cm4.h \
  /home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmInstr.h \
@@ -132,7 +131,7 @@ chconf.h:
 
 /home/cody/dev/chibios/trunk/os/common/ports/ARMCMx/devices/STM32F4xx/cmparams.h:
 
-/home/cody/dev/chibios/trunk/os/hal/boards/ST_NUCLEO_F401RE/board.h:
+board.h:
 
 /home/cody/dev/chibios/trunk/os/ext/CMSIS/ST/stm32f4xx.h:
 

@@ -77,7 +77,7 @@ bool dataLoggerStop(datalogger_t *logger);
 int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file, char *fname);
 size_t logfileSize(logfile_t *log);
 
-int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length);
+int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length, bool openClose);
 int8_t logfileWriteCsv(logfile_t *log, char ** items, char separator, uint16_t nitems);
 uint32_t logfileGetWrCount(logfile_t *log);
 int8_t logfileClose(logfile_t *log);

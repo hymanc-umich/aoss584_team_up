@@ -29,7 +29,7 @@
 
 #define GPS_BUFFER_SIZE 82 	// Maximum NMEA0183 length
 
-#define NMEA_0183_BAUD 4800	// NMEA0183 baud rate
+#define NMEA_0183_BAUD 9600	// NMEA0183 baud rate (device dependent)
 
 /**
  * @brief NMEA GPS Sentence types
@@ -52,7 +52,7 @@ typedef enum
  */
 struct gpsLocationStr
 {
-    char time[12];
+    char time[9];
     char latitude[15];
     char longitude[15];
     char altitude[8];
@@ -83,5 +83,5 @@ void gpsGetLongitude(char *dest);
 void gpsGetAltitude(char *dest);
 void gpsGetTime(char *dest);
 void gpsGetSatellites(char *dest);
-void gpsGetLocationStr(gpsLocation_t *dest);
+void gpsGetLocation(gpsLocation_t *dest);
 #endif

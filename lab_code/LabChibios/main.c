@@ -47,6 +47,7 @@ static datalogger_t logger;
 static logfile_t sensorLog;
 FIL lFile;
 
+// ADC measurement
 static accMeasurement_t ACC;
 static sensorMeasurement_t SENSORS;
 
@@ -189,33 +190,13 @@ void initialize(void)
 	dlIni = dataLoggerInitialize(&logger, "", &sd, &SD2);
     }
     lfIni = logfileNew(&sensorLog, &logger, &lFile, "logs/log_001.csv");
-    logfileWrite(&sensorLog, "TIME,ACC.X,ACC.Y,ACC.Z,TEMP1,TEMP2,PRESSURE,HUMIDITY\n", 53);
+    logfileWrite(&sensorLog, "TIME,ACC.X,ACC.Y,ACC.Z,TEMP1,TEMP2,PRESSURE,HUMIDITY\n", 53, false);
     //logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
     //logfileClose(&sensorLog);
     chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
     
-}
-
-/**
- * @brief Turn LED on/off
- * @param on On state flag
- */
-void setLED(bool on)
-{
-   if(on)
-       palClearPad(LED_PORT, LED_PIN);
-   else
-       palClearPad(LED_PORT, LED_PIN);
-}
-
-/**
- * @brief Toggle the LED
- */
-inline void toggleLED(void)
-{
-    palTogglePad(LED_PORT, LED_PIN);
 }
 
 /**
@@ -230,7 +211,7 @@ void writeToLog(logfile_t *log, uint32_t time, sensorMeasurement_t *sens, accMea
     char line[80];
     int len;
     len = chsnprintf(line, 80, "%d,%d,%d,%d,%d,%d,%d,%d\n",time, acc->x, acc->y, acc->z, sens->temp[0], sens->temp[1], sens->press, sens->humd);
-    logfileWrite(log, line, len);
+    logfileWrite(log, line, len, false);
 }
 
 /**
@@ -245,7 +226,7 @@ void printData(void)
 }
 
 
-/*
+/**
  * Application entry point.
  */
 int main(void) 
@@ -260,7 +241,6 @@ int main(void)
     gpsLocation_t location;
     while (TRUE) 
     {
-
 	gpsGetLocation(&location);// TODO: Check for new GPS NMEA sentence
 	
 	// Perform sensor ADC reads
@@ -271,6 +251,7 @@ int main(void)
 	// Write serial data to VCP terminal
 	
 	printData();
+	writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
 	writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
 	//logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
 	toggleLED();
