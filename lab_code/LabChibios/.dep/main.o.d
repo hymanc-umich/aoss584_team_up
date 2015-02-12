@@ -100,11 +100,11 @@ build/obj/main.o: main.c /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
  /usr/arm-none-eabi/include/machine/_types.h \
  /usr/arm-none-eabi/include/sys/lock.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include-fixed/sys/cdefs.h \
- /usr/arm-none-eabi/include/sys/string.h gps.h sdmmcsimple.h datalogger.h \
- /usr/arm-none-eabi/include/stdlib.h \
+ /usr/arm-none-eabi/include/sys/string.h gps.h ustr.h sdmmcsimple.h \
+ datalogger.h /usr/arm-none-eabi/include/stdlib.h \
  /usr/arm-none-eabi/include/machine/stdlib.h \
  /usr/arm-none-eabi/include/alloca.h /usr/arm-none-eabi/include/math.h \
- board.h
+ /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdfix.h board.h
 
 /home/cody/dev/chibios/trunk/os/rt/include/ch.h:
 
@@ -326,6 +326,8 @@ ffconf.h:
 
 gps.h:
 
+ustr.h:
+
 sdmmcsimple.h:
 
 datalogger.h:
@@ -337,5 +339,7 @@ datalogger.h:
 /usr/arm-none-eabi/include/alloca.h:
 
 /usr/arm-none-eabi/include/math.h:
+
+/usr/lib/gcc/arm-none-eabi/4.8.4/include/stdfix.h:
 
 board.h:

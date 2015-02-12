@@ -109,6 +109,7 @@ CSRC = $(PORTSRC) \
        $(FATFSSRC) \
        $(CHIBIOS)/os/various/chprintf.c \
        $(CHIBIOS)/os/various/memstreams.c \
+       ustr.c \
        gps.c \
        sdmmcsimple.c \
        datalogger.c \

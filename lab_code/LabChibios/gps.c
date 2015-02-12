@@ -303,26 +303,26 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 		    loc->time[0] = '\0';
 		break;
 	    case 2: // Latitude;
-		gpsStrCpy(loc->latitude, tokBuf);
+		uStrCpy(loc->latitude, tokBuf);
 		break;
 	    case 3: // Latitude Hemisphere
-		gpsStrAppendChar(loc->latitude, *tokBuf);
+		uStrAppendChar(loc->latitude, *tokBuf);
 		break;
 	    case 4: // Longitude
-		gpsStrCpy(loc->longitude, tokBuf);
+		uStrCpy(loc->longitude, tokBuf);
 		break;
 	    case 5: // Longitude Hemisphere
-		gpsStrAppendChar(loc->longitude, *tokBuf);
+		uStrAppendChar(loc->longitude, *tokBuf);
 		break;
 	    case 6: // Quality Indicator (Do nothing for now)
 		break;
 	    case 7: // Satellite count
-		gpsStrCpy(loc->satCount, tokBuf);
+		uStrCpy(loc->satCount, tokBuf);
 		break;
 	    case 8: // HDOP
 		break;
 	    case 9: // Altitude
-		gpsStrCpy(loc->altitude, tokBuf);
+		uStrCpy(loc->altitude, tokBuf);
 		break;
 	    default:
 		break;

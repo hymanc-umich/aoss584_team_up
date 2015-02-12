@@ -43,6 +43,7 @@ struct logfile
     datalogger_t *logger; 	// Logger parent
     FIL *file;			// File pointer
     uint32_t wrCount;		// Write counter
+    bool open;			// Open flag
 };
 typedef struct logfile logfile_t;
 

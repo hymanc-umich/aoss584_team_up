@@ -1,3 +1,11 @@
+/* ADC Defines */
+#define ADC_BUF_DEPTH 1 
+#define SENSOR_ADC_CH_NUM 4
+#define ACC_ADC_CH_NUM 3
+
+#define NSAMPLES 30
+#define SAMPLE_MAX 60
+
 #include "ch.h"
 #include "hal.h"
 #include "chprintf.h"
@@ -8,21 +16,17 @@
 #include "gps.h"
 #include "sdmmcsimple.h"
 #include "datalogger.h"
+#include "ustr.h"
 
 #include <stdlib.h>
 #include <math.h>
 #include <stdint.h>
+#include <stdfix.h>
 
 #include "board.h"
 
-/* ADC Defines */
-#define ADC_BUF_DEPTH 1 // Double buffered ADC
-#define SENSOR_ADC_CH_NUM 4
-#define ACC_ADC_CH_NUM 3
 
-#define NSAMPLES 30
-
-static THD_WORKING_AREA(waGps, 1284);
+static THD_WORKING_AREA(waGps, 1284);	// GPS thread working area
 
 /* Accelerometer Measurement */
 typedef struct
@@ -43,6 +47,7 @@ typedef struct
 static sdmmc_t sd;
 static datalogger_t logger;
 static logfile_t sensorLog;
+
 FIL lFile;
 
 // ADC measurement
@@ -54,22 +59,27 @@ MMCDriver MMCD1;
 // Temporary sample struct
 typedef struct
 {
-    char time[9];	// HH:MM:SS
-    char latitude[13];	// DDMMM.MMMMMN
-    char longitude[14]; // DDDMMM.MMMMME
-    char altitude[9];   // +AAAAA.A	(m)
-    char satCount[3];   // SS		(Count)
-    char temp1[7]; 	// +TTT.T	(C)
-    char temp2[7];	// +TTT.T	(C)
-    char press[7];	// PPP.PP	(kPa)
-    char humd[6];	// RRR.R	(%RH)
-    char accX[6];	// +XX.X	(g)
-    char accY[6];	// +YY.Y	(g)
-    char accZ[6];	// +ZZ.Z	(g)
+    char time[10];	// HH:MM:SS
+    char latitude[16];	// DDMMM.MMMMMN
+    char longitude[16]; // DDDMMM.MMMMME
+    char altitude[15];  // +AAAAA.A	(m)
+    char satCount[10];  // SS		(Count)
+    char temp1[8]; 	// +TTT.T	(C)
+    char temp2[8];	// +TTT.T	(C)
+    char pressure[8];	// PPP.PP	(kPa)
+    char humidity[8];	// RRR.RR	(%RH)
+    char accX[10];	// +XX.X	(g)
+    char accY[10];	// +YY.Y	(g)
+    char accZ[10];	// +ZZ.Z	(g)
 }dataSample_t;
+
+static dataSample_t masterSample;
 
 /**
  * @brief Accelerometer ADC callback
+ * @param adcd ADC Driver
+ * @param buf ADC result buffer
+ * @param n Number of reads
  */
 static void accCallback(ADCDriver *adcd, adcsample_t *buf, size_t n)
 {
@@ -82,6 +92,9 @@ static void accCallback(ADCDriver *adcd, adcsample_t *buf, size_t n)
 
 /**
  * @brief Analog sensor ADC callback
+ * @param adcd ADC Driver
+ * @param buf ADC result buffer
+ * @param n Number of reads
  */
 static void anaSensorCallback(ADCDriver *adcd, adcsample_t *buf, size_t n)
 {
@@ -178,14 +191,6 @@ void initialize(void)
     palSetPadMode(GPIOC, 1, PAL_MODE_INPUT_ANALOG); 	// A1.11 TEMP1
     palSetPadMode(GPIOC, 3, PAL_MODE_INPUT_ANALOG); 	// A1.13 TEMP2
     
-    // SPI/MMC I/O Cfg
-    /*
-    palSetPadMode(GPIOA, 5, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);	// PA5 SCK1
-    palSetPadMode(GPIOA, 6, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST); 	// PA6 MISO1
-    palSetPadMode(GPIOA, 7, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST); 	// PA7 MOSI1
-    palSetPadMode(GPIOB, 6, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);	// PB6 NCS
-    */
-    
     /*
      * Driver Startup
      */
@@ -210,10 +215,6 @@ void initialize(void)
 	{
 	    dlIni = dataLoggerInitialize(&logger, "", &sd, &SD2);
 	}
-	lfIni = logfileNew(&sensorLog, &logger, &lFile, "logs/log_001.csv");
-	logfileWrite(&sensorLog, "TIME,ACC.X,ACC.Y,ACC.Z,TEMP1,TEMP2,PRESSURE,HUMIDITY\n", 53, false);
-	//logfileWrite(&sensorLog, "THIS IS A TEST\n",15); 
-	logfileClose(&sensorLog);
 	chprintf((BaseSequentialStream *) &SD2, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     }
     else
@@ -234,10 +235,80 @@ void initialize(void)
  */
 void writeToLog(logfile_t *log, uint32_t time, sensorMeasurement_t *sens, accMeasurement_t *acc)
 {
-    char line[80];
-    int len;
-    len = chsnprintf(line, 80, "%d,%d,%d,%d,%d,%d,%d,%d\n",time, acc->x, acc->y, acc->z, sens->temp[0], sens->temp[1], sens->press, sens->humd);
+    char line[120];
+    int len = chsnprintf(line, 120, "%d,%d,%d,%d,%d,%d,%d,%d\n",time, acc->x, acc->y, acc->z, sens->temp[0], sens->temp[1], sens->press, sens->humd);
     logfileWrite(log, line, len, false);
+}
+
+/**
+ * @brief Writes a master sample header to a logfile
+ */
+void writeMSHeader(void)
+{
+    char line[72];
+    int len = chsnprintf(line, 72, "TIME,LAT,LONG,ALT,SAT,TMP1,TMP2,PRESS,HUMD,ACCX,ACCY,ACCZ\n");
+    logfileWrite(&sensorLog, line, len, false);
+}
+
+/**
+ * @brief Writes a master sample to the logfile
+ * @param log Logfile to write to
+ * @param ms Master sample
+ * @return Status of writing sample to log
+ */
+static char dataPrintBuf[384];
+int8_t writeMSToLog(dataSample_t *ms)
+{
+    //chprintf((BaseSequentialStream *) &SD2, "Building string\n");
+    //chThdSleepMilliseconds(200);
+    
+    // Time,Lat,Long,Alt,Sat,Temp1,Temp2,Press,Humd,AccX,AccY,AccZ
+    int len = chsnprintf(dataPrintBuf, 256, "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
+			 (char *)(ms->time),
+			 (char *)(ms->latitude),
+			 (char *)(ms->longitude),
+			 (char *)(ms->altitude),
+			 (char *)(ms->satCount),
+			 (char *)(ms->temp1),
+			 (char *)(ms->temp2),
+			 (char *)(ms->pressure),
+			 (char *)(ms->humidity),
+			 (char *)(ms->accX),
+			 (char *)(ms->accY),
+			 (char *)(ms->accZ)
+    );
+    
+    //chprintf((BaseSequentialStream *) &SD2, "Str built, writing\n");
+    //chThdSleepMilliseconds(200);
+    
+    logfileWrite(&sensorLog, dataPrintBuf, len, false);
+    return 0;
+}
+
+/**
+ * @brief Opens a new logfile
+ * @param lfNum Logfile number
+ * @return Status of opening new logfile
+ */
+int8_t openNewLogfile(int32_t lfNum)
+{
+    if(!sensorLog.open)
+    {
+	char fname[24];
+	chsnprintf(fname, 80, "logs/LOG_%d.csv", lfNum);
+	//chsnprintf(fname, 80, "logs/Log_00X.csv");
+	return logfileNew(&sensorLog, &logger, &lFile, fname); 
+    }
+    return 2;
+}
+
+/**
+ * @brief Convenience function to close the current sensor log
+ */
+int8_t closeLog(void)
+{
+    logfileClose(&sensorLog);
+    return 0;
 }
 
 /**
@@ -266,45 +337,203 @@ void printGps(gpsLocation_t *loc)
 }
 
 /**
+ * @brief Print a data sample to the terminal
+ */
+void printDataSample(dataSample_t *samp)
+{
+   chprintf((BaseSequentialStream *) &SD2, "TIM:%s, LAT:%s, LNG:%s, ALT:%s, SAT:%s, TMP1:%s, TMP2:%s, PRS:%s, HUM:%s, ACC(%s,%s,%s)\n",
+	    (char *)(samp->time),
+	    (char *)(samp->latitude),
+	    (char *)(samp->longitude),
+	    (char *)(samp->altitude),
+	    (char *)(samp->satCount),
+	    (char *)(samp->temp1),
+	    (char *)(samp->temp2),
+	    (char *)(samp->pressure),
+	    (char *)(samp->humidity),
+	    (char *)(samp->accX),
+	    (char *)(samp->accY),
+	    (char *)(samp->accZ)
+   );
+}
+
+/**
+ * @brief Copies GPS data into a data sample for writing
+ * @param loc GPS Location
+ * @param samp Data sample to store to
+ */
+void gpsToDataSample(gpsLocation_t *loc, dataSample_t *samp)
+{
+    uStrCpy(samp->time, loc->time); // Copy
+    uStrCpy(samp->latitude, loc->latitude);
+    uStrCpy(samp->longitude, loc->longitude);
+    uStrCpy(samp->altitude, loc->altitude);
+    uStrCpy(samp->satCount, loc->satCount);
+}
+
+/**
+ * @brief Formats temperature data and stores it to a data sample for writing
+ * @param rawTemp Raw temperature ADC value
+ * @param tempNum Temperature sensor number
+ * @param samp Data sample to store to
+ */
+void tempToDataSample(int16_t rawTemp, uint8_t tempNum, dataSample_t *samp)
+{
+    // 10mV/C Absolute output 750mV@25C
+    float temp = rawTemp/12.4090909f - 50.0f; // Convert to C
+    char *dest;
+    switch(tempNum)
+    {
+	case 0:
+	    dest = (char *) (samp->temp1);
+	    break;
+	case 1:
+	    dest = (char *) (samp->temp2);
+	    break;
+	default:
+	    return;
+    }
+    chsnprintf(dest, 6, "%.2f" ,temp);
+}
+
+/**
+ * @brief Formats pressure data and stores it to a data sample for writing
+ * @param rawPressure Raw pressure ADC value
+ * @param samp Data sample to store to
+ */
+void pressureToDataSample(int16_t rawPressure, dataSample_t *samp)
+{
+    // 0.1224V offset (nominal), 27.0588235 mv/kPa
+    float press = rawPressure/33.5775401f - 4.52347827f; // Convert to kPa
+    chsnprintf((char *) (samp->pressure), 6, "%.2f", press);
+}
+
+/**
+ * @brief Formats humidity data and stores it to a data sample for writing
+ * @param rawHumidity Raw humidity ADC value
+ * @param samp Data sample to store to
+ */
+void humidityToDataSample(int16_t rawHumidity, dataSample_t *samp)
+{
+    // Ratiometric output, RH = ((raw/4095)-0.16)/(0.0062)
+    float hum = rawHumidity/253.89f - 25.8064516f; // Convert to %RH
+    chsnprintf(samp->humidity, 6, "%.2f", hum); //RRR.RR
+}
+
+/**
+ * @brief Formats accelerometer data and stores it to a data sample for writing
+ * @param rawAccel Raw accelerometer ADC value
+ * @param xyz X(0), Y(1), Z(2) channel of the accelerometer
+ * @param samp Data sample to store to
+ */
+void accelToDataSample(int16_t rawAccel, int8_t xyz, dataSample_t *samp)
+{
+    // Ratiometric output (10%/g) center: Vcc/2
+    float accel = (2047.0f - rawAccel)/409.5f; //Convert to g
+    char *dest;
+    switch(xyz)
+    {
+	case 0:
+	    dest = (char *) (samp->accX);
+	    break;
+	case 1:
+	    dest = (char *) (samp->accY);
+	    break;
+	case 2:
+	    dest = (char *) (samp->accZ);
+	    break;
+	default:
+	    return;
+	    break;
+    }
+    chsnprintf(dest, 9, "%.5f", accel);
+}
+
+/**
+ * @brief Initializes the master data sample
+ */
+void initMasterSample()
+{
+    char * emptyStr = "-";
+    uStrCpy(masterSample.time, "-:-:-");
+    uStrCpy(masterSample.latitude, emptyStr);
+    uStrCpy(masterSample.longitude, emptyStr);
+    uStrCpy(masterSample.altitude, emptyStr);
+    uStrCpy(masterSample.satCount, emptyStr);
+    uStrCpy(masterSample.temp1, emptyStr);
+    uStrCpy(masterSample.temp2, emptyStr);
+    uStrCpy(masterSample.pressure, emptyStr);
+    uStrCpy(masterSample.humidity, emptyStr);
+    uStrCpy(masterSample.accX, emptyStr);
+    uStrCpy(masterSample.accY, emptyStr);
+    uStrCpy(masterSample.accZ, emptyStr);
+}
+
+/**
  * Application entry point.
  */
 int main(void) 
 {
     initialize(); // Initialize OS/Peripherals
-    gpsThread_t gpsThd;
+    initMasterSample();
     
-    dataSample_t masterSample;
+    gpsThread_t gpsThd;
     
     uint32_t timeCounter = 0;
     chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd);
     
+    uint16_t logfileCounter = 0; // Logfile number counter
+    uint32_t sampleCounter = 0;
+    
     gpsLocation_t location;
+    
+    openNewLogfile(logfileCounter++);
+    writeMSHeader();
     while (TRUE) 
     {
-	gpsGetLocation(&location);// TODO: Check for new GPS NMEA sentence
-	printGps(&location);
+	gpsGetLocation(&location);// Check for new GPS NMEA sentence
+	//printGps(&location);
 	// Perform sensor ADC reads
 	adcConvert(&ADCD1, &accelConvGrp, accSamples, ADC_BUF_DEPTH);
+	accelToDataSample(accSamples[0],0,&masterSample);
+	accelToDataSample(accSamples[1],1,&masterSample);
+	accelToDataSample(accSamples[2],2,&masterSample);
+	
 	chThdSleepMilliseconds(10);
 	adcConvert(&ADCD1, &sensorConvGrp, sensorSamples, ADC_BUF_DEPTH);
+	tempToDataSample(sensorSamples[0], 0, &masterSample);
+	tempToDataSample(sensorSamples[0], 1, &masterSample);
+	pressureToDataSample(sensorSamples[2], &masterSample);
+	humidityToDataSample(sensorSamples[3], &masterSample);
+	
 	chThdSleepMilliseconds(10);
+	
+	// Write GPS Data to MasterSample
+	gpsToDataSample(&location, &masterSample);
+	
+	// Write sensor data to MasterSample
+
 	// Write serial data to VCP terminal
+	//printData();
+	printDataSample(&masterSample);
 	
-	printData();
-	
-	//writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
 	//writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
 	
 	toggleLED();
-	chThdSleepMilliseconds(1000);
-	/*
-	if(timeCounter++ >= NSAMPLES)
+	chThdSleepMilliseconds(500);
+	
+	if(sampleCounter > SAMPLE_MAX) // Close file and open a new one
 	{
-	    chprintf((BaseSequentialStream *) &SD2, "CLOSING FILE\n");
-	    logfileClose(&sensorLog);
-	    break;
+	    chprintf((BaseSequentialStream *) &SD2, "Reached sample limit, closing current logfile\n");
+	    closeLog();
+	    openNewLogfile(logfileCounter++);
+	    writeMSHeader();
+	    sampleCounter = 0;
 	}
-	*/
+	//chprintf((BaseSequentialStream *) &SD2, "Writing sample data to log\n");
+	writeMSToLog(&masterSample);
+	//chprintf((BaseSequentialStream *) &SD2, "Log written\n");
+	sampleCounter++;
     }
   return 0;
 }

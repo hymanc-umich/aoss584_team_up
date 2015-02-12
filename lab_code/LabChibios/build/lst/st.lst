@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccTelOS4.s 			page 1
+ARM GAS  /tmp/ccuPE0rt.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"st.c"
-  17              		.section	.gnu.lto_.jmpfuncs.4b2b06035c99eb96,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.82852923b21f4b6d,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006x\2414+\020322103\26200\000\000\002"
   18      6062C006 
   18      78A1342B 
@@ -25,7 +25,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   18      313033B2 
   19 0019 6D0023   		.ascii	"m\000#"
   20              		.text
-  21              		.section	.gnu.lto_.inline.4b2b06035c99eb96,"",%progbits
+  21              		.section	.gnu.lto_.inline.82852923b21f4b6d,"",%progbits
   22 0000 789C6362 		.ascii	"x\234cb`b\300\006R\2414+\003\003\013\017#X\021\333\002"
   22      6062C006 
   22      52A1342B 
@@ -43,7 +43,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   24      00009A
   25 003a 48086D   		.ascii	"H\010m"
   26              		.text
-  27              		.section	.gnu.lto_.pureconst.4b2b06035c99eb96,"",%progbits
+  27              		.section	.gnu.lto_.pureconst.82852923b21f4b6d,"",%progbits
   28 0000 789C6362 		.ascii	"x\234cb`b\340f\200\000V\006\011F)&)f)\026)\000\004\027"
   28      6062E066 
   28      80005606 
@@ -51,14 +51,14 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   28      29662916 
   29 0018 009F     		.ascii	"\000\237"
   30              		.text
-  31              		.section	.gnu.lto_stInit.4b2b06035c99eb96,"",%progbits
+  31              		.section	.gnu.lto_stInit.82852923b21f4b6d,"",%progbits
   32 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\\\003\304\372@\314\310\314\300\310"
   32      60624007 
   32      92405C03 
   32      C4FA40CC 
   32      C8CCC0C8 
   33 0014 34E11C03 		.ascii	"4\341\034\003C#\007\023##\210\301\300\310P\317\304X"
-ARM GAS  /tmp/ccTelOS4.s 			page 2
+ARM GAS  /tmp/ccuPE0rt.s 			page 2
 
 
   33      43230713 
@@ -104,7 +104,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   41      F4921900 
   42 00b0 B55E328C 		.ascii	"\265^2\214"
   43              		.text
-  44              		.section	.gnu.lto_stStartAlarm.4b2b06035c99eb96,"",%progbits
+  44              		.section	.gnu.lto_stStartAlarm.82852923b21f4b6d,"",%progbits
   45 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\\\313\310\300P\014\244\031\231\031"
   45      60624007 
   45      92405CCB 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   47 0027 EB2319C1 		.ascii	"\353#\031\301j\3273\035x\360\377\377\272K\307\226\276"
   47      6AD7331D 
   47      78F0FFFF 
-ARM GAS  /tmp/ccTelOS4.s 			page 3
+ARM GAS  /tmp/ccuPE0rt.s 			page 3
 
 
   47      BA4BC796 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   58      F55352CB 
   58      F4933332 
   59 0104 32F38BF5 		.ascii	"2\363\213\365K\212J\363\262\365\201\214\214\304\034"
-ARM GAS  /tmp/ccTelOS4.s 			page 4
+ARM GAS  /tmp/ccuPE0rt.s 			page 4
 
 
   59      4B8A4AF3 
@@ -199,7 +199,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   62      300000
   63 0140 A0D0896F 		.ascii	"\240\320\211o"
   64              		.text
-  65              		.section	.gnu.lto_stStopAlarm.4b2b06035c99eb96,"",%progbits
+  65              		.section	.gnu.lto_stStopAlarm.82852923b21f4b6d,"",%progbits
   66 0000 789C6362 		.ascii	"x\234cb`b@\007\222@|\024\210\213\201\230\221\231\201"
   66      60624007 
   66      92407C14 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   73      354E6810 
   73      C864648C 
   73      60CC
-ARM GAS  /tmp/ccTelOS4.s 			page 5
+ARM GAS  /tmp/ccuPE0rt.s 			page 5
 
 
   74 008d 64646A00 		.ascii	"ddj\000\002\026\0060\023\354\222$\220\226D\306\305@"
@@ -277,7 +277,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   81 0105 004A0860 		.ascii	"\000J\010`\007"
   81      07
   82              		.text
-  83              		.section	.gnu.lto_stSetAlarm.4b2b06035c99eb96,"",%progbits
+  83              		.section	.gnu.lto_stSetAlarm.82852923b21f4b6d,"",%progbits
   84 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\374\030\210\213\201\230\221\231"
   84      60624007 
   84      9240FC18 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
   87      71568696 
   87      868609
   88 0046 0A0C0CC9 		.ascii	"\012\014\014\311`n\010\220\004\351\015ed\002\321\314"
-ARM GAS  /tmp/ccTelOS4.s 			page 6
+ARM GAS  /tmp/ccuPE0rt.s 			page 6
 
 
   88      606E0890 
@@ -357,8 +357,8 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  100      7A190C00 
  100      60046547 
  101              		.text
- 102              		.section	.gnu.lto_stGetAlarm.4b2b06035c99eb96,"",%progbits
-ARM GAS  /tmp/ccTelOS4.s 			page 7
+ 102              		.section	.gnu.lto_stGetAlarm.82852923b21f4b6d,"",%progbits
+ARM GAS  /tmp/ccuPE0rt.s 			page 7
 
 
  103 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\374\030\210\213\201\230\221\231"
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  114      2AF55352 
  115 00dc 33329332 		.ascii	"32\2232\363\213\365K\212J\363\262\365\201\214\214\304"
  115      F38BF54B 
-ARM GAS  /tmp/ccTelOS4.s 			page 8
+ARM GAS  /tmp/ccuPE0rt.s 			page 8
 
 
  115      8A4AF3B2 
@@ -440,7 +440,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  119 011a 00C1E664 		.ascii	"\000\301\346d\332"
  119      DA
  120              		.text
- 121              		.section	.gnu.lto_.symbol_nodes.4b2b06035c99eb96,"",%progbits
+ 121              		.section	.gnu.lto_.symbol_nodes.82852923b21f4b6d,"",%progbits
  122 0000 789C4DC7 		.ascii	"x\234M\307\261\021\2000\014\003@I!\2232\210\014\241"
  122      B1118030 
  122      0C034049 
@@ -461,13 +461,13 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  125      1003F52C 
  125      1DE7
  126              		.text
- 127              		.section	.gnu.lto_.refs.4b2b06035c99eb96,"",%progbits
+ 127              		.section	.gnu.lto_.refs.82852923b21f4b6d,"",%progbits
  128 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
  128      60626064 
  128      80020000 
  128      460006
  129              		.text
- 130              		.section	.gnu.lto_.decls.4b2b06035c99eb96,"",%progbits
+ 130              		.section	.gnu.lto_.decls.82852923b21f4b6d,"",%progbits
  131 0000 789CB597 		.ascii	"x\234\265\227\177l\024E\024\307gv\217\332\243M-$\022"
  131      7F6C1445 
  131      14C76776 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  132      8A311A13 
  132      04AF08
  133 0022 2414C9B6 		.ascii	"$\024\311\266$$\376q.\275\303^l\357\232\273-\332\377"
-ARM GAS  /tmp/ccTelOS4.s 			page 9
+ARM GAS  /tmp/ccuPE0rt.s 			page 9
 
 
  133      2424FE71 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  144      4CE63934 
  145 00fe 6D207025 		.ascii	"m p%\337 \004\353\032\236\363\010Z\2165\\\342GelP\354"
  145      DF2004EB 
-ARM GAS  /tmp/ccTelOS4.s 			page 10
+ARM GAS  /tmp/ccuPE0rt.s 			page 10
 
 
  145      1A9EF308 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  156      1851
  157 01d5 B973D446 		.ascii	"\271s\324F\326\224\342\354A\352r\036\244\275\302\203"
  157      D694E2EC 
-ARM GAS  /tmp/ccTelOS4.s 			page 11
+ARM GAS  /tmp/ccuPE0rt.s 			page 11
 
 
  157      41EA721E 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  168      19655F3F 
  168      172E
  169 02ae DC7C8ABD 		.ascii	"\334|\212\275~\006\360x\270#\007d\373\035\271/\206."
-ARM GAS  /tmp/ccTelOS4.s 			page 12
+ARM GAS  /tmp/ccuPE0rt.s 			page 12
 
 
  169      7E06F078 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  180 037d 200F7BCB 		.ascii	" \017{\313\013l\241\373\0158\314\303\332\362\206\331"
  180      0B6CA1FB 
  180      0D38CCC3 
-ARM GAS  /tmp/ccTelOS4.s 			page 13
+ARM GAS  /tmp/ccuPE0rt.s 			page 13
 
 
  180      DAF286D9 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  192      8F52A556 
  192      07B9CF21 
  192      4BDCE28F 
-ARM GAS  /tmp/ccTelOS4.s 			page 14
+ARM GAS  /tmp/ccuPE0rt.s 			page 14
 
 
  192      38F9
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  203      18
  204 052a 3EAAA088 		.ascii	">\252\240\210\316\304\032\330\304X\030\207uk\270\300"
  204      CEC41AD8 
-ARM GAS  /tmp/ccTelOS4.s 			page 15
+ARM GAS  /tmp/ccuPE0rt.s 			page 15
 
 
  204      C4581887 
@@ -885,7 +885,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  213 05cc F81783AD 		.ascii	"\370\027\203\255\363r"
  213      F372
  214              		.text
- 215              		.section	.gnu.lto_.symtab.4b2b06035c99eb96,"",%progbits
+ 215              		.section	.gnu.lto_.symtab.82852923b21f4b6d,"",%progbits
  216 0000 7374496E 		.ascii	"stInit\000\000\000\000\000\000\000\000\000\000\000\000"
  216      69740000 
  216      00000000 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  217      00000000 
  218 0028 00000000 		.ascii	"\000\000\000\000\000\000\246\000\000\000stStopAlarm"
  218      0000A600 
-ARM GAS  /tmp/ccTelOS4.s 			page 16
+ARM GAS  /tmp/ccuPE0rt.s 			page 16
 
 
  218      00007374 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  231      696F6E2D 
  232              		.text
  233              		.section	.text.stInit,"ax",%progbits
-ARM GAS  /tmp/ccTelOS4.s 			page 17
+ARM GAS  /tmp/ccuPE0rt.s 			page 17
 
 
  234              		.align	2
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  285              		.thumb
  286              		.thumb_func
  287              		.type	stSetAlarm, %function
-ARM GAS  /tmp/ccTelOS4.s 			page 18
+ARM GAS  /tmp/ccuPE0rt.s 			page 18
 
 
  288              	stSetAlarm:
@@ -1048,21 +1048,21 @@ ARM GAS  /tmp/ccTelOS4.s 			page 1
  311              		.comm	__gnu_lto_v1,1,1
  312 0008 AFF30080 		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
  312      AFF30080 
-ARM GAS  /tmp/ccTelOS4.s 			page 19
+ARM GAS  /tmp/ccuPE0rt.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 st.c
-     /tmp/ccTelOS4.s:234    .text.stInit:0000000000000000 $t
-     /tmp/ccTelOS4.s:240    .text.stInit:0000000000000000 stInit
-     /tmp/ccTelOS4.s:247    .text.stStartAlarm:0000000000000000 $t
-     /tmp/ccTelOS4.s:253    .text.stStartAlarm:0000000000000000 stStartAlarm
-     /tmp/ccTelOS4.s:266    .text.stStopAlarm:0000000000000000 $t
-     /tmp/ccTelOS4.s:272    .text.stStopAlarm:0000000000000000 stStopAlarm
-     /tmp/ccTelOS4.s:282    .text.stSetAlarm:0000000000000000 $t
-     /tmp/ccTelOS4.s:288    .text.stSetAlarm:0000000000000000 stSetAlarm
-     /tmp/ccTelOS4.s:297    .text.stGetAlarm:0000000000000000 $t
-     /tmp/ccTelOS4.s:303    .text.stGetAlarm:0000000000000000 stGetAlarm
+     /tmp/ccuPE0rt.s:234    .text.stInit:0000000000000000 $t
+     /tmp/ccuPE0rt.s:240    .text.stInit:0000000000000000 stInit
+     /tmp/ccuPE0rt.s:247    .text.stStartAlarm:0000000000000000 $t
+     /tmp/ccuPE0rt.s:253    .text.stStartAlarm:0000000000000000 stStartAlarm
+     /tmp/ccuPE0rt.s:266    .text.stStopAlarm:0000000000000000 $t
+     /tmp/ccuPE0rt.s:272    .text.stStopAlarm:0000000000000000 stStopAlarm
+     /tmp/ccuPE0rt.s:282    .text.stSetAlarm:0000000000000000 $t
+     /tmp/ccuPE0rt.s:288    .text.stSetAlarm:0000000000000000 stSetAlarm
+     /tmp/ccuPE0rt.s:297    .text.stGetAlarm:0000000000000000 $t
+     /tmp/ccuPE0rt.s:303    .text.stGetAlarm:0000000000000000 stGetAlarm
                             *COM*:0000000000000001 __gnu_lto_v1
 
 UNDEFINED SYMBOLS

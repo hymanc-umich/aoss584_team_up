@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccgP823f.s 			page 1
+ARM GAS  /tmp/ccV8i7av.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"testpools.c"
-  17              		.section	.gnu.lto_.jmpfuncs.21427ef06926e7b,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.8196f7b1b72c5bdb,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006t\031!4\013\003\003#\0033S5\303\257"
   18      6062C006 
   18      74192134 
@@ -45,7 +45,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   22      00D21B2F 
   23 0061 4C       		.ascii	"L"
   24              		.text
-  25              		.section	.gnu.lto_.inline.21427ef06926e7b,"",%progbits
+  25              		.section	.gnu.lto_.inline.8196f7b1b72c5bdb,"",%progbits
   26 0000 789C6362 		.ascii	"x\234cb`b\300\006\366@i\026\006\006f&F\260\"\266\005"
   26      6062C006 
   26      F6406916 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   27      F3
   28 0026 9D112825 		.ascii	"\235\021(%\3230\203\015.\311\314\003R<\301\017D3\002"
   28      D330830D 
-ARM GAS  /tmp/ccgP823f.s 			page 2
+ARM GAS  /tmp/ccV8i7av.s 			page 2
 
 
   28      2EC9CC03 
@@ -78,7 +78,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   31      600000BD 
   31      350FC0
   32              		.text
-  33              		.section	.gnu.lto_.pureconst.21427ef06926e7b,"",%progbits
+  33              		.section	.gnu.lto_.pureconst.8196f7b1b72c5bdb,"",%progbits
   34 0000 789C6362 		.ascii	"x\234cb`b\340d\200\000\026\006\006F\011f\011V\011\000"
   34      6062E064 
   34      80001606 
@@ -86,7 +86,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   34      09560900 
   35 0014 02160063 		.ascii	"\002\026\000c"
   36              		.text
-  37              		.section	.gnu.lto_null_provider.21427ef06926e7b,"",%progbits
+  37              		.section	.gnu.lto_null_provider.8196f7b1b72c5bdb,"",%progbits
   38 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\005\304\306@\314\310\314\300"
   38      60624007 
   38      92401C05 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   43      4801
   44 0069 C80843FD 		.ascii	"\310\010C\375\214\374\334T\375\344\374\224J\375\224"
   44      8CFCDC54 
-ARM GAS  /tmp/ccgP823f.s 			page 3
+ARM GAS  /tmp/ccV8i7av.s 			page 3
 
 
   44      FDE4FC94 
@@ -134,7 +134,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   47 0097 97CC0000 		.ascii	"\227\314\000\000\241\035,\352"
   47      A11D2CEA 
   48              		.text
-  49              		.section	.gnu.lto_pools1_setup.21427ef06926e7b,"",%progbits
+  49              		.section	.gnu.lto_pools1_setup.8196f7b1b72c5bdb,"",%progbits
   50 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\027\210\215\201\230\221\231\201"
   50      60624007 
   50      92403C17 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   59 0095 9A00B402 		.ascii	"\232\000\264\002\344!C\375\214\374\334T\375\344\374"
   59      E42143FD 
   59      8CFCDC54 
-ARM GAS  /tmp/ccgP823f.s 			page 4
+ARM GAS  /tmp/ccV8i7av.s 			page 4
 
 
   59      FDE4FC
@@ -195,7 +195,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   62      00F9DE3B 
   62      30
   63              		.text
-  64              		.section	.gnu.lto_pools1_execute.part.0.21427ef06926e7b,"",%progbits
+  64              		.section	.gnu.lto_pools1_execute.part.0.8196f7b1b72c5bdb,"",%progbits
   65 0000 789C9D54 		.ascii	"x\234\235T=hSQ\024>\347\336\367s\337O~\324I\020)\356"
   65      3D685351 
   65      143EE7DE 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   73      56D2EEE8 
   73      7647781F 
   73      03CADCB5 
-ARM GAS  /tmp/ccgP823f.s 			page 5
+ARM GAS  /tmp/ccV8i7av.s 			page 5
 
 
   74 00a0 B394B9E8 		.ascii	"\263\224\271\350qWKy\210\274\001\204\246/\244aZ\266"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   85      886F8AD0 
   85      05
   86 0172 D884F642 		.ascii	"\330\204\366B{u\361jv\277\244\231\232h6\271\212\006"
-ARM GAS  /tmp/ccgP823f.s 			page 6
+ARM GAS  /tmp/ccV8i7av.s 			page 6
 
 
   86      7B75F16A 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
   97      B5FF7FAA 
   97      0B84
   98 0249 1C55FD17 		.ascii	"\034U\375\027\275A\321\032\242E'\312<~5w\350?\350Pn"
-ARM GAS  /tmp/ccgP823f.s 			page 7
+ARM GAS  /tmp/ccV8i7av.s 			page 7
 
 
   98      BD41D11A 
@@ -381,7 +381,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  101      F407
  102 0292 D1D30A90 		.ascii	"\321\323\012\220"
  103              		.text
- 104              		.section	.gnu.lto_pools1_execute.21427ef06926e7b,"",%progbits
+ 104              		.section	.gnu.lto_pools1_execute.8196f7b1b72c5bdb,"",%progbits
  105 0000 789C9553 		.ascii	"x\234\225S\277k\024A\024\376\336\314\376\230\373\225"
  105      BF6B1441 
  105      14FEDECC 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  111      6825
  112 007d F14D632B 		.ascii	"\361Mc+\375`\223#y'*q\334Q\346\315I\366\334O\036{.\031"
  112      FD609323 
-ARM GAS  /tmp/ccgP823f.s 			page 8
+ARM GAS  /tmp/ccV8i7av.s 			page 8
 
 
  112      79272A71 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  124 0159 7D5247D0 		.ascii	"}RG\320\005T\002\266\021}\326\031,\307H\251\240\223"
  124      055402B6 
  124      117DD619 
-ARM GAS  /tmp/ccgP823f.s 			page 9
+ARM GAS  /tmp/ccV8i7av.s 			page 9
 
 
  124      2CC748A9 
@@ -535,10 +535,10 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  135      0FCE70C9 
  135      75
  136              		.text
- 137              		.section	.gnu.lto_.symbol_nodes.21427ef06926e7b,"",%progbits
+ 137              		.section	.gnu.lto_.symbol_nodes.8196f7b1b72c5bdb,"",%progbits
  138 0000 789C4D8C 		.ascii	"x\234M\214Mn\302P\014\204g\236\343&\020\016@\245^\216"
  138      4D6EC250 
-ARM GAS  /tmp/ccgP823f.s 			page 10
+ARM GAS  /tmp/ccV8i7av.s 			page 10
 
 
  138      0C84679E 
@@ -587,7 +587,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  147      1877A09F 
  147      5439
  148              		.text
- 149              		.section	.gnu.lto_.refs.21427ef06926e7b,"",%progbits
+ 149              		.section	.gnu.lto_.refs.8196f7b1b72c5bdb,"",%progbits
  150 0000 789C35C7 		.ascii	"x\2345\307\301\015\0000\010\303\300\304\2052K\367_\020"
  150      C10D0030 
  150      08C3C0C4 
@@ -598,12 +598,12 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  151      D451B004 
  151      91FBBED4 
  152 0022 64520D10 		.ascii	"dR\015\020\271\000\224"
-ARM GAS  /tmp/ccgP823f.s 			page 11
+ARM GAS  /tmp/ccV8i7av.s 			page 11
 
 
  152      B90094
  153              		.text
- 154              		.section	.gnu.lto_.decls.21427ef06926e7b,"",%progbits
+ 154              		.section	.gnu.lto_.decls.8196f7b1b72c5bdb,"",%progbits
  155 0000 789C9D57 		.ascii	"x\234\235W}l\024E\024\237\331\273\226\226\036\005\252"
  155      7D6C1445 
  155      149FD9BB 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  165      C4518A
  166 00bd CD98CECB 		.ascii	"\315\230\316\313yE\362\234\223:n[\344\031\306'%\236"
  166      7945F29C 
-ARM GAS  /tmp/ccgP823f.s 			page 12
+ARM GAS  /tmp/ccV8i7av.s 			page 12
 
 
  166      933A6E5B 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  177      ACA6EF11 
  177      BF18
  178 0195 1DDEF0C0 		.ascii	"\035\336\360\300\255\0371m\364\021|\010l+\350\235\264"
-ARM GAS  /tmp/ccgP823f.s 			page 13
+ARM GAS  /tmp/ccV8i7av.s 			page 13
 
 
  178      AD1F316D 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  189      2A5B179A 
  189      4A7D24C3 
  190 0278 EF147380 		.ascii	"\357\024s\200\236E_P\332Hw\251\213\322I\325\3119N\342"
-ARM GAS  /tmp/ccgP823f.s 			page 14
+ARM GAS  /tmp/ccV8i7av.s 			page 14
 
 
  190      9E455F50 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  201      CB24BAD7 
  201      36935D8E 
  202 0352 CB76B02C 		.ascii	"\313v\260,8\232\035p\\\261]\306\335\273\257\256\305"
-ARM GAS  /tmp/ccgP823f.s 			page 15
+ARM GAS  /tmp/ccV8i7av.s 			page 15
 
 
  202      389A1D70 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  213      AEC2F6EA 
  213      CC6A4A47 
  213      4FB2F7
-ARM GAS  /tmp/ccgP823f.s 			page 16
+ARM GAS  /tmp/ccV8i7av.s 			page 16
 
 
  214 042c E3F1C8BE 		.ascii	"\343\361\310\276)\350\376\220\010\022\374g6z\014\364"
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  225      9030FD9B 
  225      B201
  226 04fb 35ABAC34 		.ascii	"5\253\2544\0035l?!d\317Fp\275\"v>\317a\232\301\000\034"
-ARM GAS  /tmp/ccgP823f.s 			page 17
+ARM GAS  /tmp/ccV8i7av.s 			page 17
 
 
  226      03356C3F 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  237      A52EBB48 
  237      ED7694BA 
  237      E622B5C7 
-ARM GAS  /tmp/ccgP823f.s 			page 18
+ARM GAS  /tmp/ccV8i7av.s 			page 18
 
 
  238 05dc 51AACF45 		.ascii	"Q\252\317E\252\305Q\252\313E\252\325p\004\314\017TE"
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  249 06ac F85C7930 		.ascii	"\370\\y0\246\352\361\272\011\362C]\255\206\342\272Z"
  249      A6EAF1BA 
  249      09F2435D 
-ARM GAS  /tmp/ccgP823f.s 			page 19
+ARM GAS  /tmp/ccV8i7av.s 			page 19
 
 
  249      AD86E2BA 
@@ -1122,7 +1122,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  257      FC8DFE03 
  257      000E7E1A 
  258              		.text
- 259              		.section	.gnu.lto_.symtab.21427ef06926e7b,"",%progbits
+ 259              		.section	.gnu.lto_.symtab.8196f7b1b72c5bdb,"",%progbits
  260 0000 70617474 		.ascii	"patternpools\000\000\000\000\000\000\000\000\000\000"
  260      65726E70 
  260      6F6F6C73 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  262      01000077 
  262      610000
  263 003a 02000000 		.ascii	"\002\000\000\000\000\000\000\000\000\000\355\000\000"
-ARM GAS  /tmp/ccgP823f.s 			page 20
+ARM GAS  /tmp/ccV8i7av.s 			page 20
 
 
  263      00000000 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  276      20272D66 
  277 0099 2D736563 		.ascii	"-sections' '-fdata-sections' '-fno-common' '-flto' "
  277      74696F6E 
-ARM GAS  /tmp/ccgP823f.s 			page 21
+ARM GAS  /tmp/ccV8i7av.s 			page 21
 
 
  277      73272027 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  323 0004 2C48     		ldr	r0, .L18+4
  324 0006 1D68     		ldr	r5, [r3]
  325 0008 0522     		movs	r2, #5
-ARM GAS  /tmp/ccgP823f.s 			page 22
+ARM GAS  /tmp/ccV8i7av.s 			page 22
 
 
  326 000a 2946     		mov	r1, r5
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  380 008a FFF7FEFF 		bl	_test_assert
  381 008e 00B1     		cbz	r0, .L17
  382              	.L5:
-ARM GAS  /tmp/ccgP823f.s 			page 23
+ARM GAS  /tmp/ccV8i7av.s 			page 23
 
 
  383 0090 38BD     		pop	{r3, r4, r5, pc}
@@ -1378,30 +1378,30 @@ ARM GAS  /tmp/ccgP823f.s 			page 1
  433 0008 00000000 		.word	0
  434 000c 00000000 		.word	pools1_execute
  435              		.comm	__gnu_lto_v1,1,1
-ARM GAS  /tmp/ccgP823f.s 			page 24
+ARM GAS  /tmp/ccV8i7av.s 			page 24
 
 
  436              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccgP823f.s 			page 25
+ARM GAS  /tmp/ccV8i7av.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 testpools.c
-     /tmp/ccgP823f.s:281    .text.null_provider:0000000000000000 $t
-     /tmp/ccgP823f.s:286    .text.null_provider:0000000000000000 null_provider
-     /tmp/ccgP823f.s:294    .text.pools1_setup:0000000000000000 $t
-     /tmp/ccgP823f.s:299    .text.pools1_setup:0000000000000000 pools1_setup
-     /tmp/ccgP823f.s:310    .text.pools1_setup:000000000000000c $d
-     /tmp/ccgP823f.s:313    .text.pools1_execute:0000000000000000 $t
-     /tmp/ccgP823f.s:318    .text.pools1_execute:0000000000000000 pools1_execute
-     /tmp/ccgP823f.s:400    .text.pools1_execute:00000000000000b4 $d
-     /tmp/ccgP823f.s:414    .rodata.patternpools:0000000000000000 patternpools
-     /tmp/ccgP823f.s:430    .rodata.testpools1:0000000000000000 testpools1
-     /tmp/ccgP823f.s:407    .rodata.str1.4:0000000000000000 $d
-     /tmp/ccgP823f.s:411    .rodata.patternpools:0000000000000000 $d
-     /tmp/ccgP823f.s:418    .data.mp1:0000000000000000 $d
-     /tmp/ccgP823f.s:422    .data.mp1:0000000000000000 mp1
-     /tmp/ccgP823f.s:427    .rodata.testpools1:0000000000000000 $d
+     /tmp/ccV8i7av.s:281    .text.null_provider:0000000000000000 $t
+     /tmp/ccV8i7av.s:286    .text.null_provider:0000000000000000 null_provider
+     /tmp/ccV8i7av.s:294    .text.pools1_setup:0000000000000000 $t
+     /tmp/ccV8i7av.s:299    .text.pools1_setup:0000000000000000 pools1_setup
+     /tmp/ccV8i7av.s:310    .text.pools1_setup:000000000000000c $d
+     /tmp/ccV8i7av.s:313    .text.pools1_execute:0000000000000000 $t
+     /tmp/ccV8i7av.s:318    .text.pools1_execute:0000000000000000 pools1_execute
+     /tmp/ccV8i7av.s:400    .text.pools1_execute:00000000000000b4 $d
+     /tmp/ccV8i7av.s:414    .rodata.patternpools:0000000000000000 patternpools
+     /tmp/ccV8i7av.s:430    .rodata.testpools1:0000000000000000 testpools1
+     /tmp/ccV8i7av.s:407    .rodata.str1.4:0000000000000000 $d
+     /tmp/ccV8i7av.s:411    .rodata.patternpools:0000000000000000 $d
+     /tmp/ccV8i7av.s:418    .data.mp1:0000000000000000 $d
+     /tmp/ccV8i7av.s:422    .data.mp1:0000000000000000 mp1
+     /tmp/ccV8i7av.s:427    .rodata.testpools1:0000000000000000 $d
                             *COM*:0000000000000001 __gnu_lto_v1
 
 UNDEFINED SYMBOLS

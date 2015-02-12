@@ -53,6 +53,7 @@ int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file, char *fname)
 {
     chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Creating New Logfile\n");
     FRESULT res;
+    log->open = FALSE;
     if(!(logger->driveMounted))
 	return false;
     log->file = file;
@@ -64,6 +65,7 @@ int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file, char *fname)
 	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error creating Logfile, ERR%02d\n",res);
 	return res;
     }
+    log->open = TRUE;
     return 0;
 }
 
@@ -151,6 +153,7 @@ int8_t logfileClose(logfile_t *log)
     if(f_close(log->file))
     {
 	log->wrCount = 0;
+	log->open = FALSE;
 	return 1;
     }
     return 0;

@@ -11,6 +11,7 @@
 
 #include "ch.h"
 #include "hal.h"
+#include "ustr.h"
 
 /* NMEA Sentence Definitions */
 // NMEA Start Character

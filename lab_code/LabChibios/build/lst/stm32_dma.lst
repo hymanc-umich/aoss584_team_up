@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc66R73q.s 			page 1
+ARM GAS  /tmp/ccgsaewQ.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"stm32_dma.c"
-  17              		.section	.gnu.lto_.jmpfuncs.70386c965382bd70,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.be8184d59bfd9099,"",%progbits
   18 0000 789C6DCF 		.ascii	"x\234m\3179\016\2000\014D\321I\302\276\205E\300M\323"
   18      390E8030 
   18      0C44D149 
@@ -43,7 +43,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   22      235D7136 
   22      0BF7
   23              		.text
-  24              		.section	.gnu.lto_.inline.70386c965382bd70,"",%progbits
+  24              		.section	.gnu.lto_.inline.be8184d59bfd9099,"",%progbits
   25 0000 789C8592 		.ascii	"x\234\205\2221R\3030\020E\377\256%\231$\216q\314`\247"
   25      3152C330 
   25      1045FFAE 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   27      A4A76068 
   27      38067494 
   27      544C5656 
-ARM GAS  /tmp/cc66R73q.s 			page 2
+ARM GAS  /tmp/ccgsaewQ.s 			page 2
 
 
   27      7005B32A 
@@ -114,11 +114,11 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   37      1E49E15B 
   38 00fc 395F63F7 		.ascii	"9_c\367"
   39              		.text
-  40              		.section	.gnu.lto_.pureconst.70386c965382bd70,"",%progbits
+  40              		.section	.gnu.lto_.pureconst.be8184d59bfd9099,"",%progbits
   41 0000 789C25C1 		.ascii	"x\234%\301Y\016@P\020\000\2601\261\257\017A\322+\270"
   41      590E4050 
   41      1000B031 
-ARM GAS  /tmp/cc66R73q.s 			page 3
+ARM GAS  /tmp/ccgsaewQ.s 			page 3
 
 
   41      B1AF0F41 
@@ -132,7 +132,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   43      B7C70747 
   43      5B034F
   44              		.text
-  45              		.section	.gnu.lto_dmaStreamAllocate.part.0.70386c965382bd70,"",%progbits
+  45              		.section	.gnu.lto_dmaStreamAllocate.part.0.be8184d59bfd9099,"",%progbits
   46 0000 789C9554 		.ascii	"x\234\225TOHTa\020\237\371\276\367\275\367\366\377\346"
   46      4F485461 
   46      109FF9BE 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   54      C2A42DA4 
   54      A1
   55 00a1 4C0B27CF 		.ascii	"L\013'\317 \267\223\355\260\240\365\365\325\373\337"
-ARM GAS  /tmp/cc66R73q.s 			page 4
+ARM GAS  /tmp/ccgsaewQ.s 			page 4
 
 
   55      20B793ED 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   66      B7800661 
   66      39499214 
   67 0177 B54C50B5 		.ascii	"\265LP\2657\010\376wI\252\022T\356G\011\264\034\262"
-ARM GAS  /tmp/cc66R73q.s 			page 5
+ARM GAS  /tmp/ccgsaewQ.s 			page 5
 
 
   67      3708FE77 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   78      488557D3 
   78      DF
   79 024c 19A4641E 		.ascii	"\031\244d\036~\2173Z\364\206\235|q\350\26234|\311\311"
-ARM GAS  /tmp/cc66R73q.s 			page 6
+ARM GAS  /tmp/ccgsaewQ.s 			page 6
 
 
   79      7E8F335A 
@@ -325,7 +325,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   83      6ED7D1BF 
   83      85402D80 
   84              		.text
-  85              		.section	.gnu.lto_dmaStreamRelease.part.1.70386c965382bd70,"",%progbits
+  85              		.section	.gnu.lto_dmaStreamRelease.part.1.be8184d59bfd9099,"",%progbits
   86 0000 789C9550 		.ascii	"x\234\225P\261J\003A\020\235\331\275\013Z)vv\3016\220"
   86      B14A0341 
   86      109DD9BD 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
   91      2580B065 
   92 0070 8E5BCBA8 		.ascii	"\216[\313\250\310|\012\216\244\334\357\357~\\M\312\316"
   92      C87C0A8E 
-ARM GAS  /tmp/cc66R73q.s 			page 7
+ARM GAS  /tmp/ccgsaewQ.s 			page 7
 
 
   92      A4DCEFEF 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  103      E537
  104 013e 84532866 		.ascii	"\204S(f\213eO\370\225\352ZIPR\260W\305z\271\342{b\301"
  104      8B654FF8 
-ARM GAS  /tmp/cc66R73q.s 			page 8
+ARM GAS  /tmp/ccgsaewQ.s 			page 8
 
 
  104      95EA5A49 
@@ -437,7 +437,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  107      D427C096 
  107      99EF
  108              		.text
- 109              		.section	.gnu.lto_Vector6C.70386c965382bd70,"",%progbits
+ 109              		.section	.gnu.lto_Vector6C.be8184d59bfd9099,"",%progbits
  110 0000 789C9D91 		.ascii	"x\234\235\221\261kSA\030\300\277\357\356^\222\306\324"
  110      B16B5341 
  110      18C0BFEF 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  117      FD
  118 008d CD17A7B8 		.ascii	"\315\027\247\270G\275\326>\235\017\006\210\006y\277"
  118      47BDD63E 
-ARM GAS  /tmp/cc66R73q.s 			page 9
+ARM GAS  /tmp/ccgsaewQ.s 			page 9
 
 
  118      9D0F0688 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  130      655C988C 
  130      24BCA1C4 
  130      5BFC4F0B 
-ARM GAS  /tmp/cc66R73q.s 			page 10
+ARM GAS  /tmp/ccgsaewQ.s 			page 10
 
 
  130      39CC
@@ -575,7 +575,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  137      D77F0324 
  137      D3AEEE
  138              		.text
- 139              		.section	.gnu.lto_Vector70.70386c965382bd70,"",%progbits
+ 139              		.section	.gnu.lto_Vector70.be8184d59bfd9099,"",%progbits
  140 0000 789C9D52 		.ascii	"x\234\235RAk\023A\024~of6\335\215\211\015\376\202\""
  140      416B1341 
  140      147E6F66 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  143      A008
  144 004c F1CD6E26 		.ascii	"\361\315n&T/\202\017\366\2757\363\275\367\315\367f\226"
  144      542F820F 
-ARM GAS  /tmp/cc66R73q.s 			page 11
+ARM GAS  /tmp/ccgsaewQ.s 			page 11
 
 
  144      F6BD37F3 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  155      17D19B47 
  155      D282
  156 0123 29C28FF5 		.ascii	")\302\217\365\355~8\032I\240XN\250G\377)(QDL\246\377"
-ARM GAS  /tmp/cc66R73q.s 			page 12
+ARM GAS  /tmp/ccgsaewQ.s 			page 12
 
 
  156      ED7E381A 
@@ -718,13 +718,13 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  167      6D227FAD 
  167      5CF3CF07 
  167      E0CCCEFB 
-ARM GAS  /tmp/cc66R73q.s 			page 13
+ARM GAS  /tmp/ccgsaewQ.s 			page 13
 
 
  168 01fa 738DDFB0 		.ascii	"s\215\337\2606\2713"
  168      36B933
  169              		.text
- 170              		.section	.gnu.lto_Vector74.70386c965382bd70,"",%progbits
+ 170              		.section	.gnu.lto_Vector74.be8184d59bfd9099,"",%progbits
  171 0000 789C9D52 		.ascii	"x\234\235R\317k\023A\024~of6\335\215\211\015\376\005"
  171      CF6B1341 
  171      147E6F66 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  181      8F27321C 
  181      42E4
  182 00be 423B077C 		.ascii	"B;\007|\334$\346\224^\270\344\204G\316\241\016\007Z"
-ARM GAS  /tmp/cc66R73q.s 			page 14
+ARM GAS  /tmp/ccgsaewQ.s 			page 14
 
 
  182      DC24E694 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  193      B0D23D6F 
  193      B8F5
  194 0194 A95DED3C 		.ascii	"\251]\355<\272\304\020\217[\031\"y\340]\210{\237*\266"
-ARM GAS  /tmp/cc66R73q.s 			page 15
+ARM GAS  /tmp/ccgsaewQ.s 			page 15
 
 
  194      BAC4108F 
@@ -870,7 +870,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  199      6BFC06
  200 01ff A7AEBA20 		.ascii	"\247\256\272 "
  201              		.text
- 202              		.section	.gnu.lto_Vector78.70386c965382bd70,"",%progbits
+ 202              		.section	.gnu.lto_Vector78.be8184d59bfd9099,"",%progbits
  203 0000 789C9D52 		.ascii	"x\234\235RMh\023A\024~of6\335\215\211\015\010\236\213"
  203      4D681341 
  203      147E6F66 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  207      DF7C6F66 
  208 0060 DB8AF4F5 		.ascii	"\333\212\364\365i\373\002Et\000\331\332{\200\310e\214"
  208      69FB0245 
-ARM GAS  /tmp/cc66R73q.s 			page 16
+ARM GAS  /tmp/ccgsaewQ.s 			page 16
 
 
  208      7400D9DA 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  219      29C8
  220 0133 282226DD 		.ascii	"(\"&\335\177{\367\376\346\217\321L\356$\234\0121{\032"
  220      7F7BF7FE 
-ARM GAS  /tmp/cc66R73q.s 			page 17
+ARM GAS  /tmp/ccgsaewQ.s 			page 17
 
 
  220      E68FD14C 
@@ -1014,11 +1014,11 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  230      30A2B9
  231 01ff F6       		.ascii	"\366"
  232              		.text
- 233              		.section	.gnu.lto_Vector7C.70386c965382bd70,"",%progbits
+ 233              		.section	.gnu.lto_Vector7C.be8184d59bfd9099,"",%progbits
  234 0000 789C9D91 		.ascii	"x\234\235\221\261kSA\030\300\277\357\356^\222\306\324"
  234      B16B5341 
  234      18C0BFEF 
-ARM GAS  /tmp/cc66R73q.s 			page 18
+ARM GAS  /tmp/ccgsaewQ.s 			page 18
 
 
  234      EE5E92C6 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  246 00d2 420B286C 		.ascii	"B\013(l/\017`\377\350Y\377T\370\370\222\177*\243\234"
  246      2F0F60FF 
  246      E859FF54 
-ARM GAS  /tmp/cc66R73q.s 			page 19
+ARM GAS  /tmp/ccgsaewQ.s 			page 19
 
 
  246      F8F8927F 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  257      3674
  258 01ae 69F9A10E 		.ascii	"i\371\241\016*\246hju\335X{p\357\256\346\244\342\257"
  258      2AA6686A 
-ARM GAS  /tmp/cc66R73q.s 			page 20
+ARM GAS  /tmp/ccgsaewQ.s 			page 20
 
 
  258      75DD587B 
@@ -1156,7 +1156,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  261 01e2 DF6DD8B0 		.ascii	"\337m\330\260\261"
  261      B1
  262              		.text
- 263              		.section	.gnu.lto_Vector80.70386c965382bd70,"",%progbits
+ 263              		.section	.gnu.lto_Vector80.be8184d59bfd9099,"",%progbits
  264 0000 789C9D52 		.ascii	"x\234\235R\317k\023A\024~of6\335\215\211\015\370\017"
  264      CF6B1341 
  264      147E6F66 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  272 008d EDFE9B2F 		.ascii	"\355\376\233/;xW\367:\017\365\2578FTH\347\235A\010\020"
  272      3B7857F7 
  272      3A0FF5AF 
-ARM GAS  /tmp/cc66R73q.s 			page 21
+ARM GAS  /tmp/ccgsaewQ.s 			page 21
 
 
  272      38465448 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  284 0164 B4FFC45B 		.ascii	"\264\377\304[\350|\016\363CnS\226=\370PS\310\241[\342"
  284      E87C0EF3 
  284      436E5396 
-ARM GAS  /tmp/cc66R73q.s 			page 22
+ARM GAS  /tmp/ccgsaewQ.s 			page 22
 
 
  284      3DF85053 
@@ -1302,7 +1302,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  292      FA0D09DD 
  292      BAEA
  293              		.text
- 294              		.section	.gnu.lto_Vector84.70386c965382bd70,"",%progbits
+ 294              		.section	.gnu.lto_Vector84.be8184d59bfd9099,"",%progbits
  295 0000 789C9D52 		.ascii	"x\234\235R\317k\023A\024~of6\335\215\211\015\364\037"
  295      CF6B1341 
  295      147E6F66 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  297      87CEBA29 
  297      E8AD78AA 
  297      E6
-ARM GAS  /tmp/cc66R73q.s 			page 23
+ARM GAS  /tmp/ccgsaewQ.s 			page 23
 
 
  298 0035 508B0741 		.ascii	"P\213\007A\374q\026\245\304\236\364P\2137\351)\275k"
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  309      7155E7AE 
  309      12892C37 
  309      1153422B 
-ARM GAS  /tmp/cc66R73q.s 			page 24
+ARM GAS  /tmp/ccgsaewQ.s 			page 24
 
 
  309      6B17E2E7 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  322 01d3 7CFDEA15 		.ascii	"|\375\352\025II\325_\222\327\352\313\315\206\274T\234"
  322      4949D55F 
  322      92D7EACB 
-ARM GAS  /tmp/cc66R73q.s 			page 25
+ARM GAS  /tmp/ccgsaewQ.s 			page 25
 
 
  322      CD86BC54 
@@ -1452,7 +1452,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  324      1ABF0108 
  324      3BBB58
  325              		.text
- 326              		.section	.gnu.lto_VectorFC.70386c965382bd70,"",%progbits
+ 326              		.section	.gnu.lto_VectorFC.be8184d59bfd9099,"",%progbits
  327 0000 789C9D52 		.ascii	"x\234\235RAh\023A\024\375\177f6\331\215\211\315A<\027"
  327      41681341 
  327      14FD7F66 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  336      40B84A0B 
  336      9C4E0213 
  336      7F0AD862 
-ARM GAS  /tmp/cc66R73q.s 			page 26
+ARM GAS  /tmp/ccgsaewQ.s 			page 26
 
 
  336      8351
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  347      0BBD
  348 017e 44843316 		.ascii	"D\2043\026\361\016\377S\005\037g\273p\177p!\3456S\273"
  348      F10EFF53 
-ARM GAS  /tmp/cc66R73q.s 			page 27
+ARM GAS  /tmp/ccgsaewQ.s 			page 27
 
 
  348      051F67BB 
@@ -1593,7 +1593,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  354      2FB77E03 
  354      6EC5B997 
  355              		.text
- 356              		.section	.gnu.lto_Vector120.70386c965382bd70,"",%progbits
+ 356              		.section	.gnu.lto_Vector120.be8184d59bfd9099,"",%progbits
  357 0000 789C9D91 		.ascii	"x\234\235\221\261kSA\030\300\277\357\356^\222\306\324"
  357      B16B5341 
  357      18C0BFEF 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  361      0A2E1EBC 
  361      EFBEBBFB 
  361      DEEF7E77 
-ARM GAS  /tmp/cc66R73q.s 			page 28
+ARM GAS  /tmp/ccgsaewQ.s 			page 28
 
 
  361      2740
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  373 012a 6357E01D 		.ascii	"cW\340\035\313\321\274\301\254\023\315\033<\367\004"
  373      CBD1BCC1 
  373      AC13CD1B 
-ARM GAS  /tmp/cc66R73q.s 			page 29
+ARM GAS  /tmp/ccgsaewQ.s 			page 29
 
 
  373      3CF704
@@ -1730,7 +1730,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  383      0DBF34AF 
  383      7E
  384              		.text
- 385              		.section	.gnu.lto_Vector124.70386c965382bd70,"",%progbits
+ 385              		.section	.gnu.lto_Vector124.be8184d59bfd9099,"",%progbits
  386 0000 789C9D52 		.ascii	"x\234\235R\317k\023A\024~of6\335\215\211\315\301?\240"
  386      CF6B1341 
  386      147E6F66 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  386      CDC13FA0 
  387 0014 78D3A203 		.ascii	"x\323\242\003\251\327x,x\250\027ShO\262\331\264\315"
  387      A9D7782C 
-ARM GAS  /tmp/cc66R73q.s 			page 30
+ARM GAS  /tmp/ccgsaewQ.s 			page 30
 
 
  387      78A81753 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  398      EC7F
  399 00e4 7ED5613E 		.ascii	"~\325a>>\242\2469\344\243\360D7\351\374T\0136(\014\031"
  399      3EA2A639 
-ARM GAS  /tmp/cc66R73q.s 			page 31
+ARM GAS  /tmp/ccgsaewQ.s 			page 31
 
 
  399      E4A3F044 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  410      400466EC 
  410      7159A9
  411 01c3 55676450 		.ascii	"UgdP+\337\226\345\231[2\250\250\222\252\325ec\341\346"
-ARM GAS  /tmp/cc66R73q.s 			page 32
+ARM GAS  /tmp/ccgsaewQ.s 			page 32
 
 
  411      2BDF96E5 
@@ -1878,7 +1878,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  414 01ff 0D3390B9 		.ascii	"\0153\220\271\273"
  414      BB
  415              		.text
- 416              		.section	.gnu.lto_Vector128.70386c965382bd70,"",%progbits
+ 416              		.section	.gnu.lto_Vector128.be8184d59bfd9099,"",%progbits
  417 0000 789C9D92 		.ascii	"x\234\235\222\317k\023A\024\307\337\233\231Mwcbs\350"
  417      CF6B1341 
  417      14C7DF9B 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  424      1B8C0BDC 
  424      5844E3
  425 008b 81676057 		.ascii	"\201g`W\353G\203\315\356g|\254{\355\247\372\307p\210"
-ARM GAS  /tmp/cc66R73q.s 			page 33
+ARM GAS  /tmp/ccgsaewQ.s 			page 33
 
 
  425      EB4783CD 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  436      AF270EC6 
  436      320F
  437 0160 B6F2B2F6 		.ascii	"\266\362\262\366\234\025\264\377\211=h\177\015\363c"
-ARM GAS  /tmp/cc66R73q.s 			page 34
+ARM GAS  /tmp/ccgsaewQ.s 			page 34
 
 
  437      9C15B4FF 
@@ -2023,7 +2023,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  445      F317DE94 
  445      BA7C
  446              		.text
- 447              		.section	.gnu.lto_Vector12C.70386c965382bd70,"",%progbits
+ 447              		.section	.gnu.lto_Vector12C.be8184d59bfd9099,"",%progbits
  448 0000 789C9D52 		.ascii	"x\234\235RAh\023A\024\375\177f6\335M\023\233\213\236"
  448      41681341 
  448      14FD7F66 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  450      9A28951E 
  450      3AEB46A8 
  450      B7E249CD 
-ARM GAS  /tmp/cc66R73q.s 			page 35
+ARM GAS  /tmp/ccgsaewQ.s 			page 35
 
 
  450      418B97
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  462      B2F6207E 
  463 0109 EFA06D17 		.ascii	"\357\240m\027\304\240\313\2743\006\333\216\347,\344"
  463      C4A0CBBC 
-ARM GAS  /tmp/cc66R73q.s 			page 36
+ARM GAS  /tmp/ccgsaewQ.s 			page 36
 
 
  463      3306DB8E 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  474      BA756341 
  474      5252F517 
  475 01dc E5CDFA52 		.ascii	"\345\315\372R\263!\257\226\256L\024\214\237\274\270"
-ARM GAS  /tmp/cc66R73q.s 			page 37
+ARM GAS  /tmp/ccgsaewQ.s 			page 37
 
 
  475      B321AF96 
@@ -2172,7 +2172,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  477 01fc 1BBF0159 		.ascii	"\033\277\001Y\003\272h"
  477      03BA68
  478              		.text
- 479              		.section	.gnu.lto_Vector130.70386c965382bd70,"",%progbits
+ 479              		.section	.gnu.lto_Vector130.be8184d59bfd9099,"",%progbits
  480 0000 789C9D91 		.ascii	"x\234\235\2211H[A\030\200\377\377\356^\022\323X\263"
  480      31485B41 
  480      1880FFFF 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  488      7842031C 
  489 00a3 8F3A26FE 		.ascii	"\217:&\376\024\370\304Z\235~\377\346\363\365\267S\274"
  489      14F8C45A 
-ARM GAS  /tmp/cc66R73q.s 			page 38
+ARM GAS  /tmp/ccgsaewQ.s 			page 38
 
 
  489      9D7EFFE6 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  500      779D8688 
  500      5EEB
  501 0185 02EA9D93 		.ascii	"\002\352\235\223UW9\334h,\030\334\230\3024\300%\204"
-ARM GAS  /tmp/cc66R73q.s 			page 39
+ARM GAS  /tmp/ccgsaewQ.s 			page 39
 
 
  501      555739DC 
@@ -2306,7 +2306,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  505      BD059384 
  506 01e4 B105     		.ascii	"\261\005"
  507              		.text
- 508              		.section	.gnu.lto_Vector150.70386c965382bd70,"",%progbits
+ 508              		.section	.gnu.lto_Vector150.be8184d59bfd9099,"",%progbits
  509 0000 789C9D52 		.ascii	"x\234\235RAh\023A\024\375\177f6\335\215\211\315\305"
  509      41681341 
  509      14FD7F66 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  515 0069 DB1F0142 		.ascii	"\333\037\001B\2271\336-\203\316\212\343\002\350\034"
  515      9731DE2D 
  515      83CE8AE3 
-ARM GAS  /tmp/cc66R73q.s 			page 40
+ARM GAS  /tmp/ccgsaewQ.s 			page 40
 
 
  515      02E81C
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  527 014c BAA03077 		.ascii	"\272\2400w\017\306\372\241\311\362\215\204\301P\346"
  527      0FC6FAA1 
  527      C9F28D84 
-ARM GAS  /tmp/cc66R73q.s 			page 41
+ARM GAS  /tmp/ccgsaewQ.s 			page 41
 
 
  527      C150E6
@@ -2446,7 +2446,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  536      D66F40C3 
  536      BB46
  537              		.text
- 538              		.section	.gnu.lto_Vector154.70386c965382bd70,"",%progbits
+ 538              		.section	.gnu.lto_Vector154.be8184d59bfd9099,"",%progbits
  539 0000 789C9D52 		.ascii	"x\234\235R=L\024A\024~of\366\330=\357\340*kb)\301I\016"
  539      3D4C1441 
  539      147E6F66 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  540      B88DAC67 
  540      B8
  541 0029 D3602C98 		.ascii	"\323`,\230u\217\004\013\011\261B\257\201\26301\3764"
-ARM GAS  /tmp/cc66R73q.s 			page 42
+ARM GAS  /tmp/ccgsaewQ.s 			page 42
 
 
  541      758F040B 
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  552      6BB1D5E1 
  552      03251259 
  552      7622A682 
-ARM GAS  /tmp/cc66R73q.s 			page 43
+ARM GAS  /tmp/ccgsaewQ.s 			page 43
 
 
  553 0105 44AFA23D 		.ascii	"D\257\242=4\355\202\030t\231SH\261\335h\301@\026\241"
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  564      E6F2ED9B 
  564      37242535 
  564      7749DEAA 
-ARM GAS  /tmp/cc66R73q.s 			page 44
+ARM GAS  /tmp/ccgsaewQ.s 			page 44
 
 
  564      2F371B72 
@@ -2592,7 +2592,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  566      038CB3B9 
  566      20
  567              		.text
- 568              		.section	.gnu.lto_Vector158.70386c965382bd70,"",%progbits
+ 568              		.section	.gnu.lto_Vector158.be8184d59bfd9099,"",%progbits
  569 0000 789C9D52 		.ascii	"x\234\235RAh\023A\024\375\177f6\335\215\211\311\251"
  569      41681341 
  569      14FD7F66 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  577      B9EA3637 
  577      D4AF7E1F 
  577      D1
-ARM GAS  /tmp/cc66R73q.s 			page 45
+ARM GAS  /tmp/ccgsaewQ.s 			page 45
 
 
  578 009e 479A771D 		.ascii	"G\232w\035\301C\270E\013\034\213\003\023\177\012h\263"
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  589      F35B981D 
  589      72EBB2F4 
  589      F987
-ARM GAS  /tmp/cc66R73q.s 			page 46
+ARM GAS  /tmp/ccgsaewQ.s 			page 46
 
 
  590 0175 9A410EAD 		.ascii	"\232A\016\255\"\327\":\273?\207\"\234X\2045\020\261"
@@ -2740,7 +2740,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  597      FD37B5D8 
  597      B9A4
  598              		.text
- 599              		.section	.gnu.lto_dmaInit.70386c965382bd70,"",%progbits
+ 599              		.section	.gnu.lto_dmaInit.be8184d59bfd9099,"",%progbits
  600 0000 789C9591 		.ascii	"x\234\225\221\301k\023A\024\306\337\233\331I71u[\004"
  600      C16B1341 
  600      14C6DF9B 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  602      04BD58BC 
  603 0038 88082285 		.ascii	"\210\010\"\205\270\240`-\036*\264\242xi\2754\"\3707"
  603      B8A0602D 
-ARM GAS  /tmp/cc66R73q.s 			page 47
+ARM GAS  /tmp/ccgsaewQ.s 			page 47
 
 
  603      1E2AB4A2 
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  615 010d 29756E18 		.ascii	")un\030\236\313@\312\011\027\373\024<P\207\246\202w"
  615      9ECB40CA 
  615      0917FB14 
-ARM GAS  /tmp/cc66R73q.s 			page 48
+ARM GAS  /tmp/ccgsaewQ.s 			page 48
 
 
  615      3C5087A6 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  628 01e4 F37675EA 		.ascii	"\363vu\352\256\355\324\334I\267\336\260\2333\263\267"
  628      AEEDD4DC 
  628      49B7DEB0 
-ARM GAS  /tmp/cc66R73q.s 			page 49
+ARM GAS  /tmp/ccgsaewQ.s 			page 49
 
 
  628      9B33B3B7 
@@ -2895,7 +2895,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  631 0217 FD0DCF2A 		.ascii	"\375\015\317*\364\023"
  631      F413
  632              		.text
- 633              		.section	.gnu.lto_dmaStreamAllocate.70386c965382bd70,"",%progbits
+ 633              		.section	.gnu.lto_dmaStreamAllocate.be8184d59bfd9099,"",%progbits
  634 0000 789CA554 		.ascii	"x\234\245TMHTQ\024>\347\276\337\371\363o\224q\026\212"
  634      4D485451 
  634      143EE7BE 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  642 0092 864B1B68 		.ascii	"\206K\033h\362\002MD\236\001a\\(\252\246\033&\216\237"
  642      F2024D44 
  642      9E01615C 
-ARM GAS  /tmp/cc66R73q.s 			page 50
+ARM GAS  /tmp/ccgsaewQ.s 			page 50
 
 
  642      28AAA61B 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  653      CD92F937 
  653      DF3C48DB 
  654 0173 92ECF298 		.ascii	"\222\354\362\230\020\245\3139\2348p\015\266\235I^\005"
-ARM GAS  /tmp/cc66R73q.s 			page 51
+ARM GAS  /tmp/ccgsaewQ.s 			page 51
 
 
  654      10A5CB39 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  665      943A3BCA 
  665      1EA9B10A 
  665      52754FEA 
-ARM GAS  /tmp/cc66R73q.s 			page 52
+ARM GAS  /tmp/ccgsaewQ.s 			page 52
 
 
  665      DC0F
@@ -3102,7 +3102,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  674 02e4 E3FF0075 		.ascii	"\343\377\000u\212R\222"
  674      8A5292
  675              		.text
- 676              		.section	.gnu.lto_dmaStreamRelease.70386c965382bd70,"",%progbits
+ 676              		.section	.gnu.lto_dmaStreamRelease.be8184d59bfd9099,"",%progbits
  677 0000 789C9552 		.ascii	"x\234\225RMh\023Q\020\236yo7\377mR\013\036\245\364\322"
  677      4D681351 
  677      109E796F 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  679      E4904315 
  679      0FD15EAC 
  679      411141C4 
-ARM GAS  /tmp/cc66R73q.s 			page 53
+ARM GAS  /tmp/ccgsaewQ.s 			page 53
 
 
  680 003b 9E048B96 		.ascii	"\236\004\213\226\322\203\227Z\204\236z\012\210\364V"
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  691      50556A75 
  691      00D8059D 
  691      09
-ARM GAS  /tmp/cc66R73q.s 			page 54
+ARM GAS  /tmp/ccgsaewQ.s 			page 54
 
 
  692 010b 8ABCFA24 		.ascii	"\212\274\372$\012\316r\027V\016\336<\251_\310\341S4"
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  703      32B483DE 
  703      F6BB1527 
  703      EDD34702 
-ARM GAS  /tmp/cc66R73q.s 			page 55
+ARM GAS  /tmp/ccgsaewQ.s 			page 55
 
 
  704 01e0 BE05CF3B 		.ascii	"\276\005\317;N\353\352v{\257\377\323%\251\300\246\321"
@@ -3284,7 +3284,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  712      FD094FCA 
  712      0B75
  713              		.text
- 714              		.section	.gnu.lto_.symbol_nodes.70386c965382bd70,"",%progbits
+ 714              		.section	.gnu.lto_.symbol_nodes.be8184d59bfd9099,"",%progbits
  715 0000 789C4DCF 		.ascii	"x\234M\317\313.\203Q\024\305\361}\326\371\276\336\357"
  715      CB2E8351 
  715      14C5F17D 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  717 0026 103AF30A 		.ascii	"\020:\363\012J\223\275\243\373\314~\347\177\326\340"
  717      4A93BDA3 
  717      FBCC7EE7 
-ARM GAS  /tmp/cc66R73q.s 			page 56
+ARM GAS  /tmp/ccgsaewQ.s 			page 56
 
 
  717      7FD6E0
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  729      5A9BC6A6 
  729      B2656C29 
  729      DB22F7C3 
-ARM GAS  /tmp/cc66R73q.s 			page 57
+ARM GAS  /tmp/ccgsaewQ.s 			page 57
 
 
  729      59163B1B 
@@ -3367,7 +3367,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  730      9865F207 
  730      A33FCA13 
  731              		.text
- 732              		.section	.gnu.lto_.refs.70386c965382bd70,"",%progbits
+ 732              		.section	.gnu.lto_.refs.be8184d59bfd9099,"",%progbits
  733 0000 789C25C6 		.ascii	"x\234%\306\011\016\2000\014\003A7)\367\015\001\336\312"
  733      090E8030 
  733      0C034137 
@@ -3388,7 +3388,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  736      D00B97
  737 0041 770276   		.ascii	"w\002v"
  738              		.text
- 739              		.section	.gnu.lto_.decls.70386c965382bd70,"",%progbits
+ 739              		.section	.gnu.lto_.decls.be8184d59bfd9099,"",%progbits
  740 0000 789CBD5A 		.ascii	"x\234\275Z{p\024E\032\357\236\335dw\223\000\001J\004"
  740      7B701445 
  740      1AEF9EDD 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  745      F5F5F4EE 
  745      F4F7FBFD 
  745      BAFB
-ARM GAS  /tmp/cc66R73q.s 			page 58
+ARM GAS  /tmp/ccgsaewQ.s 			page 58
 
 
  746 006e EB996F7A 		.ascii	"\353\231ozV@\002\272#\033\241\004|&\347#tk\006B\375"
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  757      4DF0DE00 
  757      9FAD4A3F 
  757      46C1
-ARM GAS  /tmp/cc66R73q.s 			page 59
+ARM GAS  /tmp/ccgsaewQ.s 			page 59
 
 
  758 0142 B1086C9B 		.ascii	"\261\010l\233\242\361e\322\037\250_P\307\002\352\233"
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  770      83D27F55 
  770      0BC9AD
  771 0212 B0A26F0A 		.ascii	"\260\242o\012\326s,U\037\257C\03535\007\332\005\266"
-ARM GAS  /tmp/cc66R73q.s 			page 60
+ARM GAS  /tmp/ccgsaewQ.s 			page 60
 
 
  771      D6732C55 
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  782      C8
  783 02e5 83452F74 		.ascii	"\203E/t\015\315E\374\240K\363\261\323:\347\273\006\\"
  783      0DCD45FC 
-ARM GAS  /tmp/cc66R73q.s 			page 61
+ARM GAS  /tmp/ccgsaewQ.s 			page 61
 
 
  783      A04BF3B1 
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  794      6CB0A484 
  794      21F2E2BC 
  794      FC8D07
-ARM GAS  /tmp/cc66R73q.s 			page 62
+ARM GAS  /tmp/ccgsaewQ.s 			page 62
 
 
  795 03c0 A9FC786A 		.ascii	"\251\374xj\371\263\032\342\255\007\027Q\371t96\330."
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  806      D3DFEF
  807 048f 916F90C7 		.ascii	"\221o\220\307)\320\022\027\177\207\304\334\035\022\263"
  807      29D01217 
-ARM GAS  /tmp/cc66R73q.s 			page 63
+ARM GAS  /tmp/ccgsaewQ.s 			page 63
 
 
  807      7F87C4DC 
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  818      B1609C11 
  818      39898A77 
  818      9C9EE7
-ARM GAS  /tmp/cc66R73q.s 			page 64
+ARM GAS  /tmp/ccgsaewQ.s 			page 64
 
 
  819 0569 6D9CD99E 		.ascii	"m\234\331\236H\014t\236A\177\253d6\372\340\302\345\234"
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  830      EF7284DE 
  830      C8A3BF60 
  830      8A7E8A47 
-ARM GAS  /tmp/cc66R73q.s 			page 65
+ARM GAS  /tmp/ccgsaewQ.s 			page 65
 
 
  830      AFCF
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  842 0712 D8FEE3F9 		.ascii	"\330\376\343\371\216\001K7H\263\236\226\256&\236\304"
  842      8E014B37 
  842      48B39E96 
-ARM GAS  /tmp/cc66R73q.s 			page 66
+ARM GAS  /tmp/ccgsaewQ.s 			page 66
 
 
  842      AE269EC4 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  854      DB13C9B1 
  854      DE12D9
  855 07f1 2FF834CC 		.ascii	"/\3704\314\034\237^Q\267\315\341J\254\315\2315\357G"
-ARM GAS  /tmp/cc66R73q.s 			page 67
+ARM GAS  /tmp/ccgsaewQ.s 			page 67
 
 
  855      1C9F5E51 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  866      3A4CB8E6 
  866      A59C2F37 
  866      CBD54BE3 
-ARM GAS  /tmp/cc66R73q.s 			page 68
+ARM GAS  /tmp/ccgsaewQ.s 			page 68
 
 
  866      CA
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  877      6FC5FF
  878 0990 B5A0F19B 		.ascii	"\265\240\361\233\275\207\325\330\347\032\336\304t\036"
  878      BD87D5D8 
-ARM GAS  /tmp/cc66R73q.s 			page 69
+ARM GAS  /tmp/ccgsaewQ.s 			page 69
 
 
  878      E71ADEC4 
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  890      46B0EF9C 
  890      80155A87 
  890      E367C670 
-ARM GAS  /tmp/cc66R73q.s 			page 70
+ARM GAS  /tmp/ccgsaewQ.s 			page 70
 
 
  890      EC
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  901      69F9
  902 0b48 022D17D2 		.ascii	"\002-\027\322\362EZ.\241e\023-\227\321\262\231\226+"
  902      F2455A2E 
-ARM GAS  /tmp/cc66R73q.s 			page 71
+ARM GAS  /tmp/ccgsaewQ.s 			page 71
 
 
  902      A165132D 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  913      DA70C575 
  913      2F74AB7F 
  913      5A5DD42F 
-ARM GAS  /tmp/cc66R73q.s 			page 72
+ARM GAS  /tmp/ccgsaewQ.s 			page 72
 
 
  914 0c25 6BEEAC8D 		.ascii	"k\356\254\215\324\206\356\014\211\217\206\375\341\332"
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  925      039975B4 
  925      A13B5C59 
  926 0cff F590012A 		.ascii	"\365\220\001*\014\306|\362PA-3\\W\025\256\214\371\352"
-ARM GAS  /tmp/cc66R73q.s 			page 73
+ARM GAS  /tmp/ccgsaewQ.s 			page 73
 
 
  926      0CC67CF2 
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  937      311124E7 
  937      82E1E8
  938 0dd9 E3C1D0D4 		.ascii	"\343\301\320\324pud\312\264Po\3020:\\\247S\364\"\363"
-ARM GAS  /tmp/cc66R73q.s 			page 74
+ARM GAS  /tmp/ccgsaewQ.s 			page 74
 
 
  938      707564CA 
@@ -4438,12 +4438,12 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  949      4E80B599 
  949      319E94FF 
  949      03051DA9 
-ARM GAS  /tmp/cc66R73q.s 			page 75
+ARM GAS  /tmp/ccgsaewQ.s 			page 75
 
 
  949      EF
  950              		.text
- 951              		.section	.gnu.lto_.symtab.70386c965382bd70,"",%progbits
+ 951              		.section	.gnu.lto_.symtab.be8184d59bfd9099,"",%progbits
  952 0000 56656374 		.ascii	"Vector6C\000\000\000\000\000\000\000\000\000\000\000"
  952      6F723643 
  952      00000000 
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  962      00
  963 00bf 00566563 		.ascii	"\000Vector120\000\000\000\000\000\000\000\000\000\000"
  963      746F7231 
-ARM GAS  /tmp/cc66R73q.s 			page 76
+ARM GAS  /tmp/ccgsaewQ.s 			page 76
 
 
  963      32300000 
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  974      0000
  975 0198 0000001F 		.ascii	"\000\000\000\037\001\000\000_stm32_dma_streams\000\000"
  975      0100005F 
-ARM GAS  /tmp/cc66R73q.s 			page 77
+ARM GAS  /tmp/ccgsaewQ.s 			page 77
 
 
  975      73746D33 
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  989 0066 742D6672 		.ascii	"t-frame-pointer' '-falign-functions=16' '-ffunction"
  989      616D652D 
  989      706F696E 
-ARM GAS  /tmp/cc66R73q.s 			page 78
+ARM GAS  /tmp/ccgsaewQ.s 			page 78
 
 
  989      74657227 
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1033 0002 0948     		ldr	r0, .L14+4
  1034 0004 1968     		ldr	r1, [r3]
  1035 0006 8268     		ldr	r2, [r0, #8]
-ARM GAS  /tmp/cc66R73q.s 			page 79
+ARM GAS  /tmp/ccgsaewQ.s 			page 79
 
 
  1036 0008 8909     		lsrs	r1, r1, #6
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1090              		.type	Vector78, %function
  1091              	Vector78:
  1092              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/cc66R73q.s 			page 80
+ARM GAS  /tmp/ccgsaewQ.s 			page 80
 
 
  1093              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1146              		.p2align 4,,15
  1147              		.global	Vector80
  1148              		.thumb
-ARM GAS  /tmp/cc66R73q.s 			page 81
+ARM GAS  /tmp/ccgsaewQ.s 			page 81
 
 
  1149              		.thumb_func
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1203 0024 00600240 		.word	1073897472
  1204 0028 00000000 		.word	.LANCHOR0
  1205              		.size	Vector84, .-Vector84
-ARM GAS  /tmp/cc66R73q.s 			page 82
+ARM GAS  /tmp/ccgsaewQ.s 			page 82
 
 
  1206 002c AFF30080 		.section	.text.VectorFC,"ax",%progbits
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1260              	.L64:
  1261 001e 00BF     		.align	2
  1262              	.L63:
-ARM GAS  /tmp/cc66R73q.s 			page 83
+ARM GAS  /tmp/ccgsaewQ.s 			page 83
 
 
  1263 0020 00640240 		.word	1073898496
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1316 0014 0AB1     		cbz	r2, .L73
  1317 0016 406D     		ldr	r0, [r0, #84]
  1318 0018 9047     		blx	r2
-ARM GAS  /tmp/cc66R73q.s 			page 84
+ARM GAS  /tmp/ccgsaewQ.s 			page 84
 
 
  1319              	.L73:
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1373 0008 026E     		ldr	r2, [r0, #96]
  1374 000a 01F03D01 		and	r1, r1, #61
  1375 000e D960     		str	r1, [r3, #12]
-ARM GAS  /tmp/cc66R73q.s 			page 85
+ARM GAS  /tmp/ccgsaewQ.s 			page 85
 
 
  1376 0010 0AB1     		cbz	r2, .L87
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1429 0000 084B     		ldr	r3, .L105
  1430 0002 0948     		ldr	r0, .L105+4
  1431 0004 5968     		ldr	r1, [r3, #4]
-ARM GAS  /tmp/cc66R73q.s 			page 86
+ARM GAS  /tmp/ccgsaewQ.s 			page 86
 
 
  1432 0006 026F     		ldr	r2, [r0, #112]
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1486              		.thumb_func
  1487              		.type	dmaInit, %function
  1488              	dmaInit:
-ARM GAS  /tmp/cc66R73q.s 			page 87
+ARM GAS  /tmp/ccgsaewQ.s 			page 87
 
 
  1489              		@ args = 0, pretend = 0, frame = 0
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1542 0010 1CEA070F 		tst	ip, r7
  1543 0014 32D1     		bne	.L126
  1544 0016 1D4D     		ldr	r5, .L135+4
-ARM GAS  /tmp/cc66R73q.s 			page 88
+ARM GAS  /tmp/ccgsaewQ.s 			page 88
 
 
  1545 0018 4CEA0707 		orr	r7, ip, r7
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1599              		.size	dmaStreamAllocate, .-dmaStreamAllocate
  1600 0094 AFF30080 		.section	.text.dmaStreamRelease,"ax",%progbits
  1600      AFF30080 
-ARM GAS  /tmp/cc66R73q.s 			page 89
+ARM GAS  /tmp/ccgsaewQ.s 			page 89
 
 
  1600      AFF30080 
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1649      00000000 
  1650              		.section	.rodata._stm32_dma_streams,"a",%progbits
  1651              		.align	2
-ARM GAS  /tmp/cc66R73q.s 			page 90
+ARM GAS  /tmp/ccgsaewQ.s 			page 90
 
 
  1652              		.set	.LANCHOR2,. + 0
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1706 0068 00       		.byte	0
  1707 0069 08       		.byte	8
  1708 006a 38       		.byte	56
-ARM GAS  /tmp/cc66R73q.s 			page 91
+ARM GAS  /tmp/ccgsaewQ.s 			page 91
 
 
  1709 006b 00       		.space	1
@@ -5453,97 +5453,97 @@ ARM GAS  /tmp/cc66R73q.s 			page 1
  1758 0000 00000000 		.space	4
  1759              		.comm	__gnu_lto_v1,1,1
  1760              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cc66R73q.s 			page 92
+ARM GAS  /tmp/ccgsaewQ.s 			page 92
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_dma.c
-     /tmp/cc66R73q.s:994    .text.Vector6C:0000000000000000 $t
-     /tmp/cc66R73q.s:1000   .text.Vector6C:0000000000000000 Vector6C
-     /tmp/cc66R73q.s:1019   .text.Vector6C:0000000000000020 $d
-     /tmp/cc66R73q.s:1023   .text.Vector70:0000000000000000 $t
-     /tmp/cc66R73q.s:1029   .text.Vector70:0000000000000000 Vector70
-     /tmp/cc66R73q.s:1050   .text.Vector70:0000000000000024 $d
-     /tmp/cc66R73q.s:1054   .text.Vector74:0000000000000000 $t
-     /tmp/cc66R73q.s:1060   .text.Vector74:0000000000000000 Vector74
-     /tmp/cc66R73q.s:1081   .text.Vector74:0000000000000024 $d
-     /tmp/cc66R73q.s:1085   .text.Vector78:0000000000000000 $t
-     /tmp/cc66R73q.s:1091   .text.Vector78:0000000000000000 Vector78
-     /tmp/cc66R73q.s:1112   .text.Vector78:0000000000000024 $d
-     /tmp/cc66R73q.s:1116   .text.Vector7C:0000000000000000 $t
-     /tmp/cc66R73q.s:1122   .text.Vector7C:0000000000000000 Vector7C
-     /tmp/cc66R73q.s:1141   .text.Vector7C:0000000000000020 $d
-     /tmp/cc66R73q.s:1145   .text.Vector80:0000000000000000 $t
-     /tmp/cc66R73q.s:1151   .text.Vector80:0000000000000000 Vector80
-     /tmp/cc66R73q.s:1172   .text.Vector80:0000000000000024 $d
-     /tmp/cc66R73q.s:1176   .text.Vector84:0000000000000000 $t
-     /tmp/cc66R73q.s:1182   .text.Vector84:0000000000000000 Vector84
-     /tmp/cc66R73q.s:1203   .text.Vector84:0000000000000024 $d
-     /tmp/cc66R73q.s:1207   .text.VectorFC:0000000000000000 $t
-     /tmp/cc66R73q.s:1213   .text.VectorFC:0000000000000000 VectorFC
-     /tmp/cc66R73q.s:1234   .text.VectorFC:0000000000000024 $d
-     /tmp/cc66R73q.s:1238   .text.Vector120:0000000000000000 $t
-     /tmp/cc66R73q.s:1244   .text.Vector120:0000000000000000 Vector120
-     /tmp/cc66R73q.s:1263   .text.Vector120:0000000000000020 $d
-     /tmp/cc66R73q.s:1267   .text.Vector124:0000000000000000 $t
-     /tmp/cc66R73q.s:1273   .text.Vector124:0000000000000000 Vector124
-     /tmp/cc66R73q.s:1294   .text.Vector124:0000000000000024 $d
-     /tmp/cc66R73q.s:1298   .text.Vector128:0000000000000000 $t
-     /tmp/cc66R73q.s:1304   .text.Vector128:0000000000000000 Vector128
-     /tmp/cc66R73q.s:1325   .text.Vector128:0000000000000024 $d
-     /tmp/cc66R73q.s:1329   .text.Vector12C:0000000000000000 $t
-     /tmp/cc66R73q.s:1335   .text.Vector12C:0000000000000000 Vector12C
-     /tmp/cc66R73q.s:1356   .text.Vector12C:0000000000000024 $d
-     /tmp/cc66R73q.s:1360   .text.Vector130:0000000000000000 $t
-     /tmp/cc66R73q.s:1366   .text.Vector130:0000000000000000 Vector130
-     /tmp/cc66R73q.s:1385   .text.Vector130:0000000000000020 $d
-     /tmp/cc66R73q.s:1389   .text.Vector150:0000000000000000 $t
-     /tmp/cc66R73q.s:1395   .text.Vector150:0000000000000000 Vector150
-     /tmp/cc66R73q.s:1416   .text.Vector150:0000000000000024 $d
-     /tmp/cc66R73q.s:1420   .text.Vector154:0000000000000000 $t
-     /tmp/cc66R73q.s:1426   .text.Vector154:0000000000000000 Vector154
-     /tmp/cc66R73q.s:1447   .text.Vector154:0000000000000024 $d
-     /tmp/cc66R73q.s:1451   .text.Vector158:0000000000000000 $t
-     /tmp/cc66R73q.s:1457   .text.Vector158:0000000000000000 Vector158
-     /tmp/cc66R73q.s:1478   .text.Vector158:0000000000000024 $d
-     /tmp/cc66R73q.s:1482   .text.dmaInit:0000000000000000 $t
-     /tmp/cc66R73q.s:1488   .text.dmaInit:0000000000000000 dmaInit
-     /tmp/cc66R73q.s:1520   .text.dmaInit:0000000000000034 $d
-     /tmp/cc66R73q.s:1527   .text.dmaStreamAllocate:0000000000000000 $t
-     /tmp/cc66R73q.s:1533   .text.dmaStreamAllocate:0000000000000000 dmaStreamAllocate
-     /tmp/cc66R73q.s:1596   .text.dmaStreamAllocate:0000000000000088 $d
-     /tmp/cc66R73q.s:1601   .text.dmaStreamRelease:0000000000000000 $t
-ARM GAS  /tmp/cc66R73q.s 			page 93
+     /tmp/ccgsaewQ.s:994    .text.Vector6C:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1000   .text.Vector6C:0000000000000000 Vector6C
+     /tmp/ccgsaewQ.s:1019   .text.Vector6C:0000000000000020 $d
+     /tmp/ccgsaewQ.s:1023   .text.Vector70:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1029   .text.Vector70:0000000000000000 Vector70
+     /tmp/ccgsaewQ.s:1050   .text.Vector70:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1054   .text.Vector74:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1060   .text.Vector74:0000000000000000 Vector74
+     /tmp/ccgsaewQ.s:1081   .text.Vector74:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1085   .text.Vector78:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1091   .text.Vector78:0000000000000000 Vector78
+     /tmp/ccgsaewQ.s:1112   .text.Vector78:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1116   .text.Vector7C:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1122   .text.Vector7C:0000000000000000 Vector7C
+     /tmp/ccgsaewQ.s:1141   .text.Vector7C:0000000000000020 $d
+     /tmp/ccgsaewQ.s:1145   .text.Vector80:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1151   .text.Vector80:0000000000000000 Vector80
+     /tmp/ccgsaewQ.s:1172   .text.Vector80:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1176   .text.Vector84:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1182   .text.Vector84:0000000000000000 Vector84
+     /tmp/ccgsaewQ.s:1203   .text.Vector84:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1207   .text.VectorFC:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1213   .text.VectorFC:0000000000000000 VectorFC
+     /tmp/ccgsaewQ.s:1234   .text.VectorFC:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1238   .text.Vector120:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1244   .text.Vector120:0000000000000000 Vector120
+     /tmp/ccgsaewQ.s:1263   .text.Vector120:0000000000000020 $d
+     /tmp/ccgsaewQ.s:1267   .text.Vector124:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1273   .text.Vector124:0000000000000000 Vector124
+     /tmp/ccgsaewQ.s:1294   .text.Vector124:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1298   .text.Vector128:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1304   .text.Vector128:0000000000000000 Vector128
+     /tmp/ccgsaewQ.s:1325   .text.Vector128:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1329   .text.Vector12C:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1335   .text.Vector12C:0000000000000000 Vector12C
+     /tmp/ccgsaewQ.s:1356   .text.Vector12C:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1360   .text.Vector130:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1366   .text.Vector130:0000000000000000 Vector130
+     /tmp/ccgsaewQ.s:1385   .text.Vector130:0000000000000020 $d
+     /tmp/ccgsaewQ.s:1389   .text.Vector150:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1395   .text.Vector150:0000000000000000 Vector150
+     /tmp/ccgsaewQ.s:1416   .text.Vector150:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1420   .text.Vector154:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1426   .text.Vector154:0000000000000000 Vector154
+     /tmp/ccgsaewQ.s:1447   .text.Vector154:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1451   .text.Vector158:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1457   .text.Vector158:0000000000000000 Vector158
+     /tmp/ccgsaewQ.s:1478   .text.Vector158:0000000000000024 $d
+     /tmp/ccgsaewQ.s:1482   .text.dmaInit:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1488   .text.dmaInit:0000000000000000 dmaInit
+     /tmp/ccgsaewQ.s:1520   .text.dmaInit:0000000000000034 $d
+     /tmp/ccgsaewQ.s:1527   .text.dmaStreamAllocate:0000000000000000 $t
+     /tmp/ccgsaewQ.s:1533   .text.dmaStreamAllocate:0000000000000000 dmaStreamAllocate
+     /tmp/ccgsaewQ.s:1596   .text.dmaStreamAllocate:0000000000000088 $d
+     /tmp/ccgsaewQ.s:1601   .text.dmaStreamRelease:0000000000000000 $t
+ARM GAS  /tmp/ccgsaewQ.s 			page 93
 
 
-     /tmp/cc66R73q.s:1607   .text.dmaStreamRelease:0000000000000000 dmaStreamRelease
-     /tmp/cc66R73q.s:1639   .text.dmaStreamRelease:0000000000000040 $d
-     /tmp/cc66R73q.s:1655   .rodata._stm32_dma_streams:0000000000000000 _stm32_dma_streams
-     /tmp/cc66R73q.s:1644   .bss.dma_isr_redir:0000000000000000 $d
-     /tmp/cc66R73q.s:1648   .bss.dma_isr_redir:0000000000000000 dma_isr_redir
-     /tmp/cc66R73q.s:1651   .rodata._stm32_dma_streams:0000000000000000 $d
-     /tmp/cc66R73q.s:1753   .bss.dma_streams_mask:0000000000000000 $d
-     /tmp/cc66R73q.s:1757   .bss.dma_streams_mask:0000000000000000 dma_streams_mask
+     /tmp/ccgsaewQ.s:1607   .text.dmaStreamRelease:0000000000000000 dmaStreamRelease
+     /tmp/ccgsaewQ.s:1639   .text.dmaStreamRelease:0000000000000040 $d
+     /tmp/ccgsaewQ.s:1655   .rodata._stm32_dma_streams:0000000000000000 _stm32_dma_streams
+     /tmp/ccgsaewQ.s:1644   .bss.dma_isr_redir:0000000000000000 $d
+     /tmp/ccgsaewQ.s:1648   .bss.dma_isr_redir:0000000000000000 dma_isr_redir
+     /tmp/ccgsaewQ.s:1651   .rodata._stm32_dma_streams:0000000000000000 $d
+     /tmp/ccgsaewQ.s:1753   .bss.dma_streams_mask:0000000000000000 $d
+     /tmp/ccgsaewQ.s:1757   .bss.dma_streams_mask:0000000000000000 dma_streams_mask
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/cc66R73q.s:1022   .text.Vector6C:0000000000000028 $t
-     /tmp/cc66R73q.s:1053   .text.Vector70:000000000000002c $t
-     /tmp/cc66R73q.s:1084   .text.Vector74:000000000000002c $t
-     /tmp/cc66R73q.s:1115   .text.Vector78:000000000000002c $t
-     /tmp/cc66R73q.s:1144   .text.Vector7C:0000000000000028 $t
-     /tmp/cc66R73q.s:1175   .text.Vector80:000000000000002c $t
-     /tmp/cc66R73q.s:1206   .text.Vector84:000000000000002c $t
-     /tmp/cc66R73q.s:1237   .text.VectorFC:000000000000002c $t
-     /tmp/cc66R73q.s:1266   .text.Vector120:0000000000000028 $t
-     /tmp/cc66R73q.s:1297   .text.Vector124:000000000000002c $t
-     /tmp/cc66R73q.s:1328   .text.Vector128:000000000000002c $t
-     /tmp/cc66R73q.s:1359   .text.Vector12C:000000000000002c $t
-     /tmp/cc66R73q.s:1388   .text.Vector130:0000000000000028 $t
-     /tmp/cc66R73q.s:1419   .text.Vector150:000000000000002c $t
-     /tmp/cc66R73q.s:1450   .text.Vector154:000000000000002c $t
-     /tmp/cc66R73q.s:1481   .text.Vector158:000000000000002c $t
-     /tmp/cc66R73q.s:1526   .text.dmaInit:0000000000000048 $t
-     /tmp/cc66R73q.s:1600   .text.dmaStreamAllocate:0000000000000094 $t
-     /tmp/cc66R73q.s:1643   .text.dmaStreamRelease:0000000000000048 $t
+     /tmp/ccgsaewQ.s:1022   .text.Vector6C:0000000000000028 $t
+     /tmp/ccgsaewQ.s:1053   .text.Vector70:000000000000002c $t
+     /tmp/ccgsaewQ.s:1084   .text.Vector74:000000000000002c $t
+     /tmp/ccgsaewQ.s:1115   .text.Vector78:000000000000002c $t
+     /tmp/ccgsaewQ.s:1144   .text.Vector7C:0000000000000028 $t
+     /tmp/ccgsaewQ.s:1175   .text.Vector80:000000000000002c $t
+     /tmp/ccgsaewQ.s:1206   .text.Vector84:000000000000002c $t
+     /tmp/ccgsaewQ.s:1237   .text.VectorFC:000000000000002c $t
+     /tmp/ccgsaewQ.s:1266   .text.Vector120:0000000000000028 $t
+     /tmp/ccgsaewQ.s:1297   .text.Vector124:000000000000002c $t
+     /tmp/ccgsaewQ.s:1328   .text.Vector128:000000000000002c $t
+     /tmp/ccgsaewQ.s:1359   .text.Vector12C:000000000000002c $t
+     /tmp/ccgsaewQ.s:1388   .text.Vector130:0000000000000028 $t
+     /tmp/ccgsaewQ.s:1419   .text.Vector150:000000000000002c $t
+     /tmp/ccgsaewQ.s:1450   .text.Vector154:000000000000002c $t
+     /tmp/ccgsaewQ.s:1481   .text.Vector158:000000000000002c $t
+     /tmp/ccgsaewQ.s:1526   .text.dmaInit:0000000000000048 $t
+     /tmp/ccgsaewQ.s:1600   .text.dmaStreamAllocate:0000000000000094 $t
+     /tmp/ccgsaewQ.s:1643   .text.dmaStreamRelease:0000000000000048 $t
 
 UNDEFINED SYMBOLS
 _port_irq_epilogue
