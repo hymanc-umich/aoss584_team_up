@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc0Kl1w3.s 			page 1
+ARM GAS  /tmp/ccBaQ2xA.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"hal.c"
-  17              		.section	.gnu.lto_.jmpfuncs.528c134e6b123103,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.d8e1377ba1bfa74f,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006\344\2414#\\\204\221\251\232\341W\303"
   18      6062C006 
   18      E4A13423 
@@ -28,7 +28,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   19      30004193 
   19      041D
   20              		.text
-  21              		.section	.gnu.lto_.inline.528c134e6b123103,"",%progbits
+  21              		.section	.gnu.lto_.inline.d8e1377ba1bfa74f,"",%progbits
   22 0000 789C6362 		.ascii	"x\234cb`b\300\006\234\2414#\003\003\357] \011R\305\266"
   22      6062C006 
   22      9CA13423 
@@ -40,14 +40,14 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   23      66320000 
   24 0025 842D0263 		.ascii	"\204-\002c"
   25              		.text
-  26              		.section	.gnu.lto_.pureconst.528c134e6b123103,"",%progbits
+  26              		.section	.gnu.lto_.pureconst.d8e1377ba1bfa74f,"",%progbits
   27 0000 789C6362 		.ascii	"x\234cb`b`f\200\000F\006\011\000\000\203\000!"
   27      60626066 
   27      80004606 
   27      09000083 
   27      0021
   28              		.text
-  29              		.section	.gnu.lto_halInit.528c134e6b123103,"",%progbits
+  29              		.section	.gnu.lto_halInit.d8e1377ba1bfa74f,"",%progbits
   30 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\274\207\221\201\301\000H32302M8"
   30      60624007 
   30      9240BC87 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   31      62303032 
   31      D43331D6 
   31      473282
-ARM GAS  /tmp/cc0Kl1w3.s 			page 2
+ARM GAS  /tmp/ccBaQ2xA.s 			page 2
 
 
   32 002b D5AE673A 		.ascii	"\325\256g:\360\340\377\377u?6>\234\305(\304\015\024"
@@ -118,14 +118,14 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   43      FA2545A5 
   43      79D9FA40 
   43      4646628E 
-ARM GAS  /tmp/cc0Kl1w3.s 			page 3
+ARM GAS  /tmp/ccBaQ2xA.s 			page 3
 
 
   43      7E715132 
   44 0103 4B660000 		.ascii	"Kf\000\000\237\227~\255"
   44      9F977EAD 
   45              		.text
-  46              		.section	.gnu.lto_.symbol_nodes.528c134e6b123103,"",%progbits
+  46              		.section	.gnu.lto_.symbol_nodes.d8e1377ba1bfa74f,"",%progbits
   47 0000 789C45C8 		.ascii	"x\234E\310\273\021\3020\020\204\341\325\312\362\203"
   47      BB11C230 
   47      1084E1D5 
@@ -160,14 +160,14 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   53      37C3D441 
   53      20
   54              		.text
-  55              		.section	.gnu.lto_.refs.528c134e6b123103,"",%progbits
+  55              		.section	.gnu.lto_.refs.d8e1377ba1bfa74f,"",%progbits
   56 0000 789C6362 		.ascii	"x\234cb`b`e\200\000F\006&F\006\000\000\237\000\016"
   56      60626065 
   56      80004606 
   56      26460600 
   56      009F000E 
   57              		.text
-  58              		.section	.gnu.lto_.decls.528c134e6b123103,"",%progbits
+  58              		.section	.gnu.lto_.decls.d8e1377ba1bfa74f,"",%progbits
   59 0000 789C9596 		.ascii	"x\234\225\226_h\024G\034\307g\366\222K.IS\011T*\024"
   59      5F681447 
   59      1CC767F6 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   60      B42F169B 
   60      5895C626 
   60      6005DF96 
-ARM GAS  /tmp/cc0Kl1w3.s 			page 4
+ARM GAS  /tmp/ccBaQ2xA.s 			page 4
 
 
   61 0029 C9EDC65B 		.ascii	"\311\355\306[zw{\354\355\211>uL\213\011>\224\030Im\332"
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   72      46F0
   73 00f8 0CDC0856 		.ascii	"\014\334\010V\367\243\236C\260\016l\006\347\210c\017"
   73      F7A39E43 
-ARM GAS  /tmp/cc0Kl1w3.s 			page 5
+ARM GAS  /tmp/ccBaQ2xA.s 			page 5
 
 
   73      B00E6C06 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   84      9A618F
   85 01d2 DDC0D638 		.ascii	"\335\300\3268+\273l\206-y\206Y\225\215\231a\377\270"
   85      2BBB6C86 
-ARM GAS  /tmp/cc0Kl1w3.s 			page 6
+ARM GAS  /tmp/ccBaQ2xA.s 			page 6
 
 
   85      2D798659 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
   97      2FE87ED1 
   97      8200D804 
   97      86280F0F 
-ARM GAS  /tmp/cc0Kl1w3.s 			page 7
+ARM GAS  /tmp/ccBaQ2xA.s 			page 7
 
 
   98 02af 631FA351 		.ascii	"c\037\243Q\377\014\\o]\344$\344\314\027\250\256lO\266"
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
  109      7CF7EA42 
  109      9CF6E1
  110 0381 51E1F12D 		.ascii	"Q\341\361-\212\232}F\324b!\012\354\340\303JT\342C\212"
-ARM GAS  /tmp/cc0Kl1w3.s 			page 8
+ARM GAS  /tmp/ccBaQ2xA.s 			page 8
 
 
  110      8A9A7D46 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
  121      B6B73429 
  121      B10EF940 
  121      BD9BAD4A 
-ARM GAS  /tmp/cc0Kl1w3.s 			page 9
+ARM GAS  /tmp/ccBaQ2xA.s 			page 9
 
 
  121      A821
@@ -517,7 +517,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
  128      FE07F47F 
  128      7051
  129              		.text
- 130              		.section	.gnu.lto_.symtab.528c134e6b123103,"",%progbits
+ 130              		.section	.gnu.lto_.symtab.d8e1377ba1bfa74f,"",%progbits
  131 0000 68616C49 		.ascii	"halInit\000\000\000\000\000\000\000\000\000\000\000"
  131      6E697400 
  131      00000000 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
  134      000000
  135 004b D2000000 		.ascii	"\322\000\000\000boardInit\000\000\002\000\000\000\000"
  135      626F6172 
-ARM GAS  /tmp/cc0Kl1w3.s 			page 10
+ARM GAS  /tmp/ccBaQ2xA.s 			page 10
 
 
  135      64496E69 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
  149 0000 272D6D63 		.ascii	"'-mcpu=cortex-m4' '-mfloat-abi=hard' '-mfpu=fpv4-sp"
  149      70753D63 
  149      6F727465 
-ARM GAS  /tmp/cc0Kl1w3.s 			page 11
+ARM GAS  /tmp/ccBaQ2xA.s 			page 11
 
 
  149      782D6D34 
@@ -653,14 +653,14 @@ ARM GAS  /tmp/cc0Kl1w3.s 			page 1
  181              		.size	halInit, .-halInit
  182              		.comm	__gnu_lto_v1,1,1
  183              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cc0Kl1w3.s 			page 12
+ARM GAS  /tmp/ccBaQ2xA.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 hal.c
-     /tmp/cc0Kl1w3.s:156    .text.halInit:0000000000000000 $t
-     /tmp/cc0Kl1w3.s:162    .text.halInit:0000000000000000 halInit
-     /tmp/cc0Kl1w3.s:180    .text.halInit:000000000000002c $d
+     /tmp/ccBaQ2xA.s:156    .text.halInit:0000000000000000 $t
+     /tmp/ccBaQ2xA.s:162    .text.halInit:0000000000000000 halInit
+     /tmp/ccBaQ2xA.s:180    .text.halInit:000000000000002c $d
                             *COM*:0000000000000001 __gnu_lto_v1
 
 UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccAvGucn.s 			page 1
+ARM GAS  /tmp/ccxm8I91.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"chthreads.c"
-  17              		.section	.gnu.lto_.jmpfuncs.c974ce9b82eaedd7,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.a579d06bb1537ec0,"",%progbits
   18 0000 789C6D8D 		.ascii	"x\234m\215Q\022\302 \014Dw\023\253\240\255\324\252\370"
   18      5112C220 
   18      0C447713 
@@ -52,13 +52,13 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   25 0073 831500BB 		.ascii	"\203\025\000\273\015\001"
   25      0D01
   26              		.text
-  27              		.section	.gnu.lto_.inline.c974ce9b82eaedd7,"",%progbits
+  27              		.section	.gnu.lto_.inline.a579d06bb1537ec0,"",%progbits
   28 0000 789CA552 		.ascii	"x\234\245R1K\034A\024\376\336\314\334\316\334\336\334"
   28      314B1C41 
   28      14FEDECC 
   28      DCCEDCDE 
   28      DC
-ARM GAS  /tmp/ccAvGucn.s 			page 2
+ARM GAS  /tmp/ccxm8I91.s 			page 2
 
 
   29 0011 EEDEEDDD 		.ascii	"\356\336\355\335\012Q\364\232(\010Im\245]\252\260\265"
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   40      4453FC5E 
   40      4A1733DF 
   40      DC7D31FA 
-ARM GAS  /tmp/ccAvGucn.s 			page 3
+ARM GAS  /tmp/ccxm8I91.s 			page 3
 
 
   40      72A96B44 
@@ -178,11 +178,11 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   52      7E50352E 
   52      BF0DF80B 
   52      41B860EE 
-ARM GAS  /tmp/ccAvGucn.s 			page 4
+ARM GAS  /tmp/ccxm8I91.s 			page 4
 
 
   53              		.text
-  54              		.section	.gnu.lto_.pureconst.c974ce9b82eaedd7,"",%progbits
+  54              		.section	.gnu.lto_.pureconst.a579d06bb1537ec0,"",%progbits
   55 0000 789C25C1 		.ascii	"x\234%\301\307\015\2000\020\000\301\223\0219\232`\304"
   55      C70D8030 
   55      1000C193 
@@ -200,7 +200,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   57      7C73C504 
   58 0038 F2       		.ascii	"\362"
   59              		.text
-  60              		.section	.gnu.lto_chSchDoYieldS.c974ce9b82eaedd7,"",%progbits
+  60              		.section	.gnu.lto_chSchDoYieldS.a579d06bb1537ec0,"",%progbits
   61 0000 789C9D52 		.ascii	"x\234\235R\277K\303@\030\375\276\313%\255\342\340\244"
   61      BF4BC340 
   61      18FDBECB 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   68      1A6A934B 
   68      D6EA0D87 
   68      17AFFD
-ARM GAS  /tmp/ccAvGucn.s 			page 5
+ARM GAS  /tmp/ccxm8I91.s 			page 5
 
 
   69 0086 D62DD6AF 		.ascii	"\326-\326\257y\224\203\207`RAK\241\210BD3\241&ec\026"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   80      5C46D805 
   80      675B3899 
   81 0166 2B9444B9 		.ascii	"+\224D\271X\311o\010\002\305\262\360\362\366f\305!\222"
-ARM GAS  /tmp/ccAvGucn.s 			page 6
+ARM GAS  /tmp/ccxm8I91.s 			page 6
 
 
   81      58C96F08 
@@ -309,7 +309,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   82      C1854F2E 
   82      149000
   83              		.text
-  84              		.section	.gnu.lto__thread_init.c974ce9b82eaedd7,"",%progbits
+  84              		.section	.gnu.lto__thread_init.a579d06bb1537ec0,"",%progbits
   85 0000 789C9D94 		.ascii	"x\234\235\224\317k\023A\024\307\337\233\355\346\367"
   85      CF6B1341 
   85      14C7DF9B 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
   95 00aa 23456D03 		.ascii	"#Em\003nv\007_\2671\217\367Q\207\343\360\320\245+\351"
   95      6E76075F 
   95      B7318FF7 
-ARM GAS  /tmp/ccAvGucn.s 			page 7
+ARM GAS  /tmp/ccxm8I91.s 			page 7
 
 
   95      5187E3F0 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  106      985E841B 
  106      74E6
  107 0186 E4A29C75 		.ascii	"\344\242\234u0\243\036Bjb\012\273\275\366\227Hp>Eg\275"
-ARM GAS  /tmp/ccAvGucn.s 			page 8
+ARM GAS  /tmp/ccxm8I91.s 			page 8
 
 
  107      30A31E42 
@@ -474,11 +474,11 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  117      7E03
  118 024e 3D8142AD 		.ascii	"=\201B\255"
  119              		.text
- 120              		.section	.gnu.lto_chThdCreateI.c974ce9b82eaedd7,"",%progbits
+ 120              		.section	.gnu.lto_chThdCreateI.a579d06bb1537ec0,"",%progbits
  121 0000 789CA595 		.ascii	"x\234\245\225\315k\023A\030\306\347\235\335t\363\261"
  121      CD6B1341 
  121      18C6E79D 
-ARM GAS  /tmp/ccAvGucn.s 			page 9
+ARM GAS  /tmp/ccxm8I91.s 			page 9
 
 
  121      DD74F3B1 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  133      3EF71A8D 
  133      460C0538 
  133      61AEF954 
-ARM GAS  /tmp/ccAvGucn.s 			page 10
+ARM GAS  /tmp/ccxm8I91.s 			page 10
 
 
  133      CD02
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  145 01b2 B11F315F 		.ascii	"\261\0371_H\304\003\211\201\204\324\272@\014_\210\356"
  145      48C40389 
  145      8184D4BA 
-ARM GAS  /tmp/ccAvGucn.s 			page 11
+ARM GAS  /tmp/ccxm8I91.s 			page 11
 
 
  145      400C5F88 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  156      D493C2A5 
  157 028a C9B645E0 		.ascii	"\311\266E\340\004wx\265\020N\301\247\326\351\210\035"
  157      047778B5 
-ARM GAS  /tmp/ccAvGucn.s 			page 12
+ARM GAS  /tmp/ccxm8I91.s 			page 12
 
 
  157      104EC1A7 
@@ -688,7 +688,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  162      47FE00BC 
  162      8FBCFF
  163              		.text
- 164              		.section	.gnu.lto_chThdCreateStatic.c974ce9b82eaedd7,"",%progbits
+ 164              		.section	.gnu.lto_chThdCreateStatic.a579d06bb1537ec0,"",%progbits
  165 0000 789CA595 		.ascii	"x\234\245\225\313k\023A\034\307\177\277\331\244I\233"
  165      CB6B1341 
  165      1CC77FBF 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  170      0496FE1A 
  170      E8
  171 006b DFE70678 		.ascii	"\337\347\006xJ\237(\001\222\201)\200n7Ad\015@\350\""
-ARM GAS  /tmp/ccAvGucn.s 			page 13
+ARM GAS  /tmp/ccxm8I91.s 			page 13
 
 
  171      4A9F2801 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  182      B799E5
  183 0141 10CB65B4 		.ascii	"\020\313e\264)\217\223v\345\221*,\0065\343e\0144\030"
  183      298F9376 
-ARM GAS  /tmp/ccAvGucn.s 			page 14
+ARM GAS  /tmp/ccxm8I91.s 			page 14
 
 
  183      E5912A2C 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  194      D6A0F1E0 
  194      F043021C 
  194      459F
-ARM GAS  /tmp/ccAvGucn.s 			page 15
+ARM GAS  /tmp/ccxm8I91.s 			page 15
 
 
  195 021b 600B8195 		.ascii	"`\013\201\225a\005\003\365\261V]\234kX\272:#]\216\030"
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  205      A5
  206 02e4 CAEE385E 		.ascii	"\312\3568^\250\270|\025\320\352\272\032`9\325S\301\033"
  206      A8B87C15 
-ARM GAS  /tmp/ccAvGucn.s 			page 16
+ARM GAS  /tmp/ccxm8I91.s 			page 16
 
 
  206      D0EABA1A 
@@ -945,7 +945,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  214      F037338F 
  214      0922
  215              		.text
- 216              		.section	.gnu.lto_chThdStart.c974ce9b82eaedd7,"",%progbits
+ 216              		.section	.gnu.lto_chThdStart.a579d06bb1537ec0,"",%progbits
  217 0000 789C8D90 		.ascii	"x\234\215\220\261K\0031\024\306\337\313\331*N\035u)"
  217      B14B0331 
  217      14C6DFCB 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  218      1D
  219 0023 BDA0D793 		.ascii	"\275\240\327\223\334U-\"\275\226\016\205\016vpp\320"
  219      DC552D22 
-ARM GAS  /tmp/ccAvGucn.s 			page 17
+ARM GAS  /tmp/ccxm8I91.s 			page 17
 
 
  219      BD960E85 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  230      C02B4C47 
  230      40CF50EF 
  230      360EA3AB 
-ARM GAS  /tmp/ccAvGucn.s 			page 18
+ARM GAS  /tmp/ccxm8I91.s 			page 18
 
 
  231 00fe 65745890 		.ascii	"etX\220\010\362'T\355<\265]\307\242\3145\253\324\264"
@@ -1052,7 +1052,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  236      A52B
  237 0168 8FCD     		.ascii	"\217\315"
  238              		.text
- 239              		.section	.gnu.lto_chThdSetPriority.c974ce9b82eaedd7,"",%progbits
+ 239              		.section	.gnu.lto_chThdSetPriority.a579d06bb1537ec0,"",%progbits
  240 0000 789C8D52 		.ascii	"x\234\215RMh\023A\024~of7\251\261\225\036\024\274\030"
  240      4D681341 
  240      147E6F66 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  244      DA0A1207 
  244      76DE9B79 
  244      EF
-ARM GAS  /tmp/ccAvGucn.s 			page 19
+ARM GAS  /tmp/ccxm8I91.s 			page 19
 
 
  245 005d FBDE37EF 		.ascii	"\373\3367\357-\003\006\177\2573\364\205t\275@\026\023"
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  256      501362D4 
  256      C53D37E0 
  256      B7B82DBD 
-ARM GAS  /tmp/ccAvGucn.s 			page 20
+ARM GAS  /tmp/ccxm8I91.s 			page 20
 
 
  256      94
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  267      3C6E43D2 
  268 0204 295C0D5C 		.ascii	")\\\015\\\177b\020\326\271^1\317Nf\317gM\267d\317T\013"
  268      7F6210D6 
-ARM GAS  /tmp/ccAvGucn.s 			page 21
+ARM GAS  /tmp/ccxm8I91.s 			page 21
 
 
  268      B95E31CF 
@@ -1216,7 +1216,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  270      2D37
  271 023e 23DC9F   		.ascii	"#\334\237"
  272              		.text
- 273              		.section	.gnu.lto_chThdTerminate.c974ce9b82eaedd7,"",%progbits
+ 273              		.section	.gnu.lto_chThdTerminate.a579d06bb1537ec0,"",%progbits
  274 0000 789C8D50 		.ascii	"x\234\215P=K\003A\020\235\331\273S\261J\251M\274\306"
  274      3D4B0341 
  274      109DD9BB 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  282      51516B43 
  282      FDF37DFF 
  282      6DA407B3 
-ARM GAS  /tmp/ccAvGucn.s 			page 22
+ARM GAS  /tmp/ccxm8I91.s 			page 22
 
 
  282      F0140D88 
@@ -1316,9 +1316,9 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  293      54E01B30 
  293      21836B
  294              		.text
- 295              		.section	.gnu.lto_chThdSleep.c974ce9b82eaedd7,"",%progbits
+ 295              		.section	.gnu.lto_chThdSleep.a579d06bb1537ec0,"",%progbits
  296 0000 789C8D50 		.ascii	"x\234\215P\277K\303@\030\375\276;\213u\353\250K\311"
-ARM GAS  /tmp/ccAvGucn.s 			page 23
+ARM GAS  /tmp/ccxm8I91.s 			page 23
 
 
  296      BF4BC340 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  308      111DEC43 
  308      CFAFF929 
  308      819423D1 
-ARM GAS  /tmp/ccAvGucn.s 			page 24
+ARM GAS  /tmp/ccxm8I91.s 			page 24
 
 
  309 00db F13C72A1 		.ascii	"\361<r\241TF\222\260\201T\250\3000vul\005\263\012\355"
@@ -1418,7 +1418,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  316 0161 4D59F00D 		.ascii	"MY\360\015b\330\222\341"
  316      62D892E1 
  317              		.text
- 318              		.section	.gnu.lto_chThdSleepUntil.c974ce9b82eaedd7,"",%progbits
+ 318              		.section	.gnu.lto_chThdSleepUntil.a579d06bb1537ec0,"",%progbits
  319 0000 789C8D91 		.ascii	"x\234\215\221Ah\324@\024\206\337\233$\333\335b\241\340"
  319      4168D440 
  319      1486DF9B 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  322      B57A50EC 
  322      563CA828 
  322      1E0A5E8B 
-ARM GAS  /tmp/ccAvGucn.s 			page 25
+ARM GAS  /tmp/ccxm8I91.s 			page 25
 
 
  322      D493D04B 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  334      50CA44FC 
  334      5113D14C 
  334      02AF883E 
-ARM GAS  /tmp/ccAvGucn.s 			page 26
+ARM GAS  /tmp/ccxm8I91.s 			page 26
 
 
  334      039F
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  345      3AE9F961 
  346 01f1 4B657DA0 		.ascii	"Ke}\240\237\216\216\016\321\362\210>u\201\006\341D\255"
  346      9F8E8E0E 
-ARM GAS  /tmp/ccAvGucn.s 			page 27
+ARM GAS  /tmp/ccxm8I91.s 			page 27
 
 
  346      D1F2883E 
@@ -1575,7 +1575,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  348      01E54CF1 
  349 0227 7F       		.ascii	"\177"
  350              		.text
- 351              		.section	.gnu.lto_chThdSleepUntilWindowed.c974ce9b82eaedd7,"",%progbits
+ 351              		.section	.gnu.lto_chThdSleepUntilWindowed.a579d06bb1537ec0,"",%progbits
  352 0000 789C9552 		.ascii	"x\234\225RMh\023Q\020\236y\273\3711\311!G/\206\\\004"
  352      4D681351 
  352      109E79BB 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  360 0096 E69FF5D7 		.ascii	"\346\237\365\327\313\330\352\211\007\320B\0102\203!"
  360      CBD8EA89 
  360      07D04208 
-ARM GAS  /tmp/ccAvGucn.s 			page 28
+ARM GAS  /tmp/ccxm8I91.s 			page 28
 
 
  360      328321
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  372      7DF77B9B 
  372      1C143AB3 
  372      F9719FD0 
-ARM GAS  /tmp/ccAvGucn.s 			page 29
+ARM GAS  /tmp/ccxm8I91.s 			page 29
 
 
  373 017b DD1FE20A 		.ascii	"\335\037\342\012l{\323\\WXCI\305\246?$\027v$\314YMN"
@@ -1738,13 +1738,13 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  384 0248 32A3E632 		.ascii	"2\243\3462\310\231\377\202\264\277\245\001\177\001\236"
  384      C899FF82 
  384      B4BFA501 
-ARM GAS  /tmp/ccAvGucn.s 			page 30
+ARM GAS  /tmp/ccxm8I91.s 			page 30
 
 
  384      7F019E
  385 0257 DC17AD   		.ascii	"\334\027\255"
  386              		.text
- 387              		.section	.gnu.lto_chThdYield.c974ce9b82eaedd7,"",%progbits
+ 387              		.section	.gnu.lto_chThdYield.a579d06bb1537ec0,"",%progbits
  388 0000 789C8D4F 		.ascii	"x\234\215O\261J\003A\020}\263g\210eJm\3025v\222\025"
  388      B14A0341 
  388      107DB367 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  398      D48A7292 
  398      0C41E90E 
  398      4933C0
-ARM GAS  /tmp/ccAvGucn.s 			page 31
+ARM GAS  /tmp/ccxm8I91.s 			page 31
 
 
  399 00cb 7F4EB0E8 		.ascii	"\177N\260\350:\266\236H\342\207\244E7\224O\305\236\320"
@@ -1834,7 +1834,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  405      757C01B4 
  405      447131
  406              		.text
- 407              		.section	.gnu.lto_chThdExitS.c974ce9b82eaedd7,"",%progbits
+ 407              		.section	.gnu.lto_chThdExitS.a579d06bb1537ec0,"",%progbits
  408 0000 789CA554 		.ascii	"x\234\245T\317k\023Q\020\236y\273\233\227&i\372\013"
  408      CF6B1351 
  408      109E79BB 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  412 004d E2BCDDB7 		.ascii	"\342\274\335\267\233\304\004\025|\220y\363\336\316|"
  412      9BC40415 
  412      7C9079F3 
-ARM GAS  /tmp/ccAvGucn.s 			page 32
+ARM GAS  /tmp/ccxm8I91.s 			page 32
 
 
  412      DECE7C
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  424      B06D5D12 
  424      1E4FA380 
  424      12C2B923 
-ARM GAS  /tmp/ccAvGucn.s 			page 33
+ARM GAS  /tmp/ccxm8I91.s 			page 33
 
 
  424      7710
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  436      99A3686B 
  436      FDDC175F 
  436      785098F7 
-ARM GAS  /tmp/ccAvGucn.s 			page 34
+ARM GAS  /tmp/ccxm8I91.s 			page 34
 
 
  436      737A284D 
@@ -2029,7 +2029,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  446      14FC02BE 
  446      E13381
  447              		.text
- 448              		.section	.gnu.lto_chThdExit.c974ce9b82eaedd7,"",%progbits
+ 448              		.section	.gnu.lto_chThdExit.a579d06bb1537ec0,"",%progbits
  449 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\374\000\210'\0011#3\003#\323\204"
  449      60624007 
  449      9240FC00 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  450 0016 730C0C8D 		.ascii	"s\014\014\215\034L\214\214 \006\003#C=\023c}$#X\355"
  450      1C4C8C8C 
  450      20060323 
-ARM GAS  /tmp/ccAvGucn.s 			page 35
+ARM GAS  /tmp/ccxm8I91.s 			page 35
 
 
  450      433D1363 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  462 00f4 28D177F6 		.ascii	"(\321w\366\015\366\014\326\317\314K\316)M\001\251-J"
  462      0DF60CD6 
  462      CFCC4BCE 
-ARM GAS  /tmp/ccAvGucn.s 			page 36
+ARM GAS  /tmp/ccxm8I91.s 			page 36
 
 
  462      294D01A9 
@@ -2114,7 +2114,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  464      CD2FAA64 
  464      0000F14D 
  465              		.text
- 466              		.section	.gnu.lto_chThdWait.c974ce9b82eaedd7,"",%progbits
+ 466              		.section	.gnu.lto_chThdWait.a579d06bb1537ec0,"",%progbits
  467 0000 789C8D52 		.ascii	"x\234\215RMh\023Q\020\236\331\267\371\253\211I\365\240"
  467      4D681351 
  467      109ED9B7 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  475      DB9E697D 
  475      FAD2C43B 
  475      76BD76DF 
-ARM GAS  /tmp/ccAvGucn.s 			page 37
+ARM GAS  /tmp/ccxm8I91.s 			page 37
 
 
  475      6E773A88 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  487 016b F51E9BE3 		.ascii	"\365\036\233\343\266\237\254\266\307}A\204So\256\\\013"
  487      B69FACB6 
  487      C77D4184 
-ARM GAS  /tmp/ccAvGucn.s 			page 38
+ARM GAS  /tmp/ccxm8I91.s 			page 38
 
 
  487      536FAE5C 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  498      ABAC942C 
  498      95CE
  499 0247 CBBAA565 		.ascii	"\313\272\245er\245!\025\230Y\312\017\377/O\273RVN\216"
-ARM GAS  /tmp/ccAvGucn.s 			page 39
+ARM GAS  /tmp/ccxm8I91.s 			page 39
 
 
  499      72A52115 
@@ -2303,7 +2303,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  503 0293 005A0B1A 		.ascii	"\000Z\013\032."
  503      2E
  504              		.text
- 505              		.section	.gnu.lto_chThdSuspendS.c974ce9b82eaedd7,"",%progbits
+ 505              		.section	.gnu.lto_chThdSuspendS.a579d06bb1537ec0,"",%progbits
  506 0000 789CAD52 		.ascii	"x\234\255R;K\003A\020\236\331\313\345\316\267\235\330"
  506      3B4B0341 
  506      109ED9CB 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  512      36425688 
  512      A5FCEC
  513 0076 CB4AFDFC 		.ascii	"\313J\375\374\332TF\274\025\012\310\221D;\021l\204>"
-ARM GAS  /tmp/ccAvGucn.s 			page 40
+ARM GAS  /tmp/ccxm8I91.s 			page 40
 
 
  513      DA5446BC 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  524      E4EF16CB 
  524      95B2AA
  525 0155 F01E5765 		.ascii	"\360\036We\373\\\251V\255\221\3275^\037\277zy\374\360"
-ARM GAS  /tmp/ccAvGucn.s 			page 41
+ARM GAS  /tmp/ccxm8I91.s 			page 41
 
 
  525      FB5CA956 
@@ -2435,7 +2435,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  531      E3F00EB5 
  532 01d5 1DD859   		.ascii	"\035\330Y"
  533              		.text
- 534              		.section	.gnu.lto_chThdSuspendTimeoutS.c974ce9b82eaedd7,"",%progbits
+ 534              		.section	.gnu.lto_chThdSuspendTimeoutS.a579d06bb1537ec0,"",%progbits
  535 0000 789C8D52 		.ascii	"x\234\215RKk\024A\020\256\257{&\233}\2509{\0129*d\220"
  535      4B6B1441 
  535      10AEAF7B 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  539 004c 1E4BF464 		.ascii	"\036K\364d\303tUW\327\367\365\367u\217\"E\377\216)\376"
  539      C3745557 
  539      D7F7F5F7 
-ARM GAS  /tmp/ccAvGucn.s 			page 42
+ARM GAS  /tmp/ccxm8I91.s 			page 42
 
 
  539      758F2245 
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  551      EC6EAE8C 
  551      24E7CDC1 
  552 012e 11D4E861 		.ascii	"\021\324\350a\333\323\320\304\227+\202\337\355\360\275"
-ARM GAS  /tmp/ccAvGucn.s 			page 43
+ARM GAS  /tmp/ccxm8I91.s 			page 43
 
 
  552      DBD3D0C4 
@@ -2573,12 +2573,12 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  562      8DFE009E 
  562      79C4CD
  563              		.text
- 564              		.section	.gnu.lto_chThdResumeI.c974ce9b82eaedd7,"",%progbits
+ 564              		.section	.gnu.lto_chThdResumeI.a579d06bb1537ec0,"",%progbits
  565 0000 789C5D50 		.ascii	"x\234]P=K\003A\020}\263\273\211\337\230\332\312^\361"
  565      3D4B0341 
  565      107DB3BB 
  565      89DF98DA 
-ARM GAS  /tmp/ccAvGucn.s 			page 44
+ARM GAS  /tmp/ccxm8I91.s 			page 44
 
 
  565      CA5EF1
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  577      71EB53B7 
  577      535B4DD3 
  577      1577ACE0 
-ARM GAS  /tmp/ccAvGucn.s 			page 45
+ARM GAS  /tmp/ccxm8I91.s 			page 45
 
 
  577      9AD9664B 
@@ -2672,7 +2672,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  583      1F64156D 
  583      0C
  584              		.text
- 585              		.section	.gnu.lto_chThdResumeS.c974ce9b82eaedd7,"",%progbits
+ 585              		.section	.gnu.lto_chThdResumeS.a579d06bb1537ec0,"",%progbits
  586 0000 789C5D4F 		.ascii	"x\234]O=K\003A\024\234\331\335\204\340\007\244\266\262"
  586      3D4B0341 
  586      149CD9DD 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  590      2C32038A 
  590      CE1B10E7 
  590      84
-ARM GAS  /tmp/ccAvGucn.s 			page 46
+ARM GAS  /tmp/ccxm8I91.s 			page 46
 
 
  591 005b 90DD02CC 		.ascii	"\220\335\002\314\234\372\312\303,H\252IY\221.\001\321"
@@ -2758,10 +2758,10 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  602      05410E5C 
  602      DC
  603              		.text
-ARM GAS  /tmp/ccAvGucn.s 			page 47
+ARM GAS  /tmp/ccxm8I91.s 			page 47
 
 
- 604              		.section	.gnu.lto_chThdResume.c974ce9b82eaedd7,"",%progbits
+ 604              		.section	.gnu.lto_chThdResume.a579d06bb1537ec0,"",%progbits
  605 0000 789C8D51 		.ascii	"x\234\215Q1hSA\030\376\277\273\213)\242\222Q\034J\226"
  605      31685341 
  605      18FEBFBB 
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  615      4383E55D 
  615      94D6
  616 00d9 570775EE 		.ascii	"W\007u\356_xH\255\267\037W\373\355K)\271\017\314\273"
-ARM GAS  /tmp/ccAvGucn.s 			page 48
+ARM GAS  /tmp/ccxm8I91.s 			page 48
 
 
  616      5F7848AD 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  627      55D14CA3 
  627      A226CA94 
  627      9B2D
-ARM GAS  /tmp/ccAvGucn.s 			page 49
+ARM GAS  /tmp/ccxm8I91.s 			page 49
 
 
  628 01ae DCCCCF07 		.ascii	"\334\314\317\007\265\360~\254\307\363c\223\304b\312"
@@ -2889,7 +2889,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  629      17E9171D 
  629      D1A4EA
  630              		.text
- 631              		.section	.gnu.lto_chThdEnqueueTimeoutS.c974ce9b82eaedd7,"",%progbits
+ 631              		.section	.gnu.lto_chThdEnqueueTimeoutS.a579d06bb1537ec0,"",%progbits
  632 0000 789C8D52 		.ascii	"x\234\215RMh\023Q\020\236y\357m\322l-z\324S=[\350\012"
  632      4D681351 
  632      109E79EF 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  641 00ab 6E0268C3 		.ascii	"n\002h\303\277G7\313N\241\340(\337\303Vw\363S\367v\001"
  641      BF4737CB 
  641      4EA1E028 
-ARM GAS  /tmp/ccAvGucn.s 			page 50
+ARM GAS  /tmp/ccxm8I91.s 			page 50
 
 
  641      DFC35677 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  653 0187 0A59C888 		.ascii	"\012Y\310\210\177\006\344R\210\373\007\033bw\243#HT"
  653      7F06E452 
  653      88FB071B 
-ARM GAS  /tmp/ccAvGucn.s 			page 51
+ARM GAS  /tmp/ccxm8I91.s 			page 51
 
 
  653      6277A323 
@@ -3024,7 +3024,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  657      A8B3
  658 01de D41D     		.ascii	"\324\035"
  659              		.text
- 660              		.section	.gnu.lto_chThdDequeueNextI.c974ce9b82eaedd7,"",%progbits
+ 660              		.section	.gnu.lto_chThdDequeueNextI.a579d06bb1537ec0,"",%progbits
  661 0000 789C9552 		.ascii	"x\234\225RKkSA\024>g\356\344\246T\013\001w\256\272/"
  661      4B6B5341 
  661      143E67EE 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  667      4E2D05AA 
  667      979F2640 
  667      5D7590DB 
-ARM GAS  /tmp/ccAvGucn.s 			page 52
+ARM GAS  /tmp/ccxm8I91.s 			page 52
 
 
  668 007c 3047D40E 		.ascii	"0G\324\016 L1\207\343\324}4$/Y\275uv\2661\373}w\007"
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  678      07691F57 
  679 015c 0C7724F2 		.ascii	"\014w$\362\310\275\"1\366\327>\314(\3264Y\006\371\205"
  679      C8BD2231 
-ARM GAS  /tmp/ccAvGucn.s 			page 53
+ARM GAS  /tmp/ccxm8I91.s 			page 53
 
 
  679      F6D73ECC 
@@ -3157,7 +3157,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  686      1BC926DF 
  686      DC
  687              		.text
- 688              		.section	.gnu.lto_chThdDequeueAllI.c974ce9b82eaedd7,"",%progbits
+ 688              		.section	.gnu.lto_chThdDequeueAllI.a579d06bb1537ec0,"",%progbits
  689 0000 789C9592 		.ascii	"x\234\225\222Mk\024A\020\206\353\355\236\217\220D\010"
  689      4D6B1441 
  689      1086EBED 
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  692      CA7AF022 
  692      01F5E241 
  692      84
-ARM GAS  /tmp/ccAvGucn.s 			page 54
+ARM GAS  /tmp/ccxm8I91.s 			page 54
 
 
  693 004b 583D3DBB 		.ascii	"X==\273n\026$Z0\3355E\275OUW\267 A\375v\206\2779\016"
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  704      F9C6B7C3 
  704      FBE497FB 
  704      4A7B
-ARM GAS  /tmp/ccAvGucn.s 			page 55
+ARM GAS  /tmp/ccxm8I91.s 			page 55
 
 
  705 0126 BDA5458F 		.ascii	"\275\245E\217\\Z\371\257\037owK!n\377!\234J\341\024"
@@ -3293,12 +3293,12 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  715      D06FAD8F 
  715      E253
  716              		.text
- 717              		.section	.gnu.lto_.symbol_nodes.c974ce9b82eaedd7,"",%progbits
+ 717              		.section	.gnu.lto_.symbol_nodes.a579d06bb1537ec0,"",%progbits
  718 0000 789C4DD0 		.ascii	"x\234M\320IR\002A\020\005\320\374\325\0022\317s\243"
  718      49520241 
  718      1005D0FC 
  718      D50232CF 
-ARM GAS  /tmp/ccAvGucn.s 			page 56
+ARM GAS  /tmp/ccxm8I91.s 			page 56
 
 
  718      73A3
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  730 00db 0EAD936E 		.ascii	"\016\255\223n\350\224+\236mK\2732\260%#r\021\244\331"
  730      E8942B9E 
  730      6D4BBB32 
-ARM GAS  /tmp/ccAvGucn.s 			page 57
+ARM GAS  /tmp/ccxm8I91.s 			page 57
 
 
  730      B0252372 
@@ -3381,7 +3381,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  734 0129 2F7F78D8 		.ascii	"/\177x\330\305\335"
  734      C5DD
  735              		.text
- 736              		.section	.gnu.lto_.refs.c974ce9b82eaedd7,"",%progbits
+ 736              		.section	.gnu.lto_.refs.a579d06bb1537ec0,"",%progbits
  737 0000 789C358A 		.ascii	"x\2345\212A\016\000\020\020\003\333Zq\022\034<\307\377"
  737      410E0010 
  737      1003DB5A 
@@ -3398,7 +3398,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  739      032085
  740 0034 00E0     		.ascii	"\000\340"
  741              		.text
- 742              		.section	.gnu.lto_.decls.c974ce9b82eaedd7,"",%progbits
+ 742              		.section	.gnu.lto_.decls.a579d06bb1537ec0,"",%progbits
  743 0000 789CBD5C 		.ascii	"x\234\275\\\011t\024\307\231\356\356\231\221\020\022"
  743      097414C7 
  743      99EEEE99 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  746      0C1612F7 
  747 0042 21900D36 		.ascii	"!\220\0156\216m\314%q\213\201p\031\314)nl\220\215\201"
  747      8E6DCC25 
-ARM GAS  /tmp/ccAvGucn.s 			page 58
+ARM GAS  /tmp/ccxm8I91.s 			page 58
 
 
  747      718B8170 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  758      7357DA97 
  758      09BF5D57 
  758      13F8484E 
-ARM GAS  /tmp/ccAvGucn.s 			page 59
+ARM GAS  /tmp/ccxm8I91.s 			page 59
 
 
  759 0126 C2F56048 		.ascii	"\302\365`H\377\004\351\007\220\262!Uivzz\253\204F\204"
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  770      16979519 
  770      EBA328F6 
  771 0204 209E915F 		.ascii	" \236\221_>Oe\244Q\\\024\023Py\256\200\376z*\013\225"
-ARM GAS  /tmp/ccAvGucn.s 			page 60
+ARM GAS  /tmp/ccxm8I91.s 			page 60
 
 
  771      3E4F65A4 
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  782      5F34C6DD 
  782      AF105E2C 
  782      5E5525D9 
-ARM GAS  /tmp/ccAvGucn.s 			page 61
+ARM GAS  /tmp/ccxm8I91.s 			page 61
 
 
  783 02e2 A7102F8D 		.ascii	"\247\020/\215Jr\334@rA\274\">\221,>C:\244v\335]M\360"
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  794      7D07AE6F 
  794      09ECEF2E 
  795 03c2 D547A392 		.ascii	"\325G\243\222\220\267%k\324\327@j\347\315\214\334\003"
-ARM GAS  /tmp/ccAvGucn.s 			page 62
+ARM GAS  /tmp/ccxm8I91.s 			page 62
 
 
  795      90B7256B 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  806      0AE8F2F8 
  806      F7FE1103 
  806      2DC5
-ARM GAS  /tmp/ccAvGucn.s 			page 63
+ARM GAS  /tmp/ccxm8I91.s 			page 63
 
 
  807 049b 407BDA0D 		.ascii	"@{\332\0154wb=\321\303r\014t8I\017*\247\007\325.\027"
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  818      5140E1A0 
  818      8BF257AE 
  818      AE29
-ARM GAS  /tmp/ccAvGucn.s 			page 64
+ARM GAS  /tmp/ccxm8I91.s 			page 64
 
 
  819 0578 137D2E14 		.ascii	"\023}.\024\327Af\005fkS\335Yu\266\031\033\353\243\326"
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  830      65350719 
  830      B05D
  831 0644 9EC1EC94 		.ascii	"\236\301\354\224\325\262`{\335\200\375XN\3314\026\354"
-ARM GAS  /tmp/ccAvGucn.s 			page 65
+ARM GAS  /tmp/ccxm8I91.s 			page 65
 
 
  831      D5B2607B 
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  842      44BB0E1A 
  842      B31CED21 
  842      AEABAB
-ARM GAS  /tmp/ccAvGucn.s 			page 66
+ARM GAS  /tmp/ccxm8I91.s 			page 66
 
 
  843 071d B5DA2390 		.ascii	"\265\332#\220\327i\031q*H\331*\265\341\275\261\371\001"
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  854      374B
  855 07f1 EAABEDE5 		.ascii	"\352\253\355\345#\376\321\224\333n\202G\216TO\255\253"
  855      23FED194 
-ARM GAS  /tmp/ccAvGucn.s 			page 67
+ARM GAS  /tmp/ccxm8I91.s 			page 67
 
 
  855      DB6E8247 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  866      2424E61C 
  866      F70C
  867 08c4 966303DB 		.ascii	"\226c\003\3338E\260\023,\260;Segf\232\362\031\356w\027"
-ARM GAS  /tmp/ccAvGucn.s 			page 68
+ARM GAS  /tmp/ccxm8I91.s 			page 68
 
 
  867      3845B013 
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  878      F3
  879 0995 ED38DF89 		.ascii	"\3558\337\211\363c8?\221\312\000\3508p\355\336\261\357"
  879      F363383F 
-ARM GAS  /tmp/ccAvGucn.s 			page 69
+ARM GAS  /tmp/ccxm8I91.s 			page 69
 
 
  879      91CA00E8 
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  890      2F7991F5 
  891 0a75 8F4BCCFD 		.ascii	"\217K\314\375\014\371\326[\237\374\374}l\222\227\360"
  891      0CF9D65B 
-ARM GAS  /tmp/ccAvGucn.s 			page 70
+ARM GAS  /tmp/ccxm8I91.s 			page 70
 
 
  891      9FFCFC7D 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  903 0b4c 9636FF3C 		.ascii	"\2266\377<\036\347T\342\212\232rQ\250Rs&eWW\357a\331"
  903      1EE754E2 
  903      8A9A7251 
-ARM GAS  /tmp/ccAvGucn.s 			page 71
+ARM GAS  /tmp/ccxm8I91.s 			page 71
 
 
  903      A8527326 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  914      22B65B07 
  914      DE16
  915 0c2f DB79733F 		.ascii	"\333ys?\302\267Miz\024\357\201\275\345C\252\\\331\221"
-ARM GAS  /tmp/ccAvGucn.s 			page 72
+ARM GAS  /tmp/ccxm8I91.s 			page 72
 
 
  915      C2B74D69 
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  926      3F982DA6 
  926      EA638B2A 
  926      8803
-ARM GAS  /tmp/ccAvGucn.s 			page 73
+ARM GAS  /tmp/ccxm8I91.s 			page 73
 
 
  927 0d05 D80FB6B7 		.ascii	"\330\017\266\267\213\252\355<U;\304*=%\015\353N\323"
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  938      A65C70C9 
  939 0dd9 D085F631 		.ascii	"\320\205\3661$o\346\304\320\005\236\241\317\205j?rn"
  939      246FE6C4 
-ARM GAS  /tmp/ccAvGucn.s 			page 74
+ARM GAS  /tmp/ccxm8I91.s 			page 74
 
 
  939      D0059EA1 
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  950      98F2A0D9 
  950      402C
  951 0ec3 9AECE468 		.ascii	"\232\354\344h\312\031\011B\255\020a\375\234W\031\004"
-ARM GAS  /tmp/ccAvGucn.s 			page 75
+ARM GAS  /tmp/ccxm8I91.s 			page 75
 
 
  951      CA190942 
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  962      D8E363FF 
  963 0f94 43E4A02E 		.ascii	"C\344\240.\331Ll\340\301<=\364"
  963      D94C6CE0 
-ARM GAS  /tmp/ccAvGucn.s 			page 76
+ARM GAS  /tmp/ccxm8I91.s 			page 76
 
 
  963      C13C3DF4 
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  975      5964
  976 106e B5FDAE1B 		.ascii	"\265\375\256\033<\207\303B\315\373\370c\351\356G\311"
  976      3C87C342 
-ARM GAS  /tmp/ccAvGucn.s 			page 77
+ARM GAS  /tmp/ccxm8I91.s 			page 77
 
 
  976      CDFBF863 
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  988 1146 1D136BAC 		.ascii	"\035\023k\254{31\020\214\211{\360TM\276\016\260\275"
  988      7B333110 
  988      8C897BF0 
-ARM GAS  /tmp/ccAvGucn.s 			page 78
+ARM GAS  /tmp/ccxm8I91.s 			page 78
 
 
  988      544DBE0E 
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1000      C7DF0158 
  1000      3E87FE87 
  1000      4F2C4054 
-ARM GAS  /tmp/ccAvGucn.s 			page 79
+ARM GAS  /tmp/ccxm8I91.s 			page 79
 
 
  1001 122d 1236295B 		.ascii	"\0226)[%Un\367\267\375\311\2075\277\340\3541\376\270"
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1012      E9398DF6 
  1012      CCD9F964 
  1012      87C9799D 
-ARM GAS  /tmp/ccAvGucn.s 			page 80
+ARM GAS  /tmp/ccxm8I91.s 			page 80
 
 
  1013 130e D43BD04E 		.ascii	"\324;\320N\245\254\3254\336;Z\257\335\273\371\237k\023"
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1024 13dd 00368B05 		.ascii	"\0006\213\005\233\346\031\314N\331\034\026l\226\033"
  1024      9BE619CC 
  1024      4ED91C16 
-ARM GAS  /tmp/ccAvGucn.s 			page 81
+ARM GAS  /tmp/ccxm8I91.s 			page 81
 
 
  1024      6C961B
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1036 14b4 E8C38EB4 		.ascii	"\350\303\216\264\272\372F\000M\005\026\005\320\364\345"
  1036      BAFA4600 
  1036      4D051605 
-ARM GAS  /tmp/ccAvGucn.s 			page 82
+ARM GAS  /tmp/ccxm8I91.s 			page 82
 
 
  1036      D0F4E5
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1047      640B1C
  1048 1592 5A7D96B4 		.ascii	"Z}\226\264`\231v\272\035\353\371s\274\\m\307a\250<8"
  1048      609976BA 
-ARM GAS  /tmp/ccAvGucn.s 			page 83
+ARM GAS  /tmp/ccxm8I91.s 			page 83
 
 
  1048      1DEBF973 
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1059      B4ED84A0 
  1059      463615
  1060 1664 56A509AD 		.ascii	"V\245\011\255\275ek\217u\014S\036\034s|Zj5N\023\313"
-ARM GAS  /tmp/ccAvGucn.s 			page 84
+ARM GAS  /tmp/ccxm8I91.s 			page 84
 
 
  1060      BD656B8F 
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1071 1741 42C00A15 		.ascii	"B\300\012\025\005I\271\2577\254PQ!\340\244\225\007K"
  1071      0549B9AF 
  1071      37AC5051 
-ARM GAS  /tmp/ccAvGucn.s 			page 85
+ARM GAS  /tmp/ccxm8I91.s 			page 85
 
 
  1071      21E0A495 
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1083 181b 7014B836 		.ascii	"p\024\2706\322FE\313\206\375wy\2461\322(\215\226\350"
  1083      D24645CB 
  1083      86FD7779 
-ARM GAS  /tmp/ccAvGucn.s 			page 86
+ARM GAS  /tmp/ccxm8I91.s 			page 86
 
 
  1083      A631D228 
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1094      20E54787 
  1094      5796
  1095 18f6 8682D1AC 		.ascii	"\206\202\321\254P\321\320\242\302<@\216\032\203}\243"
-ARM GAS  /tmp/ccAvGucn.s 			page 87
+ARM GAS  /tmp/ccxm8I91.s 			page 87
 
 
  1095      50D1D0A2 
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1106      1A062085 
  1106      8A
  1107 19c9 8CC2CA62 		.ascii	"\214\302\312b\343I\003\242ua\026\276\377\033\375\005"
-ARM GAS  /tmp/ccAvGucn.s 			page 88
+ARM GAS  /tmp/ccxm8I91.s 			page 88
 
 
  1107      E34903A2 
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1118      1D7C3802 
  1119 1aa2 54560A24 		.ascii	"TV\012$E\242\241R`:\255l\370\360\012\003|\275D\013\025"
  1119      45A2A152 
-ARM GAS  /tmp/ccAvGucn.s 			page 89
+ARM GAS  /tmp/ccxm8I91.s 			page 89
 
 
  1119      603AAD6C 
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1130      74742615 
  1131 1b7c A181E269 		.ascii	"\241\201\342i#Z`\024\017\177>\313\022-\372\2513\271"
  1131      235A6014 
-ARM GAS  /tmp/ccAvGucn.s 			page 90
+ARM GAS  /tmp/ccxm8I91.s 			page 90
 
 
  1131      0F7F3ECB 
@@ -5352,7 +5352,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1133 1b9f D3FF010A 		.ascii	"\323\377\001\012\273\020z"
  1133      BB107A
  1134              		.text
- 1135              		.section	.gnu.lto_.symtab.c974ce9b82eaedd7,"",%progbits
+ 1135              		.section	.gnu.lto_.symtab.a579d06bb1537ec0,"",%progbits
  1136 0000 5F746872 		.ascii	"_thread_init\000\000\000\000\000\000\000\000\000\000"
  1136      6561645F 
  1136      696E6974 
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1144      00006368 
  1144      54686453 
  1144      6C656570 
-ARM GAS  /tmp/ccAvGucn.s 			page 91
+ARM GAS  /tmp/ccxm8I91.s 			page 91
 
 
  1145 00bc 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000\000\000\244\001"
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1156      68645375 
  1156      7370656E 
  1156      6454696D 
-ARM GAS  /tmp/ccAvGucn.s 			page 92
+ARM GAS  /tmp/ccxm8I91.s 			page 92
 
 
  1157 01ab 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000\330\001\000\000"
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1168      5F737461 
  1169 0299 00000000 		.ascii	"\000\000\000\000\000\000\000\207\001\000\000chSchDo"
  1169      00000087 
-ARM GAS  /tmp/ccAvGucn.s 			page 93
+ARM GAS  /tmp/ccxm8I91.s 			page 93
 
 
  1169      01000063 
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1183 0000 272D6D63 		.ascii	"'-mcpu=cortex-m4' '-mfloat-abi=hard' '-mfpu=fpv4-sp"
  1183      70753D63 
  1183      6F727465 
-ARM GAS  /tmp/ccAvGucn.s 			page 94
+ARM GAS  /tmp/ccxm8I91.s 			page 94
 
 
  1183      782D6D34 
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1220 0036 4762     		str	r7, [r0, #36]
  1221 0038 C662     		str	r6, [r0, #44]
  1222 003a 8662     		str	r6, [r0, #40]
-ARM GAS  /tmp/ccAvGucn.s 			page 95
+ARM GAS  /tmp/ccxm8I91.s 			page 95
 
 
  1223 003c BDE8F001 		pop	{r4, r5, r6, r7, r8}
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1276              	.L5:
  1277 0060 00000000 		.word	ch
  1278 0064 00000000 		.word	_port_thread_start
-ARM GAS  /tmp/ccAvGucn.s 			page 96
+ARM GAS  /tmp/ccxm8I91.s 			page 96
 
 
  1279              		.size	chThdCreateI, .-chThdCreateI
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1332              	@ 0 "" 2
  1333              		.thumb
  1334 006e 2046     		mov	r0, r4
-ARM GAS  /tmp/ccAvGucn.s 			page 97
+ARM GAS  /tmp/ccxm8I91.s 			page 97
 
 
  1335 0070 BDE8F88F 		pop	{r3, r4, r5, r6, r7, r8, r9, r10, fp, pc}
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1387 0012 01D0     		beq	.L12
  1388 0014 8142     		cmp	r1, r0
  1389 0016 00D2     		bcs	.L13
-ARM GAS  /tmp/ccAvGucn.s 			page 98
+ARM GAS  /tmp/ccxm8I91.s 			page 98
 
 
  1390              	.L12:
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1442              		@ frame_needed = 0, uses_anonymous_args = 0
  1443 0000 08B5     		push	{r3, lr}
  1444 0002 0146     		mov	r1, r0
-ARM GAS  /tmp/ccAvGucn.s 			page 99
+ARM GAS  /tmp/ccxm8I91.s 			page 99
 
 
  1445 0004 2023     		movs	r3, #32
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1498              		@ frame_needed = 0, uses_anonymous_args = 0
  1499 0000 10B5     		push	{r4, lr}
  1500 0002 2023     		movs	r3, #32
-ARM GAS  /tmp/ccAvGucn.s 			page 100
+ARM GAS  /tmp/ccxm8I91.s 			page 100
 
 
  1501 0004 0C46     		mov	r4, r1
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1554 0020 08BD     		pop	{r3, pc}
  1555              	.L29:
  1556 0022 00BF     		.align	2
-ARM GAS  /tmp/ccAvGucn.s 			page 101
+ARM GAS  /tmp/ccxm8I91.s 			page 101
 
 
  1557              	.L28:
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1610              		.type	chThdExit, %function
  1611              	chThdExit:
  1612              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccAvGucn.s 			page 102
+ARM GAS  /tmp/ccxm8I91.s 			page 102
 
 
  1613              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1665      AFF30080 
  1666              		.align	2
  1667              		.p2align 4,,15
-ARM GAS  /tmp/ccAvGucn.s 			page 103
+ARM GAS  /tmp/ccxm8I91.s 			page 103
 
 
  1668              		.global	chThdSuspendS
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1720              	.L51:
  1721 001e 4FF0FF30 		mov	r0, #-1
  1722 0022 F9E7     		b	.L50
-ARM GAS  /tmp/ccAvGucn.s 			page 104
+ARM GAS  /tmp/ccxm8I91.s 			page 104
 
 
  1723              	.L53:
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1773              		.thumb
  1774              		.thumb_func
  1775              		.type	chThdResume, %function
-ARM GAS  /tmp/ccAvGucn.s 			page 105
+ARM GAS  /tmp/ccxm8I91.s 			page 105
 
 
  1776              	chThdResume:
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1830              		.size	chThdEnqueueTimeoutS, .-chThdEnqueueTimeoutS
  1831 002c AFF30080 		.section	.text.chThdDequeueNextI,"ax",%progbits
  1832              		.align	2
-ARM GAS  /tmp/ccAvGucn.s 			page 106
+ARM GAS  /tmp/ccxm8I91.s 			page 106
 
 
  1833              		.p2align 4,,15
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1884              	.L69:
  1885 0020 38BD     		pop	{r3, r4, r5, pc}
  1886              		.size	chThdDequeueAllI, .-chThdDequeueAllI
-ARM GAS  /tmp/ccAvGucn.s 			page 107
+ARM GAS  /tmp/ccxm8I91.s 			page 107
 
 
  1887              		.comm	__gnu_lto_v1,1,1
@@ -6366,75 +6366,75 @@ ARM GAS  /tmp/ccAvGucn.s 			page 1
  1888      0080AFF3 
  1888      0080AFF3 
  1888      0080
-ARM GAS  /tmp/ccAvGucn.s 			page 108
+ARM GAS  /tmp/ccxm8I91.s 			page 108
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chthreads.c
-     /tmp/ccAvGucn.s:1190   .text._thread_init:0000000000000000 $t
-     /tmp/ccAvGucn.s:1196   .text._thread_init:0000000000000000 _thread_init
-     /tmp/ccAvGucn.s:1228   .text._thread_init:0000000000000044 $d
-     /tmp/ccAvGucn.s:1231   .text.chThdCreateI:0000000000000000 $t
-     /tmp/ccAvGucn.s:1237   .text.chThdCreateI:0000000000000000 chThdCreateI
-     /tmp/ccAvGucn.s:1277   .text.chThdCreateI:0000000000000060 $d
-     /tmp/ccAvGucn.s:1281   .text.chThdCreateStatic:0000000000000000 $t
-     /tmp/ccAvGucn.s:1287   .text.chThdCreateStatic:0000000000000000 chThdCreateStatic
-     /tmp/ccAvGucn.s:1339   .text.chThdCreateStatic:0000000000000074 $d
-     /tmp/ccAvGucn.s:1343   .text.chThdStart:0000000000000000 $t
-     /tmp/ccAvGucn.s:1349   .text.chThdStart:0000000000000000 chThdStart
-     /tmp/ccAvGucn.s:1367   .text.chThdSetPriority:0000000000000000 $t
-     /tmp/ccAvGucn.s:1373   .text.chThdSetPriority:0000000000000000 chThdSetPriority
-     /tmp/ccAvGucn.s:1405   .text.chThdSetPriority:000000000000002c $d
-     /tmp/ccAvGucn.s:1408   .text.chThdTerminate:0000000000000000 $t
-     /tmp/ccAvGucn.s:1414   .text.chThdTerminate:0000000000000000 chThdTerminate
-     /tmp/ccAvGucn.s:1434   .text.chThdSleep:0000000000000000 $t
-     /tmp/ccAvGucn.s:1440   .text.chThdSleep:0000000000000000 chThdSleep
-     /tmp/ccAvGucn.s:1460   .text.chThdSleepUntil:0000000000000000 $t
-     /tmp/ccAvGucn.s:1466   .text.chThdSleepUntil:0000000000000000 chThdSleepUntil
-     /tmp/ccAvGucn.s:1490   .text.chThdSleepUntilWindowed:0000000000000000 $t
-     /tmp/ccAvGucn.s:1496   .text.chThdSleepUntilWindowed:0000000000000000 chThdSleepUntilWindowed
-     /tmp/ccAvGucn.s:1525   .text.chThdYield:0000000000000000 $t
-     /tmp/ccAvGucn.s:1531   .text.chThdYield:0000000000000000 chThdYield
-     /tmp/ccAvGucn.s:1558   .text.chThdYield:0000000000000024 $d
-     /tmp/ccAvGucn.s:1561   .text.chThdExitS:0000000000000000 $t
-     /tmp/ccAvGucn.s:1567   .text.chThdExitS:0000000000000000 chThdExitS
-     /tmp/ccAvGucn.s:1602   .text.chThdExitS:000000000000003c $d
-     /tmp/ccAvGucn.s:1605   .text.chThdExit:0000000000000000 $t
-     /tmp/ccAvGucn.s:1611   .text.chThdExit:0000000000000000 chThdExit
-     /tmp/ccAvGucn.s:1623   .text.chThdWait:0000000000000000 $t
-     /tmp/ccAvGucn.s:1629   .text.chThdWait:0000000000000000 chThdWait
-     /tmp/ccAvGucn.s:1663   .text.chThdWait:0000000000000034 $d
-     /tmp/ccAvGucn.s:1666   .text.chThdSuspendS:0000000000000000 $t
-     /tmp/ccAvGucn.s:1672   .text.chThdSuspendS:0000000000000000 chThdSuspendS
-     /tmp/ccAvGucn.s:1693   .text.chThdSuspendS:0000000000000020 $d
-     /tmp/ccAvGucn.s:1696   .text.chThdSuspendTimeoutS:0000000000000000 $t
-     /tmp/ccAvGucn.s:1702   .text.chThdSuspendTimeoutS:0000000000000000 chThdSuspendTimeoutS
-     /tmp/ccAvGucn.s:1726   .text.chThdSuspendTimeoutS:0000000000000024 $d
-     /tmp/ccAvGucn.s:1729   .text.chThdResumeI:0000000000000000 $t
-     /tmp/ccAvGucn.s:1735   .text.chThdResumeI:0000000000000000 chThdResumeI
-     /tmp/ccAvGucn.s:1750   .text.chThdResumeS:0000000000000000 $t
-     /tmp/ccAvGucn.s:1756   .text.chThdResumeS:0000000000000000 chThdResumeS
-     /tmp/ccAvGucn.s:1770   .text.chThdResume:0000000000000000 $t
-     /tmp/ccAvGucn.s:1776   .text.chThdResume:0000000000000000 chThdResume
-     /tmp/ccAvGucn.s:1800   .text.chThdEnqueueTimeoutS:0000000000000000 $t
-     /tmp/ccAvGucn.s:1806   .text.chThdEnqueueTimeoutS:0000000000000000 chThdEnqueueTimeoutS
-     /tmp/ccAvGucn.s:1829   .text.chThdEnqueueTimeoutS:0000000000000028 $d
-     /tmp/ccAvGucn.s:1832   .text.chThdDequeueNextI:0000000000000000 $t
-     /tmp/ccAvGucn.s:1838   .text.chThdDequeueNextI:0000000000000000 chThdDequeueNextI
-     /tmp/ccAvGucn.s:1859   .text.chThdDequeueAllI:0000000000000000 $t
-     /tmp/ccAvGucn.s:1865   .text.chThdDequeueAllI:0000000000000000 chThdDequeueAllI
+     /tmp/ccxm8I91.s:1190   .text._thread_init:0000000000000000 $t
+     /tmp/ccxm8I91.s:1196   .text._thread_init:0000000000000000 _thread_init
+     /tmp/ccxm8I91.s:1228   .text._thread_init:0000000000000044 $d
+     /tmp/ccxm8I91.s:1231   .text.chThdCreateI:0000000000000000 $t
+     /tmp/ccxm8I91.s:1237   .text.chThdCreateI:0000000000000000 chThdCreateI
+     /tmp/ccxm8I91.s:1277   .text.chThdCreateI:0000000000000060 $d
+     /tmp/ccxm8I91.s:1281   .text.chThdCreateStatic:0000000000000000 $t
+     /tmp/ccxm8I91.s:1287   .text.chThdCreateStatic:0000000000000000 chThdCreateStatic
+     /tmp/ccxm8I91.s:1339   .text.chThdCreateStatic:0000000000000074 $d
+     /tmp/ccxm8I91.s:1343   .text.chThdStart:0000000000000000 $t
+     /tmp/ccxm8I91.s:1349   .text.chThdStart:0000000000000000 chThdStart
+     /tmp/ccxm8I91.s:1367   .text.chThdSetPriority:0000000000000000 $t
+     /tmp/ccxm8I91.s:1373   .text.chThdSetPriority:0000000000000000 chThdSetPriority
+     /tmp/ccxm8I91.s:1405   .text.chThdSetPriority:000000000000002c $d
+     /tmp/ccxm8I91.s:1408   .text.chThdTerminate:0000000000000000 $t
+     /tmp/ccxm8I91.s:1414   .text.chThdTerminate:0000000000000000 chThdTerminate
+     /tmp/ccxm8I91.s:1434   .text.chThdSleep:0000000000000000 $t
+     /tmp/ccxm8I91.s:1440   .text.chThdSleep:0000000000000000 chThdSleep
+     /tmp/ccxm8I91.s:1460   .text.chThdSleepUntil:0000000000000000 $t
+     /tmp/ccxm8I91.s:1466   .text.chThdSleepUntil:0000000000000000 chThdSleepUntil
+     /tmp/ccxm8I91.s:1490   .text.chThdSleepUntilWindowed:0000000000000000 $t
+     /tmp/ccxm8I91.s:1496   .text.chThdSleepUntilWindowed:0000000000000000 chThdSleepUntilWindowed
+     /tmp/ccxm8I91.s:1525   .text.chThdYield:0000000000000000 $t
+     /tmp/ccxm8I91.s:1531   .text.chThdYield:0000000000000000 chThdYield
+     /tmp/ccxm8I91.s:1558   .text.chThdYield:0000000000000024 $d
+     /tmp/ccxm8I91.s:1561   .text.chThdExitS:0000000000000000 $t
+     /tmp/ccxm8I91.s:1567   .text.chThdExitS:0000000000000000 chThdExitS
+     /tmp/ccxm8I91.s:1602   .text.chThdExitS:000000000000003c $d
+     /tmp/ccxm8I91.s:1605   .text.chThdExit:0000000000000000 $t
+     /tmp/ccxm8I91.s:1611   .text.chThdExit:0000000000000000 chThdExit
+     /tmp/ccxm8I91.s:1623   .text.chThdWait:0000000000000000 $t
+     /tmp/ccxm8I91.s:1629   .text.chThdWait:0000000000000000 chThdWait
+     /tmp/ccxm8I91.s:1663   .text.chThdWait:0000000000000034 $d
+     /tmp/ccxm8I91.s:1666   .text.chThdSuspendS:0000000000000000 $t
+     /tmp/ccxm8I91.s:1672   .text.chThdSuspendS:0000000000000000 chThdSuspendS
+     /tmp/ccxm8I91.s:1693   .text.chThdSuspendS:0000000000000020 $d
+     /tmp/ccxm8I91.s:1696   .text.chThdSuspendTimeoutS:0000000000000000 $t
+     /tmp/ccxm8I91.s:1702   .text.chThdSuspendTimeoutS:0000000000000000 chThdSuspendTimeoutS
+     /tmp/ccxm8I91.s:1726   .text.chThdSuspendTimeoutS:0000000000000024 $d
+     /tmp/ccxm8I91.s:1729   .text.chThdResumeI:0000000000000000 $t
+     /tmp/ccxm8I91.s:1735   .text.chThdResumeI:0000000000000000 chThdResumeI
+     /tmp/ccxm8I91.s:1750   .text.chThdResumeS:0000000000000000 $t
+     /tmp/ccxm8I91.s:1756   .text.chThdResumeS:0000000000000000 chThdResumeS
+     /tmp/ccxm8I91.s:1770   .text.chThdResume:0000000000000000 $t
+     /tmp/ccxm8I91.s:1776   .text.chThdResume:0000000000000000 chThdResume
+     /tmp/ccxm8I91.s:1800   .text.chThdEnqueueTimeoutS:0000000000000000 $t
+     /tmp/ccxm8I91.s:1806   .text.chThdEnqueueTimeoutS:0000000000000000 chThdEnqueueTimeoutS
+     /tmp/ccxm8I91.s:1829   .text.chThdEnqueueTimeoutS:0000000000000028 $d
+     /tmp/ccxm8I91.s:1832   .text.chThdDequeueNextI:0000000000000000 $t
+     /tmp/ccxm8I91.s:1838   .text.chThdDequeueNextI:0000000000000000 chThdDequeueNextI
+     /tmp/ccxm8I91.s:1859   .text.chThdDequeueAllI:0000000000000000 $t
+     /tmp/ccxm8I91.s:1865   .text.chThdDequeueAllI:0000000000000000 chThdDequeueAllI
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccAvGucn.s:1230   .text._thread_init:0000000000000048 $t
-     /tmp/ccAvGucn.s:1280   .text.chThdCreateI:0000000000000068 $t
-ARM GAS  /tmp/ccAvGucn.s 			page 109
+     /tmp/ccxm8I91.s:1230   .text._thread_init:0000000000000048 $t
+     /tmp/ccxm8I91.s:1280   .text.chThdCreateI:0000000000000068 $t
+ARM GAS  /tmp/ccxm8I91.s 			page 109
 
 
-     /tmp/ccAvGucn.s:1342   .text.chThdCreateStatic:000000000000007c $t
-     /tmp/ccAvGucn.s:1560   .text.chThdYield:0000000000000028 $t
-     /tmp/ccAvGucn.s:1665   .text.chThdWait:0000000000000038 $t
-     /tmp/ccAvGucn.s:1695   .text.chThdSuspendS:0000000000000024 $t
-     /tmp/ccAvGucn.s:1728   .text.chThdSuspendTimeoutS:0000000000000028 $t
-     /tmp/ccAvGucn.s:1831   .text.chThdEnqueueTimeoutS:000000000000002c $t
+     /tmp/ccxm8I91.s:1342   .text.chThdCreateStatic:000000000000007c $t
+     /tmp/ccxm8I91.s:1560   .text.chThdYield:0000000000000028 $t
+     /tmp/ccxm8I91.s:1665   .text.chThdWait:0000000000000038 $t
+     /tmp/ccxm8I91.s:1695   .text.chThdSuspendS:0000000000000024 $t
+     /tmp/ccxm8I91.s:1728   .text.chThdSuspendTimeoutS:0000000000000028 $t
+     /tmp/ccxm8I91.s:1831   .text.chThdEnqueueTimeoutS:000000000000002c $t
 
 UNDEFINED SYMBOLS
 ch

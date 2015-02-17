@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc06LyBQ.s 			page 1
+ARM GAS  /tmp/ccImxIok.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"mmc_spi.c"
-  17              		.section	.gnu.lto_.jmpfuncs.bd22fe6993d923a,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.3e8de60e235c765a,"",%progbits
   18 0000 789C8D53 		.ascii	"x\234\215SKR\3030\014\225l\023\267\345\223\360\035\302"
   18      4B52C330 
   18      0C956C13 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
   26      61EA9D72 
   26      F0C45575 
   26      A19C8130 
-ARM GAS  /tmp/cc06LyBQ.s 			page 2
+ARM GAS  /tmp/ccImxIok.s 			page 2
 
 
   26      E83022F3 
@@ -118,10 +118,10 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
   37      FC58
   38 0160 80       		.ascii	"\200"
   39              		.text
-ARM GAS  /tmp/cc06LyBQ.s 			page 3
+ARM GAS  /tmp/ccImxIok.s 			page 3
 
 
-  40              		.section	.gnu.lto_.inline.bd22fe6993d923a,"",%progbits
+  40              		.section	.gnu.lto_.inline.3e8de60e235c765a,"",%progbits
   41 0000 789CBD56 		.ascii	"x\234\275V\277k\024A\024\376fvvv\366\356r\273\271\304"
   41      BF6B1441 
   41      14FE6676 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
   52 00ca 1AAFEAB3 		.ascii	"\032\257\352\263\011Z*\310\346\026\230cp\231\001\327"
   52      095A2AC8 
   52      E6169863 
-ARM GAS  /tmp/cc06LyBQ.s 			page 4
+ARM GAS  /tmp/ccImxIok.s 			page 4
 
 
   52      709901D7 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
   64      C0FDCFD7 
   64      92348E76 
   64      0630
-ARM GAS  /tmp/cc06LyBQ.s 			page 5
+ARM GAS  /tmp/ccImxIok.s 			page 5
 
 
   65 01b2 30517023 		.ascii	"0Qp#\345\036\324\356L\321\236\"t\035\276G\201\357S\225"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
   76      7FAF667A 
   76      F7B96C95 
   76      952761FF 
-ARM GAS  /tmp/cc06LyBQ.s 			page 6
+ARM GAS  /tmp/ccImxIok.s 			page 6
 
 
   76      2A9B
@@ -330,7 +330,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
   82      45BFBF87 
   82      F32BF0
   83              		.text
-  84              		.section	.gnu.lto_.pureconst.bd22fe6993d923a,"",%progbits
+  84              		.section	.gnu.lto_.pureconst.3e8de60e235c765a,"",%progbits
   85 0000 789C25C1 		.ascii	"x\234%\301k\016C@\030\206\321\317h(U\227\024\231\367"
   85      6B0E4340 
   85      1886D1CF 
@@ -354,11 +354,11 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
   89      01F12306 
   89      F0
   90              		.text
-  91              		.section	.gnu.lto_mmcGetInfo.bd22fe6993d923a,"",%progbits
+  91              		.section	.gnu.lto_mmcGetInfo.3e8de60e235c765a,"",%progbits
   92 0000 789C8D91 		.ascii	"x\234\215\221\301JBA\024\206\317?3\367*R\364\000!\264"
   92      C14A4241 
   92      1486CF3F 
-ARM GAS  /tmp/cc06LyBQ.s 			page 7
+ARM GAS  /tmp/ccImxIok.s 			page 7
 
 
   92      33F72A52 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  104 00d8 6552E85A 		.ascii	"eR\350Zm\367o\355\2118CwO\2111\222\246\213\220\307\334"
  104      6DF76FED 
  104      89384377 
-ARM GAS  /tmp/cc06LyBQ.s 			page 8
+ARM GAS  /tmp/ccImxIok.s 			page 8
 
 
  104      4F893192 
@@ -451,7 +451,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  111      8B1E7D01 
  111      6F2A6D4F 
  112              		.text
- 113              		.section	.gnu.lto_recvr1.isra.0.bd22fe6993d923a,"",%progbits
+ 113              		.section	.gnu.lto_recvr1.isra.0.3e8de60e235c765a,"",%progbits
  114 0000 789C5D53 		.ascii	"x\234]S\317k\023A\024~\337\314\316N\032\223\352\037"
  114      CF6B1341 
  114      147EDFCC 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  118      CDAC2245 
  118      FF
  119 005d 8FD3FC2C 		.ascii	"\217\323\374,q\372\024G\344\010\266\323#j\346,\224\274"
-ARM GAS  /tmp/cc06LyBQ.s 			page 9
+ARM GAS  /tmp/ccImxIok.s 			page 9
 
 
  119      71FA1447 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  130      991B9A13 
  130      E4B61DE1 
  130      F4217A24 
-ARM GAS  /tmp/cc06LyBQ.s 			page 10
+ARM GAS  /tmp/ccImxIok.s 			page 10
 
 
  130      A8B1
@@ -598,10 +598,10 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  142      90FC053E 
  142      85B0C1
  143              		.text
-ARM GAS  /tmp/cc06LyBQ.s 			page 11
+ARM GAS  /tmp/ccImxIok.s 			page 11
 
 
- 144              		.section	.gnu.lto_recvr3.bd22fe6993d923a,"",%progbits
+ 144              		.section	.gnu.lto_recvr3.3e8de60e235c765a,"",%progbits
  145 0000 789C5D90 		.ascii	"x\234]\220?K\303@\030\207\337\337\265ib\375\203\340"
  145      3F4BC340 
  145      1887DFDF 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  156 00c4 2EB5A494 		.ascii	".\265\244\224\303\254<\245\023WJ\257q8\305\312\034\240"
  156      C3AC3CA5 
  156      13574AAF 
-ARM GAS  /tmp/cc06LyBQ.s 			page 12
+ARM GAS  /tmp/ccImxIok.s 			page 12
 
 
  156      7138C5CA 
@@ -705,7 +705,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  165 016d 28CEFD02 		.ascii	"(\316\375\002(\343xB"
  165      28E37842 
  166              		.text
- 167              		.section	.gnu.lto_wait.isra.1.bd22fe6993d923a,"",%progbits
+ 167              		.section	.gnu.lto_wait.isra.1.3e8de60e235c765a,"",%progbits
  168 0000 789C9D54 		.ascii	"x\234\235T\315K\025Q\024?\347\336\371~\2574\244\275"
  168      CD4B1551 
  168      143FE7DE 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  169      BEF0
  170 0024 69102D9C 		.ascii	"i\020-\234\227/xP\201\264\210\250\240D\002i#(\364\261"
  170      972F7850 
-ARM GAS  /tmp/cc06LyBQ.s 			page 13
+ARM GAS  /tmp/ccImxIok.s 			page 13
 
 
  170      81B488A8 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  181      1F35499B 
  182 0105 D166E890 		.ascii	"\321f\350\220\3031l\001#\266&\207-\016\333\034n\242"
  182      C3316C01 
-ARM GAS  /tmp/cc06LyBQ.s 			page 14
+ARM GAS  /tmp/ccImxIok.s 			page 14
 
 
  182      23B62687 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  193      E4540316 
  193      34A9
  194 01dc AA64E156 		.ascii	"\252d\341V\033\262\200[S{R\233uJm\035$\265\371\037R"
-ARM GAS  /tmp/cc06LyBQ.s 			page 15
+ARM GAS  /tmp/ccImxIok.s 			page 15
 
 
  194      1BB2805B 
@@ -890,7 +890,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  204 0292 AD79D805 		.ascii	"\255y\330\005\212\270\037H"
  204      8AB81F48 
  205              		.text
- 206              		.section	.gnu.lto_send_hdr.bd22fe6993d923a,"",%progbits
+ 206              		.section	.gnu.lto_send_hdr.3e8de60e235c765a,"",%progbits
  207 0000 789C8D55 		.ascii	"x\234\215UMlTU\024>\347\336y\323\231\241C\307\241\245"
  207      4D6C5455 
  207      143EE7DE 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  207      43C7A1A5 
  208 0014 6588A59D 		.ascii	"e\210\245\235\376\312\217C\374Y\260 aAbt\301\212&\270"
  208      FECA8F43 
-ARM GAS  /tmp/cc06LyBQ.s 			page 16
+ARM GAS  /tmp/ccImxIok.s 			page 16
 
 
  208      FC59B020 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  219      A9B4DE
  220 00e8 51FA9810 		.ascii	"Q\372\230\020\260\373\177\302\256)%-\314\021\2607\206"
  220      B0FB7FC2 
-ARM GAS  /tmp/cc06LyBQ.s 			page 17
+ARM GAS  /tmp/ccImxIok.s 			page 17
 
 
  220      AE29252D 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  232      1BA75F37 
  232      861D7095 
  232      3656592A 
-ARM GAS  /tmp/cc06LyBQ.s 			page 18
+ARM GAS  /tmp/ccImxIok.s 			page 18
 
 
  232      858994
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  243      B5
  244 029a 7C0539BD 		.ascii	"|\0059\275\274U>\314\317\000\350c.\352~\017S\225\000"
  244      BC553ECC 
-ARM GAS  /tmp/cc06LyBQ.s 			page 19
+ARM GAS  /tmp/ccImxIok.s 			page 19
 
 
  244      CF00E863 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  256 0369 405C3A8F 		.ascii	"@\\:\217I0YWs\370l\322}\023\3647\017\205Y0\306W`Q\315"
  256      49305957 
  256      73F86CD2 
-ARM GAS  /tmp/cc06LyBQ.s 			page 20
+ARM GAS  /tmp/ccImxIok.s 			page 20
 
 
  256      7D13F437 
@@ -1168,7 +1168,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  261      51D8
  262 03d9 AC4A     		.ascii	"\254J"
  263              		.text
- 264              		.section	.gnu.lto_send_command_R3.bd22fe6993d923a,"",%progbits
+ 264              		.section	.gnu.lto_send_command_R3.3e8de60e235c765a,"",%progbits
  265 0000 789C8D51 		.ascii	"x\234\215QM+DQ\030~\237s\347\323\314`a\243$YRn\224\374"
  265      4D2B4451 
  265      187E9F73 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  270      95511828 
  270      3AE940EB 
  270      4DE7E5B8 
-ARM GAS  /tmp/cc06LyBQ.s 			page 21
+ARM GAS  /tmp/ccImxIok.s 			page 21
 
 
  271 0073 826D5D2E 		.ascii	"\202m].\354\353\217j\025P`\331~\220\004\215\360\001"
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  282      EF3B6715 
  282      3F70FCBF 
  282      811FFDC0 
-ARM GAS  /tmp/cc06LyBQ.s 			page 22
+ARM GAS  /tmp/ccImxIok.s 			page 22
 
 
  282      89
@@ -1284,7 +1284,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  287 0191 7E02B361 		.ascii	"~\002\263a\222S"
  287      9253
  288              		.text
- 289              		.section	.gnu.lto_send_command_R1.bd22fe6993d923a,"",%progbits
+ 289              		.section	.gnu.lto_send_command_R1.3e8de60e235c765a,"",%progbits
  290 0000 789C8D51 		.ascii	"x\234\215QMK\033Q\024\275\347M>Mb\334\026J)\272kj\007"
  290      4D4B1B51 
  290      14BDE74D 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  296 0078 029F6CB7 		.ascii	"\002\237l\267u`o}\0370`\331\011\220\006M\363\006\231"
  296      75606F7D 
  296      1F3060D9 
-ARM GAS  /tmp/cc06LyBQ.s 			page 23
+ARM GAS  /tmp/ccImxIok.s 			page 23
 
 
  296      0990064D 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  307      4797
  308 0157 7140F9C7 		.ascii	"q@\371\307\006t\026\007T\350\013\350C\020P\376\177\001"
  308      06741607 
-ARM GAS  /tmp/cc06LyBQ.s 			page 24
+ARM GAS  /tmp/ccImxIok.s 			page 24
 
 
  308      54E80BE8 
@@ -1406,7 +1406,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  312      8008
  313 01b2 A098     		.ascii	"\240\230"
  314              		.text
- 315              		.section	.gnu.lto_read_CxD.bd22fe6993d923a,"",%progbits
+ 315              		.section	.gnu.lto_read_CxD.3e8de60e235c765a,"",%progbits
  316 0000 789C9556 		.ascii	"x\234\225V]lTU\020\2369\367\356\337\335]v\333\332\332"
  316      5D6C5455 
  316      109E39F7 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  321      33E79CD9 
  321      15
  322 006f 2020F773 		.ascii	"  \367s\220\276/\031\000\317\320\214a@1x\025 \351\027"
-ARM GAS  /tmp/cc06LyBQ.s 			page 25
+ARM GAS  /tmp/ccImxIok.s 			page 25
 
 
  322      90BE2F19 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  333      7E2DD2D3 
  333      99CCE5
  334 0140 C3270FDC 		.ascii	"\303'\017\334\304)\3618B'\036\305Z\312\260\023Gh\326"
-ARM GAS  /tmp/cc06LyBQ.s 			page 26
+ARM GAS  /tmp/ccImxIok.s 			page 26
 
 
  334      C429F138 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  345      41FE08FD 
  345      E90A8503 
  345      D8
-ARM GAS  /tmp/cc06LyBQ.s 			page 27
+ARM GAS  /tmp/ccImxIok.s 			page 27
 
 
  346 0219 0D0BD600 		.ascii	"\015\013\326\000\003\243q\333\200|\231X\300f\373\247"
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  357      CDB0DEC4 
  357      95CA903D 
  357      54641D
-ARM GAS  /tmp/cc06LyBQ.s 			page 28
+ARM GAS  /tmp/ccImxIok.s 			page 28
 
 
  358 02f3 D105F8E1 		.ascii	"\321\005\370\341v\362\021\327T\036\341}\3142\350@/|"
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  369      C46E47B1 
  369      2E27A296 
  370 03c6 15F196EB 		.ascii	"\025\361\226\353\274\221\014\227d\321$\3356J\343\213"
-ARM GAS  /tmp/cc06LyBQ.s 			page 29
+ARM GAS  /tmp/ccImxIok.s 			page 29
 
 
  370      BC910C97 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  382 0499 433ABB5B 		.ascii	"C:\273[I\267\001+\233\367\237u;\332\024`\0027j4\264"
  382      49B7012B 
  382      9BF79F75 
-ARM GAS  /tmp/cc06LyBQ.s 			page 30
+ARM GAS  /tmp/ccImxIok.s 			page 30
 
 
  382      3BDA1460 
@@ -1779,7 +1779,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  390      1F6C5568 
  390      22
  391              		.text
- 392              		.section	.gnu.lto_mmcConnect.bd22fe6993d923a,"",%progbits
+ 392              		.section	.gnu.lto_mmcConnect.3e8de60e235c765a,"",%progbits
  393 0000 789C9D57 		.ascii	"x\234\235WklTE\024>\347\336}?\332\355v\267\335-\265"
  393      6B6C5445 
  393      143EE7DE 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  396 003a 26D22841 		.ascii	"&\322(A\241\021\033c\254@\311\026\032\"\226\227\246"
  396      A1111B63 
  396      AC40C916 
-ARM GAS  /tmp/cc06LyBQ.s 			page 31
+ARM GAS  /tmp/ccImxIok.s 			page 31
 
 
  396      1A229697 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  407      722B28AD 
  407      3C6EE529 
  407      A1D108
-ARM GAS  /tmp/cc06LyBQ.s 			page 32
+ARM GAS  /tmp/ccImxIok.s 			page 32
 
 
  408 0112 59F9078A 		.ascii	"Y\371\007\212\310\312\307\260\230>d4\302\210\254\001"
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  419      55C526AF 
  419      A6C2
  420 01ec BD8A99B5 		.ascii	"\275\212\231\265\314\254\223\240\325\014\264\206\201"
-ARM GAS  /tmp/cc06LyBQ.s 			page 33
+ARM GAS  /tmp/ccImxIok.s 			page 33
 
 
  420      CCAC93A0 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  431      62A820D3 
  431      699E40D4 
  432 02c8 F6CA62F5 		.ascii	"\366\312b\365$\274\235\370tK\2261e\310\304\346k\222"
-ARM GAS  /tmp/cc06LyBQ.s 			page 34
+ARM GAS  /tmp/ccImxIok.s 			page 34
 
 
  432      24BC9DF8 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  443      26756956 
  443      9AB0
  444 039f 94A551A2 		.ascii	"\224\245Q\242Xg\307(\226\271\277\370\007\331tN\230p"
-ARM GAS  /tmp/cc06LyBQ.s 			page 35
+ARM GAS  /tmp/ccImxIok.s 			page 35
 
 
  444      5867C728 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  455      FD
  456 0478 FA99A701 		.ascii	"\372\231\247\001\217\362(\313\347D9\016j\024\351a\024"
  456      8FF228CB 
-ARM GAS  /tmp/cc06LyBQ.s 			page 36
+ARM GAS  /tmp/ccImxIok.s 			page 36
 
 
  456      E744390E 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  467      49FDA046 
  467      A7BDA026 
  467      C232BE16 
-ARM GAS  /tmp/cc06LyBQ.s 			page 37
+ARM GAS  /tmp/ccImxIok.s 			page 37
 
 
  467      474FB9E6 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  479 061b 2FBFF05C 		.ascii	"/\277\360\\\204\032M\015\317G\332Z\265Hs\263\266\256"
  479      841A4D0D 
  479      CF47DA5A 
-ARM GAS  /tmp/cc06LyBQ.s 			page 38
+ARM GAS  /tmp/ccImxIok.s 			page 38
 
 
  479      B54873B3 
@@ -2232,7 +2232,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  481      9735C17F 
  481      07E84541 
  482              		.text
- 483              		.section	.gnu.lto_sync.isra.2.bd22fe6993d923a,"",%progbits
+ 483              		.section	.gnu.lto_sync.isra.2.3e8de60e235c765a,"",%progbits
  484 0000 789C9553 		.ascii	"x\234\225SKo\323@\020\236\331\365\332&\024H\341\017"
  484      4B6FD340 
  484      109ED9F5 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  492      3DBC
  493 009d 63BAD1BC 		.ascii	"c\272\321\274\331\214c\304\020\211\303Y\004\215p\201"
  493      D98C63C4 
-ARM GAS  /tmp/cc06LyBQ.s 			page 39
+ARM GAS  /tmp/ccImxIok.s 			page 39
 
 
  493      1089C359 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  504      CAD7
  505 0173 F0E26BFB 		.ascii	"\360\342k\373d\016\345c\025o\035w\031\035\240oJ.C\264"
  505      640EE563 
-ARM GAS  /tmp/cc06LyBQ.s 			page 40
+ARM GAS  /tmp/ccImxIok.s 			page 40
 
 
  505      156F1D77 
@@ -2387,7 +2387,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  514      030112E5 
  514      CF
  515              		.text
- 516              		.section	.gnu.lto_mmcDisconnect.part.3.bd22fe6993d923a,"",%progbits
+ 516              		.section	.gnu.lto_mmcDisconnect.part.3.3e8de60e235c765a,"",%progbits
  517 0000 789C9D93 		.ascii	"x\234\235\223\317K\033A\024\307\337\233\231\335h\265"
  517      CF4B1B41 
  517      14C7DF9B 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  518      8442A1
  519 001f 072F4D84 		.ascii	"\007/M\204\332\213$\223%\031t\023\331\030Qzp#BK\351"
  519      DA8B2493 
-ARM GAS  /tmp/cc06LyBQ.s 			page 41
+ARM GAS  /tmp/ccImxIok.s 			page 41
 
 
  519      25197413 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  530      C7103CC5 
  530      37E1EB09 
  530      8D9904D1 
-ARM GAS  /tmp/cc06LyBQ.s 			page 42
+ARM GAS  /tmp/ccImxIok.s 			page 42
 
 
  531 0100 6361E9FB 		.ascii	"ca\351\373\347\361\373\336\350\0202\367m\377\375n\307"
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  542      B21528E9 
  542      FB6A
  543 01cd A635AFC7 		.ascii	"\2465\257\307\024L\374K\342--\310{\223\305\007E\251"
-ARM GAS  /tmp/cc06LyBQ.s 			page 43
+ARM GAS  /tmp/ccImxIok.s 			page 43
 
 
  543      144CFC4B 
@@ -2538,7 +2538,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  546 0203 3358863F 		.ascii	"3X\206?\015\204\326%"
  546      0D84D625 
  547              		.text
- 548              		.section	.gnu.lto_mmcDisconnect.bd22fe6993d923a,"",%progbits
+ 548              		.section	.gnu.lto_mmcDisconnect.3e8de60e235c765a,"",%progbits
  549 0000 789C8D91 		.ascii	"x\234\215\221\261K\033Q\034\307\277\277\367\336i\324"
  549      B14B1B51 
  549      1CC7BFBF 
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  557 008a A39876C2 		.ascii	"\243\230v\302\316n\037\037\217\017\357\036:\364\373"
  557      CE6E1F1F 
  557      8F0FEF1E 
-ARM GAS  /tmp/cc06LyBQ.s 			page 44
+ARM GAS  /tmp/ccImxIok.s 			page 44
 
 
  557      3AF4FB
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  569 0167 FB6AB5B6 		.ascii	"\373j\265\266\256\263\012s\377j\361>l\3107\213\371\205"
  569      AEB30A73 
  569      FF6AF13E 
-ARM GAS  /tmp/cc06LyBQ.s 			page 45
+ARM GAS  /tmp/ccImxIok.s 			page 45
 
 
  569      6CC8378B 
@@ -2657,7 +2657,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  572      020F8F89 
  572      1A
  573              		.text
- 574              		.section	.gnu.lto_mmcSync.part.4.bd22fe6993d923a,"",%progbits
+ 574              		.section	.gnu.lto_mmcSync.part.4.3e8de60e235c765a,"",%progbits
  575 0000 789C9D92 		.ascii	"x\234\235\222=K\003A\020\206gvo\317\250\361\253\027"
  575      3D4B0341 
  575      10866776 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  582      6A155483 
  582      A03E
  583 0091 0FA02D9B 		.ascii	"\017\240-\233$\313\222IzI^\246PX\377\004g\341\327mm"
-ARM GAS  /tmp/cc06LyBQ.s 			page 46
+ARM GAS  /tmp/ccImxIok.s 			page 46
 
 
  583      24CB9249 
@@ -2758,13 +2758,13 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  594      A477BDD2 
  594      81F67C5F 
  594      6F97F6CD 
-ARM GAS  /tmp/cc06LyBQ.s 			page 47
+ARM GAS  /tmp/ccImxIok.s 			page 47
 
 
  595 0176 8A866FF1 		.ascii	"\212\206o\361\027\214\223"
  595      178C93
  596              		.text
- 597              		.section	.gnu.lto_mmcSync.bd22fe6993d923a,"",%progbits
+ 597              		.section	.gnu.lto_mmcSync.3e8de60e235c765a,"",%progbits
  598 0000 789C5D50 		.ascii	"x\234]P=K\003A\020\2357\273'\247(\261\267\261VpQ\254"
  598      3D4B0341 
  598      109D37BB 
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  608      8A41FBB7 
  608      947FB4C7 
  608      7E259EC2 
-ARM GAS  /tmp/cc06LyBQ.s 			page 48
+ARM GAS  /tmp/ccImxIok.s 			page 48
 
 
  608      C1
@@ -2849,7 +2849,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  614 0124 016E6C4E 		.ascii	"\001nlN\226"
  614      96
  615              		.text
- 616              		.section	.gnu.lto_mmcStartSequentialRead.part.5.bd22fe6993d923a,"",%progbits
+ 616              		.section	.gnu.lto_mmcStartSequentialRead.part.5.3e8de60e235c765a,"",%progbits
  617 0000 789C7551 		.ascii	"x\234uQ\273J\003Q\020\235s\367n\0225\205\237\020\354"
  617      BB4A0351 
  617      109D73F7 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  622      2C400A02 
  622      35B5B2D0 
  622      5C859031 
-ARM GAS  /tmp/cc06LyBQ.s 			page 49
+ARM GAS  /tmp/ccImxIok.s 			page 49
 
 
  622      433D63F6 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  634      D69D466D 
  634      73BDEC70 
  634      51722B4E 
-ARM GAS  /tmp/cc06LyBQ.s 			page 50
+ARM GAS  /tmp/ccImxIok.s 			page 50
 
 
  635 0152 3941E0AD 		.ascii	"9A\340\255\3257\374y\217\022\365\206[k\344*\345\037"
@@ -2948,7 +2948,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  635      E51F
  636 0164 99637368 		.ascii	"\231csh"
  637              		.text
- 638              		.section	.gnu.lto_mmcSequentialRead.part.6.bd22fe6993d923a,"",%progbits
+ 638              		.section	.gnu.lto_mmcSequentialRead.part.6.3e8de60e235c765a,"",%progbits
  639 0000 789C9592 		.ascii	"x\234\225\222\273K\003A\020\306\347\333\333;\337hk\245"
  639      BB4B0341 
  639      10C6E7DB 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  648      1B68030A 
  648      D2CC403B 
  648      BCB9
-ARM GAS  /tmp/cc06LyBQ.s 			page 51
+ARM GAS  /tmp/ccImxIok.s 			page 51
 
 
  649 00b8 5A325732 		.ascii	"Z2W2\2177\217k]Z\343.\275i\034\"Ai\354\363N\"\317k\204"
@@ -3058,14 +3058,14 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  660 0189 BF5008C6 		.ascii	"\277P\010\306\313\263\246? /3?9\231-\301|\000\332A\237"
  660      CBB3A63F 
  660      202F333F 
-ARM GAS  /tmp/cc06LyBQ.s 			page 52
+ARM GAS  /tmp/ccImxIok.s 			page 52
 
 
  660      39992DC1 
  660      7C00DA41 
  661 019e 08       		.ascii	"\010"
  662              		.text
- 663              		.section	.gnu.lto_mmcStopSequentialRead.part.7.bd22fe6993d923a,"",%progbits
+ 663              		.section	.gnu.lto_mmcStopSequentialRead.part.7.3e8de60e235c765a,"",%progbits
  664 0000 789C9552 		.ascii	"x\234\225RKKBA\024>g\356\313J\323~AA\273\214\006\242"
  664      4B4B4241 
  664      143E67EE 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  674 00b9 97D06816 		.ascii	"\227\320h\026\020\267Q\323\035\257,\206\0151\357\335"
  674      10B751D3 
  674      1DAF2C86 
-ARM GAS  /tmp/cc06LyBQ.s 			page 53
+ARM GAS  /tmp/ccImxIok.s 			page 53
 
 
  674      0D31EFDD 
@@ -3176,9 +3176,9 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  685      07799299 
  685      53
  686              		.text
- 687              		.section	.gnu.lto_mmc_read.part.8.bd22fe6993d923a,"",%progbits
+ 687              		.section	.gnu.lto_mmc_read.part.8.3e8de60e235c765a,"",%progbits
  688 0000 789C9D92 		.ascii	"x\234\235\222\277kTA\020\307\347\273?\336{wD\260W$\244"
-ARM GAS  /tmp/cc06LyBQ.s 			page 54
+ARM GAS  /tmp/ccImxIok.s 			page 54
 
 
  688      BF6B5441 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  699      8F
  700 00d0 57590F65 		.ascii	"WY\017e\2221\324$\205\006\0075O\024\357\366\373K\277"
  700      9231D424 
-ARM GAS  /tmp/cc06LyBQ.s 			page 55
+ARM GAS  /tmp/ccImxIok.s 			page 55
 
 
  700      85060735 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  711      8DAACB9A 
  711      9357DD
  712 01b7 64F5B2CB 		.ascii	"d\365\262\313\352y%o\266]\24757;\355dSOg\\\273\225\271"
-ARM GAS  /tmp/cc06LyBQ.s 			page 56
+ARM GAS  /tmp/ccImxIok.s 			page 56
 
 
  712      EA79256F 
@@ -3314,7 +3314,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  714      CC4CFF06 
  714      543DAE32 
  715              		.text
- 716              		.section	.gnu.lto_mmcStartSequentialWrite.part.9.bd22fe6993d923a,"",%progbits
+ 716              		.section	.gnu.lto_mmcStartSequentialWrite.part.9.3e8de60e235c765a,"",%progbits
  717 0000 789C7551 		.ascii	"x\234uQ\273J\003Q\020\235s\367n\0225\205\237\020\354"
  717      BB4A0351 
  717      109D73F7 
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  725      3E2C8B93 
  725      D69C6CEE 
  725      B0A9
-ARM GAS  /tmp/cc06LyBQ.s 			page 57
+ARM GAS  /tmp/ccImxIok.s 			page 57
 
 
  726 00a6 6D4C37E5 		.ascii	"mL7\345\242\307F$r\034\031\3162J\006Z\320\312BE\370"
@@ -3412,13 +3412,13 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  735      FF001B
  736 0165 7E7289   		.ascii	"~r\211"
  737              		.text
- 738              		.section	.gnu.lto_mmcSequentialWrite.part.10.bd22fe6993d923a,"",%progbits
+ 738              		.section	.gnu.lto_mmcSequentialWrite.part.10.3e8de60e235c765a,"",%progbits
  739 0000 789C9592 		.ascii	"x\234\225\222\317K\033A\024\307\337wfvM[\245\376\007"
  739      CF4B1B41 
  739      14C7DF77 
  739      66764D5B 
  739      A5FE07
-ARM GAS  /tmp/cc06LyBQ.s 			page 58
+ARM GAS  /tmp/ccImxIok.s 			page 58
 
 
  740 0013 861C1BE8 		.ascii	"\206\034\033\350Bio\366\277P\250'I6\277\026\273F\222"
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  751 00d5 C8500E3B 		.ascii	"\310P\016;<\223\310\363\230\340Y\376l\002F\242\236d"
  751      3C93C8F3 
  751      98E059FE 
-ARM GAS  /tmp/cc06LyBQ.s 			page 59
+ARM GAS  /tmp/ccImxIok.s 			page 59
 
 
  751      6C0246A2 
@@ -3538,13 +3538,13 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  763 01ac 5CF0D427 		.ascii	"\\\360\324'7?_*\025k\310\377\003\264\376\250\256"
  763      373F5F2A 
  763      156BC8FF 
-ARM GAS  /tmp/cc06LyBQ.s 			page 60
+ARM GAS  /tmp/ccImxIok.s 			page 60
 
 
  763      03B4FEA8 
  763      AE
  764              		.text
- 765              		.section	.gnu.lto_mmcStopSequentialWrite.part.11.bd22fe6993d923a,"",%progbits
+ 765              		.section	.gnu.lto_mmcStopSequentialWrite.part.11.3e8de60e235c765a,"",%progbits
  766 0000 789C9592 		.ascii	"x\234\225\222=K\003A\020\206g\366\343\022\215A-\255"
  766      3D4B0341 
  766      108667F6 
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  776      3AA27894 
  776      317D17E6 
  776      1E839492 
-ARM GAS  /tmp/cc06LyBQ.s 			page 61
+ARM GAS  /tmp/ccImxIok.s 			page 61
 
 
  776      215C
@@ -3646,7 +3646,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  785      250B5F76 
  785      EC8379
  786              		.text
- 787              		.section	.gnu.lto_mmc_write.part.12.bd22fe6993d923a,"",%progbits
+ 787              		.section	.gnu.lto_mmc_write.part.12.3e8de60e235c765a,"",%progbits
  788 0000 789C9D92 		.ascii	"x\234\235\222\277k\024Q\020\307\347\373~\354\356-\021"
  788      BF6B1451 
  788      10C7E7FB 
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  789      025AC9DE 
  790 0021 E672B724 		.ascii	"\346r\267$\227\223\273\213(\026\231\223+l\204\020l\022"
  790      9793BB8B 
-ARM GAS  /tmp/cc06LyBQ.s 			page 62
+ARM GAS  /tmp/ccImxIok.s 			page 62
 
 
  790      28169993 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  801      2F4FA458 
  801      C724A5D8 
  801      F07653AC 
-ARM GAS  /tmp/cc06LyBQ.s 			page 63
+ARM GAS  /tmp/ccImxIok.s 			page 63
 
 
  802 0101 BBBB10EB 		.ascii	"\273\273\020\353\3467\205\320y=\015\345\375G\272\367"
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  813      279D7696 
  813      349B
  814 01cf D98DCECD 		.ascii	"\331\215\316\315\374|FX\010\252\213\263\263\265v\324"
-ARM GAS  /tmp/cc06LyBQ.s 			page 64
+ARM GAS  /tmp/ccImxIok.s 			page 64
 
 
  814      FC7C4658 
@@ -3788,7 +3788,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  815      757EEE37 
  815      3DDAAE46 
  816              		.text
- 817              		.section	.gnu.lto_mmcInit.bd22fe6993d923a,"",%progbits
+ 817              		.section	.gnu.lto_mmcInit.3e8de60e235c765a,"",%progbits
  818 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\014\304&@\314\310\314\300\310"
  818      60624007 
  818      92401C0C 
@@ -3828,7 +3828,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  825      4B660000 
  825      43B429E3 
  826              		.text
- 827              		.section	.gnu.lto_mmcObjectInit.bd22fe6993d923a,"",%progbits
+ 827              		.section	.gnu.lto_mmcObjectInit.3e8de60e235c765a,"",%progbits
  828 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\303\310\300`\002\244\031\231"
  828      60624007 
  828      92401CC3 
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  829      9C636068 
  829      E4606264 
  829      04311818 
-ARM GAS  /tmp/cc06LyBQ.s 			page 65
+ARM GAS  /tmp/ccImxIok.s 			page 65
 
 
  829      19EA99
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  841      62FD92A2 
  841      D2BC6C
  842 00f2 7D202323 		.ascii	"} ##1G\277\270(Y?779\276\270 S/\231\001\000r\011b\327"
-ARM GAS  /tmp/cc06LyBQ.s 			page 66
+ARM GAS  /tmp/ccImxIok.s 			page 66
 
 
  842      3147BFB8 
@@ -3906,7 +3906,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  842      3739BEB8 
  842      20532F99 
  843              		.text
- 844              		.section	.gnu.lto_mmcStart.bd22fe6993d923a,"",%progbits
+ 844              		.section	.gnu.lto_mmcStart.3e8de60e235c765a,"",%progbits
  845 0000 789C6362 		.ascii	"x\234cb`b@\007\222@|\003\210M\200\230\221\231\201\221"
  845      60624007 
  845      92407C03 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  854      AA9F9C
  855 00b8 9F52A99F 		.ascii	"\237R\251\237\222Z\246\237\234\221\231\224\231_\254"
  855      925AA69F 
-ARM GAS  /tmp/cc06LyBQ.s 			page 67
+ARM GAS  /tmp/ccImxIok.s 			page 67
 
 
  855      9C919994 
@@ -3973,7 +3973,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  857      00004A4E 
  857      4745
  858              		.text
- 859              		.section	.gnu.lto_mmcStop.bd22fe6993d923a,"",%progbits
+ 859              		.section	.gnu.lto_mmcStop.3e8de60e235c765a,"",%progbits
  860 0000 789C6D90 		.ascii	"x\234m\220\277N\002A\020\306\277o\357\200\353\264\325"
  860      BF4E0241 
  860      10C6BF6F 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  868      11EB42DF 
  868      E28696AA 
  868      41B52735 
-ARM GAS  /tmp/cc06LyBQ.s 			page 68
+ARM GAS  /tmp/ccImxIok.s 			page 68
 
 
  868      48475599 
@@ -4056,7 +4056,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  875      F00BD6EF 
  875      58D0
  876              		.text
- 877              		.section	.gnu.lto_mmcStartSequentialRead.bd22fe6993d923a,"",%progbits
+ 877              		.section	.gnu.lto_mmcStartSequentialRead.3e8de60e235c765a,"",%progbits
  878 0000 789C8D93 		.ascii	"x\234\215\223\317k\023A\024\307\337\333\335\331M\232"
  878      CF6B1341 
  878      14C7DFDB 
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  881      A70AB507 
  882 004b 8A50DF9B 		.ascii	"\212P\337\233\235\011m\222C\027\362\346\355\314\373"
  882      9D096D92 
-ARM GAS  /tmp/cc06LyBQ.s 			page 69
+ARM GAS  /tmp/ccImxIok.s 			page 69
 
 
  882      4317F2E6 
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  894 0123 21A842B9 		.ascii	"!\250B\271\357KL\220\020\203\250Ak(\030\327`R\203[8"
  894      EF4B4C90 
  894      1083A841 
-ARM GAS  /tmp/cc06LyBQ.s 			page 70
+ARM GAS  /tmp/ccImxIok.s 			page 70
 
 
  894      6B2818D7 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  905      9EA2D954 
  905      6326C8
  906 01ff EEA99D0E 		.ascii	"\356\251\235\016TG\252\003\211g\014\341\251\272\277"
-ARM GAS  /tmp/cc06LyBQ.s 			page 71
+ARM GAS  /tmp/ccImxIok.s 			page 71
 
 
  906      5447AA03 
@@ -4226,7 +4226,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  910      FC07
  911 0254 A194EC4C 		.ascii	"\241\224\354L"
  912              		.text
- 913              		.section	.gnu.lto_mmcSequentialRead.bd22fe6993d923a,"",%progbits
+ 913              		.section	.gnu.lto_mmcSequentialRead.3e8de60e235c765a,"",%progbits
  914 0000 789C8D54 		.ascii	"x\234\215T\317k\023Q\020\236yo\1777\211\251\321x\020"
  914      CF6B1351 
  914      109E796F 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  919      00C5C4
  920 006e 3C40C912 		.ascii	"<@\311\022\302\236=\016\201#g\366A\220\220h\262\033"
  920      C29E3D0E 
-ARM GAS  /tmp/cc06LyBQ.s 			page 72
+ARM GAS  /tmp/ccImxIok.s 			page 72
 
 
  920      812367F6 
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  931      CD9D
  932 013c A8D47F80 		.ascii	"\250\324\177\200\362\327R2\206p\212el\350.\207\022\246"
  932      F2D75232 
-ARM GAS  /tmp/cc06LyBQ.s 			page 73
+ARM GAS  /tmp/ccImxIok.s 			page 73
 
 
  932      86708A65 
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  943      9E9A91F1 
  944 0215 91E7F567 		.ascii	"\221\347\365g\266b\315\024\020\303\001S\242rh\002]X"
  944      B662CD14 
-ARM GAS  /tmp/cc06LyBQ.s 			page 74
+ARM GAS  /tmp/ccImxIok.s 			page 74
 
 
  944      10C30153 
@@ -4419,7 +4419,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  951      FE6FDFB0 
  951      FD00
  952              		.text
- 953              		.section	.gnu.lto_mmc_read.bd22fe6993d923a,"",%progbits
+ 953              		.section	.gnu.lto_mmc_read.3e8de60e235c765a,"",%progbits
  954 0000 789C6D52 		.ascii	"x\234mRMk\024A\020\255\327==\323\356\216;\313\256\210"
  954      4D6B1441 
  954      10ADD73D 
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  957      11D188E0 
  957      652087FC 
  957      801C3C
-ARM GAS  /tmp/cc06LyBQ.s 			page 75
+ARM GAS  /tmp/ccImxIok.s 			page 75
 
 
  958 0046 ABB056CD 		.ascii	"\253\260V\315\356LPl\350\352\256\252\327\357uU\267\""
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  969      A642419D 
  969      04A182A4 
  969      3CE27E94 
-ARM GAS  /tmp/cc06LyBQ.s 			page 76
+ARM GAS  /tmp/ccImxIok.s 			page 76
 
 
  969      7A47
@@ -4552,13 +4552,13 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  980      F4B2A33F 
  980      B9969630 
  981              		.text
- 982              		.section	.gnu.lto_mmcStopSequentialRead.bd22fe6993d923a,"",%progbits
+ 982              		.section	.gnu.lto_mmcStopSequentialRead.3e8de60e235c765a,"",%progbits
  983 0000 789C5D50 		.ascii	"x\234]P=K\003A\020\2357\273\027NQboc\255\340\242X\373"
  983      3D4B0341 
  983      109D37BB 
  983      174E5162 
  983      6F63ADE0 
-ARM GAS  /tmp/cc06LyBQ.s 			page 77
+ARM GAS  /tmp/ccImxIok.s 			page 77
 
 
  984 0017 2B0C6825 		.ascii	"+\014h%\311&\344\026=O\022\025\304\"\027\271\302FH\255"
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  995      F89F82F1 
  995      4CF0D632 
  995      387F3DE6 
-ARM GAS  /tmp/cc06LyBQ.s 			page 78
+ARM GAS  /tmp/ccImxIok.s 			page 78
 
 
  996 00f2 2C260A7E 		.ascii	",&\012~\002x\252_\352\274\211\222\270alR\3375\365\306"
@@ -4636,7 +4636,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  998      6F5AF24F 
  998      02
  999              		.text
- 1000              		.section	.gnu.lto_mmcStartSequentialWrite.bd22fe6993d923a,"",%progbits
+ 1000              		.section	.gnu.lto_mmcStartSequentialWrite.3e8de60e235c765a,"",%progbits
  1001 0000 789C8D93 		.ascii	"x\234\215\223AO\023Q\020\307gv\367\355kii\251\265\212"
  1001      414F1351 
  1001      10C76776 
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1009      3BC295B8 
  1009      7C0BC332 
  1009      EFAD76F7 
-ARM GAS  /tmp/cc06LyBQ.s 			page 79
+ARM GAS  /tmp/ccImxIok.s 			page 79
 
 
  1009      E0
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1021      856351FE 
  1021      ED5663C2 
  1022 017a 544885A2 		.ascii	"TH\205\242`\270(G\347^\207\332nu\264\207p\310\221+="
-ARM GAS  /tmp/cc06LyBQ.s 			page 80
+ARM GAS  /tmp/ccImxIok.s 			page 80
 
 
  1022      60B82847 
@@ -4798,13 +4798,13 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1033      BD62D1BF 
  1033      5DBEAFAE 
  1033      FAF0
-ARM GAS  /tmp/cc06LyBQ.s 			page 81
+ARM GAS  /tmp/ccImxIok.s 			page 81
 
 
  1034 0253 1FA787ED 		.ascii	"\037\247\207\355\005"
  1034      05
  1035              		.text
- 1036              		.section	.gnu.lto_mmcSequentialWrite.bd22fe6993d923a,"",%progbits
+ 1036              		.section	.gnu.lto_mmcSequentialWrite.3e8de60e235c765a,"",%progbits
  1037 0000 789C9D94 		.ascii	"x\234\235\224\317O\023A\024\307\337\233\375\325\226"
  1037      CF4F1341 
  1037      14C7DF9B 
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1048 00bc 436A10B8 		.ascii	"Cj\020\270\231\355\276(\226+\225\267\337J\263\317\361"
  1048      99EDBE28 
  1048      962B95B7 
-ARM GAS  /tmp/cc06LyBQ.s 			page 82
+ARM GAS  /tmp/ccImxIok.s 			page 82
 
 
  1048      DF4AB3CF 
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1059      FF3B7164 
  1060 019a 47E2F07F 		.ascii	"G\342\360\177\021GX\265G\352d\326\004|?V\363\207\375"
  1060      114758B5 
-ARM GAS  /tmp/cc06LyBQ.s 			page 83
+ARM GAS  /tmp/ccImxIok.s 			page 83
 
 
  1060      47EA64D6 
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1071      C5
  1072 0272 B2F0345E 		.ascii	"\262\3604^\365\307\341\241\034\347\013\215\332\007\272"
  1072      F5C7E1A1 
-ARM GAS  /tmp/cc06LyBQ.s 			page 84
+ARM GAS  /tmp/ccImxIok.s 			page 84
 
 
  1072      1CE70B8D 
@@ -5006,7 +5006,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1077 02cc 9EDF27F9 		.ascii	"\236\337'\371.g"
  1077      2E67
  1078              		.text
- 1079              		.section	.gnu.lto_mmc_write.bd22fe6993d923a,"",%progbits
+ 1079              		.section	.gnu.lto_mmc_write.3e8de60e235c765a,"",%progbits
  1080 0000 789C6D52 		.ascii	"x\234mRMk\024A\020\255\327==\323\356\216\231e\027\304"
  1080      4D6B1441 
  1080      10ADD73D 
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1086      2F5251D3 
  1086      5F1C15B1 
  1086      46286104 
-ARM GAS  /tmp/cc06LyBQ.s 			page 85
+ARM GAS  /tmp/ccImxIok.s 			page 85
 
 
  1087 007d 9ABDF7C4 		.ascii	"\232\275\367\304a3\015\357\330P\005e\244\026I:\216`"
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1098      4DC124C4 
  1098      D9CDFE
  1099 014f 64EBE43C 		.ascii	"d\353\344<\333H\241$\033Nx$\025UH\3740Z$w~\214\3429"
-ARM GAS  /tmp/cc06LyBQ.s 			page 86
+ARM GAS  /tmp/ccImxIok.s 			page 86
 
 
  1099      DB48A124 
@@ -5139,7 +5139,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1106      8CA73F37 
  1106      8F9814
  1107              		.text
- 1108              		.section	.gnu.lto_mmcStopSequentialWrite.bd22fe6993d923a,"",%progbits
+ 1108              		.section	.gnu.lto_mmcStopSequentialWrite.3e8de60e235c765a,"",%progbits
  1109 0000 789C5D50 		.ascii	"x\234]P=K\003A\020\2357\273\247Q\224\330\333X+\270("
  1109      3D4B0341 
  1109      109D37BB 
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1112      B32727E2 
  1112      C2CE1B76 
  1112      DF7BF3C1 
-ARM GAS  /tmp/cc06LyBQ.s 			page 87
+ARM GAS  /tmp/ccImxIok.s 			page 87
 
 
  1112      C4
@@ -5218,14 +5218,14 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1124      92B4AADB 
  1124      26E95813 
  1124      C77633D9 
-ARM GAS  /tmp/cc06LyBQ.s 			page 88
+ARM GAS  /tmp/ccImxIok.s 			page 88
 
 
  1124      758B
  1125 011f 96BE0186 		.ascii	"\226\276\001\206oOF"
  1125      6F4F46
  1126              		.text
- 1127              		.section	.gnu.lto_mmcErase.bd22fe6993d923a,"",%progbits
+ 1127              		.section	.gnu.lto_mmcErase.3e8de60e235c765a,"",%progbits
  1128 0000 789CA553 		.ascii	"x\234\245S\315k\023Q\020\237yo?\363\321\030B\202\212"
  1128      CD6B1351 
  1128      109F796F 
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1138      091E8289 
  1138      3E0A9BBD 
  1138      04799024 
-ARM GAS  /tmp/cc06LyBQ.s 			page 89
+ARM GAS  /tmp/ccImxIok.s 			page 89
 
 
  1138      83292E49 
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1149      71739D4F 
  1150 019a BDDB3DBD 		.ascii	"\275\333=\275\263\007\367>I\236\030\320;\333\327\233"
  1150      B307F73E 
-ARM GAS  /tmp/cc06LyBQ.s 			page 90
+ARM GAS  /tmp/ccImxIok.s 			page 90
 
 
  1150      499E18D0 
@@ -5395,10 +5395,10 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1161      85DF300D 
  1161      F4B5
  1162              		.text
- 1163              		.section	.gnu.lto_.symbol_nodes.bd22fe6993d923a,"",%progbits
+ 1163              		.section	.gnu.lto_.symbol_nodes.3e8de60e235c765a,"",%progbits
  1164 0000 789C4D92 		.ascii	"x\234M\222]SSW\024\206\327~W\222\223\004\021\"\020)"
  1164      5D535357 
-ARM GAS  /tmp/cc06LyBQ.s 			page 91
+ARM GAS  /tmp/ccImxIok.s 			page 91
 
 
  1164      1486D77E 
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1176 00df 8F41F686 		.ascii	"\217A\366\206\030}\253\"\246\3478d\320):\001\371\300"
  1176      187DAB22 
  1176      A6E73864 
-ARM GAS  /tmp/cc06LyBQ.s 			page 92
+ARM GAS  /tmp/ccImxIok.s 			page 92
 
 
  1176      D0293A01 
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1188 01be 5267C168 		.ascii	"Rg\301h\211\032\213Z\023\207\250f\032\022\223\301\300"
  1188      891A8B5A 
  1188      1387A866 
-ARM GAS  /tmp/cc06LyBQ.s 			page 93
+ARM GAS  /tmp/ccImxIok.s 			page 93
 
 
  1188      1A1293C1 
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1200 028e 3EBBED19 		.ascii	">\273\355\031\255T\215*}\227\372\020\331\036\252l4c"
  1200      AD548D2A 
  1200      7D97FA10 
-ARM GAS  /tmp/cc06LyBQ.s 			page 94
+ARM GAS  /tmp/ccImxIok.s 			page 94
 
 
  1200      D91EAA6C 
@@ -5618,7 +5618,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1208 0318 4596DE01 		.ascii	"E\226\336\001\271[\336\011"
  1208      B95BDE09 
  1209              		.text
- 1210              		.section	.gnu.lto_.refs.bd22fe6993d923a,"",%progbits
+ 1210              		.section	.gnu.lto_.refs.3e8de60e235c765a,"",%progbits
  1211 0000 789C6362 		.ascii	"x\234cb`bPg\200\000F\026\006VFA&!F1&qF)&i\016i&\015"
  1211      60625067 
  1211      80004616 
@@ -5630,7 +5630,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1212      26064665 
  1212      26150600 
  1213              		.text
- 1214              		.section	.gnu.lto_.decls.bd22fe6993d923a,"",%progbits
+ 1214              		.section	.gnu.lto_.decls.3e8de60e235c765a,"",%progbits
  1215 0000 789CBD7D 		.ascii	"x\234\275}\011\234\024\305\365\177w\317\356\314. \227"
  1215      099C14C5 
  1215      F57F77CF 
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1215      97
  1216 0011 076050D7 		.ascii	"\007`P\327h\022\223(\313\002*\306D\300\005\225\237r"
  1216      68129328 
-ARM GAS  /tmp/cc06LyBQ.s 			page 95
+ARM GAS  /tmp/ccImxIok.s 			page 95
 
 
  1216      CB022AC6 
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1227      E4432981 
  1227      12
  1228 00f1 81F21A94 		.ascii	"\201\362\032\224\001P\006Ay\035\312\233P\306B\031\017"
-ARM GAS  /tmp/cc06LyBQ.s 			page 96
+ARM GAS  /tmp/ccImxIok.s 			page 96
 
 
  1228      01500641 
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1239      6D4E9ADE 
  1239      4EAE1578 
  1239      207ED904 
-ARM GAS  /tmp/cc06LyBQ.s 			page 97
+ARM GAS  /tmp/ccImxIok.s 			page 97
 
 
  1240 01cd F63B381E 		.ascii	"\366;8\036H\033\204\030\352X\326mL\350\356\362\030\365"
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1251      8F97A38D 
  1251      DE2F4E79 
  1251      E2E30ECA 
-ARM GAS  /tmp/cc06LyBQ.s 			page 98
+ARM GAS  /tmp/ccImxIok.s 			page 98
 
 
  1251      731A
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1263      F9CCE4F2 
  1263      E8B4512E 
  1263      D2
-ARM GAS  /tmp/cc06LyBQ.s 			page 99
+ARM GAS  /tmp/ccImxIok.s 			page 99
 
 
  1264 037c F659A16D 		.ascii	"\366Y\241m\222\003\370\244\330\330\312\267\367#\324"
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1275      E0DADB05 
  1275      DB91FA
  1276 0452 24CFBE0D 		.ascii	"$\317\276\015c\253@\377\267\334wY\370\216\037\222\317"
-ARM GAS  /tmp/cc06LyBQ.s 			page 100
+ARM GAS  /tmp/ccImxIok.s 			page 100
 
 
  1276      63AB40FF 
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1287      D6EBA6E8 
  1287      F5700E
  1288 0522 594BF799 		.ascii	"YK\367\231\356\260\177\032J\016\224nB;$NY\215OblS$c"
-ARM GAS  /tmp/cc06LyBQ.s 			page 101
+ARM GAS  /tmp/ccImxIok.s 			page 101
 
 
  1288      EEB07F1A 
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1300      B10EFCE0 
  1300      59D92FD7 
  1300      4D9732E8 
-ARM GAS  /tmp/cc06LyBQ.s 			page 102
+ARM GAS  /tmp/ccImxIok.s 			page 102
 
 
  1300      419D
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1312 06d0 557D94AF 		.ascii	"U}\224\257XK\232\372\314\257\362\313\213\344\0061e\252"
  1312      584B9AFA 
  1312      CCAFF2CB 
-ARM GAS  /tmp/cc06LyBQ.s 			page 103
+ARM GAS  /tmp/ccImxIok.s 			page 103
 
 
  1312      8BE40631 
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1323      5FCB69C0 
  1324 07ab D2128FB1 		.ascii	"\322\022\217\261A\256er\001\262\250\035\343\221L\226"
  1324      41AE6572 
-ARM GAS  /tmp/cc06LyBQ.s 			page 104
+ARM GAS  /tmp/ccImxIok.s 			page 104
 
 
  1324      01B2A81D 
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1336      96614D6C 
  1337 0884 1362690E 		.ascii	"\023bi\0169;\344\232\230\011g\311Z\352\234\211\245\330"
  1337      393BE49A 
-ARM GAS  /tmp/cc06LyBQ.s 			page 105
+ARM GAS  /tmp/ccImxIok.s 			page 105
 
 
  1337      980967C9 
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1348      83
  1349 095a A868439C 		.ascii	"\250hC\234\210v\220\357f\037P>\253\222\035\223\252w"
  1349      887690EF 
-ARM GAS  /tmp/cc06LyBQ.s 			page 106
+ARM GAS  /tmp/ccImxIok.s 			page 106
 
 
  1349      661F503E 
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1360      FC5411A6 
  1360      9D0B87
  1361 0a3d D6236C13 		.ascii	"\326#l\023<\361\304s\2637~\342\271\307k:\361\374\306"
-ARM GAS  /tmp/cc06LyBQ.s 			page 107
+ARM GAS  /tmp/ccImxIok.s 			page 107
 
 
  1361      3CF1C473 
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1372      D9AE5843 
  1372      5CA4EB2C 
  1372      89D788A1 
-ARM GAS  /tmp/cc06LyBQ.s 			page 108
+ARM GAS  /tmp/ccImxIok.s 			page 108
 
 
  1372      2F5349B6 
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1384 0be7 A4C70E6A 		.ascii	"\244\307\016jj\214\367\"\023_\254H\357\323\006\277\217"
  1384      6A8CF722 
  1384      135FAC48 
-ARM GAS  /tmp/cc06LyBQ.s 			page 109
+ARM GAS  /tmp/ccImxIok.s 			page 109
 
 
  1384      EFD306BF 
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1396      0B48EC90 
  1396      6B62628F 
  1396      453B7E49 
-ARM GAS  /tmp/cc06LyBQ.s 			page 110
+ARM GAS  /tmp/ccImxIok.s 			page 110
 
 
  1396      EDF82F6A 
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1407      F379B4F9 
  1408 0d99 B4F9E962 		.ascii	"\264\371\351b\363;\027\035}Dk~\272\243\346\017l\036"
  1408      F33B171D 
-ARM GAS  /tmp/cc06LyBQ.s 			page 111
+ARM GAS  /tmp/ccImxIok.s 			page 111
 
 
  1408      7D446B7E 
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1419      CE16F0C4 
  1419      D43A0E88 
  1419      3D61CDD9 
-ARM GAS  /tmp/cc06LyBQ.s 			page 112
+ARM GAS  /tmp/ccImxIok.s 			page 112
 
 
  1419      673CB1
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1431      98DDBBB2 
  1431      CE29C017 
  1431      77DFB1
-ARM GAS  /tmp/cc06LyBQ.s 			page 113
+ARM GAS  /tmp/ccImxIok.s 			page 113
 
 
  1432 0f53 788EAA0E 		.ascii	"x\216\252\016\362\272\221c\275.\307q*\307\246\237A\216"
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1445 1022 E4060783 		.ascii	"\344\006\007\203H\206\235\265.7s\2708\203k~k\326\014"
  1445      48869DB5 
  1445      2E3773B8 
-ARM GAS  /tmp/cc06LyBQ.s 			page 114
+ARM GAS  /tmp/ccImxIok.s 			page 114
 
 
  1445      38836B7E 
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1457 10f9 E1214045 		.ascii	"\341!@E\232D\333\235)\272K\315\331-\303\344\001\324"
  1457      9A44DB9D 
  1457      29BA4BCD 
-ARM GAS  /tmp/cc06LyBQ.s 			page 115
+ARM GAS  /tmp/ccImxIok.s 			page 115
 
 
  1457      D92DC3E4 
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1468      89
  1469 11cb 1C401F06 		.ascii	"\034@\037\006V^\331\335\364c\032\253_\247\356\277\266"
  1469      565ED9DD 
-ARM GAS  /tmp/cc06LyBQ.s 			page 116
+ARM GAS  /tmp/ccImxIok.s 			page 116
 
 
  1469      F4631AAB 
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1480      4507A9D5 
  1480      343A7D49 
  1480      B76BE876 
-ARM GAS  /tmp/cc06LyBQ.s 			page 117
+ARM GAS  /tmp/ccImxIok.s 			page 117
 
 
  1480      1DDD6EA0 
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1492      A60F2B0E 
  1492      CEF01CEC 
  1492      72CD4106 
-ARM GAS  /tmp/cc06LyBQ.s 			page 118
+ARM GAS  /tmp/ccImxIok.s 			page 118
 
 
  1492      CF
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1504 1450 6CBE1362 		.ascii	"l\276\023bf\235\233S\253\246\320\367\251B?\320\036\010"
  1504      669D9B53 
  1504      ABA6D0F7 
-ARM GAS  /tmp/cc06LyBQ.s 			page 119
+ARM GAS  /tmp/ccImxIok.s 			page 119
 
 
  1504      A9423FD0 
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1515      5B59D51C 
  1515      9BCAB9
  1516 1533 9C41B7DF 		.ascii	"\234A\267\337\233\352v\356\320!\243e\255\232\"\375@"
-ARM GAS  /tmp/cc06LyBQ.s 			page 120
+ARM GAS  /tmp/ccImxIok.s 			page 120
 
 
  1516      9BEA76EE 
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1527      AF7695B4 
  1527      A6E519B3 
  1528 160b C56A426B 		.ascii	"\305jBk\272\024T\321\252\272T%n\245+\272\\T\364lSE\357"
-ARM GAS  /tmp/cc06LyBQ.s 			page 121
+ARM GAS  /tmp/ccImxIok.s 			page 121
 
 
  1528      BA1454D1 
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1539      41B747CC 
  1539      757B394F 
  1540 16f5 DD5A669E 		.ascii	"\335Zf\236\366\342\3561u\315\375;\222I\024\252\034$"
-ARM GAS  /tmp/cc06LyBQ.s 			page 122
+ARM GAS  /tmp/ccImxIok.s 			page 122
 
 
  1540      F6E2EE31 
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1551      D89B94BC 
  1551      5C353379 
  1551      87
-ARM GAS  /tmp/cc06LyBQ.s 			page 123
+ARM GAS  /tmp/ccImxIok.s 			page 123
 
 
  1552 17cd 99CA3B   		.ascii	"\231\312;"
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1563      B31D399B 
  1563      AABE
  1564 18a1 A95267D3 		.ascii	"\251Rg\323e\233-\3126\327T\266\317\367\270\226m\201"
-ARM GAS  /tmp/cc06LyBQ.s 			page 124
+ARM GAS  /tmp/ccImxIok.s 			page 124
 
 
  1564      659B2DCA 
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1575      BC420549 
  1575      D0225B80 
  1575      0665D005 
-ARM GAS  /tmp/cc06LyBQ.s 			page 125
+ARM GAS  /tmp/ccImxIok.s 			page 125
 
 
  1575      68D468A5 
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1587      F5A0F9A2 
  1587      8B5957E3 
  1587      5C4CBD1C 
-ARM GAS  /tmp/cc06LyBQ.s 			page 126
+ARM GAS  /tmp/ccImxIok.s 			page 126
 
 
  1587      1B
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1599      C1AFABD7 
  1599      6B5E9305 
  1599      D1ECEE
-ARM GAS  /tmp/cc06LyBQ.s 			page 127
+ARM GAS  /tmp/ccImxIok.s 			page 127
 
 
  1600 1b3e 514F1365 		.ascii	"QO\023e\253\214\277\3018\243\2119+3LY\331vv\327\223"
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1611      B79F71D7 
  1611      81717D6E 
  1611      FFE3E633 
-ARM GAS  /tmp/cc06LyBQ.s 			page 128
+ARM GAS  /tmp/ccImxIok.s 			page 128
 
 
  1611      5FECA5
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1623      DC8D08
  1624 1ceb FBD7905F 		.ascii	"\373\327\220_!\302\242\300\257\021IA\3447\210\334\200"
  1624      21C2A2C0 
-ARM GAS  /tmp/cc06LyBQ.s 			page 129
+ARM GAS  /tmp/ccImxIok.s 			page 129
 
 
  1624      AF114941 
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1635      0B22EC9D 
  1635      475D11F9 
  1635      5F44FE1B 
-ARM GAS  /tmp/cc06LyBQ.s 			page 130
+ARM GAS  /tmp/ccImxIok.s 			page 130
 
 
  1636 1dc8 08223988 		.ascii	"\010\"9\210\024#\322\015\221\236\210tG\3449D\236F\244"
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1646      B2
  1647 1ea1 10790D91 		.ascii	"\020y\015\221\326\210\250,\335a\351\305\000\006\261"
  1647      D688A82C 
-ARM GAS  /tmp/cc06LyBQ.s 			page 131
+ARM GAS  /tmp/ccImxIok.s 			page 131
 
 
  1647      DD61E9C5 
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1658      D90C
  1659 1f85 62F9DC1C 		.ascii	"b\371\334\034\006\261d\355\023\006\261\214n.\203X:2"
  1659      06B164ED 
-ARM GAS  /tmp/cc06LyBQ.s 			page 132
+ARM GAS  /tmp/ccImxIok.s 			page 132
 
 
  1659      1306B18C 
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1670      EB763388 
  1671 205e 7E7B18C4 		.ascii	"~{\030\304\022\273\275\014b\331\337>\006\261\324n?\203"
  1671      12BBBD0C 
-ARM GAS  /tmp/cc06LyBQ.s 			page 133
+ARM GAS  /tmp/ccImxIok.s 			page 133
 
 
  1671      62D9DF3E 
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1682      7155CBA3 
  1682      55D5FE74 
  1683 213f 15E98A3A 		.ascii	"\025\351\212:\\\215^^(\376\301\014\271\215\244S\214"
-ARM GAS  /tmp/cc06LyBQ.s 			page 134
+ARM GAS  /tmp/ccImxIok.s 			page 134
 
 
  1683      5C8D5E5E 
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1694      CE57BA35 
  1694      627F9E2E 
  1694      B6F8958D 
-ARM GAS  /tmp/cc06LyBQ.s 			page 135
+ARM GAS  /tmp/ccImxIok.s 			page 135
 
 
  1694      889B
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1705      6E131FA3 
  1706 22f0 DA6FD927 		.ascii	"\332o\331'\370\207\205\306h\277\242\236A\333\333'\266"
  1706      F88785C6 
-ARM GAS  /tmp/cc06LyBQ.s 			page 136
+ARM GAS  /tmp/ccImxIok.s 			page 136
 
 
  1706      68BFA29E 
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1718 23c2 5065A3C6 		.ascii	"Pe\243\306\253\226j<lS\353\232e\255S6\265~\264\254E"
  1718      AB966A3C 
  1718      6C53EB9A 
-ARM GAS  /tmp/cc06LyBQ.s 			page 137
+ARM GAS  /tmp/ccImxIok.s 			page 137
 
 
  1718      65AD5336 
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1730      8EF4
  1731 249d 2F098681 		.ascii	"/\011\206\201L:9\316/\004JwS\036\214ms\255\346\027E"
  1731      4C3A39CE 
-ARM GAS  /tmp/cc06LyBQ.s 			page 138
+ARM GAS  /tmp/ccImxIok.s 			page 138
 
 
  1731      2F044A77 
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1742      C3B9F945 
  1742      E1602812 
  1742      CC
-ARM GAS  /tmp/cc06LyBQ.s 			page 139
+ARM GAS  /tmp/ccImxIok.s 			page 139
 
 
  1743 257c AB03C725 		.ascii	"\253\003\307%\241\342H0\000_|\201\342\242\"8\252\225"
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1754      842385E0 
  1754      F3BD4AF2 
  1754      8B7323A9 
-ARM GAS  /tmp/cc06LyBQ.s 			page 140
+ARM GAS  /tmp/ccImxIok.s 			page 140
 
 
  1755 2656 9DBAB4EF 		.ascii	"\235\272\264\357\220\343\355\322\375\271\256\035r|]"
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1766 2721 D2EF4FC9 		.ascii	"\322\357O\311Q\311\355\373`!\211\202\241`/\010}\304"
  1766      51C9EDFB 
  1766      60218982 
-ARM GAS  /tmp/cc06LyBQ.s 			page 141
+ARM GAS  /tmp/ccImxIok.s 			page 141
 
 
  1766      A1602F08 
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1778      DE27D807 
  1778      B8AA
  1779 2804 CF5D49A1 		.ascii	"\317]I\241Z%\271\320,=L\245\207\000\004K\240\373A\345"
-ARM GAS  /tmp/cc06LyBQ.s 			page 142
+ARM GAS  /tmp/ccImxIok.s 			page 142
 
 
  1779      5A25B9D0 
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1790      C96A97E3 
  1790      790C9809 
  1790      D30B
-ARM GAS  /tmp/cc06LyBQ.s 			page 143
+ARM GAS  /tmp/ccImxIok.s 			page 143
 
 
  1791 28df 53F27B06 		.ascii	"S\362{\006B\336\374p\357\374\236\221\364p\260\240g~"
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1802      4A8B9637 
  1802      C1E9F66C 
  1802      986E56E2 
-ARM GAS  /tmp/cc06LyBQ.s 			page 144
+ARM GAS  /tmp/ccImxIok.s 			page 144
 
 
  1802      0F45
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1814 2a7f 01DA0D88 		.ascii	"\001\332\015\210\326\206\375\323@\244\000\256M\247\030"
  1814      D686FDD3 
  1814      40A400AE 
-ARM GAS  /tmp/cc06LyBQ.s 			page 145
+ARM GAS  /tmp/ccImxIok.s 			page 145
 
 
  1814      4DA718
@@ -8678,7 +8678,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1822 2b0e 91F7FF00 		.ascii	"\221\367\377\000e\261\346z"
  1822      65B1E67A 
  1823              		.text
- 1824              		.section	.gnu.lto_.symtab.bd22fe6993d923a,"",%progbits
+ 1824              		.section	.gnu.lto_.symtab.3e8de60e235c765a,"",%progbits
  1825 0000 6D6D6347 		.ascii	"mmcGetInfo\000\000\000\000\000\000\000\000\000\000\000"
  1825      6574496E 
  1825      666F0000 
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1828      00000000 
  1828      00000000 
  1828      0000EA
-ARM GAS  /tmp/cc06LyBQ.s 			page 146
+ARM GAS  /tmp/ccImxIok.s 			page 146
 
 
  1829 004e 0200006D 		.ascii	"\002\000\000mmcSync\000\000\000\000\000\000\000\000"
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1840      6D6D6353 
  1840      74617274 
  1840      53657175 
-ARM GAS  /tmp/cc06LyBQ.s 			page 147
+ARM GAS  /tmp/ccImxIok.s 			page 147
 
 
  1841 014d 65000000 		.ascii	"e\000\000\000\000\000\000\000\000\000\000\000\000\\"
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1852      00008903 
  1852      00007370 
  1852      6953656E 
-ARM GAS  /tmp/cc06LyBQ.s 			page 148
+ARM GAS  /tmp/ccImxIok.s 			page 148
 
 
  1852      6400
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1866 0033 2D643136 		.ascii	"-d16' '-mno-thumb-interwork' '-mthumb' '-O2' '-fomi"
  1866      2720272D 
  1866      6D6E6F2D 
-ARM GAS  /tmp/cc06LyBQ.s 			page 149
+ARM GAS  /tmp/ccImxIok.s 			page 149
 
 
  1866      7468756D 
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1906 0004 83B0     		sub	sp, sp, #12
  1907 0006 0924     		movs	r4, #9
  1908              	.L8:
-ARM GAS  /tmp/cc06LyBQ.s 			page 150
+ARM GAS  /tmp/ccImxIok.s 			page 150
 
 
  1909 0008 2B68     		ldr	r3, [r5]
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  1961              	.L12:
  1962 003c 03B0     		add	sp, sp, #12
  1963              		@ sp needed
-ARM GAS  /tmp/cc06LyBQ.s 			page 151
+ARM GAS  /tmp/ccImxIok.s 			page 151
 
 
  1964 003e 30BD     		pop	{r4, r5, pc}
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2018              		.size	send_hdr, .-send_hdr
  2019 0064 AFF30080 		.section	.text.send_command_R3,"ax",%progbits
  2019      AFF30080 
-ARM GAS  /tmp/cc06LyBQ.s 			page 152
+ARM GAS  /tmp/ccImxIok.s 			page 152
 
 
  2019      AFF30080 
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2073 0016 FFF7FEFF 		bl	send_hdr
  2074 001a 04F12C00 		add	r0, r4, #44
  2075 001e FFF7FEFF 		bl	recvr1.isra.0
-ARM GAS  /tmp/cc06LyBQ.s 			page 153
+ARM GAS  /tmp/ccImxIok.s 			page 153
 
 
  2076 0022 E36A     		ldr	r3, [r4, #44]
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2130              	.L40:
  2131 005a 5878     		ldrb	r0, [r3, #1]	@ zero_extendqisi2
  2132 005c 1F78     		ldrb	r7, [r3]	@ zero_extendqisi2
-ARM GAS  /tmp/cc06LyBQ.s 			page 154
+ARM GAS  /tmp/ccImxIok.s 			page 154
 
 
  2133 005e DE78     		ldrb	r6, [r3, #3]	@ zero_extendqisi2
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2185 0010 82B0     		sub	sp, sp, #8
  2186 0012 93E80300 		ldmia	r3, {r0, r1}
  2187 0016 FFF7FEFF 		bl	spiStart
-ARM GAS  /tmp/cc06LyBQ.s 			page 155
+ARM GAS  /tmp/ccImxIok.s 			page 155
 
 
  2188 001a EB6A     		ldr	r3, [r5, #44]
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2242 0086 254A     		ldr	r2, .L79
  2243 0088 01AB     		add	r3, sp, #4
  2244 008a FFF7FEFF 		bl	send_command_R3
-ARM GAS  /tmp/cc06LyBQ.s 			page 156
+ARM GAS  /tmp/ccImxIok.s 			page 156
 
 
  2245 008e 0028     		cmp	r0, #0
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2299 010c FFF7FEFF 		bl	read_CxD
  2300 0110 0028     		cmp	r0, #0
  2301 0112 95D1     		bne	.L48
-ARM GAS  /tmp/cc06LyBQ.s 			page 157
+ARM GAS  /tmp/ccImxIok.s 			page 157
 
 
  2302 0114 0523     		movs	r3, #5
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2354              		@ frame_needed = 0, uses_anonymous_args = 0
  2355 0000 38B5     		push	{r3, r4, r5, lr}
  2356 0002 0446     		mov	r4, r0
-ARM GAS  /tmp/cc06LyBQ.s 			page 158
+ARM GAS  /tmp/ccImxIok.s 			page 158
 
 
  2357 0004 2023     		movs	r3, #32
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2410 000a 0120     		movs	r0, #1
  2411 000c 70BD     		pop	{r4, r5, r6, pc}
  2412              	.L92:
-ARM GAS  /tmp/cc06LyBQ.s 			page 159
+ARM GAS  /tmp/ccImxIok.s 			page 159
 
 
  2413 000e 0646     		mov	r6, r0
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2467              		@ link register save eliminated.
  2468 0000 7047     		bx	lr
  2469              		.size	mmcInit, .-mmcInit
-ARM GAS  /tmp/cc06LyBQ.s 			page 160
+ARM GAS  /tmp/ccImxIok.s 			page 160
 
 
  2470 0002 00BFAFF3 		.section	.text.mmcObjectInit,"ax",%progbits
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2519              		@ frame_needed = 0, uses_anonymous_args = 0
  2520 0000 10B5     		push	{r4, lr}
  2521 0002 C36A     		ldr	r3, [r0, #44]
-ARM GAS  /tmp/cc06LyBQ.s 			page 161
+ARM GAS  /tmp/ccImxIok.s 			page 161
 
 
  2522 0004 0446     		mov	r4, r0
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2573 004c FFF7FEFF 		bl	send_hdr
  2574 0050 ECE7     		b	.L104
  2575              		.size	mmcStartSequentialRead, .-mmcStartSequentialRead
-ARM GAS  /tmp/cc06LyBQ.s 			page 162
+ARM GAS  /tmp/ccImxIok.s 			page 162
 
 
  2576 0052 00BFAFF3 		.section	.text.mmcSequentialRead,"ax",%progbits
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2627 0058 0523     		movs	r3, #5
  2628 005a 3371     		strb	r3, [r6, #4]
  2629 005c 0120     		movs	r0, #1
-ARM GAS  /tmp/cc06LyBQ.s 			page 163
+ARM GAS  /tmp/ccImxIok.s 			page 163
 
 
  2630 005e 70BD     		pop	{r4, r5, r6, pc}
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2683 0004 01D0     		beq	.L131
  2684 0006 0120     		movs	r0, #1
  2685 0008 7047     		bx	lr
-ARM GAS  /tmp/cc06LyBQ.s 			page 164
+ARM GAS  /tmp/ccImxIok.s 			page 164
 
 
  2686              	.L131:
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2737              		.align	2
  2738              		.p2align 4,,15
  2739              		.global	mmcSequentialWrite
-ARM GAS  /tmp/cc06LyBQ.s 			page 165
+ARM GAS  /tmp/ccImxIok.s 			page 165
 
 
  2740              		.thumb
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2794              	.L142:
  2795 006a 04F12C00 		add	r0, r4, #44
  2796 006e FFF7FEFF 		bl	wait.isra.1
-ARM GAS  /tmp/cc06LyBQ.s 			page 166
+ARM GAS  /tmp/ccImxIok.s 			page 166
 
 
  2797 0072 0020     		movs	r0, #0
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2851 004c EDE7     		b	.L147
  2852              	.L161:
  2853 004e 00BF     		.align	2
-ARM GAS  /tmp/cc06LyBQ.s 			page 167
+ARM GAS  /tmp/ccImxIok.s 			page 167
 
 
  2854              	.L160:
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2906 000a 2071     		strb	r0, [r4, #4]
  2907 000c 1546     		mov	r5, r2
  2908 000e 0BB9     		cbnz	r3, .L169
-ARM GAS  /tmp/cc06LyBQ.s 			page 168
+ARM GAS  /tmp/ccImxIok.s 			page 168
 
 
  2909 0010 4902     		lsls	r1, r1, #9
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  2963 0010 19       		.byte	25
  2964 0011 10       		.byte	16
  2965 0012 0B       		.byte	11
-ARM GAS  /tmp/cc06LyBQ.s 			page 169
+ARM GAS  /tmp/ccImxIok.s 			page 169
 
 
  2966 0013 02       		.byte	2
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  3020 0049 25       		.byte	37
  3021 004a 3E       		.byte	62
  3022 004b 37       		.byte	55
-ARM GAS  /tmp/cc06LyBQ.s 			page 170
+ARM GAS  /tmp/ccImxIok.s 			page 170
 
 
  3023 004c 08       		.byte	8
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  3077 0082 53       		.byte	83
  3078 0083 5A       		.byte	90
  3079 0084 65       		.byte	101
-ARM GAS  /tmp/cc06LyBQ.s 			page 171
+ARM GAS  /tmp/ccImxIok.s 			page 171
 
 
  3080 0085 6C       		.byte	108
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  3134 00bb 39       		.byte	57
  3135 00bc 06       		.byte	6
  3136 00bd 0F       		.byte	15
-ARM GAS  /tmp/cc06LyBQ.s 			page 172
+ARM GAS  /tmp/ccImxIok.s 			page 172
 
 
  3137 00be 14       		.byte	20
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  3191 00f4 2A       		.byte	42
  3192 00f5 23       		.byte	35
  3193 00f6 38       		.byte	56
-ARM GAS  /tmp/cc06LyBQ.s 			page 173
+ARM GAS  /tmp/ccImxIok.s 			page 173
 
 
  3194 00f7 31       		.byte	49
@@ -10375,86 +10375,86 @@ ARM GAS  /tmp/cc06LyBQ.s 			page 1
  3245 0001 FF       		.byte	-1
  3246              		.comm	__gnu_lto_v1,1,1
  3247 0002 0000     		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cc06LyBQ.s 			page 174
+ARM GAS  /tmp/ccImxIok.s 			page 174
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 mmc_spi.c
-     /tmp/cc06LyBQ.s:1872   .text.mmcGetInfo:0000000000000000 $t
-     /tmp/cc06LyBQ.s:1878   .text.mmcGetInfo:0000000000000000 mmcGetInfo
-     /tmp/cc06LyBQ.s:1896   .text.recvr1.isra.0:0000000000000000 $t
-     /tmp/cc06LyBQ.s:1901   .text.recvr1.isra.0:0000000000000000 recvr1.isra.0
-     /tmp/cc06LyBQ.s:1925   .text.wait.isra.1:0000000000000000 $t
-     /tmp/cc06LyBQ.s:1930   .text.wait.isra.1:0000000000000000 wait.isra.1
-     /tmp/cc06LyBQ.s:1967   .text.send_hdr:0000000000000000 $t
-     /tmp/cc06LyBQ.s:1972   .text.send_hdr:0000000000000000 send_hdr
-     /tmp/cc06LyBQ.s:2017   .text.send_hdr:0000000000000060 $d
-     /tmp/cc06LyBQ.s:2020   .text.send_command_R3:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2025   .text.send_command_R3:0000000000000000 send_command_R3
-     /tmp/cc06LyBQ.s:2055   .text.send_command_R1:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2060   .text.send_command_R1:0000000000000000 send_command_R1
-     /tmp/cc06LyBQ.s:2084   .text.read_CxD:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2089   .text.read_CxD:0000000000000000 read_CxD
-     /tmp/cc06LyBQ.s:2169   .text.mmcConnect:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2175   .text.mmcConnect:0000000000000000 mmcConnect
-     /tmp/cc06LyBQ.s:2308   .text.mmcConnect:000000000000011c $d
-     /tmp/cc06LyBQ.s:2311   .text.sync.isra.2:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2316   .text.sync.isra.2:0000000000000000 sync.isra.2
-     /tmp/cc06LyBQ.s:2346   .text.mmcDisconnect:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2352   .text.mmcDisconnect:0000000000000000 mmcDisconnect
-     /tmp/cc06LyBQ.s:2396   .text.mmcSync:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2402   .text.mmcSync:0000000000000000 mmcSync
-     /tmp/cc06LyBQ.s:2427   .text.mmcStopSequentialRead.part.7:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2432   .text.mmcStopSequentialRead.part.7:0000000000000000 mmcStopSequentialRead.part.7
-     /tmp/cc06LyBQ.s:2455   .text.mmcStopSequentialRead.part.7:000000000000002c $d
-     /tmp/cc06LyBQ.s:2458   .text.mmcInit:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2464   .text.mmcInit:0000000000000000 mmcInit
-     /tmp/cc06LyBQ.s:2471   .text.mmcObjectInit:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2477   .text.mmcObjectInit:0000000000000000 mmcObjectInit
-     /tmp/cc06LyBQ.s:2492   .text.mmcObjectInit:0000000000000014 $d
-     /tmp/cc06LyBQ.s:2495   .text.mmcStart:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2501   .text.mmcStart:0000000000000000 mmcStart
-     /tmp/cc06LyBQ.s:2511   .text.mmcStop:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2517   .text.mmcStop:0000000000000000 mmcStop
-     /tmp/cc06LyBQ.s:2530   .text.mmcStartSequentialRead:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2536   .text.mmcStartSequentialRead:0000000000000000 mmcStartSequentialRead
-     /tmp/cc06LyBQ.s:2577   .text.mmcSequentialRead:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2583   .text.mmcSequentialRead:0000000000000000 mmcSequentialRead
-     /tmp/cc06LyBQ.s:2633   .text.mmc_read:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2638   .text.mmc_read:0000000000000000 mmc_read
-     /tmp/cc06LyBQ.s:2671   .text.mmcStopSequentialRead:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2677   .text.mmcStopSequentialRead:0000000000000000 mmcStopSequentialRead
-     /tmp/cc06LyBQ.s:2690   .text.mmcStartSequentialWrite:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2696   .text.mmcStartSequentialWrite:0000000000000000 mmcStartSequentialWrite
-     /tmp/cc06LyBQ.s:2737   .text.mmcSequentialWrite:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2743   .text.mmcSequentialWrite:0000000000000000 mmcSequentialWrite
-     /tmp/cc06LyBQ.s:2802   .text.mmcSequentialWrite:0000000000000078 $d
-     /tmp/cc06LyBQ.s:2805   .text.mmc_write:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2810   .text.mmc_write:0000000000000000 mmc_write
-     /tmp/cc06LyBQ.s:2855   .text.mmc_write:0000000000000050 $d
-     /tmp/cc06LyBQ.s:2858   .text.mmcStopSequentialWrite:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2864   .text.mmcStopSequentialWrite:0000000000000000 mmcStopSequentialWrite
-     /tmp/cc06LyBQ.s:2890   .text.mmcStopSequentialWrite:000000000000002c $d
-ARM GAS  /tmp/cc06LyBQ.s 			page 175
+     /tmp/ccImxIok.s:1872   .text.mmcGetInfo:0000000000000000 $t
+     /tmp/ccImxIok.s:1878   .text.mmcGetInfo:0000000000000000 mmcGetInfo
+     /tmp/ccImxIok.s:1896   .text.recvr1.isra.0:0000000000000000 $t
+     /tmp/ccImxIok.s:1901   .text.recvr1.isra.0:0000000000000000 recvr1.isra.0
+     /tmp/ccImxIok.s:1925   .text.wait.isra.1:0000000000000000 $t
+     /tmp/ccImxIok.s:1930   .text.wait.isra.1:0000000000000000 wait.isra.1
+     /tmp/ccImxIok.s:1967   .text.send_hdr:0000000000000000 $t
+     /tmp/ccImxIok.s:1972   .text.send_hdr:0000000000000000 send_hdr
+     /tmp/ccImxIok.s:2017   .text.send_hdr:0000000000000060 $d
+     /tmp/ccImxIok.s:2020   .text.send_command_R3:0000000000000000 $t
+     /tmp/ccImxIok.s:2025   .text.send_command_R3:0000000000000000 send_command_R3
+     /tmp/ccImxIok.s:2055   .text.send_command_R1:0000000000000000 $t
+     /tmp/ccImxIok.s:2060   .text.send_command_R1:0000000000000000 send_command_R1
+     /tmp/ccImxIok.s:2084   .text.read_CxD:0000000000000000 $t
+     /tmp/ccImxIok.s:2089   .text.read_CxD:0000000000000000 read_CxD
+     /tmp/ccImxIok.s:2169   .text.mmcConnect:0000000000000000 $t
+     /tmp/ccImxIok.s:2175   .text.mmcConnect:0000000000000000 mmcConnect
+     /tmp/ccImxIok.s:2308   .text.mmcConnect:000000000000011c $d
+     /tmp/ccImxIok.s:2311   .text.sync.isra.2:0000000000000000 $t
+     /tmp/ccImxIok.s:2316   .text.sync.isra.2:0000000000000000 sync.isra.2
+     /tmp/ccImxIok.s:2346   .text.mmcDisconnect:0000000000000000 $t
+     /tmp/ccImxIok.s:2352   .text.mmcDisconnect:0000000000000000 mmcDisconnect
+     /tmp/ccImxIok.s:2396   .text.mmcSync:0000000000000000 $t
+     /tmp/ccImxIok.s:2402   .text.mmcSync:0000000000000000 mmcSync
+     /tmp/ccImxIok.s:2427   .text.mmcStopSequentialRead.part.7:0000000000000000 $t
+     /tmp/ccImxIok.s:2432   .text.mmcStopSequentialRead.part.7:0000000000000000 mmcStopSequentialRead.part.7
+     /tmp/ccImxIok.s:2455   .text.mmcStopSequentialRead.part.7:000000000000002c $d
+     /tmp/ccImxIok.s:2458   .text.mmcInit:0000000000000000 $t
+     /tmp/ccImxIok.s:2464   .text.mmcInit:0000000000000000 mmcInit
+     /tmp/ccImxIok.s:2471   .text.mmcObjectInit:0000000000000000 $t
+     /tmp/ccImxIok.s:2477   .text.mmcObjectInit:0000000000000000 mmcObjectInit
+     /tmp/ccImxIok.s:2492   .text.mmcObjectInit:0000000000000014 $d
+     /tmp/ccImxIok.s:2495   .text.mmcStart:0000000000000000 $t
+     /tmp/ccImxIok.s:2501   .text.mmcStart:0000000000000000 mmcStart
+     /tmp/ccImxIok.s:2511   .text.mmcStop:0000000000000000 $t
+     /tmp/ccImxIok.s:2517   .text.mmcStop:0000000000000000 mmcStop
+     /tmp/ccImxIok.s:2530   .text.mmcStartSequentialRead:0000000000000000 $t
+     /tmp/ccImxIok.s:2536   .text.mmcStartSequentialRead:0000000000000000 mmcStartSequentialRead
+     /tmp/ccImxIok.s:2577   .text.mmcSequentialRead:0000000000000000 $t
+     /tmp/ccImxIok.s:2583   .text.mmcSequentialRead:0000000000000000 mmcSequentialRead
+     /tmp/ccImxIok.s:2633   .text.mmc_read:0000000000000000 $t
+     /tmp/ccImxIok.s:2638   .text.mmc_read:0000000000000000 mmc_read
+     /tmp/ccImxIok.s:2671   .text.mmcStopSequentialRead:0000000000000000 $t
+     /tmp/ccImxIok.s:2677   .text.mmcStopSequentialRead:0000000000000000 mmcStopSequentialRead
+     /tmp/ccImxIok.s:2690   .text.mmcStartSequentialWrite:0000000000000000 $t
+     /tmp/ccImxIok.s:2696   .text.mmcStartSequentialWrite:0000000000000000 mmcStartSequentialWrite
+     /tmp/ccImxIok.s:2737   .text.mmcSequentialWrite:0000000000000000 $t
+     /tmp/ccImxIok.s:2743   .text.mmcSequentialWrite:0000000000000000 mmcSequentialWrite
+     /tmp/ccImxIok.s:2802   .text.mmcSequentialWrite:0000000000000078 $d
+     /tmp/ccImxIok.s:2805   .text.mmc_write:0000000000000000 $t
+     /tmp/ccImxIok.s:2810   .text.mmc_write:0000000000000000 mmc_write
+     /tmp/ccImxIok.s:2855   .text.mmc_write:0000000000000050 $d
+     /tmp/ccImxIok.s:2858   .text.mmcStopSequentialWrite:0000000000000000 $t
+     /tmp/ccImxIok.s:2864   .text.mmcStopSequentialWrite:0000000000000000 mmcStopSequentialWrite
+     /tmp/ccImxIok.s:2890   .text.mmcStopSequentialWrite:000000000000002c $d
+ARM GAS  /tmp/ccImxIok.s 			page 175
 
 
-     /tmp/cc06LyBQ.s:2893   .text.mmcErase:0000000000000000 $t
-     /tmp/cc06LyBQ.s:2899   .text.mmcErase:0000000000000000 mmcErase
-     /tmp/cc06LyBQ.s:2942   .rodata.crc7_lookup_table:0000000000000000 $d
-     /tmp/cc06LyBQ.s:2946   .rodata.crc7_lookup_table:0000000000000000 crc7_lookup_table
-     /tmp/cc06LyBQ.s:3204   .rodata.start.7634:0000000000000000 $d
-     /tmp/cc06LyBQ.s:3208   .rodata.start.7634:0000000000000000 start.7634
-     /tmp/cc06LyBQ.s:3212   .rodata.mmc_vmt:0000000000000000 $d
-     /tmp/cc06LyBQ.s:3216   .rodata.mmc_vmt:0000000000000000 mmc_vmt
-     /tmp/cc06LyBQ.s:3226   .rodata.stopcmd.7623:0000000000000000 $d
-     /tmp/cc06LyBQ.s:3230   .rodata.stopcmd.7623:0000000000000000 stopcmd.7623
-     /tmp/cc06LyBQ.s:3239   .rodata.stop.7640:0000000000000000 $d
-     /tmp/cc06LyBQ.s:3243   .rodata.stop.7640:0000000000000000 stop.7640
+     /tmp/ccImxIok.s:2893   .text.mmcErase:0000000000000000 $t
+     /tmp/ccImxIok.s:2899   .text.mmcErase:0000000000000000 mmcErase
+     /tmp/ccImxIok.s:2942   .rodata.crc7_lookup_table:0000000000000000 $d
+     /tmp/ccImxIok.s:2946   .rodata.crc7_lookup_table:0000000000000000 crc7_lookup_table
+     /tmp/ccImxIok.s:3204   .rodata.start.7634:0000000000000000 $d
+     /tmp/ccImxIok.s:3208   .rodata.start.7634:0000000000000000 start.7634
+     /tmp/ccImxIok.s:3212   .rodata.mmc_vmt:0000000000000000 $d
+     /tmp/ccImxIok.s:3216   .rodata.mmc_vmt:0000000000000000 mmc_vmt
+     /tmp/ccImxIok.s:3226   .rodata.stopcmd.7623:0000000000000000 $d
+     /tmp/ccImxIok.s:3230   .rodata.stopcmd.7623:0000000000000000 stopcmd.7623
+     /tmp/ccImxIok.s:3239   .rodata.stop.7640:0000000000000000 $d
+     /tmp/ccImxIok.s:3243   .rodata.stop.7640:0000000000000000 stop.7640
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/cc06LyBQ.s:2019   .text.send_hdr:0000000000000064 $t
-     /tmp/cc06LyBQ.s:2494   .text.mmcObjectInit:0000000000000018 $t
-     /tmp/cc06LyBQ.s:2804   .text.mmcSequentialWrite:000000000000007c $t
-     /tmp/cc06LyBQ.s:2857   .text.mmc_write:0000000000000054 $t
+     /tmp/ccImxIok.s:2019   .text.send_hdr:0000000000000064 $t
+     /tmp/ccImxIok.s:2494   .text.mmcObjectInit:0000000000000018 $t
+     /tmp/ccImxIok.s:2804   .text.mmcSequentialWrite:000000000000007c $t
+     /tmp/ccImxIok.s:2857   .text.mmc_write:0000000000000054 $t
 
 UNDEFINED SYMBOLS
 spiReceive

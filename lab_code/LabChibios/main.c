@@ -2,9 +2,18 @@
 #define ADC_BUF_DEPTH 1 
 #define SENSOR_ADC_CH_NUM 4
 #define ACC_ADC_CH_NUM 3
+#define ADC_CH_NUM 7
 
 #define NSAMPLES 30
 #define SAMPLE_MAX 60
+
+#define S_TEMP1	0
+#define S_TEMP2 1
+#define S_PRESS 2
+#define S_HUMD  3
+#define S_ACCX  4
+#define S_ACCY  5
+#define S_ACCZ  6
 
 #include "ch.h"
 #include "hal.h"
@@ -104,15 +113,18 @@ static void anaSensorCallback(ADCDriver *adcd, adcsample_t *buf, size_t n)
     SENSORS.temp[1] = buf[3];
     SENSORS.press = buf[1];
     SENSORS.humd = buf[0];
-    // TODO: Format and store analog sensor data
+
 }
 
 
 //static ADCConfig adccfg = {};
-static adcsample_t accSamples[ACC_ADC_CH_NUM];
-static adcsample_t sensorSamples[SENSOR_ADC_CH_NUM];
+//static adcsample_t accSamples[ACC_ADC_CH_NUM];
+//static adcsample_t sensorSamples[SENSOR_ADC_CH_NUM];
+
+static adcsample_t analogSamples[ADC_CH_NUM];
 
 /* Accelerometer ADC conversion group */
+/*
 static const ADCConversionGroup accelConvGrp = 
 {
     FALSE,					// Circular Buffer Mode
@@ -131,8 +143,9 @@ static const ADCConversionGroup accelConvGrp =
     ADC_SQR3_SQ2_N(ADC_CHANNEL_IN1) |
     ADC_SQR3_SQ3_N(ADC_CHANNEL_IN4)
 };
-
+*/
 /* Analog sensor ADC configuration group */
+/*
 static const ADCConversionGroup sensorConvGrp =
 {
     FALSE,					// Circular Buffer Mode
@@ -151,6 +164,35 @@ static const ADCConversionGroup sensorConvGrp =
     ADC_SQR3_SQ2_N(ADC_CHANNEL_IN10) |
     ADC_SQR3_SQ3_N(ADC_CHANNEL_IN11) |
     ADC_SQR3_SQ4_N(ADC_CHANNEL_IN13)
+};
+*/
+
+/**
+ * New analog sensor ADC conversion group
+ */
+static const ADCConversionGroup analogGrp =
+{
+    FALSE,
+    ADC_CH_NUM,
+    NULL,
+    NULL,
+    0,						// ADC CR1
+    ADC_CR2_SWSTART,				// ADC CR2
+    ADC_SMPR1_SMP_AN10(ADC_SAMPLE_56) | 	// ADC SMPR1
+    ADC_SMPR1_SMP_AN11(ADC_SAMPLE_56) |
+    ADC_SMPR1_SMP_AN13(ADC_SAMPLE_56),
+    ADC_SMPR2_SMP_AN0(ADC_SAMPLE_56) |		// ADC SMPR2
+    ADC_SMPR2_SMP_AN1(ADC_SAMPLE_56) |
+    ADC_SMPR2_SMP_AN4(ADC_SAMPLE_56) |
+    ADC_SMPR2_SMP_AN8(ADC_SAMPLE_56),
+    ADC_SQR1_NUM_CH(ADC_CH_NUM), 		// ADC SQR1
+    ADC_SQR2_SQ7_N(ADC_CHANNEL_IN4),		// ADC SQR2
+    ADC_SQR3_SQ1_N(ADC_CHANNEL_IN11)  | 		// ADC SQR3
+    ADC_SQR3_SQ2_N(ADC_CHANNEL_IN13) |
+    ADC_SQR3_SQ3_N(ADC_CHANNEL_IN10) |
+    ADC_SQR3_SQ4_N(ADC_CHANNEL_IN8) |
+    ADC_SQR3_SQ5_N(ADC_CHANNEL_IN0) |
+    ADC_SQR3_SQ6_N(ADC_CHANNEL_IN1)
 };
 
 /* VCP Serial configuration, 57k6, 8N1 */
@@ -314,6 +356,7 @@ int8_t closeLog(void)
 /**
  * @brief Prints ADC data to debug serial port
  */
+/*
 void printData(void)
 {
     chprintf((BaseSequentialStream *) &SD2, "AccX:%03x   AccY:%03x   AccZ:%03x",
@@ -321,6 +364,7 @@ void printData(void)
     chprintf((BaseSequentialStream *) &SD2, "   Temp1:%03x   Temp2:%03x   Press:%03x   Humd:%03x\n", 
 		SENSORS.temp[0], SENSORS.temp[1], SENSORS.press, SENSORS.humd); 
 }
+*/
 
 /**
  * @brief Prints GPS Data to the serial port
@@ -380,7 +424,7 @@ void gpsToDataSample(gpsLocation_t *loc, dataSample_t *samp)
 void tempToDataSample(int16_t rawTemp, uint8_t tempNum, dataSample_t *samp)
 {
     // 10mV/C Absolute output 750mV@25C
-    float temp = rawTemp/12.4090909f - 50.0f; // Convert to C
+    float temp = (1.0f * rawTemp - 620.454545f) /12.4090909f; // Convert to C
     char *dest;
     switch(tempNum)
     {
@@ -404,7 +448,7 @@ void tempToDataSample(int16_t rawTemp, uint8_t tempNum, dataSample_t *samp)
 void pressureToDataSample(int16_t rawPressure, dataSample_t *samp)
 {
     // 0.1224V offset (nominal), 27.0588235 mv/kPa
-    float press = rawPressure/33.5775401f - 4.52347827f; // Convert to kPa
+    float press = (1.0f*rawPressure + 405.234375f)/38.390625f; // Convert to kPa
     chsnprintf((char *) (samp->pressure), 6, "%.2f", press);
 }
 
@@ -415,8 +459,8 @@ void pressureToDataSample(int16_t rawPressure, dataSample_t *samp)
  */
 void humidityToDataSample(int16_t rawHumidity, dataSample_t *samp)
 {
-    // Ratiometric output, RH = ((raw/4095)-0.16)/(0.0062)
-    float hum = rawHumidity/253.89f - 25.8064516f; // Convert to %RH
+    // Ratiometric output, 47k/100k divider, RH = ((raw/4095)-0.16)/(0.0062)
+    float hum = (1.0f * rawHumidity - 675.324675f)/26.1688312f; // Convert to %RH
     chsnprintf(samp->humidity, 6, "%.2f", hum); //RRR.RR
 }
 
@@ -494,17 +538,20 @@ int main(void)
 	gpsGetLocation(&location);// Check for new GPS NMEA sentence
 	//printGps(&location);
 	// Perform sensor ADC reads
-	adcConvert(&ADCD1, &accelConvGrp, accSamples, ADC_BUF_DEPTH);
-	accelToDataSample(accSamples[0],0,&masterSample);
-	accelToDataSample(accSamples[1],1,&masterSample);
-	accelToDataSample(accSamples[2],2,&masterSample);
+	//adcConvert(&ADCD1, &accelConvGrp, accSamples, ADC_BUF_DEPTH);
+	
+	adcConvert(&ADCD1, &analogGrp, analogSamples, ADC_BUF_DEPTH);
+	
+	accelToDataSample(analogSamples[S_ACCX], 0, &masterSample);
+	accelToDataSample(analogSamples[S_ACCY], 1, &masterSample);
+	accelToDataSample(analogSamples[S_ACCZ], 2, &masterSample);
 	
 	chThdSleepMilliseconds(10);
-	adcConvert(&ADCD1, &sensorConvGrp, sensorSamples, ADC_BUF_DEPTH);
-	tempToDataSample(sensorSamples[0], 0, &masterSample);
-	tempToDataSample(sensorSamples[0], 1, &masterSample);
-	pressureToDataSample(sensorSamples[2], &masterSample);
-	humidityToDataSample(sensorSamples[3], &masterSample);
+	//adcConvert(&ADCD1, &sensorConvGrp, sensorSamples, ADC_BUF_DEPTH);
+	tempToDataSample(analogSamples[S_TEMP1], 0, &masterSample);
+	tempToDataSample(analogSamples[S_TEMP2], 1, &masterSample);
+	pressureToDataSample(analogSamples[S_PRESS], &masterSample);
+	humidityToDataSample(analogSamples[S_HUMD], &masterSample);
 	
 	chThdSleepMilliseconds(10);
 	
