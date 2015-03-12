@@ -304,6 +304,8 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 		break;
 	    case 2: // Latitude;
 		uStrCpy(loc->latitude, tokBuf);
+		// Insert space
+		uStrInsertChar(loc->latitude, 2, ' ');
 		break;
 	    case 3: // Latitude Hemisphere
 		if(tokBuf[0] == 'S')
@@ -318,6 +320,7 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 		break;
 	    case 4: // Longitude
 		uStrCpy(loc->longitude, tokBuf);
+		uStrInsertChar(loc->latitude, 3, ' ');
 		break;
 	    case 5: // Longitude Hemisphere
 		if(tokBuf[0] == 'W')
