@@ -306,13 +306,29 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 		uStrCpy(loc->latitude, tokBuf);
 		break;
 	    case 3: // Latitude Hemisphere
-		uStrAppendChar(loc->latitude, *tokBuf);
+		if(tokBuf[0] == 'S')
+		{
+		    uStrPrependChar(loc->latitude,'-');
+		}
+		else if(tokBuf[0] == 'N')
+		{
+		    uStrPrependChar(loc->latitude,'+');
+		}
+		//uStrAppendChar(loc->latitude, *tokBuf);
 		break;
 	    case 4: // Longitude
 		uStrCpy(loc->longitude, tokBuf);
 		break;
 	    case 5: // Longitude Hemisphere
-		uStrAppendChar(loc->longitude, *tokBuf);
+		if(tokBuf[0] == 'W')
+		{
+		    uStrPrependChar(loc->longitude, '-');
+		}
+		else if(tokBuf[0] == 'E')
+		{
+		    uStrPrependChar(loc->longitude, '+');
+		}
+		//uStrAppendChar(loc->longitude, *tokBuf);
 		break;
 	    case 6: // Quality Indicator (Do nothing for now)
 		break;

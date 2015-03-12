@@ -337,7 +337,12 @@ int8_t openNewLogfile(int32_t lfNum)
     if(!sensorLog.open)
     {
 	char fname[24];
-	chsnprintf(fname, 80, "logs/LOG_%d.csv", lfNum);
+	if(lfNum < 10)
+	    chsnprintf(fname, 80, "logs/LOG_00%d.csv", lfNum);
+	else if(lfNum < 100)
+	    chsnprintf(fname, 80, "logs/LOG_0%d.csv", lfNum);
+	else
+	    chsnprintf(fname, 80, "logs/LOG_%d.csv", lfNum);
 	//chsnprintf(fname, 80, "logs/Log_00X.csv");
 	return logfileNew(&sensorLog, &logger, &lFile, fname); 
     }
@@ -567,7 +572,7 @@ int main(void)
 	//writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
 	
 	toggleLED();
-	chThdSleepMilliseconds(500);
+	chThdSleepMilliseconds(975);
 	
 	if(sampleCounter > SAMPLE_MAX) // Close file and open a new one
 	{

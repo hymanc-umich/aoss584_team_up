@@ -3,9 +3,10 @@
 
 #include <stdint.h>
 
-int uStrLen(char *str);
-void uStrCpy(char *dest, char *src);
+int uStrLen(const char *str);
+void uStrCpy(char *dest, const char *src);
 void uStrAppendChar(char *dest, char appChar);
-
+void uStrPrependChar(char *dest, char preChar);
+void uStrCat(char *str1, const char *str2);
 
 #endif
