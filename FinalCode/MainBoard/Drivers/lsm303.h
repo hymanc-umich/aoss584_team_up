@@ -79,7 +79,10 @@
 
 typedef enum
 {
-    
+    LSM303_INACTIVE,
+    LSM303_IDLE,
+    LSM303_RW_ACC,
+    LSM303_RW_MAG
 }LSM303_state;
 
 typedef struct
@@ -94,9 +97,12 @@ typedef struct
     int16_t ym_buffer[MAG_BUFFER_SIZE];
     int16_t zm_buffer[MAG_BUFFER_SIZE];
     int8_t mbuf_counter;
-}LSM303_t;
+}lsm303_t;
 
-void lsm303_writeRegister(LSM303_t *lsm, uint8_t address, uint8_t data);
-uint8_t lsm303_readRegister(LSM303_t *lsm, uint8_t address);
+void lsm303_writeRegister(lsm303_t *lsm, uint8_t address, uint8_t data);
+uint8_t lsm303_readRegister(lsm303_t *lsm, uint8_t address);
+int8_t lsm303_readAcceleration(lsm303_t *lsm, uint8_t nread);
+int8_t lsm303_readMagnetometer(lsm303_t *lsm, uint8_t nread);
+
 
 #endif
