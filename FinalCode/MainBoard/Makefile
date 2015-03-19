@@ -111,6 +111,9 @@ CSRC = $(PORTSRC) \
        $(CHIBIOS)/os/various/chprintf.c \
        $(CHIBIOS)/os/various/memstreams.c \
        $(DRIVERS)/si70x0.c \
+       $(DRIVERS)/ms5607.c \
+       $(DRIVERS)/lsm303.c \
+       $(DRIVERS)/rfm23bp.c \
        ustr.c \
        gps.c \
        sdmmcsimple.c \

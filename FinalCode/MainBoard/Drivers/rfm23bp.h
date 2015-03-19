@@ -1,13 +1,13 @@
 /**
- * RFM23BP Radio Module Driver
+ * RFM23BP Radio Module Driver for ChibiOS
  * Author: Cody Hyman
  */
 
 #include "ch.h"
 #include "hal.h"
 
+#include "board.h"
 /** I/O Defines: Set up for provided board **/
-
 
 
 /** Register Definitions **/
@@ -110,21 +110,28 @@
 
 typedef enum
 {
-
-}RFM23_state;
+    INACTIVE,
+    IDLE,
+    SHUTDOWN,
+    TX_MODE,
+    RX_MODE,
+    TRX_MODE
+}rfm23_state_t;
 
 typedef struct
 {
     SPIDriver *spi;
-    RFM23_state state;
-}RFM23BP_t;
+    rfm23_state_t state;
+    // TODO: SW Tx/Rx buffers
+}rfm23_t;
 
-void rfm23_chipSel(RFM23BP_t *rfm, bool enState);
-void rfm23_TXEN(RFM23BP_t *rfm, bool en);
-void rfm23_RXEN(RFM23BP_t *rfm ,bool en);
-void rfm23_SHUTDOWN(RFM23BP_t *rfm, bool shutdown);
-uint8_t rfm23_readRegister(RFM23BP_t *rfm, uint8_t addr);
-void rfm23_writeRegister(RFM23BP_t *rfm, uint8_t addr, uint8_t value);
-
-int rfm23_sendByte(RFM23BP_t *rfm, uint8_t byte);
+msg_t rfm23_init(rfm23_t *rfm, SPIDriver *driver);
+void rfm23_TXEN(rfm23_t *rfm, bool en);
+void rfm23_RXEN(rfm23_t *rfm ,bool en);
+void rfm23_SHUTDOWN(rfm23_t *rfm, bool shutdown);
+msg_t rfm23_readRegister(rfm23_t *rfm, uint8_t addr, uint8_t *data);
+msg_t rfm23_writeRegister(rfm23_t *rfm, uint8_t addr, uint8_t value);
+msg_t rfm23_readBurst(rfm23_t *rfm, uint8_t startAddr, uint8_t *data, uint8_t count);
+msg_t rfm23_writeBurst(rfm23_t *rfm, uint8_t startAddr, uint8_t *data, uint8_t count);
+msg_t rfm23_sendByte(rfm23_t *rfm, uint8_t byte);
 

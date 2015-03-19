@@ -1301,6 +1301,7 @@ extern "C" {
     #define LED_PIN 3
 #endif
 
+// TODO: Update pins
 #define SD_SPID SPID1
 
 #define SD_SCK_PORT	GPIOA
@@ -1316,6 +1317,12 @@ extern "C" {
 #define SD_CS_PIN	6
 #define SD_CD_PIN	7
 #define SD_WP_PIN	9
+
+#define RFM23_CS_PORT	GPIOC
+#define RFM23_CS_PIN	
+#define RFM23_SPI
+
+
 
 void setLED(bool on);
 inline void toggleLED(void);

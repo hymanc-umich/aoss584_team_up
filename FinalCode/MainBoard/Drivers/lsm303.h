@@ -11,6 +11,7 @@
 #include "ch.h"
 #include "hal.h"
 
+// Software Buffer sizes
 #define ACC_BUFFER_SIZE 16
 #define MAG_BUFFER_SIZE 8
 
@@ -75,34 +76,36 @@
 #define INT_THS_L_M		0x32
 #define INT_THS_H_M		0x33
 
-
+#define X_CH 0
+#define Y_CH 1
+#define Z_CH 2
 
 typedef enum
 {
-    LSM303_INACTIVE,
-    LSM303_IDLE,
-    LSM303_RW_ACC,
-    LSM303_RW_MAG
+    INACTIVE,
+    IDLE,
+    RW_ACC,
+    RW_MAG
 }LSM303_state;
+
 
 typedef struct
 {
+    // TODO: Mutex?
     I2CDriver *i2c;
     LSM303_state state;
-    int16_t xa_buffer[ACC_BUFFER_SIZE];
-    int16_t ya_buffer[ACC_BUFFER_SIZE];
-    int16_t za_buffer[ACC_BUFFER_SIZE];
+    uint8_t accAddr;
+    uint8_t magAddr;
+    int16_t acc_buffer[3][ACC_BUFFER_SIZE];
+    int16_t mag_buffer[3][MAG_BUFFER_SIZE];
     int8_t abuf_counter;
-    int16_t xm_buffer[MAG_BUFFER_SIZE];
-    int16_t ym_buffer[MAG_BUFFER_SIZE];
-    int16_t zm_buffer[MAG_BUFFER_SIZE];
     int8_t mbuf_counter;
 }lsm303_t;
 
-void lsm303_writeRegister(lsm303_t *lsm, uint8_t address, uint8_t data);
-uint8_t lsm303_readRegister(lsm303_t *lsm, uint8_t address);
-int8_t lsm303_readAcceleration(lsm303_t *lsm, uint8_t nread);
-int8_t lsm303_readMagnetometer(lsm303_t *lsm, uint8_t nread);
+msg_t lsm303_init(lsm303_t *lsm, I2CDriver *driver, uint8_t accAddr, uint8_t magAddr);
+msg_t lsm303_stop(lsm303_t *lsm);
+msg_t lsm303_readAcceleration(lsm303_t *lsm, uint8_t nread);
+msg_t lsm303_readMagnetometer(lsm303_t *lsm, uint8_t nread);
 
 
 #endif

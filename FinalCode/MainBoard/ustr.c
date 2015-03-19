@@ -1,3 +1,9 @@
+/**
+ * Small footprint string library for embedded platforms
+ * No dynamic allocation
+ * Author: Cody Hyman
+ */
+
 #include "ustr.h"
 
 /**

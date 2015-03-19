@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccGPbeF2.s 			page 1
+ARM GAS  /tmp/ccDXvvBS.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"crt0.c"
-  17              		.section	.gnu.lto_.jmpfuncs.3dbca5849b4fbab3,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.12d54610994665e1,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006\304\2404\013\003\003#P\0113\204W\017"
   18      6062C006 
   18      C4A0340B 
@@ -26,7 +26,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   19 0015 C5000A4C 		.ascii	"\305\000\012L\001#"
   19      0123
   20              		.text
-  21              		.section	.gnu.lto_.inline.3dbca5849b4fbab3,"",%progbits
+  21              		.section	.gnu.lto_.inline.12d54610994665e1,"",%progbits
   22 0000 789C6362 		.ascii	"x\234cb`b\300\0062\2414\013\003\0033\023#X\021\333\002"
   22      6062C006 
   22      32A1340B 
@@ -44,7 +44,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   25 0038 0C004EBC 		.ascii	"\014\000N\274\005\234"
   25      059C
   26              		.text
-  27              		.section	.gnu.lto_.pureconst.3dbca5849b4fbab3,"",%progbits
+  27              		.section	.gnu.lto_.pureconst.12d54610994665e1,"",%progbits
   28 0000 789C6362 		.ascii	"x\234cb`b\340d\200\000\026\006\011F\011&\023f3\000\003"
   28      6062E064 
   28      80001606 
@@ -52,13 +52,13 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   28      13663300 
   29 0015 2800B2   		.ascii	"(\000\262"
   30              		.text
-  31              		.section	.gnu.lto___early_init.3dbca5849b4fbab3,"",%progbits
+  31              		.section	.gnu.lto___early_init.12d54610994665e1,"",%progbits
   32 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\000\304\336@\314\310\314\300"
   32      60624007 
   32      92401C00 
   32      C4DE40CC 
   32      C8CCC0
-ARM GAS  /tmp/ccGPbeF2.s 			page 2
+ARM GAS  /tmp/ccDXvvBS.s 			page 2
 
 
   33 0013 C834E11C 		.ascii	"\3104\341\034\003C#\007\023##\210\301\300\310P\317\304"
@@ -104,7 +104,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   41      00907D30 
   41      70
   42              		.text
-  43              		.section	.gnu.lto___late_init.3dbca5849b4fbab3,"",%progbits
+  43              		.section	.gnu.lto___late_init.12d54610994665e1,"",%progbits
   44 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\000\304\336@\314\310\314\300"
   44      60624007 
   44      92401C00 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   46 0025 581FC908 		.ascii	"X\037\311\010V\273\236\351\300\203\377\377\327\355\353"
   46      56BB9EE9 
   46      C083FFFF 
-ARM GAS  /tmp/ccGPbeF2.s 			page 3
+ARM GAS  /tmp/ccDXvvBS.s 			page 3
 
 
   46      D7EDEB
@@ -153,7 +153,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   53 00a4 5E320300 		.ascii	"^2\003\000\203\2050X"
   53      83853058 
   54              		.text
-  55              		.section	.gnu.lto__default_exit.3dbca5849b4fbab3,"",%progbits
+  55              		.section	.gnu.lto__default_exit.12d54610994665e1,"",%progbits
   56 0000 789C6362 		.ascii	"x\234cb`b@\007:@\354\003\304\336@\314\310\312\300\310"
   56      60624007 
   56      3A40EC03 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   60      56110224 
   60      19812413 
   60      D0AC10
-ARM GAS  /tmp/ccGPbeF2.s 			page 4
+ARM GAS  /tmp/ccDXvvBS.s 			page 4
 
 
   61 005c 466606A0 		.ascii	"Ff\006\240!\214!\214,P\032b\010\203\247~F~n\252~r~J"
@@ -202,7 +202,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   64      2E2A31D0 
   64      4B660000 
   65              		.text
-  66              		.section	.gnu.lto_Reset_Handler.3dbca5849b4fbab3,"",%progbits
+  66              		.section	.gnu.lto_Reset_Handler.12d54610994665e1,"",%progbits
   67 0000 789C9595 		.ascii	"x\234\225\225[h\024W\030\200\317\177ffg\366\236\335"
   67      5B681457 
   67      1880CF7F 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   73      3994B08C 
   73      001D
   74 007c BB4AC8A0 		.ascii	"\273J\310\240EA\227/\232|)Z:\325\336\372\212\020\026"
-ARM GAS  /tmp/ccGPbeF2.s 			page 5
+ARM GAS  /tmp/ccDXvvBS.s 			page 5
 
 
   74      4541972F 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   85      762F2D23 
   85      5BE8BBC4 
   86 0153 460AA5D2 		.ascii	"F\012\245\322\223\302\353\371%\326Y\252\006\374\037"
-ARM GAS  /tmp/ccGPbeF2.s 			page 6
+ARM GAS  /tmp/ccDXvvBS.s 			page 6
 
 
   86      93C2EBF9 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
   97      FDA71C30 
   97      F92F0C20 
   97      5C30ECEC 
-ARM GAS  /tmp/ccGPbeF2.s 			page 7
+ARM GAS  /tmp/ccDXvvBS.s 			page 7
 
 
   97      EC
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  109      1F3AF0B2 
  109      2CB1D5A0 
  109      E2
-ARM GAS  /tmp/ccGPbeF2.s 			page 8
+ARM GAS  /tmp/ccDXvvBS.s 			page 8
 
 
  110 0304 302E900A 		.ascii	"0.\220\012\005g\247<\271&\242\030|#s\223U\022\2510\333"
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  121      345467F4 
  121      93B56D69 
  122 03db B3C1A819 		.ascii	"\263\301\250\031\375\265\312\321\033uN\246d\012W\216"
-ARM GAS  /tmp/ccGPbeF2.s 			page 9
+ARM GAS  /tmp/ccDXvvBS.s 			page 9
 
 
  122      FDB5CAD1 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  133      B9F4
  134 04ac 5FEC0FD4 		.ascii	"_\354\017\324\243\327\025}H\206\334\346\336\205\233"
  134      A3D7157D 
-ARM GAS  /tmp/ccGPbeF2.s 			page 10
+ARM GAS  /tmp/ccDXvvBS.s 			page 10
 
 
  134      4886DCE6 
@@ -582,7 +582,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  142      F9177DD9 
  142      9CB5
  143              		.text
- 144              		.section	.gnu.lto_.symbol_nodes.3dbca5849b4fbab3,"",%progbits
+ 144              		.section	.gnu.lto_.symbol_nodes.12d54610994665e1,"",%progbits
  145 0000 789C4DCC 		.ascii	"x\234M\314\273\015\302P\014\205\341c;7o\036\231 \353"
  145      BB0DC250 
  145      0C85E163 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  147      345628AE 
  147      984EE1C0 
  147      FE
-ARM GAS  /tmp/ccGPbeF2.s 			page 11
+ARM GAS  /tmp/ccDXvvBS.s 			page 11
 
 
  148 0037 06B81F37 		.ascii	"\006\270\0377\242\342\362\267\324\365\267:5\267i\034"
@@ -624,7 +624,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  152      88C507CC 
  152      D02B5F
  153              		.text
- 154              		.section	.gnu.lto_.refs.3dbca5849b4fbab3,"",%progbits
+ 154              		.section	.gnu.lto_.refs.12d54610994665e1,"",%progbits
  155 0000 789C25C5 		.ascii	"x\234%\305\311\015\000 \014\004\261\325p\205+\320\001"
  155      C90D0020 
  155      0C04B1D5 
@@ -638,7 +638,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  157      388BAD0B 
  157      0F8400D7 
  158              		.text
- 159              		.section	.gnu.lto_.decls.3dbca5849b4fbab3,"",%progbits
+ 159              		.section	.gnu.lto_.decls.12d54610994665e1,"",%progbits
  160 0000 789CAD96 		.ascii	"x\234\255\226Ml\033E\024\307g\326\371\260S'\264E\215"
  160      4D6C1B45 
  160      14C767D6 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  163      15C4A101 
  163      574A0F4D 
  163      3920D220 
-ARM GAS  /tmp/ccGPbeF2.s 			page 12
+ARM GAS  /tmp/ccDXvvBS.s 			page 12
 
 
  163      07DAD2
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  175      66E304F4 
  175      0446DBD1 
  175      71F0CF73 
-ARM GAS  /tmp/ccGPbeF2.s 			page 13
+ARM GAS  /tmp/ccDXvvBS.s 			page 13
 
 
  175      3ED1
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  187 01f5 1BA3A71F 		.ascii	"\033\243\247\037\346<Nq\311\002\345\005/\210\342\346"
  187      E63C4E71 
  187      C902E505 
-ARM GAS  /tmp/ccGPbeF2.s 			page 14
+ARM GAS  /tmp/ccDXvvBS.s 			page 14
 
 
  187      2F88E2E6 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  199      80F37E08 
  199      E7AB48CE 
  199      B52A
-ARM GAS  /tmp/ccGPbeF2.s 			page 15
+ARM GAS  /tmp/ccDXvvBS.s 			page 15
 
 
  200 02d2 C7575CF3 		.ascii	"\307W\\\363\336\327\363*\003=\334\313\214\273\316\275"
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  211      75492849 
  211      08A3
  212 03a6 6A7A88C8 		.ascii	"jz\210\310\212\2547\355zr_g7jx\216\321\376\015\204\244"
-ARM GAS  /tmp/ccGPbeF2.s 			page 16
+ARM GAS  /tmp/ccDXvvBS.s 			page 16
 
 
  212      8AAC37ED 
@@ -958,13 +958,13 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  223      19B0C116 
  223      0F800D52 
  223      1F55FF
-ARM GAS  /tmp/ccGPbeF2.s 			page 17
+ARM GAS  /tmp/ccDXvvBS.s 			page 17
 
 
  224 0489 052C69E7 		.ascii	"\005,i\347\036"
  224      1E
  225              		.text
- 226              		.section	.gnu.lto_.symtab.3dbca5849b4fbab3,"",%progbits
+ 226              		.section	.gnu.lto_.symtab.12d54610994665e1,"",%progbits
  227 0000 5F5F6561 		.ascii	"__early_init\000\000\001\000\000\000\000\000\000\000"
  227      726C795F 
  227      696E6974 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  237      5F5F7072 
  237      6F636573 
  237      735F7374 
-ARM GAS  /tmp/ccGPbeF2.s 			page 18
+ARM GAS  /tmp/ccDXvvBS.s 			page 18
 
 
  238 00ee 655F5F00 		.ascii	"e__\000\000\002\000\000\000\000\000\000\000\000\000"
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  249      61795F65 
  249      6E640000 
  250 01d0 00000000 		.ascii	"\000\000\000\000\000\334\000\000\000__fini_array_st"
-ARM GAS  /tmp/ccGPbeF2.s 			page 19
+ARM GAS  /tmp/ccDXvvBS.s 			page 19
 
 
  250      00DC0000 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  274              		.size	__early_init, .-__early_init
  275 0002 00BFAFF3 		.section	.text.__late_init,"ax",%progbits
  275      0080AFF3 
-ARM GAS  /tmp/ccGPbeF2.s 			page 20
+ARM GAS  /tmp/ccDXvvBS.s 			page 20
 
 
  275      0080AFF3 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  322              		.thumb
  323 0008 364B     		ldr	r3, .L26+4
  324 000a 3749     		ldr	r1, .L26+8
-ARM GAS  /tmp/ccGPbeF2.s 			page 21
+ARM GAS  /tmp/ccDXvvBS.s 			page 21
 
 
  325 000c 1A68     		ldr	r2, [r3]
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  379 0078 C843     		mvns	r0, r1
  380 007a 1844     		add	r0, r0, r3
  381 007c 20F00300 		bic	r0, r0, #3
-ARM GAS  /tmp/ccGPbeF2.s 			page 22
+ARM GAS  /tmp/ccDXvvBS.s 			page 22
 
 
  382 0080 204C     		ldr	r4, .L26+36
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  436 00ec 00000000 		.word	__main_stack_base__
  437 00f0 00000000 		.word	__main_stack_end__
  438 00f4 00000000 		.word	__process_stack_base__
-ARM GAS  /tmp/ccGPbeF2.s 			page 23
+ARM GAS  /tmp/ccDXvvBS.s 			page 23
 
 
  439 00f8 03000000 		.word	__process_stack_end__+3
@@ -1334,20 +1334,20 @@ ARM GAS  /tmp/ccGPbeF2.s 			page 1
  449              		.size	Reset_Handler, .-Reset_Handler
  450              		.comm	__gnu_lto_v1,1,1
  451              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccGPbeF2.s 			page 24
+ARM GAS  /tmp/ccDXvvBS.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 crt0.c
-     /tmp/ccGPbeF2.s:263    .text.__early_init:0000000000000000 $t
-     /tmp/ccGPbeF2.s:269    .text.__early_init:0000000000000000 __early_init
-     /tmp/ccGPbeF2.s:276    .text.__late_init:0000000000000000 $t
-     /tmp/ccGPbeF2.s:282    .text.__late_init:0000000000000000 __late_init
-     /tmp/ccGPbeF2.s:289    .text._default_exit:0000000000000000 $t
-     /tmp/ccGPbeF2.s:295    .text._default_exit:0000000000000000 _default_exit
-     /tmp/ccGPbeF2.s:304    .text.Reset_Handler:0000000000000000 $t
-     /tmp/ccGPbeF2.s:310    .text.Reset_Handler:0000000000000000 Reset_Handler
-     /tmp/ccGPbeF2.s:433    .text.Reset_Handler:00000000000000e0 $d
+     /tmp/ccDXvvBS.s:263    .text.__early_init:0000000000000000 $t
+     /tmp/ccDXvvBS.s:269    .text.__early_init:0000000000000000 __early_init
+     /tmp/ccDXvvBS.s:276    .text.__late_init:0000000000000000 $t
+     /tmp/ccDXvvBS.s:282    .text.__late_init:0000000000000000 __late_init
+     /tmp/ccDXvvBS.s:289    .text._default_exit:0000000000000000 $t
+     /tmp/ccDXvvBS.s:295    .text._default_exit:0000000000000000 _default_exit
+     /tmp/ccDXvvBS.s:304    .text.Reset_Handler:0000000000000000 $t
+     /tmp/ccDXvvBS.s:310    .text.Reset_Handler:0000000000000000 Reset_Handler
+     /tmp/ccDXvvBS.s:433    .text.Reset_Handler:00000000000000e0 $d
                             *COM*:0000000000000001 __gnu_lto_v1
 
 UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccAwn5vB.s 			page 1
+ARM GAS  /tmp/ccYfAcNW.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"board.c"
-  17              		.section	.gnu.lto_.jmpfuncs.34f983c413787394,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.1a101e943c8cf824,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006\370\2414\033\0203\002\32503\2620\260"
   18      6062C006 
   18      F8A1341B 
@@ -26,7 +26,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   19 0015 32300000 		.ascii	"20\000\000\002\365\000*"
   19      02F5002A 
   20              		.text
-  21              		.section	.gnu.lto_.inline.34f983c413787394,"",%progbits
+  21              		.section	.gnu.lto_.inline.1a101e943c8cf824,"",%progbits
   22 0000 789C6362 		.ascii	"x\234cb`b\300\006\346Bi6\006\006\026\036F\260\"\266"
   22      6062C006 
   22      E6426936 
@@ -55,10 +55,10 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   27      780600D2 
   27      2F0C84
   28              		.text
-  29              		.section	.gnu.lto_.pureconst.34f983c413787394,"",%progbits
+  29              		.section	.gnu.lto_.pureconst.1a101e943c8cf824,"",%progbits
   30 0000 789C6362 		.ascii	"x\234cb`b\340e\200\0006\006\011F)&\006f)\026)V\006\000"
   30      6062E065 
-ARM GAS  /tmp/ccAwn5vB.s 			page 2
+ARM GAS  /tmp/ccYfAcNW.s 			page 2
 
 
   30      80003606 
@@ -66,7 +66,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   30      06662916 
   31 0018 04E0008D 		.ascii	"\004\340\000\215"
   32              		.text
-  33              		.section	.gnu.lto___early_init.34f983c413787394,"",%progbits
+  33              		.section	.gnu.lto___early_init.1a101e943c8cf824,"",%progbits
   34 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\\\003\304\\@\314\310\314\300\310"
   34      60624007 
   34      92405C03 
@@ -105,7 +105,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   41      99010060 
   41      F82530
   42              		.text
-  43              		.section	.gnu.lto_mmc_lld_is_card_inserted.34f983c413787394,"",%progbits
+  43              		.section	.gnu.lto_mmc_lld_is_card_inserted.1a101e943c8cf824,"",%progbits
   44 0000 789C5D50 		.ascii	"x\234]P\261j\002Q\020\234\331wO\305\302>]\372\200_\243"
   44      B16A0251 
   44      109CD977 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   45      A1167636 
   46 002a 5A43D249 		.ascii	"ZC\322I\252|E\222\316\354\276\343\256paf\027fgw\337"
   46      AA7C4592 
-ARM GAS  /tmp/ccAwn5vB.s 			page 3
+ARM GAS  /tmp/ccYfAcNW.s 			page 3
 
 
   46      CEECBEE3 
@@ -165,7 +165,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   55 00cf 0FAE6939 		.ascii	"\017\256i9\323"
   55      D3
   56              		.text
-  57              		.section	.gnu.lto_mmc_lld_is_write_protected.34f983c413787394,"",%progbits
+  57              		.section	.gnu.lto_mmc_lld_is_write_protected.1a101e943c8cf824,"",%progbits
   58 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\015\304\\@\314\310\314\300\310"
   58      60624007 
   58      92401C0D 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   59      C458
   60 0026 1FC90856 		.ascii	"\037\311\010V\273\236\351\300\203\377\377\327]h\337"
   60      BB9EE9C0 
-ARM GAS  /tmp/ccAwn5vB.s 			page 4
+ARM GAS  /tmp/ccYfAcNW.s 			page 4
 
 
   60      83FFFFD7 
@@ -201,7 +201,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   64      0C00ABB3 
   64      1D53
   65              		.text
-  66              		.section	.gnu.lto_setLED.34f983c413787394,"",%progbits
+  66              		.section	.gnu.lto_setLED.1a101e943c8cf824,"",%progbits
   67 0000 789C6362 		.ascii	"x\234cb`b@\0076@\234\312\310\300\300\005\244\031\331"
   67      60624007 
   67      36409CCA 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   74 008a 33EC9163 		.ascii	"3\354\221c>\313ph\307\217\377\007\030!\012\265\031V"
   74      3ECB7068 
   74      C78FFF07 
-ARM GAS  /tmp/ccAwn5vB.s 			page 5
+ARM GAS  /tmp/ccYfAcNW.s 			page 5
 
 
   74      18210AB5 
@@ -268,7 +268,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   79      19009A
   80 00f4 D154D3   		.ascii	"\321T\323"
   81              		.text
-  82              		.section	.gnu.lto_toggleLED.34f983c413787394,"",%progbits
+  82              		.section	.gnu.lto_toggleLED.1a101e943c8cf824,"",%progbits
   83 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\374\005\210\271\200\230\221\231"
   83      60624007 
   83      9240FC05 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   88      E3424656 
   88      86744626 
   89 006a 6D86550D 		.ascii	"m\206U\015-\214\231\214\214\263\031f\001)\246\010 \301"
-ARM GAS  /tmp/ccAwn5vB.s 			page 6
+ARM GAS  /tmp/ccYfAcNW.s 			page 6
 
 
   89      2D8C998C 
@@ -325,7 +325,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
   93      00001F
   94 00c0 AE39ED   		.ascii	"\2569\355"
   95              		.text
-  96              		.section	.gnu.lto_boardInit.34f983c413787394,"",%progbits
+  96              		.section	.gnu.lto_boardInit.1a101e943c8cf824,"",%progbits
   97 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\014\304\\@\314\310\314\300\310"
   97      60624007 
   97      92401C0C 
@@ -356,9 +356,9 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  103 006a 97CC0000 		.ascii	"\227\314\000\000c\353\031\233"
  103      63EB199B 
  104              		.text
- 105              		.section	.gnu.lto_.symbol_nodes.34f983c413787394,"",%progbits
+ 105              		.section	.gnu.lto_.symbol_nodes.1a101e943c8cf824,"",%progbits
  106 0000 789C4DC8 		.ascii	"x\234M\310\301\021@@\020D\321\236^C\314N=,\312Q\004"
-ARM GAS  /tmp/ccAwn5vB.s 			page 7
+ARM GAS  /tmp/ccYfAcNW.s 			page 7
 
 
  106      C1114040 
@@ -380,13 +380,13 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  109      03A21023 
  109      A1
  110              		.text
- 111              		.section	.gnu.lto_.refs.34f983c413787394,"",%progbits
+ 111              		.section	.gnu.lto_.refs.1a101e943c8cf824,"",%progbits
  112 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
  112      60626064 
  112      80020000 
  112      460006
  113              		.text
- 114              		.section	.gnu.lto_.decls.34f983c413787394,"",%progbits
+ 114              		.section	.gnu.lto_.decls.1a101e943c8cf824,"",%progbits
  115 0000 789CBD5C 		.ascii	"x\234\275\\\011t\024\325\232\256\252^\262\312\246\363"
  115      097414D5 
  115      9AAEAA5E 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  121      F3EA9CFA 
  121      EBF6ED5B 
  121      DFFD
-ARM GAS  /tmp/ccAwn5vB.s 			page 8
+ARM GAS  /tmp/ccYfAcNW.s 			page 8
 
 
  122 0070 B7FBDFA5 		.ascii	"\267\373\337\245n\225\300\011\334L\236\343:\321q\351"
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  133      F0ED24AD 
  133      A6D02DF7 
  133      700D7263 
-ARM GAS  /tmp/ccAwn5vB.s 			page 9
+ARM GAS  /tmp/ccYfAcNW.s 			page 9
 
 
  133      2CB6FE
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  145      63902D25 
  145      F21B91BE 
  145      457E
-ARM GAS  /tmp/ccAwn5vB.s 			page 10
+ARM GAS  /tmp/ccYfAcNW.s 			page 10
 
 
  146 0223 9396C9A6 		.ascii	"\223\226\311\246i\300\344&SLnl\331\317\313sr\031\036"
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  157      9635F297 
  157      4389E649 
  157      7B4D2B61 
-ARM GAS  /tmp/ccAwn5vB.s 			page 11
+ARM GAS  /tmp/ccYfAcNW.s 			page 11
 
 
  157      C5540BDF 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  169      7E01F44B 
  169      33A235D1 
  169      7CCE
-ARM GAS  /tmp/ccAwn5vB.s 			page 12
+ARM GAS  /tmp/ccYfAcNW.s 			page 12
 
 
  170 03ce 033ED7A5 		.ascii	"\003>\327\245k\277X\375\216\331\266\205rt\222-\203\233"
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  181      B1E741AF 
  181      817913B8 
  181      7A5368A9 
-ARM GAS  /tmp/ccAwn5vB.s 			page 13
+ARM GAS  /tmp/ccYfAcNW.s 			page 13
 
 
  182 049f 0D35BA2D 		.ascii	"\0155\272-\323\242\351\265\264\007\014\301\242W\246"
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  193      BEE64CB3 
  193      FD1C3F6E 
  193      A6
-ARM GAS  /tmp/ccAwn5vB.s 			page 14
+ARM GAS  /tmp/ccYfAcNW.s 			page 14
 
 
  194 0577 FD6C36D9 		.ascii	"\375l6\331~\232\265\316\267\36088_\263)\347[v\274\241"
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  205 0640 A4E8A9B6 		.ascii	"\244\350\251\266\003x2v;7G\226'\311\215N#\247\3408("
  205      03783276 
  205      3B374796 
-ARM GAS  /tmp/ccAwn5vB.s 			page 15
+ARM GAS  /tmp/ccYfAcNW.s 			page 15
 
 
  205      27C98D4E 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  216      065B6519 
  216      8CE5EC32 
  216      0D
-ARM GAS  /tmp/ccAwn5vB.s 			page 16
+ARM GAS  /tmp/ccYfAcNW.s 			page 16
 
 
  217 072f F68E1930 		.ascii	"\366\216\0310\275\331\213\336Aw\207\250\277\202\241"
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  228      CB641BDB 
  228      C7C59ADE 
  228      3CFD4F8B 
-ARM GAS  /tmp/ccAwn5vB.s 			page 17
+ARM GAS  /tmp/ccYfAcNW.s 			page 17
 
 
  228      00
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  240      3C042D82 
  240      809D3603 
  240      9624B2FF 
-ARM GAS  /tmp/ccAwn5vB.s 			page 18
+ARM GAS  /tmp/ccYfAcNW.s 			page 18
 
 
  240      8D
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  252      E5A8031C 
  252      8B7D3497 
  252      C0D8
-ARM GAS  /tmp/ccAwn5vB.s 			page 19
+ARM GAS  /tmp/ccYfAcNW.s 			page 19
 
 
  253 09a9 9A637544 		.ascii	"\232cuD\306\310\215\307\326woU\372y2X\215\232AL\322"
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  264      7B41
  265 0a7e D1D88FA0 		.ascii	"\321\330\217\240\261\231\271:\213\324\246\220:\017\354"
  265      B199B93A 
-ARM GAS  /tmp/ccAwn5vB.s 			page 20
+ARM GAS  /tmp/ccYfAcNW.s 			page 20
 
 
  265      8BD4A690 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  276      BFCEFA
  277 0b5a D493F468 		.ascii	"\324\223\364h.\256\370\330\235\373\3112\037(\376\206"
  277      2EAEF8D8 
-ARM GAS  /tmp/ccAwn5vB.s 			page 21
+ARM GAS  /tmp/ccYfAcNW.s 			page 21
 
 
  277      9DFBC932 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  289      5995DBA5 
  289      B18E5135 
  289      8BE96AEA 
-ARM GAS  /tmp/ccAwn5vB.s 			page 22
+ARM GAS  /tmp/ccYfAcNW.s 			page 22
 
 
  290 0c47 BA99F03D 		.ascii	"\272\231\360=\343\005\"\034\324\037W\207\003\344\361"
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  301      5A81854D 
  301      E9758978 
  301      9BC2
-ARM GAS  /tmp/ccAwn5vB.s 			page 23
+ARM GAS  /tmp/ccYfAcNW.s 			page 23
 
 
  302 0d1c 496A9BC2 		.ascii	"Ij\233\302G\226\301\\\014\330U\032\254\335\014X\222"
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  313      CCC5806D 
  313      A5C14E9A 
  313      014BB621 
-ARM GAS  /tmp/ccAwn5vB.s 			page 24
+ARM GAS  /tmp/ccYfAcNW.s 			page 24
 
 
  313      97
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  324      58067371 
  325 0ec8 07FD8619 		.ascii	"\007\375\206\031\232\220\302\346\310\025\260}\361}\240"
  325      9A90C2E6 
-ARM GAS  /tmp/ccAwn5vB.s 			page 25
+ARM GAS  /tmp/ccYfAcNW.s 			page 25
 
 
  325      C815B07D 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  337      9B32A507 
  338 0fa0 AF7E4F8A 		.ascii	"\257~O\212\271M\363\252$\374\335i\357\362-\247u\261"
  338      B94DF3AA 
-ARM GAS  /tmp/ccAwn5vB.s 			page 26
+ARM GAS  /tmp/ccYfAcNW.s 			page 26
 
 
  338      24FCDD69 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  350 1072 D79F8945 		.ascii	"\327\237\211E\263U\003\254\246\036\211\327]<?\330`."
  350      B35503AC 
  350      A61E89D7 
-ARM GAS  /tmp/ccAwn5vB.s 			page 27
+ARM GAS  /tmp/ccYfAcNW.s 			page 27
 
 
  350      5D3C3FD8 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  362      851C
  363 114f 5D47819D 		.ascii	"]G\201\2357\005f\270#R\216n\241\300\256\230\002\013"
  363      370566B8 
-ARM GAS  /tmp/ccAwn5vB.s 			page 28
+ARM GAS  /tmp/ccYfAcNW.s 			page 28
 
 
  363      23528E6E 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  374      8385E65F 
  374      9705CE32 
  374      0B5D5E18 
-ARM GAS  /tmp/ccAwn5vB.s 			page 29
+ARM GAS  /tmp/ccYfAcNW.s 			page 29
 
 
  374      C5C3
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  385      F5
  386 12f4 648E43D7 		.ascii	"d\216C\327\001\375=\221\201IJW\210\210\353J)\317\343"
  386      01FD3D91 
-ARM GAS  /tmp/ccAwn5vB.s 			page 30
+ARM GAS  /tmp/ccYfAcNW.s 			page 30
 
 
  386      81494A57 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  397      040F0642 
  397      91705EC9 
  398 13d3 E81103FA 		.ascii	"\350\021\003\372\347\015\037^\220WR\\4\276_\036r\006"
-ARM GAS  /tmp/ccAwn5vB.s 			page 31
+ARM GAS  /tmp/ccYfAcNW.s 			page 31
 
 
  398      E70D1F5E 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  409      A0B2D43F 
  409      D6E985CB 
  410 14ab A054C285 		.ascii	"\240T\302\205\"q%{\313\302\023\303j\233\310\214\224"
-ARM GAS  /tmp/ccAwn5vB.s 			page 32
+ARM GAS  /tmp/ccYfAcNW.s 			page 32
 
 
  410      2271257B 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  421 1574 042984AE 		.ascii	"\004)\204\256\201r\237\024\262{\313\304\020V\273X!e"
  421      81729F14 
  421      B27BCBC4 
-ARM GAS  /tmp/ccAwn5vB.s 			page 33
+ARM GAS  /tmp/ccYfAcNW.s 			page 33
 
 
  421      1056BB58 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  432      51525482 
  432      E24F1E84 
  433 165b 99D2817D 		.ascii	"\231\322\201}\373U\201\327\342\3506\032\265\211\002"
-ARM GAS  /tmp/ccAwn5vB.s 			page 34
+ARM GAS  /tmp/ccYfAcNW.s 			page 34
 
 
  433      FB5581D7 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  444      51FF42B7 
  445 1732 9F189E38 		.ascii	"\237\030\2368Qx\036^X \004*\263\"\201\261c\313%\364"
  445      51781E5E 
-ARM GAS  /tmp/ccAwn5vB.s 			page 35
+ARM GAS  /tmp/ccYfAcNW.s 			page 35
 
 
  445      5820042A 
@@ -2076,7 +2076,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  451      1FCF
  452 17b7 9CD640   		.ascii	"\234\326@"
  453              		.text
- 454              		.section	.gnu.lto_.symtab.34f983c413787394,"",%progbits
+ 454              		.section	.gnu.lto_.symtab.1a101e943c8cf824,"",%progbits
  455 0000 5F5F6561 		.ascii	"__early_init\000\000\000\000\000\000\000\000\000\000"
  455      726C795F 
  455      696E6974 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  458      74655F70 
  459 0063 00000000 		.ascii	"\000\000\000\000\000\000\000\203\002\000\000setLED\000"
  459      00000083 
-ARM GAS  /tmp/ccAwn5vB.s 			page 36
+ARM GAS  /tmp/ccYfAcNW.s 			page 36
 
 
  459      02000073 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  473      74696F6E 
  473      73272027 
  473      2D666461 
-ARM GAS  /tmp/ccAwn5vB.s 			page 37
+ARM GAS  /tmp/ccYfAcNW.s 			page 37
 
 
  473      74612D73 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  521 0002 7047     		bx	lr
  522              		.size	mmc_lld_is_write_protected, .-mmc_lld_is_write_protected
  523 0004 AFF30080 		.section	.text.setLED,"ax",%progbits
-ARM GAS  /tmp/ccAwn5vB.s 			page 38
+ARM GAS  /tmp/ccYfAcNW.s 			page 38
 
 
  523      AFF30080 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  576              		.size	boardInit, .-boardInit
  577              		.global	pal_default_config
  578 0002 00BFAFF3 		.section	.rodata.pal_default_config,"a",%progbits
-ARM GAS  /tmp/ccAwn5vB.s 			page 39
+ARM GAS  /tmp/ccYfAcNW.s 			page 39
 
 
  578      0080AFF3 
@@ -2332,30 +2332,30 @@ ARM GAS  /tmp/ccAwn5vB.s 			page 1
  624 00a4 00000000 		.word	0
  625              		.comm	__gnu_lto_v1,1,1
  626              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccAwn5vB.s 			page 40
+ARM GAS  /tmp/ccYfAcNW.s 			page 40
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 board.c
-     /tmp/ccAwn5vB.s:477    .text.__early_init:0000000000000000 $t
-     /tmp/ccAwn5vB.s:483    .text.__early_init:0000000000000000 __early_init
-     /tmp/ccAwn5vB.s:490    .text.mmc_lld_is_card_inserted:0000000000000000 $t
-     /tmp/ccAwn5vB.s:496    .text.mmc_lld_is_card_inserted:0000000000000000 mmc_lld_is_card_inserted
-     /tmp/ccAwn5vB.s:507    .text.mmc_lld_is_card_inserted:000000000000000c $d
-     /tmp/ccAwn5vB.s:510    .text.mmc_lld_is_write_protected:0000000000000000 $t
-     /tmp/ccAwn5vB.s:516    .text.mmc_lld_is_write_protected:0000000000000000 mmc_lld_is_write_protected
-     /tmp/ccAwn5vB.s:524    .text.setLED:0000000000000000 $t
-     /tmp/ccAwn5vB.s:530    .text.setLED:0000000000000000 setLED
-     /tmp/ccAwn5vB.s:541    .text.setLED:0000000000000008 $d
-     /tmp/ccAwn5vB.s:544    .text.toggleLED:0000000000000000 $t
-     /tmp/ccAwn5vB.s:550    .text.toggleLED:0000000000000000 toggleLED
-     /tmp/ccAwn5vB.s:562    .text.toggleLED:000000000000000c $d
-     /tmp/ccAwn5vB.s:565    .text.boardInit:0000000000000000 $t
-     /tmp/ccAwn5vB.s:571    .text.boardInit:0000000000000000 boardInit
-     /tmp/ccAwn5vB.s:582    .rodata.pal_default_config:0000000000000000 pal_default_config
-     /tmp/ccAwn5vB.s:579    .rodata.pal_default_config:0000000000000000 $d
+     /tmp/ccYfAcNW.s:477    .text.__early_init:0000000000000000 $t
+     /tmp/ccYfAcNW.s:483    .text.__early_init:0000000000000000 __early_init
+     /tmp/ccYfAcNW.s:490    .text.mmc_lld_is_card_inserted:0000000000000000 $t
+     /tmp/ccYfAcNW.s:496    .text.mmc_lld_is_card_inserted:0000000000000000 mmc_lld_is_card_inserted
+     /tmp/ccYfAcNW.s:507    .text.mmc_lld_is_card_inserted:000000000000000c $d
+     /tmp/ccYfAcNW.s:510    .text.mmc_lld_is_write_protected:0000000000000000 $t
+     /tmp/ccYfAcNW.s:516    .text.mmc_lld_is_write_protected:0000000000000000 mmc_lld_is_write_protected
+     /tmp/ccYfAcNW.s:524    .text.setLED:0000000000000000 $t
+     /tmp/ccYfAcNW.s:530    .text.setLED:0000000000000000 setLED
+     /tmp/ccYfAcNW.s:541    .text.setLED:0000000000000008 $d
+     /tmp/ccYfAcNW.s:544    .text.toggleLED:0000000000000000 $t
+     /tmp/ccYfAcNW.s:550    .text.toggleLED:0000000000000000 toggleLED
+     /tmp/ccYfAcNW.s:562    .text.toggleLED:000000000000000c $d
+     /tmp/ccYfAcNW.s:565    .text.boardInit:0000000000000000 $t
+     /tmp/ccYfAcNW.s:571    .text.boardInit:0000000000000000 boardInit
+     /tmp/ccYfAcNW.s:582    .rodata.pal_default_config:0000000000000000 pal_default_config
+     /tmp/ccYfAcNW.s:579    .rodata.pal_default_config:0000000000000000 $d
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccAwn5vB.s:543    .text.setLED:000000000000000c $t
+     /tmp/ccYfAcNW.s:543    .text.setLED:000000000000000c $t
 
 UNDEFINED SYMBOLS
 stm32_clock_init
