@@ -135,3 +135,8 @@ msg_t rfm23_readBurst(rfm23_t *rfm, uint8_t startAddr, uint8_t *data, uint8_t co
 msg_t rfm23_writeBurst(rfm23_t *rfm, uint8_t startAddr, uint8_t *data, uint8_t count);
 msg_t rfm23_sendByte(rfm23_t *rfm, uint8_t byte);
 
+msg_t rfm23_setTxPower(rfm23_t *rfm, uint8_t powerLevel);
+int8_t rfm23_getTxPower(rfm23_t *rfm);
+
+int16_t rfm23_getRSSI(rfm23_t *rfm);
+float	rfm23_getTemperature(rfm23_t *rfm);

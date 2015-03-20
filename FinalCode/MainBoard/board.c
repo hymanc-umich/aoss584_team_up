@@ -141,5 +141,8 @@ inline void toggleLED(void)
  * @brief   Board-specific initialization code.
  * @todo    Add your board-specific code, if any.
  */
-void boardInit(void) {
+void boardInit(void) 
+{
+    // Initialize I/O
+    
 }

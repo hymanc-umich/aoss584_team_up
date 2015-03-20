@@ -1302,25 +1302,81 @@ extern "C" {
 #endif
 
 // TODO: Update pins
-#define SD_SPID SPID1
 
-#define SD_SCK_PORT	GPIOA
-#define SD_MOSI_PORT	GPIOA
-#define SD_MISO_PORT	GPIOA
-#define SD_CS_PORT	GPIOB
-#define SD_CD_PORT	GPIOC
-#define SD_WP_PORT	GPIOA
+// ADC
+#define VINSNS_PORT	GPIOA
+#define PRESS_PORT	GPIOC
+#define TMP_PORT	GPIOC
 
-#define SD_SCK_PIN	5
-#define SD_MOSI_PIN	7
-#define SD_MISO_PIN	6
-#define SD_CS_PIN	6
-#define SD_CD_PIN	7
-#define SD_WP_PIN	9
+#define VINSNS_PIN	0
+#define PRESS_PIN	0
+#define TMP_PIN		1
 
-#define RFM23_CS_PORT	GPIOC
-#define RFM23_CS_PIN	
-#define RFM23_SPI
+// COM UART
+#define COM_SERIAL	SD2
+#define COM_PORT	GPIOA
+#define COM_TX_PIN	2
+#define COM_RX_PIN	3
+
+// GPS UART
+#define GPS_SERIAL	SD1
+#define GPS_PORT	GPIOB
+#define GPS_TX_PIN	6
+#define GPS_RX_PIN	7
+
+// Debug UART
+#define DBG_SERIAL	SD6
+#define DBG_PORT	GPIOC
+#define DBG_TX_PIN	6
+#define DBG_RX_PIN	7
+
+// Internal I2C
+#define II2C_PORT	GPIOB
+#define II2C_SCL_PIN	6
+#define II2C_SDA_PIN	7
+
+// External I2C
+#define EI2C_SCL_PORT	GPIOA
+#define EI2C_SDA_PORT	GPIOC
+#define EI2C_SCL_PIN	8
+#define EI2C_SDA_PIN	9
+
+// SD SPI
+#define SD_SPID SPID3
+
+#define SD_SCK_PORT	GPIOC
+#define SD_MOSI_PORT	GPIOC
+#define SD_MISO_PORT	GPIOC
+#define SD_CS_PORT	GPIOA
+#define SD_CD_PORT	GPIOD
+#define SD_WP_PORT	GPIOD
+
+#define SD_SCK_PIN	10
+#define SD_MOSI_PIN	12
+#define SD_MISO_PIN	11
+#define SD_CS_PIN	15
+#define SD_CD_PIN	2
+#define SD_WP_PIN	2
+
+// RFM23 SPI
+#define RFM23_SPID1
+#define RFM23_SPI_PORT	GPIOB
+#define RFM23_CS_PORT	GPIOB
+#define RFM23_PCTL_PORT	GPIOB
+#define RFM23_IRQ_PORT	GPIOC
+
+#define RFM23_SCK_PIN	13
+#define RFM23_MISO_PIN	14
+#define RFM23_MOSI_PIN	15
+#define RFM23_CS_PIN	12
+#define RFM23_RXON_PIN	0
+#define RFM23_TXON_PIN	1
+#define RFM23_SDN_PIN	10
+#define RFM23_IRQ_PIN	8
+
+// Piezo Buzzer
+#define PIEZO_PORT	GPIOB
+#define PIEZO_PIN	3
 
 
 
