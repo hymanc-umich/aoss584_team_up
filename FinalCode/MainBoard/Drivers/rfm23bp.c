@@ -27,10 +27,10 @@ void rfm23_TXEN(rfm23_t *rfm, bool en)
     if(en)
     {
 	rfm23_RXEN(rfm, FALSE);
-	palClearPad(RFM_PCTL_PORT, RFM23_TXON_PIN);
+	palClearPad(RFM23_PCTL_PORT, RFM23_TXON_PIN);
 	return;
     }
-    palSetPad(RFM_PCTL_PORT, RFM23_TXON_PIN);
+    palSetPad(RFM23_PCTL_PORT, RFM23_TXON_PIN);
     
 }
 
@@ -44,10 +44,10 @@ void rfm23_RXEN(rfm23_t *rfm ,bool en)
     if(en)
     {
 	rfm23_TXEN(rfm, FALSE);
-	palClearPad(RFM_PCTL_PORT, RFM23_RXON_PIN);
+	palClearPad(RFM23_PCTL_PORT, RFM23_RXON_PIN);
 	return;
     }
-    palSetPad(RFM_PCTL_PORT, RFM23_RXON_PIN);
+    palSetPad(RFM23_PCTL_PORT, RFM23_RXON_PIN);
 }
 
 /**
@@ -59,10 +59,10 @@ void rfm23_SHUTDOWN(rfm23_t *rfm, bool shutdown)
 {
     if(shutdown)
     {
-	palSetPad(RFM_PCTL_PORT, RFM23_SDN_PIN);
+	palSetPad(RFM23_PCTL_PORT, RFM23_SDN_PIN);
 	return;
     }
-    palClearPad(RFM_PCTL_PORT, RFM23_SDN_PIN);
+    palClearPad(RFM23_PCTL_PORT, RFM23_SDN_PIN);
 }
 
 /**
