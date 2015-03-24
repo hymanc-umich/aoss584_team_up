@@ -1,8 +1,7 @@
 #ifndef _SI70X0_H_
 #define _SI70X0_H_
 
-#include "ch.h"
-#include "hal.h"
+#include "i2c_sensor.h"
 
 #define SI7020_DEFAULT_ADDRESS 0b10000000
 
@@ -21,22 +20,14 @@
 #define SI70X0_R_ID_BYTE_2		0xFCC9
 #define SI70X0_R_FIRMWARE_VERSION	0x84B8
 
-typedef enum
-{
-    SI_70X0_INACTIVE,
-    SI_70X0_IDLE,
-    SI_70X0_READING
-}Si70x0_state;
 
 typedef struct
 {
-    Si70x0_state state;
-    uint8_t addr;
-    I2CDriver *i2c;
+    I2CSensor_t sensor;
 }Si70x0_t;
 
-int8_t si70x0_init(Si70x0_t *s, I2CDriver *driver, uint8_t baseAddr);
-int8_t si70x0_stop(Si70x0_t *s, uint8_t stopI2C);
+void si70x0_init(Si70x0_t *s, I2CDriver *driver, uint8_t baseAddr);
+msg_t si70x0_stop(Si70x0_t *s, bool stopI2C);
 msg_t si70x0_reset(Si70x0_t *s);
 msg_t si70x0_setResolution(Si70x0_t *s, uint8_t resolution);
 msg_t si70x0_heaterEnable(Si70x0_t *s, uint8_t heaterOn);

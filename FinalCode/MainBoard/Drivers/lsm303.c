@@ -1,6 +1,5 @@
 #include "lsm303.h"
 
-static systime_t timeout;
 
 /**
  * 
@@ -21,19 +20,14 @@ static msg_t lsm303_transmit_mag(lsm303_t *lsm, uint8_t *txb, uint8_t txc, uint8
 }
 
 
-
-
 /**
  * 
  */
 msg_t lsm303_init(lsm303_t *lsm, I2CDriver *driver, uint8_t accAddr, uint8_t magAddr)
 {
-    lsm->state = INACTIVE;
-    lsm->i2c = driver;
-    lsm->accAddr = accAddr;
-    lsm->magAddr = magAddr;
-    
-    timeout = MS2ST(4); // Initialize global timeout
+    systime_t timeout = MS2ST(4);
+    I2CSensor_init(&lsm->accSensor, driver, accAddr, timeout);
+    I2CSensor_init(&lsm->magSensor, driver, magAddr, timeout);
     return 0;
 }
 

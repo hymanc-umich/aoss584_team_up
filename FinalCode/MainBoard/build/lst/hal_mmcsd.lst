@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccUr66TF.s 			page 1
+ARM GAS  /tmp/ccroOg5V.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"hal_mmcsd.c"
-  17              		.section	.gnu.lto_.jmpfuncs.6d686e57ce58f68d,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.10fc6b42c600932f,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006*\24043\003;##33\220U\306\310\300\024"
   18      6062C006 
   18      2AA03433 
@@ -36,7 +36,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   21 003b 860100BA 		.ascii	"\206\001\000\272\013\013\""
   21      0B0B22
   22              		.text
-  23              		.section	.gnu.lto_.inline.6d686e57ce58f68d,"",%progbits
+  23              		.section	.gnu.lto_.inline.10fc6b42c600932f,"",%progbits
   24 0000 789C6362 		.ascii	"x\234cb`b\300\006\372\24043\003\203\214\020#3\023#\220"
   24      6062C006 
   24      FAA03433 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   27      16
   28 004a 0858F980 		.ascii	"\010X\371\200F\002\371X\030L\014\242\374@\325\302=\216"
   28      4602F958 
-ARM GAS  /tmp/ccUr66TF.s 			page 2
+ARM GAS  /tmp/ccroOg5V.s 			page 2
 
 
   28      184C0CA2 
@@ -70,14 +70,14 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   29      006C84
   30 006b 0FAD     		.ascii	"\017\255"
   31              		.text
-  32              		.section	.gnu.lto_.pureconst.6d686e57ce58f68d,"",%progbits
+  32              		.section	.gnu.lto_.pureconst.10fc6b42c600932f,"",%progbits
   33 0000 789C6362 		.ascii	"x\234cb`b`g\200\000f\006VF\026&V\000\001\013\000 "
   33      60626067 
   33      80006606 
   33      56461626 
   33      5600010B 
   34              		.text
-  35              		.section	.gnu.lto_mmcsd_get_slice.6d686e57ce58f68d,"",%progbits
+  35              		.section	.gnu.lto_mmcsd_get_slice.10fc6b42c600932f,"",%progbits
   36 0000 789C8D54 		.ascii	"x\234\215TMh\023Q\020\236\331\2374M\323\206\376\377"
   36      4D681351 
   36      109ED99F 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   43      51351DC7 
   44 0091 2357D3FB 		.ascii	"#W\323\373`\316\262f\312\317?\224\325K\027K\223\327"
   44      60CEB266 
-ARM GAS  /tmp/ccUr66TF.s 			page 3
+ARM GAS  /tmp/ccroOg5V.s 			page 3
 
 
   44      CACF3F94 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   55      902CBF1C 
   55      03A8F0
   56 016a AABE047B 		.ascii	"\252\276\004{\332\236/F\223x\027uH\243\232F\205'D\365"
-ARM GAS  /tmp/ccUr66TF.s 			page 4
+ARM GAS  /tmp/ccroOg5V.s 			page 4
 
 
   56      DA9E2F46 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   67      889FB77F 
   67      F8E3EC10 
   67      4725C013 
-ARM GAS  /tmp/ccUr66TF.s 			page 5
+ARM GAS  /tmp/ccroOg5V.s 			page 5
 
 
   68 0245 48AA3747 		.ascii	"H\2527G\335Ip\325\315t\211J\235\"\372\204\346\346\253"
@@ -290,7 +290,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   77      E4679385 
   77      63BF0034 
   78              		.text
-  79              		.section	.gnu.lto_mmcsdGetCapacity.part.0.6d686e57ce58f68d,"",%progbits
+  79              		.section	.gnu.lto_mmcsdGetCapacity.part.0.10fc6b42c600932f,"",%progbits
   80 0000 789C8D91 		.ascii	"x\234\215\221?H\\A\020\306\347\333}\357\356<\017\265"
   80      3F485C41 
   80      10C6E7DB 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   80      0FB5
   81 0012 B28DD806 		.ascii	"\262\215\330\006\362\010\004BH\210\265\235\240\202V"
   81      F2080442 
-ARM GAS  /tmp/ccUr66TF.s 			page 6
+ARM GAS  /tmp/ccroOg5V.s 			page 6
 
 
   81      4888B59D 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
   92      9A622B17 
   93 00ea 34854054 		.ascii	"4\205@TOC9=\341\273\353m\365-}C\337\216X_\361\245\363"
   93      4F43393D 
-ARM GAS  /tmp/ccUr66TF.s 			page 7
+ARM GAS  /tmp/ccroOg5V.s 			page 7
 
 
   93      E1BBEB6D 
@@ -418,12 +418,12 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  104      712BB911 
  104      1362CC
  105 01cc A1FA1774 		.ascii	"\241\372\027t\015\265\315"
-ARM GAS  /tmp/ccUr66TF.s 			page 8
+ARM GAS  /tmp/ccroOg5V.s 			page 8
 
 
  105      0DB5CD
  106              		.text
- 107              		.section	.gnu.lto_mmcsdGetCapacity.6d686e57ce58f68d,"",%progbits
+ 107              		.section	.gnu.lto_mmcsdGetCapacity.10fc6b42c600932f,"",%progbits
  108 0000 789C5D51 		.ascii	"x\234]Q;K\003A\020\236\331\275M6b!\026\026)\202`\357"
  108      3B4B0341 
  108      109ED9BD 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  118      A73E54BB 
  119 00cb D53B0C6F 		.ascii	"\325;\014o)\272\310\260L\020\366\002\265\236\034#-8"
  119      29BAC8B0 
-ARM GAS  /tmp/ccUr66TF.s 			page 9
+ARM GAS  /tmp/ccroOg5V.s 			page 9
 
 
  119      4C10F602 
@@ -537,8 +537,8 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  130      4507FE00 
  130      DBA886F3 
  131              		.text
- 132              		.section	.gnu.lto_.symbol_nodes.6d686e57ce58f68d,"",%progbits
-ARM GAS  /tmp/ccUr66TF.s 			page 10
+ 132              		.section	.gnu.lto_.symbol_nodes.10fc6b42c600932f,"",%progbits
+ARM GAS  /tmp/ccroOg5V.s 			page 10
 
 
  133 0000 789C6362 		.ascii	"x\234cb`b\010e\200\002\246\377\214\365\014\014\023\316"
@@ -563,13 +563,13 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  137      87010088 
  137      EF1A4D
  138              		.text
- 139              		.section	.gnu.lto_.refs.6d686e57ce58f68d,"",%progbits
+ 139              		.section	.gnu.lto_.refs.10fc6b42c600932f,"",%progbits
  140 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
  140      60626064 
  140      80020000 
  140      460006
  141              		.text
- 142              		.section	.gnu.lto_.decls.6d686e57ce58f68d,"",%progbits
+ 142              		.section	.gnu.lto_.decls.10fc6b42c600932f,"",%progbits
  143 0000 789C9554 		.ascii	"x\234\225TMO\023Q\024\275o\012\302\000\0016btC\027\250"
  143      4D4F1351 
  143      14BD6F0A 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  148 005e BDE7BE99 		.ascii	"\275\347\276\231\221@\202~\002P\304+\327\010\360\027"
  148      9140827E 
  148      0250C42B 
-ARM GAS  /tmp/ccUr66TF.s 			page 11
+ARM GAS  /tmp/ccroOg5V.s 			page 11
 
 
  148      D708F017 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  160      E3
  161 013b FD33E294 		.ascii	"\3753\342\224\\W\362\300+,\220.1|~\254\320\012\217\016"
  161      5C57F2C0 
-ARM GAS  /tmp/ccUr66TF.s 			page 12
+ARM GAS  /tmp/ccroOg5V.s 			page 12
 
 
  161      2B2C902E 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  172      F7B2244C 
  172      C9E0
  173 021c E9FD3143 		.ascii	"\351\3751Cy\312\024{ U\216\007\012\347k\024\336\014"
-ARM GAS  /tmp/ccUr66TF.s 			page 13
+ARM GAS  /tmp/ccroOg5V.s 			page 13
 
 
  173      79CA147B 
@@ -773,12 +773,12 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  183      7F280680 
  183      D2
  184              		.text
- 185              		.section	.gnu.lto_.symtab.6d686e57ce58f68d,"",%progbits
+ 185              		.section	.gnu.lto_.symtab.10fc6b42c600932f,"",%progbits
  186 0000 6D6D6373 		.ascii	"mmcsdGetCapacity\000\000\000\000\000\000\000\000\000"
  186      64476574 
  186      43617061 
  186      63697479 
-ARM GAS  /tmp/ccUr66TF.s 			page 14
+ARM GAS  /tmp/ccroOg5V.s 			page 14
 
 
  186      00000000 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  219              	.L8:
  220 001c 0020     		movs	r0, #0
  221 001e 7047     		bx	lr
-ARM GAS  /tmp/ccUr66TF.s 			page 15
+ARM GAS  /tmp/ccroOg5V.s 			page 15
 
 
  222              	.L3:
@@ -861,13 +861,13 @@ ARM GAS  /tmp/ccUr66TF.s 			page 1
  238      0080AFF3 
  238      0080AFF3 
  238      0080
-ARM GAS  /tmp/ccUr66TF.s 			page 16
+ARM GAS  /tmp/ccroOg5V.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 hal_mmcsd.c
-     /tmp/ccUr66TF.s:197    .text.mmcsdGetCapacity:0000000000000000 $t
-     /tmp/ccUr66TF.s:203    .text.mmcsdGetCapacity:0000000000000000 mmcsdGetCapacity
+     /tmp/ccroOg5V.s:197    .text.mmcsdGetCapacity:0000000000000000 $t
+     /tmp/ccroOg5V.s:203    .text.mmcsdGetCapacity:0000000000000000 mmcsdGetCapacity
                             *COM*:0000000000000001 __gnu_lto_v1
 
 NO UNDEFINED SYMBOLS

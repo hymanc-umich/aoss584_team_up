@@ -1,5 +1,5 @@
 build/obj/lsm303.o: Drivers/lsm303.c Drivers/lsm303.h \
- /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
+ Drivers/i2c_sensor.h /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
  /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chtypes.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include/stddef.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdint.h \
@@ -89,6 +89,8 @@ build/obj/lsm303.o: Drivers/lsm303.c Drivers/lsm303.h \
  /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h
 
 Drivers/lsm303.h:
+
+Drivers/i2c_sensor.h:
 
 /home/cody/dev/chibios/trunk/os/rt/include/ch.h:
 

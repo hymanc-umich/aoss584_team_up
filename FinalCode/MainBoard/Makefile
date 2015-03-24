@@ -114,6 +114,9 @@ CSRC = $(PORTSRC) \
        $(DRIVERS)/ms5607.c \
        $(DRIVERS)/lsm303.c \
        $(DRIVERS)/rfm23bp.c \
+       $(DRIVERS)/i2c_sensor.c \
+       $(DRIVERS)/rtd.c \
+       $(DRIVERS)/tmp275.c \
        ustr.c \
        gps.c \
        sdmmcsimple.c \

@@ -1,5 +1,5 @@
 build/obj/ms5607.o: Drivers/ms5607.c Drivers/ms5607.h \
- /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
+ Drivers/i2c_sensor.h /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
  /home/cody/dev/chibios/trunk/os/rt/ports/ARMCMx/compilers/GCC/chtypes.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include/stddef.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdint.h \
@@ -89,6 +89,8 @@ build/obj/ms5607.o: Drivers/ms5607.c Drivers/ms5607.h \
  /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h
 
 Drivers/ms5607.h:
+
+Drivers/i2c_sensor.h:
 
 /home/cody/dev/chibios/trunk/os/rt/include/ch.h:
 

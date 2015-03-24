@@ -11,45 +11,23 @@ static I2CConfig si70x0_i2c_cfg =
 static systime_t timeout;
 
 /**
- * @brief I2C Exchange with timeout
- * @param s Si70x0 device struct
- * @param txb Transmit buffer
- * @param txc Number of bytes to transmit
- * @param rxb Receive buffer
- * @param rxc Number of bytes to receive
- * @return Status of read
- */
-static msg_t si70x0_transmit(Si70x0_t *s, uint8_t *txb, uint8_t txc, uint8_t *rxb, uint8_t rxc)
-{
-    i2cAcquireBus(s->i2c);
-    msg_t status = i2cMasterTransmitTimeout(s->i2c, s->addr, txb, txc, rxb, rxc, timeout);
-    i2cReleaseBus(s->i2c);
-    return status;
-}
-
-/**
  * @brief Initialize Si70x0 Sensor
  * @param s Si70x0 sensor struct
  * @param driver ChibiOS I2C Driver
- * @
+ * @return 
  */
-int8_t si70x0_init(Si70x0_t *s, I2CDriver *driver, uint8_t baseAddr)
+void si70x0_init(Si70x0_t *s, I2CDriver *driver, uint8_t baseAddr)
 {
-    s->i2c = driver;
-    s->addr = baseAddr;
-    s->state = SI_70X0_INACTIVE;
-    // Initialize I2C
-    timeout = MS2ST(4); // Initialize global timeout
-    return 0;
+    systime_t timeout = MS2ST(4);
+    I2CSensor_init(&s->sensor, driver, baseAddr, timeout);
 }
 
 /**
  * 
  */
-int8_t si70x0_stop(Si70x0_t *s, uint8_t stopI2C)
+inline msg_t si70x0_stop(Si70x0_t *s, bool stopI2C)
 {
-    // TODO: This
-    return 0;
+    return I2CSensor_stop(&s->sensor, stopI2C);
 }
 
 /**
@@ -60,7 +38,7 @@ int8_t si70x0_stop(Si70x0_t *s, uint8_t stopI2C)
 msg_t si70x0_reset(Si70x0_t *s)
 {
     uint8_t resetCmd = SI70X0_RESET;
-    return si70x0_transmit(s, &resetCmd, 1, NULL, 0);
+    return I2CSensor_transact(&s->sensor, &resetCmd, 1, NULL, 0);
 }
 
 /**
@@ -97,7 +75,7 @@ msg_t si70x0_readTemperature(Si70x0_t *s, float *temp)
 {
     uint8_t rx[2];
     uint8_t tempCmd = SI70X0_MEASURE_TEMP_NOHOLD;
-    msg_t status = si70x0_transmit(s, &tempCmd, 1, rx, 2);
+    msg_t status = I2CSensor_transact(&s->sensor, &tempCmd, 1, rx, 2);
     if(status == 0)
     {
 	int16_t rawTemp = (int16_t *) ((rx[0]<<8) + rx[1]); 
@@ -116,7 +94,7 @@ msg_t si70x0_readHumidity(Si70x0_t *s, uint16_t *humidity)
 {
     uint8_t rx[2];
     uint8_t rhCmd = SI70X0_MEASURE_RH_NOHOLD;
-    msg_t status = si70x0_transmit(s, &rhCmd, 1, rx, 2);
+    msg_t status = I2CSensor_transact(&s->sensor, &rhCmd, 1, rx, 2);
     if(status == 0)
     {
 	uint16_t rawRH = (rx[0]<<8) + rx[1];

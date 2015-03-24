@@ -12,16 +12,6 @@ static I2CConfig ms5607_i2c_cfg =
 
 static systime_t timeout;
 
-/**
- * 
- */
-static ms5607_transmit(ms5607_t *m, uint8_t *txb, uint8_t txc, uint8_t *rxb, uint8_t rxc)
-{    
-    i2cAcquireBus(m->i2c);
-    msg_t status = i2cMasterTransmitTimeout(m->i2c, m->addr, txb, txc, rxb, rxc, timeout);
-    i2cReleaseBus(m->i2c);
-    return status;
-}
 
 /**
  * @brief Initialize an MS5607 sensor
@@ -32,11 +22,8 @@ static ms5607_transmit(ms5607_t *m, uint8_t *txb, uint8_t txc, uint8_t *rxb, uin
  */
 msg_t ms5607_init(ms5607_t *m, I2CDriver *driver, uint8_t baseAddr)
 {
-    m->state = INACTIVE;
-    m->i2c = driver;
-    m->addr = baseAddr;
-    
-    timeout = MS2ST(4); // Initialize global timeout
+    I2CSensor_init(&m->sensor, driver, baseAddr, MS2ST(4));
+
     // TODO: Read out cal coefficients
     return 0;
 }
@@ -44,9 +31,9 @@ msg_t ms5607_init(ms5607_t *m, I2CDriver *driver, uint8_t baseAddr)
 /**
  * 
  */
-msg_t ms5607_stop(ms5607_t *m, uint8_t stopI2C)
+msg_t ms5607_stop(ms5607_t *m, bool stopI2C)
 {
-    m->state = INACTIVE;
+    I2CSensor_stop(&m->sensor, stopI2C);
     return 0;
 }
 

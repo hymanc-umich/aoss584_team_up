@@ -8,8 +8,7 @@
 #ifndef _LSM303_H_
 #define _LSM303_H_
 
-#include "ch.h"
-#include "hal.h"
+#include "i2c_sensor.h"
 
 // Software Buffer sizes
 #define ACC_BUFFER_SIZE 16
@@ -80,22 +79,11 @@
 #define Y_CH 1
 #define Z_CH 2
 
-typedef enum
-{
-    INACTIVE,
-    IDLE,
-    RW_ACC,
-    RW_MAG
-}LSM303_state;
-
-
 typedef struct
 {
     // TODO: Mutex?
-    I2CDriver *i2c;
-    LSM303_state state;
-    uint8_t accAddr;
-    uint8_t magAddr;
+    I2CSensor_t accSensor;
+    I2CSensor_t magSensor;
     int16_t acc_buffer[3][ACC_BUFFER_SIZE];
     int16_t mag_buffer[3][MAG_BUFFER_SIZE];
     int8_t abuf_counter;

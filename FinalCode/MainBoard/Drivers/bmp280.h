@@ -6,19 +6,11 @@
 #ifndef _BMP_280_H_
 #define _BMP_280_H_
 
-#include "ch.h"
-#include "hal.h"
-
-typedef enum
-{
-    
-}bmp280_state_t;
+#include "i2c_sensor.h"
 
 typedef struct
 {
-    I2CDriver *i2c;
-    uint8_t addr;
-    bmp280_state_t state;
+    I2CSensor_t *i2c;
 }bmp280_t;
 
 msg_t bmp280_init(bmp280_t *bmp, I2CDriver *driver, uint8_t baseAddr);
