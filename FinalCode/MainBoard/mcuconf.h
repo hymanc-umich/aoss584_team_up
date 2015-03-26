@@ -164,7 +164,7 @@
  */
 #define STM32_SERIAL_USE_USART1             FALSE
 #define STM32_SERIAL_USE_USART2             TRUE
-#define STM32_SERIAL_USE_USART6             FALSE
+#define STM32_SERIAL_USE_USART6             TRUE
 #define STM32_SERIAL_USART1_PRIORITY        12
 #define STM32_SERIAL_USART2_PRIORITY        12
 #define STM32_SERIAL_USART6_PRIORITY        12
@@ -172,9 +172,9 @@
 /*
  * SPI driver system settings.
  */
-#define STM32_SPI_USE_SPI1                  TRUE
-#define STM32_SPI_USE_SPI2                  FALSE
-#define STM32_SPI_USE_SPI3                  FALSE
+#define STM32_SPI_USE_SPI1                  FALSE
+#define STM32_SPI_USE_SPI2                  TRUE
+#define STM32_SPI_USE_SPI3                  TRUE
 #define STM32_SPI_SPI1_RX_DMA_STREAM        STM32_DMA_STREAM_ID(2, 0)
 #define STM32_SPI_SPI1_TX_DMA_STREAM        STM32_DMA_STREAM_ID(2, 3)
 #define STM32_SPI_SPI2_RX_DMA_STREAM        STM32_DMA_STREAM_ID(1, 3)

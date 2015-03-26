@@ -24,15 +24,15 @@
 typedef struct
 {
     I2CSensor_t sensor;
-}Si70x0_t;
+}si70x0_t;
 
-void si70x0_init(Si70x0_t *s, I2CDriver *driver, uint8_t baseAddr);
-msg_t si70x0_stop(Si70x0_t *s, bool stopI2C);
-msg_t si70x0_reset(Si70x0_t *s);
-msg_t si70x0_setResolution(Si70x0_t *s, uint8_t resolution);
-msg_t si70x0_heaterEnable(Si70x0_t *s, uint8_t heaterOn);
-msg_t si70x0_setHeaterCurrent(Si70x0_t *s, uint8_t heaterCurrent);
-msg_t si70x0_readTemperature(Si70x0_t *s, float *temp);
-msg_t si70x0_readHumidity(Si70x0_t *s, uint16_t *humidity);
+void si70x0_init(si70x0_t *s, I2CDriver *driver, uint8_t baseAddr);
+msg_t si70x0_stop(si70x0_t *s, bool stopI2C);
+msg_t si70x0_reset(si70x0_t *s);
+msg_t si70x0_setResolution(si70x0_t *s, uint8_t resolution);
+msg_t si70x0_heaterEnable(si70x0_t *s, uint8_t heaterOn);
+msg_t si70x0_setHeaterCurrent(si70x0_t *s, uint8_t heaterCurrent);
+msg_t si70x0_readTemperature(si70x0_t *s, float *temp);
+msg_t si70x0_readHumidity(si70x0_t *s, uint16_t *humidity);
 
 #endif

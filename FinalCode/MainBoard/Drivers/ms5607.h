@@ -26,10 +26,10 @@
 #define MS5607_PRESSURE_CONVERT	MS5607_D1_CONV_4096
 #define MS5607_TEMP_CONVERT	MS5607_D2_CONV_4096
 
-
 typedef struct
 {
-    I2CSensor_t sensor;
+    I2CSensor_t sensor;	// I2C sensor struct
+    uint32_t cal[8];	// Calibration coefficients
 }ms5607_t;
 
 msg_t ms5607_init(ms5607_t *m, I2CDriver *driver, uint8_t baseAddr);

@@ -11,9 +11,7 @@
 #include <stdlib.h>
 #include "chbsem.h"
 #include "chprintf.h"
-
-//#define DEBUG_GPS
-#define DEBUG_SERIAL &SD2
+#include "board.h"
 
 /**
  * @brief GPS Receiver interface struct
@@ -34,7 +32,7 @@ typedef struct gpsThread gpsThread_t;
 static gpsReceiver_t GPS;
 
 #ifdef DEBUG_GPS
-    static SerialDriver *DEBUG = DEBUG_SERIAL;
+    static SerialDriver *DEBUG = DBG_SERIAL;
 #endif
 
 binary_semaphore_t gpsSem;

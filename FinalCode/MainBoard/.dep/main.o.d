@@ -102,10 +102,14 @@ build/obj/main.o: main.c /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
  /usr/arm-none-eabi/include/sys/lock.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include-fixed/sys/cdefs.h \
  /usr/arm-none-eabi/include/sys/string.h gps.h ustr.h sdmmcsimple.h \
- datalogger.h /usr/arm-none-eabi/include/stdlib.h \
+ board.h datalogger.h sensor_thread.h \
+ /home/cody/dev/chibios/trunk/os/rt/include/chmtx.h Drivers/bmp280.h \
+ Drivers/i2c_sensor.h Drivers/lsm303.h Drivers/ms5607.h Drivers/si70x0.h \
+ Drivers/tmp275.h Drivers/rtd.h Drivers/analog_sensor.h \
+ /usr/arm-none-eabi/include/stdlib.h \
  /usr/arm-none-eabi/include/machine/stdlib.h \
  /usr/arm-none-eabi/include/alloca.h /usr/arm-none-eabi/include/math.h \
- /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdfix.h board.h
+ /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdfix.h datasample.h
 
 /home/cody/dev/chibios/trunk/os/rt/include/ch.h:
 
@@ -333,7 +337,29 @@ ustr.h:
 
 sdmmcsimple.h:
 
+board.h:
+
 datalogger.h:
+
+sensor_thread.h:
+
+/home/cody/dev/chibios/trunk/os/rt/include/chmtx.h:
+
+Drivers/bmp280.h:
+
+Drivers/i2c_sensor.h:
+
+Drivers/lsm303.h:
+
+Drivers/ms5607.h:
+
+Drivers/si70x0.h:
+
+Drivers/tmp275.h:
+
+Drivers/rtd.h:
+
+Drivers/analog_sensor.h:
 
 /usr/arm-none-eabi/include/stdlib.h:
 
@@ -345,4 +371,4 @@ datalogger.h:
 
 /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdfix.h:
 
-board.h:
+datasample.h:

@@ -110,19 +110,22 @@ CSRC = $(PORTSRC) \
        $(FATFSSRC) \
        $(CHIBIOS)/os/various/chprintf.c \
        $(CHIBIOS)/os/various/memstreams.c \
+       $(DRIVERS)/analog_sensor.c \
+       $(DRIVERS)/i2c_sensor.c \
+       $(DRIVERS)/bmp280.c \
        $(DRIVERS)/si70x0.c \
        $(DRIVERS)/ms5607.c \
        $(DRIVERS)/lsm303.c \
        $(DRIVERS)/rfm23bp.c \
-       $(DRIVERS)/i2c_sensor.c \
        $(DRIVERS)/rtd.c \
        $(DRIVERS)/tmp275.c \
+       datasample.c \
+       sensor_thread.c \
        ustr.c \
        gps.c \
        sdmmcsimple.c \
        datalogger.c \
        main.c \
-       
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.

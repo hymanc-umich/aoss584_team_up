@@ -16,7 +16,7 @@ static systime_t timeout;
  * @param driver ChibiOS I2C Driver
  * @return 
  */
-void si70x0_init(Si70x0_t *s, I2CDriver *driver, uint8_t baseAddr)
+void si70x0_init(si70x0_t *s, I2CDriver *driver, uint8_t baseAddr)
 {
     systime_t timeout = MS2ST(4);
     I2CSensor_init(&s->sensor, driver, baseAddr, timeout);
@@ -25,7 +25,7 @@ void si70x0_init(Si70x0_t *s, I2CDriver *driver, uint8_t baseAddr)
 /**
  * 
  */
-inline msg_t si70x0_stop(Si70x0_t *s, bool stopI2C)
+inline msg_t si70x0_stop(si70x0_t *s, bool stopI2C)
 {
     return I2CSensor_stop(&s->sensor, stopI2C);
 }
@@ -35,7 +35,7 @@ inline msg_t si70x0_stop(Si70x0_t *s, bool stopI2C)
  * @param s Si70x0 struct
  * @return I2C operation status
  */
-msg_t si70x0_reset(Si70x0_t *s)
+msg_t si70x0_reset(si70x0_t *s)
 {
     uint8_t resetCmd = SI70X0_RESET;
     return I2CSensor_transact(&s->sensor, &resetCmd, 1, NULL, 0);
@@ -44,7 +44,7 @@ msg_t si70x0_reset(Si70x0_t *s)
 /**
  * 
  */
-msg_t si70x0_setResolution(Si70x0_t *s, uint8_t resolution)
+msg_t si70x0_setResolution(si70x0_t *s, uint8_t resolution)
 {
     // TODO: This
     return 0;
@@ -53,7 +53,7 @@ msg_t si70x0_setResolution(Si70x0_t *s, uint8_t resolution)
 /**
  * 
  */
-msg_t si70x0_heaterEnable(Si70x0_t *s, uint8_t heaterOn)
+msg_t si70x0_heaterEnable(si70x0_t *s, uint8_t heaterOn)
 {
     // TODO: This
     return 0;
@@ -62,7 +62,7 @@ msg_t si70x0_heaterEnable(Si70x0_t *s, uint8_t heaterOn)
 /**
  * 
  */
-msg_t si70x0_setHeaterCurrent(Si70x0_t *s, uint8_t heaterCurrent)
+msg_t si70x0_setHeaterCurrent(si70x0_t *s, uint8_t heaterCurrent)
 {
     // TODO: This
     return 0;
@@ -71,7 +71,7 @@ msg_t si70x0_setHeaterCurrent(Si70x0_t *s, uint8_t heaterCurrent)
 /**
  * 
  */
-msg_t si70x0_readTemperature(Si70x0_t *s, float *temp)
+msg_t si70x0_readTemperature(si70x0_t *s, float *temp)
 {
     uint8_t rx[2];
     uint8_t tempCmd = SI70X0_MEASURE_TEMP_NOHOLD;
@@ -90,7 +90,7 @@ msg_t si70x0_readTemperature(Si70x0_t *s, float *temp)
 /**
  * 
  */
-msg_t si70x0_readHumidity(Si70x0_t *s, uint16_t *humidity)
+msg_t si70x0_readHumidity(si70x0_t *s, uint16_t *humidity)
 {
     uint8_t rx[2];
     uint8_t rhCmd = SI70X0_MEASURE_RH_NOHOLD;

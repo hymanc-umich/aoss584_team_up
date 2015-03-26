@@ -70,6 +70,7 @@ void rfm23_SHUTDOWN(rfm23_t *rfm, bool shutdown)
  */
 msg_t rfm23_readRegister(rfm23_t *rfm, uint8_t addr, uint8_t *data)
 {
+    // TODO: this
     return 0;
 }
 
@@ -78,6 +79,7 @@ msg_t rfm23_readRegister(rfm23_t *rfm, uint8_t addr, uint8_t *data)
  */
 msg_t rfm23_writeRegister(rfm23_t *rfm, uint8_t addr, uint8_t value)
 {
+    // TODO: this
     return 0;
 }
 

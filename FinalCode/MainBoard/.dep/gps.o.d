@@ -103,7 +103,7 @@ build/obj/gps.o: gps.c gps.h \
  /usr/arm-none-eabi/include/alloca.h \
  /home/cody/dev/chibios/trunk/os/rt/include/chbsem.h \
  /home/cody/dev/chibios/trunk/os/various/chprintf.h \
- /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h
+ /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h board.h
 
 gps.h:
 
@@ -328,3 +328,5 @@ ustr.h:
 /home/cody/dev/chibios/trunk/os/various/chprintf.h:
 
 /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h:
+
+board.h:

@@ -68,50 +68,6 @@ bool sd_is_write_protected(MMCDriver *mmcd)
     return palReadPad(SD_WP_PORT, SD_WP_PIN);
 }
 
-/**
- * @brief Event handler for SD card insertion
- * @param id Event id
- */
-/*
-static void sdmmcInsertHandler(eventid_t id)
-{
-    FRESULT err;
-    (void) id;
-    if(mmcConnect(SD->mmcd))
-    {
-	return;
-    }
-    err = f_mount(SD->filesys, "/", 0);
-    if(err != FR_OK)
-    {
-	mmcDisconnect(SD->mmcd);
-	return;
-    }
-    SD->fsReady = true;
-}
-*/
-
-/**
- * @brief Event handler for SD card removal
- * @param id Event ID
- */
-/*
-static void sdmmcRemoveHandler(eventid_t id)
-{
-    (void) id;
-    SD->fsReady = false;
-}
-*/
-
-/** Event Handlers */
-/*
-static const evhandler_t evhdnSd[] = 
-{
-    sdmmcInsertHandler,
-    sdmmcRemoveHandler
-};
-struct event_listener_t elIns, elRem;
-*/
 
 /**
  * @brief Initializes an SD card

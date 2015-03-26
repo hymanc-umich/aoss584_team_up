@@ -70,8 +70,8 @@ const PALConfig pal_default_config =
  * @details This initialization must be performed just after stack setup
  *          and before any other initialization.
  */
-void __early_init(void) {
-
+void __early_init(void) 
+{
   stm32_clock_init();
 }
 
@@ -79,8 +79,8 @@ void __early_init(void) {
 /**
  * @brief   SDC card detection.
  */
-bool sdc_lld_is_card_inserted(SDCDriver *sdcp) {
-
+bool sdc_lld_is_card_inserted(SDCDriver *sdcp) 
+{
   (void)sdcp;
   /* TODO: Fill the implementation.*/
   return TRUE;
@@ -89,8 +89,8 @@ bool sdc_lld_is_card_inserted(SDCDriver *sdcp) {
 /**
  * @brief   SDC card write protection detection.
  */
-bool sdc_lld_is_write_protected(SDCDriver *sdcp) {
-
+bool sdc_lld_is_write_protected(SDCDriver *sdcp) 
+{
   (void)sdcp;
   /* TODO: Fill the implementation.*/
   return FALSE;
@@ -101,48 +101,53 @@ bool sdc_lld_is_write_protected(SDCDriver *sdcp) {
 /**
  * @brief   MMC_SPI card detection.
  */
-bool mmc_lld_is_card_inserted(MMCDriver *mmcp) {
-
+bool mmc_lld_is_card_inserted(MMCDriver *mmcp) 
+{
   (void)mmcp;
   return palReadPad(SD_CD_PORT, SD_CD_PIN);
 }
 /**
  * @brief   MMC_SPI card write protection detection.
  */
-bool mmc_lld_is_write_protected(MMCDriver *mmcp) {
-
+bool mmc_lld_is_write_protected(MMCDriver *mmcp) 
+{
   (void)mmcp;
   return FALSE;
 }
 #endif
 
-
 /**
- * @brief Turn LED on/off
- * @param on On state flag
+ * @brief   Board-specific I/O initialization
  */
-void setLED(bool on)
+void boardInit(void)
 {
-   if(on)
-       palClearPad(LED_PORT, LED_PIN);
-   else
-       palClearPad(LED_PORT, LED_PIN);
-}
-
-/**
- * @brief Toggle the LED
- */
-inline void toggleLED(void)
-{
-    palTogglePad(LED_PORT, LED_PIN);
-}
-
-/**
- * @brief   Board-specific initialization code.
- * @todo    Add your board-specific code, if any.
- */
-void boardInit(void) 
-{
-    // Initialize I/O
+    // SD SPI
+    palSetPadMode(SD_CS_PORT, SD_CS_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
+    palSetPadMode(SD_CD_PORT, SD_CD_PIN, PAL_MODE_INPUT_PULLUP);
+    palSetPadMode(SD_SCK_PORT, SD_SCK_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
+    palSetPadMode(SD_MOSI_PORT, SD_MOSI_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
+    palSetPadMode(SD_MISO_PORT, SD_MISO_PIN, PAL_MODE_ALTERNATE(5));
     
+    // Serial I/O Cfg
+    palSetPadMode(DBG_PORT, DBG_TX_PIN, PAL_MODE_ALTERNATE(7)); // Debug Tx
+    palSetPadMode(DBG_PORT, DBG_RX_PIN, PAL_MODE_ALTERNATE(7));	// Debug Rx
+    palSetPadMode(GPS_PORT, GPS_TX_PIN, PAL_MODE_ALTERNATE(7)); // GPS Tx
+    palSetPadMode(GPS_PORT, GPS_RX_PIN, PAL_MODE_ALTERNATE(7)); // GPS Rx
+    palSetPadMode(COM_PORT, COM_TX_PIN, PAL_MODE_ALTERNATE(7)); // COM Tx
+    palSetPadMode(COM_PORT, COM_RX_PIN, PAL_MODE_ALTERNATE(7)); // COM Rx
+    
+    
+    // ADC I/O Cfg
+    /*
+    palSetPadMode(GPIOA, 0, PAL_MODE_INPUT_ANALOG); 	// A1.0 ACC_X
+    palSetPadMode(GPIOA, 1, PAL_MODE_INPUT_ANALOG); 	// A1.1 ACC_Y
+    palSetPadMode(GPIOA, 4, PAL_MODE_INPUT_ANALOG); 	// A1.4 ACC_Z
+    palSetPadMode(GPIOB, 0, PAL_MODE_INPUT_ANALOG); 	// A1.8 HUMD
+    palSetPadMode(GPIOC, 0, PAL_MODE_INPUT_ANALOG); 	// A1.10 PRESS
+    palSetPadMode(GPIOC, 1, PAL_MODE_INPUT_ANALOG); 	// A1.11 TEMP1
+    palSetPadMode(GPIOC, 3, PAL_MODE_INPUT_ANALOG); 	// A1.13 TEMP2
+    */
+    
+    // Audio beacon
+    palSetPadMode(PIEZO_PORT, PIEZO_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
 }

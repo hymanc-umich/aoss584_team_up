@@ -1,8 +1,16 @@
+/**
+ * Sensor Data Collection Thread
+ * Stribog - Balloon Computer
+ * Team Up
+ * Author: Cody Hyman
+ */
+
 #ifndef _SENSOR_THREAD_H_
 #define _SENSOR_THREAD_H_
 
 #include "ch.h"
 #include "hal.h"
+#include "chmtx.h"
 
 #include "Drivers/bmp280.h"
 #include "Drivers/lsm303.h"
@@ -13,9 +21,16 @@
 
 typedef struct
 {
-    // Mutex
-    
-    
+    mutex_t mtx; // Mutex
+    float tempBmp;
+    float temp275;
+    float tempRtd;
+    float pressBmp;
+    float pressMpxm;
+    float pressMs5607;
+    float humdInt, humdExt, humd6030;
+    float accX, accY, accZ;
+    float magX, magY, magZ;
 }sensorData_t;
 
 // Sensor Thread
@@ -23,7 +38,7 @@ typedef struct
 {
     uint16_t sleepTime;
     bool running;
-    sensorData_t *data;
+    sensorData_t data;
     I2CDriver *i2c;
     ADCDriver *adc;
     
@@ -36,7 +51,8 @@ typedef struct
 }sensorThread_t;
 
 
-msg_t sensorThread(void *args);
-msg_t sensorThreadStop(sensorThread_t);
-sensorData_t *getSensorData(sensorThread_t *thread);
+msg_t sensorThread(void *arg);
+msg_t sensorThreadStop(sensorThread_t *thread);
+int8_t getSensorData(sensorThread_t *thread, sensorData_t *buffer);
+
 #endif

@@ -9,23 +9,9 @@
 #include "ch.h"
 #include "hal.h"
 #include "ff.h"
+#include "board.h"
 
 // Hardware configuration
-#define SD_SPID SPID1
-
-#define SD_SCK_PORT	GPIOA
-#define SD_MOSI_PORT	GPIOA
-#define SD_MISO_PORT	GPIOA
-#define SD_CS_PORT	GPIOB
-#define SD_CD_PORT	GPIOC
-#define SD_WP_PORT	GPIOA
-
-#define SD_SCK_PIN	5
-#define SD_MOSI_PIN	7
-#define SD_MISO_PIN	6
-#define SD_CS_PIN	6
-#define SD_CD_PIN	7
-#define SD_WP_PIN	9
 
 extern MMCDriver MMCD1;
 

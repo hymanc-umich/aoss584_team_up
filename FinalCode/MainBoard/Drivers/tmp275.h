@@ -32,6 +32,6 @@ void tmp275_init(tmp275_t *tmp, I2CDriver *driver, uint8_t baseAddr);
 msg_t tmp275_stop(tmp275_t *tmp, bool stopI2C);
 msg_t tmp275_writeConfig(tmp275_t *tmp, uint8_t value);
 msg_t tmp275_readTemperature(tmp275_t *tmp, float *temp);
-msg_t tmp275_writeTHigh(tmp275_t *tmp, uint16_t tempLimit);
-msg_t tmp275_writeTLow(tmp275_t *tmp, uint16_t tempLimit);
+msg_t tmp275_writeTHigh(tmp275_t *tmp, int16_t tempLimit);
+msg_t tmp275_writeTLow(tmp275_t *tmp, int16_t tempLimit);
 #endif

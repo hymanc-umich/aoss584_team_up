@@ -89,7 +89,7 @@ build/obj/board.o: board.c \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
  /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h sdmmcsimple.h \
  /home/cody/dev/chibios/trunk/os/ext/fatfs/src/ff.h \
- /home/cody/dev/chibios/trunk/os/ext/fatfs/src/integer.h ffconf.h
+ /home/cody/dev/chibios/trunk/os/ext/fatfs/src/integer.h ffconf.h board.h
 
 /home/cody/dev/chibios/trunk/os/hal/include/hal.h:
 
@@ -282,3 +282,5 @@ sdmmcsimple.h:
 /home/cody/dev/chibios/trunk/os/ext/fatfs/src/integer.h:
 
 ffconf.h:
+
+board.h:

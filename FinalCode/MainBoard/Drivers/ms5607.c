@@ -22,7 +22,7 @@ static systime_t timeout;
  */
 msg_t ms5607_init(ms5607_t *m, I2CDriver *driver, uint8_t baseAddr)
 {
-    I2CSensor_init(&m->sensor, driver, baseAddr, MS2ST(4));
+    I2CSensor_init(&m->sensor, driver, baseAddr, MS2ST(20));
 
     // TODO: Read out cal coefficients
     return 0;
@@ -45,7 +45,7 @@ msg_t ms5607_stop(ms5607_t *m, bool stopI2C)
 msg_t ms5607_reset(ms5607_t *m)
 {
     uint8_t resetCmd = MS5607_RESET;
-    return ms5607_transmit(m, &resetCmd, 1, NULL, 0);
+    return I2CSensor_transact(&m->sensor, &resetCmd, 1, NULL, 0);
 }
 
 /**
@@ -53,7 +53,14 @@ msg_t ms5607_reset(ms5607_t *m)
  */
 msg_t ms5607_readPressure(ms5607_t *m, float *pressure)
 {
-    // TODO: This
+    uint8_t regAddr = MS5607_TEMP_CONVERT; // TODO: This
+    uint8_t pressureData[4];
+    msg_t status = I2CSensor_transact(&m->sensor, &regAddr, 1, pressureData, 4);
+    // Wait for sensor
+    if(status == 0)
+    {
+	// TODO: Convert to actual pressure
+    }
     return 0;
 }
 

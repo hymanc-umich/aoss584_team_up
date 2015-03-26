@@ -1319,7 +1319,7 @@ extern "C" {
 #define COM_RX_PIN	3
 
 // GPS UART
-#define GPS_SERIAL	SD1
+#define GPS_UART	UARTD1
 #define GPS_PORT	GPIOB
 #define GPS_TX_PIN	6
 #define GPS_RX_PIN	7
@@ -1331,11 +1331,13 @@ extern "C" {
 #define DBG_RX_PIN	7
 
 // Internal I2C
+#define II2C_I2CD	I2CD1
 #define II2C_PORT	GPIOB
 #define II2C_SCL_PIN	6
 #define II2C_SDA_PIN	7
 
 // External I2C
+#define EI2C_I2CD	I2CD3
 #define EI2C_SCL_PORT	GPIOA
 #define EI2C_SDA_PORT	GPIOC
 #define EI2C_SCL_PIN	8
@@ -1359,7 +1361,7 @@ extern "C" {
 #define SD_WP_PIN	2
 
 // RFM23 SPI
-#define RFM23_SPID1
+#define RFM23_SPID	SPID2
 #define RFM23_SPI_PORT	GPIOB
 #define RFM23_CS_PORT	GPIOB
 #define RFM23_PCTL_PORT	GPIOB
@@ -1378,8 +1380,6 @@ extern "C" {
 #define PIEZO_PORT	GPIOB
 #define PIEZO_PIN	3
 
+void boardInit(void);
 
-
-void setLED(bool on);
-inline void toggleLED(void);
 #endif /* _BOARD_H_ */

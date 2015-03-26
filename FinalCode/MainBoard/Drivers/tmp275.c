@@ -31,7 +31,7 @@ msg_t tmp275_stop(tmp275_t *tmp, bool stopI2C)
  */
 msg_t tmp275_writeConfig(tmp275_t *tmp, uint8_t value)
 {
-    uint8_t txBytes[2] = {TMP275_CONFIGURATION, value}
+    uint8_t txBytes[2] = {TMP275_CONFIGURATION, value};
     I2CSensor_transact(&tmp->sensor, txBytes, 2, NULL, 0);
 }
 
