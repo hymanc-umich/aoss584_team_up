@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccGGEubi.s 			page 1
+ARM GAS  /tmp/cc2aPc7v.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"chsys.c"
-  17              		.section	.gnu.lto_.jmpfuncs.8380a148b7fbfb9c,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.2c309319834ea597,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006\272\2414\017\003\003#\0033\020\203"
   18      6062C006 
   18      BAA1340F 
@@ -46,7 +46,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   23      0300377E 
   23      1180
   24              		.text
-  25              		.section	.gnu.lto_.inline.8380a148b7fbfb9c,"",%progbits
+  25              		.section	.gnu.lto_.inline.2c309319834ea597,"",%progbits
   26 0000 789C758F 		.ascii	"x\234u\217\261\015\3020\020E\3779\216\023\022\207D("
   26      B10DC230 
   26      1045FF39 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   27      01A810
   28 0021 CA081982 		.ascii	"\312\010\031\202-h\250\221\2202\0025\025>'\030\020\340"
   28      2D68A891 
-ARM GAS  /tmp/ccGGEubi.s 			page 2
+ARM GAS  /tmp/cc2aPc7v.s 			page 2
 
 
   28      90320235 
@@ -108,7 +108,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   37      5D3E1E67 
   37      491F36
   38              		.text
-  39              		.section	.gnu.lto_.pureconst.8380a148b7fbfb9c,"",%progbits
+  39              		.section	.gnu.lto_.pureconst.2c309319834ea597,"",%progbits
   40 0000 789C6362 		.ascii	"x\234cb`b\220d\200\000\036\006)F3f+\026+V+6+.3n\011"
   40      60629064 
   40      80001E06 
@@ -118,11 +118,11 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   41      3E067E29 
   41      0022D802 
   41      7A
-ARM GAS  /tmp/ccGGEubi.s 			page 3
+ARM GAS  /tmp/cc2aPc7v.s 			page 3
 
 
   42              		.text
-  43              		.section	.gnu.lto_port_init.8380a148b7fbfb9c,"",%progbits
+  43              		.section	.gnu.lto_port_init.2c309319834ea597,"",%progbits
   44 0000 789CAD93 		.ascii	"x\234\255\223Oh\023A\024\306\337\333?\3156\311\226\340"
   44      4F681341 
   44      14C6DFDB 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   55 00c6 8BBCA950 		.ascii	"\213\274\251Pb\254\334\013d\302\333 \357\011\357<J\024"
   55      62ACDC0B 
   55      64C2DB20 
-ARM GAS  /tmp/ccGGEubi.s 			page 4
+ARM GAS  /tmp/cc2aPc7v.s 			page 4
 
 
   55      EF09EF3C 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   66      85415661 
   67 01a3 46D0D390 		.ascii	"F\320\323\220\377\206\246\331\302S\306m\271\266\327"
   67      FF86A6D9 
-ARM GAS  /tmp/ccGGEubi.s 			page 5
+ARM GAS  /tmp/cc2aPc7v.s 			page 5
 
 
   67      C253C66D 
@@ -291,14 +291,14 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   77      A4B8CE2F 
   77      BA513B1C 
   78              		.text
-  79              		.section	.gnu.lto__idle_thread.8380a148b7fbfb9c,"",%progbits
+  79              		.section	.gnu.lto__idle_thread.2c309319834ea597,"",%progbits
   80 0000 789C5D90 		.ascii	"x\234]\220\261J\003A\020\206\347\237\335SK\313Tb\255"
   80      B14A0341 
   80      1086E79F 
   80      DD534BCB 
   80      5462AD
   81 0013 C48534B6 		.ascii	"\304\2054\266\372\016'hi\366\016\263h<\270\213B\260"
-ARM GAS  /tmp/ccGGEubi.s 			page 6
+ARM GAS  /tmp/cc2aPc7v.s 			page 6
 
 
   81      FA0E2768 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   92      D1CD8D2D 
   92      B2BEC9
   93 00e7 F24B633B 		.ascii	"\362Kc;\256\355\212\312\364\312\213\363S#\242\354\231"
-ARM GAS  /tmp/ccGGEubi.s 			page 7
+ARM GAS  /tmp/cc2aPc7v.s 			page 7
 
 
   93      AEED8ACA 
@@ -371,7 +371,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
   94      FD00E638 
   94      48CF
   95              		.text
-  96              		.section	.gnu.lto_chVTDoTickI.8380a148b7fbfb9c,"",%progbits
+  96              		.section	.gnu.lto_chVTDoTickI.2c309319834ea597,"",%progbits
   97 0000 789CAD54 		.ascii	"x\234\255T]l\024U\024>gfwfv\273\266\013V\2515\201M\023"
   97      5D6C1455 
   97      143E6766 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  105      9AF85E75 
  105      16
  106 00ac 1A225F00 		.ascii	"\032\"_\000\302>I\366x\025U\303}/!\017)w\301a\306\336"
-ARM GAS  /tmp/ccGGEubi.s 			page 8
+ARM GAS  /tmp/cc2aPc7v.s 			page 8
 
 
  106      C23E49F6 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  117      9EA68FD1 
  117      F05819FB 
  117      AC3C0738 
-ARM GAS  /tmp/ccGGEubi.s 			page 9
+ARM GAS  /tmp/cc2aPc7v.s 			page 9
 
 
  117      CEC0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  129 025b 87FBFCC4 		.ascii	"\207\373\374\304/\177.\314\346\031b\263\227m\377\330"
  129      2F7F2ECC 
  129      E61962B3 
-ARM GAS  /tmp/ccGGEubi.s 			page 10
+ARM GAS  /tmp/cc2aPc7v.s 			page 10
 
 
  129      976DFFD8 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  141      6FDD38AA 
  141      36BAA9DD 
  141      0F5C1BDA 
-ARM GAS  /tmp/ccGGEubi.s 			page 11
+ARM GAS  /tmp/cc2aPc7v.s 			page 11
 
 
  141      A3
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  153 0414 51220886 		.ascii	"Q\"\010\206#;C\003\306p|(k>\031z\342)\220\262\240\246"
  153      233B4303 
  153      C6707C28 
-ARM GAS  /tmp/ccGGEubi.s 			page 12
+ARM GAS  /tmp/cc2aPc7v.s 			page 12
 
 
  153      6B3E197A 
@@ -667,7 +667,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  154      0FFC0D2F 
  154      0E16CA
  155              		.text
- 156              		.section	.gnu.lto_chSysGetStatusAndLockX.part.0.8380a148b7fbfb9c,"",%progbits
+ 156              		.section	.gnu.lto_chSysGetStatusAndLockX.part.0.2c309319834ea597,"",%progbits
  157 0000 789C9553 		.ascii	"x\234\225SOh\323P\030\377\276\244I\2538\364\272K\015"
  157      4F68D350 
  157      18FFBEA4 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  167      1F7BB3B5 
  167      D1F87007 
  167      DB2F0A2B 
-ARM GAS  /tmp/ccGGEubi.s 			page 13
+ARM GAS  /tmp/cc2aPc7v.s 			page 13
 
 
  167      BC54
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  179      AEE60137 
  179      EFBA6E82 
  179      622A2841 
-ARM GAS  /tmp/ccGGEubi.s 			page 14
+ARM GAS  /tmp/cc2aPc7v.s 			page 14
 
 
  179      1359
@@ -831,14 +831,14 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  189      6BCFC36F 
  189      7B0B057B 
  190              		.text
- 191              		.section	.gnu.lto_chSysRestoreStatusX.part.1.8380a148b7fbfb9c,"",%progbits
+ 191              		.section	.gnu.lto_chSysRestoreStatusX.part.1.2c309319834ea597,"",%progbits
  192 0000 789C8D52 		.ascii	"x\234\215RMh\023Q\020\236yo7\211A\2617\025$\204\202"
  192      4D681351 
  192      109E796F 
  192      378941B1 
  192      37152484 
  193 0015 B7D2275E 		.ascii	"\267\322'^<\025*\025\301C.I\013z\222\355fi\026\233\037"
-ARM GAS  /tmp/ccGGEubi.s 			page 15
+ARM GAS  /tmp/cc2aPc7v.s 			page 15
 
 
  193      3C152A15 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  204      DF5FBE1B 
  204      8D201858 
  204      C3619ACD 
-ARM GAS  /tmp/ccGGEubi.s 			page 16
+ARM GAS  /tmp/cc2aPc7v.s 			page 16
 
 
  204      469D
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  216      997CD612 
  216      663E5D12 
  216      696B4E98 
-ARM GAS  /tmp/ccGGEubi.s 			page 17
+ARM GAS  /tmp/cc2aPc7v.s 			page 17
 
 
  216      197BDACE 
@@ -994,7 +994,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  223      53823FE7 
  223      B5F5E9
  224              		.text
- 225              		.section	.gnu.lto_chSysInit.8380a148b7fbfb9c,"",%progbits
+ 225              		.section	.gnu.lto_chSysInit.2c309319834ea597,"",%progbits
  226 0000 789CA593 		.ascii	"x\234\245\223\317k\023A\024\307\337\233i\222\335\326"
  226      CF6B1341 
  226      14C7DF9B 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  230      37FB8B4D 
  230      BBE2C181 
  230      9D997DF3 
-ARM GAS  /tmp/ccGGEubi.s 			page 18
+ARM GAS  /tmp/cc2aPc7v.s 			page 18
 
 
  231 005a 7D9F99FD 		.ascii	"}\237\231\375\316[\006\014\016\2673\364\274\344\000"
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  242      9B3B2C44 
  242      BE76A94D 
  242      49D48948 
-ARM GAS  /tmp/ccGGEubi.s 			page 19
+ARM GAS  /tmp/cc2aPc7v.s 			page 19
 
 
  243 0134 C3245284 		.ascii	"\303$R\2040\323wWEt\025\353\302\342\257\037\317\366"
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  254      F46C71A6 
  254      68C8AAB8 
  254      DB282BAD 
-ARM GAS  /tmp/ccGGEubi.s 			page 20
+ARM GAS  /tmp/cc2aPc7v.s 			page 20
 
 
  254      6DDE
@@ -1154,7 +1154,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  256      DAAB
  257 0235 F901     		.ascii	"\371\001"
  258              		.text
- 259              		.section	.gnu.lto_chSysHalt.8380a148b7fbfb9c,"",%progbits
+ 259              		.section	.gnu.lto_chSysHalt.2c309319834ea597,"",%progbits
  260 0000 789C858F 		.ascii	"x\234\205\217\277J\304@\020\306gvsz`\343\023\310\365"
  260      BF4AC440 
  260      10C66776 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  268      403E84FC 
  268      F363F48A 
  268      BF912DBC 
-ARM GAS  /tmp/ccGGEubi.s 			page 21
+ARM GAS  /tmp/cc2aPc7v.s 			page 21
 
 
  268      A1A6
@@ -1244,7 +1244,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  277      07320E69 
  277      93
  278              		.text
- 279              		.section	.gnu.lto_chSysTimerHandlerI.8380a148b7fbfb9c,"",%progbits
+ 279              		.section	.gnu.lto_chSysTimerHandlerI.2c309319834ea597,"",%progbits
  280 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\\\003\304\206@\314\310\314\300\310"
  280      60624007 
  280      92405C03 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  282 0026 1FC90856 		.ascii	"\037\311\010V\273\236\351\300\203\377\377\327M:7\177"
  282      BB9EE9C0 
  282      83FFFFD7 
-ARM GAS  /tmp/ccGGEubi.s 			page 22
+ARM GAS  /tmp/cc2aPc7v.s 			page 22
 
 
  282      4D3A377F 
@@ -1293,7 +1293,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  288      25330000 
  288      4BE433E5 
  289              		.text
- 290              		.section	.gnu.lto_chSysGetStatusAndLockX.8380a148b7fbfb9c,"",%progbits
+ 290              		.section	.gnu.lto_chSysGetStatusAndLockX.2c309319834ea597,"",%progbits
  291 0000 789C854F 		.ascii	"x\234\205O1KBQ\024>\347\336\247X4\00454\211\004m\341"
  291      314B4251 
  291      143EE7DE 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  295      7C870081 
  295      BF2720EF 
  295      12029C
-ARM GAS  /tmp/ccGGEubi.s 			page 23
+ARM GAS  /tmp/cc2aPc7v.s 			page 23
 
 
  296 005e 4A441720 		.ascii	"JD\027 \2516\001\312\036Bh\213\201\030\327\352^\020"
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  307 0127 CE782E59 		.ascii	"\316x.YbI}\227\361\264\2210r\026\313\233\205\354\026"
  307      62497D97 
  307      F1B49130 
-ARM GAS  /tmp/ccGGEubi.s 			page 24
+ARM GAS  /tmp/cc2aPc7v.s 			page 24
 
 
  307      7216CB9B 
@@ -1402,7 +1402,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  311      C20F49D6 
  311      7EFB
  312              		.text
- 313              		.section	.gnu.lto_chSysRestoreStatusX.8380a148b7fbfb9c,"",%progbits
+ 313              		.section	.gnu.lto_chSysRestoreStatusX.2c309319834ea597,"",%progbits
  314 0000 789C6362 		.ascii	"x\234cb`b@\007\206@\274\031J3\262202M8\307\300\320\310"
  314      60624007 
  314      8640BC19 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  320      CC644471 
  320      5B282333 
  321 0086 7DE6F30C 		.ascii	"}\346\363\014\315\034\020E\014\014\325\014\277\032:"
-ARM GAS  /tmp/ccGGEubi.s 			page 25
+ARM GAS  /tmp/cc2aPc7v.s 			page 25
 
 
  321      CD1C1045 
@@ -1468,7 +1468,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  326      CC0000BF 
  326      F140C3
  327              		.text
- 328              		.section	.gnu.lto_chSysIsCounterWithinX.8380a148b7fbfb9c,"",%progbits
+ 328              		.section	.gnu.lto_chSysIsCounterWithinX.2c309319834ea597,"",%progbits
  329 0000 789C8552 		.ascii	"x\234\205R=h\024Q\020\236\357\275\375y\273\027\033\355"
  329      3D681451 
  329      109EEFBD 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  334      DA5CBECE 
  334      883182E8 
  334      BF214A94 
-ARM GAS  /tmp/ccGGEubi.s 			page 26
+ARM GAS  /tmp/cc2aPc7v.s 			page 26
 
 
  334      10B2
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  346      F0143655 
  346      6155198E 
  346      AC0C49DD 
-ARM GAS  /tmp/ccGGEubi.s 			page 27
+ARM GAS  /tmp/cc2aPc7v.s 			page 27
 
 
  346      492675BE 
@@ -1611,14 +1611,14 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  356      0D0062B4 
  356      FB
  357              		.text
- 358              		.section	.gnu.lto_chSysPolledDelayX.8380a148b7fbfb9c,"",%progbits
+ 358              		.section	.gnu.lto_chSysPolledDelayX.2c309319834ea597,"",%progbits
  359 0000 789C9D54 		.ascii	"x\234\235TOH\024Q\030\377\27673;\177w\213\352P\007A"
  359      4F481451 
  359      18FFBE37 
  359      333B7F77 
  359      8BEA5007 
  360 0015 BC48040E 		.ascii	"\274H\004\016\031\324\251B\202nB\204B\235b]\267u\210"
-ARM GAS  /tmp/ccGGEubi.s 			page 28
+ARM GAS  /tmp/cc2aPc7v.s 			page 28
 
 
  360      19D4A942 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  371      30716BF5 
  371      5C5B287E 
  371      9D1B3D70 
-ARM GAS  /tmp/ccGGEubi.s 			page 29
+ARM GAS  /tmp/cc2aPc7v.s 			page 29
 
 
  371      7DA8AF60 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  382      DF0C
  383 01c4 29FF6568 		.ascii	")\377eh\33434\003\323\253\313\237\306\276\005\252[y"
  383      DC333403 
-ARM GAS  /tmp/ccGGEubi.s 			page 30
+ARM GAS  /tmp/cc2aPc7v.s 			page 30
 
 
  383      D3ABCB9F 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  394      3448A6CD 
  394      543242F3 
  395 02a5 43048468 		.ascii	"C\004\204hg\273l]L\307\273\032\216\370\330\350\343\341"
-ARM GAS  /tmp/ccGGEubi.s 			page 31
+ARM GAS  /tmp/cc2aPc7v.s 			page 31
 
 
  395      67BB6C5D 
@@ -1815,7 +1815,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  397      E0275D73 
  397      3482
  398              		.text
- 399              		.section	.gnu.lto_.symbol_nodes.8380a148b7fbfb9c,"",%progbits
+ 399              		.section	.gnu.lto_.symbol_nodes.2c309319834ea597,"",%progbits
  400 0000 789C4DCC 		.ascii	"x\234M\3149N\003A\020\205\341\367\272\247\315b\033\274"
  400      394E0341 
  400      1085E1F7 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  408 0094 9F546EC0 		.ascii	"\237Tn\300Z\215\374\240\362^_\324\224\327;5\355\325"
  408      5A8DFCA0 
  408      F25E5FD4 
-ARM GAS  /tmp/ccGGEubi.s 			page 32
+ARM GAS  /tmp/cc2aPc7v.s 			page 32
 
 
  408      94D73B35 
@@ -1889,7 +1889,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  413      02B85093 
  414 0106 3A       		.ascii	":"
  415              		.text
- 416              		.section	.gnu.lto_.refs.8380a148b7fbfb9c,"",%progbits
+ 416              		.section	.gnu.lto_.refs.2c309319834ea597,"",%progbits
  417 0000 789C2588 		.ascii	"x\234%\210\201\011\000 \014\303\332\010\233\372\210"
  417      81090020 
  417      0CC3DA08 
@@ -1902,7 +1902,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  419 0023 2CEC9DBE 		.ascii	",\354\235\276\016\321\000\216"
  419      0ED1008E 
  420              		.text
- 421              		.section	.gnu.lto_.decls.8380a148b7fbfb9c,"",%progbits
+ 421              		.section	.gnu.lto_.decls.2c309319834ea597,"",%progbits
  422 0000 789CC55C 		.ascii	"x\234\305\\\011|\024U\232\257\252\356N'$r*\342\350\214"
  422      097C1455 
  422      9AAFAAEE 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  424      DD1D94D9 
  424      9DB5122E 
  424      15
-ARM GAS  /tmp/ccGGEubi.s 			page 33
+ARM GAS  /tmp/cc2aPc7v.s 			page 33
 
 
  425 003a 85902002 		.ascii	"\205\220 \002r\212\034\212\034\341\0127\215\310%\310"
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  436      F05F105C 
  436      0AF65988 
  436      9F33D4C9 
-ARM GAS  /tmp/ccGGEubi.s 			page 34
+ARM GAS  /tmp/cc2aPc7v.s 			page 34
 
 
  436      29
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  448      BAF4FEA0 
  448      F6850D8A 
  448      9FAA
-ARM GAS  /tmp/ccGGEubi.s 			page 35
+ARM GAS  /tmp/cc2aPc7v.s 			page 35
 
 
  449 01e5 76EEA8D8 		.ascii	"v\356\250\330\272\215RoP\361\345#\212o\037T|}\267\342"
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  460      242951E4 
  460      67413181 
  460      FB1DCFDD 
-ARM GAS  /tmp/ccGGEubi.s 			page 36
+ARM GAS  /tmp/cc2aPc7v.s 			page 36
 
 
  461 02c6 C7BD0938 		.ascii	"\307\275\0118\000\366\361\317Lt\3079\001_7r\367F\276"
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  472 03a0 D608537D 		.ascii	"\326\010S}Gn\034\216\024\224\216g\270U\200l]\311\365"
  472      476E1C8E 
  472      14948E67 
-ARM GAS  /tmp/ccGGEubi.s 			page 37
+ARM GAS  /tmp/cc2aPc7v.s 			page 37
 
 
  472      B855806C 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  484      D4D438ED 
  484      7A3D5F37 
  484      4CDA96
-ARM GAS  /tmp/ccGGEubi.s 			page 38
+ARM GAS  /tmp/cc2aPc7v.s 			page 38
 
 
  485 0487 AECA30C1 		.ascii	"\256\3120\3011\"\353E\347w\243K\312`\223\355\200Y\272"
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  496      6907EC49 
  496      13C9B43F 
  496      AB75EB4E 
-ARM GAS  /tmp/ccGGEubi.s 			page 39
+ARM GAS  /tmp/cc2aPc7v.s 			page 39
 
 
  496      FD19
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  508      9AD3EAEA 
  508      A969CDA1 
  508      EFC7F1
-ARM GAS  /tmp/ccGGEubi.s 			page 40
+ARM GAS  /tmp/cc2aPc7v.s 			page 40
 
 
  509 063c 176AA489 		.ascii	"\027j\244\211\351\016\264\263c\247j\261i\250\237\225"
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  520      82D1C40D 
  521 0713 C631B9F5 		.ascii	"\3061\271\365\275B\201\253K\270\311\226h\177\0027)\301"
  521      BD4281AB 
-ARM GAS  /tmp/ccGGEubi.s 			page 41
+ARM GAS  /tmp/cc2aPc7v.s 			page 41
 
 
  521      4BB8C996 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  533      23CEDE
  534 07e3 C6B45DB2 		.ascii	"\306\264]\262J\020\354\262c\260T\006l\335\230\251\266"
  534      4A10ECB2 
-ARM GAS  /tmp/ccGGEubi.s 			page 42
+ARM GAS  /tmp/cc2aPc7v.s 			page 42
 
 
  534      63B05406 
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  545      DD80741B 
  545      D27D480F 
  545      203D88F4 
-ARM GAS  /tmp/ccGGEubi.s 			page 43
+ARM GAS  /tmp/cc2aPc7v.s 			page 43
 
 
  546 08c0 33A467EC 		.ascii	"3\244g\3548\300j\366\235\337\335\3344)\332\334t\241"
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  557      A4805E33 
  557      D353F4F8 
  557      D8
-ARM GAS  /tmp/ccGGEubi.s 			page 44
+ARM GAS  /tmp/cc2aPc7v.s 			page 44
 
 
  558 0999 1DD5309C 		.ascii	"\035\3250\234K\327[Z\\\234}\017\271a\"\353<sYkY\373"
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  569 0a68 7333D719 		.ascii	"s3\327\031\015\361Jl\373\316\235\213\036\331'\233yz"
  569      0DF14A6C 
  569      FBCE9D8B 
-ARM GAS  /tmp/ccGGEubi.s 			page 45
+ARM GAS  /tmp/cc2aPc7v.s 			page 45
 
 
  569      1ED9279B 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  580      D906C5CE 
  580      4D36
  581 0b4a 8EA732D0 		.ascii	"\216\2472\320*\013\015\234\2444\240\316\026K,0\326\230"
-ARM GAS  /tmp/ccGGEubi.s 			page 46
+ARM GAS  /tmp/cc2aPc7v.s 			page 46
 
 
  581      2A0B0D9C 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  592      58F1CDC9 
  592      3B6320A6 
  593 0c2a 3587F8D0 		.ascii	"5\207\370\320\024b\374\234\275i1\020s- \216\232\217"
-ARM GAS  /tmp/ccGGEubi.s 			page 47
+ARM GAS  /tmp/cc2aPc7v.s 			page 47
 
 
  593      1462FC9C 
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  604      6F6E13F3 
  604      807CD846 
  604      DE117BC3 
-ARM GAS  /tmp/ccGGEubi.s 			page 48
+ARM GAS  /tmp/cc2aPc7v.s 			page 48
 
 
  605 0d05 E6680B53 		.ascii	"\346h\013S\212\036\226\301\266\241{\315w\014\226\312"
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  616      2FB28317 
  616      E7D5C7FA 
  616      DDC6A3
-ARM GAS  /tmp/ccGGEubi.s 			page 49
+ARM GAS  /tmp/cc2aPc7v.s 			page 49
 
 
  617 0de2 65F2E671 		.ascii	"e\362\346q\334\207\210c\325\312\331\211\361\330\246"
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  628      AD73BF
  629 0eb3 1CE7118F 		.ascii	"\034\347\021\2179\215Y\323A\225\303\241\227\232\333"
  629      398D59D3 
-ARM GAS  /tmp/ccGGEubi.s 			page 50
+ARM GAS  /tmp/cc2aPc7v.s 			page 50
 
 
  629      4195C3A1 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  640      1E13DB
  641 0f88 CA47A5AD 		.ascii	"\312G\245\255\374l\215\333\351\347\303k\335\346\237"
  641      FC6C8DDB 
-ARM GAS  /tmp/ccGGEubi.s 			page 51
+ARM GAS  /tmp/cc2aPc7v.s 			page 51
 
 
  641      E9E7C36B 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  653      E369B091 
  653      9D6C80C5 
  653      D9589848 
-ARM GAS  /tmp/ccGGEubi.s 			page 52
+ARM GAS  /tmp/cc2aPc7v.s 			page 52
 
 
  653      834D
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  665      77E071EA 
  665      E0217CAE 
  665      3D83B37B 
-ARM GAS  /tmp/ccGGEubi.s 			page 53
+ARM GAS  /tmp/cc2aPc7v.s 			page 53
 
 
  665      A363B0
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  676      88793691 
  676      1FE7
  677 1216 71DA23EA 		.ascii	"q\332#\352<\346=\202>\020\246\347\202f_66\233\021B\211"
-ARM GAS  /tmp/ccGGEubi.s 			page 54
+ARM GAS  /tmp/cc2aPc7v.s 			page 54
 
 
  677      3CE63D82 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  688      E904A413 
  688      914E413A 
  688      13E92C0F 
-ARM GAS  /tmp/ccGGEubi.s 			page 55
+ARM GAS  /tmp/cc2aPc7v.s 			page 55
 
 
  688      B530
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  700      3856BA95 
  700      2CDC193B 
  700      70711E
-ARM GAS  /tmp/ccGGEubi.s 			page 56
+ARM GAS  /tmp/cc2aPc7v.s 			page 56
 
 
  701 13c6 7756B370 		.ascii	"wV\263p\315\216\341X\351\326\262p\227\355\300Y=\006"
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  712      5756E11A 
  712      650DD275 
  712      483720DD 
-ARM GAS  /tmp/ccGGEubi.s 			page 57
+ARM GAS  /tmp/cc2aPc7v.s 			page 57
 
 
  713 14a0 7413D2CD 		.ascii	"t\023\322\315H\267\"\335\216t\007\322\367\221\356F\272"
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  724      3CAF277E 
  724      AB27EA85 
  724      9FEFA2A5 
-ARM GAS  /tmp/ccGGEubi.s 			page 58
+ARM GAS  /tmp/cc2aPc7v.s 			page 58
 
 
  724      7F6796
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  735      8262BF
  736 1653 A5B37F49 		.ascii	"\245\263\177I\261W\350\354{i\243\351\354\177\246\330"
  736      B157E8EC 
-ARM GAS  /tmp/ccGGEubi.s 			page 59
+ARM GAS  /tmp/cc2aPc7v.s 			page 59
 
 
  736      7B69A3E9 
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  748      3A6571B0 
  748      12DFED25 
  748      249B
-ARM GAS  /tmp/ccGGEubi.s 			page 60
+ARM GAS  /tmp/cc2aPc7v.s 			page 60
 
 
  749 172d 96A2DF39 		.ascii	"\226\242\3379R\247\001\357U\313{\224\362\325^uC_\333"
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  760      14F9
  761 1802 ABF8C50A 		.ascii	"\253\370\305\012%\201\351\273\3138{O\253\351\366L\260"
  761      2581E9BB 
-ARM GAS  /tmp/ccGGEubi.s 			page 61
+ARM GAS  /tmp/cc2aPc7v.s 			page 61
 
 
  761      CB387B4F 
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  772      85D7B0
  773 18d8 FBD57460 		.ascii	"\373\325t`\326K7\370q\352\217\333\3150\376\270\035\371"
  773      D64B37F8 
-ARM GAS  /tmp/ccGGEubi.s 			page 62
+ARM GAS  /tmp/cc2aPc7v.s 			page 62
 
 
  773      71EA8FDB 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  784      E92F3B4C 
  784      FACB1573 
  784      D755FB
-ARM GAS  /tmp/ccGGEubi.s 			page 63
+ARM GAS  /tmp/cc2aPc7v.s 			page 63
 
 
  785 19b1 CB74A5BF 		.ascii	"\313t\245\277\274\027\277\277\354d]\206{(\255$X\036"
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  796      14108BFD 
  796      91A4A212 
  796      BF
-ARM GAS  /tmp/ccGGEubi.s 			page 64
+ARM GAS  /tmp/cc2aPc7v.s 			page 64
 
 
  797 1a87 1CEFEA0C 		.ascii	"\034\357\352\014\253\250\244\030p\022*\375\025\201g"
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  808      86505C89 
  808      25848A87 
  808      425262E0 
-ARM GAS  /tmp/ccGGEubi.s 			page 65
+ARM GAS  /tmp/cc2aPc7v.s 			page 65
 
 
  808      D9D2
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  819      520C
  820 1c2c 45EE4FFF 		.ascii	"E\356O\377\021\246\346\007\302\021pY9\207\222\224\221"
  820      11A6E607 
-ARM GAS  /tmp/ccGGEubi.s 			page 66
+ARM GAS  /tmp/cc2aPc7v.s 			page 66
 
 
  820      C2117059 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  831      8F
  832 1cfc 40B30B4B 		.ascii	"@\263\013K\212}\000\030A\375\225\026\245(\316\202^\342"
  832      8A7D0018 
-ARM GAS  /tmp/ccGGEubi.s 			page 67
+ARM GAS  /tmp/cc2aPc7v.s 			page 67
 
 
  832      41FD9516 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  843      2263A2AB 
  843      78E0E0F6 
  843      A0F022
-ARM GAS  /tmp/ccGGEubi.s 			page 68
+ARM GAS  /tmp/cc2aPc7v.s 			page 68
 
 
  844 1dde 58540C0C 		.ascii	"XT\014\014\201\013\005\311\312\"8hP8\020\021\"\345B"
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  855      D297906C 
  855      209EDCDC 
  855      DE3DF3DD 
-ARM GAS  /tmp/ccGGEubi.s 			page 69
+ARM GAS  /tmp/cc2aPc7v.s 			page 69
 
 
  856 1ebe 8F10D213 		.ascii	"\217\020\322\023\356]y\275\363]\331\020zf\347\273!-"
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  867      7AC6B364 
  867      CC4BCA
  868 1f8f C9FF6305 		.ascii	"\311\377c\005\352\243\323c\301\212\\X\314\210\003\313"
-ARM GAS  /tmp/ccGGEubi.s 			page 70
+ARM GAS  /tmp/cc2aPc7v.s 			page 70
 
 
  868      EAA3D363 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  880      5C
  881 205d 65396F47 		.ascii	"e9oGVa~\037?8\020\362eiS\220\257h%\011n2\265X\226\026"
  881      56617E1F 
-ARM GAS  /tmp/ccGGEubi.s 			page 71
+ARM GAS  /tmp/cc2aPc7v.s 			page 71
 
 
  881      3F3810F2 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  892      3F56E8CA 
  892      2BF0B97A 
  893 214a E7BB6038 		.ascii	"\347\273`8w?\222]\010\3033)\225\3333_x\\.\221\005y\007"
-ARM GAS  /tmp/ccGGEubi.s 			page 72
+ARM GAS  /tmp/cc2aPc7v.s 			page 72
 
 
  893      773F925D 
@@ -4285,7 +4285,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  897      A2BC
  898 21a5 BB08     		.ascii	"\273\010"
  899              		.text
- 900              		.section	.gnu.lto_.symtab.8380a148b7fbfb9c,"",%progbits
+ 900              		.section	.gnu.lto_.symtab.2c309319834ea597,"",%progbits
  901 0000 63685379 		.ascii	"chSysInit\000\000\000\000\000\000\000\000\000\000\000"
  901      73496E69 
  901      74000000 
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  907 007a 63685379 		.ascii	"chSysRestoreStatusX\000\000\000\000\000\000\000\000"
  907      73526573 
  907      746F7265 
-ARM GAS  /tmp/ccGGEubi.s 			page 73
+ARM GAS  /tmp/cc2aPc7v.s 			page 73
 
 
  907      53746174 
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  919      69630000 
  919      02000000 
  919      00000000 
-ARM GAS  /tmp/ccGGEubi.s 			page 74
+ARM GAS  /tmp/cc2aPc7v.s 			page 74
 
 
  919      0000
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  933 0066 742D6672 		.ascii	"t-frame-pointer' '-falign-functions=16' '-ffunction"
  933      616D652D 
  933      706F696E 
-ARM GAS  /tmp/ccGGEubi.s 			page 75
+ARM GAS  /tmp/cc2aPc7v.s 			page 75
 
 
  933      74657227 
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  976 000c 9C60     		str	r4, [r3, #8]
  977 000e DE68     		ldr	r6, [r3, #12]
  978 0010 4FF6FF05 		movw	r5, #63743
-ARM GAS  /tmp/ccGGEubi.s 			page 76
+ARM GAS  /tmp/cc2aPc7v.s 			page 76
 
 
  979 0014 3540     		ands	r5, r5, r6
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  1033 0094 00000000 		.word	.LANCHOR1
  1034 0098 00000000 		.word	_idle_thread
  1035              		.size	chSysInit, .-chSysInit
-ARM GAS  /tmp/ccGGEubi.s 			page 77
+ARM GAS  /tmp/cc2aPc7v.s 			page 77
 
 
  1036 009c AFF30080 		.section	.text.chSysHalt,"ax",%progbits
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  1090 0030 D3F80CC0 		ldr	ip, [r3, #12]
  1091 0034 1044     		add	r0, r0, r2
  1092 0036 A062     		str	r0, [r4, #40]
-ARM GAS  /tmp/ccGGEubi.s 			page 78
+ARM GAS  /tmp/cc2aPc7v.s 			page 78
 
 
  1093 0038 AD1A     		subs	r5, r5, r2
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  1145 000a 2023     		movs	r3, #32
  1146              	@ 546 "/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h" 1
  1147 000c 83F31188 		MSR basepri, r3
-ARM GAS  /tmp/ccGGEubi.s 			page 79
+ARM GAS  /tmp/cc2aPc7v.s 			page 79
 
 
  1148              	@ 0 "" 2
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  1199 0006 08D8     		bhi	.L34
  1200              	.L36:
  1201 0008 8242     		cmp	r2, r0
-ARM GAS  /tmp/ccGGEubi.s 			page 80
+ARM GAS  /tmp/cc2aPc7v.s 			page 80
 
 
  1202 000a 94BF     		ite	ls
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  1256 0032 00BF     		.align	2
  1257              	.L48:
  1258 0034 001000E0 		.word	-536866816
-ARM GAS  /tmp/ccGGEubi.s 			page 81
+ARM GAS  /tmp/cc2aPc7v.s 			page 81
 
 
  1259              		.size	chSysPolledDelayX, .-chSysPolledDelayX
@@ -4832,43 +4832,43 @@ ARM GAS  /tmp/ccGGEubi.s 			page 1
  1277      00000000 
  1278              		.comm	__gnu_lto_v1,1,1
  1279              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccGGEubi.s 			page 82
+ARM GAS  /tmp/cc2aPc7v.s 			page 82
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chsys.c
-     /tmp/ccGGEubi.s:938    .text._idle_thread:0000000000000000 $t
-     /tmp/ccGGEubi.s:943    .text._idle_thread:0000000000000000 _idle_thread
-     /tmp/ccGGEubi.s:957    .text._idle_thread:000000000000000c $d
-     /tmp/ccGGEubi.s:961    .text.chSysInit:0000000000000000 $t
-     /tmp/ccGGEubi.s:967    .text.chSysInit:0000000000000000 chSysInit
-     /tmp/ccGGEubi.s:1026   .text.chSysInit:0000000000000078 $d
-     /tmp/ccGGEubi.s:1037   .text.chSysHalt:0000000000000000 $t
-     /tmp/ccGGEubi.s:1043   .text.chSysHalt:0000000000000000 chSysHalt
-     /tmp/ccGGEubi.s:1059   .text.chSysHalt:0000000000000008 $d
-     /tmp/ccGGEubi.s:1062   .text.chSysTimerHandlerI:0000000000000000 $t
-     /tmp/ccGGEubi.s:1068   .text.chSysTimerHandlerI:0000000000000000 chSysTimerHandlerI
-     /tmp/ccGGEubi.s:1123   .text.chSysTimerHandlerI:0000000000000070 $d
-     /tmp/ccGGEubi.s:1126   .text.chSysGetStatusAndLockX:0000000000000000 $t
-     /tmp/ccGGEubi.s:1132   .text.chSysGetStatusAndLockX:0000000000000000 chSysGetStatusAndLockX
-     /tmp/ccGGEubi.s:1154   .text.chSysRestoreStatusX:0000000000000000 $t
-     /tmp/ccGGEubi.s:1160   .text.chSysRestoreStatusX:0000000000000000 chSysRestoreStatusX
-     /tmp/ccGGEubi.s:1186   .text.chSysIsCounterWithinX:0000000000000000 $t
-     /tmp/ccGGEubi.s:1192   .text.chSysIsCounterWithinX:0000000000000000 chSysIsCounterWithinX
-     /tmp/ccGGEubi.s:1216   .text.chSysPolledDelayX:0000000000000000 $t
-     /tmp/ccGGEubi.s:1222   .text.chSysPolledDelayX:0000000000000000 chSysPolledDelayX
-     /tmp/ccGGEubi.s:1258   .text.chSysPolledDelayX:0000000000000034 $d
-     /tmp/ccGGEubi.s:1261   .bss.mainthread.6316:0000000000000000 $d
-     /tmp/ccGGEubi.s:1265   .bss.mainthread.6316:0000000000000000 mainthread.6316
-     /tmp/ccGGEubi.s:1268   .rodata.str1.4:0000000000000000 $d
-     /tmp/ccGGEubi.s:1272   .bss._idle_thread_wa:0000000000000000 $d
-     /tmp/ccGGEubi.s:1276   .bss._idle_thread_wa:0000000000000000 _idle_thread_wa
+     /tmp/cc2aPc7v.s:938    .text._idle_thread:0000000000000000 $t
+     /tmp/cc2aPc7v.s:943    .text._idle_thread:0000000000000000 _idle_thread
+     /tmp/cc2aPc7v.s:957    .text._idle_thread:000000000000000c $d
+     /tmp/cc2aPc7v.s:961    .text.chSysInit:0000000000000000 $t
+     /tmp/cc2aPc7v.s:967    .text.chSysInit:0000000000000000 chSysInit
+     /tmp/cc2aPc7v.s:1026   .text.chSysInit:0000000000000078 $d
+     /tmp/cc2aPc7v.s:1037   .text.chSysHalt:0000000000000000 $t
+     /tmp/cc2aPc7v.s:1043   .text.chSysHalt:0000000000000000 chSysHalt
+     /tmp/cc2aPc7v.s:1059   .text.chSysHalt:0000000000000008 $d
+     /tmp/cc2aPc7v.s:1062   .text.chSysTimerHandlerI:0000000000000000 $t
+     /tmp/cc2aPc7v.s:1068   .text.chSysTimerHandlerI:0000000000000000 chSysTimerHandlerI
+     /tmp/cc2aPc7v.s:1123   .text.chSysTimerHandlerI:0000000000000070 $d
+     /tmp/cc2aPc7v.s:1126   .text.chSysGetStatusAndLockX:0000000000000000 $t
+     /tmp/cc2aPc7v.s:1132   .text.chSysGetStatusAndLockX:0000000000000000 chSysGetStatusAndLockX
+     /tmp/cc2aPc7v.s:1154   .text.chSysRestoreStatusX:0000000000000000 $t
+     /tmp/cc2aPc7v.s:1160   .text.chSysRestoreStatusX:0000000000000000 chSysRestoreStatusX
+     /tmp/cc2aPc7v.s:1186   .text.chSysIsCounterWithinX:0000000000000000 $t
+     /tmp/cc2aPc7v.s:1192   .text.chSysIsCounterWithinX:0000000000000000 chSysIsCounterWithinX
+     /tmp/cc2aPc7v.s:1216   .text.chSysPolledDelayX:0000000000000000 $t
+     /tmp/cc2aPc7v.s:1222   .text.chSysPolledDelayX:0000000000000000 chSysPolledDelayX
+     /tmp/cc2aPc7v.s:1258   .text.chSysPolledDelayX:0000000000000034 $d
+     /tmp/cc2aPc7v.s:1261   .bss.mainthread.6316:0000000000000000 $d
+     /tmp/cc2aPc7v.s:1265   .bss.mainthread.6316:0000000000000000 mainthread.6316
+     /tmp/cc2aPc7v.s:1268   .rodata.str1.4:0000000000000000 $d
+     /tmp/cc2aPc7v.s:1272   .bss._idle_thread_wa:0000000000000000 $d
+     /tmp/cc2aPc7v.s:1276   .bss._idle_thread_wa:0000000000000000 _idle_thread_wa
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccGGEubi.s:960    .text._idle_thread:0000000000000014 $t
-     /tmp/ccGGEubi.s:1036   .text.chSysInit:000000000000009c $t
-     /tmp/ccGGEubi.s:1061   .text.chSysHalt:000000000000000c $t
-     /tmp/ccGGEubi.s:1125   .text.chSysTimerHandlerI:0000000000000074 $t
-     /tmp/ccGGEubi.s:1260   .text.chSysPolledDelayX:0000000000000038 $t
+     /tmp/cc2aPc7v.s:960    .text._idle_thread:0000000000000014 $t
+     /tmp/cc2aPc7v.s:1036   .text.chSysInit:000000000000009c $t
+     /tmp/cc2aPc7v.s:1061   .text.chSysHalt:000000000000000c $t
+     /tmp/cc2aPc7v.s:1125   .text.chSysTimerHandlerI:0000000000000074 $t
+     /tmp/cc2aPc7v.s:1260   .text.chSysPolledDelayX:0000000000000038 $t
 
 UNDEFINED SYMBOLS
 ch

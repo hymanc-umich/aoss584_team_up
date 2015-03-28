@@ -19,12 +19,16 @@
 #include "Drivers/tmp275.h"
 #include "Drivers/rtd.h"
 
+#define ANALOG_DEPTH 50
+#define ANALOG_CHANNELS  3
+
 typedef struct
 {
     mutex_t mtx; // Mutex
     float tempBmp;
     float temp275;
     float tempRtd;
+    float tempMs5607;
     float pressBmp;
     float pressMpxm;
     float pressMs5607;
@@ -45,7 +49,8 @@ typedef struct
     bmp280_t bmp280;
     lsm303_t lsm303;
     ms5607_t ms5607;
-    si70x0_t si7020;
+    si70x0_t intSi7020;
+    si70x0_t extSi7020;
     rtd_t rtd;
     tmp275_t tmp275;
 }sensorThread_t;
@@ -53,6 +58,5 @@ typedef struct
 
 msg_t sensorThread(void *arg);
 msg_t sensorThreadStop(sensorThread_t *thread);
-int8_t getSensorData(sensorThread_t *thread, sensorData_t *buffer);
 
 #endif

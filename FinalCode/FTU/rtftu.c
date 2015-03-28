@@ -55,7 +55,7 @@ typedef enum
     FIRED,
 }state_t;
 
-static uint32_t RTC_CUT = 6; // 6000=100 min RTC cut threshold
+static uint32_t RTC_CUT = 60; // 6000=100 min RTC cut threshold
 volatile uint32_t rtcCount = 0;
 volatile state_t state;
 
@@ -68,7 +68,7 @@ int8_t initializeRTC(void)
     TIMSK2 &= ~((1<<TOIE2)|(1<<OCIE2B)|(1<<OCIE2A));// Clear OCIE2x and TOIE2
     ASSR |= (1<<EXCLK)|(1<<AS2);// Set AS2
     TCCR2A = 0x00;
-    TCCR2B = (1<<CS22)|(1<<CS21); // CLKDIV 128 (1s ticks)
+    TCCR2B = (1<<CS22); // CLKDIV 128 (1s ticks)
     _delay_us(10);
     TIFR2 &= ~(1<<TOV2);// Clear IFs
     TIMSK2 |= (1<<TOIE2);// Reenable interrupts
@@ -99,11 +99,14 @@ void init(void)
 
 ISR(TIMER2_OVF_vect)
 {
-    rtcCount++;
-    if(rtcCount % 1)
-	LED_GRN_ON();
-    else
-	LED_GRN_OFF();
+    if(state == ARMED)
+    {
+	rtcCount++;
+	if(rtcCount % 2)
+	    LED_GRN_ON();
+	else
+	    LED_GRN_OFF();
+    }
 	   
 }
 
@@ -112,7 +115,7 @@ ISR(TIMER2_OVF_vect)
  */
 void setSwitch(uint8_t on)
 {
-    if(on)
+    if(on && state==FIRING)
     {
 	SW_PORT |= (1<<SW_PIN);
     }
@@ -140,31 +143,38 @@ int main(void)
   while(1)
   {
       arming = ARM_PINR & ARM_bm;
-      if(~(arming & ARM1_bm) && ~(arming & ARM2_bm))
+      if( state ==  DISARMED)
       {
-	  armCount++;
-	  if(armCount >= 10)
-	  {
-	      armCount = 10;
-	      state = ARMED;
-	      LED_RED_ON();
-	  }
-	  else
-	  {
-	      LED_RED_OFF();
-	  }
+	if(!(arming & (1<<ARM1_PIN)) && !(arming & (1<<ARM2_PIN)))
+	{
+	    armCount++;
+	    if(armCount >= 10)
+	    {
+		armCount = 10;
+		state = ARMED;
+		LED_RED_ON();
+	    }
+	    else
+	    {
+		LED_RED_OFF();
+	    }
+	}
       }
-      else
+      else if(state == ARMED)
       {
-	  armCount--;
-	  if(armCount < 0)
-	      armCount = 0;
-	  if(armCount == 0)
-	  {
-	      state = DISARMED;
-	      LED_RED_OFF();
-	  }
+	armCount--;
+	if(armCount < 0)
+	    armCount = 0;
+	if(armCount == 0)
+	{
+	    state = DISARMED;
+	    LED_RED_OFF();
+	    LED_GRN_OFF();
+	}
       }
+    
+     _delay_ms(100);
+        
       if((rtcCount > RTC_CUT) && (state == ARMED))
       {
 	  state = FIRING;
@@ -172,6 +182,18 @@ int main(void)
 	  rtcCount = 0;
 	  state = FIRED;
 	  LED_RED_OFF();
+	  LED_GRN_OFF();
+      }
+      
+      if(state == FIRED)
+      {
+	LED_RED_ON();
+        _delay_ms(150);
+        LED_RED_OFF();// Exit fired
+	if( (arming & (1<<ARM1_PIN)) || (arming & (1<<ARM2_PIN)))
+	{
+	    state = DISARMED;
+	}
       }
   }
   return 0;  

@@ -33,6 +33,6 @@ msg_t si70x0_setResolution(si70x0_t *s, uint8_t resolution);
 msg_t si70x0_heaterEnable(si70x0_t *s, uint8_t heaterOn);
 msg_t si70x0_setHeaterCurrent(si70x0_t *s, uint8_t heaterCurrent);
 msg_t si70x0_readTemperature(si70x0_t *s, float *temp);
-msg_t si70x0_readHumidity(si70x0_t *s, uint16_t *humidity);
+msg_t si70x0_readHumidity(si70x0_t *s, float *humidity);
 
 #endif

@@ -90,7 +90,7 @@ msg_t si70x0_readTemperature(si70x0_t *s, float *temp)
 /**
  * 
  */
-msg_t si70x0_readHumidity(si70x0_t *s, uint16_t *humidity)
+msg_t si70x0_readHumidity(si70x0_t *s, float *humidity)
 {
     uint8_t rx[2];
     uint8_t rhCmd = SI70X0_MEASURE_RH_NOHOLD;
@@ -99,11 +99,11 @@ msg_t si70x0_readHumidity(si70x0_t *s, uint16_t *humidity)
     {
 	uint16_t rawRH = (rx[0]<<8) + rx[1];
 	// Convert raw value to %RH
-	int pctRH = (125*rawRH)/65536-6;
+	int pctRH = ((125.0f*rawRH)/65536)-6.0f;
 	if(pctRH < 0)
 	    pctRH = 0;
 	else if(pctRH > 100)
-	    pctRH = 100;
+	    pctRH = 100.0f;
 	*humidity = pctRH;
     }
     return status;

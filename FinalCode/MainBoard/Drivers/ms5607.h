@@ -29,7 +29,9 @@
 typedef struct
 {
     I2CSensor_t sensor;	// I2C sensor struct
-    uint32_t cal[8];	// Calibration coefficients
+    uint16_t cal[6];	// Calibration coefficients
+    float lastTemp;
+    float lastPress;
 }ms5607_t;
 
 msg_t ms5607_init(ms5607_t *m, I2CDriver *driver, uint8_t baseAddr);

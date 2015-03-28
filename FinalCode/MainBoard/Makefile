@@ -115,6 +115,7 @@ CSRC = $(PORTSRC) \
        $(DRIVERS)/bmp280.c \
        $(DRIVERS)/si70x0.c \
        $(DRIVERS)/ms5607.c \
+       $(DRIVERS)/hih6030.c \
        $(DRIVERS)/lsm303.c \
        $(DRIVERS)/rfm23bp.c \
        $(DRIVERS)/rtd.c \

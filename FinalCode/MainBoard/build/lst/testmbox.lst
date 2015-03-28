@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccmENbm9.s 			page 1
+ARM GAS  /tmp/ccxrjADl.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"testmbox.c"
-  17              		.section	.gnu.lto_.jmpfuncs.7c35468321ab44a6,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.6edb6fa6dbcf20b7,"",%progbits
   18 0000 789C9591 		.ascii	"x\234\225\221IZ\302@\020F\253:$\001\034@\234'\004\007"
   18      495AC240 
   18      1046AB3A 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   25      D51B8BD7 
   25      B57A
   26 0096 13F13A70 		.ascii	"\023\361:p\246+\3406\360\245[~\027\233\362;\007>s\374"
-ARM GAS  /tmp/ccmENbm9.s 			page 2
+ARM GAS  /tmp/ccxrjADl.s 			page 2
 
 
   26      A62BE036 
@@ -101,7 +101,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   33      1E2C
   34 0127 D4CA     		.ascii	"\324\312"
   35              		.text
-  36              		.section	.gnu.lto_.inline.7c35468321ab44a6,"",%progbits
+  36              		.section	.gnu.lto_.inline.6edb6fa6dbcf20b7,"",%progbits
   37 0000 789C6362 		.ascii	"x\234cb`b\300\006\362\240\302L\014,\013X\0362020\275"
   37      6062C006 
   37      F2A0C24C 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   39      918111
   40 0036 C463848A 		.ascii	"\304c\204\212\202h\034\232\030\250\307\035\254\356\300"
   40      82681C9A 
-ARM GAS  /tmp/ccmENbm9.s 			page 3
+ARM GAS  /tmp/ccxrjADl.s 			page 3
 
 
   40      18A8C71D 
@@ -138,14 +138,14 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   43      00004718 
   44 007a FA       		.ascii	"\372"
   45              		.text
-  46              		.section	.gnu.lto_.pureconst.7c35468321ab44a6,"",%progbits
+  46              		.section	.gnu.lto_.pureconst.6edb6fa6dbcf20b7,"",%progbits
   47 0000 789C6362 		.ascii	"x\234cb`b`e\200\000&\006+&\011\000\001f\000`"
   47      60626065 
   47      80002606 
   47      2B260900 
   47      01660060 
   48              		.text
-  49              		.section	.gnu.lto_mbox1_execute.7c35468321ab44a6,"",%progbits
+  49              		.section	.gnu.lto_mbox1_execute.6edb6fa6dbcf20b7,"",%progbits
   50 0000 789CCD5B 		.ascii	"x\234\315[kpTE\026\356\2763y\020\362\"!!!!LHx\205\220"
   50      6B705445 
   50      16EEBE33 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   56      FFF4B212 
   56      72792021 
   56      75EC9A8E 
-ARM GAS  /tmp/ccmENbm9.s 			page 4
+ARM GAS  /tmp/ccxrjADl.s 			page 4
 
 
   56      23545B7D 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   68 0157 336A9DB9 		.ascii	"3j\235\271\326\005\265.\\\353\212ZW-\027k\226\2065K"
   68      D605B52E 
   68      5CEB8A5A 
-ARM GAS  /tmp/ccmENbm9.s 			page 5
+ARM GAS  /tmp/ccxrjADl.s 			page 5
 
 
   68      572D176B 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   80 0234 6B406050 		.ascii	"k@`Pp\213\220\226\241a\341\021\221\255\242\242[\307"
   80      708B9096 
   80      A161E111 
-ARM GAS  /tmp/ccmENbm9.s 			page 6
+ARM GAS  /tmp/ccxrjADl.s 			page 6
 
 
   80      91ADA2A2 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
   91      1A
   92 0312 1001228A 		.ascii	"\020\001\"\212\011k4\023$\206\215\275\313\306b\301\034"
   92      096B3413 
-ARM GAS  /tmp/ccmENbm9.s 			page 7
+ARM GAS  /tmp/ccxrjADl.s 			page 7
 
 
   92      24868DBD 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  103      28B7E2A3 
  103      B7A1DC8E 
  103      96
-ARM GAS  /tmp/ccmENbm9.s 			page 8
+ARM GAS  /tmp/ccxrjADl.s 			page 8
 
 
  104 03ea 0A943BC5 		.ascii	"\012\224;\305\315\273Q\335\203r/\345u\335\007j\320\307"
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  115 04ba C95BA964 		.ascii	"\311[\251d\002\325\330\227\3454Yt{\345\221=\313-\334"
  115      02D5D897 
  115      E5345974 
-ARM GAS  /tmp/ccmENbm9.s 			page 9
+ARM GAS  /tmp/ccxrjADl.s 			page 9
 
 
  115      7BE5913D 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  127      DE23B38C 
  127      66C350A5 
  127      25556D85 
-ARM GAS  /tmp/ccmENbm9.s 			page 10
+ARM GAS  /tmp/ccxrjADl.s 			page 10
 
 
  127      2946D629 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  139      785C2789 
  139      AEB5835A 
  139      3D2B3151 
-ARM GAS  /tmp/ccmENbm9.s 			page 11
+ARM GAS  /tmp/ccxrjADl.s 			page 11
 
 
  139      5509278D 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  150      EC477423 
  150      69AC7D97 
  151 0752 34C4CAE2 		.ascii	"4\304\312\342\001\007\274t\241\3509E4)\020\343\005\021"
-ARM GAS  /tmp/ccmENbm9.s 			page 12
+ARM GAS  /tmp/ccxrjADl.s 			page 12
 
 
  151      0107BC74 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  163      D4BA7B0E 
  163      E1384102 
  163      4970E8
-ARM GAS  /tmp/ccmENbm9.s 			page 13
+ARM GAS  /tmp/ccxrjADl.s 			page 13
 
 
  164 082a E73FBD0A 		.ascii	"\347?\275\012\241\210\220-G\211I\344\002?\376\265\023"
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  175      454D9BA2 
  175      78BC10D3 
  175      F37FEE
-ARM GAS  /tmp/ccmENbm9.s 			page 14
+ARM GAS  /tmp/ccxrjADl.s 			page 14
 
 
  176 0900 E9399D45 		.ascii	"\3519\235En\260)\236i\222M+p6f3S\221M\273\207\330\336"
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  186      5514
  187 09de 02A97E59 		.ascii	"\002\251~Y\257\233\321\021\213nF:^W\321\321\221\367"
  187      AF9BD111 
-ARM GAS  /tmp/ccmENbm9.s 			page 15
+ARM GAS  /tmp/ccxrjADl.s 			page 15
 
 
  187      8B6E463A 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  199 0aaf 5C94EF78 		.ascii	"\\\224\357xvR\323\346\372\217\277\177s}\362\3463\002"
  199      7652D3E6 
  199      FA8FBF7F 
-ARM GAS  /tmp/ccmENbm9.s 			page 16
+ARM GAS  /tmp/ccxrjADl.s 			page 16
 
 
  199      737DF2E6 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  211 0b8a E86324A2 		.ascii	"\350c$\242FEDo?\277\323\371\267\354\326k\275\272\231"
  211      4645446F 
  211      3FBFD3F9 
-ARM GAS  /tmp/ccmENbm9.s 			page 17
+ARM GAS  /tmp/ccxrjADl.s 			page 17
 
 
  211      B7ECD66B 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  223      F36EFD92 
  223      E8D6FBD7 
  223      DEC66E7D 
-ARM GAS  /tmp/ccmENbm9.s 			page 18
+ARM GAS  /tmp/ccxrjADl.s 			page 18
 
 
  223      809F
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  235 0d30 2877A412 		.ascii	"(w\244\022\015\200@(/\"J\315\210\350\206>F\"JUD\214"
  235      0D804028 
  235      2F224ACD 
-ARM GAS  /tmp/ccmENbm9.s 			page 19
+ARM GAS  /tmp/ccxrjADl.s 			page 19
 
 
  235      88E8863E 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  247 0e05 64AF6B29 		.ascii	"d\257k)\034\241\345\223r\341\377\332\301}\265;\302\032"
  247      1CA1E593 
  247      72E1FFDA 
-ARM GAS  /tmp/ccmENbm9.s 			page 20
+ARM GAS  /tmp/ccxrjADl.s 			page 20
 
 
  247      C17DB53B 
@@ -1190,7 +1190,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  257      92FF0341 
  257      674FA6
  258              		.text
- 259              		.section	.gnu.lto_mbox1_setup.7c35468321ab44a6,"",%progbits
+ 259              		.section	.gnu.lto_mbox1_setup.6edb6fa6dbcf20b7,"",%progbits
  260 0000 789C6362 		.ascii	"x\234cb`b@\007\222@|\031\210\215\200\230\221\231\201"
  260      60624007 
  260      92407C19 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  260      919981
  261 0013 9169C239 		.ascii	"\221i\3029\006\206F\016&FF\020\203\201\221\241\236\211"
  261      0686460E 
-ARM GAS  /tmp/ccmENbm9.s 			page 21
+ARM GAS  /tmp/ccxrjADl.s 			page 21
 
 
  261      26464610 
@@ -1255,10 +1255,10 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  272 00e5 4B660000 		.ascii	"Kf\000\000\266\353G\335"
  272      B6EB47DD 
  273              		.text
- 274              		.section	.gnu.lto_.symbol_nodes.7c35468321ab44a6,"",%progbits
+ 274              		.section	.gnu.lto_.symbol_nodes.6edb6fa6dbcf20b7,"",%progbits
  275 0000 789C4D91 		.ascii	"x\234M\221\273JCA\020\206g\366\344~\265\262\260\320"
  275      BB4A4341 
-ARM GAS  /tmp/ccmENbm9.s 			page 22
+ARM GAS  /tmp/ccxrjADl.s 			page 22
 
 
  275      108667F6 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  286      128E328C 
  286      711C0F20 
  287 00d9 6682CD36 		.ascii	"f\202\3156\246!\232\011 \005\341\254\353\021\316\271"
-ARM GAS  /tmp/ccmENbm9.s 			page 23
+ARM GAS  /tmp/ccxrjADl.s 			page 23
 
 
  287      A6219A09 
@@ -1364,7 +1364,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  295      ED6F875F 
  295      0771B0C7 
  296              		.text
- 297              		.section	.gnu.lto_.refs.7c35468321ab44a6,"",%progbits
+ 297              		.section	.gnu.lto_.refs.6edb6fa6dbcf20b7,"",%progbits
  298 0000 789C6362 		.ascii	"x\234cb`b\230\314\000\001\346\014\014\214LH\220\001"
  298      606298CC 
  298      0001E60C 
@@ -1378,13 +1378,13 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  300 0025 33013133 		.ascii	"3\00113#\013\023+\0202110\000\000\247\272\001\204"
  300      230B132B 
  300      10323131 
-ARM GAS  /tmp/ccmENbm9.s 			page 24
+ARM GAS  /tmp/ccxrjADl.s 			page 24
 
 
  300      300000A7 
  300      BA0184
  301              		.text
- 302              		.section	.gnu.lto_.decls.7c35468321ab44a6,"",%progbits
+ 302              		.section	.gnu.lto_.decls.6edb6fa6dbcf20b7,"",%progbits
  303 0000 789CBD5B 		.ascii	"x\234\275[{p\024\307\231\357\236]\355j%\031l\347\205"
  303      7B7014C7 
  303      99EF9E5D 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  313      036913A4 
  313      6D907A20 
  313      ED86F43A 
-ARM GAS  /tmp/ccmENbm9.s 			page 25
+ARM GAS  /tmp/ccxrjADl.s 			page 25
 
 
  313      A4FD90
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  325 0192 325E816F 		.ascii	"2^\201o\005\334\211\030\215Bk\240Y\213\246]\272\323"
  325      05DC8918 
  325      8D426BA0 
-ARM GAS  /tmp/ccmENbm9.s 			page 26
+ARM GAS  /tmp/ccxrjADl.s 			page 26
 
 
  325      598BA65D 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  337 0269 2DC5444F 		.ascii	"-\305DO\207Q\365(o^\221\367\243M\177\330\031\240~\324"
  337      8751F528 
  337      6F5E91F7 
-ARM GAS  /tmp/ccmENbm9.s 			page 27
+ARM GAS  /tmp/ccxrjADl.s 			page 27
 
 
  337      A34D7FD8 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  349 033a 50EDF377 		.ascii	"P\355\363wN\244\335\375&\005\332\022\264O\330a\333\204"
  349      4EA4DDFD 
  349      2605DA12 
-ARM GAS  /tmp/ccmENbm9.s 			page 28
+ARM GAS  /tmp/ccxrjADl.s 			page 28
 
 
  349      B44FD861 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  360      22D8DFBC 
  361 040c 808D7067 		.ascii	"\200\215pg\366\231\010\366\241o0+\263\033\"\330'^\300"
  361      F69908F6 
-ARM GAS  /tmp/ccmENbm9.s 			page 29
+ARM GAS  /tmp/ccxrjADl.s 			page 29
 
 
  361      A16F302B 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  372      FB7D83D9 
  372      5C99800D 
  373 04ec 8ED2346A 		.ascii	"\216\3224j\003/\353#\332\362\233\267R\216E\242Il\247"
-ARM GAS  /tmp/ccmENbm9.s 			page 30
+ARM GAS  /tmp/ccxrjADl.s 			page 30
 
 
  373      032FEB23 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  384      0F50A4CD 
  384      B7226304 
  384      454884
-ARM GAS  /tmp/ccmENbm9.s 			page 31
+ARM GAS  /tmp/ccxrjADl.s 			page 31
 
 
  385 05c1 E4835636 		.ascii	"\344\203V6\017~\011\265\026>\231\022>\272\364%kp\353"
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  396      145D0F87 
  396      9ADE
  397 068e 7A441877 		.ascii	"zD\030w\015\245\036\310\0258\317u00\346\362s}\203E-"
-ARM GAS  /tmp/ccmENbm9.s 			page 32
+ARM GAS  /tmp/ccxrjADl.s 			page 32
 
 
  397      0DA51EC8 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  408      2BE9752D 
  408      BD6EA3D7 
  408      1DF4BA9B 
-ARM GAS  /tmp/ccmENbm9.s 			page 33
+ARM GAS  /tmp/ccxrjADl.s 			page 33
 
 
  408      5E8F
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  421      9B6FB40F 
  421      19ED3F93 
  421      6EA1258B 
-ARM GAS  /tmp/ccmENbm9.s 			page 34
+ARM GAS  /tmp/ccxrjADl.s 			page 34
 
 
  421      F7B0
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  433 0904 DEE00C5B 		.ascii	"\336\340\014[;\342u\210x\013\274\341u\206\335\3616\212"
  433      3BE27588 
  433      780BBCE1 
-ARM GAS  /tmp/ccmENbm9.s 			page 35
+ARM GAS  /tmp/ccxrjADl.s 			page 35
 
 
  433      7586DDF1 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  444      D1075A60 
  445 09d8 D9F3F5B6 		.ascii	"\331\363\365\266\315\332l\007\265K\321\\\032_\234\243"
  445      CDDA6C07 
-ARM GAS  /tmp/ccmENbm9.s 			page 36
+ARM GAS  /tmp/ccxrjADl.s 			page 36
 
 
  445      B54BD15C 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  457      8EBCCEE4 
  457      79317112 
  457      3AED0270 
-ARM GAS  /tmp/ccmENbm9.s 			page 37
+ARM GAS  /tmp/ccxrjADl.s 			page 37
 
 
  457      C011
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  469      E5C09DEE 
  469      A006912F 
  469      B36FBA
-ARM GAS  /tmp/ccmENbm9.s 			page 38
+ARM GAS  /tmp/ccxrjADl.s 			page 38
 
 
  470 0b91 8BE95A04 		.ascii	"\213\351Z\004\215\005\004\276\030\002\011&\260.\210"
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  482 0c5a 05ABE89F 		.ascii	"\005\253\350\237W\030\326v\337XQ\233\271y?\310\370\251"
  482      5718D676 
  482      DF58519B 
-ARM GAS  /tmp/ccmENbm9.s 			page 39
+ARM GAS  /tmp/ccxrjADl.s 			page 39
 
 
  482      B9793FC8 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  494      B3D2A465 
  494      BA878B45 
  494      27F0A661 
-ARM GAS  /tmp/ccmENbm9.s 			page 40
+ARM GAS  /tmp/ccxrjADl.s 			page 40
 
 
  494      A3C1
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  506      54EE51E4 
  506      A9719346 
  506      56AD8927 
-ARM GAS  /tmp/ccmENbm9.s 			page 41
+ARM GAS  /tmp/ccxrjADl.s 			page 41
 
 
  506      55A81A86 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  518      E3208D87 
  518      F47D4850 
  518      6F2CD41B 
-ARM GAS  /tmp/ccmENbm9.s 			page 42
+ARM GAS  /tmp/ccxrjADl.s 			page 42
 
 
  518      0BF5C6
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  530      751D7898 
  530      4EA5EAC2 
  530      860F9754 
-ARM GAS  /tmp/ccmENbm9.s 			page 43
+ARM GAS  /tmp/ccxrjADl.s 			page 43
 
 
  530      2781
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  542 10a7 E5AC1224 		.ascii	"\345\254\022$\256\\B9\30339S\003\235\033\346\012\245"
  542      AE5C4239 
  542      C3333953 
-ARM GAS  /tmp/ccmENbm9.s 			page 44
+ARM GAS  /tmp/ccxrjADl.s 			page 44
 
 
  542      039D1BE6 
@@ -2596,7 +2596,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  545 10e4 A2FF0364 		.ascii	"\242\377\003d\274a\320"
  545      BC61D0
  546              		.text
- 547              		.section	.gnu.lto_.symtab.7c35468321ab44a6,"",%progbits
+ 547              		.section	.gnu.lto_.symtab.6edb6fa6dbcf20b7,"",%progbits
  548 0000 70617474 		.ascii	"patternmbox\000\000\000\000\000\000\000\000\000\000"
  548      65726E6D 
  548      626F7800 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  556      B5010000 
  556      74657374 
  556      5F656D69 
-ARM GAS  /tmp/ccmENbm9.s 			page 45
+ARM GAS  /tmp/ccxrjADl.s 			page 45
 
 
  556      745F746F 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  570              		.section	.gnu.lto_.opts,"",%progbits
  571 0000 272D6D63 		.ascii	"'-mcpu=cortex-m4' '-mfloat-abi=hard' '-mfpu=fpv4-sp"
  571      70753D63 
-ARM GAS  /tmp/ccmENbm9.s 			page 46
+ARM GAS  /tmp/ccxrjADl.s 			page 46
 
 
  571      6F727465 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  607              	.L6:
  608 002e 934D     		ldr	r5, .L36
  609 0030 2146     		mov	r1, r4
-ARM GAS  /tmp/ccmENbm9.s 			page 47
+ARM GAS  /tmp/ccxrjADl.s 			page 47
 
 
  610 0032 2846     		mov	r0, r5
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  664 00aa 0028     		cmp	r0, #0
  665 00ac E1D1     		bne	.L1
  666              	@ 546 "/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h" 1
-ARM GAS  /tmp/ccmENbm9.s 			page 48
+ARM GAS  /tmp/ccxrjADl.s 			page 48
 
 
  667 00ae 86F31188 		MSR basepri, r6
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  721 012e 5942     		rsbs	r1, r3, #0
  722 0130 5941     		adcs	r1, r1, r3
  723 0132 2520     		movs	r0, #37
-ARM GAS  /tmp/ccmENbm9.s 			page 49
+ARM GAS  /tmp/ccxrjADl.s 			page 49
 
 
  724 0134 FFF7FEFF 		bl	_test_assert
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  778 01b2 2920     		movs	r0, #41
  779 01b4 FFF7FEFF 		bl	_test_assert
  780 01b8 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccmENbm9.s 			page 50
+ARM GAS  /tmp/ccxrjADl.s 			page 50
 
 
  781 01ba 40F0CB80 		bne	.L29
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  835 022c 2D20     		movs	r0, #45
  836 022e FFF7FEFF 		bl	_test_assert
  837 0232 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccmENbm9.s 			page 51
+ARM GAS  /tmp/ccxrjADl.s 			page 51
 
 
  838 0234 40F08E80 		bne	.L29
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  892 0296 0420     		movs	r0, #4
  893 0298 FFF7FEFF 		bl	_test_assert
  894 029c 0446     		mov	r4, r0
-ARM GAS  /tmp/ccmENbm9.s 			page 52
+ARM GAS  /tmp/ccxrjADl.s 			page 52
 
 
  895 029e 0028     		cmp	r0, #0
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  949              	@ 546 "/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h" 1
  950 0316 87F31188 		MSR basepri, r7
  951              	@ 0 "" 2
-ARM GAS  /tmp/ccmENbm9.s 			page 53
+ARM GAS  /tmp/ccxrjADl.s 			page 53
 
 
  952              		.thumb
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  1006 0382 83F31188 		MSR basepri, r3
  1007              	@ 0 "" 2
  1008              		.thumb
-ARM GAS  /tmp/ccmENbm9.s 			page 54
+ARM GAS  /tmp/ccxrjADl.s 			page 54
 
 
  1009 0386 0525     		movs	r5, #5
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  1063 0416 0F20     		movs	r0, #15
  1064 0418 FFF7FEFF 		bl	_test_assert
  1065 041c 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccmENbm9.s 			page 55
+ARM GAS  /tmp/ccxrjADl.s 			page 55
 
 
  1066 041e 7FF428AE 		bne	.L1
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  1120              	@ 546 "/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h" 1
  1121 0498 87F31188 		MSR basepri, r7
  1122              	@ 0 "" 2
-ARM GAS  /tmp/ccmENbm9.s 			page 56
+ARM GAS  /tmp/ccxrjADl.s 			page 56
 
 
  1123              		.thumb
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  1177 04fe 0021     		movcc	r1, #0
  1178 0500 1620     		movs	r0, #22
  1179 0502 FFF7FEFF 		bl	_test_assert
-ARM GAS  /tmp/ccmENbm9.s 			page 57
+ARM GAS  /tmp/ccxrjADl.s 			page 57
 
 
  1180 0506 0028     		cmp	r0, #0
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  1234 0596 FFF7FEFF 		bl	_test_assert
  1235 059a 0028     		cmp	r0, #0
  1236 059c 7FF469AD 		bne	.L1
-ARM GAS  /tmp/ccmENbm9.s 			page 58
+ARM GAS  /tmp/ccxrjADl.s 			page 58
 
 
  1237 05a0 A846     		mov	r8, r5
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  1291              	.L38:
  1292 0608 00000000 		.word	.LANCHOR0
  1293 060c 00000000 		.word	.LC0
-ARM GAS  /tmp/ccmENbm9.s 			page 59
+ARM GAS  /tmp/ccxrjADl.s 			page 59
 
 
  1294              		.size	mbox1_execute, .-mbox1_execute
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  1345              	.LC1:
  1346 0008 4D61696C 		.ascii	"Mailboxes, queuing and timeouts\000"
  1346      626F7865 
-ARM GAS  /tmp/ccmENbm9.s 			page 60
+ARM GAS  /tmp/ccxrjADl.s 			page 60
 
 
  1346      732C2071 
@@ -3555,28 +3555,28 @@ ARM GAS  /tmp/ccmENbm9.s 			page 1
  1355 000c 00000000 		.word	mbox1_execute
  1356              		.comm	__gnu_lto_v1,1,1
  1357              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccmENbm9.s 			page 61
+ARM GAS  /tmp/ccxrjADl.s 			page 61
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 testmbox.c
-     /tmp/ccmENbm9.s:578    .text.mbox1_execute:0000000000000000 $t
-     /tmp/ccmENbm9.s:583    .text.mbox1_execute:0000000000000000 mbox1_execute
-     /tmp/ccmENbm9.s:882    .text.mbox1_execute:000000000000027c $d
-     /tmp/ccmENbm9.s:885    .text.mbox1_execute:0000000000000284 $t
-     /tmp/ccmENbm9.s:1292   .text.mbox1_execute:0000000000000608 $d
-     /tmp/ccmENbm9.s:1296   .text.mbox1_setup:0000000000000000 $t
-     /tmp/ccmENbm9.s:1301   .text.mbox1_setup:0000000000000000 mbox1_setup
-     /tmp/ccmENbm9.s:1312   .text.mbox1_setup:000000000000000c $d
-     /tmp/ccmENbm9.s:1337   .rodata.patternmbox:0000000000000000 patternmbox
-     /tmp/ccmENbm9.s:1351   .rodata.testmbox1:0000000000000000 testmbox1
-     /tmp/ccmENbm9.s:1318   .data.mb1:0000000000000000 $d
-     /tmp/ccmENbm9.s:1322   .data.mb1:0000000000000000 mb1
-     /tmp/ccmENbm9.s:1334   .rodata.patternmbox:0000000000000000 $d
-     /tmp/ccmENbm9.s:1341   .rodata.str1.4:0000000000000000 $d
-     /tmp/ccmENbm9.s:1348   .rodata.testmbox1:0000000000000000 $d
+     /tmp/ccxrjADl.s:578    .text.mbox1_execute:0000000000000000 $t
+     /tmp/ccxrjADl.s:583    .text.mbox1_execute:0000000000000000 mbox1_execute
+     /tmp/ccxrjADl.s:882    .text.mbox1_execute:000000000000027c $d
+     /tmp/ccxrjADl.s:885    .text.mbox1_execute:0000000000000284 $t
+     /tmp/ccxrjADl.s:1292   .text.mbox1_execute:0000000000000608 $d
+     /tmp/ccxrjADl.s:1296   .text.mbox1_setup:0000000000000000 $t
+     /tmp/ccxrjADl.s:1301   .text.mbox1_setup:0000000000000000 mbox1_setup
+     /tmp/ccxrjADl.s:1312   .text.mbox1_setup:000000000000000c $d
+     /tmp/ccxrjADl.s:1337   .rodata.patternmbox:0000000000000000 patternmbox
+     /tmp/ccxrjADl.s:1351   .rodata.testmbox1:0000000000000000 testmbox1
+     /tmp/ccxrjADl.s:1318   .data.mb1:0000000000000000 $d
+     /tmp/ccxrjADl.s:1322   .data.mb1:0000000000000000 mb1
+     /tmp/ccxrjADl.s:1334   .rodata.patternmbox:0000000000000000 $d
+     /tmp/ccxrjADl.s:1341   .rodata.str1.4:0000000000000000 $d
+     /tmp/ccxrjADl.s:1348   .rodata.testmbox1:0000000000000000 $d
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccmENbm9.s:1317   .text.mbox1_setup:0000000000000014 $t
+     /tmp/ccxrjADl.s:1317   .text.mbox1_setup:0000000000000014 $t
 
 UNDEFINED SYMBOLS
 _test_assert
