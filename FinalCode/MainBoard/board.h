@@ -1380,6 +1380,11 @@ extern "C" {
 #define PIEZO_PORT	GPIOB
 #define PIEZO_PIN	3
 
-void boardInit(void);
+// Trigger
+#define LED_TRIG_PORT	GPIOB
+#define LED_TRIG_PIN	5
 
+void boardInit(void);
+void boardSetBuzzer(bool on);
+void boardSetLED(bool on);
 #endif /* _BOARD_H_ */

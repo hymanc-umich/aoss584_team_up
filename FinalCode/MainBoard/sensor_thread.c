@@ -70,8 +70,7 @@ msg_t sensorThread(void *arg)
 	// Read I2C sensors
 	tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
 	si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
-	ms5607_readTemperature(&(thread->ms5607), &(thread->data.tempMs5607));
-	ms5607_readPressure(&(thread->ms5607), &(thread->data.pressMs5607));
+	ms5607_readPressure(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
 	// Perform ADC read
 	adcConvert(&ADCD1, &analogGrp, analogSamples, ANALOG_DEPTH);
    

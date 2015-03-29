@@ -24,7 +24,7 @@
 
 
 #define MS5607_PRESSURE_CONVERT	MS5607_D1_CONV_4096
-#define MS5607_TEMP_CONVERT	MS5607_D2_CONV_4096
+#define MS5607_TEMPERATURE_CONVERT	MS5607_D2_CONV_4096
 
 typedef struct
 {
@@ -37,7 +37,7 @@ typedef struct
 msg_t ms5607_init(ms5607_t *m, I2CDriver *driver, uint8_t baseAddr);
 msg_t ms5607_stop(ms5607_t *m, bool stopI2C);
 msg_t ms5607_reset(ms5607_t *m);
-msg_t ms5607_readPressure(ms5607_t *m, float *pressure);
+msg_t ms5607_readPressure(ms5607_t *m, float *pressure, float *temperature);
 msg_t ms5607_readTemperature(ms5607_t *m, float *temperature);
 msg_t ms5607_readPROMValues(ms5607_t *m);
 

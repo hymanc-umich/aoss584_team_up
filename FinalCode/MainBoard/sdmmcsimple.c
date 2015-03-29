@@ -53,7 +53,7 @@ static MMCConfig mmcCfg =
 bool sd_is_card_inserted(MMCDriver *mmcd)
 {
     (void) mmcd;
-    if(palReadPad(SD_CD_PORT, SD_CD_PIN) == PAL_HIGH)
+    if(palReadPad(SD_CD_PORT, SD_CD_PIN) == PAL_LOW)
 	return TRUE;
     return FALSE;
 }
@@ -106,13 +106,14 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
 	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Card Found\n");
 	palClearPad(SD_CS_PORT, SD_CS_PIN);
 	chThdSleepMilliseconds(200); // wait
-
+	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Connecting\n");
 	status = mmcConnect(sd->mmcd);
 	if(status == HAL_FAILED)
 	{
 	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:ERROR Connect,ERR%02d\n", status);
 	    return status;
 	}
+	chprintf((BaseSequentialStream *) serialPort, "SD/MMC: Connection Done\n");
 	sd->filesys = &FS;
 	err = f_mount(sd->filesys, "/", 0);
 	if(err != FR_OK)

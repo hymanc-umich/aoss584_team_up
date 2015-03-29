@@ -66,44 +66,10 @@ FIL lFile;
 MMCDriver MMCD1;
 
 
-//static adcsample_t analogSamples[ADC_CH_NUM];
-
-/* Accelerometer ADC conversion group */
-
-/**
- * New analog sensor ADC conversion group
- */
-/*
-static const ADCConversionGroup analogGrp =
-{
-    FALSE,
-    ADC_CH_NUM,
-    NULL,
-    NULL,
-    0,						// ADC CR1
-    ADC_CR2_SWSTART,				// ADC CR2
-    ADC_SMPR1_SMP_AN10(ADC_SAMPLE_56) | 	// ADC SMPR1
-    ADC_SMPR1_SMP_AN11(ADC_SAMPLE_56) |
-    ADC_SMPR1_SMP_AN13(ADC_SAMPLE_56),
-    ADC_SMPR2_SMP_AN0(ADC_SAMPLE_56) |		// ADC SMPR2
-    ADC_SMPR2_SMP_AN1(ADC_SAMPLE_56) |
-    ADC_SMPR2_SMP_AN4(ADC_SAMPLE_56) |
-    ADC_SMPR2_SMP_AN8(ADC_SAMPLE_56),
-    ADC_SQR1_NUM_CH(ADC_CH_NUM), 		// ADC SQR1
-    ADC_SQR2_SQ7_N(ADC_CHANNEL_IN4),		// ADC SQR2
-    ADC_SQR3_SQ1_N(ADC_CHANNEL_IN11)  | 		// ADC SQR3
-    ADC_SQR3_SQ2_N(ADC_CHANNEL_IN13) |
-    ADC_SQR3_SQ3_N(ADC_CHANNEL_IN10) |
-    ADC_SQR3_SQ4_N(ADC_CHANNEL_IN8) |
-    ADC_SQR3_SQ5_N(ADC_CHANNEL_IN0) |
-    ADC_SQR3_SQ6_N(ADC_CHANNEL_IN1)
-};
-*/
-
-/* Debug Serial configuration, 460k8, 8N1 */
+/* Debug Serial configuration, 115k2, 8N1 */
 static SerialConfig serCfg = 
 {
-   460800,
+   115200,
    0,
    0,
    0,
@@ -134,6 +100,8 @@ void initialize(void)
     
     /* VCP Serial Port Startup */
     sdStart(&DBG_SERIAL, &serCfg);	// Activate Debug serial driver
+    chprintf((BaseSequentialStream *) &SD6, "START\n");
+    //chThdSleepMilliseconds(500);
     
     /* SPI/MMC Logger Startup */
     
@@ -146,15 +114,15 @@ void initialize(void)
 	{
 	    dlIni = dataLoggerInitialize(&logger, "", &sd, &DBG_SERIAL);
 	}
-	chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
+	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     }
     else
     {
-	chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nSD Initialization Failed\n");
+	chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nERROR: SD Initialization Failed\n");
     }
-    
+   
     /* ADC Startup */
-    adcStart(&ADCD1, NULL);      // Activate ADC driver
+    //adcStart(&ADCD1, NULL);      // Activate ADC driver
     
 }
 
@@ -170,11 +138,11 @@ int8_t openNewLogfile(int32_t lfNum)
     {
 	char fname[24];
 	if(lfNum < 10)
-	    chsnprintf(fname, 80, "logs/LOG_00%d.csv", lfNum);
+	    chsnprintf(fname, 80, "logs/DAT_00%d.csv", lfNum);
 	else if(lfNum < 100)
-	    chsnprintf(fname, 80, "logs/LOG_0%d.csv", lfNum);
+	    chsnprintf(fname, 80, "logs/DAT_0%d.csv", lfNum);
 	else
-	    chsnprintf(fname, 80, "logs/LOG_%d.csv", lfNum);
+	    chsnprintf(fname, 80, "logs/DAT_%d.csv", lfNum);
 	//chsnprintf(fname, 80, "logs/Log_00X.csv");
 	return logfileNew(&sensorLog, &logger, &lFile, fname); 
     }
@@ -221,33 +189,42 @@ int8_t writeHeader(void)
 int main(void) 
 {
     initialize(); // Initialize OS/Peripherals
-    datasample_init(&masterSample);
+    //datasample_init(&masterSample);
     
     gpsThread_t gpsThd;
     sensorThread_t sensorThd;
     
     uint32_t timeCounter = 0;
-    chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd); // Create GPS Thread
-    chThdCreateStatic(waSensor, sizeof(waSensor), NORMALPRIO, sensorThread, &sensorThd);
-    // TODO: Create sensor thread
+    chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd); 			// Create GPS Thread
+    //chThdCreateStatic(waSensor, sizeof(waSensor), NORMALPRIO, sensorThread, &sensorThd);	// Create sensor thread
+       
+    uint16_t logfileCounter = 0; 	// Logfile number counter
+    uint32_t sampleCounter = 0;		// Sample counter (resets per file)
     
-    uint16_t logfileCounter = 0; // Logfile number counter
-    uint32_t sampleCounter = 0;
+    gpsLocation_t location;		// GPS location
+       
+    // Startup chirp
+    boardSetBuzzer(1);
+    boardSetLED(1);
+    chThdSleepMilliseconds(300);
+    boardSetBuzzer(0);
+    boardSetLED(0);
     
-    gpsLocation_t location;
+    //openNewLogfile(logfileCounter++);
+    //writeHeader();
     
-    openNewLogfile(logfileCounter++);
-    writeHeader();
     while (TRUE) 
     {
+	boardSetLED(1);
 	gpsGetLocation(&location);// Check for new GPS NMEA sentence
+	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
 	// Read out I2C sensors
 	// Read out Analog sensors
 	// Post data
 	
 	
 	// Write GPS Data to MasterSample
-	datasample_gpsToSample(&location, &masterSample);
+	//datasample_gpsToSample(&location, &masterSample);
 	
 	// Write sensor data to MasterSample
 
@@ -257,9 +234,8 @@ int main(void)
 	
 	//writeToLog(&sensorLog, timeCounter, &SENSORS, &ACC);
 	
-	//toggleLED();
-	chThdSleepMilliseconds(975);
-	
+	//chThdSleepMilliseconds(975);
+	/*
 	if(sampleCounter > SAMPLE_MAX) // Close file and open a new one
 	{
 	    chprintf((BaseSequentialStream *) &DBG_SERIAL, "Reached sample limit, closing current logfile\n");
@@ -272,6 +248,12 @@ int main(void)
 	datasample_writeToLog(&masterSample, &sensorLog);
 	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "Log written\n");
 	sampleCounter++;
+	*/
+	chThdSleepMilliseconds(400);
+	boardSetBuzzer(1);
+	boardSetLED(0);
+	chThdSleepMilliseconds(575);
+	boardSetBuzzer(0);
     }
   return 0;
 }

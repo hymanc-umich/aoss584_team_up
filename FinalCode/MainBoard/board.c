@@ -129,25 +129,44 @@ void boardInit(void)
     palSetPadMode(SD_MISO_PORT, SD_MISO_PIN, PAL_MODE_ALTERNATE(5));
     
     // Serial I/O Cfg
-    palSetPadMode(DBG_PORT, DBG_TX_PIN, PAL_MODE_ALTERNATE(7)); // Debug Tx
-    palSetPadMode(DBG_PORT, DBG_RX_PIN, PAL_MODE_ALTERNATE(7));	// Debug Rx
+    palSetPadMode(DBG_PORT, DBG_TX_PIN, PAL_MODE_ALTERNATE(8)); // Debug Tx
+    palSetPadMode(DBG_PORT, DBG_RX_PIN, PAL_MODE_ALTERNATE(8));	// Debug Rx
     palSetPadMode(GPS_PORT, GPS_TX_PIN, PAL_MODE_ALTERNATE(7)); // GPS Tx
     palSetPadMode(GPS_PORT, GPS_RX_PIN, PAL_MODE_ALTERNATE(7)); // GPS Rx
     palSetPadMode(COM_PORT, COM_TX_PIN, PAL_MODE_ALTERNATE(7)); // COM Tx
     palSetPadMode(COM_PORT, COM_RX_PIN, PAL_MODE_ALTERNATE(7)); // COM Rx
     
-    
-    // ADC I/O Cfg
-    /*
-    palSetPadMode(GPIOA, 0, PAL_MODE_INPUT_ANALOG); 	// A1.0 ACC_X
-    palSetPadMode(GPIOA, 1, PAL_MODE_INPUT_ANALOG); 	// A1.1 ACC_Y
-    palSetPadMode(GPIOA, 4, PAL_MODE_INPUT_ANALOG); 	// A1.4 ACC_Z
-    palSetPadMode(GPIOB, 0, PAL_MODE_INPUT_ANALOG); 	// A1.8 HUMD
-    palSetPadMode(GPIOC, 0, PAL_MODE_INPUT_ANALOG); 	// A1.10 PRESS
-    palSetPadMode(GPIOC, 1, PAL_MODE_INPUT_ANALOG); 	// A1.11 TEMP1
-    palSetPadMode(GPIOC, 3, PAL_MODE_INPUT_ANALOG); 	// A1.13 TEMP2
-    */
+    // I2C
+    palSetPadMode(II2C_PORT, II2C_SDA_PIN, PAL_MODE_ALTERNATE(4));
+    palSetPadMode(II2C_PORT, II2C_SCL_PIN, PAL_MODE_ALTERNATE(4));
+    palSetPadMode(EI2C_SDA_PORT, EI2C_SDA_PIN, PAL_MODE_ALTERNATE(4));
+    palSetPadMode(EI2C_SCL_PORT, EI2C_SCL_PIN, PAL_MODE_ALTERNATE(4));
     
     // Audio beacon
     palSetPadMode(PIEZO_PORT, PIEZO_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
+    
+    // Trigger- LED
+    palSetPadMode(LED_TRIG_PORT ,LED_TRIG_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
+}
+
+/**
+ * 
+ */
+void boardSetBuzzer(bool on)
+{
+    if(on)
+	palSetPad(PIEZO_PORT, PIEZO_PIN);
+    else
+	palClearPad(PIEZO_PORT, PIEZO_PIN);
+}
+
+/**
+ * 
+ */
+void boardSetLED(bool on)
+{
+    if(on)
+	palSetPad(LED_TRIG_PORT, LED_TRIG_PIN);
+    else
+	palClearPad(LED_TRIG_PORT, LED_TRIG_PIN);
 }

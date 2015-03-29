@@ -57,40 +57,66 @@ msg_t ms5607_reset(ms5607_t *m)
 /**
  * 
  */
-msg_t ms5607_readPressure(ms5607_t *m, float *pressure)
+msg_t ms5607_readPressure(ms5607_t *m, float *pressure, float *temperature)
 {
-    uint8_t regAddr = MS5607_PRESSURE_CONVERT; // TODO: This
+    uint8_t regAddr;  // TODO: This
     uint8_t pressureData[3];
-    // Start conversion
+    uint8_t tempData[3];
+    // Start temperature conversion
+    regAddr = MS5607_TEMPERATURE_CONVERT;
     msg_t status = I2CSensor_transact(&(m->sensor), &regAddr, 1, NULL, 0);
-    chThdSleepMilliseconds(10);     // Wait for conversion
+    chThdSleepMilliseconds(11);
+    regAddr = MS5607_READ_ADC_RESULT;
+    status |= I2CSensor_transact(&(m->sensor), &regAddr, 1, tempData, 3);
+    // Start pressure conversion
+    regAddr = MS5607_PRESSURE_CONVERT;
+    status |= I2CSensor_transact(&(m->sensor), &regAddr, 1, NULL, 0);
+    chThdSleepMilliseconds(11);     // Wait for conversion
     regAddr = MS5607_READ_ADC_RESULT;
     status |= I2CSensor_transact(&(m->sensor), &regAddr, 1, pressureData, 3);
-    int32_t T2, OFF2, SENS2;
+    
     if(status == 0)
     {
-	// Temperature compensation
-	if(m->lastTemp < 20) // Low temp
+	int32_t traw = (tempData[0] << 16) + (tempData[1] << 8) + tempData[2];
+	int32_t praw = (pressureData[0] << 16) + (pressureData[1] << 8) + pressureData[2];
+	int64_t off, sens;
+	int32_t T2 = 0;
+	int32_t dT = traw - (m->cal[4]<<8);
+	
+	int32_t temp = 2000 + (dT*m->cal[5]>>23);
+	int32_t press;
+	
+	off = (m->cal[1]<<17) + ((m->cal[3]*dT)>>6);
+	sens = (m->cal[0]<<16) + ((m->cal[2]*dT)>>7);
+	// 2nd order Temperature compensation
+	if(temp < 20000) // Low temp
 	{
-	    if(m->lastTemp < -15) // Very low temp
+	    int32_t t2k = (temp-2000);
+	    t2k *= t2k;
+	    T2 = dT*dT/0x80000000;
+	    off -= 61*t2k/16;
+	    sens -= 2*t2k;
+	    if(temp < -15000) // Very low temp
 	    {
-		
-	    }
-	    else
-	    {
-		
+		int32_t t1k5 = (temp-1500);
+		t1k5 *= t1k5;
+		off -= 15*t1k5;
+		sens -= 8*t1k5;
 	    }
 	}
-	else
-	{
-	  T2 = 0;
-	  OFF2 = 0;
-	  SENS2 = 0;
-	}
-	// TODO: Convert to actual pressure
+	temp -= T2;
+	press = ((praw * sens >> 21)- off)>>15;
+	
+	// Convert to C and mbar
+	m->lastTemp = (float) temp*0.01f;
+	m->lastPress = (float) press*0.01f;
 	if(pressure != NULL)
 	{
-	    
+	    *pressure = m->lastPress;
+	}
+	if(temperature != NULL)
+	{
+	    *temperature = m->lastTemp;
 	}
     }
     return 0;

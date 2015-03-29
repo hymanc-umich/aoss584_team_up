@@ -123,6 +123,7 @@ CSRC = $(PORTSRC) \
        datasample.c \
        sensor_thread.c \
        ustr.c \
+       umath.c \
        gps.c \
        sdmmcsimple.c \
        datalogger.c \
