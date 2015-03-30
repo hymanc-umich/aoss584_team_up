@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccvVKqDE.s 			page 1
+ARM GAS  /tmp/ccsRMGKf.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"lsm303.c"
-  17              		.section	.gnu.lto_.jmpfuncs.c27e0ee3b21bb0f,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.c97e84bae7732fde,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006<\24043\003?\013KB&#\204\315\300X\006"
   18      6062C006 
   18      3CA03433 
@@ -32,7 +32,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   20      00DC3905 
   20      6D
   21              		.text
-  22              		.section	.gnu.lto_.inline.c27e0ee3b21bb0f,"",%progbits
+  22              		.section	.gnu.lto_.inline.c97e84bae7732fde,"",%progbits
   23 0000 789C6362 		.ascii	"x\234cb`b\300\006B\24143\003\003\257\034##\003#\220"
   23      6062C006 
   23      42A13433 
@@ -49,16 +49,16 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   25      83
   26 0035 B20857   		.ascii	"\262\010W"
   27              		.text
-  28              		.section	.gnu.lto_.pureconst.c27e0ee3b21bb0f,"",%progbits
+  28              		.section	.gnu.lto_.pureconst.c97e84bae7732fde,"",%progbits
   29 0000 789C6362 		.ascii	"x\234cb`b`g\200\000f\006\011F \027\000\001Y\000*"
   29      60626067 
   29      80006606 
   29      09462017 
   29      00015900 
   30              		.text
-  31              		.section	.gnu.lto_lsm303_init.c27e0ee3b21bb0f,"",%progbits
+  31              		.section	.gnu.lto_lsm303_init.c97e84bae7732fde,"",%progbits
   32 0000 789C9551 		.ascii	"x\234\225Q\273j\002A\024=\347\356Nv\261JH\225.\245 "
-ARM GAS  /tmp/ccvVKqDE.s 			page 2
+ARM GAS  /tmp/ccsRMGKf.s 			page 2
 
 
   32      BB6A0241 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   43      C468F5
   44 00dc 56C849FE 		.ascii	"V\310I\376>\332\211\325\225\245\257\341\277\345\244"
   44      3EDA89D5 
-ARM GAS  /tmp/ccvVKqDE.s 			page 3
+ARM GAS  /tmp/ccsRMGKf.s 			page 3
 
 
   44      95A5AFE1 
@@ -129,7 +129,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   45      39C12FCD 
   45      5650D2
   46              		.text
-  47              		.section	.gnu.lto_lsm303_readAcceleration.c27e0ee3b21bb0f,"",%progbits
+  47              		.section	.gnu.lto_lsm303_readAcceleration.c97e84bae7732fde,"",%progbits
   48 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\001\304\302@\314\310\314\300"
   48      60624007 
   48      92401C01 
@@ -166,7 +166,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   54      EC1E
   55 007f 44       		.ascii	"D"
   56              		.text
-  57              		.section	.gnu.lto_lsm303_readMagnetometer.c27e0ee3b21bb0f,"",%progbits
+  57              		.section	.gnu.lto_lsm303_readMagnetometer.c97e84bae7732fde,"",%progbits
   58 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\001\304\302@\314\310\314\300"
   58      60624007 
   58      92401C01 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   59      C1C0C850 
   59      CFC4
   60 0025 581FC908 		.ascii	"X\037\311\010V\273\236\351\300\203\377\377\327\355i"
-ARM GAS  /tmp/ccvVKqDE.s 			page 4
+ARM GAS  /tmp/ccsRMGKf.s 			page 4
 
 
   60      56BB9EE9 
@@ -206,7 +206,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   64      151E
   65 007f 75       		.ascii	"u"
   66              		.text
-  67              		.section	.gnu.lto_.symbol_nodes.c27e0ee3b21bb0f,"",%progbits
+  67              		.section	.gnu.lto_.symbol_nodes.c97e84bae7732fde,"",%progbits
   68 0000 789C6362 		.ascii	"x\234cb`b\360e\200\002\246F\246z\006\206\011\347\030"
   68      6062F065 
   68      8002A646 
@@ -226,19 +226,19 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   71      00744D17 
   71      24
   72              		.text
-  73              		.section	.gnu.lto_.refs.c27e0ee3b21bb0f,"",%progbits
+  73              		.section	.gnu.lto_.refs.c97e84bae7732fde,"",%progbits
   74 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
   74      60626064 
   74      80020000 
   74      460006
   75              		.text
-  76              		.section	.gnu.lto_.decls.c27e0ee3b21bb0f,"",%progbits
+  76              		.section	.gnu.lto_.decls.c97e84bae7732fde,"",%progbits
   77 0000 789CBD5C 		.ascii	"x\234\275\\{t\024U\232\257\252n\272\323I&<\034g\360"
   77      7B741455 
   77      9AAFAA6E 
   77      BAD34926 
   77      3C1C67F0 
-ARM GAS  /tmp/ccvVKqDE.s 			page 5
+ARM GAS  /tmp/ccsRMGKf.s 			page 5
 
 
   78 0014 718E3DE7 		.ascii	"q\216=\347\314\314\3418\243y\300(\034w\224l\002C\316"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
   90 00e3 0C937233 		.ascii	"\014\223r3L\312\215\342^T\320\307\333\235\303qO\360"
   90      4CCA8DE2 
   90      5E54D0C7 
-ARM GAS  /tmp/ccvVKqDE.s 			page 6
+ARM GAS  /tmp/ccsRMGKf.s 			page 6
 
 
   90      DB9DC371 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  102      5752283D 
  102      76BAF1CD 
  102      5F29
-ARM GAS  /tmp/ccvVKqDE.s 			page 7
+ARM GAS  /tmp/ccsRMGKf.s 			page 7
 
 
  103 01c7 4A86C86F 		.ascii	"J\206\310o\347\261D\363\364\212g\307iY\3246\036pv\002"
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  113      B6
  114 0293 75E96717 		.ascii	"u\351g\027\370\226\371Jw\236\2311\242\"|\362 \020\335"
  114      F896F94A 
-ARM GAS  /tmp/ccvVKqDE.s 			page 8
+ARM GAS  /tmp/ccsRMGKf.s 			page 8
 
 
  114      779E9931 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  126 0368 1631E07E 		.ascii	"\0261\340~&\003^\352\034j\300k\234\246\006\374\226\323"
  126      26035EEA 
  126      1C6AC06B 
-ARM GAS  /tmp/ccvVKqDE.s 			page 9
+ARM GAS  /tmp/ccsRMGKf.s 			page 9
 
 
  126      9CA606FC 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  138 0441 DB7BBDFB 		.ascii	"\333{\275\373\356\225\200\334\304\300vC\264\267q\015"
  138      EE9580DC 
  138      C4C07643 
-ARM GAS  /tmp/ccvVKqDE.s 			page 10
+ARM GAS  /tmp/ccsRMGKf.s 			page 10
 
 
  138      B4B7710D 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  150      F61AF494 
  150      C6
  151 0523 43AF6D44 		.ascii	"C\257mD\275\021_?\002\036A\300N\263\200Y\032RC\364k"
-ARM GAS  /tmp/ccvVKqDE.s 			page 11
+ARM GAS  /tmp/ccsRMGKf.s 			page 11
 
 
  151      BD115F3F 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  162      C1DE6001 
  162      7BD284B3 
  162      F8C7AC
-ARM GAS  /tmp/ccvVKqDE.s 			page 12
+ARM GAS  /tmp/ccsRMGKf.s 			page 12
 
 
  163 05ff 1E0ED3AF 		.ascii	"\036\016\323\257\011\324bm\263G\233\340\330\214\321"
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  174      ACD6EEE0 
  175 06cc 9A93AFD6 		.ascii	"\232\223\257\3260?\203\302\035\206\375\355\036\274\345"
  175      303F83C2 
-ARM GAS  /tmp/ccvVKqDE.s 			page 13
+ARM GAS  /tmp/ccsRMGKf.s 			page 13
 
 
  175      1D86FDED 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  186      1504
  187 07a0 15365D7D 		.ascii	"\0256]}\352\2720\301\037\202v\340\371\302\032\207n\233"
  187      EABA30C1 
-ARM GAS  /tmp/ccvVKqDE.s 			page 14
+ARM GAS  /tmp/ccsRMGKf.s 			page 14
 
 
  187      1F8276E0 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  198      6CD23BF2 
  199 0872 A62CED18 		.ascii	"\246,\355\030'\211\343Y\213\020\373\370\363\213\356"
  199      2789E359 
-ARM GAS  /tmp/ccvVKqDE.s 			page 15
+ARM GAS  /tmp/ccsRMGKf.s 			page 15
 
 
  199      8B10FBF8 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  211      CD7D7087 
  211      DD568D4D 
  211      BB61B293 
-ARM GAS  /tmp/ccvVKqDE.s 			page 16
+ARM GAS  /tmp/ccsRMGKf.s 			page 16
 
 
  211      C5047488 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  223 0a1b E8854879 		.ascii	"\350\205Hy\012h\037\320O\200\376\025h\214e\322u\204"
  223      0A681FD0 
  223      4F80FE15 
-ARM GAS  /tmp/ccvVKqDE.s 			page 17
+ARM GAS  /tmp/ccsRMGKf.s 			page 17
 
 
  223      688C65D2 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  234      918C3687 
  234      8085
  235 0aef FEB487FB 		.ascii	"\376\264\207\373\201\343\324\320u\3046\230W\007\326"
-ARM GAS  /tmp/ccvVKqDE.s 			page 18
+ARM GAS  /tmp/ccsRMGKf.s 			page 18
 
 
  235      81E3D4D0 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  247      8644AAB4 
  247      B6C217
  248 0bc1 0CE7534B 		.ascii	"\014\347SK\222\364r\266\256\311\365T\307l\200\216y\025"
-ARM GAS  /tmp/ccvVKqDE.s 			page 19
+ARM GAS  /tmp/ccsRMGKf.s 			page 19
 
 
  248      92F472B6 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  259      A7700383 
  259      83895338 
  259      7C7960C8 
-ARM GAS  /tmp/ccvVKqDE.s 			page 20
+ARM GAS  /tmp/ccsRMGKf.s 			page 20
 
 
  259      9F3830D7 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  271      CB0F3D76 
  271      8BFC2A27 
  271      0E5BAB61 
-ARM GAS  /tmp/ccvVKqDE.s 			page 21
+ARM GAS  /tmp/ccsRMGKf.s 			page 21
 
 
  271      A2D30AB4 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  283 0e45 F98F8CD5 		.ascii	"\371\217\214\325\354\210f\325\232*\332\321\241\242\305"
  283      EC8866D5 
  283      9A2ADAD1 
-ARM GAS  /tmp/ccvVKqDE.s 			page 22
+ARM GAS  /tmp/ccsRMGKf.s 			page 22
 
 
  283      A1A2C5
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  295      2FB7429A 
  295      938B2A3E 
  295      15084572 
-ARM GAS  /tmp/ccvVKqDE.s 			page 23
+ARM GAS  /tmp/ccsRMGKf.s 			page 23
 
 
  296 0f32 705DCDD3 		.ascii	"p]\315\323\271(Q%V\347\326\206\302r$\267\254|\332\330"
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  308 0ff6 5C58564E 		.ascii	"\\XVN\275\373\012~l\314"
  308      BDFB0A7E 
  308      6CCC
-ARM GAS  /tmp/ccvVKqDE.s 			page 24
+ARM GAS  /tmp/ccsRMGKf.s 			page 24
 
 
  309 1000 C97FC837 		.ascii	"\311\177\3107!\023#\370\000\002KY\024\252\251\014\314"
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  320      90879E7C 
  320      F414A067 
  320      2C7AC6A1 
-ARM GAS  /tmp/ccvVKqDE.s 			page 25
+ARM GAS  /tmp/ccsRMGKf.s 			page 25
 
 
  320      E737E8
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  332 11a2 5829FA0E 		.ascii	"X)\372\016\315\255\221\302\256 X\331\303\266\214V\345"
  332      CDAD91C2 
  332      AE2058D9 
-ARM GAS  /tmp/ccvVKqDE.s 			page 26
+ARM GAS  /tmp/ccsRMGKf.s 			page 26
 
 
  332      C3B68C56 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  343      1D565E5A 
  344 1280 36C93979 		.ascii	"6\3119y*b\006i\330\203G\246@\020\333%\376\012\325\311"
  344      2A620669 
-ARM GAS  /tmp/ccvVKqDE.s 			page 27
+ARM GAS  /tmp/ccsRMGKf.s 			page 27
 
 
  344      D88347A6 
@@ -1600,7 +1600,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  352 1315 FF02EDCC 		.ascii	"\377\002\355\314\361\304"
  352      F1C4
  353              		.text
- 354              		.section	.gnu.lto_.symtab.c27e0ee3b21bb0f,"",%progbits
+ 354              		.section	.gnu.lto_.symtab.c97e84bae7732fde,"",%progbits
  355 0000 6C736D33 		.ascii	"lsm303_init\000\000\000\000\000\000\000\000\000\000"
  355      30335F69 
  355      6E697400 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  358 0041 006C736D 		.ascii	"\000lsm303_readMagnetometer\000\000\000\000\000\000"
  358      3330335F 
  358      72656164 
-ARM GAS  /tmp/ccvVKqDE.s 			page 28
+ARM GAS  /tmp/ccsRMGKf.s 			page 28
 
 
  358      4D61676E 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  384 0008 2823     		movs	r3, #40
  385 000a FFF7FEFF 		bl	I2CSensor_init
  386 000e 06F10C00 		add	r0, r6, #12
-ARM GAS  /tmp/ccvVKqDE.s 			page 29
+ARM GAS  /tmp/ccsRMGKf.s 			page 29
 
 
  387 0012 2946     		mov	r1, r5
@@ -1722,17 +1722,17 @@ ARM GAS  /tmp/ccvVKqDE.s 			page 1
  423 0004 AFF30080 		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
  423      AFF30080 
  423      AFF30080 
-ARM GAS  /tmp/ccvVKqDE.s 			page 30
+ARM GAS  /tmp/ccsRMGKf.s 			page 30
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 lsm303.c
-     /tmp/ccvVKqDE.s:371    .text.lsm303_init:0000000000000000 $t
-     /tmp/ccvVKqDE.s:377    .text.lsm303_init:0000000000000000 lsm303_init
-     /tmp/ccvVKqDE.s:395    .text.lsm303_readAcceleration:0000000000000000 $t
-     /tmp/ccvVKqDE.s:401    .text.lsm303_readAcceleration:0000000000000000 lsm303_readAcceleration
-     /tmp/ccvVKqDE.s:409    .text.lsm303_readMagnetometer:0000000000000000 $t
-     /tmp/ccvVKqDE.s:415    .text.lsm303_readMagnetometer:0000000000000000 lsm303_readMagnetometer
+     /tmp/ccsRMGKf.s:371    .text.lsm303_init:0000000000000000 $t
+     /tmp/ccsRMGKf.s:377    .text.lsm303_init:0000000000000000 lsm303_init
+     /tmp/ccsRMGKf.s:395    .text.lsm303_readAcceleration:0000000000000000 $t
+     /tmp/ccsRMGKf.s:401    .text.lsm303_readAcceleration:0000000000000000 lsm303_readAcceleration
+     /tmp/ccsRMGKf.s:409    .text.lsm303_readMagnetometer:0000000000000000 $t
+     /tmp/ccsRMGKf.s:415    .text.lsm303_readMagnetometer:0000000000000000 lsm303_readMagnetometer
                             *COM*:0000000000000001 __gnu_lto_v1
 
 UNDEFINED SYMBOLS

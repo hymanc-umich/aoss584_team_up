@@ -98,16 +98,16 @@ void initialize(void)
     /* GPS Driver Startup */
     gpsStart(&GPS_UART);
     
-    /* VCP Serial Port Startup */
+    /* Debug Serial Port Startup */
     sdStart(&DBG_SERIAL, &serCfg);	// Activate Debug serial driver
     chprintf((BaseSequentialStream *) &SD6, "START\n");
     //chThdSleepMilliseconds(500);
     
     /* SPI/MMC Logger Startup */
-    
     int8_t sdIni, dlIni, lfIni;
+    chThdSleepMilliseconds(250); // Wait for SD startup
     sdIni = sdmmcInitialize(&sd, &MMCD1, &DBG_SERIAL);
-    chThdSleepMilliseconds(250);
+    chThdSleepMilliseconds(100);
     if(!sdIni)
     {
 	if(sdmmcFSMounted(&sd))

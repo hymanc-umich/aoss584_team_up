@@ -82,7 +82,6 @@ void __early_init(void)
 bool sdc_lld_is_card_inserted(SDCDriver *sdcp) 
 {
   (void)sdcp;
-  /* TODO: Fill the implementation.*/
   return TRUE;
 }
 
@@ -124,9 +123,9 @@ void boardInit(void)
     // SD SPI
     palSetPadMode(SD_CS_PORT, SD_CS_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
     palSetPadMode(SD_CD_PORT, SD_CD_PIN, PAL_MODE_INPUT_PULLUP);
-    palSetPadMode(SD_SCK_PORT, SD_SCK_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
-    palSetPadMode(SD_MOSI_PORT, SD_MOSI_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
-    palSetPadMode(SD_MISO_PORT, SD_MISO_PIN, PAL_MODE_ALTERNATE(5));
+    palSetPadMode(SD_SCK_PORT, SD_SCK_PIN, PAL_MODE_ALTERNATE(6) | PAL_STM32_OSPEED_HIGHEST);
+    palSetPadMode(SD_MOSI_PORT, SD_MOSI_PIN, PAL_MODE_ALTERNATE(6) | PAL_STM32_OSPEED_HIGHEST);
+    palSetPadMode(SD_MISO_PORT, SD_MISO_PIN, PAL_MODE_ALTERNATE(6));
     
     // Serial I/O Cfg
     palSetPadMode(DBG_PORT, DBG_TX_PIN, PAL_MODE_ALTERNATE(8)); // Debug Tx

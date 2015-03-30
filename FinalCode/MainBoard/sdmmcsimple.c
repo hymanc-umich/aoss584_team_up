@@ -42,8 +42,8 @@ static SPIConfig hsCfg =
 static MMCConfig mmcCfg =
 {
     &SD_SPID,
-    &lsCfg,
-    &hsCfg
+    &lsCfg,     // Low-speed configuration
+    &hsCfg      // High speed configuration
 };
     
 /**
@@ -100,7 +100,7 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
     mmcObjectInit(sd->mmcd);
     mmcStart(sd->mmcd, &mmcCfg);
 
-    // Try to connect
+    // Try to connec
     if(sd_is_card_inserted(sd->mmcd))
     {
 	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Card Found\n");
@@ -108,6 +108,7 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
 	chThdSleepMilliseconds(200); // wait
 	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:Connecting\n");
 	status = mmcConnect(sd->mmcd);
+	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:End of Connection attempt\n");
 	if(status == HAL_FAILED)
 	{
 	    chprintf((BaseSequentialStream *) serialPort, "SD/MMC:ERROR Connect,ERR%02d\n", status);
