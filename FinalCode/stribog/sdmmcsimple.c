@@ -53,7 +53,7 @@ static MMCConfig mmcCfg =
 bool sd_is_card_inserted(MMCDriver *mmcd)
 {
     (void) mmcd;
-    if(palReadPad(SD_CD_PORT, SD_CD_PIN) == PAL_HIGH)
+    if(palReadPad(SD_CD_PORT, SD_CD_PIN) == PAL_LOW)
 	   return TRUE;
     return FALSE;
 }
@@ -131,8 +131,8 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
     }
     else
     {
-	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:No SD Card Found\n");
-	return -3;
+    	chprintf((BaseSequentialStream *) serialPort, "SD/MMC:No SD Card Found\n");
+    	return -3;
     }
     
     return 0;

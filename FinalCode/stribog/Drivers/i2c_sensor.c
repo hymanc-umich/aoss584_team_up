@@ -26,7 +26,7 @@ msg_t I2CSensor_stop(I2CSensor_t *sensor, bool stopI2C)
     sensor->state = INACTIVE; // set state to inactive
     if(stopI2C) // Stop underlying I2C driver
     {
-	// TODO: stop I2C driver
+        I2cStop(&(sensor->i2c));
     }
     return status;
 }
@@ -44,12 +44,12 @@ msg_t I2CSensor_transact(I2CSensor_t *sensor, uint8_t *txb, uint8_t txc, uint8_t
 {
     if(sensor->state != INACTIVE)
     {
-	i2cAcquireBus(sensor->i2c);
-	msg_t status = i2cMasterTransmitTimeout(
-	    sensor->i2c, 
-	    sensor->address, 
-	    txb, txc, rxb, rxc, sensor->timeout);
-	i2cReleaseBus(sensor->i2c);
+    	i2cAcquireBus(sensor->i2c);
+    	msg_t status = i2cMasterTransmitTimeout(
+    	    sensor->i2c, 
+    	    sensor->address, 
+    	    txb, txc, rxb, rxc, sensor->timeout);
+	   i2cReleaseBus(sensor->i2c);
         return status;
     }
     return -100;

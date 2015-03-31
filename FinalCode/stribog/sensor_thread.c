@@ -64,22 +64,47 @@ msg_t sensorThread(void *arg)
     i2cStart(&EI2C_I2CD, &i2cfg);
     
     // Initialize sensors
-    tmp275_init(&(thread->tmp275), &EI2C_I2CD, 0b1001000);	// Initialize TMP275
+    tmp275_init(&(thread->tmp275), &EI2C_I2CD, 0b1001000);	  // Initialize TMP275
     si70x0_init(&(thread->extSi7020), &EI2C_I2CD, 0b1000000); // Initialize External Si7020
-    si70x0_init(&(thread->intSi7020), &II2C_I2CD, 0b1000000); // Initialize 
-    ms5607_init(&(thread->ms5607), &EI2C_I2CD, 0b1110110);
+    si70x0_init(&(thread->intSi7020), &II2C_I2CD, 0b1000000); // Initialize Internal Si7020
+    ms5607_init(&(thread->ms5607), &EI2C_I2CD, 0b1110110);    // Initialize MS5607
     
     // Sensor Loop
+    systime_t deadline = chVTGetSystemTimeX();
     while(thread->running)
     {
-	// Read I2C sensors
-	tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
-	si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
-	ms5607_readPressure(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
-	// Perform ADC read
-	adcConvert(&ADCD1, &analogGrp, analogSamples, ANALOG_DEPTH);
-   
-	chThdSleepMilliseconds(100); // Read ~10Hz
+        deadline += MS2ST(100); // Set master sampling rate at ~10Hz
+    	/*
+         * Read I2C sensors
+         */
+        //External Temp 2
+    	tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
+    	
+        // TODO: Internal Pressure        
+
+        // Internal Humidity
+        si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
+    	
+        // External Humidity 1
+
+        // External Humidity 2
+
+        // External Pressure 2
+        ms5607_readPressure(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
+
+        // Accelerometer
+
+        // Magnetometer 
+
+    	// Perform ADC read
+    	adcConvert(&ADCD1, &analogGrp, analogSamples, ANALOG_DEPTH);   // Convert analog channels
+        // Analog processing
+
+        // Sleep
+        if(chVTGetSystemTimeX() < deadline)
+            chThdSleepUntil(deadline);
+        else
+            deadline = chVTGetSystemTimeX();
     }
 
     return message;

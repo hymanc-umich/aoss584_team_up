@@ -40,6 +40,7 @@
 
 static THD_WORKING_AREA(waGps, 1284);	 // GPS thread working area
 static THD_WORKING_AREA(waSensor, 4096); // Sensor thread working area
+static THD_WORKING_AREA(waCom, 4096);	 // Communication thread
 //static THD_WORKING_AREA(waSD, 1024); 	 // SD thread
 
 /* Accelerometer Measurement */
@@ -90,7 +91,7 @@ void initialize(void)
      */
     boardInit();
     
-    chThdSleepMilliseconds(500);
+    chThdSleepMilliseconds(100); // Startup wait (may be a bit long)
     /*
      * Driver Startup
      */
@@ -99,13 +100,12 @@ void initialize(void)
     //rtcGetTime(&RTCD1, &timespec);
     
     /* GPS Driver Startup */
-    //gpsStart(&GPS_UART);
+    gpsStart(&GPS_UART);
     
     /* Debug Serial Port Startup */
     sdStart(&COM_SERIAL, &serCfg);
     sdStart(&DBG_SERIAL, &serCfg);	// Activate Debug serial driver
-    chprintf((BaseSequentialStream *) &DBG_SERIAL, "START\n");
-    //chThdSleepMilliseconds(500);
+    chprintf((BaseSequentialStream *) &DBG_SERIAL, "==Stribog v1==\n");
 
     /* SPI/MMC Logger Startup */
     int8_t sdIni, dlIni, lfIni;
@@ -233,6 +233,7 @@ int main(void)
 		// Post data
 		
 		
+		chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n");		
 		// Write GPS Data to MasterSample
 		//datasample_gpsToSample(&location, &masterSample);
 		
