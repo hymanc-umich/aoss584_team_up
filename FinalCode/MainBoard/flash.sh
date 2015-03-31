@@ -1,2 +1,2 @@
 #! /bin/bash
-st-flash write build/aoss584Lab.bin 0x08000000
+st-flash write build/aoss584Final.bin 0x08000000

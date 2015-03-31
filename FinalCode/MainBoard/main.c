@@ -88,6 +88,7 @@ void initialize(void)
      */
     boardInit();
     
+    chThdSleepMilliseconds(500);
     /*
      * Driver Startup
      */
@@ -96,33 +97,35 @@ void initialize(void)
     //rtcGetTime(&RTCD1, &timespec);
     
     /* GPS Driver Startup */
-    gpsStart(&GPS_UART);
+    //gpsStart(&GPS_UART);
     
     /* Debug Serial Port Startup */
+    sdStart(&COM_SERIAL, &serCfg);
     sdStart(&DBG_SERIAL, &serCfg);	// Activate Debug serial driver
-    chprintf((BaseSequentialStream *) &SD6, "START\n");
+    chprintf((BaseSequentialStream *) &COM_SERIAL, "START\n");
     //chThdSleepMilliseconds(500);
-    
+
     /* SPI/MMC Logger Startup */
     int8_t sdIni, dlIni, lfIni;
     chThdSleepMilliseconds(250); // Wait for SD startup
-    sdIni = sdmmcInitialize(&sd, &MMCD1, &DBG_SERIAL);
+    
+    sdIni = sdmmcInitialize(&sd, &MMCD1, &COM_SERIAL);
     chThdSleepMilliseconds(100);
     if(!sdIni)
     {
-	if(sdmmcFSMounted(&sd))
-	{
-	    dlIni = dataLoggerInitialize(&logger, "", &sd, &DBG_SERIAL);
-	}
-	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
+    	if(sdmmcFSMounted(&sd))
+    	{
+    	    dlIni = dataLoggerInitialize(&logger, "", &sd, &COM_SERIAL);
+    	}
+    	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
     }
     else
     {
-	chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nERROR: SD Initialization Failed\n");
+	   chprintf((BaseSequentialStream *) &COM_SERIAL, "\nERROR: SD Initialization Failed\n");
     }
-   
+
     /* ADC Startup */
-    //adcStart(&ADCD1, NULL);      // Activate ADC driver
+    adcStart(&ADCD1, NULL);      // Activate ADC driver
     
 }
 

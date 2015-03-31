@@ -78,11 +78,12 @@ endif
 #
 
 # Define project name here
-PROJECT = aoss584Lab
+PROJECT = aoss584Final
 
 # Imported source files and paths change CHIBIOS to your system's CHIBIOS path
 CHIBIOS = /home/cody/dev/chibios/trunk
-FATFS = $(CHIBIOS)/community/ext/fatfs
+
+FATFS = $(CHIBIOS)/ext/fatfs
 DRIVERS = Drivers
 
 include $(CHIBIOS)/os/hal/hal.mk

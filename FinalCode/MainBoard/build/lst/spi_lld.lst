@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccEAmoNy.s 			page 1
+ARM GAS  /tmp/ccrUolje.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"spi_lld.c"
-  17              		.section	.gnu.lto_.jmpfuncs.347c36f5304d4abc,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.38ebb73b60cbad66,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006\214\031\031\030x\031@\230\211\221"
   18      6062C006 
   18      8C191918 
@@ -58,11 +58,11 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   26 008a 39A545A9 		.ascii	"9\245E\251\014\000C\3350("
   26      0C0043DD 
   26      3028
-ARM GAS  /tmp/ccEAmoNy.s 			page 2
+ARM GAS  /tmp/ccrUolje.s 			page 2
 
 
   27              		.text
-  28              		.section	.gnu.lto_.inline.347c36f5304d4abc,"",%progbits
+  28              		.section	.gnu.lto_.inline.38ebb73b60cbad66,"",%progbits
   29 0000 789C9D94 		.ascii	"x\234\235\224Ak\023A\024\307\337\233\235\335L\222M\273"
   29      416B1341 
   29      14C7DF9B 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   39      B9136E09 
   40 00cb 5A9BF81C 		.ascii	"Z\233\370\034\017!\236\017\276\227x\026\306\263/x\026"
   40      0F219E0F 
-ARM GAS  /tmp/ccEAmoNy.s 			page 3
+ARM GAS  /tmp/ccrUolje.s 			page 3
 
 
   40      BE977816 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   51      FE69
   52 01a6 C40D441C 		.ascii	"\304\015D\034\372G\027*m\235\226\023\245\315\301\"\207"
   52      FA47172A 
-ARM GAS  /tmp/ccEAmoNy.s 			page 4
+ARM GAS  /tmp/ccrUolje.s 			page 4
 
 
   52      6D9D9613 
@@ -215,7 +215,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   59 0222 FC01685E 		.ascii	"\374\001h^\267\367"
   59      B7F7
   60              		.text
-  61              		.section	.gnu.lto_.pureconst.347c36f5304d4abc,"",%progbits
+  61              		.section	.gnu.lto_.pureconst.38ebb73b60cbad66,"",%progbits
   62 0000 789C6362 		.ascii	"x\234cb`b\220f\200\000^\006\011F+&)f\011\016)N).)n)"
   62      60629066 
   62      80005E06 
@@ -226,7 +226,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   63      4129001D 
   63      D50211
   64              		.text
-  65              		.section	.gnu.lto_spi_lld_serve_tx_interrupt.347c36f5304d4abc,"",%progbits
+  65              		.section	.gnu.lto_spi_lld_serve_tx_interrupt.38ebb73b60cbad66,"",%progbits
   66 0000 789C6362 		.ascii	"x\234cb`b@\007F@,\304\310\300\320\016\244\031Y\031\030"
   66      60624007 
   66      46402CC4 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   67      C7D0C0C5 
   67      724D9FA1 
   68 002a 87999105 		.ascii	"\207\231\221\005\"\314\302\310\010b002\32431\2630\326"
-ARM GAS  /tmp/ccEAmoNy.s 			page 5
+ARM GAS  /tmp/ccrUolje.s 			page 5
 
 
   68      22CCC2C8 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   79      A7A4
   80 0105 96E92767 		.ascii	"\226\351'gd&e\346\027\353\227\024\225\346e\353\003\031"
   80      642665E6 
-ARM GAS  /tmp/ccEAmoNy.s 			page 6
+ARM GAS  /tmp/ccrUolje.s 			page 6
 
 
   80      17EB9714 
@@ -323,7 +323,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   84      512A0300 
   84      84E976CB 
   85              		.text
-  86              		.section	.gnu.lto_spi_lld_serve_rx_interrupt.347c36f5304d4abc,"",%progbits
+  86              		.section	.gnu.lto_spi_lld_serve_rx_interrupt.38ebb73b60cbad66,"",%progbits
   87 0000 789CA556 		.ascii	"x\234\245VMl\033U\020\236\331]{\327\366\372\247I\355"
   87      4D6C1B55 
   87      109ED95D 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
   93      E077BA
   94 007b 631C505A 		.ascii	"c\034PZ}\010P\323$I\3761\005\325\260\362\371sP\325e"
   94      7D0850D3 
-ARM GAS  /tmp/ccEAmoNy.s 			page 7
+ARM GAS  /tmp/ccrUolje.s 			page 7
 
 
   94      2449FE31 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  105      1C7E
  106 0159 88019845 		.ascii	"\210\001\230Ee\026\345\227\221\222\3514\365\033\250"
  106      6516E597 
-ARM GAS  /tmp/ccEAmoNy.s 			page 8
+ARM GAS  /tmp/ccrUolje.s 			page 8
 
 
  106      9192E934 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  117      3BEEB6F0 
  118 0232 7F0B659F 		.ascii	"\177\013e\237\256'\\H\322\037\242\354C\376\022liR\302"
  118      AE275C48 
-ARM GAS  /tmp/ccEAmoNy.s 			page 9
+ARM GAS  /tmp/ccrUolje.s 			page 9
 
 
  118      D21FA2EC 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  129      DD3F04C7 
  129      61917F
  130 0316 9F63183E 		.ascii	"\237c\030>\301'\347(\011|\004V\245\377\203\327Y{\017"
-ARM GAS  /tmp/ccEAmoNy.s 			page 10
+ARM GAS  /tmp/ccrUolje.s 			page 10
 
 
  130      C127E728 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  141      A82C5817 
  141      0A8599E3 
  141      269C3A48 
-ARM GAS  /tmp/ccEAmoNy.s 			page 11
+ARM GAS  /tmp/ccrUolje.s 			page 11
 
 
  141      9252
@@ -624,7 +624,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  146 043b 4BF00FE6 		.ascii	"K\360\017\346\340\014\236"
  146      E00C9E
  147              		.text
- 148              		.section	.gnu.lto_spi_lld_stop.part.0.347c36f5304d4abc,"",%progbits
+ 148              		.section	.gnu.lto_spi_lld_stop.part.0.38ebb73b60cbad66,"",%progbits
  149 0000 789C954F 		.ascii	"x\234\225O\261J\003A\024|\263\273\027\004\013m\355\202"
  149      B14A0341 
  149      147CB3BB 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  155      3430E66C 
  155      7CFD74B7 
  155      602E8F23 
-ARM GAS  /tmp/ccEAmoNy.s 			page 12
+ARM GAS  /tmp/ccrUolje.s 			page 12
 
 
  156 007e 1DC7F0C1 		.ascii	"\035\307\360\3016\353 \017\264\305\007\244\023\020\352"
@@ -714,11 +714,11 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  166      8A69F307 
  166      DF0C6DBC 
  167              		.text
- 168              		.section	.gnu.lto_spi_lld_init.347c36f5304d4abc,"",%progbits
+ 168              		.section	.gnu.lto_spi_lld_init.38ebb73b60cbad66,"",%progbits
  169 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\237\205\201\301\015H32302M8\307"
  169      60624007 
  169      92403C9F 
-ARM GAS  /tmp/ccEAmoNy.s 			page 13
+ARM GAS  /tmp/ccrUolje.s 			page 13
 
 
  169      8581C10D 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  180      81DA7419 
  180      D6
  181 00e8 809472E4 		.ascii	"\200\224r\34422\201\324q2\243\304\010\330\266\365d\333"
-ARM GAS  /tmp/ccEAmoNy.s 			page 14
+ARM GAS  /tmp/ccrUolje.s 			page 14
 
 
  181      323281D4 
@@ -838,10 +838,10 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  192      BD640600 
  192      5B8C34AE 
  193              		.text
-ARM GAS  /tmp/ccEAmoNy.s 			page 15
+ARM GAS  /tmp/ccrUolje.s 			page 15
 
 
- 194              		.section	.gnu.lto_spi_lld_start.347c36f5304d4abc,"",%progbits
+ 194              		.section	.gnu.lto_spi_lld_start.38ebb73b60cbad66,"",%progbits
  195 0000 789C9D56 		.ascii	"x\234\235V]h\034U\024>wfwf2\273q\363\377G\322\246\245"
  195      5D681C55 
  195      143E7766 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  206      375E635C 
  206      DBACB6FA 
  206      2895BAFD 
-ARM GAS  /tmp/ccEAmoNy.s 			page 16
+ARM GAS  /tmp/ccrUolje.s 			page 16
 
 
  206      CB83
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  218      AA0516AF 
  218      21667169 
  218      0CA5255C 
-ARM GAS  /tmp/ccEAmoNy.s 			page 17
+ARM GAS  /tmp/ccrUolje.s 			page 17
 
 
  218      D7FD2887 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  230 0288 B94699B4 		.ascii	"\271F\231\264O\206\020\363\272\004\324\322\362\270x"
  230      4F8610F3 
  230      BA04D4D2 
-ARM GAS  /tmp/ccEAmoNy.s 			page 18
+ARM GAS  /tmp/ccrUolje.s 			page 18
 
 
  230      F2B878
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  242      C2889939 
  242      5FCF91FD 
  242      F4
-ARM GAS  /tmp/ccEAmoNy.s 			page 19
+ARM GAS  /tmp/ccrUolje.s 			page 19
 
 
  243 036a 84D2F57C 		.ascii	"\204\322\365|9\257\364\264 .K\317\314\\\301zB\236\236"
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  254      1F05AA07 
  254      819CF225 
  254      C8
-ARM GAS  /tmp/ccEAmoNy.s 			page 20
+ARM GAS  /tmp/ccrUolje.s 			page 20
 
 
  255 043c AAA8CFE4 		.ascii	"\252\250\317\344B8\300\317\220x\364g\233\372\317\302"
@@ -1167,7 +1167,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  260 0496 31F81F12 		.ascii	"1\370\037\022y\273Z"
  260      79BB5A
  261              		.text
- 262              		.section	.gnu.lto_spi_lld_stop.347c36f5304d4abc,"",%progbits
+ 262              		.section	.gnu.lto_spi_lld_stop.38ebb73b60cbad66,"",%progbits
  263 0000 789C8D93 		.ascii	"x\234\215\223\317k\023A\024\307\337\233\331\331\215"
  263      CF6B1341 
  263      14C7DF9B 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  269 0068 D768C704 		.ascii	"\327h\307\004 \253\277\005\250&\030\343{\031\320I\357"
  269      20ABBF05 
  269      A82618E3 
-ARM GAS  /tmp/ccEAmoNy.s 			page 21
+ARM GAS  /tmp/ccrUolje.s 			page 21
 
 
  269      7B19D049 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  281 0138 6ADEAD5E 		.ascii	"j\336\255^jn\265\2760\233n\"L\227\221\266\252\265\236"
  281      6A6EB5BE 
  281      309B6E22 
-ARM GAS  /tmp/ccEAmoNy.s 			page 22
+ARM GAS  /tmp/ccrUolje.s 			page 22
 
 
  281      4C9791B6 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  293 0210 8EE6AE0F 		.ascii	"\216\346\256\017\\\226##Cr\364\306\360\374%Y\231Vw\212"
  293      5C962323 
  293      4372F4C6 
-ARM GAS  /tmp/ccEAmoNy.s 			page 23
+ARM GAS  /tmp/ccrUolje.s 			page 23
 
 
  293      F0FC2559 
@@ -1327,7 +1327,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  294      FE0079B6 
  294      E37B
  295              		.text
- 296              		.section	.gnu.lto_spi_lld_select.347c36f5304d4abc,"",%progbits
+ 296              		.section	.gnu.lto_spi_lld_select.38ebb73b60cbad66,"",%progbits
  297 0000 789C6D90 		.ascii	"x\234m\220\317KBA\020\307\277\263\373\236\276\254\240"
  297      CF4B4241 
  297      10C7BFB3 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  307      9448ECB3 
  307      37FDDBF3 
  307      14CDCCCC 
-ARM GAS  /tmp/ccEAmoNy.s 			page 24
+ARM GAS  /tmp/ccrUolje.s 			page 24
 
 
  308 00b8 61041849 		.ascii	"a\004\030I\334w\226\\\212\005H\234%4\202\020\241\031"
@@ -1423,7 +1423,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  316 014f EEE0176B 		.ascii	"\356\340\027k\330i\365"
  316      D869F5
  317              		.text
- 318              		.section	.gnu.lto_spi_lld_unselect.347c36f5304d4abc,"",%progbits
+ 318              		.section	.gnu.lto_spi_lld_unselect.38ebb73b60cbad66,"",%progbits
  319 0000 789C6D90 		.ascii	"x\234m\220\317KBA\020\307\277\263\373\236\276\254\240"
  319      CF4B4241 
  319      10C7BFB3 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  321      5AFE019E 
  321      ED101D8B 
  322 0031 7E5C3B46 		.ascii	"~\\;Fw\203.\035:y/\374\007\202l\366\3750\010\027vfv"
-ARM GAS  /tmp/ccEAmoNy.s 			page 25
+ARM GAS  /tmp/ccrUolje.s 			page 25
 
 
  322      77832E1D 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  333      0832F446 
  333      E8830F60 
  333      61E00DDD 
-ARM GAS  /tmp/ccEAmoNy.s 			page 26
+ARM GAS  /tmp/ccrUolje.s 			page 26
 
 
  333      D1
@@ -1521,7 +1521,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  337      59B7F10B 
  337      BB236ABF 
  338              		.text
- 339              		.section	.gnu.lto_spi_lld_ignore.347c36f5304d4abc,"",%progbits
+ 339              		.section	.gnu.lto_spi_lld_ignore.38ebb73b60cbad66,"",%progbits
  340 0000 789C8D93 		.ascii	"x\234\215\223\301k\023Q\020\306g\336\356v\263f\203K"
  340      C16B1351 
  340      10C667DE 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  347 0077 40D862B8 		.ascii	"@\330b\270u\027\305U6\011\015\333\336\353\0366\237H"
  347      7517C555 
  347      36090DDB 
-ARM GAS  /tmp/ccEAmoNy.s 			page 27
+ARM GAS  /tmp/ccrUolje.s 			page 27
 
 
  347      DEEB1E36 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  359 014e 72AA5FCE 		.ascii	"r\252_\316\273N\025\\\346K\273\251\017\205I>\246\272"
  359      BB4E155C 
  359      E64BBBA9 
-ARM GAS  /tmp/ccEAmoNy.s 			page 28
+ARM GAS  /tmp/ccrUolje.s 			page 28
 
 
  359      0F85493E 
@@ -1678,11 +1678,11 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  371      EF54DD48 
  371      4DFF03E0 
  371      AD0E43
-ARM GAS  /tmp/ccEAmoNy.s 			page 29
+ARM GAS  /tmp/ccrUolje.s 			page 29
 
 
  372              		.text
- 373              		.section	.gnu.lto_spi_lld_exchange.347c36f5304d4abc,"",%progbits
+ 373              		.section	.gnu.lto_spi_lld_exchange.38ebb73b60cbad66,"",%progbits
  374 0000 789C9593 		.ascii	"x\234\225\223\317k\023Q\020\307g\336\356&1i6\013\015"
  374      CF6B1351 
  374      10C767DE 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  384      010B
  385 00c9 159582AA 		.ascii	"\025\225\202\252\321\022\003\220\306:NC\210\026\"L\333"
  385      D1120390 
-ARM GAS  /tmp/ccEAmoNy.s 			page 30
+ARM GAS  /tmp/ccrUolje.s 			page 30
 
 
  385      C63A4E43 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  396      FB7C
  397 01a3 F04F9FF5 		.ascii	"\360O\237\365A>\037t\233\034\037\344s\320\317\3478A"
  397      413E1F74 
-ARM GAS  /tmp/ccEAmoNy.s 			page 31
+ARM GAS  /tmp/ccrUolje.s 			page 31
 
 
  397      9B1C1FE4 
@@ -1845,7 +1845,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  406      01DBCC14 
  406      18
  407              		.text
- 408              		.section	.gnu.lto_spi_lld_send.347c36f5304d4abc,"",%progbits
+ 408              		.section	.gnu.lto_spi_lld_send.38ebb73b60cbad66,"",%progbits
  409 0000 789C8D94 		.ascii	"x\234\215\224\317k\023A\024\307\337\233\335\355f\315"
  409      CF6B1341 
  409      14C7DF9B 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  411 0022 A17A91FC 		.ascii	"\241z\221\374\250\311b\326\224\374(-\036\272\321\034"
  411      A8C962D6 
  411      94FC282D 
-ARM GAS  /tmp/ccEAmoNy.s 			page 32
+ARM GAS  /tmp/ccrUolje.s 			page 32
 
 
  411      1EBAD11C 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  423 00fd 87468AA2 		.ascii	"\207F\212\242\360\340\01221K\373p\247\363\225\216\236"
  423      F0E00A32 
  423      314BFB70 
-ARM GAS  /tmp/ccEAmoNy.s 			page 33
+ARM GAS  /tmp/ccrUolje.s 			page 33
 
 
  423      A7F3958E 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  434      26D09181 
  435 01d0 475584D6 		.ascii	"GU\204\326\"\334\225q\330\2271\023\200\006\234`@F\202"
  435      22DC9571 
-ARM GAS  /tmp/ccEAmoNy.s 			page 34
+ARM GAS  /tmp/ccrUolje.s 			page 34
 
 
  435      D8973113 
@@ -2014,7 +2014,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  441      2379FE2F 
  441      4FA91411 
  442              		.text
- 443              		.section	.gnu.lto_spi_lld_receive.347c36f5304d4abc,"",%progbits
+ 443              		.section	.gnu.lto_spi_lld_receive.38ebb73b60cbad66,"",%progbits
  444 0000 789C9593 		.ascii	"x\234\225\223\317k\023A\024\307\337\233\335M\266I\223"
  444      CF6B1341 
  444      14C7DF9B 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  448      3989A754 
  448      7A2C85F5 
  448      CDEE6643 
-ARM GAS  /tmp/ccEAmoNy.s 			page 35
+ARM GAS  /tmp/ccrUolje.s 			page 35
 
 
  448      D3358903 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  460      067BDA09 
  460      BADB03E4 
  460      0578674E 
-ARM GAS  /tmp/ccEAmoNy.s 			page 36
+ARM GAS  /tmp/ccrUolje.s 			page 36
 
 
  460      E918
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  472      678BB92D 
  472      9E5BDBE0 
  472      D9BC9ED1 
-ARM GAS  /tmp/ccEAmoNy.s 			page 37
+ARM GAS  /tmp/ccrUolje.s 			page 37
 
 
  472      8B
@@ -2180,7 +2180,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  476 0246 2F84C714 		.ascii	"/\204\307\024\277"
  476      BF
  477              		.text
- 478              		.section	.gnu.lto_spi_lld_polled_exchange.347c36f5304d4abc,"",%progbits
+ 478              		.section	.gnu.lto_spi_lld_polled_exchange.38ebb73b60cbad66,"",%progbits
  479 0000 789C8591 		.ascii	"x\234\205\221\317K\002A\024\307\337\233\331m\325\242"
  479      CF4B0241 
  479      14C7DF9B 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  486      8DBB60D7 
  486      CF93C9F9 
  486      E368
-ARM GAS  /tmp/ccEAmoNy.s 			page 38
+ARM GAS  /tmp/ccrUolje.s 			page 38
 
 
  487 008d 30F77915 		.ascii	"0\367y\025\231fXB\340\240#(T\241J\025j2\370d\360\313"
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  497      2A0A
  498 016a A9A2281B 		.ascii	"\251\242(\033\225ZU\304\023\033\241\025\021\213\205"
  498      955A55C4 
-ARM GAS  /tmp/ccEAmoNy.s 			page 39
+ARM GAS  /tmp/ccrUolje.s 			page 39
 
 
  498      131BA115 
@@ -2289,7 +2289,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  499      9732F005 
  499      05DF7EC9 
  500              		.text
- 501              		.section	.gnu.lto_.symbol_nodes.347c36f5304d4abc,"",%progbits
+ 501              		.section	.gnu.lto_.symbol_nodes.38ebb73b60cbad66,"",%progbits
  502 0000 789C4DCD 		.ascii	"x\234M\315=3\003Q\024\306\361s\236\263\227\254w!\012"
  502      3D330351 
  502      14C6F173 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  511      CAE71D53 
  511      9FC72DD3 
  511      1529AFBF 
-ARM GAS  /tmp/ccEAmoNy.s 			page 40
+ARM GAS  /tmp/ccrUolje.s 			page 40
 
 
  511      3613
@@ -2355,7 +2355,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  514      B7E51F83 
  514      36704C
  515              		.text
- 516              		.section	.gnu.lto_.refs.347c36f5304d4abc,"",%progbits
+ 516              		.section	.gnu.lto_.refs.38ebb73b60cbad66,"",%progbits
  517 0000 789C2587 		.ascii	"x\234%\207\201\015\2000\014\303\032\323\255 1\001W\355"
  517      810D8030 
  517      0CC31AD3 
@@ -2373,7 +2373,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  520 0036 F8013F3C 		.ascii	"\370\001?<\001w"
  520      0177
  521              		.text
- 522              		.section	.gnu.lto_.decls.347c36f5304d4abc,"",%progbits
+ 522              		.section	.gnu.lto_.decls.38ebb73b60cbad66,"",%progbits
  523 0000 789CBD5C 		.ascii	"x\234\275\\\013t\024E\272\356\356\231\311\203\304\200"
  523      0B741445 
  523      BAEEEE99 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  527      84009200 
  527      AE2088
  528 0057 109E5902 		.ascii	"\020\236Y\002\344\376\365w\365Lu\245{\246;\353\3359"
-ARM GAS  /tmp/ccEAmoNy.s 			page 41
+ARM GAS  /tmp/ccrUolje.s 			page 41
 
 
  528      E4FEF577 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  539 0127 B3039056 		.ascii	"\263\003\220VJ\252\336V\301\361~(\273ZRuZ\006GP\271"
  539      4AAADE56 
  539      C1F17E28 
-ARM GAS  /tmp/ccEAmoNy.s 			page 42
+ARM GAS  /tmp/ccrUolje.s 			page 42
 
 
  539      BB5A5275 
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  550      99881C9A 
  551 0204 5CAC0C84 		.ascii	"\\\254\014\2043\341x\025\312N\225\302\374\257Az\200"
  551      33E17815 
-ARM GAS  /tmp/ccEAmoNy.s 			page 43
+ARM GAS  /tmp/ccrUolje.s 			page 43
 
 
  551      CA4E95C2 
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  563      D21F0D6C 
  563      226B7D8B 
  563      F6C94EA1 
-ARM GAS  /tmp/ccEAmoNy.s 			page 44
+ARM GAS  /tmp/ccrUolje.s 			page 44
 
 
  563      7B
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  575 03a6 31265E6F 		.ascii	"1&^o+\370\256\025 h\360\225\264\324A\346`\342_\350\025"
  575      2BF8AE15 
  575      2068F095 
-ARM GAS  /tmp/ccEAmoNy.s 			page 45
+ARM GAS  /tmp/ccrUolje.s 			page 45
 
 
  575      B4D441E6 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  587 0486 F2FB95DA 		.ascii	"\362\373\225\332\217E#\245@\001\221\021G\027\276T\265"
  587      8F4523A5 
  587      40019111 
-ARM GAS  /tmp/ccEAmoNy.s 			page 46
+ARM GAS  /tmp/ccrUolje.s 			page 46
 
 
  587      4717BE54 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  599 0560 51D4E269 		.ascii	"Q\324\342i\034\274\252\235\374\340\025\313\015^\321"
  599      1CBCAA9D 
  599      FCE015CB 
-ARM GAS  /tmp/ccEAmoNy.s 			page 47
+ARM GAS  /tmp/ccrUolje.s 			page 47
 
 
  599      0D5ED1
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  610      836E81C0 
  610      C1
  611 0641 050287BE 		.ascii	"\005\002\207\276g;\342\303']]\016\301^aI\330\205\015"
-ARM GAS  /tmp/ccEAmoNy.s 			page 48
+ARM GAS  /tmp/ccrUolje.s 			page 48
 
 
  611      673BE2C3 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  622      DDE6118D 
  622      3A99D9E0 
  622      0801EF
-ARM GAS  /tmp/ccEAmoNy.s 			page 49
+ARM GAS  /tmp/ccrUolje.s 			page 49
 
 
  623 0718 C8E2C4A6 		.ascii	"\310\342\304\246g5\260j\227]0\276\307jv\334\207v\334"
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  634      92F02E36 
  635 07e5 8E7786DB 		.ascii	"\216w\206\333W\232\036R\235a\235%g\330\3228\337\322"
  635      579A1E52 
-ARM GAS  /tmp/ccEAmoNy.s 			page 50
+ARM GAS  /tmp/ccrUolje.s 			page 50
 
 
  635      9D619D25 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  646      E32C
  647 08bb 800D3667 		.ascii	"\200\0156g\266\204\005\233b\033L\317l=\0136\335\012"
  647      B684059B 
-ARM GAS  /tmp/ccEAmoNy.s 			page 51
+ARM GAS  /tmp/ccrUolje.s 			page 51
 
 
  647      621B4CCF 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  658      021DEC31 
  658      D0E669CB 
  659 0996 D40DE8BF 		.ascii	"\324\015\350\277#\320Q\016\210n@\206>\370\235}\222\210"
-ARM GAS  /tmp/ccEAmoNy.s 			page 52
+ARM GAS  /tmp/ccrUolje.s 			page 52
 
 
  659      23D0510E 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  670      551639BA 
  671 0a76 DDAFAE2C 		.ascii	"\335\257\256,\220[\026\0266&kn\241.^\275*I\024\266\247"
  671      905B1616 
-ARM GAS  /tmp/ccEAmoNy.s 			page 53
+ARM GAS  /tmp/ccrUolje.s 			page 53
 
 
  671      36266B6E 
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  682      511F00F4 
  682      7077BCBB 
  682      53ED
-ARM GAS  /tmp/ccEAmoNy.s 			page 54
+ARM GAS  /tmp/ccrUolje.s 			page 54
 
 
  683 0b5f 29467B35 		.ascii	")F{5j+\031^\337C\231\276\351\305\217\010\252f\030G\254"
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  694 0c22 90F488FA 		.ascii	"\220\364\210\372\036\023\301\033\251Q\277\214\360\232"
  694      1E13C11B 
  694      A951BF8C 
-ARM GAS  /tmp/ccEAmoNy.s 			page 55
+ARM GAS  /tmp/ccrUolje.s 			page 55
 
 
  694      F09A
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  706 0cfa 48F888FE 		.ascii	"H\370\210\376\236\363)\207\265\367\234\277\342c\311"
  706      9EF32987 
  706      B5F79CBF 
-ARM GAS  /tmp/ccEAmoNy.s 			page 56
+ARM GAS  /tmp/ccrUolje.s 			page 56
 
 
  706      E263C9
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  718 0dcf DB60666F 		.ascii	"\333`fo\205\375\015}\341k\264\371M\314oc\336\205\371"
  718      85FD0D7D 
  718      E16BB4F9 
-ARM GAS  /tmp/ccEAmoNy.s 			page 57
+ARM GAS  /tmp/ccrUolje.s 			page 57
 
 
  718      4DCC6F63 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  729      8A549C7F 
  729      115611ED 
  730 0eaf AFE4F443 		.ascii	"\257\344\364C\335\010\264\222\316\2025N\335/hU\221\202"
-ARM GAS  /tmp/ccEAmoNy.s 			page 58
+ARM GAS  /tmp/ccrUolje.s 			page 58
 
 
  730      DD08B492 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  741      32663597 
  741      6755D723 
  742 0f8a F586ACE6 		.ascii	"\365\206\254\346\235\332\335\203>\270)B\334\266\276"
-ARM GAS  /tmp/ccEAmoNy.s 			page 59
+ARM GAS  /tmp/ccrUolje.s 			page 59
 
 
  742      9DDADD83 
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  755      BC8DCCAB 
  755      313652AE 
  755      916A99A4 
-ARM GAS  /tmp/ccEAmoNy.s 			page 60
+ARM GAS  /tmp/ccrUolje.s 			page 60
 
 
  755      B13D
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  767      6D68EE76 
  767      1341AE18 
  767      0AB2
-ARM GAS  /tmp/ccEAmoNy.s 			page 61
+ARM GAS  /tmp/ccrUolje.s 			page 61
 
 
  768 1138 61C697CE 		.ascii	"a\306\227\316\220 \332|\352\216\011\3045C\210yg\016"
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  779 11fe A8100FD7 		.ascii	"\250\020\017\327P\032\242\243\314\320\243\004\017\006"
  779      501AA2A3 
  779      CCD0A304 
-ARM GAS  /tmp/ccEAmoNy.s 			page 62
+ARM GAS  /tmp/ccrUolje.s 			page 62
 
 
  779      0F06
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  790      28EF0D
  791 12d3 73EDDBF8 		.ascii	"s\355\333\3703!\2135e\361\020.\333r\265i?\250\035\272"
  791      33218B35 
-ARM GAS  /tmp/ccEAmoNy.s 			page 63
+ARM GAS  /tmp/ccrUolje.s 			page 63
 
 
  791      65F1102E 
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  802      826D303D 
  802      B34D
  803 13b3 2C58BB15 		.ascii	",X\273\025\260\010\033\314\357\262`7m\203\351\231\275"
-ARM GAS  /tmp/ccEAmoNy.s 			page 64
+ARM GAS  /tmp/ccrUolje.s 			page 64
 
 
  803      B0081BCC 
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  814      9E35D7D9 
  814      4D16
  815 148b ACD63698 		.ascii	"\254\3266\230\3363n1\236\361\006\217e\344\031\205\346"
-ARM GAS  /tmp/ccEAmoNy.s 			page 65
+ARM GAS  /tmp/ccrUolje.s 			page 65
 
 
  815      DE336E31 
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  827      5F33A815 
  827      B4FB8F
  828 1564 69F4CF5B 		.ascii	"i\364\317[#\375C\242U\201\361\321b\242\345\377\207$"
-ARM GAS  /tmp/ccEAmoNy.s 			page 66
+ARM GAS  /tmp/ccrUolje.s 			page 66
 
 
  828      23FD43A2 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  839      E4C8
  840 1641 BC38729A 		.ascii	"\2748r\232\2337&'\236\234\270\207ef\377\001\357ff\345"
  840      9B372627 
-ARM GAS  /tmp/ccEAmoNy.s 			page 67
+ARM GAS  /tmp/ccrUolje.s 			page 67
 
 
  840      9E9CB887 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  851      82835CE0 
  851      C8
  852 171d F7A51125 		.ascii	"\367\245\021%d\225\225\216+\032\037\223\217\207\301"
-ARM GAS  /tmp/ccEAmoNy.s 			page 68
+ARM GAS  /tmp/ccrUolje.s 			page 68
 
 
  852      6495958E 
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  863      332889F7 
  863      6203
  864 17f5 2565055E 		.ascii	"%e\005^\374>\256X\036\357\217\015\370\274\343\374\250"
-ARM GAS  /tmp/ccEAmoNy.s 			page 69
+ARM GAS  /tmp/ccrUolje.s 			page 69
 
 
  864      FC3EAE58 
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  875      07DD2BDB 
  875      3BCE91
  876 18cb E54E8394 		.ascii	"\345N\203\224.\345\272%\210\014Y\356\254\034w\214\373"
-ARM GAS  /tmp/ccEAmoNy.s 			page 70
+ARM GAS  /tmp/ccrUolje.s 			page 70
 
 
  876      2EE5BA25 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  887      6CF1A430 
  887      6C3168A1 
  887      8FF6B5A2 
-ARM GAS  /tmp/ccEAmoNy.s 			page 71
+ARM GAS  /tmp/ccrUolje.s 			page 71
 
 
  887      54BD
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  898      FEB2
  899 1a6f D2BBC9A5 		.ascii	"\322\273\311\245<\354\335T\032G\300W\356\200\370\225"
  899      3CECDD54 
-ARM GAS  /tmp/ccEAmoNy.s 			page 72
+ARM GAS  /tmp/ccrUolje.s 			page 72
 
 
  899      1A47C057 
@@ -4301,7 +4301,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  907      FF01C52E 
  907      4CE5
  908              		.text
- 909              		.section	.gnu.lto_.symtab.347c36f5304d4abc,"",%progbits
+ 909              		.section	.gnu.lto_.symtab.38ebb73b60cbad66,"",%progbits
  910 0000 7370695F 		.ascii	"spi_lld_init\000\000\000\000\000\000\000\000\000\000"
  910      6C6C645F 
  910      696E6974 
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  912      49443300 
  912      00
  913 0038 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000\000\213\002\000"
-ARM GAS  /tmp/ccEAmoNy.s 			page 73
+ARM GAS  /tmp/ccrUolje.s 			page 73
 
 
  913      00000000 
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  924      65697665 
  924      00000000 
  925 012e 00000000 		.ascii	"\000\000\000\000W\002\000\000spi_lld_polled_exchang"
-ARM GAS  /tmp/ccEAmoNy.s 			page 74
+ARM GAS  /tmp/ccrUolje.s 			page 74
 
 
  925      57020000 
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  938      6F727465 
  938      782D6D34 
  938      2720272D 
-ARM GAS  /tmp/ccEAmoNy.s 			page 75
+ARM GAS  /tmp/ccrUolje.s 			page 75
 
 
  939 0033 2D643136 		.ascii	"-d16' '-mno-thumb-interwork' '-mthumb' '-O2' '-fomi"
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  975 0004 38B5     		push	{r3, r4, r5, lr}
  976 0006 0446     		mov	r4, r0
  977 0008 34D1     		bne	.L18
-ARM GAS  /tmp/ccEAmoNy.s 			page 76
+ARM GAS  /tmp/ccrUolje.s 			page 76
 
 
  978              	.L8:
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1032              	.L13:
  1033 006e 0223     		movs	r3, #2
  1034 0070 2370     		strb	r3, [r4]
-ARM GAS  /tmp/ccEAmoNy.s 			page 77
+ARM GAS  /tmp/ccrUolje.s 			page 77
 
 
  1035 0072 F0E7     		b	.L14
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1089 0058 00000000 		.word	.LANCHOR2
  1090 005c 24000000 		.word	_stm32_dma_streams+36
  1091 0060 46000100 		.word	65606
-ARM GAS  /tmp/ccEAmoNy.s 			page 78
+ARM GAS  /tmp/ccrUolje.s 			page 78
 
 
  1092 0064 00380040 		.word	1073756160
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1146 0058 0868     		ldr	r0, [r1]
  1147 005a 1168     		ldr	r1, [r2]
  1148 005c 03F10C02 		add	r2, r3, #12
-ARM GAS  /tmp/ccEAmoNy.s 			page 79
+ARM GAS  /tmp/ccrUolje.s 			page 79
 
 
  1149 0060 8260     		str	r2, [r0, #8]
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1201              		@ args = 0, pretend = 0, frame = 0
  1202              		@ frame_needed = 0, uses_anonymous_args = 0
  1203 0000 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
-ARM GAS  /tmp/ccEAmoNy.s 			page 80
+ARM GAS  /tmp/ccrUolje.s 			page 80
 
 
  1204 0002 022B     		cmp	r3, #2
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1258 0008 01FA02F2 		lsl	r2, r1, r2
  1259 000c 92B2     		uxth	r2, r2
  1260 000e 5A83     		strh	r2, [r3, #26]	@ movhi
-ARM GAS  /tmp/ccEAmoNy.s 			page 81
+ARM GAS  /tmp/ccrUolje.s 			page 81
 
 
  1261 0010 7047     		bx	lr
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1309 001e 1168     		ldr	r1, [r2]
  1310 0020 41F00101 		orr	r1, r1, #1
  1311 0024 1160     		str	r1, [r2]
-ARM GAS  /tmp/ccEAmoNy.s 			page 82
+ARM GAS  /tmp/ccrUolje.s 			page 82
 
 
  1312 0026 1A68     		ldr	r2, [r3]
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1364              		.type	spi_lld_send, %function
  1365              	spi_lld_send:
  1366              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccEAmoNy.s 			page 83
+ARM GAS  /tmp/ccrUolje.s 			page 83
 
 
  1367              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1420 001a DD60     		str	r5, [r3, #12]
  1421 001c 5960     		str	r1, [r3, #4]
  1422 001e 1860     		str	r0, [r3]
-ARM GAS  /tmp/ccEAmoNy.s 			page 84
+ARM GAS  /tmp/ccrUolje.s 			page 84
 
 
  1423 0020 2268     		ldr	r2, [r4]
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1472      00000000 
  1473              		.section	.bss.SPID3,"aw",%nobits
  1474              		.align	2
-ARM GAS  /tmp/ccEAmoNy.s 			page 85
+ARM GAS  /tmp/ccrUolje.s 			page 85
 
 
  1475              		.set	.LANCHOR2,. + 0
@@ -5065,58 +5065,58 @@ ARM GAS  /tmp/ccEAmoNy.s 			page 1
  1490 0000 0000     		.space	2
  1491              		.comm	__gnu_lto_v1,1,1
  1492              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccEAmoNy.s 			page 86
+ARM GAS  /tmp/ccrUolje.s 			page 86
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 spi_lld.c
-     /tmp/ccEAmoNy.s:945    .text.spi_lld_serve_tx_interrupt:0000000000000000 $t
-     /tmp/ccEAmoNy.s:950    .text.spi_lld_serve_tx_interrupt:0000000000000000 spi_lld_serve_tx_interrupt
-     /tmp/ccEAmoNy.s:963    .text.spi_lld_serve_tx_interrupt:0000000000000010 $d
-     /tmp/ccEAmoNy.s:966    .text.spi_lld_serve_rx_interrupt:0000000000000000 $t
-     /tmp/ccEAmoNy.s:971    .text.spi_lld_serve_rx_interrupt:0000000000000000 spi_lld_serve_rx_interrupt
-     /tmp/ccEAmoNy.s:1043   .text.spi_lld_serve_rx_interrupt:000000000000007c $d
-     /tmp/ccEAmoNy.s:1046   .text.spi_lld_init:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1052   .text.spi_lld_init:0000000000000000 spi_lld_init
-     /tmp/ccEAmoNy.s:1087   .text.spi_lld_init:0000000000000050 $d
-     /tmp/ccEAmoNy.s:1097   .text.spi_lld_start:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1103   .text.spi_lld_start:0000000000000000 spi_lld_start
-     /tmp/ccEAmoNy.s:1187   .text.spi_lld_start:00000000000000b0 $d
-     /tmp/ccEAmoNy.s:1194   .text.spi_lld_stop:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1200   .text.spi_lld_stop:0000000000000000 spi_lld_stop
-     /tmp/ccEAmoNy.s:1239   .text.spi_lld_stop:0000000000000044 $d
-     /tmp/ccEAmoNy.s:1244   .text.spi_lld_select:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1250   .text.spi_lld_select:0000000000000000 spi_lld_select
-     /tmp/ccEAmoNy.s:1264   .text.spi_lld_unselect:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1270   .text.spi_lld_unselect:0000000000000000 spi_lld_unselect
-     /tmp/ccEAmoNy.s:1284   .text.spi_lld_ignore:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1290   .text.spi_lld_ignore:0000000000000000 spi_lld_ignore
-     /tmp/ccEAmoNy.s:1320   .text.spi_lld_ignore:0000000000000034 $d
-     /tmp/ccEAmoNy.s:1324   .text.spi_lld_exchange:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1330   .text.spi_lld_exchange:0000000000000000 spi_lld_exchange
-     /tmp/ccEAmoNy.s:1359   .text.spi_lld_send:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1365   .text.spi_lld_send:0000000000000000 spi_lld_send
-     /tmp/ccEAmoNy.s:1395   .text.spi_lld_send:0000000000000034 $d
-     /tmp/ccEAmoNy.s:1398   .text.spi_lld_receive:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1404   .text.spi_lld_receive:0000000000000000 spi_lld_receive
-     /tmp/ccEAmoNy.s:1434   .text.spi_lld_receive:0000000000000034 $d
-     /tmp/ccEAmoNy.s:1437   .text.spi_lld_polled_exchange:0000000000000000 $t
-     /tmp/ccEAmoNy.s:1443   .text.spi_lld_polled_exchange:0000000000000000 spi_lld_polled_exchange
-     /tmp/ccEAmoNy.s:1478   .bss.SPID3:0000000000000000 SPID3
-     /tmp/ccEAmoNy.s:1471   .bss.SPID2:0000000000000000 SPID2
-     /tmp/ccEAmoNy.s:1460   .bss.dummytx:0000000000000000 $d
-     /tmp/ccEAmoNy.s:1464   .bss.dummytx:0000000000000000 dummytx
-     /tmp/ccEAmoNy.s:1467   .bss.SPID2:0000000000000000 $d
-     /tmp/ccEAmoNy.s:1474   .bss.SPID3:0000000000000000 $d
-     /tmp/ccEAmoNy.s:1481   .rodata.str1.4:0000000000000000 $d
-     /tmp/ccEAmoNy.s:1485   .bss.dummyrx:0000000000000000 $d
-     /tmp/ccEAmoNy.s:1489   .bss.dummyrx:0000000000000000 dummyrx
+     /tmp/ccrUolje.s:945    .text.spi_lld_serve_tx_interrupt:0000000000000000 $t
+     /tmp/ccrUolje.s:950    .text.spi_lld_serve_tx_interrupt:0000000000000000 spi_lld_serve_tx_interrupt
+     /tmp/ccrUolje.s:963    .text.spi_lld_serve_tx_interrupt:0000000000000010 $d
+     /tmp/ccrUolje.s:966    .text.spi_lld_serve_rx_interrupt:0000000000000000 $t
+     /tmp/ccrUolje.s:971    .text.spi_lld_serve_rx_interrupt:0000000000000000 spi_lld_serve_rx_interrupt
+     /tmp/ccrUolje.s:1043   .text.spi_lld_serve_rx_interrupt:000000000000007c $d
+     /tmp/ccrUolje.s:1046   .text.spi_lld_init:0000000000000000 $t
+     /tmp/ccrUolje.s:1052   .text.spi_lld_init:0000000000000000 spi_lld_init
+     /tmp/ccrUolje.s:1087   .text.spi_lld_init:0000000000000050 $d
+     /tmp/ccrUolje.s:1097   .text.spi_lld_start:0000000000000000 $t
+     /tmp/ccrUolje.s:1103   .text.spi_lld_start:0000000000000000 spi_lld_start
+     /tmp/ccrUolje.s:1187   .text.spi_lld_start:00000000000000b0 $d
+     /tmp/ccrUolje.s:1194   .text.spi_lld_stop:0000000000000000 $t
+     /tmp/ccrUolje.s:1200   .text.spi_lld_stop:0000000000000000 spi_lld_stop
+     /tmp/ccrUolje.s:1239   .text.spi_lld_stop:0000000000000044 $d
+     /tmp/ccrUolje.s:1244   .text.spi_lld_select:0000000000000000 $t
+     /tmp/ccrUolje.s:1250   .text.spi_lld_select:0000000000000000 spi_lld_select
+     /tmp/ccrUolje.s:1264   .text.spi_lld_unselect:0000000000000000 $t
+     /tmp/ccrUolje.s:1270   .text.spi_lld_unselect:0000000000000000 spi_lld_unselect
+     /tmp/ccrUolje.s:1284   .text.spi_lld_ignore:0000000000000000 $t
+     /tmp/ccrUolje.s:1290   .text.spi_lld_ignore:0000000000000000 spi_lld_ignore
+     /tmp/ccrUolje.s:1320   .text.spi_lld_ignore:0000000000000034 $d
+     /tmp/ccrUolje.s:1324   .text.spi_lld_exchange:0000000000000000 $t
+     /tmp/ccrUolje.s:1330   .text.spi_lld_exchange:0000000000000000 spi_lld_exchange
+     /tmp/ccrUolje.s:1359   .text.spi_lld_send:0000000000000000 $t
+     /tmp/ccrUolje.s:1365   .text.spi_lld_send:0000000000000000 spi_lld_send
+     /tmp/ccrUolje.s:1395   .text.spi_lld_send:0000000000000034 $d
+     /tmp/ccrUolje.s:1398   .text.spi_lld_receive:0000000000000000 $t
+     /tmp/ccrUolje.s:1404   .text.spi_lld_receive:0000000000000000 spi_lld_receive
+     /tmp/ccrUolje.s:1434   .text.spi_lld_receive:0000000000000034 $d
+     /tmp/ccrUolje.s:1437   .text.spi_lld_polled_exchange:0000000000000000 $t
+     /tmp/ccrUolje.s:1443   .text.spi_lld_polled_exchange:0000000000000000 spi_lld_polled_exchange
+     /tmp/ccrUolje.s:1478   .bss.SPID3:0000000000000000 SPID3
+     /tmp/ccrUolje.s:1471   .bss.SPID2:0000000000000000 SPID2
+     /tmp/ccrUolje.s:1460   .bss.dummytx:0000000000000000 $d
+     /tmp/ccrUolje.s:1464   .bss.dummytx:0000000000000000 dummytx
+     /tmp/ccrUolje.s:1467   .bss.SPID2:0000000000000000 $d
+     /tmp/ccrUolje.s:1474   .bss.SPID3:0000000000000000 $d
+     /tmp/ccrUolje.s:1481   .rodata.str1.4:0000000000000000 $d
+     /tmp/ccrUolje.s:1485   .bss.dummyrx:0000000000000000 $d
+     /tmp/ccrUolje.s:1489   .bss.dummyrx:0000000000000000 dummyrx
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccEAmoNy.s:965    .text.spi_lld_serve_tx_interrupt:0000000000000014 $t
-     /tmp/ccEAmoNy.s:1193   .text.spi_lld_start:00000000000000c4 $t
-     /tmp/ccEAmoNy.s:1323   .text.spi_lld_ignore:000000000000003c $t
-     /tmp/ccEAmoNy.s:1397   .text.spi_lld_send:0000000000000038 $t
-     /tmp/ccEAmoNy.s:1436   .text.spi_lld_receive:0000000000000038 $t
+     /tmp/ccrUolje.s:965    .text.spi_lld_serve_tx_interrupt:0000000000000014 $t
+     /tmp/ccrUolje.s:1193   .text.spi_lld_start:00000000000000c4 $t
+     /tmp/ccrUolje.s:1323   .text.spi_lld_ignore:000000000000003c $t
+     /tmp/ccrUolje.s:1397   .text.spi_lld_send:0000000000000038 $t
+     /tmp/ccrUolje.s:1436   .text.spi_lld_receive:0000000000000038 $t
 
 UNDEFINED SYMBOLS
 chSysHalt
@@ -5125,6 +5125,6 @@ spiObjectInit
 _stm32_dma_streams
 dmaStreamAllocate
 dmaStreamRelease
-ARM GAS  /tmp/ccEAmoNy.s 			page 87
+ARM GAS  /tmp/ccrUolje.s 			page 87
 
 

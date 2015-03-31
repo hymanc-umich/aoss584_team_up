@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccfbSZpZ.s 			page 1
+ARM GAS  /tmp/ccHpcHBZ.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"chsys.c"
-  17              		.section	.gnu.lto_.jmpfuncs.2fbb54058c756076,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.5384cf03b62952a3,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006\272\2414\017\003\003#\0033\020\203"
   18      6062C006 
   18      BAA1340F 
@@ -46,7 +46,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   23      0300377E 
   23      1180
   24              		.text
-  25              		.section	.gnu.lto_.inline.2fbb54058c756076,"",%progbits
+  25              		.section	.gnu.lto_.inline.5384cf03b62952a3,"",%progbits
   26 0000 789C758F 		.ascii	"x\234u\217\261\015\3020\020E\3779\216\023\022\207D("
   26      B10DC230 
   26      1045FF39 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   27      01A810
   28 0021 CA081982 		.ascii	"\312\010\031\202-h\250\221\2202\0025\025>'\030\020\340"
   28      2D68A891 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 2
+ARM GAS  /tmp/ccHpcHBZ.s 			page 2
 
 
   28      90320235 
@@ -108,7 +108,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   37      5D3E1E67 
   37      491F36
   38              		.text
-  39              		.section	.gnu.lto_.pureconst.2fbb54058c756076,"",%progbits
+  39              		.section	.gnu.lto_.pureconst.5384cf03b62952a3,"",%progbits
   40 0000 789C6362 		.ascii	"x\234cb`b\220d\200\000\036\006)F3f+\026+V+6+.3n\011"
   40      60629064 
   40      80001E06 
@@ -118,11 +118,11 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   41      3E067E29 
   41      0022D802 
   41      7A
-ARM GAS  /tmp/ccfbSZpZ.s 			page 3
+ARM GAS  /tmp/ccHpcHBZ.s 			page 3
 
 
   42              		.text
-  43              		.section	.gnu.lto_port_init.2fbb54058c756076,"",%progbits
+  43              		.section	.gnu.lto_port_init.5384cf03b62952a3,"",%progbits
   44 0000 789CAD93 		.ascii	"x\234\255\223Oh\023A\024\306\337\333?\3156\311\226\340"
   44      4F681341 
   44      14C6DFDB 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   55 00c6 8BBCA950 		.ascii	"\213\274\251Pb\254\334\013d\302\333 \357\011\357<J\024"
   55      62ACDC0B 
   55      64C2DB20 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 4
+ARM GAS  /tmp/ccHpcHBZ.s 			page 4
 
 
   55      EF09EF3C 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   66      85415661 
   67 01a3 46D0D390 		.ascii	"F\320\323\220\377\206\246\331\302S\306m\271\266\327"
   67      FF86A6D9 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 5
+ARM GAS  /tmp/ccHpcHBZ.s 			page 5
 
 
   67      C253C66D 
@@ -291,14 +291,14 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   77      A4B8CE2F 
   77      BA513B1C 
   78              		.text
-  79              		.section	.gnu.lto__idle_thread.2fbb54058c756076,"",%progbits
+  79              		.section	.gnu.lto__idle_thread.5384cf03b62952a3,"",%progbits
   80 0000 789C5D90 		.ascii	"x\234]\220\261J\003A\020\206\347\237\335SK\313Tb\255"
   80      B14A0341 
   80      1086E79F 
   80      DD534BCB 
   80      5462AD
   81 0013 C48534B6 		.ascii	"\304\2054\266\372\016'hi\366\016\263h<\270\213B\260"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 6
+ARM GAS  /tmp/ccHpcHBZ.s 			page 6
 
 
   81      FA0E2768 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   92      D1CD8D2D 
   92      B2BEC9
   93 00e7 F24B633B 		.ascii	"\362Kc;\256\355\212\312\364\312\213\363S#\242\354\231"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 7
+ARM GAS  /tmp/ccHpcHBZ.s 			page 7
 
 
   93      AEED8ACA 
@@ -371,7 +371,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
   94      FD00E638 
   94      48CF
   95              		.text
-  96              		.section	.gnu.lto_chVTDoTickI.2fbb54058c756076,"",%progbits
+  96              		.section	.gnu.lto_chVTDoTickI.5384cf03b62952a3,"",%progbits
   97 0000 789CAD54 		.ascii	"x\234\255T]l\024U\024>gfwfv\273\266\013V\2515\201M\023"
   97      5D6C1455 
   97      143E6766 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  105      9AF85E75 
  105      16
  106 00ac 1A225F00 		.ascii	"\032\"_\000\302>I\366x\025U\303}/!\017)w\301a\306\336"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 8
+ARM GAS  /tmp/ccHpcHBZ.s 			page 8
 
 
  106      C23E49F6 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  117      9EA68FD1 
  117      F05819FB 
  117      AC3C0738 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 9
+ARM GAS  /tmp/ccHpcHBZ.s 			page 9
 
 
  117      CEC0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  129 025b 87FBFCC4 		.ascii	"\207\373\374\304/\177.\314\346\031b\263\227m\377\330"
  129      2F7F2ECC 
  129      E61962B3 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 10
+ARM GAS  /tmp/ccHpcHBZ.s 			page 10
 
 
  129      976DFFD8 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  141      6FDD38AA 
  141      36BAA9DD 
  141      0F5C1BDA 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 11
+ARM GAS  /tmp/ccHpcHBZ.s 			page 11
 
 
  141      A3
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  153 0414 51220886 		.ascii	"Q\"\010\206#;C\003\306p|(k>\031z\342)\220\262\240\246"
  153      233B4303 
  153      C6707C28 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 12
+ARM GAS  /tmp/ccHpcHBZ.s 			page 12
 
 
  153      6B3E197A 
@@ -667,7 +667,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  154      0FFC0D2F 
  154      0E16CA
  155              		.text
- 156              		.section	.gnu.lto_chSysGetStatusAndLockX.part.0.2fbb54058c756076,"",%progbits
+ 156              		.section	.gnu.lto_chSysGetStatusAndLockX.part.0.5384cf03b62952a3,"",%progbits
  157 0000 789C9553 		.ascii	"x\234\225SOh\323P\030\377\276\244I\2538\364\272K\015"
  157      4F68D350 
  157      18FFBEA4 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  167      1F7BB3B5 
  167      D1F87007 
  167      DB2F0A2B 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 13
+ARM GAS  /tmp/ccHpcHBZ.s 			page 13
 
 
  167      BC54
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  179      AEE60137 
  179      EFBA6E82 
  179      622A2841 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 14
+ARM GAS  /tmp/ccHpcHBZ.s 			page 14
 
 
  179      1359
@@ -831,14 +831,14 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  189      6BCFC36F 
  189      7B0B057B 
  190              		.text
- 191              		.section	.gnu.lto_chSysRestoreStatusX.part.1.2fbb54058c756076,"",%progbits
+ 191              		.section	.gnu.lto_chSysRestoreStatusX.part.1.5384cf03b62952a3,"",%progbits
  192 0000 789C8D52 		.ascii	"x\234\215RMh\023Q\020\236yo7\211A\2617\025$\204\202"
  192      4D681351 
  192      109E796F 
  192      378941B1 
  192      37152484 
  193 0015 B7D2275E 		.ascii	"\267\322'^<\025*\025\301C.I\013z\222\355fi\026\233\037"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 15
+ARM GAS  /tmp/ccHpcHBZ.s 			page 15
 
 
  193      3C152A15 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  204      DF5FBE1B 
  204      8D201858 
  204      C3619ACD 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 16
+ARM GAS  /tmp/ccHpcHBZ.s 			page 16
 
 
  204      469D
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  216      997CD612 
  216      663E5D12 
  216      696B4E98 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 17
+ARM GAS  /tmp/ccHpcHBZ.s 			page 17
 
 
  216      197BDACE 
@@ -994,7 +994,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  223      53823FE7 
  223      B5F5E9
  224              		.text
- 225              		.section	.gnu.lto_chSysInit.2fbb54058c756076,"",%progbits
+ 225              		.section	.gnu.lto_chSysInit.5384cf03b62952a3,"",%progbits
  226 0000 789CA593 		.ascii	"x\234\245\223\317k\023A\024\307\337\233i\222\335\326"
  226      CF6B1341 
  226      14C7DF9B 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  230      37FB8B4D 
  230      BBE2C181 
  230      9D997DF3 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 18
+ARM GAS  /tmp/ccHpcHBZ.s 			page 18
 
 
  231 005a 7D9F99FD 		.ascii	"}\237\231\375\316[\006\014\016\2673\364\274\344\000"
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  242      9B3B2C44 
  242      BE76A94D 
  242      49D48948 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 19
+ARM GAS  /tmp/ccHpcHBZ.s 			page 19
 
 
  243 0134 C3245284 		.ascii	"\303$R\2040\323wWEt\025\353\302\342\257\037\317\366"
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  254      F46C71A6 
  254      68C8AAB8 
  254      DB282BAD 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 20
+ARM GAS  /tmp/ccHpcHBZ.s 			page 20
 
 
  254      6DDE
@@ -1154,7 +1154,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  256      DAAB
  257 0235 F901     		.ascii	"\371\001"
  258              		.text
- 259              		.section	.gnu.lto_chSysHalt.2fbb54058c756076,"",%progbits
+ 259              		.section	.gnu.lto_chSysHalt.5384cf03b62952a3,"",%progbits
  260 0000 789C858F 		.ascii	"x\234\205\217\277J\304@\020\306gvsz`\343\023\310\365"
  260      BF4AC440 
  260      10C66776 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  268      403E84FC 
  268      F363F48A 
  268      BF912DBC 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 21
+ARM GAS  /tmp/ccHpcHBZ.s 			page 21
 
 
  268      A1A6
@@ -1244,7 +1244,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  277      07320E69 
  277      93
  278              		.text
- 279              		.section	.gnu.lto_chSysTimerHandlerI.2fbb54058c756076,"",%progbits
+ 279              		.section	.gnu.lto_chSysTimerHandlerI.5384cf03b62952a3,"",%progbits
  280 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\\\003\304\206@\314\310\314\300\310"
  280      60624007 
  280      92405C03 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  282 0026 1FC90856 		.ascii	"\037\311\010V\273\236\351\300\203\377\377\327M:7\177"
  282      BB9EE9C0 
  282      83FFFFD7 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 22
+ARM GAS  /tmp/ccHpcHBZ.s 			page 22
 
 
  282      4D3A377F 
@@ -1293,7 +1293,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  288      25330000 
  288      4BE433E5 
  289              		.text
- 290              		.section	.gnu.lto_chSysGetStatusAndLockX.2fbb54058c756076,"",%progbits
+ 290              		.section	.gnu.lto_chSysGetStatusAndLockX.5384cf03b62952a3,"",%progbits
  291 0000 789C854F 		.ascii	"x\234\205O1KBQ\024>\347\336\247X4\00454\211\004m\341"
  291      314B4251 
  291      143EE7DE 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  295      7C870081 
  295      BF2720EF 
  295      12029C
-ARM GAS  /tmp/ccfbSZpZ.s 			page 23
+ARM GAS  /tmp/ccHpcHBZ.s 			page 23
 
 
  296 005e 4A441720 		.ascii	"JD\027 \2516\001\312\036Bh\213\201\030\327\352^\020"
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  307 0127 CE782E59 		.ascii	"\316x.YbI}\227\361\264\2210r\026\313\233\205\354\026"
  307      62497D97 
  307      F1B49130 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 24
+ARM GAS  /tmp/ccHpcHBZ.s 			page 24
 
 
  307      7216CB9B 
@@ -1402,7 +1402,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  311      C20F49D6 
  311      7EFB
  312              		.text
- 313              		.section	.gnu.lto_chSysRestoreStatusX.2fbb54058c756076,"",%progbits
+ 313              		.section	.gnu.lto_chSysRestoreStatusX.5384cf03b62952a3,"",%progbits
  314 0000 789C6362 		.ascii	"x\234cb`b@\007\206@\274\031J3\262202M8\307\300\320\310"
  314      60624007 
  314      8640BC19 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  320      CC644471 
  320      5B282333 
  321 0086 7DE6F30C 		.ascii	"}\346\363\014\315\034\020E\014\014\325\014\277\032:"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 25
+ARM GAS  /tmp/ccHpcHBZ.s 			page 25
 
 
  321      CD1C1045 
@@ -1468,7 +1468,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  326      CC0000BF 
  326      F140C3
  327              		.text
- 328              		.section	.gnu.lto_chSysIsCounterWithinX.2fbb54058c756076,"",%progbits
+ 328              		.section	.gnu.lto_chSysIsCounterWithinX.5384cf03b62952a3,"",%progbits
  329 0000 789C8552 		.ascii	"x\234\205R=h\024Q\020\236\357\275\375y\273\027\033\355"
  329      3D681451 
  329      109EEFBD 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  334      DA5CBECE 
  334      883182E8 
  334      BF214A94 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 26
+ARM GAS  /tmp/ccHpcHBZ.s 			page 26
 
 
  334      10B2
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  346      F0143655 
  346      6155198E 
  346      AC0C49DD 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 27
+ARM GAS  /tmp/ccHpcHBZ.s 			page 27
 
 
  346      492675BE 
@@ -1611,14 +1611,14 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  356      0D0062B4 
  356      FB
  357              		.text
- 358              		.section	.gnu.lto_chSysPolledDelayX.2fbb54058c756076,"",%progbits
+ 358              		.section	.gnu.lto_chSysPolledDelayX.5384cf03b62952a3,"",%progbits
  359 0000 789C9D54 		.ascii	"x\234\235TOH\024Q\030\377\27673;\177w\213\352P\007A"
  359      4F481451 
  359      18FFBE37 
  359      333B7F77 
  359      8BEA5007 
  360 0015 BC48040E 		.ascii	"\274H\004\016\031\324\251B\202nB\204B\235b]\267u\210"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 28
+ARM GAS  /tmp/ccHpcHBZ.s 			page 28
 
 
  360      19D4A942 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  371      30716BF5 
  371      5C5B287E 
  371      9D1B3D70 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 29
+ARM GAS  /tmp/ccHpcHBZ.s 			page 29
 
 
  371      7DA8AF60 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  382      DF0C
  383 01c4 29FF6568 		.ascii	")\377eh\33434\003\323\253\313\237\306\276\005\252[y"
  383      DC333403 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 30
+ARM GAS  /tmp/ccHpcHBZ.s 			page 30
 
 
  383      D3ABCB9F 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  394      3448A6CD 
  394      543242F3 
  395 02a5 43048468 		.ascii	"C\004\204hg\273l]L\307\273\032\216\370\330\350\343\341"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 31
+ARM GAS  /tmp/ccHpcHBZ.s 			page 31
 
 
  395      67BB6C5D 
@@ -1815,7 +1815,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  397      E0275D73 
  397      3482
  398              		.text
- 399              		.section	.gnu.lto_.symbol_nodes.2fbb54058c756076,"",%progbits
+ 399              		.section	.gnu.lto_.symbol_nodes.5384cf03b62952a3,"",%progbits
  400 0000 789C4DCC 		.ascii	"x\234M\3149N\003A\020\205\341\367\272\247\315b\033\274"
  400      394E0341 
  400      1085E1F7 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  408 0094 9F546EC0 		.ascii	"\237Tn\300Z\215\374\240\362^_\324\224\327;5\355\325"
  408      5A8DFCA0 
  408      F25E5FD4 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 32
+ARM GAS  /tmp/ccHpcHBZ.s 			page 32
 
 
  408      94D73B35 
@@ -1889,7 +1889,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  413      02B85093 
  414 0106 3A       		.ascii	":"
  415              		.text
- 416              		.section	.gnu.lto_.refs.2fbb54058c756076,"",%progbits
+ 416              		.section	.gnu.lto_.refs.5384cf03b62952a3,"",%progbits
  417 0000 789C2588 		.ascii	"x\234%\210\201\011\000 \014\303\332\010\233\372\210"
  417      81090020 
  417      0CC3DA08 
@@ -1902,7 +1902,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  419 0023 2CEC9DBE 		.ascii	",\354\235\276\016\321\000\216"
  419      0ED1008E 
  420              		.text
- 421              		.section	.gnu.lto_.decls.2fbb54058c756076,"",%progbits
+ 421              		.section	.gnu.lto_.decls.5384cf03b62952a3,"",%progbits
  422 0000 789CC55C 		.ascii	"x\234\305\\\011|\024U\232\257\252\356N'$r\251\210\243"
  422      097C1455 
  422      9AAFAAEE 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  424      D2906892 
  424      CE747750 
  424      6677D6
-ARM GAS  /tmp/ccfbSZpZ.s 			page 33
+ARM GAS  /tmp/ccHpcHBZ.s 			page 33
 
 
  425 0037 4AB85414 		.ascii	"J\270T\024B\202\010\310)r(r\204+\3344\"\227 \367%\227"
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  436 0104 AC84F05F 		.ascii	"\254\204\360_\020\\\012\366Y\210\2373\324\311)\355M"
  436      105C0AF6 
  436      59889F33 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 34
+ARM GAS  /tmp/ccHpcHBZ.s 			page 34
 
 
  436      D4C929ED 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  447      21AD4762 
  447      D7CD70DD 
  448 01db E2D2FB83 		.ascii	"\342\322\373\203\332\027\326+~\252\332\271\243b\353"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 35
+ARM GAS  /tmp/ccHpcHBZ.s 			page 35
 
 
  448      DA17D62B 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  459      926A9B36 
  459      CDD92348 
  460 02bd C8CF8462 		.ascii	"\310\317\204b\002\367;\236\273\217{\013p\000\354\343"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 36
+ARM GAS  /tmp/ccHpcHBZ.s 			page 36
 
 
  460      02F73B9E 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  471      9A6C05DF 
  471      09632E1C 
  472 0391 0B80F170 		.ascii	"\013\200\361p2\220~.\255n\253\202\215|2\255\021\246"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 37
+ARM GAS  /tmp/ccHpcHBZ.s 			page 37
 
 
  472      32907E2E 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  483      696BE615 
  483      B98D7BD0 
  483      822FBA8D 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 38
+ARM GAS  /tmp/ccHpcHBZ.s 			page 38
 
 
  483      03C0
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  494      4ED8
  495 0538 01CBB396 		.ascii	"\001\313\263\226l\025\015v\3221\030+\331\032\032\354"
  495      6C150D76 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 39
+ARM GAS  /tmp/ccHpcHBZ.s 			page 39
 
 
  495      D231182B 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  507 060f 8C9CDA1D 		.ascii	"\214\234\332\035\201&\"\320l\003\220\310\363\206\247"
  507      812622D0 
  507      6C0390C8 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 40
+ARM GAS  /tmp/ccHpcHBZ.s 			page 40
 
 
  507      F386A7
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  519      DF855813 
  519      5D324ADD 
  519      147A98
-ARM GAS  /tmp/ccfbSZpZ.s 			page 41
+ARM GAS  /tmp/ccHpcHBZ.s 			page 41
 
 
  520 06f9 CCA52D7F 		.ascii	"\314\245-\177'\334\236\355\224\333\331\333\206\034\265"
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  531      1D77811D 
  531      457E376B 
  531      CDD3466B 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 42
+ARM GAS  /tmp/ccHpcHBZ.s 			page 42
 
 
  531      32AA53
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  543      C44C1B78 
  543      62A08D48 
  543      3721DD82 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 43
+ARM GAS  /tmp/ccHpcHBZ.s 			page 43
 
 
  543      74241AEE 
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  555      3AE90758 
  555      7D5A69FD 
  555      9289D65F 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 44
+ARM GAS  /tmp/ccHpcHBZ.s 			page 44
 
 
  555      4A32D549 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  567 0a4d 7AA39989 		.ascii	"z\243\231\211\020\0063\277\320\306\324\314\257\221\241"
  567      100633BF 
  567      D0C6D4CC 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 45
+ARM GAS  /tmp/ccHpcHBZ.s 			page 45
 
 
  567      AF91A1
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  578      9EBD6BC2 
  579 0b2a 6998C902 		.ascii	"i\230\311\002!n\003\227\336\254o\327\327/\277\017\367"
  579      216E0397 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 46
+ARM GAS  /tmp/ccHpcHBZ.s 			page 46
 
 
  579      DEAC6FD7 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  590      6436DAC6 
  590      20D8510B 
  590      C1F6997A 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 47
+ARM GAS  /tmp/ccHpcHBZ.s 			page 47
 
 
  590      6FC3
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  602      DA06DBDD 
  602      94ECFB0E 
  602      9C5464FF 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 48
+ARM GAS  /tmp/ccHpcHBZ.s 			page 48
 
 
  603 0cd5 0265AF6E 		.ascii	"\002e\257n\327\252\354,\220\300\215\306\"_\307\312\276"
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  614      02413F6F 
  614      4F8A
  615 0da6 BC14DB90 		.ascii	"\274\024\333\220\257\324\206\274d\253!+\307\250\336"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 49
+ARM GAS  /tmp/ccHpcHBZ.s 			page 49
 
 
  615      AFD486BC 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  626      24B3C39F 
  627 0e78 0C41EB47 		.ascii	"\014A\353G\212\2569h\3473\035m\030;\255\036\216\230"
  627      8AAE3968 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 50
+ARM GAS  /tmp/ccHpcHBZ.s 			page 50
 
 
  627      E7331D6D 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  638      9C9C60
  639 0f4b C3458F6C 		.ascii	"\303E\217l&\350\030suC-\322:y'\315\340\321e\233\371"
  639      26E81873 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 51
+ARM GAS  /tmp/ccHpcHBZ.s 			page 51
 
 
  639      75432DD2 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  651      59095CA4 
  651      8CBAD031 
  652 1028 837599C2 		.ascii	"\203u\231\302Z\355\030\253=\203u\225\302\332\346\030"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 52
+ARM GAS  /tmp/ccHpcHBZ.s 			page 52
 
 
  652      5AED18AB 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  663      9BA49AA1 
  663      5FD6
  664 10fa DEC7D736 		.ascii	"\336\307\3276-[\177\265D\336m=\213\213\342\271\267\265"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 53
+ARM GAS  /tmp/ccHpcHBZ.s 			page 53
 
 
  664      2D5B7FB5 
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  676 11c9 2ED26027 		.ascii	".\322`'\034\203\261\222]\246\301>\261\003fu\366\036"
  676      1C83B192 
  676      5DA6C13E 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 54
+ARM GAS  /tmp/ccHpcHBZ.s 			page 54
 
 
  676      B1036675 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  687      05566961 
  687      7DE8DB93 
  688 12a9 507D7B82 		.ascii	"P}{\202\035Wz\2017\021\315\354\217^\225\211\374W\270"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 55
+ARM GAS  /tmp/ccHpcHBZ.s 			page 55
 
 
  688      1D577A81 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  699      A2776D6A 
  699      DDBB5810 
  699      7C2F6AF4 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 56
+ARM GAS  /tmp/ccHpcHBZ.s 			page 56
 
 
  699      AE29E7
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  710      F7
  711 145a 2D0BB7C5 		.ascii	"-\013\267\305\016\234\345\257\260I\321\213\254\356\366"
  711      0E9CE5AF 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 57
+ARM GAS  /tmp/ccHpcHBZ.s 			page 57
 
 
  711      B049D18B 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  722      A8E6AB
  723 1535 EFFF4ADE 		.ascii	"\357\377J\336\177\277\340\361B\341\375w\260J\260\201"
  723      7FBFE0F1 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 58
+ARM GAS  /tmp/ccHpcHBZ.s 			page 58
 
 
  723      42E1FD77 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  735      8A5DAFB3 
  735      7F44B1E7 
  736 1614 E9ECBB68 		.ascii	"\351\354\273h}\353\354\273)\366\273:\373\307\024{\207"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 59
+ARM GAS  /tmp/ccHpcHBZ.s 			page 59
 
 
  736      7DEBECBB 
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  748      8B9BCB1E 
  748      57DCE2CC 
  748      7CCFC5
-ARM GAS  /tmp/ccfbSZpZ.s 			page 60
+ARM GAS  /tmp/ccHpcHBZ.s 			page 60
 
 
  749 16eb 7CF5F6F9 		.ascii	"|\365\366\371OL\246|\362R\372\374\213|\375W\303\245"
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  760      0CC64A36 
  760      9506AB4E 
  760      B501966A 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 61
+ARM GAS  /tmp/ccHpcHBZ.s 			page 61
 
 
  760      2DD9221A 
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  771      4A35E8A5 
  772 18a4 ACBE4A60 		.ascii	"\254\276J`\016\224\343\341;o\214%,\2260\335\325\242"
  772      0E94E3E1 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 62
+ARM GAS  /tmp/ccHpcHBZ.s 			page 62
 
 
  772      3B6F8C25 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  783      C66571CE 
  783      426CB62C 
  783      B53E4E5D 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 63
+ARM GAS  /tmp/ccHpcHBZ.s 			page 63
 
 
  784 1988 D35FB65A 		.ascii	"\323_\266Z\226\272\021\247\324\266\230\376\3228\365"
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  796 1a50 5E595A16 		.ascii	"^YZ\026\010\205\323\372\370|\220]\305\364F*C\245A\177"
  796      0885D3FA 
  796      F87C905D 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 64
+ARM GAS  /tmp/ccHpcHBZ.s 			page 64
 
 
  796      C5F4462A 
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  807      6224E08F 
  807      788915
  808 1b27 BA830A65 		.ascii	"\272\203\012e{@\014\262c\2327R\036,\016\340\375\300"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 65
+ARM GAS  /tmp/ccHpcHBZ.s 			page 65
 
 
  808      7B400CB2 
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  819      24D391E0 
  819      83C90890 
  820 1c00 54D2BF30 		.ascii	"T\322\2770;XXZ\364LN\"\300\207#`\271\037\027\225\024"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 66
+ARM GAS  /tmp/ccHpcHBZ.s 			page 66
 
 
  820      3B58585A 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  831      2E2B7D2A 
  831      6D505191 
  832 1ce5 F7FBBBD2 		.ascii	"\367\373\273\322\3038\014\311d\\\012\227\376\225t\300"
-ARM GAS  /tmp/ccfbSZpZ.s 			page 67
+ARM GAS  /tmp/ccHpcHBZ.s 			page 67
 
 
  832      C3380CC9 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  844      0C973231 
  844      1C21A581 
  844      452A69AB 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 68
+ARM GAS  /tmp/ccHpcHBZ.s 			page 68
 
 
  844      34BA38F0 
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  855      7FE1E3
  856 1e9c F99E9E39 		.ascii	"\371\236\2369\371\276|W\001\004\037\271\366\315\363"
  856      F9BE7C57 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 69
+ARM GAS  /tmp/ccHpcHBZ.s 			page 69
 
 
  856      01041FB9 
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  867      3EA1
  868 1f72 6055252C 		.ascii	"`U%,\003na\030\277\265o\255\202B\030\224\313\2632\007"
  868      036E6118 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 70
+ARM GAS  /tmp/ccHpcHBZ.s 			page 70
 
 
  868      BFB56FAD 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  880      87FC
  881 2049 72BE8E85 		.ascii	"r\276\216\2059\271\031\376G\362\377\340\207\310C\024"
  881      39B919FE 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 71
+ARM GAS  /tmp/ccHpcHBZ.s 			page 71
 
 
  881      47F2FFE0 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  893 2122 8090E92E 		.ascii	"\200\220\351.\2001\322\235\235\323+_\200\201\267W\037"
  893      8031D29D 
  893      9DD32B5F 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 72
+ARM GAS  /tmp/ccHpcHBZ.s 			page 72
 
 
  893      8081B757 
@@ -4295,7 +4295,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  900      AB0AFC2F 
  900      7270BB03 
  901              		.text
- 902              		.section	.gnu.lto_.symtab.2fbb54058c756076,"",%progbits
+ 902              		.section	.gnu.lto_.symtab.5384cf03b62952a3,"",%progbits
  903 0000 63685379 		.ascii	"chSysInit\000\000\000\000\000\000\000\000\000\000\000"
  903      73496E69 
  903      74000000 
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  906      0000
  907 004f 008B0100 		.ascii	"\000\213\001\000\000chSysGetStatusAndLockX\000\000\000"
  907      00636853 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 73
+ARM GAS  /tmp/ccHpcHBZ.s 			page 73
 
 
  907      79734765 
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  919      68536368 
  919      52657363 
  919      68656475 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 74
+ARM GAS  /tmp/ccHpcHBZ.s 			page 74
 
 
  919      6C655300 
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  933 0000 272D6D63 		.ascii	"'-mcpu=cortex-m4' '-mfloat-abi=hard' '-mfpu=fpv4-sp"
  933      70753D63 
  933      6F727465 
-ARM GAS  /tmp/ccfbSZpZ.s 			page 75
+ARM GAS  /tmp/ccHpcHBZ.s 			page 75
 
 
  933      782D6D34 
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  968              		.type	chSysInit, %function
  969              	chSysInit:
  970              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccfbSZpZ.s 			page 76
+ARM GAS  /tmp/ccHpcHBZ.s 			page 76
 
 
  971              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  1025              	.L8:
  1026              		.align	2
  1027              	.L7:
-ARM GAS  /tmp/ccfbSZpZ.s 			page 77
+ARM GAS  /tmp/ccHpcHBZ.s 			page 77
 
 
  1028 0078 00ED00E0 		.word	-536810240
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  1082 001a 04F11C06 		add	r6, r4, #28
  1083 001e 1AD3     		bcc	.L14
  1084 0020 A046     		mov	r8, r4
-ARM GAS  /tmp/ccfbSZpZ.s 			page 78
+ARM GAS  /tmp/ccHpcHBZ.s 			page 78
 
 
  1085 0022 4FF0000A 		mov	r10, #0
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  1137              		@ link register save eliminated.
  1138              	@ 533 "/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h" 1
  1139 0000 EFF31280 		MRS r0, basepri_max
-ARM GAS  /tmp/ccfbSZpZ.s 			page 79
+ARM GAS  /tmp/ccHpcHBZ.s 			page 79
 
 
  1140              	@ 0 "" 2
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  1191              		.thumb
  1192              		.thumb_func
  1193              		.type	chSysIsCounterWithinX, %function
-ARM GAS  /tmp/ccfbSZpZ.s 			page 80
+ARM GAS  /tmp/ccHpcHBZ.s 			page 80
 
 
  1194              	chSysIsCounterWithinX:
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  1248 0022 F0D1     		bne	.L43
  1249 0024 F7E7     		b	.L47
  1250              	.L38:
-ARM GAS  /tmp/ccfbSZpZ.s 			page 81
+ARM GAS  /tmp/ccHpcHBZ.s 			page 81
 
 
  1251 0026 9A42     		cmp	r2, r3
@@ -4842,43 +4842,43 @@ ARM GAS  /tmp/ccfbSZpZ.s 			page 1
  1279      00000000 
  1280              		.comm	__gnu_lto_v1,1,1
  1281              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccfbSZpZ.s 			page 82
+ARM GAS  /tmp/ccHpcHBZ.s 			page 82
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 chsys.c
-     /tmp/ccfbSZpZ.s:940    .text._idle_thread:0000000000000000 $t
-     /tmp/ccfbSZpZ.s:945    .text._idle_thread:0000000000000000 _idle_thread
-     /tmp/ccfbSZpZ.s:959    .text._idle_thread:000000000000000c $d
-     /tmp/ccfbSZpZ.s:963    .text.chSysInit:0000000000000000 $t
-     /tmp/ccfbSZpZ.s:969    .text.chSysInit:0000000000000000 chSysInit
-     /tmp/ccfbSZpZ.s:1028   .text.chSysInit:0000000000000078 $d
-     /tmp/ccfbSZpZ.s:1039   .text.chSysHalt:0000000000000000 $t
-     /tmp/ccfbSZpZ.s:1045   .text.chSysHalt:0000000000000000 chSysHalt
-     /tmp/ccfbSZpZ.s:1061   .text.chSysHalt:0000000000000008 $d
-     /tmp/ccfbSZpZ.s:1064   .text.chSysTimerHandlerI:0000000000000000 $t
-     /tmp/ccfbSZpZ.s:1070   .text.chSysTimerHandlerI:0000000000000000 chSysTimerHandlerI
-     /tmp/ccfbSZpZ.s:1125   .text.chSysTimerHandlerI:0000000000000070 $d
-     /tmp/ccfbSZpZ.s:1128   .text.chSysGetStatusAndLockX:0000000000000000 $t
-     /tmp/ccfbSZpZ.s:1134   .text.chSysGetStatusAndLockX:0000000000000000 chSysGetStatusAndLockX
-     /tmp/ccfbSZpZ.s:1156   .text.chSysRestoreStatusX:0000000000000000 $t
-     /tmp/ccfbSZpZ.s:1162   .text.chSysRestoreStatusX:0000000000000000 chSysRestoreStatusX
-     /tmp/ccfbSZpZ.s:1188   .text.chSysIsCounterWithinX:0000000000000000 $t
-     /tmp/ccfbSZpZ.s:1194   .text.chSysIsCounterWithinX:0000000000000000 chSysIsCounterWithinX
-     /tmp/ccfbSZpZ.s:1218   .text.chSysPolledDelayX:0000000000000000 $t
-     /tmp/ccfbSZpZ.s:1224   .text.chSysPolledDelayX:0000000000000000 chSysPolledDelayX
-     /tmp/ccfbSZpZ.s:1260   .text.chSysPolledDelayX:0000000000000034 $d
-     /tmp/ccfbSZpZ.s:1263   .bss.mainthread.6320:0000000000000000 $d
-     /tmp/ccfbSZpZ.s:1267   .bss.mainthread.6320:0000000000000000 mainthread.6320
-     /tmp/ccfbSZpZ.s:1270   .rodata.str1.4:0000000000000000 $d
-     /tmp/ccfbSZpZ.s:1274   .bss._idle_thread_wa:0000000000000000 $d
-     /tmp/ccfbSZpZ.s:1278   .bss._idle_thread_wa:0000000000000000 _idle_thread_wa
+     /tmp/ccHpcHBZ.s:940    .text._idle_thread:0000000000000000 $t
+     /tmp/ccHpcHBZ.s:945    .text._idle_thread:0000000000000000 _idle_thread
+     /tmp/ccHpcHBZ.s:959    .text._idle_thread:000000000000000c $d
+     /tmp/ccHpcHBZ.s:963    .text.chSysInit:0000000000000000 $t
+     /tmp/ccHpcHBZ.s:969    .text.chSysInit:0000000000000000 chSysInit
+     /tmp/ccHpcHBZ.s:1028   .text.chSysInit:0000000000000078 $d
+     /tmp/ccHpcHBZ.s:1039   .text.chSysHalt:0000000000000000 $t
+     /tmp/ccHpcHBZ.s:1045   .text.chSysHalt:0000000000000000 chSysHalt
+     /tmp/ccHpcHBZ.s:1061   .text.chSysHalt:0000000000000008 $d
+     /tmp/ccHpcHBZ.s:1064   .text.chSysTimerHandlerI:0000000000000000 $t
+     /tmp/ccHpcHBZ.s:1070   .text.chSysTimerHandlerI:0000000000000000 chSysTimerHandlerI
+     /tmp/ccHpcHBZ.s:1125   .text.chSysTimerHandlerI:0000000000000070 $d
+     /tmp/ccHpcHBZ.s:1128   .text.chSysGetStatusAndLockX:0000000000000000 $t
+     /tmp/ccHpcHBZ.s:1134   .text.chSysGetStatusAndLockX:0000000000000000 chSysGetStatusAndLockX
+     /tmp/ccHpcHBZ.s:1156   .text.chSysRestoreStatusX:0000000000000000 $t
+     /tmp/ccHpcHBZ.s:1162   .text.chSysRestoreStatusX:0000000000000000 chSysRestoreStatusX
+     /tmp/ccHpcHBZ.s:1188   .text.chSysIsCounterWithinX:0000000000000000 $t
+     /tmp/ccHpcHBZ.s:1194   .text.chSysIsCounterWithinX:0000000000000000 chSysIsCounterWithinX
+     /tmp/ccHpcHBZ.s:1218   .text.chSysPolledDelayX:0000000000000000 $t
+     /tmp/ccHpcHBZ.s:1224   .text.chSysPolledDelayX:0000000000000000 chSysPolledDelayX
+     /tmp/ccHpcHBZ.s:1260   .text.chSysPolledDelayX:0000000000000034 $d
+     /tmp/ccHpcHBZ.s:1263   .bss.mainthread.6320:0000000000000000 $d
+     /tmp/ccHpcHBZ.s:1267   .bss.mainthread.6320:0000000000000000 mainthread.6320
+     /tmp/ccHpcHBZ.s:1270   .rodata.str1.4:0000000000000000 $d
+     /tmp/ccHpcHBZ.s:1274   .bss._idle_thread_wa:0000000000000000 $d
+     /tmp/ccHpcHBZ.s:1278   .bss._idle_thread_wa:0000000000000000 _idle_thread_wa
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccfbSZpZ.s:962    .text._idle_thread:0000000000000014 $t
-     /tmp/ccfbSZpZ.s:1038   .text.chSysInit:000000000000009c $t
-     /tmp/ccfbSZpZ.s:1063   .text.chSysHalt:000000000000000c $t
-     /tmp/ccfbSZpZ.s:1127   .text.chSysTimerHandlerI:0000000000000074 $t
-     /tmp/ccfbSZpZ.s:1262   .text.chSysPolledDelayX:0000000000000038 $t
+     /tmp/ccHpcHBZ.s:962    .text._idle_thread:0000000000000014 $t
+     /tmp/ccHpcHBZ.s:1038   .text.chSysInit:000000000000009c $t
+     /tmp/ccHpcHBZ.s:1063   .text.chSysHalt:000000000000000c $t
+     /tmp/ccHpcHBZ.s:1127   .text.chSysTimerHandlerI:0000000000000074 $t
+     /tmp/ccHpcHBZ.s:1262   .text.chSysPolledDelayX:0000000000000038 $t
 
 UNDEFINED SYMBOLS
 ch

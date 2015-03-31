@@ -1294,13 +1294,6 @@ extern "C" {
 #endif /* _FROM_ASM_ */
 
 
-#ifndef LED_DEF
-#define LED_DEF
-    /* LED Define */
-    #define LED_PORT GPIOB
-    #define LED_PIN 3
-#endif
-
 // TODO: Update pins
 
 // ADC
@@ -1331,27 +1324,28 @@ extern "C" {
 #define DBG_RX_PIN	7
 
 // Internal I2C
-#define II2C_I2CD	I2CD1
-#define II2C_PORT	GPIOB
+#define II2C_I2CD	    I2CD1
+#define II2C_PORT	    GPIOB
 #define II2C_SCL_PIN	6
 #define II2C_SDA_PIN	7
 
 // External I2C
-#define EI2C_I2CD	I2CD3
+#define EI2C_I2CD	    I2CD3
 #define EI2C_SCL_PORT	GPIOA
 #define EI2C_SDA_PORT	GPIOC
 #define EI2C_SCL_PIN	8
 #define EI2C_SDA_PIN	9
 
 // SD SPI
+/*
 #define SD_SPID SPID3
 
-#define SD_SCK_PORT	GPIOC
+#define SD_SCK_PORT	    GPIOC
 #define SD_MOSI_PORT	GPIOC
-#define SD_MISO_PORT	GPIOC
-#define SD_CS_PORT	GPIOA
-#define SD_CD_PORT	GPIOD
-#define SD_WP_PORT	GPIOD
+#define SD_MISO_PORT    GPIOC
+#define SD_CS_PORT	    GPIOA
+#define SD_CD_PORT	    GPIOD
+#define SD_WP_PORT	    GPIOD
 
 #define SD_SCK_PIN	10
 #define SD_MOSI_PIN	12
@@ -1359,9 +1353,27 @@ extern "C" {
 #define SD_CS_PIN	15
 #define SD_CD_PIN	2
 #define SD_WP_PIN	2
+*/
+
+#define SD_SPID SPID2
+
+#define SD_SCK_PORT     GPIOA
+#define SD_MOSI_PORT    GPIOA
+#define SD_MISO_PORT    GPIOA
+#define SD_CS_PORT      GPIOC
+#define SD_CD_PORT      GPIOD
+#define SD_WP_PORT      GPIOD
+
+#define SD_SCK_PIN  5
+#define SD_MOSI_PIN 7
+#define SD_MISO_PIN 6
+#define SD_CS_PIN   10
+#define SD_CD_PIN   2
+#define SD_WP_PIN   2
+
 
 // RFM23 SPI
-#define RFM23_SPID	SPID2
+#define RFM23_SPID	    SPID2
 #define RFM23_SPI_PORT	GPIOB
 #define RFM23_CS_PORT	GPIOB
 #define RFM23_PCTL_PORT	GPIOB

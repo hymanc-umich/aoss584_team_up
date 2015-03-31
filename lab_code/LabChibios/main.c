@@ -241,7 +241,7 @@ void initialize(void)
     //rtcGetTime(&RTCD1, &timespec);
     
     /* GPS Driver Startup */
-    gpsStart(&UARTD1);
+    //gpsStart(&UARTD1);
     
     /* VCP Serial Port Startup */
     sdStart(&SD2, &serCfg);	// Activate VCP USART2 driver
@@ -529,7 +529,7 @@ int main(void)
     gpsThread_t gpsThd;
     
     uint32_t timeCounter = 0;
-    chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd);
+    //chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd);
     
     uint16_t logfileCounter = 0; // Logfile number counter
     uint32_t sampleCounter = 0;
@@ -540,7 +540,7 @@ int main(void)
     writeMSHeader();
     while (TRUE) 
     {
-	gpsGetLocation(&location);// Check for new GPS NMEA sentence
+	//gpsGetLocation(&location);// Check for new GPS NMEA sentence
 	//printGps(&location);
 	// Perform sensor ADC reads
 	//adcConvert(&ADCD1, &accelConvGrp, accSamples, ADC_BUF_DEPTH);

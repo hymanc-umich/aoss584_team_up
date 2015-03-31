@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccJKXGTX.s 			page 1
+ARM GAS  /tmp/ccEZ1ckG.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"serial_lld.c"
-  17              		.section	.gnu.lto_.jmpfuncs.2ebc37b6a9355e3b,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.bd59b9e03b2c3fcc,"",%progbits
   18 0000 789C6D8E 		.ascii	"x\234m\216\261\016\2030\020C\355\273\200P\241\022k7"
   18      B10E8330 
   18      1043EDBB 
@@ -56,9 +56,9 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   25      2507FC00 
   25      A87322AB 
   26              		.text
-  27              		.section	.gnu.lto_.inline.2ebc37b6a9355e3b,"",%progbits
+  27              		.section	.gnu.lto_.inline.bd59b9e03b2c3fcc,"",%progbits
   28 0000 789C7D52 		.ascii	"x\234}R\277\213\023A\024~ov\262\331d7\260\312iPB\262"
-ARM GAS  /tmp/ccJKXGTX.s 			page 2
+ARM GAS  /tmp/ccEZ1ckG.s 			page 2
 
 
   28      BF8B1341 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   39      6C6C749A 
   40 00d8 1C4C9A02 		.ascii	"\034L\232\002\344\264\021\203\034\327b\017\360\205\253"
   40      E4B41183 
-ARM GAS  /tmp/ccJKXGTX.s 			page 3
+ARM GAS  /tmp/ccEZ1ckG.s 			page 3
 
 
   40      1CD7620F 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   51      F174C0DC 
   51      3225
   52 01ba C7424B99 		.ascii	"\307BK\231yp\277\236\222 \217|\355\221; \027\021\366"
-ARM GAS  /tmp/ccJKXGTX.s 			page 4
+ARM GAS  /tmp/ccEZ1ckG.s 			page 4
 
 
   52      7970BF9E 
@@ -208,7 +208,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   57      1B7E0365 
   57      F19F8A
   58              		.text
-  59              		.section	.gnu.lto_.pureconst.2ebc37b6a9355e3b,"",%progbits
+  59              		.section	.gnu.lto_.pureconst.bd59b9e03b2c3fcc,"",%progbits
   60 0000 789C6362 		.ascii	"x\234cb`b\020g\200\000n\006)F)&\011f+\026)V)6\011\016"
   60      60621067 
   60      80006E06 
@@ -218,7 +218,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   61      295E2900 
   61      1429019C 
   62              		.text
-  63              		.section	.gnu.lto_notify2.2ebc37b6a9355e3b,"",%progbits
+  63              		.section	.gnu.lto_notify2.bd59b9e03b2c3fcc,"",%progbits
   64 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\374\023\210\275\201\230\221\231"
   64      60624007 
   64      9240FC13 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   67      4C0C998C 
   67      0CCC2002 
   67      0858
-ARM GAS  /tmp/ccJKXGTX.s 			page 5
+ARM GAS  /tmp/ccEZ1ckG.s 			page 5
 
 
   68 0045 195A1A1A 		.ascii	"\031Z\032\032&(00$\203\271!@\022d@(#\023\210f>\313p"
@@ -293,12 +293,12 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   78 0103 00D3E555 		.ascii	"\000\323\345UD"
   78      44
   79              		.text
-  80              		.section	.gnu.lto_notify6.2ebc37b6a9355e3b,"",%progbits
+  80              		.section	.gnu.lto_notify6.bd59b9e03b2c3fcc,"",%progbits
   81 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\374\023\210\275\201\230\221\231"
   81      60624007 
   81      9240FC13 
   81      88BD8198 
-ARM GAS  /tmp/ccJKXGTX.s 			page 6
+ARM GAS  /tmp/ccEZ1ckG.s 			page 6
 
 
   81      9199
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   93 00ea 7D7C5CF4 		.ascii	"}|\\\364C\203\035\203B\312\014\365\213S\2132\023s\342"
   93      43831D83 
   93      42CA0CF5 
-ARM GAS  /tmp/ccJKXGTX.s 			page 7
+ARM GAS  /tmp/ccEZ1ckG.s 			page 7
 
 
   93      8B538B32 
@@ -367,7 +367,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
   94      92190032 
   94      F455DF
   95              		.text
-  96              		.section	.gnu.lto_set_error.2ebc37b6a9355e3b,"",%progbits
+  96              		.section	.gnu.lto_set_error.bd59b9e03b2c3fcc,"",%progbits
   97 0000 789C8D52 		.ascii	"x\234\215RMkSA\024\275w\346}'\005[t\343B\202 \005\205"
   97      4D6B5341 
   97      14BD77E6 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  107 00b0 F6BCFB83 		.ascii	"\366\274\373\203o\235\327\354\221\327mnx\273\243\021"
  107      6F9DD7EC 
  107      91D76D6E 
-ARM GAS  /tmp/ccJKXGTX.s 			page 8
+ARM GAS  /tmp/ccEZ1ckG.s 			page 8
 
 
  107      78BBA311 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  118      82C4AEBE 
  119 0181 0BA4F5B1 		.ascii	"\013\244\365\261\364\237\261\264UD\346K\237\032K\033"
  119      F49FB1B4 
-ARM GAS  /tmp/ccJKXGTX.s 			page 9
+ARM GAS  /tmp/ccEZ1ckG.s 			page 9
 
 
  119      5544E64B 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  130      93C2
  131 0254 2D549D5C 		.ascii	"-T\235\\\371r\271\234\237\263\201\2735w\341\177\330"
  131      F972B99C 
-ARM GAS  /tmp/ccJKXGTX.s 			page 10
+ARM GAS  /tmp/ccEZ1ckG.s 			page 10
 
 
  131      9FB381BB 
@@ -549,7 +549,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  132      F01724C6 
  132      F583
  133              		.text
- 134              		.section	.gnu.lto_serve_interrupt.2ebc37b6a9355e3b,"",%progbits
+ 134              		.section	.gnu.lto_serve_interrupt.bd59b9e03b2c3fcc,"",%progbits
  135 0000 789CB556 		.ascii	"x\234\265VklTE\024>\347\336\335\356v\337}mii\351\246"
  135      6B6C5445 
  135      143EE7DE 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  144      5D263248 
  144      562CEB66 
  144      D1C8C95A 
-ARM GAS  /tmp/ccJKXGTX.s 			page 11
+ARM GAS  /tmp/ccEZ1ckG.s 			page 11
 
 
  144      9B45B172 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  156      C0264C84 
  156      DEA7F48E 
  156      84C3
-ARM GAS  /tmp/ccJKXGTX.s 			page 12
+ARM GAS  /tmp/ccEZ1ckG.s 			page 12
 
 
  157 019c BB7F5F7F 		.ascii	"\273\177_\177\342q|\012\241\006wa>X\260\011\301J\203"
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  168 026b CD757ED6 		.ascii	"\315u~\326\031\336\222-g\2354\313\260\2401\324I\350"
  168      19DE922D 
  168      679D34CB 
-ARM GAS  /tmp/ccJKXGTX.s 			page 13
+ARM GAS  /tmp/ccEZ1ckG.s 			page 13
 
 
  168      B0A031D4 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  180 033e 7D613D22 		.ascii	"}a=\"\003\033\2342.J\364%>?>.\222`0]%\355G.\255\261"
  180      031B9C32 
  180      2E4AF425 
-ARM GAS  /tmp/ccJKXGTX.s 			page 14
+ARM GAS  /tmp/ccEZ1ckG.s 			page 14
 
 
  180      3E3F3E2E 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  192      EADF2074 
  192      F59A2474 
  192      A61E42B9 
-ARM GAS  /tmp/ccJKXGTX.s 			page 15
+ARM GAS  /tmp/ccEZ1ckG.s 			page 15
 
 
  192      BE88
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  203      CD2486BD 
  204 04f0 2E1C627B 		.ascii	".\034b{\354O\253\301k\374H\363yx\336\037i\212AR\"\\"
  204      EC4FABC1 
-ARM GAS  /tmp/ccJKXGTX.s 			page 16
+ARM GAS  /tmp/ccEZ1ckG.s 			page 16
 
 
  204      6BFC48F3 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  215      C8DB1A6C 
  215      5BFE
  216 05d2 A2973A0D 		.ascii	"\242\227:\0155\215\336\226\346`k\310[Y\265d\356c\336"
-ARM GAS  /tmp/ccJKXGTX.s 			page 17
+ARM GAS  /tmp/ccEZ1ckG.s 			page 17
 
 
  216      358DDE96 
@@ -1001,7 +1001,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  223      E2FB17
  224 0666 C7C676F3 		.ascii	"\307\306v\363"
  225              		.text
- 226              		.section	.gnu.lto_usart_init.isra.0.2ebc37b6a9355e3b,"",%progbits
+ 226              		.section	.gnu.lto_usart_init.isra.0.bd59b9e03b2c3fcc,"",%progbits
  227 0000 789C9D92 		.ascii	"x\234\235\222MH\024a\030\307\237g\276wu\335U:\004v\020"
  227      4D481461 
  227      18C79F67 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  229      8B125144 
  229      D0550F
  230 003c 8549A442 		.ascii	"\205I\244B\206\336\304\223t\211:T \250H0=\317\2743\353"
-ARM GAS  /tmp/ccJKXGTX.s 			page 18
+ARM GAS  /tmp/ccEZ1ckG.s 			page 18
 
 
  230      86DEC493 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  242 0116 F233CAB5 		.ascii	"\3623\312\265\344\312'\243CN\210|\235\334\012\230\220"
  242      E4CA27A3 
  242      434E887C 
-ARM GAS  /tmp/ccJKXGTX.s 			page 19
+ARM GAS  /tmp/ccEZ1ckG.s 			page 19
 
 
  242      9DDC0A98 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  254 01f4 735B5D29 		.ascii	"s[])b\254(\313\250\375\235\261\222\264\036#\2262Fhq"
  254      62AC28CB 
  254      A8FD9DB1 
-ARM GAS  /tmp/ccJKXGTX.s 			page 20
+ARM GAS  /tmp/ccEZ1ckG.s 			page 20
 
 
  254      92B41E23 
@@ -1192,13 +1192,13 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  264      2F36FE01 
  265 02b7 7A3D747C 		.ascii	"z=t|"
  266              		.text
- 267              		.section	.gnu.lto_sd_lld_stop.part.1.2ebc37b6a9355e3b,"",%progbits
+ 267              		.section	.gnu.lto_sd_lld_stop.part.1.bd59b9e03b2c3fcc,"",%progbits
  268 0000 789C9551 		.ascii	"x\234\225Q1H\003A\020\334\275\273\304\330\250\255]\260"
  268      31480341 
  268      10DCBDBB 
  268      C4D8A8AD 
  268      5DB0
-ARM GAS  /tmp/ccJKXGTX.s 			page 21
+ARM GAS  /tmp/ccEZ1ckG.s 			page 21
 
 
  269 0012 B00978A8 		.ascii	"\260\011x\250\245\225`\023\210\010\346\003Z\311\347"
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  280      522FE2B0 
  280      8F1E1CDD 
  280      F3210123 
-ARM GAS  /tmp/ccJKXGTX.s 			page 22
+ARM GAS  /tmp/ccEZ1ckG.s 			page 22
 
 
  280      0E9D
@@ -1297,7 +1297,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  287      EDCA3743 
  287      8C7712
  288              		.text
- 289              		.section	.gnu.lto_VectorD8.2ebc37b6a9355e3b,"",%progbits
+ 289              		.section	.gnu.lto_VectorD8.bd59b9e03b2c3fcc,"",%progbits
  290 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\274\031\210\275\201\230\221\231"
  290      60624007 
  290      9240BC19 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  293      96868609 
  293      0A0C
  294 0045 0CC96015 		.ascii	"\014\311`\025!@\022\244-\224\221\011D3\237ghy\260\357"
-ARM GAS  /tmp/ccJKXGTX.s 			page 23
+ARM GAS  /tmp/ccEZ1ckG.s 			page 23
 
 
  294      214012A4 
@@ -1362,7 +1362,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  302 00e9 0100BFC1 		.ascii	"\001\000\277\301I\217"
  302      498F
  303              		.text
- 304              		.section	.gnu.lto_Vector15C.2ebc37b6a9355e3b,"",%progbits
+ 304              		.section	.gnu.lto_Vector15C.bd59b9e03b2c3fcc,"",%progbits
  305 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\274\031\210\275\201\230\221\231"
  305      60624007 
  305      9240BC19 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  307      D38107FF 
  307      FFAF9B
  308 0033 337DCD1D 		.ascii	"3}\315\035\306\273L,@\021V\206\226\206\206\011\012\014"
-ARM GAS  /tmp/ccJKXGTX.s 			page 24
+ARM GAS  /tmp/ccEZ1ckG.s 			page 24
 
 
  308      C6BB4C2C 
@@ -1429,7 +1429,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  317      00E80749 
  317      D7
  318              		.text
- 319              		.section	.gnu.lto_sd_lld_init.2ebc37b6a9355e3b,"",%progbits
+ 319              		.section	.gnu.lto_sd_lld_init.bd59b9e03b2c3fcc,"",%progbits
  320 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\207\221\201\301\033H32302M8\307"
  320      60624007 
  320      92403C87 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  321 0019 C0D0C8C1 		.ascii	"\300\320\310\301\304\310\010b002\32431\326G2\202\325"
  321      C4C80862 
  321      303032D4 
-ARM GAS  /tmp/ccJKXGTX.s 			page 25
+ARM GAS  /tmp/ccEZ1ckG.s 			page 25
 
 
  321      3331D647 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  332      FAC9F9
  333 00f3 2995FA29 		.ascii	")\225\372)\251e\372\311\031\231I\231\371\305\372%E\245"
  333      A965FAC9 
-ARM GAS  /tmp/ccJKXGTX.s 			page 26
+ARM GAS  /tmp/ccEZ1ckG.s 			page 26
 
 
  333      19994999 
@@ -1516,7 +1516,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  335      4E7C4E4E 
  336 0136 7ED7     		.ascii	"~\327"
  337              		.text
- 338              		.section	.gnu.lto_sd_lld_start.2ebc37b6a9355e3b,"",%progbits
+ 338              		.section	.gnu.lto_sd_lld_start.bd59b9e03b2c3fcc,"",%progbits
  339 0000 789C9D53 		.ascii	"x\234\235SMh\023A\024~ov\366/?\032\274\027z\362`\301"
  339      4D681341 
  339      147E6F76 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  347 0091 77BB0A65 		.ascii	"w\273\012e\241\255Q6s\276\330\012\025tT\336AW\347]D"
  347      A1AD5136 
  347      73BED80A 
-ARM GAS  /tmp/ccJKXGTX.s 			page 27
+ARM GAS  /tmp/ccEZ1ckG.s 			page 27
 
 
  347      157454DE 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  358      A703DD91 
  358      B64D
  359 017b B8F534B6 		.ascii	"\270\3654\266\306-k<J\351\204{\355\254\336\372\267\252"
-ARM GAS  /tmp/ccJKXGTX.s 			page 28
+ARM GAS  /tmp/ccEZ1ckG.s 			page 28
 
 
  359      C62D6B3C 
@@ -1678,11 +1678,11 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  370      D5E2
  371 0248 510FBE03 		.ascii	"Q\017\276\003\"\302\362m"
  371      22C2F26D 
-ARM GAS  /tmp/ccJKXGTX.s 			page 29
+ARM GAS  /tmp/ccEZ1ckG.s 			page 29
 
 
  372              		.text
- 373              		.section	.gnu.lto_sd_lld_stop.2ebc37b6a9355e3b,"",%progbits
+ 373              		.section	.gnu.lto_sd_lld_stop.bd59b9e03b2c3fcc,"",%progbits
  374 0000 789C9553 		.ascii	"x\234\225S\317k\023A\030\375\276\231\375\2256\265\375"
  374      CF6B1341 
  374      18FDBE99 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  385 00c2 A60782DA 		.ascii	"\246\007\202\332PUj\356\000\200\037\266&h\324\244Iz"
  385      50556AEE 
  385      00801FB6 
-ARM GAS  /tmp/ccJKXGTX.s 			page 30
+ARM GAS  /tmp/ccEZ1ckG.s 			page 30
 
 
  385      2668D4A4 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  397      2838F085 
  397      D1D12D6F 
  397      CCDFBBE9 
-ARM GAS  /tmp/ccJKXGTX.s 			page 31
+ARM GAS  /tmp/ccEZ1ckG.s 			page 31
 
 
  397      462D
@@ -1843,7 +1843,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  406      BFE0F2E6 
  406      D2
  407              		.text
- 408              		.section	.gnu.lto_.symbol_nodes.2ebc37b6a9355e3b,"",%progbits
+ 408              		.section	.gnu.lto_.symbol_nodes.bd59b9e03b2c3fcc,"",%progbits
  409 0000 789C4DCD 		.ascii	"x\234M\315;N\303@\024\205\341;\347z\202\211q\022\363"
  409      3B4EC340 
  409      1485E13B 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  411      828A0520 
  411      A2749488 
  411      92603B56 
-ARM GAS  /tmp/ccJKXGTX.s 			page 32
+ARM GAS  /tmp/ccEZ1ckG.s 			page 32
 
 
  411      C6
@@ -1913,12 +1913,12 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  421      58F7E41F 
  422 00f5 11C77EDB 		.ascii	"\021\307~\333"
  423              		.text
- 424              		.section	.gnu.lto_.refs.2ebc37b6a9355e3b,"",%progbits
+ 424              		.section	.gnu.lto_.refs.bd59b9e03b2c3fcc,"",%progbits
  425 0000 789C25C6 		.ascii	"x\234%\306\311\015\000 \014\304\300]#%\204\243\014\372"
  425      C90D0020 
  425      0CC4C05D 
  425      232584A3 
-ARM GAS  /tmp/ccJKXGTX.s 			page 33
+ARM GAS  /tmp/ccEZ1ckG.s 			page 33
 
 
  425      0CFA
@@ -1931,7 +1931,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  427      A72E141D 
  427      00DC
  428              		.text
- 429              		.section	.gnu.lto_.decls.2ebc37b6a9355e3b,"",%progbits
+ 429              		.section	.gnu.lto_.decls.bd59b9e03b2c3fcc,"",%progbits
  430 0000 789CBD5C 		.ascii	"x\234\275\\\013p\024\307\231\236\231\335\225\264 \363"
  430      0B7014C7 
  430      999E99DD 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  439      240DBF3E 
  439      10EE
  440 00ad 83FB0110 		.ascii	"\203\373\001\020\006B\030\012\241\000\302H\010E\020"
-ARM GAS  /tmp/ccJKXGTX.s 			page 34
+ARM GAS  /tmp/ccEZ1ckG.s 			page 34
 
 
  440      0642180A 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  451      1EC21991 
  451      721D
  452 017e CAC83650 		.ascii	"\312\3106PkK\322\246\3134\256\017\231\344,\320tId\323"
-ARM GAS  /tmp/ccJKXGTX.s 			page 35
+ARM GAS  /tmp/ccEZ1ckG.s 			page 35
 
 
  452      6B4BD2A6 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  463      2CD13E6F 
  463      C5A394E1 
  464 0255 2168B29A 		.ascii	"!h\262\2329\020\273i\207\360\230M{\246i<t\033\357\251"
-ARM GAS  /tmp/ccJKXGTX.s 			page 36
+ARM GAS  /tmp/ccEZ1ckG.s 			page 36
 
 
  464      3910BB69 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  475      595A92FE 
  476 0329 0C3CDA37 		.ascii	"\014<\3327\301\306\001)\265\340\325\201\012\022\355"
  476      C1C60129 
-ARM GAS  /tmp/ccJKXGTX.s 			page 37
+ARM GAS  /tmp/ccEZ1ckG.s 			page 37
 
 
  476      B5E0D581 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  487      49FD87CC 
  488 0403 F5D77FFC 		.ascii	"\365\327\177\374\351\320:U\355E_\245\256\376\303Cs;"
  488      E9D03A55 
-ARM GAS  /tmp/ccJKXGTX.s 			page 38
+ARM GAS  /tmp/ccEZ1ckG.s 			page 38
 
 
  488      ED455FA5 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  499      13B061
  500 04d4 F6CC36B0 		.ascii	"\366\3146\260`\353]\203\361\3146\261`\233\234\200=b"
  500      60EB5D83 
-ARM GAS  /tmp/ccJKXGTX.s 			page 39
+ARM GAS  /tmp/ccEZ1ckG.s 			page 39
 
 
  500      F1CC36B1 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  511      95036BA2 
  511      DABFE96B 
  511      A2
-ARM GAS  /tmp/ccJKXGTX.s 			page 40
+ARM GAS  /tmp/ccEZ1ckG.s 			page 40
 
 
  512 05b3 9725B2FE 		.ascii	"\227%\262\376\270\354\263\\\3108\200\232?o\355}\270"
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  523 0679 11817674 		.ascii	"\021\201vtj\3064S+\246\361\255\010\267\244\246\257\311"
  523      6AC63453 
  523      2BA6F1AD 
-ARM GAS  /tmp/ccJKXGTX.s 			page 41
+ARM GAS  /tmp/ccEZ1ckG.s 			page 41
 
 
  523      08B7A4A6 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  535      27D5371D 
  535      D555DFE4 
  535      48F5C72C 
-ARM GAS  /tmp/ccJKXGTX.s 			page 42
+ARM GAS  /tmp/ccEZ1ckG.s 			page 42
 
 
  535      55DFE4
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  547      7ADAE91A 
  547      91B7E6CB 
  547      B3
-ARM GAS  /tmp/ccJKXGTX.s 			page 43
+ARM GAS  /tmp/ccEZ1ckG.s 			page 43
 
 
  548 083a B839C1DF 		.ascii	"\2709\301\337\234\300\015\263 h\365c\217\016eq\213H"
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  559 08fb 3DDBF10C 		.ascii	"=\333\361\014\361k\364\237\373\375)O\372M@\262xS\"\023"
  559      F16BF49F 
  559      FBFD294F 
-ARM GAS  /tmp/ccJKXGTX.s 			page 44
+ARM GAS  /tmp/ccEZ1ckG.s 			page 44
 
 
  559      FA4D40B2 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  571      6B930833 
  571      DF5E25C6 
  571      6E9A2391 
-ARM GAS  /tmp/ccJKXGTX.s 			page 45
+ARM GAS  /tmp/ccEZ1ckG.s 			page 45
 
 
  571      EA5891FE 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  583      248B7B3D 
  583      E950F319 
  583      93977200 
-ARM GAS  /tmp/ccJKXGTX.s 			page 46
+ARM GAS  /tmp/ccEZ1ckG.s 			page 46
 
 
  584 0abf 54B11F0A 		.ascii	"T\261\037\012s\263\307+\325=\311\354\221<O2{D\363\220"
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  594      B7603CB3 
  595 0b8e 8B4EC092 		.ascii	"\213N\300\222|\262\360\301\336E\235\027\237\246!\303"
  595      7CB2F0C1 
-ARM GAS  /tmp/ccJKXGTX.s 			page 47
+ARM GAS  /tmp/ccEZ1ckG.s 			page 47
 
 
  595      DE459D17 
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  607 0c65 2D6DFB95 		.ascii	"-m\373\225!\351\2140E\241\354$\341\2203\270f\257\035"
  607      21E98C30 
  607      45A1EC24 
-ARM GAS  /tmp/ccJKXGTX.s 			page 48
+ARM GAS  /tmp/ccEZ1ckG.s 			page 48
 
 
  607      E19033B8 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  619 0d3e C563895D 		.ascii	"\305c\211]\350\200\367`\334\202\361U\214o`\374-\306"
  619      E880F760 
  619      DC82F155 
-ARM GAS  /tmp/ccJKXGTX.s 			page 49
+ARM GAS  /tmp/ccEZ1ckG.s 			page 49
 
 
  619      8C6F60FC 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  631      558C577A 
  631      B9E9CDDA 
  631      4E0D40ED 
-ARM GAS  /tmp/ccJKXGTX.s 			page 50
+ARM GAS  /tmp/ccEZ1ckG.s 			page 50
 
 
  631      91C1
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  642      2C6EC5C6 
  642      7F3BB9
  643 0ef3 46AC457B 		.ascii	"F\254E{\333,\332\016K\321\256\355}!\303\255l{\314\262"
-ARM GAS  /tmp/ccJKXGTX.s 			page 51
+ARM GAS  /tmp/ccEZ1ckG.s 			page 51
 
 
  643      DB2CDA0E 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  654      F5C3A8A3 
  655 0fd8 93843A6B 		.ascii	"\223\204:kif\233\245\371\304\241+\343i}b\246u\2563\255"
  655      69669BA5 
-ARM GAS  /tmp/ccJKXGTX.s 			page 52
+ARM GAS  /tmp/ccEZ1ckG.s 			page 52
 
 
  655      F9C4A12B 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  667      9BCEC476 
  667      DB107B96 
  667      27F64FC2 
-ARM GAS  /tmp/ccJKXGTX.s 			page 53
+ARM GAS  /tmp/ccEZ1ckG.s 			page 53
 
 
  668 10b3 52B5B519 		.ascii	"R\265\265\031\326\010\037\235\023ai\335H\216\351:\304"
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  679      29C8194F 
  679      2D6F3C19 
  679      C233F4
-ARM GAS  /tmp/ccJKXGTX.s 			page 54
+ARM GAS  /tmp/ccEZ1ckG.s 			page 54
 
 
  680 1185 005C9D22 		.ascii	"\000\\\235\"\2167\226\2446\177\312\014n\313\227\001"
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  691      685A7DB0 
  691      6DE8E2D9 
  691      C4D730AD 
-ARM GAS  /tmp/ccJKXGTX.s 			page 55
+ARM GAS  /tmp/ccEZ1ckG.s 			page 55
 
 
  691      C7CE
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  703 1333 E49F41BD 		.ascii	"\344\237A\275\307\332\323\021\327`<\263S,\263\017\234"
  703      C7DAD311 
  703      D7603CB3 
-ARM GAS  /tmp/ccJKXGTX.s 			page 56
+ARM GAS  /tmp/ccEZ1ckG.s 			page 56
 
 
  703      532CB30F 
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  715      8C9B306E 
  715      C6B805E3 
  715      A3181F
-ARM GAS  /tmp/ccJKXGTX.s 			page 57
+ARM GAS  /tmp/ccEZ1ckG.s 			page 57
 
 
  716 140e C7F83D8C 		.ascii	"\307\370=\214Oa|\032\3433\030\267b|\026\343O0>\217\361"
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  727      7B78E4E3 
  727      59F94226 
  727      FBB417BD 
-ARM GAS  /tmp/ccJKXGTX.s 			page 58
+ARM GAS  /tmp/ccEZ1ckG.s 			page 58
 
 
  727      290FC594 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  738      C110
  739 15b5 7E096108 		.ascii	"~\011a\010\204\373=\261\334\001\020r \344B\310\2030"
  739      84FB3DB1 
-ARM GAS  /tmp/ccJKXGTX.s 			page 59
+ARM GAS  /tmp/ccEZ1ckG.s 			page 59
 
 
  739      DC011072 
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  751 168c 502D267D 		.ascii	"P-&}\230\204\007\301H\260\022\014k\234\257\242\012\214"
  751      988407C1 
  751      48B0120C 
-ARM GAS  /tmp/ccJKXGTX.s 			page 60
+ARM GAS  /tmp/ccEZ1ckG.s 			page 60
 
 
  751      6B9CAFA2 
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  763      C0B568F8 
  763      8305BFF7 
  763      6116
-ARM GAS  /tmp/ccJKXGTX.s 			page 61
+ARM GAS  /tmp/ccEZ1ckG.s 			page 61
 
 
  764 176a 776E189B 		.ascii	"wn\030\233\206t\374\273B\225@B\267\215n\340n\264d\206"
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  775      B9
  776 1840 10F2341B 		.ascii	"\020\3624\033\313\017W\216\015\215\273S\225\227\010"
  776      CB0F578E 
-ARM GAS  /tmp/ccJKXGTX.s 			page 62
+ARM GAS  /tmp/ccEZ1ckG.s 			page 62
 
 
  776      0D8DBB53 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  788      2F526278 
  788      65A280A7 
  788      B82017C2 
-ARM GAS  /tmp/ccJKXGTX.s 			page 63
+ARM GAS  /tmp/ccEZ1ckG.s 			page 63
 
 
  788      E01EFA
@@ -3776,9 +3776,9 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  799      262656FD 
  799      1FA6B258 
  800              		.text
- 801              		.section	.gnu.lto_.symtab.2ebc37b6a9355e3b,"",%progbits
+ 801              		.section	.gnu.lto_.symtab.bd59b9e03b2c3fcc,"",%progbits
  802 0000 56656374 		.ascii	"VectorD8\000\000\000\000\000\000\000\000\000\000\000"
-ARM GAS  /tmp/ccJKXGTX.s 			page 64
+ARM GAS  /tmp/ccEZ1ckG.s 			page 64
 
 
  802      6F724438 
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  814 00e1 6E020000 		.ascii	"n\002\000\000sdIncomingDataI\000\000\002\000\000\000"
  814      7364496E 
  814      636F6D69 
-ARM GAS  /tmp/ccJKXGTX.s 			page 65
+ARM GAS  /tmp/ccEZ1ckG.s 			page 65
 
 
  814      6E674461 
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  827      74612D73 
  828 00cc 272D6673 		.ascii	"'-fsingle-precision-constant'\000"
  828      696E676C 
-ARM GAS  /tmp/ccJKXGTX.s 			page 66
+ARM GAS  /tmp/ccEZ1ckG.s 			page 66
 
 
  828      652D7072 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  880 0004 D0F85454 		ldr	r5, [r0, #1108]
  881 0008 D5F80C80 		ldr	r8, [r5, #12]
  882 000c 2B68     		ldr	r3, [r5]
-ARM GAS  /tmp/ccJKXGTX.s 			page 67
+ARM GAS  /tmp/ccEZ1ckG.s 			page 67
 
 
  883 000e 0646     		mov	r6, r0
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  937 0078 13D5     		bpl	.L7
  938 007a 2023     		movs	r3, #32
  939              	@ 546 "/home/cody/dev/chibios/trunk/os/ext/CMSIS/include/core_cmFunc.h" 1
-ARM GAS  /tmp/ccJKXGTX.s 			page 68
+ARM GAS  /tmp/ccEZ1ckG.s 			page 68
 
 
  940 007c 83F31188 		MSR basepri, r3
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  994              		.thumb
  995 00de CAE7     		b	.L16
  996              	.L56:
-ARM GAS  /tmp/ccJKXGTX.s 			page 69
+ARM GAS  /tmp/ccEZ1ckG.s 			page 69
 
 
  997 00e0 B36B     		ldr	r3, [r6, #56]
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  1048 000c FFF7FEBF 		b	_port_irq_epilogue
  1049              	.L63:
  1050              		.align	2
-ARM GAS  /tmp/ccJKXGTX.s 			page 70
+ARM GAS  /tmp/ccEZ1ckG.s 			page 70
 
 
  1051              	.L62:
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  1103 0006 0029     		cmp	r1, #0
  1104 0008 18BF     		it	ne
  1105 000a 0C46     		movne	r4, r1
-ARM GAS  /tmp/ccJKXGTX.s 			page 71
+ARM GAS  /tmp/ccEZ1ckG.s 			page 71
 
 
  1106 000c 012B     		cmp	r3, #1
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  1160 0084 D3E7     		b	.L73
  1161              	.L76:
  1162 0086 0A4B     		ldr	r3, .L77+20
-ARM GAS  /tmp/ccJKXGTX.s 			page 72
+ARM GAS  /tmp/ccEZ1ckG.s 			page 72
 
 
  1163 0088 1A6C     		ldr	r2, [r3, #64]
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  1216 0030 054B     		ldr	r3, .L86+8
  1217 0032 1A6C     		ldr	r2, [r3, #64]
  1218 0034 22F40032 		bic	r2, r2, #131072
-ARM GAS  /tmp/ccJKXGTX.s 			page 73
+ARM GAS  /tmp/ccEZ1ckG.s 			page 73
 
 
  1219 0038 1A64     		str	r2, [r3, #64]
@@ -4368,45 +4368,45 @@ ARM GAS  /tmp/ccJKXGTX.s 			page 1
  1255      00000000 
  1256              		.comm	__gnu_lto_v1,1,1
  1257              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccJKXGTX.s 			page 74
+ARM GAS  /tmp/ccEZ1ckG.s 			page 74
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 serial_lld.c
-     /tmp/ccJKXGTX.s:831    .text.notify2:0000000000000000 $t
-     /tmp/ccJKXGTX.s:836    .text.notify2:0000000000000000 notify2
-     /tmp/ccJKXGTX.s:848    .text.notify2:000000000000000c $d
-     /tmp/ccJKXGTX.s:851    .text.notify6:0000000000000000 $t
-     /tmp/ccJKXGTX.s:856    .text.notify6:0000000000000000 notify6
-     /tmp/ccJKXGTX.s:868    .text.notify6:000000000000000c $d
-     /tmp/ccJKXGTX.s:871    .text.serve_interrupt:0000000000000000 $t
-     /tmp/ccJKXGTX.s:876    .text.serve_interrupt:0000000000000000 serve_interrupt
-     /tmp/ccJKXGTX.s:1015   .text.VectorD8:0000000000000000 $t
-     /tmp/ccJKXGTX.s:1021   .text.VectorD8:0000000000000000 VectorD8
-     /tmp/ccJKXGTX.s:1032   .text.VectorD8:0000000000000010 $d
-     /tmp/ccJKXGTX.s:1035   .text.Vector15C:0000000000000000 $t
-     /tmp/ccJKXGTX.s:1041   .text.Vector15C:0000000000000000 Vector15C
-     /tmp/ccJKXGTX.s:1052   .text.Vector15C:0000000000000010 $d
-     /tmp/ccJKXGTX.s:1055   .text.sd_lld_init:0000000000000000 $t
-     /tmp/ccJKXGTX.s:1061   .text.sd_lld_init:0000000000000000 sd_lld_init
-     /tmp/ccJKXGTX.s:1083   .text.sd_lld_init:0000000000000028 $d
-     /tmp/ccJKXGTX.s:1091   .text.sd_lld_start:0000000000000000 $t
-     /tmp/ccJKXGTX.s:1097   .text.sd_lld_start:0000000000000000 sd_lld_start
-     /tmp/ccJKXGTX.s:1173   .text.sd_lld_start:000000000000009c $d
-     /tmp/ccJKXGTX.s:1182   .text.sd_lld_stop:0000000000000000 $t
-     /tmp/ccJKXGTX.s:1188   .text.sd_lld_stop:0000000000000000 sd_lld_stop
-     /tmp/ccJKXGTX.s:1225   .text.sd_lld_stop:0000000000000040 $d
-     /tmp/ccJKXGTX.s:1254   .bss.SD6:0000000000000000 SD6
-     /tmp/ccJKXGTX.s:1247   .bss.SD2:0000000000000000 SD2
-     /tmp/ccJKXGTX.s:1232   .rodata.default_config:0000000000000000 $d
-     /tmp/ccJKXGTX.s:1236   .rodata.default_config:0000000000000000 default_config
-     /tmp/ccJKXGTX.s:1243   .bss.SD2:0000000000000000 $d
-     /tmp/ccJKXGTX.s:1250   .bss.SD6:0000000000000000 $d
+     /tmp/ccEZ1ckG.s:831    .text.notify2:0000000000000000 $t
+     /tmp/ccEZ1ckG.s:836    .text.notify2:0000000000000000 notify2
+     /tmp/ccEZ1ckG.s:848    .text.notify2:000000000000000c $d
+     /tmp/ccEZ1ckG.s:851    .text.notify6:0000000000000000 $t
+     /tmp/ccEZ1ckG.s:856    .text.notify6:0000000000000000 notify6
+     /tmp/ccEZ1ckG.s:868    .text.notify6:000000000000000c $d
+     /tmp/ccEZ1ckG.s:871    .text.serve_interrupt:0000000000000000 $t
+     /tmp/ccEZ1ckG.s:876    .text.serve_interrupt:0000000000000000 serve_interrupt
+     /tmp/ccEZ1ckG.s:1015   .text.VectorD8:0000000000000000 $t
+     /tmp/ccEZ1ckG.s:1021   .text.VectorD8:0000000000000000 VectorD8
+     /tmp/ccEZ1ckG.s:1032   .text.VectorD8:0000000000000010 $d
+     /tmp/ccEZ1ckG.s:1035   .text.Vector15C:0000000000000000 $t
+     /tmp/ccEZ1ckG.s:1041   .text.Vector15C:0000000000000000 Vector15C
+     /tmp/ccEZ1ckG.s:1052   .text.Vector15C:0000000000000010 $d
+     /tmp/ccEZ1ckG.s:1055   .text.sd_lld_init:0000000000000000 $t
+     /tmp/ccEZ1ckG.s:1061   .text.sd_lld_init:0000000000000000 sd_lld_init
+     /tmp/ccEZ1ckG.s:1083   .text.sd_lld_init:0000000000000028 $d
+     /tmp/ccEZ1ckG.s:1091   .text.sd_lld_start:0000000000000000 $t
+     /tmp/ccEZ1ckG.s:1097   .text.sd_lld_start:0000000000000000 sd_lld_start
+     /tmp/ccEZ1ckG.s:1173   .text.sd_lld_start:000000000000009c $d
+     /tmp/ccEZ1ckG.s:1182   .text.sd_lld_stop:0000000000000000 $t
+     /tmp/ccEZ1ckG.s:1188   .text.sd_lld_stop:0000000000000000 sd_lld_stop
+     /tmp/ccEZ1ckG.s:1225   .text.sd_lld_stop:0000000000000040 $d
+     /tmp/ccEZ1ckG.s:1254   .bss.SD6:0000000000000000 SD6
+     /tmp/ccEZ1ckG.s:1247   .bss.SD2:0000000000000000 SD2
+     /tmp/ccEZ1ckG.s:1232   .rodata.default_config:0000000000000000 $d
+     /tmp/ccEZ1ckG.s:1236   .rodata.default_config:0000000000000000 default_config
+     /tmp/ccEZ1ckG.s:1243   .bss.SD2:0000000000000000 $d
+     /tmp/ccEZ1ckG.s:1250   .bss.SD6:0000000000000000 $d
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccJKXGTX.s:1034   .text.VectorD8:0000000000000014 $t
-     /tmp/ccJKXGTX.s:1054   .text.Vector15C:0000000000000014 $t
-     /tmp/ccJKXGTX.s:1181   .text.sd_lld_start:00000000000000b8 $t
-     /tmp/ccJKXGTX.s:1231   .text.sd_lld_stop:000000000000004c $t
+     /tmp/ccEZ1ckG.s:1034   .text.VectorD8:0000000000000014 $t
+     /tmp/ccEZ1ckG.s:1054   .text.Vector15C:0000000000000014 $t
+     /tmp/ccEZ1ckG.s:1181   .text.sd_lld_start:00000000000000b8 $t
+     /tmp/ccEZ1ckG.s:1231   .text.sd_lld_stop:000000000000004c $t
 
 UNDEFINED SYMBOLS
 sdIncomingDataI
