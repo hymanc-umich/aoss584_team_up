@@ -72,7 +72,13 @@ msg_t sensorThread(void *arg)
     ms5607_init(&(thread->ms5607), &EI2C_I2CD, 0b1110110);              // Initialize MS5607
     lsm303_init(&(thread->lsm303), &II2C_I2CD, 0b0011101, 0b0011110);   // Initialize LSM303
     bmp280_init(&(thread->bmp280), &II2C_I2CD, 0b1110110);              // Initialize BMP280
+    
+    si70x0_setHeaterCurrent(&(thread->intSi7020), 11);
+    si70x0_heaterEnable(&(thread->intSi7020), true);
+    chThdSleep(1000);
+    si70x0_heaterEnable(&(thread->intSi7020), false);
     thread->data.humdInt = 0;
+
     // Sensor Loop
     systime_t deadline = chVTGetSystemTimeX();
     while(thread->running)
@@ -82,20 +88,24 @@ msg_t sensorThread(void *arg)
     	/*
          * Read I2C sensors
          */
-         
+
         //External Temp 2
     	tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
     	
-        // TODO: Internal Pressure        
+        // TODO: Internal Pressure (BMP280)    
 
-        // Internal Humidity
+        // Internal Humidity (Si7020)
         msg_t ihstat = si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
-    	chprintf((BaseSequentialStream *) &DBG_SERIAL, "Si7020 Read: %d\n", (int) ihstat);
-        chprintf((BaseSequentialStream *) &DBG_SERIAL, "HUMIDITY:%f\n",thread->data.humdInt);
-        // External Humidity 1
-
-        // External Humidity 2
+        float temp7020;
+        ihstat = si70x0_readTemperature(&(thread->intSi7020), &temp7020);
+    	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "Si7020 Read: %d\n", (int) ihstat);
+        if(ihstat == MSG_OK)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "HUMIDITY:%f TEMP:%f\n",thread->data.humdInt, temp7020);
         
+        // External Humidity 1 (Si7020)
+        si70x0_readHumidity(&(thread->extSi7020), &(thread->data.humdExt));
+        // External Humidity 2 (HIH6030)
+
         // External Pressure 2
         ms5607_readPressureTemperature(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
 

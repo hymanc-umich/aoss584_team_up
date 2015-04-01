@@ -139,7 +139,7 @@ msg_t si70x0_setHeaterCurrent(si70x0_t *s, uint8_t heaterCurrent)
  */
 msg_t si70x0_readTemperature(si70x0_t *s, float *temp)
 {
-    s->txBuffer[0] = SI70X0_MEASURE_TEMP_NOHOLD;
+    s->txBuffer[0] = SI70X0_MEASURE_TEMP_HOLD;
     msg_t status = I2CSensor_transact_buf(&s->sensor, 1, 2);
     if(status == MSG_OK)
     {
@@ -160,7 +160,7 @@ msg_t si70x0_readTemperature(si70x0_t *s, float *temp)
  */
 msg_t si70x0_readHumidity(si70x0_t *s, float *humidity)
 {
-    s->txBuffer[0] = SI70X0_MEASURE_RH_NOHOLD;
+    s->txBuffer[0] = SI70X0_MEASURE_RH_HOLD;
     msg_t status = I2CSensor_transact_buf(&s->sensor, 1, 2);
     if(status == MSG_OK)
     {

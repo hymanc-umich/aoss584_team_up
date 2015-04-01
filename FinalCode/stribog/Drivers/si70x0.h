@@ -3,7 +3,7 @@
 
 #include "i2c_sensor.h"
 
-#define SI70X0_TIMEOUT				20
+#define SI70X0_TIMEOUT				50
 #define SI7020_DEFAULT_ADDRESS 		0b10000000
 
 // Si7020 Commands

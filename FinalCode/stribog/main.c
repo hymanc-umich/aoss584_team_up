@@ -126,6 +126,7 @@ void initialize(void)
 	   chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nERROR: SD Initialization Failed\n");
     }
     */
+    
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
     
