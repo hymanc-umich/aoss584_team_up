@@ -18,12 +18,12 @@
  */
 struct gpsReceiver
 {
-   UARTDriver *gpsUart; 		// UART Driver
+   UARTDriver *gpsUart; 				// UART Driver
    char buffer[2][GPS_BUFFER_SIZE]; 	// Double receive buffer
-   uint8_t bufferCount;			// Receiver buffer counter
-   uint8_t activeBuffer; 		// Double buffer switch
-   gpsLocation_t location;		// Location storage
-   mutex_t dataMutex;			// Data mutex
+   uint8_t bufferCount;					// Receiver buffer counter
+   uint8_t activeBuffer; 				// Double buffer switch
+   gpsLocation_t location;				// Location storage
+   mutex_t dataMutex;					// Data mutex
 };
 typedef struct gpsReceiver gpsReceiver_t;
 
@@ -56,7 +56,7 @@ static char * gpsGetActiveRxBuffer(void)
 static int8_t gpsAddToBuffer(char c)
 {
     if(GPS.bufferCount >= GPS_BUFFER_SIZE)
-	return -1;
+		return -1;
     char * buffer = gpsGetActiveRxBuffer();
     buffer[GPS.bufferCount++] = c;
     return 0;
@@ -95,15 +95,15 @@ static void gpsRxChar(UARTDriver *uartp, uint16_t c)
     (void) uartp; // TODO: Check character and place in buffer
     if(c == '\n')
     {
-	gpsAddToBuffer('\0');
-	gpsToggleBuffer();
-	chSysLock();
-	chBSemSignal(&gpsSem);
-	chSysUnlock();
+		gpsAddToBuffer('\0');
+		gpsToggleBuffer();
+		chSysLock();
+		chBSemSignal(&gpsSem);
+		chSysUnlock();
     }
     else
     {
-	gpsAddToBuffer(c);
+		gpsAddToBuffer(c);
     }
 }
 
@@ -149,7 +149,7 @@ static UARTConfig serGpsCfg = {
 int8_t gpsStart(UARTDriver *gpsUart)
 {
     if(gpsUart == NULL)
-	return -1;
+		return -1;
     GPS.gpsUart = gpsUart;
     GPS.activeBuffer = 0;
     chMtxObjectInit(&(GPS.dataMutex));
@@ -178,57 +178,32 @@ sentenceType_t gpsParseNMEAType(char *nmeaStr)
     char *stypeIndex;
     if(nmeaStr[0] == NMEA_START_CHAR)
     {
-	if(strncmp(nmeaStr+1, NMEA_GPS, 2) == 0)
-	{
-	    stypeIndex = nmeaStr + 3;
-	    if(strncmp(stypeIndex, NMEA_GPS_ALM, 3) == 0)
-		return GPS_ALM;
-	    else if(strncmp(stypeIndex, NMEA_FIX_DATA, 3) == 0)
-		return FIX_DATA;
-	    else if(strncmp(stypeIndex, NMEA_GEO_POS,3) == 0)
-		return GEO_POS;
-	    else if(strncmp(stypeIndex, NMEA_ACT_SAT, 3) == 0)
-		return ACT_SAT;
-	    else if(strncmp(stypeIndex, NMEA_SAT_VIEW, 3) == 0)
-		return SAT_VIEW;
-	    else if(strncmp(stypeIndex, NMEA_HEADING, 3) == 0)
-		return HEADING;
-	    else if(strncmp(stypeIndex, NMEA_DATE_TIME, 3) == 0)
-		return DATE_TIME;
-	    else
-		return OTHER;
-	}
-	else
-	    return OTHER;
+		if(strncmp(nmeaStr+1, NMEA_GPS, 2) == 0)
+		{
+		    stypeIndex = nmeaStr + 3;
+		    if(strncmp(stypeIndex, NMEA_GPS_ALM, 3) == 0)
+			return GPS_ALM;
+		    else if(strncmp(stypeIndex, NMEA_FIX_DATA, 3) == 0)
+			return FIX_DATA;
+		    else if(strncmp(stypeIndex, NMEA_GEO_POS,3) == 0)
+			return GEO_POS;
+		    else if(strncmp(stypeIndex, NMEA_ACT_SAT, 3) == 0)
+			return ACT_SAT;
+		    else if(strncmp(stypeIndex, NMEA_SAT_VIEW, 3) == 0)
+			return SAT_VIEW;
+		    else if(strncmp(stypeIndex, NMEA_HEADING, 3) == 0)
+			return HEADING;
+		    else if(strncmp(stypeIndex, NMEA_DATE_TIME, 3) == 0)
+			return DATE_TIME;
+		    else
+			return OTHER;
+		}
+		else
+		    return OTHER;
     }
     else
-	return UNDEF;
+		return UNDEF;
 }
-
-/** //TODO: Fix seg faults with this if it will ever get used
- * @brief Simple token parser for comma separated tokens
- * @param str String to split
- * @param token Token character to use
- * @param splitStr Split string return buffer
- * @param maxTok Maximum number of token separated strings
- * @return Number of token separated strings returned
- */
-/*
-uint8_t gpsParseToken(char *str, char token, char **splitStr, uint8_t maxTok)
-{
-    uint8_t i, j;
-    while((*str != '\n') && (i<maxTok))
-    {
-	while((*str != token) && (j<20))
-	{
-	    splitStr[i][j++] = *(str++);
-	}
-	str++;
-	splitStr[i++][++j] = '\0'; // Terminate string
-    }
-    return i; // Return split string count
-}
-*/
 
 /**
  * @brief Simple string copy
@@ -262,6 +237,7 @@ static void gpsStrAppendChar(char *dest, char appChar)
 static char tokBuf[20];
 int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 {
+	chprintf((BaseSequentialStream *) &DBG_SERIAL, "GGASTR:%s\n", nmeaGGAStr);
     // Verify GGA Sentence
     if(strncmp(nmeaGGAStr+3, NMEA_FIX_DATA, 3)) 
 	return -1;
@@ -272,78 +248,76 @@ int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
     uint8_t bufferCount;
     for(i = 1; i<10; i++)
     {
-	bufferCount = 0;
-	while((*pos != ',') 
-	    && (*pos != '\0') 
-	    && (bufferCount < 16))
-	{
-	    tokBuf[bufferCount++] = *(pos++);
-	}
-	tokBuf[bufferCount] = '\0';
-	pos++;
-	switch(i)
-	{
-	    case 1: // Time
-		// HHMMSS.SS
-		if(strlen(tokBuf) > 1)
+		bufferCount = 0;
+		while((*pos != ',') && (*pos != '\0') && (bufferCount < 16))
 		{
-		    loc->time[0] = tokBuf[0]; // H1
-		    loc->time[1] = tokBuf[1]; // H2
-		    loc->time[2] = ':';
-		    loc->time[3] = tokBuf[2]; // M1
-		    loc->time[4] = tokBuf[3]; // M2
-		    loc->time[5] = ':';
-		    loc->time[6] = tokBuf[4]; // S1
-		    loc->time[7] = tokBuf[5]; // S2
-		    loc->time[8] = '\0';
+		    tokBuf[bufferCount++] = *(pos++);
 		}
-		else
-		    loc->time[0] = '\0';
-		break;
-	    case 2: // Latitude;
-		uStrInsertChar(tokBuf, ' ', 2);
-		uStrCpy(loc->latitude, tokBuf);
-		// Insert space
-		break;
-	    case 3: // Latitude Hemisphere
-		if(tokBuf[0] == 'S')
+		tokBuf[bufferCount] = '\0';
+		pos++;
+		switch(i)
 		{
-		    uStrPrependChar(loc->latitude,'-');
+		    case 1: // Time
+				// HHMMSS.SS
+				if(strlen(tokBuf) > 1)
+				{
+				    loc->time[0] = tokBuf[0]; // H1
+				    loc->time[1] = tokBuf[1]; // H2
+				    loc->time[2] = ':';
+				    loc->time[3] = tokBuf[2]; // M1
+				    loc->time[4] = tokBuf[3]; // M2
+				    loc->time[5] = ':';
+				    loc->time[6] = tokBuf[4]; // S1
+				    loc->time[7] = tokBuf[5]; // S2
+				    loc->time[8] = '\0';
+				}
+				else
+				    loc->time[0] = '\0';
+				break;
+		    case 2: // Latitude;
+				uStrInsertChar(tokBuf, ' ', 2);
+				uStrCpy(loc->latitude, tokBuf);
+				// Insert space
+				break;
+		    case 3: // Latitude Hemisphere
+				if(tokBuf[0] == 'S')
+				{
+				    uStrPrependChar(loc->latitude,'-');
+				}
+				else if(tokBuf[0] == 'N')
+				{
+				    uStrPrependChar(loc->latitude,'+');
+				}
+				//uStrAppendChar(loc->latitude, *tokBuf);
+				break;
+		    case 4: // Longitude
+				uStrInsertChar(tokBuf, ' ', 3);
+				uStrCpy(loc->longitude, tokBuf);
+				break;
+		    case 5: // Longitude Hemisphere
+				if(tokBuf[0] == 'W')
+				{
+				    uStrPrependChar(loc->longitude, '-');
+				}
+				else if(tokBuf[0] == 'E')
+				{
+				    uStrPrependChar(loc->longitude, '+');
+				}
+				//uStrAppendChar(loc->longitude, *tokBuf);
+				break;
+		    case 6: // Quality Indicator (Do nothing for now)
+				break;
+		    case 7: // Satellite count
+				uStrCpy(loc->satCount, tokBuf);
+				break;
+		    case 8: // HDOP
+				break;
+		    case 9: // Altitude
+				uStrCpy(loc->altitude, tokBuf);
+				break;
+		    default:
+				break;
 		}
-		else if(tokBuf[0] == 'N')
-		{
-		    uStrPrependChar(loc->latitude,'+');
-		}
-		//uStrAppendChar(loc->latitude, *tokBuf);
-		break;
-	    case 4: // Longitude
-		uStrInsertChar(tokBuf, ' ', 3);
-		uStrCpy(loc->longitude, tokBuf);
-		break;
-	    case 5: // Longitude Hemisphere
-		if(tokBuf[0] == 'W')
-		{
-		    uStrPrependChar(loc->longitude, '-');
-		}
-		else if(tokBuf[0] == 'E')
-		{
-		    uStrPrependChar(loc->longitude, '+');
-		}
-		//uStrAppendChar(loc->longitude, *tokBuf);
-		break;
-	    case 6: // Quality Indicator (Do nothing for now)
-		break;
-	    case 7: // Satellite count
-		uStrCpy(loc->satCount, tokBuf);
-		break;
-	    case 8: // HDOP
-		break;
-	    case 9: // Altitude
-		uStrCpy(loc->altitude, tokBuf);
-		break;
-	    default:
-		break;
-	}
     }
     return 0;
 }
@@ -357,7 +331,7 @@ uint8_t gpsNMEAChecksum(char *nmeaStr)
     uint8_t checksum = 0;
     nmeaStr++; // Skip initial character
     while(*nmeaStr)
-	checksum ^= *(nmeaStr++);
+		checksum ^= *(nmeaStr++);
     return checksum;
 }
 
@@ -369,30 +343,28 @@ msg_t gpsThread(void *arg)
 {
     gpsThread_t *thread = (gpsThread_t *) arg;
     msg_t message;
+    thread->running = 1;
     chBSemObjectInit(&gpsSem, false);
     // GPS Loop
     while(thread->running)
     {
-	//chprintf((BaseSequentialStream *) &SD2, "STGPS1\n");
-	//uartStartReceive(GPS.gpsUart, GPS_BUFFER_SIZE, gpsGetActiveRxBuffer());
-	chBSemWait(&gpsSem); 		// Wait for new NMEA string
-	chBSemReset(&gpsSem, false);	// Clear semaphore
-	uartStopReceive(GPS.gpsUart);
-	//chprintf((BaseSequentialStream *) &SD2, "GPS2\n");
-	// Parse Fix data if sentence is correct
-	if(gpsParseNMEAType(gpsGetActiveRxBuffer()) == FIX_DATA)
-	{
-	    //chprintf((BaseSequentialStream *) &SD2, "GPS3\n");
-	    chMtxLock(&(GPS.dataMutex));
-	    gpsParseFix(gpsGetActiveRxBuffer(), &(GPS.location));
-	    chMtxUnlock(&(GPS.dataMutex));
-	    //chprintf((BaseSequentialStream *) &SD2, "GPS4\n");
-	}
-	//chprintf((BaseSequentialStream *) &SD2, "GPS5\n");
-	chThdSleepMilliseconds(20);
+		//chprintf((BaseSequentialStream *) &DBG_SERIAL, "STGPS1\n");
+		//uartStartReceive(GPS.gpsUart, GPS_BUFFER_SIZE, gpsGetActiveRxBuffer());
+		chBSemWait(&gpsSem); 			// Wait for new NMEA string
+		chBSemReset(&gpsSem, false);	// Clear semaphore
+		uartStopReceive(GPS.gpsUart);
+		// Parse Fix data if sentence is correct
+		if(gpsParseNMEAType(gpsGetActiveRxBuffer()) == FIX_DATA)
+		{
+		    chMtxLock(&(GPS.dataMutex));
+		    gpsParseFix(gpsGetActiveRxBuffer(), &(GPS.location));
+		    chMtxUnlock(&(GPS.dataMutex));
+		}
+		//chThdSleepMilliseconds(10);
+	    chThdYield();
     }
-    //chprintf((BaseSequentialStream *) &SD2, "EXIT\n");
     gpsStop(&GPS);
+    //chThdExit();
     return message;
 }
 

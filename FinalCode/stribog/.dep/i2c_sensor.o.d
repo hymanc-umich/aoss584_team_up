@@ -86,7 +86,9 @@ build/obj/i2c_sensor.o: Drivers/i2c_sensor.c Drivers/i2c_sensor.h \
  /home/cody/dev/chibios/trunk/os/hal/include/usb.h \
  /home/cody/dev/chibios/trunk/os/hal/include/st.h \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
- /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h
+ /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
+ Drivers/../board.h /home/cody/dev/chibios/trunk/os/various/chprintf.h \
+ /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h
 
 Drivers/i2c_sensor.h:
 
@@ -273,3 +275,9 @@ mcuconf.h:
 /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h:
 
 /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h:
+
+Drivers/../board.h:
+
+/home/cody/dev/chibios/trunk/os/various/chprintf.h:
+
+/usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h:

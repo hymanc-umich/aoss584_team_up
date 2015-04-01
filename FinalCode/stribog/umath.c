@@ -1,14 +1,14 @@
 #include "umath.h"
 
 /**
- * 
+ * @param power Positive power
  */
-int32_t pow(int32_t base, uint32_t power)
+int32_t pow(int base, int power)
 {
     if(power == 0)
-    {
-	return 1;
-    }
+	   return 1;
+    if(power < 0)
+        return 0;
     int32_t i;
     int32_t result = 1;
     for(i = 0; i < power; i++)
@@ -21,7 +21,7 @@ int32_t pow(int32_t base, uint32_t power)
 /**
  * 
  */
-float powf(float base, int32_t power)
+float powf(float base, int power)
 {
     if(power == 0)
     {

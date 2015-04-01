@@ -32,7 +32,6 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdint.h>
-#include <stdfix.h>
 
 #include "board.h"
 #include "datasample.h"
@@ -69,10 +68,10 @@ FIL lFile;
 MMCDriver MMCD1;
 
 
-/* Debug Serial configuration, 115k2, 8N1 */
+/* Debug Serial configuration, 460k8, 8N1 */
 static SerialConfig serCfg = 
 {
-   115200,
+   460800,
    0,
    0,
    0,
@@ -110,7 +109,6 @@ void initialize(void)
     /* SPI/MMC Logger Startup */
     int8_t sdIni, dlIni, lfIni;
     chThdSleepMilliseconds(200); // Wait for SD startup
-    
     /*
     sdIni = sdmmcInitialize(&sd, &MMCD1, &DBG_SERIAL);
    	chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing Datalogger\n");
@@ -127,8 +125,7 @@ void initialize(void)
     {
 	   chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nERROR: SD Initialization Failed\n");
     }
-	*/
-
+    */
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
     
@@ -224,7 +221,7 @@ int main(void)
     while (TRUE) 
     {
     	deadline += MS2ST(1000); 
-		boardSetLED(1);
+		//boardSetLED(1);
 		gpsGetLocation(&location);// Check for new GPS NMEA sentence
 		printGps(&location);
 		chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");

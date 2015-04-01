@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccI1xUOJ.s 			page 1
+ARM GAS  /tmp/ccnAIJC3.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"i2c.c"
-  17              		.section	.gnu.lto_.jmpfuncs.d4de71855a09acc6,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.9e0899745a5647f1,"",%progbits
   18 0000 789C8DCE 		.ascii	"x\234\215\316\275\021\2000\010\005\340\367\200$:\205"
   18      BD118030 
   18      0805E0F7 
@@ -44,7 +44,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   23 0054 DE120712 		.ascii	"\336\022\007\022\207\014q"
   23      870C71
   24              		.text
-  25              		.section	.gnu.lto_.inline.d4de71855a09acc6,"",%progbits
+  25              		.section	.gnu.lto_.inline.9e0899745a5647f1,"",%progbits
   26 0000 789C6362 		.ascii	"x\234cb`b\300\006\204\031!4'\003\003\013\017#X\021\333"
   26      6062C006 
   26      84192134 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   28 0026 74819F81 		.ascii	"t\201\237\201\343\203\036X\222\211\033(7\301\217\211"
   28      E3831E58 
   28      92891B28 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 2
+ARM GAS  /tmp/ccnAIJC3.s 			page 2
 
 
   28      37C18F89 
@@ -89,7 +89,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   34      AF2C0300 
   34      298C2081 
   35              		.text
-  36              		.section	.gnu.lto_.pureconst.d4de71855a09acc6,"",%progbits
+  36              		.section	.gnu.lto_.pureconst.9e0899745a5647f1,"",%progbits
   37 0000 789C6362 		.ascii	"x\234cb`b\020f\200\000N\006\011F)&+f+\026VV+6+v\011"
   37      60621066 
   37      80004E06 
@@ -98,7 +98,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   38 001b 0E090010 		.ascii	"\016\011\000\020\006\001\224"
   38      060194
   39              		.text
-  40              		.section	.gnu.lto_i2cInit.d4de71855a09acc6,"",%progbits
+  40              		.section	.gnu.lto_i2cInit.9e0899745a5647f1,"",%progbits
   41 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\\\015\304\006@\314\310\314\300\310"
   41      60624007 
   41      92405C0D 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   44      CAD0D2D0 
   44      30418181 
   45 0044 2119AC20 		.ascii	"!\031\254 \004H\202t\20522\201h\346\363\014\315\017"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 3
+ARM GAS  /tmp/ccnAIJC3.s 			page 3
 
 
   45      04488274 
@@ -151,7 +151,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   50      00DC40
   51 00b0 32AC     		.ascii	"2\254"
   52              		.text
-  53              		.section	.gnu.lto_i2cObjectInit.d4de71855a09acc6,"",%progbits
+  53              		.section	.gnu.lto_i2cObjectInit.9e0899745a5647f1,"",%progbits
   54 0000 789C8D50 		.ascii	"x\234\215P=K\003A\020}\263\227S;m\355\004K\341\026\364"
   54      3D4B0341 
   54      107DB397 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   59 005b 5E124426 		.ascii	"^\022D&\000\241%\250\265Ki\355@$\343\351\364\372\346"
   59      00A125A8 
   59      B54B69ED 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 4
+ARM GAS  /tmp/ccnAIJC3.s 			page 4
 
 
   59      4024E3E9 
@@ -237,8 +237,8 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   70      14BD00DF 
   70      AF4E7A4D 
   71              		.text
-  72              		.section	.gnu.lto_i2cStart.d4de71855a09acc6,"",%progbits
-ARM GAS  /tmp/ccI1xUOJ.s 			page 5
+  72              		.section	.gnu.lto_i2cStart.9e0899745a5647f1,"",%progbits
+ARM GAS  /tmp/ccnAIJC3.s 			page 5
 
 
   73 0000 789C8D50 		.ascii	"x\234\215P=K\003A\020}\263\227h\320\302\224\332\204"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   84      131D92B4 
   84      2D6C3AC3 
   85 00d5 BE69D2D4 		.ascii	"\276i\322\324\022\227\015qo+\246\311\007\334\240Z\273"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 6
+ARM GAS  /tmp/ccnAIJC3.s 			page 6
 
 
   85      12970D71 
@@ -349,7 +349,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   94      2AE01304 
   94      12896D
   95              		.text
-  96              		.section	.gnu.lto_i2cStop.d4de71855a09acc6,"",%progbits
+  96              		.section	.gnu.lto_i2cStop.9e0899745a5647f1,"",%progbits
   97 0000 789C8D50 		.ascii	"x\234\215P\261J\003A\020\235\331\315\031\255L\251M\270"
   97      B14A0341 
   97      109DD9CD 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
   98 0012 C64AC98A 		.ascii	"\306J\311\212_\020\020\004\2134FA+\271l\016o1\227\223"
   98      5F101004 
   98      8B344641 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 7
+ARM GAS  /tmp/ccnAIJC3.s 			page 7
 
 
   98      2BB96C0E 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  109      18902CD5 
  109      2B1A4A32 
  109      5A197637 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 8
+ARM GAS  /tmp/ccnAIJC3.s 			page 8
 
 
  110 00f0 FECF072C 		.ascii	"\376\317\007,<\225\333\013\007\206\037\003[x\206qm\367"
@@ -455,7 +455,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  116      327C016A 
  116      287BB8
  117              		.text
- 118              		.section	.gnu.lto_i2cGetErrors.d4de71855a09acc6,"",%progbits
+ 118              		.section	.gnu.lto_i2cGetErrors.9e0899745a5647f1,"",%progbits
  119 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\023\210\015\200\230\221\231\201"
  119      60624007 
  119      92403C13 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  123 004a 04050686 		.ascii	"\004\005\006\206d07\004H\202\014\010ed\002\321\314g"
  123      64303704 
  123      48820C08 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 9
+ARM GAS  /tmp/ccnAIJC3.s 			page 9
 
 
  123      656402D1 
@@ -513,7 +513,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  129      28592F99 
  130 00c9 3666     		.ascii	"6f"
  131              		.text
- 132              		.section	.gnu.lto_i2cMasterTransmitTimeout.d4de71855a09acc6,"",%progbits
+ 132              		.section	.gnu.lto_i2cMasterTransmitTimeout.9e0899745a5647f1,"",%progbits
  133 0000 789C9D51 		.ascii	"x\234\235Q=h\024Q\020\236y\373s\277\344\002ZX\205E\020"
  133      3D681451 
  133      109E79FB 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  137      B3ECBC79 
  137      F3E6FB
  138 005d E6638601 		.ascii	"\346c\206\001\203\235v\234\376MJ/\320\211& \233_\003"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 10
+ARM GAS  /tmp/ccnAIJC3.s 			page 10
 
 
  138      839D769C 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  149      D4154936 
  149      2EAE6202 
  150 0137 5219B38F 		.ascii	"R\031\263\217^|\361\035w\242s\177Gc\212\316)y\357`I"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 11
+ARM GAS  /tmp/ccnAIJC3.s 			page 11
 
 
  150      5E7CF11D 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  161      72DAAADA 
  162 020d 42E81FB6 		.ascii	"B\350\037\266\016\034\001\026B&p\202F\330\206_\206<"
  162      0E1C0116 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 12
+ARM GAS  /tmp/ccnAIJC3.s 			page 12
 
 
  162      42267082 
@@ -666,7 +666,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  162      863C
  163 021f D8E1     		.ascii	"\330\341"
  164              		.text
- 165              		.section	.gnu.lto_i2cMasterReceiveTimeout.d4de71855a09acc6,"",%progbits
+ 165              		.section	.gnu.lto_i2cMasterReceiveTimeout.9e0899745a5647f1,"",%progbits
  166 0000 789C9D51 		.ascii	"x\234\235Q=h\024Q\020\236y\273{\177\036\\\320\306*,"
  166      3D681451 
  166      109E79BB 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  175      529E
  176 00b5 B285E530 		.ascii	"\262\205\3450\334X}\260\362\025\367\3546\321GH\223\303"
  176      DC587DB0 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 13
+ARM GAS  /tmp/ccnAIJC3.s 			page 13
 
 
  176      F215F7EC 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  187      32A1
  188 018d 3B141175 		.ascii	";\024\021u\326\377\207\210%D\326\216WZ\306G\244?Z!\374"
  188      D6FF8788 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 14
+ARM GAS  /tmp/ccnAIJC3.s 			page 14
 
 
  188      2544D68E 
@@ -816,7 +816,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  195 0213 7AD082DF 		.ascii	"z\320\202\337m|\330v"
  195      6D7CD876 
  196              		.text
- 197              		.section	.gnu.lto_i2cAcquireBus.d4de71855a09acc6,"",%progbits
+ 197              		.section	.gnu.lto_i2cAcquireBus.9e0899745a5647f1,"",%progbits
  198 0000 789C8D50 		.ascii	"x\234\215P\261J\304@\020}oc\304\322\326\316R\021\262"
  198      B14AC440 
  198      107D6F63 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  201      DECCB00A 
  202 004b 0A7F3123 		.ascii	"\012\1771#\361&\021H\320\001U\377\001\350M)\262\020"
  202      F1261148 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 15
+ARM GAS  /tmp/ccnAIJC3.s 			page 15
 
 
  202      D00155FF 
@@ -892,13 +892,13 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  212      27E32E60 
  212      8A
  213              		.text
- 214              		.section	.gnu.lto_i2cReleaseBus.d4de71855a09acc6,"",%progbits
+ 214              		.section	.gnu.lto_i2cReleaseBus.9e0899745a5647f1,"",%progbits
  215 0000 789C8D50 		.ascii	"x\234\215P1K\303P\020\376\276\027#\216\256n\256*\344"
  215      314BC350 
  215      10FEBE17 
  215      238EAE6E 
  215      AE2AE4
-ARM GAS  /tmp/ccI1xUOJ.s 			page 16
+ARM GAS  /tmp/ccnAIJC3.s 			page 16
 
 
  216 0013 81FE950A 		.ascii	"\201\376\225\012:\246/\245yh\015&U\320\016M\265\203"
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  227 00e4 910E6A87 		.ascii	"\221\016j\207\332\204\266j\243D7\343\203\275\035-\""
  227      DA84B66A 
  227      A34437E3 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 17
+ARM GAS  /tmp/ccnAIJC3.s 			page 17
 
 
  227      83BD1D2D 
@@ -971,7 +971,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  229 0107 F6427C02 		.ascii	"\366B|\002r\220a$"
  229      72906124 
  230              		.text
- 231              		.section	.gnu.lto_.symbol_nodes.d4de71855a09acc6,"",%progbits
+ 231              		.section	.gnu.lto_.symbol_nodes.9e0899745a5647f1,"",%progbits
  232 0000 789C4DC8 		.ascii	"x\234M\310I\012\302P\020\204\341\356zf\036\257\343\351"
  232      490AC250 
  232      1084E1EE 
@@ -1012,16 +1012,16 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  239      55BE
  240 008d A4D65EF9 		.ascii	"\244\326^\371"
  241              		.text
- 242              		.section	.gnu.lto_.refs.d4de71855a09acc6,"",%progbits
+ 242              		.section	.gnu.lto_.refs.9e0899745a5647f1,"",%progbits
  243 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
  243      60626064 
  243      80020000 
  243      460006
  244              		.text
-ARM GAS  /tmp/ccI1xUOJ.s 			page 18
+ARM GAS  /tmp/ccnAIJC3.s 			page 18
 
 
- 245              		.section	.gnu.lto_.decls.d4de71855a09acc6,"",%progbits
+ 245              		.section	.gnu.lto_.decls.9e0899745a5647f1,"",%progbits
  246 0000 789CBD5B 		.ascii	"x\234\275[\013t\024U\232\256\252\356t\247\223\020\036"
  246      0B741455 
  246      9AAEAAEE 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  257      FA779055 
  257      AB63
  258 00cf 716AFDFD 		.ascii	"qj\375\375&\355\311\370\251p\235\314*\374\246C\232\006"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 19
+ARM GAS  /tmp/ccnAIJC3.s 			page 19
 
 
  258      26EDC9F8 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  269      21BAD2FC 
  269      84B47D54 
  269      F559525F 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 20
+ARM GAS  /tmp/ccnAIJC3.s 			page 20
 
 
  269      60C0BACF 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  281      C5E83617 
  281      C31A8663 
  281      3EC32EAF 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 21
+ARM GAS  /tmp/ccnAIJC3.s 			page 21
 
 
  281      F5
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  293      E501CA4F 
  293      89873F79 
  293      6041DF
-ARM GAS  /tmp/ccI1xUOJ.s 			page 22
+ARM GAS  /tmp/ccnAIJC3.s 			page 22
 
 
  294 0353 E179F69E 		.ascii	"\341y\366\236\353\343\271\306\346\225\355\337\253B\036"
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  305      963806D3 
  305      337B8D06 
  305      5B6E076C 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 23
+ARM GAS  /tmp/ccnAIJC3.s 			page 23
 
 
  305      AC35B3
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  317      78267A7A 
  317      BFF6
  318 04f3 4CD4C891 		.ascii	"L\324\310\221\347\217\256\024\323\007\031\033P\255\213"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 24
+ARM GAS  /tmp/ccnAIJC3.s 			page 24
 
 
  318      E78FAE14 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  330 05c7 2D19E922 		.ascii	"-\031\351\"9_`\037Sk\310\215\227\371\177\357\007\273"
  330      395F601F 
  330      536BC88D 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 25
+ARM GAS  /tmp/ccnAIJC3.s 			page 25
 
 
  330      97F97FEF 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  341      4C5E
  342 06a2 09282F42 		.ascii	"\011(/B\2546\227N:4\\gg\3748O\343\357w.W=E9\373\336"
  342      AC36974E 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 26
+ARM GAS  /tmp/ccnAIJC3.s 			page 26
 
 
  342      3A345C67 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  353      9CF302E7 
  354 077c A752F51B 		.ascii	"\247R\365\033\210\015$\302\355c\350\254\013>\017\325"
  354      880D24C2 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 27
+ARM GAS  /tmp/ccnAIJC3.s 			page 27
 
 
  354      ED63E8AC 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  366      88C3B397 
  366      38B2
  367 0855 1A5E3604 		.ascii	"\032^6\004J\2213K3\210\247_\266\025$]\352^\211\247\""
-ARM GAS  /tmp/ccI1xUOJ.s 			page 28
+ARM GAS  /tmp/ccnAIJC3.s 			page 28
 
 
  367      4A91334B 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  378      474D4CF9 
  379 092e 2561CA26 		.ascii	"%a\312&\312\224K\320\224K-M97\335\206)\315B\026j<e\244"
  379      CA944BD0 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 29
+ARM GAS  /tmp/ccnAIJC3.s 			page 29
 
 
  379      944B2D4D 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  390      CC30AA
  391 0a04 D16588A2 		.ascii	"\321e\210\242\\\372(\312\345\213\025z{]\314?\2601\307"
  391      5CFA28CA 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 30
+ARM GAS  /tmp/ccnAIJC3.s 			page 30
 
 
  391      E58B157A 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  402      411AEC
  403 0add 53C76059 		.ascii	"S\307`Yf^\302\364q2\236m\307\250a\037\356\361\035\230"
  403      665EC2F4 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 31
+ARM GAS  /tmp/ccnAIJC3.s 			page 31
 
 
  403      71329E6D 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  414      6B9CB6B5 
  414      6BFC7864 
  414      81
-ARM GAS  /tmp/ccI1xUOJ.s 			page 32
+ARM GAS  /tmp/ccnAIJC3.s 			page 32
 
 
  415 0bb9 1A682BAB 		.ascii	"\032h+\253\315\026\244p:\351\345\376\332\021j\351ju"
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  426      EBA6
  427 0c84 36588F7D 		.ascii	"6X\217}J_\216\371\001\333\375\300\015\261\010]\325\021"
  427      4A5F8EF9 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 33
+ARM GAS  /tmp/ccnAIJC3.s 			page 33
 
 
  427      01DBFDC0 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  438      89
  439 0d5c B3A2B6D4 		.ascii	"\263\242\266\324M\037r\251\034\354\277E;q\371\223\377"
  439      4D1F72A9 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 34
+ARM GAS  /tmp/ccnAIJC3.s 			page 34
 
 
  439      1CECBF45 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  450      7DBD
  451 0e2c E96272BE 		.ascii	"\351br\276\323|\317\213\267\222lu\260\222D'\205\305"
  451      D37CCF8B 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 35
+ARM GAS  /tmp/ccnAIJC3.s 			page 35
 
 
  451      B7926C75 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  462      3683881C 
  462      3EF9
  463 0f02 A4CCEACD 		.ascii	"\244\314\352\315t\336\002\340\250)\300\373'\237\274"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 36
+ARM GAS  /tmp/ccnAIJC3.s 			page 36
 
 
  463      74DE02E0 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  475      58FFB4A5 
  476 0fd6 F517C5B1 		.ascii	"\365\027\305\261\376_-{m\215\323\353K\243\317D\226\302"
  476      FE5F2D7B 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 37
+ARM GAS  /tmp/ccnAIJC3.s 			page 37
 
 
  476      6D8DD3EB 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  488 10a5 7985B5D0 		.ascii	"y\205\265\320\262\262:X!\210\341\354\373\362\362\240"
  488      B2B23A58 
  488      2188E1EC 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 38
+ARM GAS  /tmp/ccnAIJC3.s 			page 38
 
 
  488      FBF2F2A0 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  499      BE524895 
  500 1182 122F8137 		.ascii	"\022/\2017y\211\302F\202\033(\252\203\0224\307\337\274"
  500      7989C246 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 39
+ARM GAS  /tmp/ccnAIJC3.s 			page 39
 
 
  500      821B28AA 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  511      9B027FC9 
  511      83F45D
  512 1257 D183D873 		.ascii	"\321\203\330s\374\204\274\373\013\362\363\355PP\334"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 40
+ARM GAS  /tmp/ccnAIJC3.s 			page 40
 
 
  512      FC84BCFB 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  523      D1A354F9 
  523      80
  524 1329 395F5A2A 		.ascii	"9_Z*\372%\\\227\200\207\244.1\244\350&?\371\304\332"
-ARM GAS  /tmp/ccI1xUOJ.s 			page 41
+ARM GAS  /tmp/ccnAIJC3.s 			page 41
 
 
  524      FA255C97 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  536 1405 0CB8DE27 		.ascii	"\014\270\336'H\005h\350\\\334\033*\202S\262\247\006"
  536      480568E8 
  536      5CDC1B2A 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 42
+ARM GAS  /tmp/ccnAIJC3.s 			page 42
 
 
  536      8253B2A7 
@@ -2517,8 +2517,8 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  547      1FFC792D 
  547      23
  548              		.text
- 549              		.section	.gnu.lto_.symtab.d4de71855a09acc6,"",%progbits
-ARM GAS  /tmp/ccI1xUOJ.s 			page 43
+ 549              		.section	.gnu.lto_.symtab.9e0899745a5647f1,"",%progbits
+ARM GAS  /tmp/ccnAIJC3.s 			page 43
 
 
  550 0000 69326349 		.ascii	"i2cInit\000\000\000\000\000\000\000\000\000\000\000"
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  561      00693263 
  561      52656C65 
  561      61736542 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 44
+ARM GAS  /tmp/ccnAIJC3.s 			page 44
 
 
  562 00fa 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000\000G\002\000\000"
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  573      59020000 
  573      63684D74 
  573      78556E6C 
-ARM GAS  /tmp/ccI1xUOJ.s 			page 45
+ARM GAS  /tmp/ccnAIJC3.s 			page 45
 
 
  573      6F636B00 
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  602              		.type	i2cObjectInit, %function
  603              	i2cObjectInit:
  604              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccI1xUOJ.s 			page 46
+ARM GAS  /tmp/ccnAIJC3.s 			page 46
 
 
  605              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  659 000a FFF7FEFF 		bl	i2c_lld_stop
  660 000e 0123     		movs	r3, #1
  661 0010 2370     		strb	r3, [r4]
-ARM GAS  /tmp/ccI1xUOJ.s 			page 47
+ARM GAS  /tmp/ccnAIJC3.s 			page 47
 
 
  662 0012 0023     		movs	r3, #0
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  714 002e 0523     		moveq	r3, #5
  715 0030 0223     		movne	r3, #2
  716 0032 2370     		strb	r3, [r4]
-ARM GAS  /tmp/ccI1xUOJ.s 			page 48
+ARM GAS  /tmp/ccnAIJC3.s 			page 48
 
 
  717 0034 0023     		movs	r3, #0
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  771              		.type	i2cAcquireBus, %function
  772              	i2cAcquireBus:
  773              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccI1xUOJ.s 			page 49
+ARM GAS  /tmp/ccnAIJC3.s 			page 49
 
 
  774              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2906,29 +2906,29 @@ ARM GAS  /tmp/ccI1xUOJ.s 			page 1
  794 0006 00BFAFF3 		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
  794      0080AFF3 
  794      0080
-ARM GAS  /tmp/ccI1xUOJ.s 			page 50
+ARM GAS  /tmp/ccnAIJC3.s 			page 50
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 i2c.c
-     /tmp/ccI1xUOJ.s:584    .text.i2cInit:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:590    .text.i2cInit:0000000000000000 i2cInit
-     /tmp/ccI1xUOJ.s:597    .text.i2cObjectInit:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:603    .text.i2cObjectInit:0000000000000000 i2cObjectInit
-     /tmp/ccI1xUOJ.s:615    .text.i2cStart:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:621    .text.i2cStart:0000000000000000 i2cStart
-     /tmp/ccI1xUOJ.s:643    .text.i2cStop:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:649    .text.i2cStop:0000000000000000 i2cStop
-     /tmp/ccI1xUOJ.s:670    .text.i2cGetErrors:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:676    .text.i2cGetErrors:0000000000000000 i2cGetErrors
-     /tmp/ccI1xUOJ.s:684    .text.i2cMasterTransmitTimeout:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:690    .text.i2cMasterTransmitTimeout:0000000000000000 i2cMasterTransmitTimeout
-     /tmp/ccI1xUOJ.s:727    .text.i2cMasterReceiveTimeout:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:733    .text.i2cMasterReceiveTimeout:0000000000000000 i2cMasterReceiveTimeout
-     /tmp/ccI1xUOJ.s:766    .text.i2cAcquireBus:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:772    .text.i2cAcquireBus:0000000000000000 i2cAcquireBus
-     /tmp/ccI1xUOJ.s:780    .text.i2cReleaseBus:0000000000000000 $t
-     /tmp/ccI1xUOJ.s:786    .text.i2cReleaseBus:0000000000000000 i2cReleaseBus
+     /tmp/ccnAIJC3.s:584    .text.i2cInit:0000000000000000 $t
+     /tmp/ccnAIJC3.s:590    .text.i2cInit:0000000000000000 i2cInit
+     /tmp/ccnAIJC3.s:597    .text.i2cObjectInit:0000000000000000 $t
+     /tmp/ccnAIJC3.s:603    .text.i2cObjectInit:0000000000000000 i2cObjectInit
+     /tmp/ccnAIJC3.s:615    .text.i2cStart:0000000000000000 $t
+     /tmp/ccnAIJC3.s:621    .text.i2cStart:0000000000000000 i2cStart
+     /tmp/ccnAIJC3.s:643    .text.i2cStop:0000000000000000 $t
+     /tmp/ccnAIJC3.s:649    .text.i2cStop:0000000000000000 i2cStop
+     /tmp/ccnAIJC3.s:670    .text.i2cGetErrors:0000000000000000 $t
+     /tmp/ccnAIJC3.s:676    .text.i2cGetErrors:0000000000000000 i2cGetErrors
+     /tmp/ccnAIJC3.s:684    .text.i2cMasterTransmitTimeout:0000000000000000 $t
+     /tmp/ccnAIJC3.s:690    .text.i2cMasterTransmitTimeout:0000000000000000 i2cMasterTransmitTimeout
+     /tmp/ccnAIJC3.s:727    .text.i2cMasterReceiveTimeout:0000000000000000 $t
+     /tmp/ccnAIJC3.s:733    .text.i2cMasterReceiveTimeout:0000000000000000 i2cMasterReceiveTimeout
+     /tmp/ccnAIJC3.s:766    .text.i2cAcquireBus:0000000000000000 $t
+     /tmp/ccnAIJC3.s:772    .text.i2cAcquireBus:0000000000000000 i2cAcquireBus
+     /tmp/ccnAIJC3.s:780    .text.i2cReleaseBus:0000000000000000 $t
+     /tmp/ccnAIJC3.s:786    .text.i2cReleaseBus:0000000000000000 i2cReleaseBus
                             *COM*:0000000000000001 __gnu_lto_v1
 
 UNDEFINED SYMBOLS

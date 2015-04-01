@@ -1,0 +1,6 @@
+== DMA Mapping ==
+Ext I2C		RX:(1,2):TX(1,4)
+Int I2C		RX:(1,0):TX(1,6)
+SD SPI		RX:(1,0):TX(1,7) -- Error: SPI3.RX DMA channel overlaps w/ II2C.RX
+GPS UART	RX:(2,5):TX(2,7)
+ADC			Stream(2,4)

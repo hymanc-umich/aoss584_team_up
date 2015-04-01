@@ -10,6 +10,8 @@ static I2CConfig ms5607_i2c_cfg =
    FAST_DUTY_CYCLE_2
 };
 
+static uint8_t sensCount = 0;
+
 static systime_t timeout;
 
 
@@ -22,14 +24,15 @@ static systime_t timeout;
  */
 msg_t ms5607_init(ms5607_t *m, I2CDriver *driver, uint8_t baseAddr)
 {
-    I2CSensor_init(&(m->sensor), driver, baseAddr, MS2ST(20));
-    uint8_t promBuffer[2];
+	char name[11] = "MS5607-X";
+	name[7] = '0' + sensCount++;
+    I2CSensor_init(&(m->sensor), driver, baseAddr, m->txBuffer, m->rxBuffer, MS2ST(20), name);
     uint8_t i;
     for(i=1; i<6; i++)
     {
-		uint8_t txCmd = MS5607_READ_PROM(i);
-		I2CSensor_transact(&(m->sensor), &txCmd, 1, promBuffer, 2); // Read out cal coefficients
-		m->cal[i-1] = (promBuffer[0]<<8) + promBuffer[1];
+		m->txBuffer[0] = MS5607_READ_PROM(i);
+		I2CSensor_transact_buf(&(m->sensor), 1, 2); // Read out cal coefficients
+		m->cal[i-1] = (m->rxBuffer[0]<<8) + m->rxBuffer[1];
     }
     return 0;
 }
@@ -50,8 +53,8 @@ msg_t ms5607_stop(ms5607_t *m, bool stopI2C)
  */
 msg_t ms5607_reset(ms5607_t *m)
 {
-    uint8_t resetCmd = MS5607_RESET;
-    return I2CSensor_transact(&m->sensor, &resetCmd, 1, NULL, 0);
+    m->txBuffer[0] = MS5607_RESET;
+    return I2CSensor_transact_buf(&m->sensor, 1, 0);
 }
 
 /**
@@ -62,22 +65,21 @@ msg_t ms5607_reset(ms5607_t *m)
  * @return I2C status
  */
 msg_t ms5607_readPressureTemperature(ms5607_t *m, float *pressure, float *temperature)
-{
-    uint8_t regAddr; 
+{ 
     uint8_t pressureData[3];
     uint8_t tempData[3];
     // Start temperature conversion
-    regAddr = MS5607_TEMPERATURE_CONVERT;
-    msg_t status = I2CSensor_transact(&(m->sensor), &regAddr, 1, NULL, 0);
+    m->txBuffer[0] = MS5607_TEMPERATURE_CONVERT;
+    msg_t status = I2CSensor_transact_buf(&(m->sensor), 1, 0);
     chThdSleepMilliseconds(11);
-    regAddr = MS5607_READ_ADC_RESULT;
-    status |= I2CSensor_transact(&(m->sensor), &regAddr, 1, tempData, 3);
+    m->txBuffer[0] = MS5607_READ_ADC_RESULT;
+    status |= I2CSensor_transact(&(m->sensor), m->txBuffer, 1, tempData, 3);
     // Start pressure conversion
-    regAddr = MS5607_PRESSURE_CONVERT;
-    status |= I2CSensor_transact(&(m->sensor), &regAddr, 1, NULL, 0);
+    m->txBuffer[0] = MS5607_PRESSURE_CONVERT;
+    status |= I2CSensor_transact_buf(&(m->sensor), 1, 0);
     chThdSleepMilliseconds(11);     // Wait for conversion
-    regAddr = MS5607_READ_ADC_RESULT;
-    status |= I2CSensor_transact(&(m->sensor), &regAddr, 1, pressureData, 3);
+    m->txBuffer[0] = MS5607_READ_ADC_RESULT;
+    status |= I2CSensor_transact(&(m->sensor), m->txBuffer, 1, pressureData, 3);
     
     if(status == 0)
     {

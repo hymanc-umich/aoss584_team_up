@@ -36,9 +36,10 @@
 #endif
 
 #if !defined(STM32_HSECLK)
-#define STM32_HSECLK                0
+#define STM32_HSECLK                16000000
 #endif
 
+#define STM32_HSE_BYPASS            TRUE
 /*
  * Board voltages.
  * Required for performance limits calculation.
@@ -1326,8 +1327,8 @@ extern "C" {
 // Internal I2C
 #define II2C_I2CD	    I2CD1
 #define II2C_PORT	    GPIOB
-#define II2C_SCL_PIN	6
-#define II2C_SDA_PIN	7
+#define II2C_SCL_PIN	8
+#define II2C_SDA_PIN	9
 
 // External I2C
 #define EI2C_I2CD	    I2CD3

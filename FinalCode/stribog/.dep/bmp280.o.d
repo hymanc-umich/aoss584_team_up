@@ -86,7 +86,8 @@ build/obj/bmp280.o: Drivers/bmp280.c Drivers/bmp280.h \
  /home/cody/dev/chibios/trunk/os/hal/include/usb.h \
  /home/cody/dev/chibios/trunk/os/hal/include/st.h \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
- /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h
+ /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
+ Drivers/../board.h
 
 Drivers/bmp280.h:
 
@@ -275,3 +276,5 @@ mcuconf.h:
 /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h:
 
 /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h:
+
+Drivers/../board.h:

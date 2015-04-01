@@ -1,5 +1,7 @@
 #include "tmp275.h"
 
+static uint8_t sensCount = 0;
+
 /**
  * @brief Initialize TMP275 temperature sensor
  * @param tmp TMP275 sensor struct
@@ -8,7 +10,9 @@
  */
 void tmp275_init(tmp275_t *tmp, I2CDriver *driver, uint8_t baseAddr)
 {
-    I2CSensor_init(&tmp->sensor, driver, baseAddr, MS2ST(4));
+    char name[11] = "TMP275-X";
+    name[7] = '0' + sensCount++;
+    I2CSensor_init(&tmp->sensor, driver, baseAddr, tmp->txBuffer, tmp->rxBuffer, MS2ST(4), name);
     // TODO: set config to defaults
 }
 
@@ -20,7 +24,7 @@ void tmp275_init(tmp275_t *tmp, I2CDriver *driver, uint8_t baseAddr)
  */
 msg_t tmp275_stop(tmp275_t *tmp, bool stopI2C)
 {
-    return I2CSesnsor_stop(&tmp->sensor, stopI2C);
+    return I2CSensor_stop(&tmp->sensor, stopI2C);
 }
 
 /**
@@ -31,8 +35,9 @@ msg_t tmp275_stop(tmp275_t *tmp, bool stopI2C)
  */
 msg_t tmp275_writeConfig(tmp275_t *tmp, uint8_t value)
 {
-    uint8_t txBytes[2] = {TMP275_CONFIGURATION, value};
-    I2CSensor_transact(&tmp->sensor, txBytes, 2, NULL, 0);
+    tmp->txBuffer[0] = TMP275_CONFIGURATION;
+    tmp->txBuffer[1] = value;
+    I2CSensor_transact_buf(&tmp->sensor, 2, 0);
 }
 
 /**
@@ -43,13 +48,13 @@ msg_t tmp275_writeConfig(tmp275_t *tmp, uint8_t value)
  */
 msg_t tmp275_readTemperature(tmp275_t *tmp, float *temp)
 {
-    uint8_t tregAddr = TMP275_TEMPERATURE;
+    tmp->txBuffer[0] = TMP275_TEMPERATURE;
     uint8_t tbuf[2];
-    msg_t status = I2CSensor_transact(&tmp->sensor, &tregAddr, 1, tbuf, 2);
+    msg_t status = I2CSensor_transact_buf(&tmp->sensor, 1, 2);
     if(status == 0)
     {
-	int16_t rawTemp = (int16_t) ((tbuf[0]<<8)|(tbuf[1]));
-	*temp = (1.0f*rawTemp)*TMP275_RESOLUTION; // Format temperature
+    	int16_t rawTemp = (int16_t) ((tmp->rxBuffer[0]<<8)|(tmp->rxBuffer[1]));
+    	*temp = (1.0f*rawTemp)*TMP275_RESOLUTION; // Format temperature
     }
     return status;
     
@@ -63,8 +68,9 @@ msg_t tmp275_readTemperature(tmp275_t *tmp, float *temp)
  */
 msg_t tmp275_writeTHigh(tmp275_t *tmp, int16_t tempLimit)
 {
-    uint8_t txBytes[2] = {(uint8_t)(tempLimit>>8)&0xFF, (uint8_t)(tempLimit&0xFF)};
-    return I2CSensor_transact(&tmp->sensor, txBytes, 2, NULL, 0);
+    tmp->txBuffer[0] = (uint8_t)(tempLimit>>8)&0xFF;
+    tmp->txBuffer[1] =  (uint8_t)(tempLimit&0xFF);
+    return I2CSensor_transact_buf(&tmp->sensor, 2, 0);
 }
 
 /**
@@ -75,6 +81,7 @@ msg_t tmp275_writeTHigh(tmp275_t *tmp, int16_t tempLimit)
  */
 msg_t tmp275_writeTLow(tmp275_t *tmp, int16_t tempLimit)
 {
-    uint8_t txBytes[2] = {(uint8_t) (tempLimit>>8)&0xFF, (uint8_t)(tempLimit&0xFF)};
-    return I2CSensor_transact(&tmp->sensor, txBytes, 2, NULL, 0);
+    tmp->txBuffer[0] = (uint8_t) (tempLimit>>8)&0xFF;
+    tmp->txBuffer[1] = (uint8_t)(tempLimit&0xFF);
+    return I2CSensor_transact_buf(&tmp->sensor, 2, 0);
 }

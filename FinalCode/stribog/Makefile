@@ -111,7 +111,6 @@ CSRC = $(PORTSRC) \
        $(FATFSSRC) \
        $(CHIBIOS)/os/various/chprintf.c \
        $(CHIBIOS)/os/various/memstreams.c \
-       $(DRIVERS)/analog_sensor.c \
        $(DRIVERS)/i2c_sensor.c \
        $(DRIVERS)/bmp280.c \
        $(DRIVERS)/si70x0.c \
@@ -121,6 +120,7 @@ CSRC = $(PORTSRC) \
        $(DRIVERS)/rfm23bp.c \
        $(DRIVERS)/rtd.c \
        $(DRIVERS)/tmp275.c \
+       $(DRIVERS)/mpxm2102.c \
        datasample.c \
        sensor_thread.c \
        ustr.c \

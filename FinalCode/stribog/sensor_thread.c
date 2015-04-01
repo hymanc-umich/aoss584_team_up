@@ -1,13 +1,14 @@
 #include "sensor_thread.h"
 #include "board.h"
+#include "chprintf.h"
 
 
 static SerialDriver * DEBUG;
 
 static const I2CConfig i2cfg = {
     OPMODE_I2C,
-    400000,
-    FAST_DUTY_CYCLE_2,
+    100000,
+    FAST_DUTY_CYCLE_2
 };
 
 /*
@@ -55,6 +56,7 @@ static adcsample_t analogSamples[ANALOG_DEPTH*ANALOG_CHANNELS];
 msg_t sensorThread(void *arg)
 {
     sensorThread_t *thread = (sensorThread_t *) arg;
+    thread->running = 1;
     msg_t message;
     chMtxObjectInit(&thread->data.mtx); // Initialize Mutex
     
@@ -64,36 +66,42 @@ msg_t sensorThread(void *arg)
     i2cStart(&EI2C_I2CD, &i2cfg);
     
     // Initialize sensors
-    tmp275_init(&(thread->tmp275), &EI2C_I2CD, 0b1001000);	  // Initialize TMP275
-    si70x0_init(&(thread->extSi7020), &EI2C_I2CD, 0b1000000); // Initialize External Si7020
-    si70x0_init(&(thread->intSi7020), &II2C_I2CD, 0b1000000); // Initialize Internal Si7020
-    ms5607_init(&(thread->ms5607), &EI2C_I2CD, 0b1110110);    // Initialize MS5607
-    
+    tmp275_init(&(thread->tmp275), &EI2C_I2CD, 0b1001000);	            // Initialize TMP275
+    si70x0_init(&(thread->extSi7020), &EI2C_I2CD, 0b1000000);           // Initialize External Si7020
+    si70x0_init(&(thread->intSi7020), &II2C_I2CD, 0b1000000);           // Initialize Internal Si7020
+    ms5607_init(&(thread->ms5607), &EI2C_I2CD, 0b1110110);              // Initialize MS5607
+    lsm303_init(&(thread->lsm303), &II2C_I2CD, 0b0011101, 0b0011110);   // Initialize LSM303
+    bmp280_init(&(thread->bmp280), &II2C_I2CD, 0b1110110);              // Initialize BMP280
+    thread->data.humdInt = 0;
     // Sensor Loop
     systime_t deadline = chVTGetSystemTimeX();
     while(thread->running)
     {
         deadline += MS2ST(100); // Set master sampling rate at ~10Hz
+        boardSetLED(1);
     	/*
          * Read I2C sensors
          */
+         
         //External Temp 2
     	tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
     	
         // TODO: Internal Pressure        
 
         // Internal Humidity
-        si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
-    	
+        msg_t ihstat = si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
+    	chprintf((BaseSequentialStream *) &DBG_SERIAL, "Si7020 Read: %d\n", (int) ihstat);
+        chprintf((BaseSequentialStream *) &DBG_SERIAL, "HUMIDITY:%f\n",thread->data.humdInt);
         // External Humidity 1
 
         // External Humidity 2
-
+        
         // External Pressure 2
-        ms5607_readPressure(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
+        ms5607_readPressureTemperature(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
 
         // Accelerometer
-
+        lsm303_readAcceleration(&(thread->lsm303), 1);
+        // Get out 
         // Magnetometer 
 
     	// Perform ADC read
@@ -101,12 +109,13 @@ msg_t sensorThread(void *arg)
         // Analog processing
 
         // Sleep
+        boardSetLED(0);
         if(chVTGetSystemTimeX() < deadline)
             chThdSleepUntil(deadline);
         else
             deadline = chVTGetSystemTimeX();
     }
-
+    //chThdExit();
     return message;
 }
 

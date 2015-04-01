@@ -18,6 +18,7 @@
 #include "Drivers/si70x0.h"
 #include "Drivers/tmp275.h"
 #include "Drivers/rtd.h"
+#include "Drivers/mpxm2102.h"
 
 #define ANALOG_DEPTH 50
 #define ANALOG_CHANNELS  3
@@ -51,7 +52,6 @@ typedef struct
     ms5607_t ms5607;
     si70x0_t intSi7020;
     si70x0_t extSi7020;
-    rtd_t rtd;
     tmp275_t tmp275;
 }sensorThread_t;
 

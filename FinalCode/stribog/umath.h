@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-int32_t pow(int32_t base, uint32_t power);
-float powf(float base, int32_t power);
+int32_t pow(int base, int power);
+float powf(float base, int power);
 
 #endif

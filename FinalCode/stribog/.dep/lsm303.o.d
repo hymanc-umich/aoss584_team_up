@@ -86,7 +86,8 @@ build/obj/lsm303.o: Drivers/lsm303.c Drivers/lsm303.h \
  /home/cody/dev/chibios/trunk/os/hal/include/usb.h \
  /home/cody/dev/chibios/trunk/os/hal/include/st.h \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
- /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h
+ /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
+ Drivers/../board.h
 
 Drivers/lsm303.h:
 
@@ -275,3 +276,5 @@ mcuconf.h:
 /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h:
 
 /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h:
+
+Drivers/../board.h:

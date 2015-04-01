@@ -1,5 +1,7 @@
 #include "bmp280.h"
 
+static uint8_t sensCount = 0;
+
 /**
  * @brief Initialize BMP280 I2C pressure sensor
  * @param bmp BMP280 sensor struct
@@ -8,7 +10,11 @@
  */
 void bmp280_init(bmp280_t *bmp, I2CDriver *driver, uint8_t baseAddr)
 {
-    I2CSensor_init(&bmp->sensor, driver, baseAddr, MS2ST(4));
+    char name[11] = "BMP280-X";
+    name[7] = '0' + sensCount++;
+    I2CSensor_init(&bmp->sensor, driver, baseAddr, bmp->txBuffer, bmp->rxBuffer, MS2ST(4), "BMP280");
+
+    msg_t status = I2CSensor_transact(&bmp->sensor, bmp->txBuffer, 2, bmp->rxBuffer, 2);
     // TODO: Read cal coefficients
 }
 

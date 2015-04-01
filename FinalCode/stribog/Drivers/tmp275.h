@@ -26,6 +26,8 @@
 typedef struct
 {
     I2CSensor_t sensor;
+    uint8_t txBuffer[4];
+    uint8_t rxBuffer[6];
 }tmp275_t;
 
 void tmp275_init(tmp275_t *tmp, I2CDriver *driver, uint8_t baseAddr);

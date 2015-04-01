@@ -86,7 +86,9 @@ build/obj/si70x0.o: Drivers/si70x0.c Drivers/si70x0.h \
  /home/cody/dev/chibios/trunk/os/hal/include/usb.h \
  /home/cody/dev/chibios/trunk/os/hal/include/st.h \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
- /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h
+ /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
+ Drivers/../board.h /home/cody/dev/chibios/trunk/os/various/chprintf.h \
+ /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h
 
 Drivers/si70x0.h:
 
@@ -275,3 +277,9 @@ mcuconf.h:
 /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h:
 
 /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h:
+
+Drivers/../board.h:
+
+/home/cody/dev/chibios/trunk/os/various/chprintf.h:
+
+/usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h:

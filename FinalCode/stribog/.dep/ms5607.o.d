@@ -86,7 +86,8 @@ build/obj/ms5607.o: Drivers/ms5607.c Drivers/ms5607.h \
  /home/cody/dev/chibios/trunk/os/hal/include/usb.h \
  /home/cody/dev/chibios/trunk/os/hal/include/st.h \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
- /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h
+ /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
+ Drivers/../board.h
 
 Drivers/ms5607.h:
 
@@ -275,3 +276,5 @@ mcuconf.h:
 /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h:
 
 /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h:
+
+Drivers/../board.h:

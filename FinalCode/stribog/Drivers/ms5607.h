@@ -32,6 +32,8 @@ typedef struct
     uint16_t cal[6];	// Calibration coefficients
     float lastTemp;
     float lastPress;
+    uint8_t txBuffer[4];
+    uint8_t rxBuffer[16];
 }ms5607_t;
 
 msg_t ms5607_init(ms5607_t *m, I2CDriver *driver, uint8_t baseAddr);

@@ -5,7 +5,7 @@
  */
 void hih6030_init(hih6030_t *hih, I2CDriver *driver, uint8_t baseAddr)
 {
-    I2CSensor_init(&(hih->sensor), driver, baseAddr, MS2ST(4));
+    I2CSensor_init(&(hih->sensor), driver, baseAddr, hih->txBuffer, hih->rxBuffer, MS2ST(4), "HIH6030");
 }
 
 /**

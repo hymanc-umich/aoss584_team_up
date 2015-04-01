@@ -19,7 +19,7 @@
 #define BMP280_CTRL_MEAS	0xF4
 #define BMP280_STATUS		0xF3
 #define BMP280_RESET		0xE0
-#define BMP280_ID		0xD0
+#define BMP280_ID			0xD0
 #define BMP280_CALIB00		0x88
 #define BMP280_CALIB(CPARAM)	(0x88+2*N)	
 
@@ -33,6 +33,8 @@ typedef struct
     float lastPressure;
     int32_t T[3];    // Temperature compensation coefficients
     int32_t P[9];    // Pressure compensation coefficients
+    uint8_t txBuffer[4];
+    uint8_t rxBuffer[16];
 }bmp280_t;
 
 void bmp280_init(bmp280_t *bmp, I2CDriver *driver, uint8_t baseAddr);

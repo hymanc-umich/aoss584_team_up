@@ -6,6 +6,8 @@
 typedef struct
 {
     I2CSensor_t sensor;
+    uint8_t txBuffer[4];
+    uint8_t rxBuffer[10];
 }hih6030_t;
 
 void hih6030_init(hih6030_t *hih, I2CDriver *driver, uint8_t baseAddr);
