@@ -109,7 +109,7 @@ void initialize(void)
     /* SPI/MMC Logger Startup */
     int8_t sdIni, dlIni, lfIni;
     chThdSleepMilliseconds(200); // Wait for SD startup
-    /*
+    /* // SD
     sdIni = sdmmcInitialize(&sd, &MMCD1, &DBG_SERIAL);
    	chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing Datalogger\n");
     chThdSleepMilliseconds(100);
@@ -218,6 +218,8 @@ int main(void)
     
     //openNewLogfile(logfileCounter++);
     //writeHeader();
+
+    // 1Hz Master Loop
     systime_t deadline = chVTGetSystemTimeX();
     while (TRUE) 
     {

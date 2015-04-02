@@ -75,7 +75,7 @@ msg_t I2CSensor_transact(I2CSensor_t *sensor, uint8_t *txb, uint8_t txc, uint8_t
             }
             else
             {
-                chprintf((BaseSequentialStream *) I2C_SENSOR_SERLOG, "I2C:%s TRX SUCCESS\n", sensor->name);
+                //chprintf((BaseSequentialStream *) I2C_SENSOR_SERLOG, "I2C:%s TRX SUCCESS\n", sensor->name);
             }
         #endif
         return status;

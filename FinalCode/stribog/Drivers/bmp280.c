@@ -2,6 +2,17 @@
 
 static uint8_t sensCount = 0;
 
+/*
+static float bmp280_compensateTemp(int32_t adc)
+{
+    float v1, v2;
+    v1 = (((float) adc)/16384.0f - ((float)dig_T1)/1024.0f) * ((float)dig_T2);
+    v2 = ((((float) adc)/131072.0f - ((float) dig_T1)/8192.0f) * 
+        (((float)adc)/131072.0f - ((float) dig_T1)/8192.0f)) * ((float) dig_T3);
+    return (v1 + v2)/5120.0f;
+}
+*/
+
 /**
  * @brief Initialize BMP280 I2C pressure sensor
  * @param bmp BMP280 sensor struct

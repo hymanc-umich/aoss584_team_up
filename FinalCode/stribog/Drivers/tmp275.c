@@ -13,7 +13,9 @@ void tmp275_init(tmp275_t *tmp, I2CDriver *driver, uint8_t baseAddr)
     char name[11] = "TMP275-X";
     name[7] = '0' + sensCount++;
     I2CSensor_init(&tmp->sensor, driver, baseAddr, tmp->txBuffer, tmp->rxBuffer, MS2ST(4), name);
-    // TODO: set config to defaults
+    tmp275_writeConfig(tmp, 0);
+    tmp275_writeTHigh(tmp, -128);
+    tmp275_writeTLow(tmp, 127);
 }
 
 /**
@@ -49,12 +51,16 @@ msg_t tmp275_writeConfig(tmp275_t *tmp, uint8_t value)
 msg_t tmp275_readTemperature(tmp275_t *tmp, float *temp)
 {
     tmp->txBuffer[0] = TMP275_TEMPERATURE;
-    uint8_t tbuf[2];
     msg_t status = I2CSensor_transact_buf(&tmp->sensor, 1, 2);
     if(status == 0)
     {
-    	int16_t rawTemp = (int16_t) ((tmp->rxBuffer[0]<<8)|(tmp->rxBuffer[1]));
-    	*temp = (1.0f*rawTemp)*TMP275_RESOLUTION; // Format temperature
+        int16_t rawTemp = (int16_t) ((tmp->rxBuffer[0] << 8) | tmp->rxBuffer[1]);
+        if(temp != NULL)
+        {
+            *temp = (rawTemp)*TMP275_RESOLUTION;
+        }
+    	//int16_t rawTemp = (int16_t) ((tmp->rxBuffer[0]*256.0) | (tmp->rxBuffer[1]));
+    	//*temp = (1.0f*rawTemp)*TMP275_RESOLUTION; // Format temperature
     }
     return status;
     

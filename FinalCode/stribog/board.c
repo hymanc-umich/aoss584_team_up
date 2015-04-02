@@ -121,15 +121,16 @@ bool mmc_lld_is_write_protected(MMCDriver *mmcp)
  */
 void boardInit(void)
 {
+  /*
     // Serial I/O Cfg
-    palSetPadMode(DBG_PORT, DBG_TX_PIN, PAL_MODE_ALTERNATE(8)); // Debug Tx
-    palSetPadMode(DBG_PORT, DBG_RX_PIN, PAL_MODE_ALTERNATE(8));	// Debug Rx
+    palSetPadMode(DBG_PORT, DBG_TX_PIN, PAL_MODE_ALTERNATE(8) | PAL_STM32_OTYPE_PUSHPULL | PAL_STM32_OSPEED_HIGHEST); // Debug Tx
+    palSetPadMode(DBG_PORT, DBG_RX_PIN, PAL_MODE_ALTERNATE(8)); // Debug Rx
     
     palSetPadMode(GPS_PORT, GPS_TX_PIN, PAL_MODE_ALTERNATE(7)); // GPS Tx
     palSetPadMode(GPS_PORT, GPS_RX_PIN, PAL_MODE_ALTERNATE(7)); // GPS Rx
     palSetPadMode(COM_PORT, COM_TX_PIN, PAL_MODE_ALTERNATE(7)); // COM Tx
     palSetPadMode(COM_PORT, COM_RX_PIN, PAL_MODE_ALTERNATE(7)); // COM Rx
-    
+    */
     // I2C
     palSetPadMode(II2C_PORT, II2C_SDA_PIN, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
     palSetPadMode(II2C_PORT, II2C_SCL_PIN, PAL_MODE_ALTERNATE(4) | PAL_STM32_OTYPE_OPENDRAIN);
@@ -141,17 +142,17 @@ void boardInit(void)
     
     // Trigger- LED
     palSetPadMode(LED_TRIG_PORT ,LED_TRIG_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
-
+/*
     // SD SPI
     palSetPadMode(SD_CS_PORT, SD_CS_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
     palSetPadMode(SD_CD_PORT, SD_CD_PIN, PAL_MODE_INPUT_PULLUP);
     //palSetPadMode(GPIOC, 10, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
     //palSetPadMode(GPIOC, 11, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
     //palSetPadMode(GPIOC, 12, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
-    palSetPadMode(SD_SCK_PORT, SD_SCK_PIN, PAL_MODE_ALTERNATE(6) | PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
+    palSetPadMode(SD_SCK_PORT, SD_SCK_PIN, PAL_STM32_MODE_ALTERNATE | PAL_STM32_ALTERNATE(6) | PAL_STM32_OTYPE_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
     palSetPadMode(SD_MOSI_PORT, SD_MOSI_PIN, PAL_MODE_ALTERNATE(6) | PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
     palSetPadMode(SD_MISO_PORT, SD_MISO_PIN, PAL_MODE_ALTERNATE(6) | PAL_MODE_INPUT_PULLUP);
-    
+    */
 }
 
 /**
@@ -159,10 +160,10 @@ void boardInit(void)
  */
 void boardSetBuzzer(bool on)
 {
-    if(on)
-	palSetPad(PIEZO_PORT, PIEZO_PIN);
-    else
-	palClearPad(PIEZO_PORT, PIEZO_PIN);
+  if(on)
+    palSetPad(PIEZO_PORT, PIEZO_PIN);
+  else
+    palClearPad(PIEZO_PORT, PIEZO_PIN);
 }
 
 /**
@@ -171,7 +172,7 @@ void boardSetBuzzer(bool on)
 void boardSetLED(bool on)
 {
     if(on)
-	palSetPad(LED_TRIG_PORT, LED_TRIG_PIN);
+        palSetPad(LED_TRIG_PORT, LED_TRIG_PIN);
     else
-	palClearPad(LED_TRIG_PORT, LED_TRIG_PIN);
+        palClearPad(LED_TRIG_PORT, LED_TRIG_PIN);
 }

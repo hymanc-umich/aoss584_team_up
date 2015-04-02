@@ -10,12 +10,12 @@ static uint8_t sensCount = 0;
  * @param driver ChibiOS I2C Driver
  * @return 
  */
-void si70x0_init(si70x0_t *s, I2CDriver *driver, uint8_t baseAddr)
+void si70x0_init(si70x0_t *s, I2CDriver *driver)
 {
     char name[11] = "Si70x0-X";
     name[7] = '0' + sensCount++;
     systime_t timeout = MS2ST(SI70X0_TIMEOUT);
-    I2CSensor_init(&s->sensor, driver, 0b1000000, s->txBuffer, s->rxBuffer, timeout, name);
+    I2CSensor_init(&s->sensor, driver, SI70X0_DEFAULT_ADDRESS, s->txBuffer, s->rxBuffer, timeout, name);
     si70x0_setResolution(s, H11T11);
 }
 

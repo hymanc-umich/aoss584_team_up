@@ -4,14 +4,15 @@
 #include "i2c_sensor.h"
 
 // TMP275 registers
-#define TMP275_TEMPERATURE 	0x00
+#define TMP275_TEMPERATURE 		0x00
 #define TMP275_CONFIGURATION 	0x01
-#define TMP275_TLOW		0x02
-#define TMP275_THIGH		0x03
+#define TMP275_TLOW				0x02
+#define TMP275_THIGH			0x03
 
 // Resolution settings
-#define TMP275_RES_BM		0b11
-#define TMP275_RESOLUTION	(0.5f/(2*TMP275_RES_BM))
+#define TMP275_RES_BM			0b00		// 9 bit resolution
+#define TMP275_RESOLUTION		0.00390625f // 0.5C/128: Left-adjust resolution is valid for all settings
+
 
 // Configuration register bits
 #define TMP275_OS		7	// One-shot
@@ -25,9 +26,9 @@
 
 typedef struct
 {
-    I2CSensor_t sensor;
-    uint8_t txBuffer[4];
-    uint8_t rxBuffer[6];
+    I2CSensor_t sensor;		// I2C sensor
+    uint8_t txBuffer[4];	// Tx buffer
+    uint8_t rxBuffer[6];	// Rx buffer
 }tmp275_t;
 
 void tmp275_init(tmp275_t *tmp, I2CDriver *driver, uint8_t baseAddr);

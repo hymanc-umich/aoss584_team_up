@@ -3,8 +3,8 @@
 
 #include "i2c_sensor.h"
 
-#define SI70X0_TIMEOUT				50
-#define SI7020_DEFAULT_ADDRESS 		0b10000000
+#define SI70X0_TIMEOUT				30
+#define SI70X0_DEFAULT_ADDRESS 		0b10000000
 
 // Si7020 Commands
 #define SI70X0_MEASURE_RH_HOLD		0xE5
@@ -44,7 +44,7 @@ typedef struct
     uint8_t rxBuffer[10];
 }si70x0_t;
 
-void si70x0_init(si70x0_t *s, I2CDriver *driver, uint8_t baseAddr);
+void si70x0_init(si70x0_t *s, I2CDriver *driver);
 msg_t si70x0_stop(si70x0_t *s, bool stopI2C);
 msg_t si70x0_reset(si70x0_t *s);
 msg_t si70x0_setResolution(si70x0_t *s, si70x0_resolution resolution);

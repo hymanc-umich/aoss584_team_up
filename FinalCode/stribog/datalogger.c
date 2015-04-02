@@ -87,7 +87,7 @@ int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length, bool openClose)
     int written;
     if(openClose)
     {
-	res = logfileOpenAppend(log->file);
+	res = logfileOpenAppend(log);
 	if(res)
 	    return res;
     }
@@ -189,4 +189,5 @@ msg_t dataloggerThread(void *arg)
 	// Write data to storage
 	chThdSleepMilliseconds(thread->sleepTime); // Sleep
     }
+    return MSG_OK;
 }
