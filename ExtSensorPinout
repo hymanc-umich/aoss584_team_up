@@ -1,0 +1,23 @@
+Connector 1 (Analog Temp):
+GrnWht	: 5V		: 3->3
+OrngWht	: TMP+		: 1->5
+OrngSol	: TMP-		: 5->1
+GrnSol	: Ground	: 2->4
+
+Connector 2 (EI2C):
+BluSol 	: +3.3V		: 6->9
+BrnSol 	: SCL		: 8->7
+BrnWht 	: SDA		: 7->8
+BluWht	: Ground 	: 9->6
+
+
+== NEW CABLE ==
+1-Yellow
+2-NC
+3-Gray
+4-Red
+5-Orange
+6-Black
+7-Gray
+8-White
+9-Blue

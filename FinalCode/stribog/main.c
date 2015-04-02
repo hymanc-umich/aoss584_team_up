@@ -1,20 +1,3 @@
-/* ADC Defines */
-#define ADC_BUF_DEPTH 1 
-#define SENSOR_ADC_CH_NUM 4
-#define ACC_ADC_CH_NUM 3
-#define ADC_CH_NUM 7
-
-#define NSAMPLES 30
-#define SAMPLE_MAX 60
-
-#define S_TEMP1	0
-#define S_TEMP2 1
-#define S_PRESS 2
-#define S_HUMD  3
-#define S_ACCX  4
-#define S_ACCY  5
-#define S_ACCZ  6
-
 #include "ch.h"
 #include "hal.h"
 #include "chvt.h"

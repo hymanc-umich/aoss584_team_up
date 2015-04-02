@@ -1,0 +1,1413 @@
+Archive member included because of file (symbol)
+
+/usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                              /tmp/ccut6pPh.ltrans0.ltrans.o (__aeabi_dsub)
+/usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+                              /tmp/ccut6pPh.ltrans0.ltrans.o (__aeabi_dmul)
+/usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+                              /tmp/ccut6pPh.ltrans0.ltrans.o (__aeabi_d2iz)
+/usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+                              /tmp/ccut6pPh.ltrans0.ltrans.o (__aeabi_d2f)
+/usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+                              /tmp/ccut6pPh.ltrans1.ltrans.o (strcpy)
+/usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+                              /tmp/ccut6pPh.ltrans2.ltrans.o (strlen)
+/usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+                              /tmp/ccut6pPh.ltrans2.ltrans.o (strncmp)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
+ .bss           0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
+ .text          0x0000000000000000        0x0 build/obj/crt0.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+ .text          0x0000000000000000        0x0 build/obj/vectors.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chcore.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chcore_v7m.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chsys.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chdebug.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chtm.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chstats.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chschd.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chvt.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chthreads.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chdynamic.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chregistry.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chsem.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmtx.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chcond.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chevents.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmsg.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmboxes.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chqueues.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmemcore.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chheap.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmempools.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/test.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testthd.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testsem.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testmtx.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testmsg.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testmbox.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testevt.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testheap.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testpools.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testdyn.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testqueues.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/testbmk.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_queues.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_mmcsd.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/adc.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/can.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/dac.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/ext.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/gpt.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/i2c.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/i2s.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/icu.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/mac.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/mmc_spi.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/pal.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/pwm.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/rtc.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/sdc.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/serial.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/serial_usb.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/spi.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/st.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/uart.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/usb.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/osal.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/nvic.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/stm32_dma.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/adc_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/ext_lld_isr.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/can_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/ext_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/mac_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/sdc_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/dac_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/pal_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/i2c_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/usb_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/rtc_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/i2s_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/spi_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/gpt_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/icu_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/pwm_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/st_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/serial_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/uart_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/board.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/fatfs_diskio.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/fatfs_syscall.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/ff.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/unicode.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chprintf.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/memstreams.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/i2c_sensor.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/bmp280.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/si70x0.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/ms5607.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hih6030.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/lsm303.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/rfm23bp.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/rtd.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/tmp275.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/mpxm2102.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/xbeepro.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/datasample.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/sensor_thread.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/ustr.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/umath.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/gps.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/sdmmcsimple.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/datalogger.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/main.o (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x0000000008000000 0x0000000000040000
+ram              0x0000000020000000 0x0000000000010000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/obj/chcoreasm_v7m.o
+LOAD build/obj/crt0.o
+LOAD /tmp/ccut6pPh.ltrans0.ltrans.o
+LOAD /tmp/ccut6pPh.ltrans1.ltrans.o
+LOAD /tmp/ccut6pPh.ltrans2.ltrans.o
+LOAD /tmp/ccut6pPh.ltrans3.ltrans.o
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a
+LOAD build/obj/vectors.o
+LOAD build/obj/chcore.o
+LOAD build/obj/chcore_v7m.o
+LOAD build/obj/chsys.o
+LOAD build/obj/chdebug.o
+LOAD build/obj/chtm.o
+LOAD build/obj/chstats.o
+LOAD build/obj/chschd.o
+LOAD build/obj/chvt.o
+LOAD build/obj/chthreads.o
+LOAD build/obj/chdynamic.o
+LOAD build/obj/chregistry.o
+LOAD build/obj/chsem.o
+LOAD build/obj/chmtx.o
+LOAD build/obj/chcond.o
+LOAD build/obj/chevents.o
+LOAD build/obj/chmsg.o
+LOAD build/obj/chmboxes.o
+LOAD build/obj/chqueues.o
+LOAD build/obj/chmemcore.o
+LOAD build/obj/chheap.o
+LOAD build/obj/chmempools.o
+LOAD build/obj/test.o
+LOAD build/obj/testthd.o
+LOAD build/obj/testsem.o
+LOAD build/obj/testmtx.o
+LOAD build/obj/testmsg.o
+LOAD build/obj/testmbox.o
+LOAD build/obj/testevt.o
+LOAD build/obj/testheap.o
+LOAD build/obj/testpools.o
+LOAD build/obj/testdyn.o
+LOAD build/obj/testqueues.o
+LOAD build/obj/testbmk.o
+LOAD build/obj/hal.o
+LOAD build/obj/hal_queues.o
+LOAD build/obj/hal_mmcsd.o
+LOAD build/obj/adc.o
+LOAD build/obj/can.o
+LOAD build/obj/dac.o
+LOAD build/obj/ext.o
+LOAD build/obj/gpt.o
+LOAD build/obj/i2c.o
+LOAD build/obj/i2s.o
+LOAD build/obj/icu.o
+LOAD build/obj/mac.o
+LOAD build/obj/mmc_spi.o
+LOAD build/obj/pal.o
+LOAD build/obj/pwm.o
+LOAD build/obj/rtc.o
+LOAD build/obj/sdc.o
+LOAD build/obj/serial.o
+LOAD build/obj/serial_usb.o
+LOAD build/obj/spi.o
+LOAD build/obj/st.o
+LOAD build/obj/uart.o
+LOAD build/obj/usb.o
+LOAD build/obj/osal.o
+LOAD build/obj/nvic.o
+LOAD build/obj/stm32_dma.o
+LOAD build/obj/hal_lld.o
+LOAD build/obj/adc_lld.o
+LOAD build/obj/ext_lld_isr.o
+LOAD build/obj/can_lld.o
+LOAD build/obj/ext_lld.o
+LOAD build/obj/mac_lld.o
+LOAD build/obj/sdc_lld.o
+LOAD build/obj/dac_lld.o
+LOAD build/obj/pal_lld.o
+LOAD build/obj/i2c_lld.o
+LOAD build/obj/usb_lld.o
+LOAD build/obj/rtc_lld.o
+LOAD build/obj/i2s_lld.o
+LOAD build/obj/spi_lld.o
+LOAD build/obj/gpt_lld.o
+LOAD build/obj/icu_lld.o
+LOAD build/obj/pwm_lld.o
+LOAD build/obj/st_lld.o
+LOAD build/obj/serial_lld.o
+LOAD build/obj/uart_lld.o
+LOAD build/obj/board.o
+LOAD build/obj/fatfs_diskio.o
+LOAD build/obj/fatfs_syscall.o
+LOAD build/obj/ff.o
+LOAD build/obj/unicode.o
+LOAD build/obj/chprintf.o
+LOAD build/obj/memstreams.o
+LOAD build/obj/i2c_sensor.o
+LOAD build/obj/bmp280.o
+LOAD build/obj/si70x0.o
+LOAD build/obj/ms5607.o
+LOAD build/obj/hih6030.o
+LOAD build/obj/lsm303.o
+LOAD build/obj/rfm23bp.o
+LOAD build/obj/rtd.o
+LOAD build/obj/tmp275.o
+LOAD build/obj/mpxm2102.o
+LOAD build/obj/xbeepro.o
+LOAD build/obj/datasample.o
+LOAD build/obj/sensor_thread.o
+LOAD build/obj/ustr.o
+LOAD build/obj/umath.o
+LOAD build/obj/gps.o
+LOAD build/obj/sdmmcsimple.o
+LOAD build/obj/datalogger.o
+LOAD build/obj/main.o
+                0x0000000020000000                __ram_start__ = ORIGIN (ram)
+                0x0000000000010000                __ram_size__ = 0x10000
+                0x0000000020010000                __ram_end__ = (__ram_start__ + __ram_size__)
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                _text = .
+
+startup         0x0000000008000000      0x1c0
+ *(vectors)
+ vectors        0x0000000008000000      0x1c0 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000008000000                _vectors
+
+constructors    0x00000000080001c0        0x0
+                0x00000000080001c0                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x00000000080001c0                PROVIDE (__init_array_end, .)
+
+destructors     0x00000000080001c0        0x0
+                0x00000000080001c0                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x00000000080001c0                PROVIDE (__fini_array_end, .)
+
+.text           0x00000000080001c0     0x44dc
+ *(.text.startup.*)
+ .text.startup.main
+                0x00000000080001c0      0x860 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x00000000080001c0                main
+ *(.text)
+ .text          0x0000000008000a20       0x2e build/obj/chcoreasm_v7m.o
+                0x0000000008000a20                _port_switch
+                0x0000000008000a38                _port_thread_start
+                0x0000000008000a46                _port_switch_from_isr
+                0x0000000008000a4a                _port_exit_from_isr
+ *fill*         0x0000000008000a4e        0x2 
+ .text          0x0000000008000a50      0x370 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                0x0000000008000a50                __aeabi_drsub
+                0x0000000008000a58                __aeabi_dsub
+                0x0000000008000a58                __subdf3
+                0x0000000008000a5c                __adddf3
+                0x0000000008000a5c                __aeabi_dadd
+                0x0000000008000cd4                __aeabi_ui2d
+                0x0000000008000cd4                __floatunsidf
+                0x0000000008000cf4                __floatsidf
+                0x0000000008000cf4                __aeabi_i2d
+                0x0000000008000d18                __extendsfdf2
+                0x0000000008000d18                __aeabi_f2d
+                0x0000000008000d54                __aeabi_ul2d
+                0x0000000008000d54                __floatundidf
+                0x0000000008000d64                __floatdidf
+                0x0000000008000d64                __aeabi_l2d
+ .text          0x0000000008000dc0      0x424 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+                0x0000000008000dc0                __aeabi_dmul
+                0x0000000008000dc0                __muldf3
+                0x0000000008001014                __aeabi_ddiv
+                0x0000000008001014                __divdf3
+ *fill*         0x00000000080011e4        0xc 
+ .text          0x00000000080011f0       0x50 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+                0x00000000080011f0                __fixdfsi
+                0x00000000080011f0                __aeabi_d2iz
+ .text          0x0000000008001240       0xa0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+                0x0000000008001240                __aeabi_d2f
+                0x0000000008001240                __truncdfsf2
+ *(.text.*)
+ .text.gpsRxErr.15990
+                0x00000000080012e0       0x10 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080012e0                gpsRxErr.15990
+ .text.gpsRxEnd.15987
+                0x00000000080012f0       0x10 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080012f0                gpsRxEnd.15987
+ .text.gpsTxC.15984
+                0x0000000008001300       0x10 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001300                gpsTxC.15984
+ .text.gpsTxbufEnd.15981
+                0x0000000008001310       0x10 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001310                gpsTxbufEnd.15981
+ .text.long_to_string_with_divisor.13045.4408
+                0x0000000008001320       0x50 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .text.notify6.12010
+                0x0000000008001370       0x10 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001370                notify6.12010
+ .text.notify2.12013
+                0x0000000008001380       0x10 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001380                notify2.12013
+ .text.adc_lld_stop_conversion.4505
+                0x0000000008001390       0x40 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .text.chCoreAlloc
+                0x00000000080013d0       0x40 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080013d0                chCoreAlloc
+ .text.wakeup.4718
+                0x0000000008001410       0x70 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001410                wakeup.4718
+ .text._idle_thread.4338
+                0x0000000008001480       0x20 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001480                _idle_thread.4338
+ .text.SVC_Handler
+                0x00000000080014a0       0x20 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080014a0                SVC_Handler
+ .text.chSchWakeupS.constprop.36.4263
+                0x00000000080014c0       0x60 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .text.chvprintf.constprop.38
+                0x0000000008001520      0x390 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001520                chvprintf.constprop.38
+ .text.chThdCreateStatic
+                0x00000000080018b0       0x80 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080018b0                chThdCreateStatic
+ .text.chMtxUnlock
+                0x0000000008001930       0x60 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001930                chMtxUnlock
+ .text.chTMStartMeasurementX.constprop.30
+                0x0000000008001990       0x10 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001990                chTMStartMeasurementX.constprop.30
+ .text.sdObjectInit.constprop.25
+                0x00000000080019a0       0x70 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080019a0                sdObjectInit.constprop.25
+ .text.uStrCpy.constprop.4
+                0x0000000008001a10       0x40 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001a10                uStrCpy.constprop.4
+ .text.uStrInsertChar.constprop.3
+                0x0000000008001a50       0x40 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001a50                uStrInsertChar.constprop.3
+ .text.uStrPrependChar
+                0x0000000008001a90       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001a90                uStrPrependChar
+ .text.usart_stop.12171
+                0x0000000008001ac0       0x50 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001ac0                usart_stop.12171
+ .text.dmaStreamRelease
+                0x0000000008001b10       0x70 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001b10                dmaStreamRelease
+ .text.dmaStreamAllocate
+                0x0000000008001b80       0xc0 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001b80                dmaStreamAllocate
+ .text.chSchDoRescheduleAhead
+                0x0000000008001c40       0x40 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001c40                chSchDoRescheduleAhead
+ .text.chSchRescheduleS
+                0x0000000008001c80       0x20 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001c80                chSchRescheduleS
+ .text.chSchGoSleepS
+                0x0000000008001ca0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001ca0                chSchGoSleepS
+ .text._port_irq_epilogue
+                0x0000000008001cd0       0x70 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001cd0                _port_irq_epilogue
+ .text.VectorD4
+                0x0000000008001d40       0x70 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001d40                VectorD4
+ .text.Vector158
+                0x0000000008001db0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001db0                Vector158
+ .text.Vector154
+                0x0000000008001de0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001de0                Vector154
+ .text.Vector150
+                0x0000000008001e10       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001e10                Vector150
+ .text.Vector130
+                0x0000000008001e40       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001e40                Vector130
+ .text.Vector12C
+                0x0000000008001e70       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001e70                Vector12C
+ .text.Vector128
+                0x0000000008001ea0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001ea0                Vector128
+ .text.Vector124
+                0x0000000008001ed0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001ed0                Vector124
+ .text.Vector120
+                0x0000000008001f00       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001f00                Vector120
+ .text.VectorFC
+                0x0000000008001f30       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001f30                VectorFC
+ .text.Vector84
+                0x0000000008001f60       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001f60                Vector84
+ .text.Vector80
+                0x0000000008001f90       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001f90                Vector80
+ .text.Vector7C
+                0x0000000008001fc0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001fc0                Vector7C
+ .text.Vector78
+                0x0000000008001ff0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008001ff0                Vector78
+ .text.Vector74
+                0x0000000008002020       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002020                Vector74
+ .text.Vector70
+                0x0000000008002050       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002050                Vector70
+ .text.Vector6C
+                0x0000000008002080       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002080                Vector6C
+ .text.chSchReadyI
+                0x00000000080020b0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080020b0                chSchReadyI
+ .text.gpsRxChar.16011
+                0x00000000080020e0       0x90 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080020e0                gpsRxChar.16011
+ .text.chEvtBroadcastFlagsI
+                0x0000000008002170       0x60 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002170                chEvtBroadcastFlagsI
+ .text.chMtxLockS
+                0x00000000080021d0       0xd0 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080021d0                chMtxLockS
+ .text.chThdResumeI.4581
+                0x00000000080022a0       0x20 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .text.i2c_lld_serve_rx_end_irq.11402
+                0x00000000080022c0       0x70 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080022c0                i2c_lld_serve_rx_end_irq.11402
+ .text.i2c_lld_serve_error_interrupt.11412.4432
+                0x0000000008002330       0xb0 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .text.Vector164
+                0x00000000080023e0       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080023e0                Vector164
+ .text.VectorC0
+                0x0000000008002410       0x30 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002410                VectorC0
+ .text.i2c_lld_serve_event_interrupt.11409.4436
+                0x0000000008002440      0x100 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .text.Vector160
+                0x0000000008002540       0x20 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002540                Vector160
+ .text.VectorBC
+                0x0000000008002560       0x20 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002560                VectorBC
+ .text.Vector88
+                0x0000000008002580       0x70 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002580                Vector88
+ .text.adc_lld_serve_rx_interrupt.11091
+                0x00000000080025f0       0xd0 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080025f0                adc_lld_serve_rx_interrupt.11091
+ .text.chTMStopMeasurementX
+                0x00000000080026c0       0x50 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x00000000080026c0                chTMStopMeasurementX
+ .text._unhandled_exception.4614
+                0x0000000008002710       0x10 /tmp/ccut6pPh.ltrans0.ltrans.o
+                0x0000000008002710                Vector58
+                0x0000000008002710                VectorE8
+                0x0000000008002710                Vector9C
+                0x0000000008002710                VectorAC
+                0x0000000008002710                DebugMon_Handler
+                0x0000000008002710                Vector1A0
+                0x0000000008002710                Vector5C
+                0x0000000008002710                Vector11C
+                0x0000000008002710                HardFault_Handler
+                0x0000000008002710                Vector1B8
+                0x0000000008002710                Vector19C
+                0x0000000008002710                Vector8C
+                0x0000000008002710                SysTick_Handler
+                0x0000000008002710                VectorDC
+                0x0000000008002710                PendSV_Handler
+                0x0000000008002710                Vector168
+                0x0000000008002710                NMI_Handler
+                0x0000000008002710                Vector110
+                0x0000000008002710                VectorC8
+                0x0000000008002710                Vector94
+                0x0000000008002710                VectorA8
+                0x0000000008002710                VectorB4
+                0x0000000008002710                Vector1B0
+                0x0000000008002710                UsageFault_Handler
+                0x0000000008002710                VectorEC
+                0x0000000008002710                Vector40
+                0x0000000008002710                VectorF8
+                0x0000000008002710                Vector108
+                0x0000000008002710                Vector190
+                0x0000000008002710                Vector148
+                0x0000000008002710                Vector188
+                0x0000000008002710                Vector198
+                0x0000000008002710                Vector118
+                0x0000000008002710                Vector64
+                0x0000000008002710                VectorCC
+                0x0000000008002710                Vector54
+                0x0000000008002710                Vector98
+                0x0000000008002710                Vector138
+                0x0000000008002710                Vector24
+                0x0000000008002710                Vector1AC
+                0x0000000008002710                Vector178
+                0x0000000008002710                Vector1A4
+                0x0000000008002710                VectorD0
+                0x0000000008002710                Vector1B4
+                0x0000000008002710                Vector140
+                0x0000000008002710                VectorE4
+                0x0000000008002710                Vector134
+                0x0000000008002710                VectorF0
+                0x0000000008002710                Vector13C
+                0x0000000008002710                Vector100
+                0x0000000008002710                VectorE0
+                0x0000000008002710                VectorF4
+                0x0000000008002710                MemManage_Handler
+                0x0000000008002710                VectorA0
+                0x0000000008002710                VectorC4
+                0x0000000008002710                Vector180
+                0x0000000008002710                Vector90
+                0x0000000008002710                Vector114
+                0x0000000008002710                Vector60
+                0x0000000008002710                Vector1C
+                0x0000000008002710                Vector1BC
+                0x0000000008002710                Vector17C
+                0x0000000008002710                Vector48
+                0x0000000008002710                Vector1A8
+                0x0000000008002710                Vector16C
+                0x0000000008002710                Vector4C
+                0x0000000008002710                Vector144
+                0x0000000008002710                Vector68
+                0x0000000008002710                Vector170
+                0x0000000008002710                Vector104
+                0x0000000008002710                Vector184
+                0x0000000008002710                Vector10C
+                0x0000000008002710                Vector14C
+                0x0000000008002710                BusFault_Handler
+                0x0000000008002710                Vector50
+                0x0000000008002710                Vector194
+                0x0000000008002710                Vector44
+                0x0000000008002710                Vector28
+                0x0000000008002710                VectorB8
+                0x0000000008002710                Vector34
+                0x0000000008002710                VectorA4
+                0x0000000008002710                Vector20
+                0x0000000008002710                Vector18C
+                0x0000000008002710                Vector174
+ .text.i2c_lld_serve_tx_end_irq.11398
+                0x0000000008002720       0x50 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000008002720                i2c_lld_serve_tx_end_irq.11398
+ .text.uart_lld_serve_rx_end_irq.12164.4442
+                0x0000000008002770       0x90 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .text.uart_lld_serve_tx_end_irq.12160.4446
+                0x0000000008002800       0x60 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .text.I2CSensor_transact
+                0x0000000008002860      0x130 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000008002860                I2CSensor_transact
+ .text.I2CSensor_transact_buf
+                0x0000000008002990       0x20 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000008002990                I2CSensor_transact_buf
+ .text.si70x0_init
+                0x00000000080029b0       0x90 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x00000000080029b0                si70x0_init
+ .text.si70x0_heaterEnable
+                0x0000000008002a40       0x50 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000008002a40                si70x0_heaterEnable
+ .text.si70x0_readTemperature
+                0x0000000008002a90       0x60 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000008002a90                si70x0_readTemperature
+ .text.si70x0_readHumidity
+                0x0000000008002af0       0x70 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000008002af0                si70x0_readHumidity
+ .text.chThdSleep
+                0x0000000008002b60       0x20 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000008002b60                chThdSleep
+ .text.VectorB0
+                0x0000000008002b80       0x90 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008002b80                VectorB0
+ .text.chprintf.15997.constprop.1.4506
+                0x0000000008002c10       0x20 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .text.gpsThread
+                0x0000000008002c30      0x3f0 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008002c30                gpsThread
+ .text.chSchGoSleepTimeoutS
+                0x0000000008003020       0xe0 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003020                chSchGoSleepTimeoutS
+ .text.chThdSleepUntil
+                0x0000000008003100       0x20 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003100                chThdSleepUntil
+ .text.chThdEnqueueTimeoutS.4305
+                0x0000000008003120       0x30 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .text.chIQGetTimeout.4250
+                0x0000000008003150       0x50 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .text.gett.10196
+                0x00000000080031a0       0x10 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x00000000080031a0                gett.10196
+ .text.get.10200
+                0x00000000080031b0       0x10 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x00000000080031b0                get.10200
+ .text.chIQReadTimeout.4265
+                0x00000000080031c0       0x80 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .text.readt.10173
+                0x0000000008003240       0x10 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003240                readt.10173
+ .text.read.10180
+                0x0000000008003250       0x10 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003250                read.10180
+ .text.chOQPutTimeout.4280
+                0x0000000008003260       0x50 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .text.putt.10203
+                0x00000000080032b0       0x10 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x00000000080032b0                putt.10203
+ .text.put.10208
+                0x00000000080032c0       0x10 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x00000000080032c0                put.10208
+ .text.chOQWriteTimeout.4299
+                0x00000000080032d0       0x80 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .text.writet.10185
+                0x0000000008003350       0x10 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003350                writet.10185
+ .text.write.10191
+                0x0000000008003360       0x10 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003360                write.10191
+ .text.sd_lld_start
+                0x0000000008003370       0xd0 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003370                sd_lld_start
+ .text.i2c_lld_start
+                0x0000000008003440      0x200 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003440                i2c_lld_start
+ .text.chprintf.15614.constprop.5
+                0x0000000008003640       0x20 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003640                chprintf.15614.constprop.5
+ .text.chprintf.13294.constprop.12
+                0x0000000008003660       0x20 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003660                chprintf.13294.constprop.12
+ .text.I2CSensor_init
+                0x0000000008003680       0x60 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008003680                I2CSensor_init
+ .text.chprintf.17224.constprop.37
+                0x00000000080036e0       0x20 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x00000000080036e0                chprintf.17224.constprop.37
+ .text.sensorThread
+                0x0000000008003700      0x6c0 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000008003700                sensorThread
+ .text.serve_interrupt.12020.4423
+                0x0000000008003dc0      0x1a0 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .text.Vector15C.4418
+                0x0000000008003f60       0x20 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .text.VectorD8.4421
+                0x0000000008003f80       0x20 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .text.Reset_Handler
+                0x0000000008003fa0      0x1c0 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000008003fa0                Reset_Handler
+ .text.chThdExit
+                0x0000000008004160       0x50 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000008004160                chThdExit
+ .text.chSchDoReschedule
+                0x00000000080041b0       0x10 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x00000000080041b0                chSchDoReschedule
+ .text.strcpy   0x00000000080041c0       0xbc /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+                0x00000000080041c0                strcpy
+ *fill*         0x000000000800427c        0x4 
+ .text.strlen   0x0000000008004280       0x60 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+                0x0000000008004280                strlen
+ .text.strncmp  0x00000000080042e0       0xb4 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+                0x00000000080042e0                strncmp
+ *(.rodata)
+ *fill*         0x0000000008004394        0xc 
+ .rodata        0x00000000080043a0        0xc /tmp/ccut6pPh.ltrans1.ltrans.o
+ *fill*         0x00000000080043ac        0x4 
+ .rodata        0x00000000080043b0       0x18 /tmp/ccut6pPh.ltrans3.ltrans.o
+ *(.rodata.*)
+ *fill*         0x00000000080043c8        0x8 
+ .rodata.pow10.13096.4752
+                0x00000000080043d0       0x24 /tmp/ccut6pPh.ltrans0.ltrans.o
+ *fill*         0x00000000080043f4        0xc 
+ .rodata.str1.4
+                0x0000000008004400       0x1c /tmp/ccut6pPh.ltrans0.ltrans.o
+ *fill*         0x000000000800441c        0x4 
+ .rodata.ch_debug
+                0x0000000008004420       0x18 /tmp/ccut6pPh.ltrans1.ltrans.o
+ *fill*         0x0000000008004438        0x8 
+ .rodata.str1.4
+                0x0000000008004440       0x6a /tmp/ccut6pPh.ltrans1.ltrans.o
+                                         0x7c (size before relaxing)
+ *fill*         0x00000000080044aa        0x6 
+ .rodata._stm32_dma_streams
+                0x00000000080044b0       0xc0 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .rodata.vmt.10284
+                0x0000000008004570       0x20 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x0000000008004570                vmt.10284
+ .rodata.str1.4
+                0x0000000008004590       0x2f /tmp/ccut6pPh.ltrans2.ltrans.o
+                                         0x30 (size before relaxing)
+ *fill*         0x00000000080045bf        0x1 
+ .rodata.default_config.12051.4640
+                0x00000000080045c0        0xc /tmp/ccut6pPh.ltrans2.ltrans.o
+ *fill*         0x00000000080045cc        0x4 
+ .rodata.str1.4
+                0x00000000080045d0       0x7c /tmp/ccut6pPh.ltrans3.ltrans.o
+ *fill*         0x000000000800464c        0x4 
+ .rodata.analogGrp.15686.4677
+                0x0000000008004650       0x28 /tmp/ccut6pPh.ltrans3.ltrans.o
+ *fill*         0x0000000008004678        0x8 
+ .rodata.ii2cCfg.15692.4718
+                0x0000000008004680        0xc /tmp/ccut6pPh.ltrans3.ltrans.o
+ *fill*         0x000000000800468c        0x4 
+ .rodata.ei2cCfg.15691.4719
+                0x0000000008004690        0xc /tmp/ccut6pPh.ltrans3.ltrans.o
+ *(.glue_7t)
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000000000000        0x0 linker stubs
+ *(.gcc*)
+
+.vfp11_veneer   0x000000000800469c        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x000000000800469c        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.iplt           0x000000000800469c        0x0
+ .iplt          0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
+
+.rel.dyn        0x000000000800469c        0x0
+ .rel.iplt      0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx      0x000000000800469c        0x0
+                0x000000000800469c                PROVIDE (__exidx_start, .)
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000000000800469c                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.textalign      0x000000000800469c        0x4
+                0x00000000080046a0                . = ALIGN (0x8)
+ *fill*         0x000000000800469c        0x4 
+                0x00000000080046a0                . = ALIGN (0x4)
+                0x00000000080046a0                _etext = .
+                0x00000000080046a0                _textdata = _etext
+
+.stacks         0x0000000020000000      0x800
+                0x0000000020000000                . = ALIGN (0x8)
+                0x0000000020000000                __main_stack_base__ = .
+                0x0000000020000400                . = (. + __main_stack_size__)
+ *fill*         0x0000000020000000      0x400 
+                0x0000000020000400                . = ALIGN (0x8)
+                0x0000000020000400                __main_stack_end__ = .
+                0x0000000020000400                __process_stack_base__ = .
+                0x0000000020000400                __main_thread_stack_base__ = .
+                0x0000000020000800                . = (. + __process_stack_size__)
+ *fill*         0x0000000020000400      0x400 
+                0x0000000020000800                . = ALIGN (0x8)
+                0x0000000020000800                __process_stack_end__ = .
+                0x0000000020000800                __main_thread_stack_end__ = .
+
+.data           0x0000000020000800       0x38 load address 0x00000000080046a0
+                0x0000000020000800                . = ALIGN (0x4)
+                0x0000000020000800                PROVIDE (_data, .)
+ *(.data)
+ *(.data.*)
+ .data.serGpsCfg.16083.4821
+                0x0000000020000800       0x20 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .data.xbeeSerCfg.14944.4852
+                0x0000000020000820        0xc /tmp/ccut6pPh.ltrans1.ltrans.o
+ .data.serCfg.17290.4851
+                0x000000002000082c        0xc /tmp/ccut6pPh.ltrans1.ltrans.o
+ *(.ramtext)
+                0x0000000020000838                . = ALIGN (0x4)
+                0x0000000020000838                PROVIDE (_edata, .)
+
+.igot.plt       0x0000000020000838        0x0 load address 0x00000000080046d8
+ .igot.plt      0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
+
+.bss            0x0000000020000838     0x2684
+                0x0000000020000838                . = ALIGN (0x4)
+                0x0000000020000838                PROVIDE (_bss_start, .)
+ *(.bss)
+ *(.bss.*)
+ .bss.errors.13409.4815
+                0x0000000020000838        0x4 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .bss.xbee.17287.4818
+                0x000000002000083c        0x8 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .bss.dma_streams_mask.10838
+                0x0000000020000844        0x4 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000020000844                dma_streams_mask.10838
+ .bss.default_heap.6947.4929
+                0x0000000020000848       0x20 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .bss.mainthread.6320.4386.4822
+                0x0000000020000868       0x44 /tmp/ccut6pPh.ltrans1.ltrans.o
+ *fill*         0x00000000200008ac        0x4 
+ .bss.waSensor.17292.4841
+                0x00000000200008b0     0x1150 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .bss.SPID3.4823
+                0x0000000020001a00       0x30 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .bss.dma_isr_redir.10833
+                0x0000000020001a30       0x80 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000020001a30                dma_isr_redir.10833
+ .bss.UARTD1    0x0000000020001ab0       0x1c /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000020001ab0                UARTD1
+ .bss.dummytx.11757.4814
+                0x0000000020001acc        0x2 /tmp/ccut6pPh.ltrans1.ltrans.o
+ *fill*         0x0000000020001ace        0x2 
+ .bss.GPS.16084
+                0x0000000020001ad0      0x140 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000020001ad0                GPS.16084
+ .bss.sensCount.13793.4816
+                0x0000000020001c10        0x1 /tmp/ccut6pPh.ltrans1.ltrans.o
+ *fill*         0x0000000020001c11        0x7 
+ .bss._idle_thread_wa.4385.4928
+                0x0000000020001c18      0x160 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .bss.endmem.6822
+                0x0000000020001d78        0x4 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x0000000020001d78                endmem.6822
+ *fill*         0x0000000020001d7c        0x4 
+ .bss.waGps.17293.4839
+                0x0000000020001d80      0x658 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .bss.nextmem.6820
+                0x00000000200023d8        0x4 /tmp/ccut6pPh.ltrans1.ltrans.o
+                0x00000000200023d8                nextmem.6820
+ .bss.gpsSem    0x00000000200023dc        0xc /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x00000000200023dc                gpsSem
+ .bss.tokBuf.16085
+                0x00000000200023e8       0x14 /tmp/ccut6pPh.ltrans2.ltrans.o
+                0x00000000200023e8                tokBuf.16085
+ .bss.sensCount.13979.4672
+                0x00000000200023fc        0x1 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .bss.sensCount.13591.4671
+                0x00000000200023fd        0x1 /tmp/ccut6pPh.ltrans3.ltrans.o
+ *fill*         0x00000000200023fe        0x2 
+ .bss.ADCD1     0x0000000020002400       0x34 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000020002400                ADCD1
+ .bss.SD6       0x0000000020002434      0x458 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000020002434                SD6
+ .bss.DEBUG.15693.4675
+                0x000000002000288c        0x4 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .bss.analogSamples.15687.4678
+                0x0000000020002890      0x12c /tmp/ccut6pPh.ltrans3.ltrans.o
+ .bss.sensCount.14733.4674
+                0x00000000200029bc        0x1 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .bss.sensCount.14331.4673
+                0x00000000200029bd        0x1 /tmp/ccut6pPh.ltrans3.ltrans.o
+ *fill*         0x00000000200029be        0x2 
+ .bss.SD2       0x00000000200029c0      0x458 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x00000000200029c0                SD2
+ .bss.ch        0x0000000020002e18       0x34 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000020002e18                ch
+ .bss.I2CD1     0x0000000020002e4c       0x38 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000020002e4c                I2CD1
+ .bss.I2CD3     0x0000000020002e84       0x38 /tmp/ccut6pPh.ltrans3.ltrans.o
+                0x0000000020002e84                I2CD3
+ *(COMMON)
+                0x0000000020002ebc                . = ALIGN (0x4)
+                0x0000000020002ebc                PROVIDE (_bss_end, .)
+                0x0000000020002ebc                PROVIDE (end, .)
+                0x0000000020002ebc                _end = .
+                0x0000000020002ebc                __heap_base__ = _end
+                0x0000000020010000                __heap_end__ = __ram_end__
+                0x0000000000000400                __process_stack_size__ = 0x400
+                0x0000000000000400                __main_stack_size__ = 0x400
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a
+END GROUP
+OUTPUT(build/stribog.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x35
+ .ARM.attributes
+                0x0000000000000000       0x25 build/obj/chcoreasm_v7m.o
+ .ARM.attributes
+                0x0000000000000025       0x37 /tmp/ccut6pPh.ltrans0.ltrans.o
+ .ARM.attributes
+                0x000000000000005c       0x37 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .ARM.attributes
+                0x0000000000000093       0x37 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .ARM.attributes
+                0x00000000000000ca       0x37 /tmp/ccut6pPh.ltrans3.ltrans.o
+ .ARM.attributes
+                0x0000000000000101       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000000000000123       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000000000000145       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x0000000000000167       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x0000000000000189       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000000000001bd       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000000000001f1       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+
+.comment        0x0000000000000000       0x70
+ .comment       0x0000000000000000       0x70 /tmp/ccut6pPh.ltrans0.ltrans.o
+                                         0x71 (size before relaxing)
+ .comment       0x0000000000000000       0x71 /tmp/ccut6pPh.ltrans1.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/ccut6pPh.ltrans2.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/ccut6pPh.ltrans3.ltrans.o
+
+.debug_frame    0x0000000000000000       0x68
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+ .debug_frame   0x0000000000000020       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000040       0x28 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADCD1                                             /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+BusFault_Handler                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+DebugMon_Handler                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+GPS.16084                                         /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+HardFault_Handler                                 /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+I2CD1                                             /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+I2CD3                                             /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+I2CSensor_init                                    /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+I2CSensor_transact                                /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+I2CSensor_transact_buf                            /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+MemManage_Handler                                 /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+NMI_Handler                                       /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+PendSV_Handler                                    /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Reset_Handler                                     /tmp/ccut6pPh.ltrans3.ltrans.o
+SD2                                               /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+SD6                                               /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+SVC_Handler                                       /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+SysTick_Handler                                   /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+UARTD1                                            /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+UsageFault_Handler                                /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector100                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector104                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector108                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector10C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector110                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector114                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector118                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector11C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector120                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector124                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector128                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector12C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector130                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector134                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector138                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector13C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector140                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector144                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector148                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector14C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector150                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector154                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector158                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector160                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector164                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector168                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector16C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector170                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector174                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector178                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector17C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector180                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector184                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector188                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector18C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector190                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector194                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector198                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector19C                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1A0                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1A4                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1A8                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1AC                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1B0                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1B4                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1B8                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1BC                                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector1C                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector20                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector24                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector28                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector34                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector40                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector44                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector48                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector4C                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector50                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector54                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector58                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector5C                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector60                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector64                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector68                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector6C                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector70                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector74                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector78                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector7C                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector80                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector84                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector88                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector8C                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector90                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector94                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector98                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+Vector9C                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorA0                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorA4                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorA8                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorAC                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorB0                                          /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorB4                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorB8                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorBC                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorC0                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorC4                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorC8                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorCC                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorD0                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorD4                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorDC                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorE0                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorE4                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorE8                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorEC                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorF0                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorF4                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorF8                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+VectorFC                                          /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+__adddf3                                          /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__aeabi_d2f                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+__aeabi_d2iz                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+__aeabi_dadd                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__aeabi_ddiv                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+__aeabi_dmul                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+__aeabi_drsub                                     /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__aeabi_dsub                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+__aeabi_f2d                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+__aeabi_i2d                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+__aeabi_l2d                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__aeabi_ui2d                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+__aeabi_ul2d                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__divdf3                                          /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+__extendsfdf2                                     /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__fixdfsi                                         /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+__floatdidf                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__floatsidf                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__floatundidf                                     /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__floatunsidf                                     /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__heap_base__                                     /tmp/ccut6pPh.ltrans1.ltrans.o
+__heap_end__                                      /tmp/ccut6pPh.ltrans1.ltrans.o
+__init_array_end                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+__init_array_start                                /tmp/ccut6pPh.ltrans3.ltrans.o
+__main_stack_base__                               /tmp/ccut6pPh.ltrans3.ltrans.o
+__main_stack_end__                                /tmp/ccut6pPh.ltrans3.ltrans.o
+__muldf3                                          /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+__process_stack_base__                            /tmp/ccut6pPh.ltrans3.ltrans.o
+__process_stack_end__                             /tmp/ccut6pPh.ltrans3.ltrans.o
+__subdf3                                          /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+__truncdfsf2                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+_bss_end                                          /tmp/ccut6pPh.ltrans3.ltrans.o
+_bss_start                                        /tmp/ccut6pPh.ltrans3.ltrans.o
+_data                                             /tmp/ccut6pPh.ltrans3.ltrans.o
+_edata                                            /tmp/ccut6pPh.ltrans3.ltrans.o
+_idle_thread.4338                                 /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+_port_exit_from_isr                               build/obj/chcoreasm_v7m.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+_port_irq_epilogue                                /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+_port_switch                                      build/obj/chcoreasm_v7m.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+_port_switch_from_isr                             build/obj/chcoreasm_v7m.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+_port_thread_start                                build/obj/chcoreasm_v7m.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+_textdata                                         /tmp/ccut6pPh.ltrans3.ltrans.o
+_vectors                                          /tmp/ccut6pPh.ltrans3.ltrans.o
+adc_lld_serve_rx_interrupt.11091                  /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+ch                                                /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+chCoreAlloc                                       /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chEvtBroadcastFlagsI                              /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+chMtxLockS                                        /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chMtxUnlock                                       /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chSchDoReschedule                                 /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  build/obj/chcoreasm_v7m.o
+chSchDoRescheduleAhead                            /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+chSchGoSleepS                                     /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+chSchGoSleepTimeoutS                              /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chSchReadyI                                       /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+chSchRescheduleS                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+chTMStartMeasurementX.constprop.30                /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chTMStopMeasurementX                              /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chThdCreateStatic                                 /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chThdExit                                         /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  build/obj/chcoreasm_v7m.o
+chThdSleep                                        /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+chThdSleepUntil                                   /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chprintf.13294.constprop.12                       /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chprintf.15614.constprop.5                        /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+chprintf.17224.constprop.37                       /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+chvprintf.constprop.38                            /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+dmaStreamAllocate                                 /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+dmaStreamRelease                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+dma_isr_redir.10833                               /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+dma_streams_mask.10838                            /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+endmem.6822                                       /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+get.10200                                         /tmp/ccut6pPh.ltrans2.ltrans.o
+gett.10196                                        /tmp/ccut6pPh.ltrans2.ltrans.o
+gpsRxChar.16011                                   /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+gpsRxEnd.15987                                    /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+gpsRxErr.15990                                    /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+gpsSem                                            /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+gpsThread                                         /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+gpsTxC.15984                                      /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+gpsTxbufEnd.15981                                 /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+i2c_lld_serve_rx_end_irq.11402                    /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+i2c_lld_serve_tx_end_irq.11398                    /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+i2c_lld_start                                     /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+main                                              /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+nextmem.6820                                      /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+notify2.12013                                     /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+notify6.12010                                     /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+put.10208                                         /tmp/ccut6pPh.ltrans2.ltrans.o
+putt.10203                                        /tmp/ccut6pPh.ltrans2.ltrans.o
+read.10180                                        /tmp/ccut6pPh.ltrans2.ltrans.o
+readt.10173                                       /tmp/ccut6pPh.ltrans2.ltrans.o
+sdObjectInit.constprop.25                         /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+sd_lld_start                                      /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+sensorThread                                      /tmp/ccut6pPh.ltrans3.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+si70x0_heaterEnable                               /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+si70x0_init                                       /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+si70x0_readHumidity                               /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+si70x0_readTemperature                            /tmp/ccut6pPh.ltrans1.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans3.ltrans.o
+strcpy                                            /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+strlen                                            /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+strncmp                                           /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+tokBuf.16085                                      /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+uStrCpy.constprop.4                               /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+uStrInsertChar.constprop.3                        /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+uStrPrependChar                                   /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+usart_stop.12171                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans1.ltrans.o
+vmt.10284                                         /tmp/ccut6pPh.ltrans2.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans0.ltrans.o
+wakeup.4718                                       /tmp/ccut6pPh.ltrans0.ltrans.o
+                                                  /tmp/ccut6pPh.ltrans2.ltrans.o
+write.10191                                       /tmp/ccut6pPh.ltrans2.ltrans.o
+writet.10185                                      /tmp/ccut6pPh.ltrans2.ltrans.o
