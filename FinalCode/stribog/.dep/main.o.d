@@ -107,7 +107,7 @@ build/obj/main.o: main.c /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
  /home/cody/dev/chibios/trunk/os/rt/include/chmtx.h Drivers/bmp280.h \
  Drivers/i2c_sensor.h Drivers/../board.h Drivers/lsm303.h \
  Drivers/ms5607.h Drivers/si70x0.h Drivers/tmp275.h Drivers/rtd.h \
- Drivers/mpxm2102.h /usr/arm-none-eabi/include/stdlib.h \
+ Drivers/mpxm2102.h Drivers/xbeepro.h /usr/arm-none-eabi/include/stdlib.h \
  /usr/arm-none-eabi/include/machine/stdlib.h \
  /usr/arm-none-eabi/include/alloca.h /usr/arm-none-eabi/include/math.h \
  datasample.h
@@ -365,6 +365,8 @@ Drivers/tmp275.h:
 Drivers/rtd.h:
 
 Drivers/mpxm2102.h:
+
+Drivers/xbeepro.h:
 
 /usr/arm-none-eabi/include/stdlib.h:
 

@@ -78,9 +78,10 @@ msg_t sensorThread(void *arg)
     lsm303_init(&(thread->lsm303), &II2C_I2CD, 0b0011101, 0b0011110);   // Initialize LSM303
     bmp280_init(&(thread->bmp280), &II2C_I2CD, 0b1110110);              // Initialize BMP280
     
-    si70x0_setHeaterCurrent(&(thread->intSi7020), 11);
+    // Run Si70x0 heaters
+    si70x0_setHeaterCurrent(&(thread->intSi7020), 14);
     si70x0_heaterEnable(&(thread->intSi7020), true);
-    si70x0_setHeaterCurrent(&(thread->extSi7020), 11);
+    si70x0_setHeaterCurrent(&(thread->extSi7020), 14);
     si70x0_heaterEnable(&(thread->extSi7020), true);
     chThdSleep(1000);
     si70x0_heaterEnable(&(thread->intSi7020), false);
@@ -90,6 +91,7 @@ msg_t sensorThread(void *arg)
 
     // Sensor Loop
     systime_t deadline = chVTGetSystemTimeX();
+    msg_t i7020stat, e7020stat, tmp275stat, ms5607stat, lsm303stat;
     while(thread->running)
     {
         deadline += MS2ST(100); // Set master sampling rate at ~10Hz
@@ -99,32 +101,35 @@ msg_t sensorThread(void *arg)
          */
 
         //External Temp 2
-    	msg_t etmpOk = tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
-    	if(etmpOk == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "EXTEMP:%.2fC\n", thread->data.temp275);
+    	tmp275stat = tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
+    	if(tmp275stat == MSG_OK)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "EXTEMP:%.1fC\n", thread->data.temp275);
         // TODO: Internal Pressure (BMP280)    
 
         // Internal Humidity (Si7020)
-        msg_t ihstat = si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
-        float temp7020;
-        ihstat = si70x0_readTemperature(&(thread->intSi7020), &temp7020);
+        i7020stat = si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
+        float tempi7020;
+        i7020stat |= si70x0_readTemperature(&(thread->intSi7020), &tempi7020);
     	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "Si7020 Read: %d\n", (int) ihstat);
-        if(ihstat == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "IHUM:%.1f%% TEMP:%.2fC\n",thread->data.humdInt, temp7020);
+        if(i7020stat == MSG_OK)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "IHUM:%.1f%% TEMP:%.2fC\n",thread->data.humdInt, tempi7020);
         
         // External Humidity 1 (Si7020)
-        si70x0_readHumidity(&(thread->extSi7020), &(thread->data.humdExt));
+        e7020stat = si70x0_readHumidity(&(thread->extSi7020), &(thread->data.humdExt));
         float temp7020ext;
-        si70x0_readTemperature(&(thread->extSi7020), &temp7020ext);
+        e7020stat |= si70x0_readTemperature(&(thread->extSi7020), &temp7020ext);
+        if(e7020stat == MSG_OK)
             chprintf((BaseSequentialStream *) &DBG_SERIAL, "EHUM:%.1f%% ETMP:%.2fC\n",thread->data.humdExt, temp7020ext);
+
         // External Humidity 2 (HIH6030)
 
 
         // External Pressure 2
-        ms5607_readPressureTemperature(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
-
+        ms5607stat = ms5607_readPressureTemperature(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
+        if(ms5607stat == MSG_OK)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "MPRS:%.2fkPa, MTMP:%.2fC\n", thread->data.pressMs5607, thread->data.tempMs5607);
         // Accelerometer
-        lsm303_readAcceleration(&(thread->lsm303), 1);
+        //lsm303_readAcceleration(&(thread->lsm303), 1);
         // Get out data
         
         // Magnetometer 

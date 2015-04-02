@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccmrTiCF.s 			page 1
+ARM GAS  /tmp/ccV4asm9.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"bmp280.c"
-  17              		.section	.gnu.lto_.jmpfuncs.e5a63209167438cf,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.d58d111acca16c92,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006V\0021\007\020\2632\260\263\2620d2"
   18      6062C006 
   18      56023107 
@@ -51,14 +51,14 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   24      00348E12 
   24      1C
   25              		.text
-  26              		.section	.gnu.lto_.inline.e5a63209167438cf,"",%progbits
+  26              		.section	.gnu.lto_.inline.d58d111acca16c92,"",%progbits
   27 0000 789C6362 		.ascii	"x\234cb`b\300\006\346CiV\006\006\021UFF\006F \233\211"
   27      6062C006 
   27      E6436956 
   27      06061155 
   27      46460646 
   28 0017 ED831E03 		.ascii	"\355\203\036\003\333\002y\260\0166~\240\344\004\277"
-ARM GAS  /tmp/ccmrTiCF.s 			page 2
+ARM GAS  /tmp/ccV4asm9.s 			page 2
 
 
   28      DB0279B0 
@@ -82,7 +82,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   32 005f 00771D11 		.ascii	"\000w\035\021\037"
   32      1F
   33              		.text
-  34              		.section	.gnu.lto_.pureconst.e5a63209167438cf,"",%progbits
+  34              		.section	.gnu.lto_.pureconst.d58d111acca16c92,"",%progbits
   35 0000 789C6362 		.ascii	"x\234cb`b\340f\200\000V\006\011&\011f\011\026 \003\000"
   35      6062E066 
   35      80005606 
@@ -90,7 +90,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   35      09162003 
   36 0015 03AB006B 		.ascii	"\003\253\000k"
   37              		.text
-  38              		.section	.gnu.lto_bmp280_init.e5a63209167438cf,"",%progbits
+  38              		.section	.gnu.lto_bmp280_init.d58d111acca16c92,"",%progbits
   39 0000 789C8D92 		.ascii	"x\234\215\222\277/DA\020\307gv\275\037\316\257\363#"
   39      BF2F4441 
   39      10C76776 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   44 0060 80229D03 		.ascii	"\200\"\235\003H\270\002Q'\200\260!pc\012u\251h\203#"
   44      48B80251 
   44      2780B021 
-ARM GAS  /tmp/ccmrTiCF.s 			page 3
+ARM GAS  /tmp/ccV4asm9.s 			page 3
 
 
   44      70630A75 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   55      288DC0
   56 013d 5F88B3CA 		.ascii	"_\210\263\312\002\3025\010+@\034\330\012+K#\212\376"
   56      02C23508 
-ARM GAS  /tmp/ccmrTiCF.s 			page 4
+ARM GAS  /tmp/ccV4asm9.s 			page 4
 
 
   56      2B401CD8 
@@ -218,7 +218,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   63      2BE00B46 
   63      54ACAA
   64              		.text
-  65              		.section	.gnu.lto_bmp280_stop.e5a63209167438cf,"",%progbits
+  65              		.section	.gnu.lto_bmp280_stop.d58d111acca16c92,"",%progbits
   66 0000 789C6362 		.ascii	"x\234cb`b@\007\222@|\031\210\205\201\230\221\231\201"
   66      60624007 
   66      92407C19 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   69      685C2623 
   69      030B90C5 
   69      C8
-ARM GAS  /tmp/ccmrTiCF.s 			page 5
+ARM GAS  /tmp/ccV4asm9.s 			page 5
 
 
   70 0045 06648114 		.ascii	"\006d\201\024\2612\26444LP``H\006k\011\001\222 sB\031"
@@ -278,7 +278,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   77 00d4 0C00B412 		.ascii	"\014\000\264\0224\315"
   77      34CD
   78              		.text
-  79              		.section	.gnu.lto_bmp280_reset.e5a63209167438cf,"",%progbits
+  79              		.section	.gnu.lto_bmp280_reset.d58d111acca16c92,"",%progbits
   80 0000 789C5D51 		.ascii	"x\234]Q=K\003A\020}o\357.^,DA\020;\261\025TD\301\037"
   80      3D4B0341 
   80      107D6FEF 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   83      55890EEC 
   83      CC0EF3F6 
   83      BD37AC
-ARM GAS  /tmp/ccmrTiCF.s 			page 6
+ARM GAS  /tmp/ccV4asm9.s 			page 6
 
 
   84 004d 82C2FF98 		.ascii	"\202\302\377\230\226\263K[\351\200\252\375\0144}E\232"
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   95      26D6A270 
   95      AF1AED2C 
   95      946BDB4B 
-ARM GAS  /tmp/ccmrTiCF.s 			page 7
+ARM GAS  /tmp/ccV4asm9.s 			page 7
 
 
   95      AB
@@ -367,7 +367,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
   96      FA026C0E 
   96      5D78
   97              		.text
-  98              		.section	.gnu.lto_bmp280_readPressure.e5a63209167438cf,"",%progbits
+  98              		.section	.gnu.lto_bmp280_readPressure.d58d111acca16c92,"",%progbits
   99 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\027\210\245\200\230\221\231\201"
   99      60624007 
   99      92403C17 
@@ -416,9 +416,9 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  108 00b4 006A9C31 		.ascii	"\000j\2341\242"
  108      A2
  109              		.text
- 110              		.section	.gnu.lto_bmp280_readTemperature.e5a63209167438cf,"",%progbits
+ 110              		.section	.gnu.lto_bmp280_readTemperature.d58d111acca16c92,"",%progbits
  111 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\037\210\245\200\230\221\231\201"
-ARM GAS  /tmp/ccmrTiCF.s 			page 8
+ARM GAS  /tmp/ccV4asm9.s 			page 8
 
 
  111      60624007 
@@ -471,14 +471,14 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  121      B4180073 
  121      E13330
  122              		.text
- 123              		.section	.gnu.lto_.symbol_nodes.e5a63209167438cf,"",%progbits
+ 123              		.section	.gnu.lto_.symbol_nodes.d58d111acca16c92,"",%progbits
  124 0000 789C4DC8 		.ascii	"x\234M\310\273\021\203@\024CQ=\355\007\272\326b\300"
  124      BB118340 
  124      1443513D 
  124      ED07BAD6 
  124      62C0
  125 0012 26740524 		.ascii	"&t\005$.\205\3345\230\241\017\30320,J\356\034\021\304"
-ARM GAS  /tmp/ccmrTiCF.s 			page 9
+ARM GAS  /tmp/ccV4asm9.s 			page 9
 
 
  125      2E85DC35 
@@ -502,7 +502,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  128      31E56203 
  129 0060 77632F5A 		.ascii	"wc/Z"
  130              		.text
- 131              		.section	.gnu.lto_.refs.e5a63209167438cf,"",%progbits
+ 131              		.section	.gnu.lto_.refs.d58d111acca16c92,"",%progbits
  132 0000 789C6362 		.ascii	"x\234cb`b`g\200\000&\006\006FFF\006\000\000\333\000"
  132      60626067 
  132      80002606 
@@ -510,7 +510,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  132      060000DB 
  133 0015 11       		.ascii	"\021"
  134              		.text
- 135              		.section	.gnu.lto_.decls.e5a63209167438cf,"",%progbits
+ 135              		.section	.gnu.lto_.decls.d58d111acca16c92,"",%progbits
  136 0000 789CBD5C 		.ascii	"x\234\275\\\177p\024E\276\237\231\235dwI.\004<}\350"
  136      7F701445 
  136      BE9F999D 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  140      1A
  141 005d 01F991F7 		.ascii	"\001\371\221\367\355\357\314\354\366Lfvgr\336\333\252"
  141      EDEFCCEC 
-ARM GAS  /tmp/ccmrTiCF.s 			page 10
+ARM GAS  /tmp/ccV4asm9.s 			page 10
 
 
  141      F64C6676 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  152      C63729BB 
  153 0130 D7843D53 		.ascii	"\327\204=S\223\217`\351\330\214\246\323\231\246\272"
  153      938F60E9 
-ARM GAS  /tmp/ccmrTiCF.s 			page 11
+ARM GAS  /tmp/ccV4asm9.s 			page 11
 
 
  153      D88CA6D3 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  164      762B21B5 
  165 0204 6CAADB3C 		.ascii	"l\252\333<\375AW\372\211\357w\020\245\373\231\207Qa"
  165      FD4157FA 
-ARM GAS  /tmp/ccmrTiCF.s 			page 12
+ARM GAS  /tmp/ccV4asm9.s 			page 12
 
 
  165      89EF7710 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  176      53C55994 
  177 02d8 4BA4F5BF 		.ascii	"K\244\365\277=\324\000\356\302\001\374\256\315\000\026"
  177      3DD400EE 
-ARM GAS  /tmp/ccmrTiCF.s 			page 13
+ARM GAS  /tmp/ccV4asm9.s 			page 13
 
 
  177      C201FCAE 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  189 03a5 8CDBEA30 		.ascii	"\214\333\35203\230\025h`\324J\201\001Z\2010\026\367"
  189      33981568 
  189      60D44A81 
-ARM GAS  /tmp/ccmrTiCF.s 			page 14
+ARM GAS  /tmp/ccV4asm9.s 			page 14
 
 
  189      015A8130 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  201      5A9A2928 
  201      29F1F35F 
  201      FA95D65C 
-ARM GAS  /tmp/ccmrTiCF.s 			page 15
+ARM GAS  /tmp/ccV4asm9.s 			page 15
 
 
  201      8BAE
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  213      C5EE9F37 
  213      77BFFD7F 
  213      4E8D
-ARM GAS  /tmp/ccmrTiCF.s 			page 16
+ARM GAS  /tmp/ccV4asm9.s 			page 16
 
 
  214 0554 55BB7FDE 		.ascii	"U\273\177\336Q\367\237\036\260\330\302\011\354\330k"
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  225      1A6C
  226 062a 8513B049 		.ascii	"\205\023\260I\366\234\275L\203\255r\015f\344l\007\015"
  226      F69CBD4C 
-ARM GAS  /tmp/ccmrTiCF.s 			page 17
+ARM GAS  /tmp/ccV4asm9.s 			page 17
 
 
  226      83AD720D 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  237      F0C5
  238 0700 6337756E 		.ascii	"c7unR\224\306l7rtir\364\242\034_\376\004r|\343Z\216"
  238      5294C66C 
-ARM GAS  /tmp/ccmrTiCF.s 			page 18
+ARM GAS  /tmp/ccV4asm9.s 			page 18
 
 
  238      37727469 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  250      98DD831C 
  250      0491403A 
  250      6B5DB8CD 
-ARM GAS  /tmp/ccmrTiCF.s 			page 19
+ARM GAS  /tmp/ccV4asm9.s 			page 19
 
 
  250      E1
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  261      0F
  262 08ad B645FA34 		.ascii	"\266E\3724\322g\220\256C\272\001\351\363\264{\333\331"
  262      D26790AE 
-ARM GAS  /tmp/ccmrTiCF.s 			page 20
+ARM GAS  /tmp/ccV4asm9.s 			page 20
 
 
  262      43BA01E9 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  274 0984 5ADE6FC8 		.ascii	"Z\336o\310\014\223\350n~\345w\270\002\335\211@O\015"
  274      0C93E86E 
  274      7EE577B8 
-ARM GAS  /tmp/ccmrTiCF.s 			page 21
+ARM GAS  /tmp/ccV4asm9.s 			page 21
 
 
  274      02DD8940 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  286      7EE91A2C 
  286      60007B95 
  287 0a62 3BED04CC 		.ascii	";\355\004\314.\210\001\330N\032\354o\256\301\214\234"
-ARM GAS  /tmp/ccmrTiCF.s 			page 22
+ARM GAS  /tmp/ccV4asm9.s 			page 22
 
 
  287      2E8801D8 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  298      0156B33D 
  298      47F3
  299 0b38 968C1A6F 		.ascii	"\226\214\032o\334\247F\215s\0305^\317\313\03458\243"
-ARM GAS  /tmp/ccmrTiCF.s 			page 23
+ARM GAS  /tmp/ccV4asm9.s 			page 23
 
 
  299      DCA7468D 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  311      41FA37A4 
  311      DF3A99AB 
  311      5F4B5DFC 
-ARM GAS  /tmp/ccmrTiCF.s 			page 24
+ARM GAS  /tmp/ccV4asm9.s 			page 24
 
 
  311      85FD
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  322      391254FA 
  323 0cea FEC45CC7 		.ascii	"\376\304\\\307,\327\030PX\331\366\032(\001j\347\257"
  323      2CD71850 
-ARM GAS  /tmp/ccmrTiCF.s 			page 25
+ARM GAS  /tmp/ccV4asm9.s 			page 25
 
 
  323      58D9F61A 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  334      651B093C 
  334      4909
  335 0dbf BE76E244 		.ascii	"\276v\342D\266\027\332\224\370\252\224\000\001\023\377"
-ARM GAS  /tmp/ccmrTiCF.s 			page 26
+ARM GAS  /tmp/ccV4asm9.s 			page 26
 
 
  335      B617DA94 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  346      35A8CC67 
  346      1F642CF9 
  347 0e94 4EDDC413 		.ascii	"N\335\304\023\330\275\274\017\332\265\347\263v\336B"
-ARM GAS  /tmp/ccmrTiCF.s 			page 27
+ARM GAS  /tmp/ccV4asm9.s 			page 27
 
 
  347      D8BDBC0F 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  358      3D6916C5 
  358      EA32D3AE 
  358      E5698B80 
-ARM GAS  /tmp/ccmrTiCF.s 			page 28
+ARM GAS  /tmp/ccV4asm9.s 			page 28
 
 
  358      A1ED
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  371      30835345 
  371      31599045 
  371      DFE469E3 
-ARM GAS  /tmp/ccmrTiCF.s 			page 29
+ARM GAS  /tmp/ccV4asm9.s 			page 29
 
 
  371      4B2A26DF 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  383      CA6662CB 
  383      29D34BFE 
  383      7342
-ARM GAS  /tmp/ccmrTiCF.s 			page 30
+ARM GAS  /tmp/ccV4asm9.s 			page 30
 
 
  384 111f 690EE045 		.ascii	"i\016\340E\2425\221\020\001\234>c\352\364\322\011A\370"
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  395 11e7 5488A0EC 		.ascii	"T\210\240\354O\302eG\203\265b\275\014_QI\234;\311\001"
  395      4FC26547 
  395      83B562BD 
-ARM GAS  /tmp/ccmrTiCF.s 			page 31
+ARM GAS  /tmp/ccV4asm9.s 			page 31
 
 
  395      0C5F5149 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  406      E5B2
  407 12c4 A5D03CF8 		.ascii	"\245\320<\370\311'\326\207eP\213\230\375\220\034\231"
  407      C927D687 
-ARM GAS  /tmp/ccmrTiCF.s 			page 32
+ARM GAS  /tmp/ccV4asm9.s 			page 32
 
 
  407      65508B98 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  418      AC805153 
  418      2ACEE64A 
  419 139e F869A515 		.ascii	"\370i\245\025e\236\031\343\313\370\251\205\204\024\215"
-ARM GAS  /tmp/ccmrTiCF.s 			page 33
+ARM GAS  /tmp/ccV4asm9.s 			page 33
 
 
  419      659E19E3 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  430      B5328017 
  430      E56B920F 
  431 147e 4248EFD0 		.ascii	"BH\357\320\027\3252\327Q?\022\266DI\220\241\230\227"
-ARM GAS  /tmp/ccmrTiCF.s 			page 34
+ARM GAS  /tmp/ccV4asm9.s 			page 34
 
 
  431      17D532D7 
@@ -1995,7 +1995,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  433      001E95E2 
  433      79
  434              		.text
- 435              		.section	.gnu.lto_.symtab.e5a63209167438cf,"",%progbits
+ 435              		.section	.gnu.lto_.symtab.d58d111acca16c92,"",%progbits
  436 0000 626D7032 		.ascii	"bmp280_init\000\000\000\000\000\000\000\000\000\000"
  436      38305F69 
  436      6E697400 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  443      7472616E 
  444 00b0 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000g\002\000\000I2"
  444      00000000 
-ARM GAS  /tmp/ccmrTiCF.s 			page 35
+ARM GAS  /tmp/ccV4asm9.s 			page 35
 
 
  444      00670200 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  467 0002 0F4F     		ldr	r7, .L2
  468 0004 0F4B     		ldr	r3, .L2+4
  469 0006 97F800E0 		ldrb	lr, [r7]	@ zero_extendqisi2
-ARM GAS  /tmp/ccmrTiCF.s 			page 36
+ARM GAS  /tmp/ccV4asm9.s 			page 36
 
 
  470 000a 85B0     		sub	sp, sp, #20
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  521 0004 04A9     		add	r1, sp, #16
  522 0006 E023     		movs	r3, #224
  523 0008 01F8013D 		strb	r3, [r1, #-1]!
-ARM GAS  /tmp/ccmrTiCF.s 			page 37
+ARM GAS  /tmp/ccV4asm9.s 			page 37
 
 
  524 000c 0023     		movs	r3, #0
@@ -2214,27 +2214,27 @@ ARM GAS  /tmp/ccmrTiCF.s 			page 1
  569 0000 00       		.space	1
  570              		.comm	__gnu_lto_v1,1,1
  571              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccmrTiCF.s 			page 38
+ARM GAS  /tmp/ccV4asm9.s 			page 38
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 bmp280.c
-     /tmp/ccmrTiCF.s:457    .text.bmp280_init:0000000000000000 $t
-     /tmp/ccmrTiCF.s:463    .text.bmp280_init:0000000000000000 bmp280_init
-     /tmp/ccmrTiCF.s:493    .text.bmp280_init:0000000000000040 $d
-     /tmp/ccmrTiCF.s:497    .text.bmp280_stop:0000000000000000 $t
-     /tmp/ccmrTiCF.s:503    .text.bmp280_stop:0000000000000000 bmp280_stop
-     /tmp/ccmrTiCF.s:510    .text.bmp280_reset:0000000000000000 $t
-     /tmp/ccmrTiCF.s:516    .text.bmp280_reset:0000000000000000 bmp280_reset
-     /tmp/ccmrTiCF.s:533    .text.bmp280_readPressure:0000000000000000 $t
-     /tmp/ccmrTiCF.s:539    .text.bmp280_readPressure:0000000000000000 bmp280_readPressure
-     /tmp/ccmrTiCF.s:547    .text.bmp280_readTemperature:0000000000000000 $t
-     /tmp/ccmrTiCF.s:553    .text.bmp280_readTemperature:0000000000000000 bmp280_readTemperature
-     /tmp/ccmrTiCF.s:561    .rodata.str1.4:0000000000000000 $d
-     /tmp/ccmrTiCF.s:568    .bss.sensCount:0000000000000000 sensCount
-     /tmp/ccmrTiCF.s:569    .bss.sensCount:0000000000000000 $d
+     /tmp/ccV4asm9.s:457    .text.bmp280_init:0000000000000000 $t
+     /tmp/ccV4asm9.s:463    .text.bmp280_init:0000000000000000 bmp280_init
+     /tmp/ccV4asm9.s:493    .text.bmp280_init:0000000000000040 $d
+     /tmp/ccV4asm9.s:497    .text.bmp280_stop:0000000000000000 $t
+     /tmp/ccV4asm9.s:503    .text.bmp280_stop:0000000000000000 bmp280_stop
+     /tmp/ccV4asm9.s:510    .text.bmp280_reset:0000000000000000 $t
+     /tmp/ccV4asm9.s:516    .text.bmp280_reset:0000000000000000 bmp280_reset
+     /tmp/ccV4asm9.s:533    .text.bmp280_readPressure:0000000000000000 $t
+     /tmp/ccV4asm9.s:539    .text.bmp280_readPressure:0000000000000000 bmp280_readPressure
+     /tmp/ccV4asm9.s:547    .text.bmp280_readTemperature:0000000000000000 $t
+     /tmp/ccV4asm9.s:553    .text.bmp280_readTemperature:0000000000000000 bmp280_readTemperature
+     /tmp/ccV4asm9.s:561    .rodata.str1.4:0000000000000000 $d
+     /tmp/ccV4asm9.s:568    .bss.sensCount:0000000000000000 sensCount
+     /tmp/ccV4asm9.s:569    .bss.sensCount:0000000000000000 $d
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccmrTiCF.s:496    .text.bmp280_init:0000000000000048 $t
+     /tmp/ccV4asm9.s:496    .text.bmp280_init:0000000000000048 $t
 
 UNDEFINED SYMBOLS
 I2CSensor_init

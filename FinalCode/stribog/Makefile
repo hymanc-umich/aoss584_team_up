@@ -121,6 +121,7 @@ CSRC = $(PORTSRC) \
        $(DRIVERS)/rtd.c \
        $(DRIVERS)/tmp275.c \
        $(DRIVERS)/mpxm2102.c \
+       $(DRIVERS)/xbeepro.c \
        datasample.c \
        sensor_thread.c \
        ustr.c \

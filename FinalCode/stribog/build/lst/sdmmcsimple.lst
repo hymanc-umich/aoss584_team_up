@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccoaMG3z.s 			page 1
+ARM GAS  /tmp/cc0rwqKo.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"sdmmcsimple.c"
-  17              		.section	.gnu.lto_.jmpfuncs.41727296a955d667,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.f8b6c85f7a5d0586,"",%progbits
   18 0000 789C7591 		.ascii	"x\234u\2211K\0031\024\307\337\273\264\266\275\252mm"
   18      314B0331 
   18      14C7DFBB 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   25      12348D
   26 008f 51618CDA 		.ascii	"Qa\214\332o..R8\327\342\222&\361T\356\337+\325<\027"
   26      6F2E2E52 
-ARM GAS  /tmp/ccoaMG3z.s 			page 2
+ARM GAS  /tmp/cc0rwqKo.s 			page 2
 
 
   26      38D7E292 
@@ -118,10 +118,10 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   37      E2072A50 
   37      A62F
   38              		.text
-ARM GAS  /tmp/ccoaMG3z.s 			page 3
+ARM GAS  /tmp/cc0rwqKo.s 			page 3
 
 
-  39              		.section	.gnu.lto_.inline.41727296a955d667,"",%progbits
+  39              		.section	.gnu.lto_.inline.f8b6c85f7a5d0586,"",%progbits
   40 0000 789C8D91 		.ascii	"x\234\215\221\275\015\3020\020\205\337\235/1$\200BA"
   40      BD0DC230 
   40      1085DF9D 
@@ -176,9 +176,9 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   50      7900F9A8 
   50      2BC5
   51              		.text
-  52              		.section	.gnu.lto_.pureconst.41727296a955d667,"",%progbits
+  52              		.section	.gnu.lto_.pureconst.f8b6c85f7a5d0586,"",%progbits
   53 0000 789C6362 		.ascii	"x\234cb`b\340g\200\000v\006\011F)&\006f)NV.VnV\000\006"
-ARM GAS  /tmp/ccoaMG3z.s 			page 4
+ARM GAS  /tmp/cc0rwqKo.s 			page 4
 
 
   53      6062E067 
@@ -187,7 +187,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   53      0666294E 
   54 001b 2A009A   		.ascii	"*\000\232"
   55              		.text
-  56              		.section	.gnu.lto_chprintf.41727296a955d667,"",%progbits
+  56              		.section	.gnu.lto_chprintf.f8b6c85f7a5d0586,"",%progbits
   57 0000 789C8550 		.ascii	"x\234\205P\315J\002Q\024>\337\0355uc\333v\342\0034\213"
   57      CD4A0251 
   57      143EDF1D 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   66      E00C2995 
   67 00b8 13A6B624 		.ascii	"\023\246\266$O\032\030H\177\0325\375\241\323\362W\233"
   67      4F1A1848 
-ARM GAS  /tmp/ccoaMG3z.s 			page 5
+ARM GAS  /tmp/cc0rwqKo.s 			page 5
 
 
   67      7F1A35FD 
@@ -290,7 +290,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   77      E158D52F 
   77      A9488123 
   78              		.text
-  79              		.section	.gnu.lto_sd_is_card_inserted.41727296a955d667,"",%progbits
+  79              		.section	.gnu.lto_sd_is_card_inserted.f8b6c85f7a5d0586,"",%progbits
   80 0000 789C5D50 		.ascii	"x\234]P\273JCA\020=gf\257\212\004\343\007\210\330\013"
   80      BB4A4341 
   80      103D6766 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   80      0788D80B 
   81 0014 06FC9604 		.ascii	"\006\374\226\004\264\324(\341\202\027\204|@6\030\301"
   81      B4D428E1 
-ARM GAS  /tmp/ccoaMG3z.s 			page 6
+ARM GAS  /tmp/cc0rwqKo.s 			page 6
 
 
   81      8217847C 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   92      87AA67D1 
   92      E5DE7AA3 
   93 00f1 7D5214CD 		.ascii	"}R\024\315v^\234\237\235\3565\361\013\334xD\374"
-ARM GAS  /tmp/ccoaMG3z.s 			page 7
+ARM GAS  /tmp/cc0rwqKo.s 			page 7
 
 
   93      765E9C9F 
@@ -366,7 +366,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
   93      0BDC7844 
   93      FC
   94              		.text
-  95              		.section	.gnu.lto_sd_is_write_protected.41727296a955d667,"",%progbits
+  95              		.section	.gnu.lto_sd_is_write_protected.f8b6c85f7a5d0586,"",%progbits
   96 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\015\304\002@\314\310\314\300"
   96      60624007 
   96      92401C0D 
@@ -402,7 +402,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  102      4EAA5E32 
  103 007e 1EE8     		.ascii	"\036\350"
  104              		.text
- 105              		.section	.gnu.lto_sdmmcInitialize.41727296a955d667,"",%progbits
+ 105              		.section	.gnu.lto_sdmmcInitialize.f8b6c85f7a5d0586,"",%progbits
  106 0000 789CAD57 		.ascii	"x\234\255W[l\024U\030\376\317\314\356\354\356\364^\252"
  106      5B6C1455 
  106      18FECFCC 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  108      BB98101F 
  108      98D295CB 
  108      83B0
-ARM GAS  /tmp/ccoaMG3z.s 			page 8
+ARM GAS  /tmp/cc0rwqKo.s 			page 8
 
 
  109 0038 411F56BC 		.ascii	"A\037V\274\004DCbT\214\372\260\021\321\005Mh\203J\011"
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  120      AF8D7473 
  120      2429813C 
  120      9C19DB
-ARM GAS  /tmp/ccoaMG3z.s 			page 9
+ARM GAS  /tmp/cc0rwqKo.s 			page 9
 
 
  121 0112 7B2817E9 		.ascii	"{(\027\351\220`\341L\310\223Rftj\352\327/\023#\213\327"
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  132      A19E8AD2 
  132      7A785550 
  132      4985899E 
-ARM GAS  /tmp/ccoaMG3z.s 			page 10
+ARM GAS  /tmp/cc0rwqKo.s 			page 10
 
 
  133 01f5 2881564A 		.ascii	"(\201VJ\243e\013\255\010\364\371\364\365\014) \255\314"
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  144      019DCCA5 
  144      5E25A999 
  144      86824DAF 
-ARM GAS  /tmp/ccoaMG3z.s 			page 11
+ARM GAS  /tmp/cc0rwqKo.s 			page 11
 
 
  144      16CE
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  156 0395 13A5D9D8 		.ascii	"\023\245\331\330321>(\233\226\233\362\252`\327\364U"
  156      3332313E 
  156      289B969B 
-ARM GAS  /tmp/ccoaMG3z.s 			page 12
+ARM GAS  /tmp/cc0rwqKo.s 			page 12
 
 
  156      F2AA60D7 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  167      3EB7D3C9 
  167      BCEF
  168 0473 C96E34F4 		.ascii	"\311n4\364\225\304\367\371\216\275\317\276Y!\323\227"
-ARM GAS  /tmp/ccoaMG3z.s 			page 13
+ARM GAS  /tmp/cc0rwqKo.s 			page 13
 
 
  168      95C4F7F9 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  180      77F6C9A1 
  180      586CCE96 
  181 054a F5CB366D 		.ascii	"\365\3136mZ\367\350\272@\254G\333\030\335\031\351Q\301"
-ARM GAS  /tmp/ccoaMG3z.s 			page 14
+ARM GAS  /tmp/cc0rwqKo.s 			page 14
 
 
  181      5AF7E8BA 
@@ -811,7 +811,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  186      FC0FD0
  187 05bf F2802D   		.ascii	"\362\200-"
  188              		.text
- 189              		.section	.gnu.lto_sdmmGetMMCDriver.41727296a955d667,"",%progbits
+ 189              		.section	.gnu.lto_sdmmGetMMCDriver.f8b6c85f7a5d0586,"",%progbits
  190 0000 789C6D50 		.ascii	"x\234mP=K\003A\020}ov\317\210\210\037`\223.\245\030"
  190      3D4B0341 
  190      107D6F76 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  194      B82D3B2F 
  195 0062 6D1BDAEF 		.ascii	"m\033\332\357wK\372\000DW\214e\267\301\2402\226\247"
  195      774BFA00 
-ARM GAS  /tmp/ccoaMG3z.s 			page 15
+ARM GAS  /tmp/cc0rwqKo.s 			page 15
 
 
  195      44578C65 
@@ -882,7 +882,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  203      E3044B67 
  203      A944F0
  204              		.text
- 205              		.section	.gnu.lto_sdmmcGetFS.41727296a955d667,"",%progbits
+ 205              		.section	.gnu.lto_sdmmcGetFS.f8b6c85f7a5d0586,"",%progbits
  206 0000 789C6D50 		.ascii	"x\234mP\315J\202A\024=\347\316|\026\022\231\320\246"
  206      CD4A8241 
  206      143DE7CE 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  208      22A2C095 
  208      CB561249 
  208      82
-ARM GAS  /tmp/ccoaMG3z.s 			page 16
+ARM GAS  /tmp/cc0rwqKo.s 			page 16
 
 
  209 0034 4B5BB574 		.ascii	"K[\265t\3213hw&\214\212.\314\334{g\3169\367G \370k\247"
@@ -955,10 +955,10 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  219      7C02B48C 
  219      4506
  220              		.text
- 221              		.section	.gnu.lto_sdmmcFSMounted.41727296a955d667,"",%progbits
+ 221              		.section	.gnu.lto_sdmmcFSMounted.f8b6c85f7a5d0586,"",%progbits
  222 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\003\210\005\200\230\221\231\201"
  222      60624007 
-ARM GAS  /tmp/ccoaMG3z.s 			page 17
+ARM GAS  /tmp/cc0rwqKo.s 			page 17
 
 
  222      92403C03 
@@ -1004,7 +1004,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  230      0300DE0A 
  230      2A92
  231              		.text
- 232              		.section	.gnu.lto_.symbol_nodes.41727296a955d667,"",%progbits
+ 232              		.section	.gnu.lto_.symbol_nodes.f8b6c85f7a5d0586,"",%progbits
  233 0000 789C4DCC 		.ascii	"x\234M\314\313N\302@\024\306\361o\276i\301+\340}\241"
  233      CB4EC240 
  233      14C6F16F 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  235 0028 26EE358D 		.ascii	"&\3565\215;\237A\234K\343t6\277\374\347\314\034\202"
  235      3B9F419C 
  235      4BE37436 
-ARM GAS  /tmp/ccoaMG3z.s 			page 18
+ARM GAS  /tmp/cc0rwqKo.s 			page 18
 
 
  235      BFFCE7CC 
@@ -1074,11 +1074,11 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  246 00ef 7DBAC01F 		.ascii	"}\272\300\037\274z\203\005"
  246      BC7A8305 
  247              		.text
- 248              		.section	.gnu.lto_.refs.41727296a955d667,"",%progbits
+ 248              		.section	.gnu.lto_.refs.f8b6c85f7a5d0586,"",%progbits
  249 0000 789C6362 		.ascii	"x\234cb`bPg\200\000>fF\026&VF6&v\006\026\030d\342`\342"
  249      60625067 
  249      80003E66 
-ARM GAS  /tmp/ccoaMG3z.s 			page 19
+ARM GAS  /tmp/cc0rwqKo.s 			page 19
 
 
  249      46162656 
@@ -1089,7 +1089,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  250      12EF00
  251 002a BB       		.ascii	"\273"
  252              		.text
- 253              		.section	.gnu.lto_.decls.41727296a955d667,"",%progbits
+ 253              		.section	.gnu.lto_.decls.f8b6c85f7a5d0586,"",%progbits
  254 0000 789CBD7D 		.ascii	"x\234\275}\013t\024U\266vU\365+!\221\227\250\340\240"
  254      0B741455 
  254      B67655F5 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  263      10BE8650 
  263      07E13484 
  263      6F209C81 
-ARM GAS  /tmp/ccoaMG3z.s 			page 20
+ARM GAS  /tmp/cc0rwqKo.s 			page 20
 
 
  263      7016
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  275 0180 F80D84FF 		.ascii	"\370\015\204\377e\247mv\267=F\277\307\036kS?\334\237"
  275      65A76D76 
  275      B73D46BF 
-ARM GAS  /tmp/ccoaMG3z.s 			page 21
+ARM GAS  /tmp/cc0rwqKo.s 			page 21
 
 
  275      C71E6B53 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  286      37E056B8 
  287 025a 5FF2894B 		.ascii	"_\362\211K\305T T\022;\253\035\371\320\337\377MXI\357"
  287      C5542054 
-ARM GAS  /tmp/ccoaMG3z.s 			page 22
+ARM GAS  /tmp/cc0rwqKo.s 			page 22
 
 
  287      123BAB1D 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  298      B2DFD51B 
  298      085AB477 
  298      289D4312 
-ARM GAS  /tmp/ccoaMG3z.s 			page 23
+ARM GAS  /tmp/cc0rwqKo.s 			page 23
 
 
  298      AA
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  310 0414 996C53C9 		.ascii	"\231lS\311\332\317\003\330\335\\.s\032\322\247\373T"
  310      DACF03D8 
  310      DD5C2E73 
-ARM GAS  /tmp/ccoaMG3z.s 			page 24
+ARM GAS  /tmp/cc0rwqKo.s 			page 24
 
 
  310      1AD2A7FB 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  322      6BA44E8F 
  322      3AB1BF56 
  323 04fd CE5A26F5 		.ascii	"\316Z&\365\234\011\251\367& \365\2145R\347E\245z\253"
-ARM GAS  /tmp/ccoaMG3z.s 			page 25
+ARM GAS  /tmp/cc0rwqKo.s 			page 25
 
 
  323      9C09A9F7 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  335      0C071325 
  335      9B613149 
  335      58601795 
-ARM GAS  /tmp/ccoaMG3z.s 			page 26
+ARM GAS  /tmp/cc0rwqKo.s 			page 26
 
 
  336 05e0 E375CB35 		.ascii	"\343u\3135\315\325\332>\347\343o\304\231\223\344\306"
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  347      13DFC4CE 
  347      C73387
  348 06b2 7AC7A1E5 		.ascii	"z\307\241\345\235\177J\327v.2W\244b\\!\021\223r^\007"
-ARM GAS  /tmp/ccoaMG3z.s 			page 27
+ARM GAS  /tmp/cc0rwqKo.s 			page 27
 
 
  348      9D7F4AD7 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  360 0780 187040B5 		.ascii	"\030p@\265\235\2730K1\006\037\"\3242\247\336\030X]\367"
  360      9DBB304B 
  360      31061F22 
-ARM GAS  /tmp/ccoaMG3z.s 			page 28
+ARM GAS  /tmp/cc0rwqKo.s 			page 28
 
 
  360      D432A7DE 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  372      6F194CDF 
  372      63D5769C 
  372      89ED380B 
-ARM GAS  /tmp/ccoaMG3z.s 			page 29
+ARM GAS  /tmp/cc0rwqKo.s 			page 29
 
 
  372      5B6401C6 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  384      FAD5A9A4 
  384      FA4BFA
  385 093d EA5B569F 		.ascii	"\352[V\237y\224V\177\211\253\372\226}\263\214\224\321"
-ARM GAS  /tmp/ccoaMG3z.s 			page 30
+ARM GAS  /tmp/cc0rwqKo.s 			page 30
 
 
  385      7994567F 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  396      329896B2 
  396      0D2CD847 
  396      3C60
-ARM GAS  /tmp/ccoaMG3z.s 			page 31
+ARM GAS  /tmp/cc0rwqKo.s 			page 31
 
 
  397 0a16 C3CC29DB 		.ascii	"\303\314)\333\310\2025X\006\323R\266\211\005\333\315"
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  409 0adf D6BD9230 		.ascii	"\326\275\22207M\327dF\333\207\346\336\015\364\212#\367"
  409      374DD764 
  409      46DB87E6 
-ARM GAS  /tmp/ccoaMG3z.s 			page 32
+ARM GAS  /tmp/cc0rwqKo.s 			page 32
 
 
  409      DE0DF48A 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  420      ADF15C4D 
  420      96
  421 0bc2 91E84712 		.ascii	"\221\350G\022\344t\216!\323\035\257\265~z\200s\235("
-ARM GAS  /tmp/ccoaMG3z.s 			page 33
+ARM GAS  /tmp/cc0rwqKo.s 			page 33
 
 
  421      E4748E21 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  432 0c95 EAA7719E 		.ascii	"\352\247q\236\012\214\236\274\354\216B9\213\365\336"
  432      0A8C9EBC 
  432      EC8E4239 
-ARM GAS  /tmp/ccoaMG3z.s 			page 34
+ARM GAS  /tmp/cc0rwqKo.s 			page 34
 
 
  432      8BF5DE
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  444      5750015E 
  444      4DA400
  445 0d70 CA2830E3 		.ascii	"\312(0\343\207\243}\337B[}\002\325\177^W\275\346\235"
-ARM GAS  /tmp/ccoaMG3z.s 			page 35
+ARM GAS  /tmp/cc0rwqKo.s 			page 35
 
 
  445      87A37DDF 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  456      3A2DC0
  457 0e46 B806E35A 		.ascii	"\270\006\343Z\214\227`\374\006\306\3130^\201\361*\236"
  457      8C9760FC 
-ARM GAS  /tmp/ccoaMG3z.s 			page 36
+ARM GAS  /tmp/cc0rwqKo.s 			page 36
 
 
  457      06C6CB30 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  468      C552
  469 0f1e B0D23205 		.ascii	"\260\3222\005n\226\202\310\365\275t+B\335\015X\243\307"
  469      6E9682C8 
-ARM GAS  /tmp/ccoaMG3z.s 			page 37
+ARM GAS  /tmp/cc0rwqKo.s 			page 37
 
 
  469      F5BD742B 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  481 0fed 6D2CE176 		.ascii	"m,\341vF\302?\242\204/\241\204?G\351}\301#\275"
  481      46C23FA2 
  481      842FA184 
-ARM GAS  /tmp/ccoaMG3z.s 			page 38
+ARM GAS  /tmp/cc0rwqKo.s 			page 38
 
 
  481      3F47E97D 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  492      8D2514CD 
  492      356B9A4B 
  492      76DD
-ARM GAS  /tmp/ccoaMG3z.s 			page 39
+ARM GAS  /tmp/cc0rwqKo.s 			page 39
 
 
  493 10cf 539E8FA5 		.ascii	"S\236\217\245\031\352\013\327\371\211m\270\022\230`"
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  504      24612ADE 
  504      F7B5FD1E 
  505 11a1 EA94CA68 		.ascii	"\352\224\312hay.8E\"\255\013\346\326\011\012*\024\375"
-ARM GAS  /tmp/ccoaMG3z.s 			page 40
+ARM GAS  /tmp/cc0rwqKo.s 			page 40
 
 
  505      61792E38 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  516      AD8BB5AC 
  516      4FAC8AAA 
  516      681C96
-ARM GAS  /tmp/ccoaMG3z.s 			page 41
+ARM GAS  /tmp/cc0rwqKo.s 			page 41
 
 
  517 1282 CD0FD4FE 		.ascii	"\315\017\324\3762\226\353\255\260\254xnI\261\274\215"
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  528      5EABCDCF 
  528      BB696E1C 
  528      1D
-ARM GAS  /tmp/ccoaMG3z.s 			page 42
+ARM GAS  /tmp/cc0rwqKo.s 			page 42
 
 
  529 1353 565E3E75 		.ascii	"V^>u\254W\347\267Z\235\356e\370V\253\037z\031\276\325"
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  540      8D91F6F1 
  540      BF397431 
  540      63FB97
-ARM GAS  /tmp/ccoaMG3z.s 			page 43
+ARM GAS  /tmp/cc0rwqKo.s 			page 43
 
 
  541 1425 A0E22F45 		.ascii	"\240\342/E\003\371)\306\337a|\001\343\213\030\377\210"
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  552      7EC5493C 
  552      CA4DB71B 
  553 14fb F10ED446 		.ascii	"\361\016\324F\260\3104\247~\246\377\264\233\346&\366"
-ARM GAS  /tmp/ccoaMG3z.s 			page 44
+ARM GAS  /tmp/cc0rwqKo.s 			page 44
 
 
  553      B0C834A7 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  564      DC46602F 
  564      21D8541E 
  564      B0C48B
-ARM GAS  /tmp/ccoaMG3z.s 			page 45
+ARM GAS  /tmp/cc0rwqKo.s 			page 45
 
 
  565 15df 46746D7D 		.ascii	"Ftm}\206e0\003\312\222\335\027X\343L\274\325\241|\347"
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  576      06DDCC35 
  576      546DE67C 
  576      E97B6DD4 
-ARM GAS  /tmp/ccoaMG3z.s 			page 46
+ARM GAS  /tmp/cc0rwqKo.s 			page 46
 
 
  577 16b5 ED25C49E 		.ascii	"\355%\304\236b\272!\202\363y\010\351_mL\2779\206$l\303"
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  588      EED379D1 
  588      78751FC3 
  588      45E3
-ARM GAS  /tmp/ccoaMG3z.s 			page 47
+ARM GAS  /tmp/cc0rwqKo.s 			page 47
 
 
  589 1794 F57DB48B 		.ascii	"\365}\264\213\306\212\024\342.\325\306\210\363\211?"
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  601      CF7499BF 
  601      5759F71B 
  601      F8B89605 
-ARM GAS  /tmp/ccoaMG3z.s 			page 48
+ARM GAS  /tmp/cc0rwqKo.s 			page 48
 
 
  601      AC6D
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  613 1930 C4FC1D89 		.ascii	"\304\374\035\211O\\D\317\331\270\222}\206q\335Ieq\234"
  613      4F5C44CF 
  613      D9B8927D 
-ARM GAS  /tmp/ccoaMG3z.s 			page 49
+ARM GAS  /tmp/cc0rwqKo.s 			page 49
 
 
  613      8671DD49 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  624      520E31BF 
  624      FB45
  625 1a09 5E6FBAA1 		.ascii	"^o\272\241*hK\031\355\355\256w\031\355\355\036\332="
-ARM GAS  /tmp/ccoaMG3z.s 			page 50
+ARM GAS  /tmp/cc0rwqKo.s 			page 50
 
 
  625      2A684B19 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  636      16576C95 
  637 1ad8 E9C9BBE7 		.ascii	"\351\311\273\347\311\252\351g\210\261D\207\341\023\207"
  637      C9AAE967 
-ARM GAS  /tmp/ccoaMG3z.s 			page 51
+ARM GAS  /tmp/cc0rwqKo.s 			page 51
 
 
  637      88B14487 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  649      DA587637 
  649      267B6B2C 
  649      BB3B93FD 
-ARM GAS  /tmp/ccoaMG3z.s 			page 52
+ARM GAS  /tmp/cc0rwqKo.s 			page 52
 
 
  650 1bbe 2CBB0793 		.ascii	",\273\007\223}$\226\335\223\245;\226}\253\322\226\344"
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  661      0C0EAB52 
  661      F0518B4E 
  661      FD25B9D3 
-ARM GAS  /tmp/ccoaMG3z.s 			page 53
+ARM GAS  /tmp/cc0rwqKo.s 			page 53
 
 
  662 1c97 2251924E 		.ascii	"\"Q\222N\030<\205,\011\237\230\210g\215V<\277\026\026"
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  673      7CEDA7B2 
  673      F74594BD 
  673      48FD6D94 
-ARM GAS  /tmp/ccoaMG3z.s 			page 54
+ARM GAS  /tmp/cc0rwqKo.s 			page 54
 
 
  673      6685
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  685      C47D332B 
  685      F59969A9 
  685      D6382A7F 
-ARM GAS  /tmp/ccoaMG3z.s 			page 55
+ARM GAS  /tmp/cc0rwqKo.s 			page 55
 
 
  685      98713EED 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  697 1f0d F133D657 		.ascii	"\3613\326W\002\\@=E\376\214\322\322Bo\250\"\000\334"
  697      025C403D 
  697      45FE8CD2 
-ARM GAS  /tmp/ccoaMG3z.s 			page 56
+ARM GAS  /tmp/cc0rwqKo.s 			page 56
 
 
  697      D2426FA8 
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  709      E7EE521F 
  709      9053E6
  710 1fe5 CFF016F9 		.ascii	"\317\360\026\371\213}\225%aT\255\020\221\210\327\253"
-ARM GAS  /tmp/ccoaMG3z.s 			page 57
+ARM GAS  /tmp/cc0rwqKo.s 			page 57
 
 
  710      8B7D9525 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  722 20b3 50CD1F2C 		.ascii	"P\315\037,\343\217-,\017\372\0010\215d{\241\031\012"
  722      E38F2D2C 
  722      0FFA0130 
-ARM GAS  /tmp/ccoaMG3z.s 			page 58
+ARM GAS  /tmp/cc0rwqKo.s 			page 58
 
 
  722      8D647BA1 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  734      CF9184AD 
  734      C25BD995 
  734      2A4FC8
-ARM GAS  /tmp/ccoaMG3z.s 			page 59
+ARM GAS  /tmp/cc0rwqKo.s 			page 59
 
 
  735 218e 5B02F6C2 		.ascii	"[\002\366\302\033\356\026U'\232\223Z\341}\316\027\010"
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  746      E22D2AF5 
  746      11
  747 225d E6B2460C 		.ascii	"\346\262F\014\362\346\203*\371JUj\244L\217}dV\201\307"
-ARM GAS  /tmp/ccoaMG3z.s 			page 60
+ARM GAS  /tmp/cc0rwqKo.s 			page 60
 
 
  747      F2E6832A 
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  758      0DA7A81C 
  758      D820612B 
  759 2332 2E0D770D 		.ascii	".\015w\015\025\201G\021\012\224V\224\370\037(D\237\202"
-ARM GAS  /tmp/ccoaMG3z.s 			page 61
+ARM GAS  /tmp/cc0rwqKo.s 			page 61
 
 
  759      15814711 
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  770      E3C4A4E8 
  771 240c A4863805 		.ascii	"\244\2068\005m*$4\215\0026\011\277B\233\342\225(s\221"
  771      6D2A2434 
-ARM GAS  /tmp/ccoaMG3z.s 			page 62
+ARM GAS  /tmp/cc0rwqKo.s 			page 62
 
 
  771      8D023609 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  782      205C8345 
  782      704D7DB6 
  783 24ed AC3C1C28 		.ascii	"\254<\034(~\036P\236\365\322\244\363Y\020C\3313\316"
-ARM GAS  /tmp/ccoaMG3z.s 			page 63
+ARM GAS  /tmp/cc0rwqKo.s 			page 63
 
 
  783      7E1E509E 
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  794      2095FDD7 
  794      9CFC821E 
  794      CC2DB983 
-ARM GAS  /tmp/ccoaMG3z.s 			page 64
+ARM GAS  /tmp/cc0rwqKo.s 			page 64
 
 
  795 25d6 FF0C36A4 		.ascii	"\377\0146\244'\344\020K\221\355\315\363\344\026@FvV"
@@ -3838,12 +3838,12 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  806 269b DAE40184 		.ascii	"\332\344\001\204\224\237\365\377\000\245\330\375\240"
  806      949FF5FF 
  806      00A5D8FD 
-ARM GAS  /tmp/ccoaMG3z.s 			page 65
+ARM GAS  /tmp/cc0rwqKo.s 			page 65
 
 
  806      A0
  807              		.text
- 808              		.section	.gnu.lto_.symtab.41727296a955d667,"",%progbits
+ 808              		.section	.gnu.lto_.symtab.f8b6c85f7a5d0586,"",%progbits
  809 0000 73645F69 		.ascii	"sd_is_card_inserted\000\000\000\000\000\000\000\000"
  809      735F6361 
  809      72645F69 
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  819      6E746600 
  819      00020000 
  820 00e3 00000000 		.ascii	"\000\000\000\000\000\000\316\003\000\000mmcDisconne"
-ARM GAS  /tmp/ccoaMG3z.s 			page 66
+ARM GAS  /tmp/cc0rwqKo.s 			page 66
 
 
  820      0000CE03 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  833      782D6D34 
  833      2720272D 
  834 0033 2D643136 		.ascii	"-d16' '-mno-thumb-interwork' '-mthumb' '-O2' '-fomi"
-ARM GAS  /tmp/ccoaMG3z.s 			page 67
+ARM GAS  /tmp/cc0rwqKo.s 			page 67
 
 
  834      2720272D 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  873 0002 1869     		ldr	r0, [r3, #16]
  874 0004 C0F38000 		ubfx	r0, r0, #2, #1
  875 0008 80F00100 		eor	r0, r0, #1
-ARM GAS  /tmp/ccoaMG3z.s 			page 68
+ARM GAS  /tmp/cc0rwqKo.s 			page 68
 
 
  876 000c 7047     		bx	lr
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  926 0030 2022     		movs	r2, #32
  927 0032 FFF7FEFF 		bl	_pal_lld_setgroupmode
  928 0036 3648     		ldr	r0, .L20+16
-ARM GAS  /tmp/ccoaMG3z.s 			page 69
+ARM GAS  /tmp/cc0rwqKo.s 			page 69
 
 
  929 0038 4FF48061 		mov	r1, #1024
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  983 00cc F8BD     		pop	{r3, r4, r5, r6, r7, pc}
  984              	.L17:
  985 00ce 2868     		ldr	r0, [r5]
-ARM GAS  /tmp/ccoaMG3z.s 			page 70
+ARM GAS  /tmp/cc0rwqKo.s 			page 70
 
 
  986 00d0 1849     		ldr	r1, .L20+52
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  1038              		@ link register save eliminated.
  1039 0000 037B     		ldrb	r3, [r0, #12]	@ zero_extendqisi2
  1040 0002 0BB1     		cbz	r3, .L24
-ARM GAS  /tmp/ccoaMG3z.s 			page 71
+ARM GAS  /tmp/cc0rwqKo.s 			page 71
 
 
  1041 0004 0068     		ldr	r0, [r0]
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  1093              		.size	mmcCfg, 12
  1094              	mmcCfg:
  1095 0000 00000000 		.word	SPID3
-ARM GAS  /tmp/ccoaMG3z.s 			page 72
+ARM GAS  /tmp/cc0rwqKo.s 			page 72
 
 
  1096 0004 00000000 		.word	lsCfg
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  1130              	.LC6:
  1131 0098 53442F4D 		.ascii	"SD/MMC:Card Found\012\000"
  1131      4D433A43 
-ARM GAS  /tmp/ccoaMG3z.s 			page 73
+ARM GAS  /tmp/cc0rwqKo.s 			page 73
 
 
  1131      61726420 
@@ -4360,43 +4360,43 @@ ARM GAS  /tmp/ccoaMG3z.s 			page 1
  1153      00000000 
  1154              		.comm	__gnu_lto_v1,1,1
  1155              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccoaMG3z.s 			page 74
+ARM GAS  /tmp/cc0rwqKo.s 			page 74
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 sdmmcsimple.c
-     /tmp/ccoaMG3z.s:840    .text.chprintf:0000000000000000 $t
-     /tmp/ccoaMG3z.s:845    .text.chprintf:0000000000000000 chprintf
-     /tmp/ccoaMG3z.s:862    .text.sd_is_card_inserted:0000000000000000 $t
-     /tmp/ccoaMG3z.s:868    .text.sd_is_card_inserted:0000000000000000 sd_is_card_inserted
-     /tmp/ccoaMG3z.s:880    .text.sd_is_card_inserted:0000000000000010 $d
-     /tmp/ccoaMG3z.s:883    .text.sd_is_write_protected:0000000000000000 $t
-     /tmp/ccoaMG3z.s:889    .text.sd_is_write_protected:0000000000000000 sd_is_write_protected
-     /tmp/ccoaMG3z.s:897    .text.sdmmcInitialize:0000000000000000 $t
-     /tmp/ccoaMG3z.s:903    .text.sdmmcInitialize:0000000000000000 sdmmcInitialize
-     /tmp/ccoaMG3z.s:1010   .text.sdmmcInitialize:0000000000000100 $d
-     /tmp/ccoaMG3z.s:1029   .text.sdmmGetMMCDriver:0000000000000000 $t
-     /tmp/ccoaMG3z.s:1035   .text.sdmmGetMMCDriver:0000000000000000 sdmmGetMMCDriver
-     /tmp/ccoaMG3z.s:1048   .text.sdmmcGetFS:0000000000000000 $t
-     /tmp/ccoaMG3z.s:1054   .text.sdmmcGetFS:0000000000000000 sdmmcGetFS
-     /tmp/ccoaMG3z.s:1067   .text.sdmmcFSMounted:0000000000000000 $t
-     /tmp/ccoaMG3z.s:1073   .text.sdmmcFSMounted:0000000000000000 sdmmcFSMounted
-     /tmp/ccoaMG3z.s:1081   .data.hsCfg:0000000000000000 $d
-     /tmp/ccoaMG3z.s:1084   .data.hsCfg:0000000000000000 hsCfg
-     /tmp/ccoaMG3z.s:1090   .data.mmcCfg:0000000000000000 $d
-     /tmp/ccoaMG3z.s:1094   .data.mmcCfg:0000000000000000 mmcCfg
-     /tmp/ccoaMG3z.s:1142   .data.lsCfg:0000000000000000 lsCfg
-     /tmp/ccoaMG3z.s:1099   .bss.serialPort:0000000000000000 $d
-     /tmp/ccoaMG3z.s:1103   .bss.serialPort:0000000000000000 serialPort
-     /tmp/ccoaMG3z.s:1106   .bss.SD:0000000000000000 $d
-     /tmp/ccoaMG3z.s:1110   .bss.SD:0000000000000000 SD
-     /tmp/ccoaMG3z.s:1113   .rodata.str1.4:0000000000000000 $d
-     /tmp/ccoaMG3z.s:1139   .data.lsCfg:0000000000000000 $d
-     /tmp/ccoaMG3z.s:1148   .bss.FS:0000000000000000 $d
-     /tmp/ccoaMG3z.s:1152   .bss.FS:0000000000000000 FS
+     /tmp/cc0rwqKo.s:840    .text.chprintf:0000000000000000 $t
+     /tmp/cc0rwqKo.s:845    .text.chprintf:0000000000000000 chprintf
+     /tmp/cc0rwqKo.s:862    .text.sd_is_card_inserted:0000000000000000 $t
+     /tmp/cc0rwqKo.s:868    .text.sd_is_card_inserted:0000000000000000 sd_is_card_inserted
+     /tmp/cc0rwqKo.s:880    .text.sd_is_card_inserted:0000000000000010 $d
+     /tmp/cc0rwqKo.s:883    .text.sd_is_write_protected:0000000000000000 $t
+     /tmp/cc0rwqKo.s:889    .text.sd_is_write_protected:0000000000000000 sd_is_write_protected
+     /tmp/cc0rwqKo.s:897    .text.sdmmcInitialize:0000000000000000 $t
+     /tmp/cc0rwqKo.s:903    .text.sdmmcInitialize:0000000000000000 sdmmcInitialize
+     /tmp/cc0rwqKo.s:1010   .text.sdmmcInitialize:0000000000000100 $d
+     /tmp/cc0rwqKo.s:1029   .text.sdmmGetMMCDriver:0000000000000000 $t
+     /tmp/cc0rwqKo.s:1035   .text.sdmmGetMMCDriver:0000000000000000 sdmmGetMMCDriver
+     /tmp/cc0rwqKo.s:1048   .text.sdmmcGetFS:0000000000000000 $t
+     /tmp/cc0rwqKo.s:1054   .text.sdmmcGetFS:0000000000000000 sdmmcGetFS
+     /tmp/cc0rwqKo.s:1067   .text.sdmmcFSMounted:0000000000000000 $t
+     /tmp/cc0rwqKo.s:1073   .text.sdmmcFSMounted:0000000000000000 sdmmcFSMounted
+     /tmp/cc0rwqKo.s:1081   .data.hsCfg:0000000000000000 $d
+     /tmp/cc0rwqKo.s:1084   .data.hsCfg:0000000000000000 hsCfg
+     /tmp/cc0rwqKo.s:1090   .data.mmcCfg:0000000000000000 $d
+     /tmp/cc0rwqKo.s:1094   .data.mmcCfg:0000000000000000 mmcCfg
+     /tmp/cc0rwqKo.s:1142   .data.lsCfg:0000000000000000 lsCfg
+     /tmp/cc0rwqKo.s:1099   .bss.serialPort:0000000000000000 $d
+     /tmp/cc0rwqKo.s:1103   .bss.serialPort:0000000000000000 serialPort
+     /tmp/cc0rwqKo.s:1106   .bss.SD:0000000000000000 $d
+     /tmp/cc0rwqKo.s:1110   .bss.SD:0000000000000000 SD
+     /tmp/cc0rwqKo.s:1113   .rodata.str1.4:0000000000000000 $d
+     /tmp/cc0rwqKo.s:1139   .data.lsCfg:0000000000000000 $d
+     /tmp/cc0rwqKo.s:1148   .bss.FS:0000000000000000 $d
+     /tmp/cc0rwqKo.s:1152   .bss.FS:0000000000000000 FS
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccoaMG3z.s:882    .text.sd_is_card_inserted:0000000000000014 $t
-     /tmp/ccoaMG3z.s:1028   .text.sdmmcInitialize:0000000000000144 $t
+     /tmp/cc0rwqKo.s:882    .text.sd_is_card_inserted:0000000000000014 $t
+     /tmp/cc0rwqKo.s:1028   .text.sdmmcInitialize:0000000000000144 $t
 
 UNDEFINED SYMBOLS
 chvprintf

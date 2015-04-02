@@ -392,10 +392,10 @@
                                      PIN_OTYPE_PUSHPULL(GPIOB_RXGPS) |      \
                                      PIN_OTYPE_OPENDRAIN(GPIOB_ISCL) |      \
                                      PIN_OTYPE_OPENDRAIN(GPIOB_ISDA) |      \
-                                     PIN_OTYPE_PUSHPULL(GPIOB_SDN) |        \
+                                     PIN_OTYPE_PUSHPULL(GPIOB_SDN)   |      \
                                      PIN_OTYPE_PUSHPULL(GPIOB_PIN11) |      \
-                                     PIN_OTYPE_PUSHPULL(GPIOB_RSS) |        \
-                                     PIN_OTYPE_PUSHPULL(GPIOB_RSCK) |       \
+                                     PIN_OTYPE_PUSHPULL(GPIOB_RSS)   |      \
+                                     PIN_OTYPE_PUSHPULL(GPIOB_RSCK)  |      \
                                      PIN_OTYPE_PUSHPULL(GPIOB_RMISO) |      \
                                      PIN_OTYPE_PUSHPULL(GPIOB_RMOSI))
 #define VAL_GPIOB_OSPEEDR           (PIN_OSPEED_100M(GPIOB_RXON) |          \
@@ -406,8 +406,8 @@
                                      PIN_OSPEED_100M(GPIOB_TRIGM) |         \
                                      PIN_OSPEED_50M(GPIOB_TXGPS) |          \
                                      PIN_OSPEED_50M(GPIOB_RXGPS) |          \
-                                     PIN_OSPEED_100M(GPIOB_ISCL) |          \
-                                     PIN_OSPEED_100M(GPIOB_ISDA) |          \
+                                     PIN_OSPEED_2M(GPIOB_ISCL) |          \
+                                     PIN_OSPEED_2M(GPIOB_ISDA) |          \
                                      PIN_OSPEED_100M(GPIOB_SDN) |           \
                                      PIN_OSPEED_100M(GPIOB_PIN11) |         \
                                      PIN_OSPEED_100M(GPIOB_RSS) |           \
@@ -438,8 +438,8 @@
                                      PIN_ODR_HIGH(GPIOB_TRIGM) |            \
                                      PIN_ODR_HIGH(GPIOB_TXGPS) |            \
                                      PIN_ODR_HIGH(GPIOB_RXGPS) |            \
-                                     PIN_ODR_HIGH(GPIOB_ISCL)  |            \
-                                     PIN_ODR_HIGH(GPIOB_ISDA)  |            \
+                                     PIN_ODR_LOW(GPIOB_ISCL)   |            \
+                                     PIN_ODR_LOW(GPIOB_ISDA)   |            \
                                      PIN_ODR_HIGH(GPIOB_SDN)   |            \
                                      PIN_ODR_HIGH(GPIOB_PIN11) |            \
                                      PIN_ODR_HIGH(GPIOB_RSS)   |            \
@@ -483,21 +483,21 @@
  * PC14 - PIN14                     (input pullup).
  * PC15 - PIN15                     (input pullup).
  */
-#define VAL_GPIOC_MODER             (PIN_MODE_ANALOG(GPIOC_ADCPRS) |         \
-                                     PIN_MODE_ANALOG(GPIOC_ADCTMP) |         \
-                                     PIN_MODE_INPUT(GPIOC_PIN2) |           \
-                                     PIN_MODE_INPUT(GPIOC_PIN3) |           \
-                                     PIN_MODE_INPUT(GPIOC_PIN4) |           \
-                                     PIN_MODE_INPUT(GPIOC_PIN5) |           \
-                                     PIN_MODE_ALTERNATE(GPIOC_TXDBG) |          \
-                                     PIN_MODE_ALTERNATE(GPIOC_RXDBG) |          \
-                                     PIN_MODE_INPUT(GPIOC_RADIRQ) |         \
-                                     PIN_MODE_ALTERNATE(GPIOC_ESDA) |           \
-                                     PIN_MODE_ALTERNATE(GPIOC_SDCLK) |          \
-                                     PIN_MODE_ALTERNATE(GPIOC_SDDO) |           \
-                                     PIN_MODE_ALTERNATE(GPIOC_SDDI) |           \
-                                     PIN_MODE_INPUT(GPIOC_PIN13) |          \
-                                     PIN_MODE_INPUT(GPIOC_PIN14) |          \
+#define VAL_GPIOC_MODER             (PIN_MODE_ANALOG(GPIOC_ADCPRS)   |  \
+                                     PIN_MODE_ANALOG(GPIOC_ADCTMP)   |  \
+                                     PIN_MODE_INPUT(GPIOC_PIN2)      |  \
+                                     PIN_MODE_INPUT(GPIOC_PIN3)      |  \
+                                     PIN_MODE_INPUT(GPIOC_PIN4)      |  \
+                                     PIN_MODE_INPUT(GPIOC_PIN5)      |  \
+                                     PIN_MODE_ALTERNATE(GPIOC_TXDBG) |  \
+                                     PIN_MODE_ALTERNATE(GPIOC_RXDBG) |  \
+                                     PIN_MODE_INPUT(GPIOC_RADIRQ)    |  \
+                                     PIN_MODE_ALTERNATE(GPIOC_ESDA)  |  \
+                                     PIN_MODE_ALTERNATE(GPIOC_SDCLK) |  \
+                                     PIN_MODE_ALTERNATE(GPIOC_SDDO)  |  \
+                                     PIN_MODE_ALTERNATE(GPIOC_SDDI)  |  \
+                                     PIN_MODE_INPUT(GPIOC_PIN13)     |  \
+                                     PIN_MODE_INPUT(GPIOC_PIN14)     |  \
                                      PIN_MODE_INPUT(GPIOC_PIN15))
 #define VAL_GPIOC_OTYPER            (PIN_OTYPE_PUSHPULL(GPIOC_ADCPRS) |     \
                                      PIN_OTYPE_PUSHPULL(GPIOC_ADCTMP) |     \
@@ -508,7 +508,7 @@
                                      PIN_OTYPE_PUSHPULL(GPIOC_TXDBG) |      \
                                      PIN_OTYPE_PUSHPULL(GPIOC_RXDBG) |      \
                                      PIN_OTYPE_PUSHPULL(GPIOC_RADIRQ) |     \
-                                     PIN_OTYPE_OPENDRAIN(GPIOC_ESDA) |       \
+                                     PIN_OTYPE_OPENDRAIN(GPIOC_ESDA) |      \
                                      PIN_OTYPE_PUSHPULL(GPIOC_SDCLK) |      \
                                      PIN_OTYPE_PUSHPULL(GPIOC_SDDO) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOC_SDDI) |       \

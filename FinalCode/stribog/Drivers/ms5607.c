@@ -71,13 +71,13 @@ msg_t ms5607_readPressureTemperature(ms5607_t *m, float *pressure, float *temper
     // Start temperature conversion
     m->txBuffer[0] = MS5607_TEMPERATURE_CONVERT;
     msg_t status = I2CSensor_transact_buf(&(m->sensor), 1, 0);
-    chThdSleepMilliseconds(11);
+    chThdSleepMilliseconds(10);		// Wait for conversion
     m->txBuffer[0] = MS5607_READ_ADC_RESULT;
     status |= I2CSensor_transact(&(m->sensor), m->txBuffer, 1, tempData, 3);
     // Start pressure conversion
     m->txBuffer[0] = MS5607_PRESSURE_CONVERT;
     status |= I2CSensor_transact_buf(&(m->sensor), 1, 0);
-    chThdSleepMilliseconds(11);     // Wait for conversion
+    chThdSleepMilliseconds(10);     // Wait for conversion
     m->txBuffer[0] = MS5607_READ_ADC_RESULT;
     status |= I2CSensor_transact(&(m->sensor), m->txBuffer, 1, pressureData, 3);
     
@@ -92,9 +92,10 @@ msg_t ms5607_readPressureTemperature(ms5607_t *m, float *pressure, float *temper
 		int32_t temp = 2000 + (dT*m->cal[5]>>23);
 		int32_t press;
 		
-		off = (m->cal[1]<<17) + ((m->cal[3]*dT)>>6);
-		sens = (m->cal[0]<<16) + ((m->cal[2]*dT)>>7);
+		off = (m->cal[1])*(1<<17) +  (m->cal[3]*dT)/(1<<6);
+		sens = (m->cal[0])*(1<<16) + (m->cal[2]*dT)/(1<<7);
 		// 2nd order Temperature compensation
+		/*
 		if(temp < 20000) // Low temp
 		{
 		    int32_t t2k = (temp-2000);
@@ -110,12 +111,13 @@ msg_t ms5607_readPressureTemperature(ms5607_t *m, float *pressure, float *temper
 			sens -= 8*t1k5;
 		    }
 		}
+		*/
 		temp -= T2;
-		press = ((praw * sens >> 21)- off)>>15;
+		press = ( (praw * sens)/(1 << 21) - off )/(1<<15);
 		
 		// Convert to C and mbar
-		m->lastTemp = (float) temp*0.01f;
-		m->lastPress = (float) press*0.01f;
+		m->lastTemp = temp*0.01f;
+		m->lastPress = press*0.01f;
 		if(pressure != NULL)
 		{
 		    *pressure = m->lastPress;

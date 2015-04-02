@@ -29,6 +29,8 @@
 #include "ustr.h"
 #include "sensor_thread.h"
 
+#include "Drivers/xbeepro.h"
+
 #include <stdlib.h>
 #include <math.h>
 #include <stdint.h>
@@ -68,6 +70,8 @@ FIL lFile;
 MMCDriver MMCD1;
 
 
+static xbeePro_t xbee;
+
 /* Debug Serial configuration, 460k8, 8N1 */
 static SerialConfig serCfg = 
 {
@@ -86,9 +90,9 @@ void initialize(void)
     chSysInit();	// ChibiOS System Initialization
 
     /* 
-     * Configure I/O 
+     * Configure I/O : DEPRECATED
      */
-    boardInit();
+    //boardInit();
     
     chThdSleepMilliseconds(100); // Startup wait (may be a bit long)
     /*
@@ -102,13 +106,17 @@ void initialize(void)
     gpsStart(&GPS_UART);
     
     /* Debug Serial Port Startup */
-    sdStart(&COM_SERIAL, &serCfg);
+    //sdStart(&COM_SERIAL, &serCfg);
     sdStart(&DBG_SERIAL, &serCfg);	// Activate Debug serial driver
     chprintf((BaseSequentialStream *) &DBG_SERIAL, "==Stribog v1==\n");
 
     /* SPI/MMC Logger Startup */
     int8_t sdIni, dlIni, lfIni;
-    chThdSleepMilliseconds(200); // Wait for SD startup
+    
+    //chThdSleepMilliseconds(200); // Wait for SD startup
+
+    // XBee Initialization
+    xbeePro_init(&xbee, &COM_SERIAL);
     /* // SD
     sdIni = sdmmcInitialize(&sd, &MMCD1, &DBG_SERIAL);
    	chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing Datalogger\n");
@@ -212,7 +220,7 @@ int main(void)
     // Startup chirp
     boardSetBuzzer(1);
     boardSetLED(1);
-    chThdSleepMilliseconds(300);
+    //chThdSleepMilliseconds(10);
     boardSetBuzzer(0);
     boardSetLED(0);
     
