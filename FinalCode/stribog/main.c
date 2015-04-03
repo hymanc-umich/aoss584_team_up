@@ -194,7 +194,7 @@ int main(void)
     uint32_t timeCounter = 0;
     chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd); 			// Create GPS Thread
     chThdCreateStatic(waSensor, sizeof(waSensor), NORMALPRIO, sensorThread, &sensorThd);	// Create sensor thread
-       
+    
     uint16_t logfileCounter = 0; 	// Logfile number counter
     uint32_t sampleCounter = 0;		// Sample counter (resets per file)
     
@@ -224,7 +224,9 @@ int main(void)
 		// Post data
 		
 		
-		chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n");		
+		chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n");
+
+        chprintf((BaseSequentialStream *) &COM_SERIAL, "XBEE_TEST\n");		
 		// Write GPS Data to MasterSample
 		//datasample_gpsToSample(&location, &masterSample);
 		

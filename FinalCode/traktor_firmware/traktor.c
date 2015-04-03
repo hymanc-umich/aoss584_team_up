@@ -12,7 +12,10 @@
 
 #include "board.h"
 
-static THD_WORKING_AREA(waXbee, 1284);     // GPS thread working area
+static THD_WORKING_AREA(waXbeeRx, 1024);     // GPS thread working area
+static THD_WORKING_AREA(waXbeeTxSer, 1024);
+static THD_WORKING_AREA(waXbeeTxUsb, 1024);
+
 /* Debug Serial configuration, 460k8, 8N1 */
 static SerialConfig serCfg = 
 {
@@ -175,10 +178,10 @@ static const uint8_t vcom_string1[] = {
 static const uint8_t vcom_string2[] = {
   USB_DESC_BYTE(56),                    /* bLength.                         */
   USB_DESC_BYTE(USB_DESCRIPTOR_STRING), /* bDescriptorType.                 */
-  'C', 0, 'h', 0, 'i', 0, 'b', 0, 'i', 0, 'O', 0, 'S', 0, '/', 0,
-  'R', 0, 'T', 0, ' ', 0, 'V', 0, 'i', 0, 'r', 0, 't', 0, 'u', 0,
-  'a', 0, 'l', 0, ' ', 0, 'C', 0, 'O', 0, 'M', 0, ' ', 0, 'P', 0,
-  'o', 0, 'r', 0, 't', 0
+  'T', 0, 'r', 0, 'a', 0, 'k', 0, 'T', 0, 'o', 0, 'r', 0, '/', 0,
+  'B', 0, 'a', 0, 'l', 0, 'l', 0, 'o', 0, 'o', 0, 'n', 0, ' ', 0,
+  'T', 0, 'r', 0, 'a', 0, 'c', 0, 'k', 0, 'e', 0, 'r', 0, ' ', 0,
+  ' ', 0, ' ', 0, ' ', 0
 };
 
 /*
@@ -357,33 +360,71 @@ void initialize(void)
     }
 }
 
-msg_t serialXChangeThread(void *arg)
+/**
+ *
+ *
+ */
+msg_t xbeeRxchangeThread(void *arg)
 {
-    char xbeeRx[10];
+    (void *) arg;
+    uint8_t xbeeRx[4];
     xbeeRx[0] = '-';
-    while(TRUE)
+    while(1)
     {
+        // XBee to serial
         sdRead(&COM_SERIAL, xbeeRx, 1); // Blocking Read
         chprintf((BaseSequentialStream *) &DBG_SERIAL, "%c", xbeeRx[0]);
-        chprintf((BaseSequentialStream *) &DBG_SERIAL, "%c", xbeeRx[0]);
+        chprintf((BaseSequentialStream *) &SDU1, "%c", xbeeRx[0]);        // Print to 
+        // Serial to XBee
         chThdYield();
         //chThdSleepMicroseconds(100);
     }
 }
 
 /**
+ *
+ *
+ */
+msg_t xbeeSerTxchangeThread(void *arg)
+{
+    (void *) arg;
+    uint8_t xbeeTx[4];
+    while(TRUE)
+    {
+        sdRead(&COM_SERIAL, xbeeTx, 1);
+        chprintf((BaseSequentialStream *) &COM_SERIAL, "%c", xbeeTx[0]);
+        chThdYield();
+    }
+}
+
+/***
+ *
+ *
+ */
+msg_t xbeeUsbTxchangeThread(void *arg)
+{
+    (void *) arg;
+    uint8_t xbeeTx;
+    while(TRUE)
+    {
+        xbeeTx = chSequentialStreamGet((BaseSequentialStream *) &SDU1);
+        chprintf((BaseSequentialStream *) &COM_SERIAL, "%c", xbeeTx);
+        chThdYield();
+    }
+}
+/**
  * Application entry point.
  */
 int main(void) 
 {
-    initialize(); // Initialize OS/Peripherals
+     initialize(); // Initialize OS/Peripherals
 
-    // Startup chirp
-    boardSetBuzzer(1);
-    boardSetLED(1);
-    //chThdSleepMilliseconds(10);
-    boardSetBuzzer(0);
-    boardSetLED(0);
+     // Startup chirp
+     boardSetBuzzer(1);
+     boardSetLED(1);
+     //chThdSleepMilliseconds(10);
+     boardSetBuzzer(0);
+     boardSetLED(0);
 
       /*
        * Initializes a serial-over-USB CDC driver.
@@ -415,16 +456,18 @@ int main(void)
     chprintf((BaseSequentialStream *) &SDU1, "== TrakTor Ground Station v1 ==\n");
     //char rxBuffer[512];
     uint32_t count = 0;
-    
-    chThdCreateStatic(waXbee, sizeof(waXbee), NORMALPRIO, serialXChangeThread, NULL);
-    while (TRUE) 
+
+    chThdCreateStatic(waXbeeRx, sizeof(waXbeeRx), NORMALPRIO, xbeeRxchangeThread, NULL);
+    //chThdCreateStatic(waXbeeTxSer, sizeof(waXbeeTxSer), NORMALPRIO, xbeeSerTxchangeThread, NULL);
+    //chThdCreateStatic(waXbeeTxUsb, sizeof(waXbeeTxUsb), NORMALPRIO, xbeeUsbTxchangeThread, NULL);
+    while (TRUE)
     {
         chThdSleepMilliseconds(250);
         boardToggleLED();
-        chprintf((BaseSequentialStream *) &SDU1, "Pulse %d\n",count++);
+        //chprintf((BaseSequentialStream *) &SDU1, "Pulse %d\n",count++);
         // Read xbee buffer
         // Write out to debug serial
         // Do stuff with LEDs
     }
     return 0;
-}
+    }
