@@ -41,8 +41,8 @@ SYMBOL TABLE:
 00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
 00000000 l    d  .comment	00000000 .comment
 00000000 l    d  .debug_frame	00000000 .debug_frame
-00000000 l    df *ABS*	00000000 cc4ZQWuw.ltrans4.o
-00000000 l    df *ABS*	00000000 cc4ZQWuw.ltrans3.o
+00000000 l    df *ABS*	00000000 cc9ty1WB.ltrans4.o
+00000000 l    df *ABS*	00000000 cc9ty1WB.ltrans3.o
 08003dd0 l     O .text	0000000c fsparams.11768.4965
 08003e20 l     O .text	000000c0 _stm32_dma_streams.4966
 08003ee0 l     O .text	00000008 serusbcfg.13171.4844
@@ -64,7 +64,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 00000000 l    df *ABS*	00000000 _arm_muldivdf3.o
 00000000 l    df *ABS*	00000000 _arm_fixdfsi.o
 00000000 l    df *ABS*	00000000 _arm_truncdfsf2.o
-00000000 l    df *ABS*	00000000 cc4ZQWuw.ltrans0.o
+00000000 l    df *ABS*	00000000 cc9ty1WB.ltrans0.o
 08001190 l     F .text	0000004e long_to_string_with_divisor.12382.4336
 080023a0 l     F .text	00000002 _unhandled_exception.4539
 08003b70 l     O .text	00000008 vcom_device_descriptor.13177.4645
@@ -78,7 +78,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20000800 l     O .data	00000007 linecoding.10155.4685
 08003cb0 l     O .text	00000020 vcom_strings.13172.4640
 08003cf0 l     O .text	00000008 vcom_configuration_descriptor.13179.4647
-00000000 l    df *ABS*	00000000 cc4ZQWuw.ltrans1.o
+00000000 l    df *ABS*	00000000 cc9ty1WB.ltrans1.o
 08002440 l     F .text	000000d6 otg_epin_handler.11682.4444
 08002730 l     F .text	00000192 serve_interrupt.12083.4479
 080029b0 l     F .text	000000ca _usb_ep0in.4577
@@ -93,7 +93,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08003d70 l     O .text	00000002 halted_status.10741.4718
 08003d80 l     O .text	00000020 vmt.9734.4720
 08003da0 l     O .text	00000002 active_status.10742.4719
-00000000 l    df *ABS*	00000000 cc4ZQWuw.ltrans2.o
+00000000 l    df *ABS*	00000000 cc9ty1WB.ltrans2.o
 08002f10 l     F .text	000000e0 chSchGoSleepTimeoutS.4563
 08002ff0 l     F .text	0000002c chThdEnqueueTimeoutS.4559
 08003020 l     F .text	0000004e chIQGetTimeout.4463

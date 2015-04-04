@@ -22,6 +22,7 @@
 #include "datasample.h"
 
 
+static THD_WORKING_AREA(waBeacon, 64);   // Audio Beacon thread
 static THD_WORKING_AREA(waGps, 1284);	 // GPS thread working area
 static THD_WORKING_AREA(waSensor, 4096); // Sensor thread working area
 static THD_WORKING_AREA(waCom, 4096);	 // Communication thread
@@ -158,9 +159,9 @@ int8_t closeLog(void)
 /**
  * @brief Prints GPS Data to the serial port
  */
-void printGps(gpsLocation_t *loc)
+void printGps(BaseSequentialStream *stream, gpsLocation_t *loc)
 {
-    chprintf((BaseSequentialStream *) &DBG_SERIAL, "TIME:%s, LAT:%s, LONG:%s, ALT:%s, SAT:%s\n",
+    chprintf(stream, "TIME:%s, LAT:%s, LONG:%s, ALT:%s, SAT:%s\n",
 	     (char *)(loc->time),
 	     (char *)(loc->latitude),
 	     (char *)(loc->longitude),
@@ -181,6 +182,31 @@ int8_t writeHeader(void)
 }
 
 /**
+*
+*
+*
+*/
+msg_t beaconThread(void *args)
+{
+    bool *beaconFlag = (bool *) args;
+    while(TRUE)
+    {
+        if(*beaconFlag)
+        {
+            boardSetBuzzer(1);
+            chThdSleepMilliseconds(100);
+            boardSetBuzzer(0);
+            chThdSleepMilliseconds(9900);
+        }
+        else
+        {
+            chThdSleepMilliseconds(500);
+        }
+    }
+    return MSG_OK;
+}
+
+/**
  * Application entry point.
  */
 int main(void) 
@@ -190,11 +216,11 @@ int main(void)
     
     gpsThread_t gpsThd;
     sensorThread_t sensorThd;
-    
+    bool audioBeaconFlag;
     uint32_t timeCounter = 0;
     chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd); 			// Create GPS Thread
     chThdCreateStatic(waSensor, sizeof(waSensor), NORMALPRIO, sensorThread, &sensorThd);	// Create sensor thread
-    
+    chThdCreateStatic(waBeacon, sizeof(waBeacon), NORMALPRIO, beaconThread, &audioBeaconFlag);
     uint16_t logfileCounter = 0; 	// Logfile number counter
     uint32_t sampleCounter = 0;		// Sample counter (resets per file)
     
@@ -217,7 +243,7 @@ int main(void)
     	deadline += MS2ST(1000); 
 		//boardSetLED(1);
 		gpsGetLocation(&location);// Check for new GPS NMEA sentence
-		printGps(&location);
+		printGps((BaseSequentialStream *) &COM_SERIAL, &location);
 		chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
 		// Read out I2C sensors
 		// Read out Analog sensors
@@ -227,6 +253,9 @@ int main(void)
 		chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n");
 
         chprintf((BaseSequentialStream *) &COM_SERIAL, "XBEE_TEST\n");		
+        // TODO: Send telemetry over XBee
+
+
 		// Write GPS Data to MasterSample
 		//datasample_gpsToSample(&location, &masterSample);
 		
