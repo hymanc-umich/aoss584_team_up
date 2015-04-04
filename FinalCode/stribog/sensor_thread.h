@@ -20,9 +20,11 @@
 #include "Drivers/rtd.h"
 #include "Drivers/mpxm2102.h"
 
-#define ANALOG_DEPTH 50
+#define ANALOG_DEPTH 3
 #define ANALOG_CHANNELS  3
 
+#define ADC_VPERC 0.00080566406f            // 3.3V/4096
+#define VINSNS_RESOLUTION 0.00346435547f
 typedef struct
 {
     mutex_t mtx; // Mutex

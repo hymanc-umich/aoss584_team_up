@@ -182,7 +182,7 @@ int8_t writeHeader(void)
 }
 
 /**
-*
+* @brief Thread for audio beacon
 *
 *
 */
@@ -282,6 +282,10 @@ int main(void)
 		//chprintf((BaseSequentialStream *) &DBG_SERIAL, "Log written\n");
 		sampleCounter++;
 		*/
+        timeCounter++; // Increment time counter
+        if(timeCounter > 4000)
+            audioBeaconFlag = TRUE;
+        // Sleep for remaining slack (to 1s)
 		if(chVTGetSystemTimeX() < deadline)
 			chThdSleepUntil(deadline);
 	}

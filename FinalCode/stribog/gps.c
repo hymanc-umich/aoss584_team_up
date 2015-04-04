@@ -237,7 +237,7 @@ static void gpsStrAppendChar(char *dest, char appChar)
 static char tokBuf[20];
 int8_t gpsParseFix(char *nmeaGGAStr, gpsLocation_t *loc)
 {
-	chprintf((BaseSequentialStream *) &DBG_SERIAL, "GGASTR:%s\n", nmeaGGAStr);
+	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "GGASTR:%s\n", nmeaGGAStr);
     // Verify GGA Sentence
     if(strncmp(nmeaGGAStr+3, NMEA_FIX_DATA, 3)) 
 	return -1;

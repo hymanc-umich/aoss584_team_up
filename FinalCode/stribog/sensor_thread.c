@@ -2,20 +2,20 @@
 #include "board.h"
 #include "chprintf.h"
 
-
-static SerialDriver * DEBUG;
-
+// External I2C configuration
 static const I2CConfig ei2cCfg = {
     OPMODE_I2C,
     100000,
     FAST_DUTY_CYCLE_2
 };
 
+// Internal I2C configuration
 static const I2CConfig ii2cCfg = {
     OPMODE_I2C,
     100000,
     FAST_DUTY_CYCLE_2
 };
+
 /*
  * ADC1.0: VINSNS
  * ADC1.10 MPXM Pressure Sensor
@@ -29,17 +29,20 @@ static const ADCConversionGroup analogGrp =
     NULL,
     0,						                // ADC CR1
     ADC_CR2_SWSTART,				        // ADC CR2
-    ADC_SMPR1_SMP_AN10(ADC_SAMPLE_56) | 	// ADC SMPR1
-    ADC_SMPR1_SMP_AN11(ADC_SAMPLE_56) ,
-    ADC_SMPR2_SMP_AN0(ADC_SAMPLE_56)  ,		// ADC SMPR2
+    ADC_SMPR1_SMP_AN10(ADC_SAMPLE_28) | 	// ADC SMPR1
+    ADC_SMPR1_SMP_AN11(ADC_SAMPLE_28) ,
+    ADC_SMPR2_SMP_AN0(ADC_SAMPLE_28)  ,		// ADC SMPR2
     ADC_SQR1_NUM_CH(ANALOG_CHANNELS)  , 	// ADC SQR1
     0,						                // ADC SQR2
-    ADC_SQR3_SQ1_N(ADC_CHANNEL_IN0)  | 		// ADC SQR3
+    ADC_SQR3_SQ1_N(ADC_CHANNEL_IN0)  | 		// ADC SQR3 (VINSNS, Pressure, Temperature)
     ADC_SQR3_SQ2_N(ADC_CHANNEL_IN10) |
     ADC_SQR3_SQ3_N(ADC_CHANNEL_IN11)
 };
 
-static adcsample_t analogSamples[ANALOG_DEPTH*ANALOG_CHANNELS];
+// ADC data storage
+static adcsample_t analogSamples[2][ANALOG_DEPTH * ANALOG_CHANNELS];
+static uint8_t activeAnalogCh = 0;
+
 /*
  * {
     mutex_t mtx; // Mutex
@@ -56,7 +59,66 @@ static adcsample_t analogSamples[ANALOG_DEPTH*ANALOG_CHANNELS];
 */
 
 /**
+ * @brief Takes mean of ADC sequence data
+ * @param buffer Data buffer start
+ * @param First element in sequence buffer offset
+ * @param nChannels Number of channels stored in array
+ * @param bufferLength Number of reads per channel (buffer depth)
+ * @return Mean FP value of ADC channel over buffer
+ */
+float adcMeanFloat(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, uint16_t bufferDepth)
+{
+    uint16_t i;
+    float count = 0.0f;
+    float analogSum = 0;
+    for(i = bufferOffset; i < (nChannels * bufferDepth); i = i+nChannels)
+    {
+        count = count + 1.0f;
+        analogSum += (float) buffer[i];
+    }
+    float out = ((float) analogSum)/count;
+    return out;
+}
+
+/**
+ * @brief Compute mean measured voltage of a given ADC sequence channel
+ * @param buffer Data buffer start
+ * @param First element in sequence buffer offset
+ * @param nChannels Number of channels stored in array
+ * @param bufferLength Number of reads per channel (buffer depth)
+ * @return Mean FP voltage over buffer length
+ */
+inline float adcMeanV(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, uint16_t bufferDepth)
+{
+    return adcMeanFloat(buffer, bufferOffset, nChannels, bufferDepth)*ADC_VPERC;
+}
+
+/**
+ * @brief Compute integer mean of ADC values for a given channel
+ * @param buffer Data buffer start
+ * @param First element in sequence buffer offset
+ * @param nChannels Number of channels stored in array
+ * @param bufferLength Number of reads per channel (buffer depth)
+ * @return Mean integer value of ADC channel over buffer
+ */
+uint16_t adcMean(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, uint16_t bufferDepth)
+{
+    uint16_t i;
+    uint16_t count = 0;
+    uint32_t analogSum = 0;
+    for(i = 0; i<(nChannels * bufferDepth); i = i+nChannels)
+    {
+        count++;
+        analogSum += buffer[i];
+    }
+    return (uint16_t) (analogSum/count);
+}
+
+
+/**
  * @brief Sensor data collection thread
+ * @param arg Thread argument (sensorThread struct)
+ * @return Thread return message
  */
 msg_t sensorThread(void *arg)
 {
@@ -65,7 +127,6 @@ msg_t sensorThread(void *arg)
     msg_t message;
     chMtxObjectInit(&thread->data.mtx); // Initialize Mutex
     
-    DEBUG = &DBG_SERIAL;
     // Start I2C
     i2cStart(&II2C_I2CD, &ii2cCfg);
     i2cStart(&EI2C_I2CD, &ei2cCfg);
@@ -89,15 +150,21 @@ msg_t sensorThread(void *arg)
     thread->data.humdInt = 0;
     thread->data.humdExt = 0;
 
-    // Sensor Loop
+    /*
+     * ===== Sensor Loop =====
+     */
     systime_t deadline = chVTGetSystemTimeX();
     msg_t i7020stat, e7020stat, tmp275stat, ms5607stat, lsm303stat;
     while(thread->running)
     {
         deadline += MS2ST(100); // Set master sampling rate at ~10Hz
         boardSetLED(1);
+
+        // Perform ADC read
+        adcConvert(&ADCD1, &analogGrp, analogSamples[activeAnalogCh ^ 1], ANALOG_DEPTH);   // Convert analog channels
+
     	/*
-         * Read I2C sensors
+         * ===== Read I2C sensors =====
          */
 
         //External Temp 2
@@ -130,21 +197,38 @@ msg_t sensorThread(void *arg)
             chprintf((BaseSequentialStream *) &DBG_SERIAL, "MPRS:%.2fkPa, MTMP:%.2fC\n", thread->data.pressMs5607, thread->data.tempMs5607);
         // Accelerometer
         //lsm303_readAcceleration(&(thread->lsm303), 1);
+        //lsm303_readMagnetometer(&(thread->lsm303), 1);
         // Get out data
         
         // Magnetometer 
 
 
-    	// Perform ADC read
-    	adcConvert(&ADCD1, &analogGrp, analogSamples, ANALOG_DEPTH);   // Convert analog channels
-        // Analog processing
+        /* 
+         * ==== Analog processing =====
+         */ 
+        // Input voltage
+        float vinsns = adcMeanFloat(analogSamples[activeAnalogCh], 0, ANALOG_CHANNELS, ANALOG_DEPTH) * VINSNS_RESOLUTION;
+        chprintf((BaseSequentialStream *) &DBG_SERIAL, "VIN:%.2fV\n",vinsns);
 
-        // Sleep
+        // Analog pressure
+        float anaPressure = mpxmVToPressure(adcMeanV(analogSamples[activeAnalogCh], 1, ANALOG_CHANNELS, ANALOG_DEPTH));
+        chprintf((BaseSequentialStream *) &DBG_SERIAL, "APRESS:%.3fkPa\n", anaPressure);
+
+        // Analog Temperature
+        float anaTemp = RTD_vToTemp(adcMeanV(analogSamples[activeAnalogCh], 2, ANALOG_CHANNELS, ANALOG_DEPTH));
+        chprintf((BaseSequentialStream *) &DBG_SERIAL, "ATEMP:%.3fC\n", anaTemp);
+
+        activeAnalogCh ^= 1; // Toggle buffer
+
+        /* ===== Sleep ==== */
         boardSetLED(0);
         if(chVTGetSystemTimeX() < deadline)
             chThdSleepUntil(deadline);
         else
+        {
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "SENSOR DEADLINE EXCEEDED\n");
             deadline = chVTGetSystemTimeX();
+        }
     }
     //chThdExit();
     return message;

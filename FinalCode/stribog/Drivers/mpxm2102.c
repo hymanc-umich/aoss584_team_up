@@ -32,5 +32,5 @@ inline float mpxmVToPressure(float v)
  */
 inline float mpxmRawToPressure(uint16_t raw)
 {
-	return mpxmVToPressure(mpxmRawToV(raw));
+	return mpxmVToPressure(mpxmRawtoV(raw));
 }
