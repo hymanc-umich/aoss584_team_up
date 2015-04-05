@@ -88,9 +88,9 @@ build/obj/sensor_thread.o: sensor_thread.c sensor_thread.h \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
  /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
  /home/cody/dev/chibios/trunk/os/rt/include/chmtx.h Drivers/bmp280.h \
- Drivers/i2c_sensor.h Drivers/../board.h Drivers/lsm303.h \
- Drivers/ms5607.h Drivers/si70x0.h Drivers/tmp275.h Drivers/rtd.h \
- Drivers/mpxm2102.h board.h \
+ Drivers/i2c_sensor.h Drivers/../board.h Drivers/hih6030.h \
+ Drivers/lsm303.h Drivers/ms5607.h Drivers/si70x0.h Drivers/tmp275.h \
+ Drivers/rtd.h Drivers/mpxm2102.h board.h \
  /home/cody/dev/chibios/trunk/os/various/chprintf.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h
 
@@ -287,6 +287,8 @@ Drivers/bmp280.h:
 Drivers/i2c_sensor.h:
 
 Drivers/../board.h:
+
+Drivers/hih6030.h:
 
 Drivers/lsm303.h:
 

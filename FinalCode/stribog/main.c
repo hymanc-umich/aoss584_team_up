@@ -92,16 +92,17 @@ void initialize(void)
     /* Debug Serial Port Startup */
     //sdStart(&COM_SERIAL, &serCfg);
     sdStart(&DBG_SERIAL, &serCfg);	// Activate Debug serial driver
-    chprintf((BaseSequentialStream *) &DBG_SERIAL, "==Stribog v1==\n");
+    chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n\n=== Stribog v1 ===\n(C) 2015, Cody Hyman\n\nInitializing System...\n");
 
     /* SPI/MMC Logger Startup */
-    int8_t sdIni, dlIni, lfIni;
+    int8_t sdIni, dlIni;
     
-    //chThdSleepMilliseconds(200); // Wait for SD startup
+    chThdSleepMilliseconds(200); // Wait for SD startup
 
     // XBee Initialization
     xbeePro_init(&xbee, &COM_SERIAL);
-    /* // SD
+    // SD Initialization
+    /*
     sdIni = sdmmcInitialize(&sd, &MMCD1, &DBG_SERIAL);
    	chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing Datalogger\n");
     chThdSleepMilliseconds(100);
@@ -111,17 +112,17 @@ void initialize(void)
     	{
     	    dlIni = dataLoggerInitialize(&logger, "", &sd, &DBG_SERIAL);
     	}
-    	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nSD Initialization: SD:%d,DL:%d,LF:%d\n",sdIni,dlIni,lfIni);
+    	chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nSD Initialization: SD:%d,DL:%d\n",sdIni,dlIni);
     }
     else
     {
 	   chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nERROR: SD Initialization Failed\n");
     }
     */
-    
+
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
-    
+    chprintf((BaseSequentialStream *) &DBG_SERIAL, "System Initialization Complete\n");
 }
 
 
@@ -244,17 +245,9 @@ int main(void)
 		//boardSetLED(1);
 		gpsGetLocation(&location);// Check for new GPS NMEA sentence
 		printGps((BaseSequentialStream *) &COM_SERIAL, &location);
-		chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
-		// Read out I2C sensors
-		// Read out Analog sensors
-		// Post data
-		
-		
-		chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n");
+		//chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
 
-        chprintf((BaseSequentialStream *) &COM_SERIAL, "XBEE_TEST\n");		
-        // TODO: Send telemetry over XBee
-
+        //sensorThread_publishData(&sensorThd, (BaseSequentialStream *) &COM_SERIAL);
 
 		// Write GPS Data to MasterSample
 		//datasample_gpsToSample(&location, &masterSample);

@@ -2,6 +2,7 @@
 #include "board.h"
 #include "chprintf.h"
 
+#define STARTUP_VALUE -99.0f
 // External I2C configuration
 static const I2CConfig ei2cCfg = {
     OPMODE_I2C,
@@ -106,7 +107,7 @@ uint16_t adcMean(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, ui
     uint16_t i;
     uint16_t count = 0;
     uint32_t analogSum = 0;
-    for(i = 0; i<(nChannels * bufferDepth); i = i+nChannels)
+    for(i = bufferOffset; i<(nChannels * bufferDepth); i = i+nChannels)
     {
         count++;
         analogSum += buffer[i];
@@ -114,6 +115,55 @@ uint16_t adcMean(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, ui
     return (uint16_t) (analogSum/count);
 }
 
+/**
+ *
+ *
+ */
+void sensorThread_publishDebug(sensorThread_t *thread, BaseSequentialStream *stream)
+{
+    chprintf(stream, 
+    "EXTEMP:%.1fC    \nEHUM:%.1f%%    EHTEMP:%.2fC\nIHUM:%.1f%%    \
+    IHTEMP:%.2fC\nMPRS:%.2fkPa    MTEMP:%.2fC\nHIHHUM:%.2f%%    \
+    HIHTEMP:%.2fC\nVIN:%.2fV\nAPRESS:%.3fkPa\nATEMP:%.3fC\n",
+    thread->data.temp275,
+    thread->data.humd7020Ext, thread->data.temp7020Ext,
+    thread->data.humd7020Int, thread->data.temp7020Int,
+    thread->data.pressMs5607, thread->data.tempMs5607,
+    thread->data.humd6030, thread->data.temp6030,
+    thread->data.vin, thread->data.pressMpxm, thread->data.tempRtd);
+}
+
+/**
+ *
+ *
+ */
+void sensorThread_publishData(sensorThread_t *thread, BaseSequentialStream *stream)
+{
+    // Print to XBee
+    chprintf(stream, 
+        "<DATA>ET:%.1f,EH:%.1f,EHT:%.2f,IH:%.1f,IHT:%.2f,MP:%.2f,MT:%.2f,HH:%.2f,HT:%.2f,V:%.2f,AP:%.3f,AT:%.3f</DATA>\n",
+        thread->data.temp275,
+        thread->data.humd7020Ext, thread->data.temp7020Ext,
+        thread->data.humd7020Int, thread->data.temp7020Int,
+        thread->data.pressMs5607, thread->data.tempMs5607,
+        thread->data.humd6030, thread->data.temp6030,
+        thread->data.vin, thread->data.pressMpxm, thread->data.tempRtd);
+}
+
+/**
+ *
+ *
+ */
+void sensorThread_dataToCsv(sensorThread_t *thread, char *buffer, uint16_t bufferMax)
+{
+    chsnprintf(buffer, bufferMax, "%.1f,%.1f,%.2f,%.1f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.3f,%.3f", 
+        thread->data.temp275,
+        thread->data.humd7020Ext, thread->data.temp7020Ext,
+        thread->data.humd7020Int, thread->data.temp7020Int,
+        thread->data.pressMs5607, thread->data.tempMs5607,
+        thread->data.humd6030, thread->data.temp6030,
+        thread->data.vin, thread->data.pressMpxm, thread->data.tempRtd);
+}
 
 /**
  * @brief Sensor data collection thread
@@ -138,7 +188,7 @@ msg_t sensorThread(void *arg)
     ms5607_init(&(thread->ms5607), &EI2C_I2CD, 0b1110111);              // Initialize MS5607
     lsm303_init(&(thread->lsm303), &II2C_I2CD, 0b0011101, 0b0011110);   // Initialize LSM303
     bmp280_init(&(thread->bmp280), &II2C_I2CD, 0b1110110);              // Initialize BMP280
-    
+    hih6030_init(&(thread->hih6030), &EI2C_I2CD);
     // Run Si70x0 heaters
     si70x0_setHeaterCurrent(&(thread->intSi7020), 14);
     si70x0_heaterEnable(&(thread->intSi7020), true);
@@ -147,18 +197,41 @@ msg_t sensorThread(void *arg)
     chThdSleep(1000);
     si70x0_heaterEnable(&(thread->intSi7020), false);
     si70x0_heaterEnable(&(thread->extSi7020), false);
-    thread->data.humdInt = 0;
-    thread->data.humdExt = 0;
+
+    thread->data.temp275 = STARTUP_VALUE;
+    thread->data.tempRtd = STARTUP_VALUE;
+    thread->data.tempMs5607 = STARTUP_VALUE;
+    thread->data.pressMs5607 = STARTUP_VALUE;
+    thread->data.tempBmp = STARTUP_VALUE;
+    thread->data.pressBmp = STARTUP_VALUE;
+    thread->data.pressMpxm = STARTUP_VALUE;
+    thread->data.humd7020Int = STARTUP_VALUE;
+    thread->data.temp7020Int = STARTUP_VALUE;
+    thread->data.humd7020Ext = STARTUP_VALUE;
+    thread->data.temp7020Ext = STARTUP_VALUE;
+    thread->data.humd6030 = STARTUP_VALUE;
+    thread->data.temp6030 = STARTUP_VALUE;
+    thread->data.accX = STARTUP_VALUE;
+    thread->data.accY = STARTUP_VALUE;
+    thread->data.accZ = STARTUP_VALUE;
+    thread->data.magX = STARTUP_VALUE;
+    thread->data.magY = STARTUP_VALUE;
+    thread->data.magZ = STARTUP_VALUE;
+    thread->data.vin = STARTUP_VALUE;
 
     /*
      * ===== Sensor Loop =====
      */
     systime_t deadline = chVTGetSystemTimeX();
     msg_t i7020stat, e7020stat, tmp275stat, ms5607stat, lsm303stat;
+    bool publishFlag = FALSE;
     while(thread->running)
     {
-        deadline += MS2ST(1000); // Set master sampling rate at ~10Hz
+        deadline += MS2ST(500); // Set master sampling rate at ~10Hz
         boardSetLED(1);
+
+        // Start HIH6030 measurement request
+        hih6030_measurementRequest(&(thread->hih6030));
 
         // Perform ADC read
         adcConvert(&ADCD1, &analogGrp, analogSamples[activeAnalogCh ^ 1], ANALOG_DEPTH);   // Convert analog channels
@@ -169,27 +242,20 @@ msg_t sensorThread(void *arg)
 
         //External Temp 2
     	tmp275stat = tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
-    	/*if(tmp275stat == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "EXTEMP:%.1fC\n", thread->data.temp275);*/
+
         // TODO: Internal Pressure (BMP280)    
 
         // Internal Humidity (Si7020)
-        i7020stat = si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humdInt));
-        float tempi7020;
-        i7020stat |= si70x0_readTemperature(&(thread->intSi7020), &tempi7020);
+        i7020stat = si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humd7020Int));
+        i7020stat |= si70x0_readTemperature(&(thread->intSi7020), &(thread->data.temp7020Int));
     	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "Si7020 Read: %d\n", (int) ihstat);
-        /*if(i7020stat == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "IHUM:%.1f%% TEMP:%.2fC\n",thread->data.humdInt, tempi7020);*/
-        
+
         // External Humidity 1 (Si7020)
-        e7020stat = si70x0_readHumidity(&(thread->extSi7020), &(thread->data.humdExt));
-        float temp7020ext;
-        e7020stat |= si70x0_readTemperature(&(thread->extSi7020), &temp7020ext);
-        /*if(e7020stat == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "EHUM:%.1f%% ETMP:%.2fC\n",thread->data.humdExt, temp7020ext);*/
+        e7020stat = si70x0_readHumidity(&(thread->extSi7020), &(thread->data.humd7020Ext));
+        e7020stat |= si70x0_readTemperature(&(thread->extSi7020), &(thread->data.temp7020Ext));
 
         // External Humidity 2 (HIH6030)
-
+        hih6030_read(&(thread->hih6030), &(thread->data.humd6030), &(thread->data.temp6030));
 
         // External Pressure 2
         ms5607stat = ms5607_readPressureTemperature(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
@@ -208,28 +274,28 @@ msg_t sensorThread(void *arg)
          * ==== Analog processing =====
          */ 
         // Input voltage
-        float vinsns = adcMeanFloat(analogSamples[activeAnalogCh], 0, ANALOG_CHANNELS, ANALOG_DEPTH) * VINSNS_RESOLUTION - 0.06;
+        thread->data.vin = adcMeanFloat(analogSamples[activeAnalogCh], 0, ANALOG_CHANNELS, ANALOG_DEPTH) * VINSNS_RESOLUTION - 0.06;
         //chprintf((BaseSequentialStream *) &DBG_SERIAL, "VIN:%.2fV\n",vinsns);
 
         // Analog pressure
-        float anaPressure = mpxmVToPressure(adcMeanV(analogSamples[activeAnalogCh], 1, ANALOG_CHANNELS, ANALOG_DEPTH));
+        thread->data.pressMpxm = mpxmVToPressure(adcMeanV(analogSamples[activeAnalogCh], 1, ANALOG_CHANNELS, ANALOG_DEPTH));
         //chprintf((BaseSequentialStream *) &DBG_SERIAL, "APRESS:%.3fkPa\n", anaPressure);
 
         // Analog Temperature
-        float anaTemp = RTD_vToTemp(adcMeanV(analogSamples[activeAnalogCh], 2, ANALOG_CHANNELS, ANALOG_DEPTH));
+        thread->data.tempRtd = RTD_vToTemp(adcMeanV(analogSamples[activeAnalogCh], 2, ANALOG_CHANNELS, ANALOG_DEPTH));
         //chprintf((BaseSequentialStream *) &DBG_SERIAL, "ATMPRAW:%d\n\n",analogSamples[activeAnalogCh][2]);
         //chprintf((BaseSequentialStream *) &DBG_SERIAL, "ATEMP:%.3fC\n", anaTemp);
 
         activeAnalogCh ^= 1; // Toggle buffer
 
-        // Printf Dump
-        chprintf((BaseSequentialStream *) &DBG_SERIAL, 
-            "EXTEMP:%.1fC    \nEHUM:%.1f%%    EHTEMP:%.2fC\nIHUM:%.1f%%    IHTEMP:%.2fC\nMPRS:%.2fkPa    MTEMP:%.2fC\nVIN:%.2fV\nAPRESS:%.3fkPa\nATEMP:%.3fC\n",
-            thread->data.temp275,
-            thread->data.humdExt, temp7020ext,
-            thread->data.humdInt, tempi7020,
-            thread->data.pressMs5607, thread->data.tempMs5607,
-            vinsns, anaPressure, anaTemp);
+        /* ===== Printf Dump ===== */
+        sensorThread_publishDebug(thread, (BaseSequentialStream *) &DBG_SERIAL);
+        if(publishFlag)
+        {
+            sensorThread_publishData(thread, (BaseSequentialStream *) &COM_SERIAL);
+        }
+        publishFlag = !publishFlag;
+
         /* ===== Sleep ==== */
         boardSetLED(0);
         if(chVTGetSystemTimeX() < deadline)
@@ -240,15 +306,13 @@ msg_t sensorThread(void *arg)
             deadline = chVTGetSystemTimeX();
         }
     }
-    //chThdExit();
     return message;
 }
 
-//142.75 - 101.805 = 39.95
 /**
  * 
  */
-msg_t sensorThreadStop(sensorThread_t *thread)
+void sensorThreadStop(sensorThread_t *thread)
 {
     thread->running = false;
 }

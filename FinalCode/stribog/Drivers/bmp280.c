@@ -1,4 +1,6 @@
 #include "bmp280.h"
+#include "board.h"
+#include "chprintf.h"
 
 static uint8_t sensCount = 0;
 
@@ -25,8 +27,26 @@ void bmp280_init(bmp280_t *bmp, I2CDriver *driver, uint8_t baseAddr)
     name[7] = '0' + sensCount++;
     I2CSensor_init(&bmp->sensor, driver, baseAddr, bmp->txBuffer, bmp->rxBuffer, MS2ST(4), "BMP280");
 
-    msg_t status = I2CSensor_transact(&bmp->sensor, bmp->txBuffer, 2, bmp->rxBuffer, 2);
-    // TODO: Read cal coefficients
+    uint8_t i;
+    msg_t status;
+    for(i=0; i<3; i++)
+    {
+        bmp->txBuffer[0] = BMP280_CALIB(i); 
+        status = I2CSensor_transact_buf(&bmp->sensor, 1, 2);
+        if(status == MSG_OK)
+            bmp->T[i] = (bmp->rxBuffer[1]<<8) + bmp->rxBuffer[0];
+        else
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "BMP280: ERROR READING T-PARAMETER");
+    }
+    for(i=0; i<9; i++)
+    {
+        bmp->txBuffer[0] = BMP280_CALIB(3+i);
+        status = I2CSensor_transact_buf(&bmp->sensor, 1, 2);
+        if(status == MSG_OK)
+            bmp->P[i] = (bmp->rxBuffer[1]<<8) + bmp->rxBuffer[0];
+        else
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "BMP280: ERROR READING P-PARAMETER");
+    }
 }
 
 /**
@@ -46,8 +66,8 @@ msg_t bmp280_stop(bmp280_t *bmp, bool stopI2C)
  */
 msg_t bmp280_reset(bmp280_t *bmp)
 {
-    uint8_t regId = BMP280_RESET;
-    return I2CSensor_transact(&bmp->sensor, &regId, 1, NULL, 0);
+    bmp->txBuffer[0] = BMP280_RESET;
+    return I2CSensor_transact_buf(&bmp->sensor, 1, 0);
 }
 
 /**
@@ -61,9 +81,17 @@ msg_t bmp280_readPressure(bmp280_t *bmp, float *pressure)
     msg_t status;
     uint8_t pressData[3];
     // TODO: read and align pressure registers
-    if(status == 0)
+    bmp->txBuffer[0] = BMP280_PRESS_MSB;
+    status = I2CSensor_transact_buf(&(bmp->sensor),1,3);
+    if(status == MSG_OK)
     {
-	// TODO: compensation
+        int32_t rawPressure = (bmp->rxBuffer[0]<<12) + (bmp->rxBuffer[1]<<4)+ (bmp->rxBuffer[2]>>4);
+	   // TODO: compensation
+        float compPress;
+        if(pressure != NULL)
+        {
+            *pressure = compPress;
+        }
     }
     return status;
 }
@@ -78,10 +106,17 @@ msg_t bmp280_readTemperature(bmp280_t *bmp, float *temp)
 {
     msg_t status;
     uint8_t tempData[3];
-    // TODO
-    if(status == 0)
+    bmp->txBuffer[0] = BMP280_TEMP_MSB;
+    status = I2CSensor_transact_buf(&(bmp->sensor),1,3);
+    if(status == MSG_OK)
     {
-	// TODO: compensation
+        int32_t rawTemp = (bmp->rxBuffer[0]<<12) + (bmp->rxBuffer[1]<<4)+ (bmp->rxBuffer[2]>>4);
+	    // TODO: compensation
+        float compTemp = 0;
+        if(temp != NULL)
+        {
+            *temp = compTemp;
+        }
     }
     return status;
 }

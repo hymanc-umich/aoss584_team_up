@@ -21,7 +21,7 @@
 #define BMP280_RESET		0xE0
 #define BMP280_ID			0xD0
 #define BMP280_CALIB00		0x88
-#define BMP280_CALIB(CPARAM)	(0x88+2*N)	
+#define BMP280_CALIB(CPARAM)	(0x88+2*CPARAM)	
 
 /**
  * BMP280 Pressure Sensor struct

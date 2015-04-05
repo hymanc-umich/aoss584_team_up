@@ -1,16 +1,21 @@
 #include "hih6030.h"
 
 /**
- * 
+ * @brief Initializes an HIH6030 sensor
+ * @param hih HIH6030 device struct
+ * @param driver I2C driver to use
  */
-void hih6030_init(hih6030_t *hih, I2CDriver *driver, uint8_t baseAddr)
+void hih6030_init(hih6030_t *hih, I2CDriver *driver)
 {
-    I2CSensor_init(&(hih->sensor), driver, baseAddr, hih->txBuffer, hih->rxBuffer, MS2ST(4), "HIH6030");
+    I2CSensor_init(&(hih->sensor), driver, HIH6030_SLAVE_ADDRESS, hih->txBuffer, hih->rxBuffer, MS2ST(4), "HIH6030");
     hih->measureFlag = FALSE;
 }
 
 /**
- * 
+ * @brief Stops HIH6030
+ * @param hih HIH6030 device struct
+ * @param stopI2C Stop underyling I2C driver flag
+ * @return I2C status message
  */
 msg_t hih6030_stop(hih6030_t *hih, bool stopI2C)
 {
@@ -18,8 +23,9 @@ msg_t hih6030_stop(hih6030_t *hih, bool stopI2C)
 }
 
 /**
- *
- *
+ * @brief Initializes a sensor measurement request
+ * @param hih HIH6030 device struct
+ * @return I2C status message
  */
 msg_t hih6030_measurementRequest(hih6030_t *hih)
 {
@@ -31,17 +37,25 @@ msg_t hih6030_measurementRequest(hih6030_t *hih)
 }
 
 /**
- * 
+ * @brief Read HIH6030 Measurement
+ * @param hih HIH6030 device strucg
+ * @param humidity Humidity return pointer
+ * @param temperature Temperature return pointer
+ * @return I2C status message
  */
 msg_t hih6030_read(hih6030_t *hih, float *humidity, float *temperature)
 {
+	msg_t status;
+	hih->txBuffer[0] = 0x00;
+	/*
 	if(!(hih->measureFlag)) // Request measurement if none has been made
 	{
 		hih->txBuffer[0] = 0x00;
 		I2CSensor_transact_buf(&(hih->sensor),1,0); // Measurement request
-		chThdSleepMilliseconds(37);
+		//chThdSleepMilliseconds(37);
 	}
-	msg_t status = I2CSensor_transact_buf(&(hih->sensor), 0, 4); // Data fetch
+	*/
+	status = I2CSensor_transact_buf(&(hih->sensor), 1, 4); // Data fetch
 	uint16_t rawH, rawT;
 	// Check I2C status
 	if(status == MSG_OK)

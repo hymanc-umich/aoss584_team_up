@@ -87,7 +87,8 @@ build/obj/bmp280.o: Drivers/bmp280.c Drivers/bmp280.h \
  /home/cody/dev/chibios/trunk/os/hal/include/st.h \
  /home/cody/dev/chibios/trunk/os/hal/include/mmc_spi.h \
  /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
- Drivers/../board.h
+ Drivers/../board.h /home/cody/dev/chibios/trunk/os/various/chprintf.h \
+ /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h
 
 Drivers/bmp280.h:
 
@@ -278,3 +279,7 @@ mcuconf.h:
 /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h:
 
 Drivers/../board.h:
+
+/home/cody/dev/chibios/trunk/os/various/chprintf.h:
+
+/usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h:

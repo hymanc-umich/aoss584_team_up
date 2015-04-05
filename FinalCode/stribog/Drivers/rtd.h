@@ -10,7 +10,7 @@
 
 #define RTD_VS		5.00f 		    // RTD bridge supply voltage (V)
 #define RTD_VPERC 	0.000805664062f	// Volts per count (V)
-#define RTD_AMPGAIN	46				// RTD amplifier gain (V/V)
+#define RTD_AMPGAIN	46.0f			// RTD amplifier gain (V/V)
 #define RTD_SENS	0.000385f		// RTD sensitivity (K^-1)
 #define RTD_T0 		25.0f			// RTD null temp (C)
 #define RTD_V0		3.00f			// Null amplifier voltage at T0 (V)
