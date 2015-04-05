@@ -41,7 +41,7 @@ static SPIConfig hsCfg =
 
 static MMCConfig mmcCfg =
 {
-    &SPID3,
+    &SD_SPID,
     &lsCfg,     // Low-speed configuration
     &hsCfg      // High speed configuration
 };
@@ -86,18 +86,7 @@ int8_t sdmmcInitialize(sdmmc_t *sd, MMCDriver *mld, SerialDriver *sp)
     
     int8_t status;
     	FRESULT err;
-    // MMCSPI I/O Initialization
-    palSetPadMode(SD_CS_PORT, SD_CS_PIN, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
-    palSetPadMode(SD_CD_PORT, SD_CD_PIN, PAL_MODE_INPUT_PULLUP);
-    palSetPadMode(SD_SCK_PORT, SD_SCK_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
-    palSetPadMode(SD_MOSI_PORT, SD_MOSI_PIN, PAL_MODE_ALTERNATE(5) | PAL_STM32_OSPEED_HIGHEST);
-    palSetPadMode(SD_MISO_PORT, SD_MISO_PIN, PAL_MODE_ALTERNATE(5));
-    
-    
-    // Initialize MMC Driver
-    /*mmcObjectInit(sd->mmcd, sd->spid, 
-		  &lsCfg, &hsCfg, 
-		  sdmmcCardProtected, sdmmcCardInserted);*/
+
     mmcObjectInit(sd->mmcd);
     mmcStart(sd->mmcd, &mmcCfg);
 

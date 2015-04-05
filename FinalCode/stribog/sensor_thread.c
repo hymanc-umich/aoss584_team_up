@@ -275,16 +275,13 @@ msg_t sensorThread(void *arg)
          */ 
         // Input voltage
         thread->data.vin = adcMeanFloat(analogSamples[activeAnalogCh], 0, ANALOG_CHANNELS, ANALOG_DEPTH) * VINSNS_RESOLUTION - 0.06;
-        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "VIN:%.2fV\n",vinsns);
 
         // Analog pressure
         thread->data.pressMpxm = mpxmVToPressure(adcMeanV(analogSamples[activeAnalogCh], 1, ANALOG_CHANNELS, ANALOG_DEPTH));
-        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "APRESS:%.3fkPa\n", anaPressure);
 
         // Analog Temperature
-        thread->data.tempRtd = RTD_vToTemp(adcMeanV(analogSamples[activeAnalogCh], 2, ANALOG_CHANNELS, ANALOG_DEPTH));
-        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "ATMPRAW:%d\n\n",analogSamples[activeAnalogCh][2]);
-        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "ATEMP:%.3fC\n", anaTemp);
+        //thread->data.tempRtd = RTD_vToTemp(adcMeanV(analogSamples[activeAnalogCh], 2, ANALOG_CHANNELS, ANALOG_DEPTH));
+        thread->data.tempRtd = analogSamples[activeAnalogCh][2]*1.0f;
 
         activeAnalogCh ^= 1; // Toggle buffer
 

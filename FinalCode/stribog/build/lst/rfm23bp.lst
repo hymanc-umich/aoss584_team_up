@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccBlimDp.s 			page 1
+ARM GAS  /tmp/ccLyemJV.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"rfm23bp.c"
-  17              		.section	.gnu.lto_.jmpfuncs.cc41e3c6fbfb1e37,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.2c208c4382682be9,"",%progbits
   18 0000 789C6D88 		.ascii	"x\234m\210\301\021\200 \000\303\322V@X\306uX\301\005"
   18      C1118020 
   18      00C3D256 
@@ -34,7 +34,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   20      0E2F4080 
   21 0034 0232     		.ascii	"\0022"
   22              		.text
-  23              		.section	.gnu.lto_.inline.cc41e3c6fbfb1e37,"",%progbits
+  23              		.section	.gnu.lto_.inline.2c208c4382682be9,"",%progbits
   24 0000 789C6362 		.ascii	"x\234cb`b\300\006\254\031!4\027\003\003\0133#\003\023"
   24      6062C006 
   24      AC192134 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   28 004b 8186315D 		.ascii	"\201\2061]\340\207\250\000\002f\036\240\360\004?\006"
   28      E087A800 
   28      02661EA0 
-ARM GAS  /tmp/ccBlimDp.s 			page 2
+ARM GAS  /tmp/ccLyemJV.s 			page 2
 
 
   28      F0043F06 
@@ -80,7 +80,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   32 0090 300000C0 		.ascii	"0\000\000\300m\031\250"
   32      6D19A8
   33              		.text
-  34              		.section	.gnu.lto_.pureconst.cc41e3c6fbfb1e37,"",%progbits
+  34              		.section	.gnu.lto_.pureconst.2c208c4382682be9,"",%progbits
   35 0000 789C6362 		.ascii	"x\234cb`b\020e\200\000.\006)F)&)f)\026)V\0066\006v\006"
   35      60621065 
   35      80002E06 
@@ -90,7 +90,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   36      000CBC00 
   36      D3
   37              		.text
-  38              		.section	.gnu.lto_rfm23_init.cc41e3c6fbfb1e37,"",%progbits
+  38              		.section	.gnu.lto_rfm23_init.2c208c4382682be9,"",%progbits
   39 0000 789C6362 		.ascii	"x\234cb`b@\007\222@<\033\210E\200\230\221\231\201\221"
   39      60624007 
   39      92403C1B 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   44      44C6858C 
   44      AC0CDA0C 
   44      AB1A80
-ARM GAS  /tmp/ccBlimDp.s 			page 3
+ARM GAS  /tmp/ccLyemJV.s 			page 3
 
 
   45 006a C0309311 		.ascii	"\3000\223\021h\357,\306LF\306tF\246\010 \015q[\022\304"
@@ -139,7 +139,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   48 00aa 7AC90C00 		.ascii	"z\311\014\000\255\372+w"
   48      ADFA2B77 
   49              		.text
-  50              		.section	.gnu.lto_rfm23_TXEN.cc41e3c6fbfb1e37,"",%progbits
+  50              		.section	.gnu.lto_rfm23_TXEN.2c208c4382682be9,"",%progbits
   51 0000 789CAD91 		.ascii	"x\234\255\221\261K\0031\030\305\337\373\222\024\025"
   51      B14B0331 
   51      18C5DFFB 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   58      DAD62A50 
   58      0DC6
   59 008f A21B7D40 		.ascii	"\242\033}@\211\342\253\272G\362v;Z)\363\234\006\007"
-ARM GAS  /tmp/ccBlimDp.s 			page 4
+ARM GAS  /tmp/ccLyemJV.s 			page 4
 
 
   59      89E2ABBA 
@@ -225,7 +225,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   67      D7ABF804 
   67      55D27871 
   68              		.text
-  69              		.section	.gnu.lto_rfm23_RXEN.part.0.cc41e3c6fbfb1e37,"",%progbits
+  69              		.section	.gnu.lto_rfm23_RXEN.part.0.2c208c4382682be9,"",%progbits
   70 0000 789C5D50 		.ascii	"x\234]P\261J\304@\020\235\267\233h\316F\021\304Vl\017"
   70      B14AC440 
   70      109DB79B 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   71      6371
   72 0026 13382565 		.ascii	"\0238%e\260P\320\306\303\316\306\366\300N\260T\361\007"
   72      B050D0C6 
-ARM GAS  /tmp/ccBlimDp.s 			page 5
+ARM GAS  /tmp/ccLyemJV.s 			page 5
 
 
   72      C3CEC6F6 
@@ -298,13 +298,13 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   83      A6
   84 010c 7BFDB5F5 		.ascii	"{\375\265\365\350h%&\323;\374\005\360\013O\345"
   84      E8682526 
-ARM GAS  /tmp/ccBlimDp.s 			page 6
+ARM GAS  /tmp/ccLyemJV.s 			page 6
 
 
   84      D33BFC05 
   84      F00B4FE5 
   85              		.text
-  86              		.section	.gnu.lto_rfm23_RXEN.cc41e3c6fbfb1e37,"",%progbits
+  86              		.section	.gnu.lto_rfm23_RXEN.2c208c4382682be9,"",%progbits
   87 0000 789C5D4F 		.ascii	"x\234]O=K\003A\024\234\331\217\313!\026\207\330\012"
   87      3D4B0341 
   87      149CD98F 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
   97      4C29
   98 00be 9A018559 		.ascii	"\232\001\205Y[\276\342\371\376c\"\374\314:\256Ma\235"
   98      5BBEE2F9 
-ARM GAS  /tmp/ccBlimDp.s 			page 7
+ARM GAS  /tmp/ccLyemJV.s 			page 7
 
 
   98      FE6322FC 
@@ -383,7 +383,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  102      1FE40E4A 
  102      36
  103              		.text
- 104              		.section	.gnu.lto_rfm23_SHUTDOWN.cc41e3c6fbfb1e37,"",%progbits
+ 104              		.section	.gnu.lto_rfm23_SHUTDOWN.2c208c4382682be9,"",%progbits
  105 0000 789C6362 		.ascii	"x\234cb`b@\0076@\234\314\310\300 \002\244\031\331\030"
  105      60624007 
  105      36409CCC 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  111      5919D2
  112 007b 19992218 		.ascii	"\031\231\"\0303\031Q\234\030\312\310\314\260G\216\371"
  112      3319519C 
-ARM GAS  /tmp/ccBlimDp.s 			page 8
+ARM GAS  /tmp/ccLyemJV.s 			page 8
 
 
  112      18CAC8CC 
@@ -456,7 +456,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  119      0C005C2F 
  119      57F9
  120              		.text
- 121              		.section	.gnu.lto_rfm23_readRegister.cc41e3c6fbfb1e37,"",%progbits
+ 121              		.section	.gnu.lto_rfm23_readRegister.2c208c4382682be9,"",%progbits
  122 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\015\304\"@\314\310\314\300\310"
  122      60624007 
  122      92401C0D 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  125      6005
  126 0047 214012A4 		.ascii	"!@\022\244+\024(\011\244\231/24>\230\265\2301\221q!"
  126      2B142809 
-ARM GAS  /tmp/ccBlimDp.s 			page 9
+ARM GAS  /tmp/ccLyemJV.s 			page 9
 
 
  126      A4992F32 
@@ -495,7 +495,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  128      0C00ADEA 
  128      2013
  129              		.text
- 130              		.section	.gnu.lto_rfm23_writeRegister.cc41e3c6fbfb1e37,"",%progbits
+ 130              		.section	.gnu.lto_rfm23_writeRegister.2c208c4382682be9,"",%progbits
  131 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\015\304\"@\314\310\314\300\310"
  131      60624007 
  131      92401C0D 
@@ -530,7 +530,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  137      7AC90C00 
  137      C47E2057 
  138              		.text
- 139              		.section	.gnu.lto_rfm23_readBurst.cc41e3c6fbfb1e37,"",%progbits
+ 139              		.section	.gnu.lto_rfm23_readBurst.2c208c4382682be9,"",%progbits
  140 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\015\304\"@\314\310\314\300\310"
  140      60624007 
  140      92401C0D 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  140      C8CCC0C8 
  141 0014 34E11C03 		.ascii	"4\341\034\003C#\007\023##\210\301\300\310P\317\304X"
  141      43230713 
-ARM GAS  /tmp/ccBlimDp.s 			page 10
+ARM GAS  /tmp/ccLyemJV.s 			page 10
 
 
  141      232388C1 
@@ -569,7 +569,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  146      0C00DA80 
  146      2099
  147              		.text
- 148              		.section	.gnu.lto_rfm23_writeBurst.cc41e3c6fbfb1e37,"",%progbits
+ 148              		.section	.gnu.lto_rfm23_writeBurst.2c208c4382682be9,"",%progbits
  149 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\015\304\"@\314\310\314\300\310"
  149      60624007 
  149      92401C0D 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  154      23DCD610 
  154      4646900A 
  154      9019422E 
-ARM GAS  /tmp/ccBlimDp.s 			page 11
+ARM GAS  /tmp/ccLyemJV.s 			page 11
 
 
  155 0072 45C5FA45 		.ascii	"E\305\372Ei\271F\306I\005z\311\014\000\277\240 Z"
@@ -607,7 +607,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  155      0C00BFA0 
  155      205A
  156              		.text
- 157              		.section	.gnu.lto_rfm23_sendByte.cc41e3c6fbfb1e37,"",%progbits
+ 157              		.section	.gnu.lto_rfm23_sendByte.2c208c4382682be9,"",%progbits
  158 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\015\304\"@\314\310\314\300\310"
  158      60624007 
  158      92401C0D 
@@ -642,7 +642,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  164      0C00D4E0 
  164      209A
  165              		.text
- 166              		.section	.gnu.lto_.symbol_nodes.cc41e3c6fbfb1e37,"",%progbits
+ 166              		.section	.gnu.lto_.symbol_nodes.2c208c4382682be9,"",%progbits
  167 0000 789C4DC9 		.ascii	"x\234M\311\271\015\203P\024\005\321\373\347{\201\036"
  167      B90D8350 
  167      1405D1FB 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  169      257B1E12 
  169      4F9C02
  170 0034 47CCC1F7 		.ascii	"G\314\301\367\316\032\347p\033|\011|\341k`\213o\201"
-ARM GAS  /tmp/ccBlimDp.s 			page 12
+ARM GAS  /tmp/ccLyemJV.s 			page 12
 
 
  170      CE1AE770 
@@ -673,13 +673,13 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  172 0058 95FEB165 		.ascii	"\225\376\261e2j"
  172      326A
  173              		.text
- 174              		.section	.gnu.lto_.refs.cc41e3c6fbfb1e37,"",%progbits
+ 174              		.section	.gnu.lto_.refs.2c208c4382682be9,"",%progbits
  175 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
  175      60626064 
  175      80020000 
  175      460006
  176              		.text
- 177              		.section	.gnu.lto_.decls.cc41e3c6fbfb1e37,"",%progbits
+ 177              		.section	.gnu.lto_.decls.2c208c4382682be9,"",%progbits
  178 0000 789CBD5C 		.ascii	"x\234\275\\yp\324V\232\227\324\335v\267\355\030\206"
  178      7970D456 
  178      9A97D4DD 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  185      66007EDF 
  185      94318CE8 
  185      65985C86 
-ARM GAS  /tmp/ccBlimDp.s 			page 13
+ARM GAS  /tmp/ccLyemJV.s 			page 13
 
 
  185      611E
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  197      90A46629 
  197      394F6A62 
  197      7FC3308F 
-ARM GAS  /tmp/ccBlimDp.s 			page 14
+ARM GAS  /tmp/ccLyemJV.s 			page 14
 
 
  197      B33C9BEF 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  209 022e A70278D3 		.ascii	"\247\002x\323z\272\261x\340n\324S\007;\002`ztz\312\010"
  209      7ABAB178 
  209      E06ED453 
-ARM GAS  /tmp/ccBlimDp.s 			page 15
+ARM GAS  /tmp/ccLyemJV.s 			page 15
 
 
  209      073B0260 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  220      D3CD4F8D 
  220      75D95CE0 
  221 0313 367FFA82 		.ascii	"6\177\372\202]\336\"\035*0\0344\340O\224\277\314P\001"
-ARM GAS  /tmp/ccBlimDp.s 			page 16
+ARM GAS  /tmp/ccLyemJV.s 			page 16
 
 
  221      5DDE221D 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  232      C410AFB8 
  232      0DA6676B 
  232      78757A5E 
-ARM GAS  /tmp/ccBlimDp.s 			page 17
+ARM GAS  /tmp/ccLyemJV.s 			page 17
 
 
  232      B8FB41D4 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  244      E8D6C297 
  244      E540300F 
  244      81BE1914 
-ARM GAS  /tmp/ccBlimDp.s 			page 18
+ARM GAS  /tmp/ccLyemJV.s 			page 18
 
 
  245 04cf 085CBA40 		.ascii	"\010\\\272@\340\322\216l\227/]\030\030p1\316\032s\314"
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  256      A00EB257 
  256      F588
  257 059e 4683CC6C 		.ascii	"F\203\314lr\204\200w\346\271\274\356\031*X\207c0\375"
-ARM GAS  /tmp/ccBlimDp.s 			page 19
+ARM GAS  /tmp/ccLyemJV.s 			page 19
 
 
  257      72848077 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  269 066e F31912EB 		.ascii	"\363\031\022\353\320;\303\256\276\356\373dg\350\260"
  269      D03BC3AE 
  269      BEEEFB64 
-ARM GAS  /tmp/ccBlimDp.s 			page 20
+ARM GAS  /tmp/ccLyemJV.s 			page 20
 
 
  269      67E8B0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  281      9A73B68E 
  281      06DB
  282 0750 E6184CCB 		.ascii	"\346\030L\313\331\026\032l\247\035\260q\346\234u\320"
-ARM GAS  /tmp/ccBlimDp.s 			page 21
+ARM GAS  /tmp/ccLyemJV.s 			page 21
 
 
  282      D9161A6C 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  294      5F2AFB83 
  294      5BB83FB8 
  294      E5353CD8 
-ARM GAS  /tmp/ccBlimDp.s 			page 22
+ARM GAS  /tmp/ccLyemJV.s 			page 22
 
 
  294      B301
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  306 08f7 0FA631BD 		.ascii	"\017\2461\275\2179\332\340\020\037\273:\312\346\271"
  306      8F39DAE0 
  306      101FBB3A 
-ARM GAS  /tmp/ccBlimDp.s 			page 23
+ARM GAS  /tmp/ccLyemJV.s 			page 23
 
 
  306      CAE6B9
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  318 09d6 B61D5FC0 		.ascii	"\266\035_\3006\311\257\274\331\360\027\230\\>\363I\255"
  318      36C9AFBC 
  318      D9F01798 
-ARM GAS  /tmp/ccBlimDp.s 			page 24
+ARM GAS  /tmp/ccLyemJV.s 			page 24
 
 
  318      5C3EF349 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  330      A027482B 
  330      F26C3C89 
  330      B37858D2 
-ARM GAS  /tmp/ccBlimDp.s 			page 25
+ARM GAS  /tmp/ccLyemJV.s 			page 25
 
 
  331 0abf ECE86976 		.ascii	"\354\350iv\271$\035*\220\375\237gw\2728-\242v\304Xx"
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  342      91C5A145 
  342      EF920FBF 
  343 0b94 D7ABD4C9 		.ascii	"\327\253\324\311\363_\037\376\027\022>2\277N\375\255"
-ARM GAS  /tmp/ccBlimDp.s 			page 26
+ARM GAS  /tmp/ccLyemJV.s 			page 26
 
 
  343      F35F1FFE 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  355 0c67 82B53906 		.ascii	"\202\2659\006\363j\300\226\036\243\3006:\0063{\371\354"
  355      F36AC096 
  355      1EA3C036 
-ARM GAS  /tmp/ccBlimDp.s 			page 27
+ARM GAS  /tmp/ccLyemJV.s 			page 27
 
 
  355      3A06337B 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  367 0d38 AE3FDFF0 		.ascii	"\256?\337\360\313\270\005\303\014\277\214[2L\373e\234"
  367      CBB805C3 
  367      0CBF8C5B 
-ARM GAS  /tmp/ccBlimDp.s 			page 28
+ARM GAS  /tmp/ccLyemJV.s 			page 28
 
 
  367      324CFB65 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  379      EE91B9C2 
  379      8EA2B145 
  379      D2BCE1
-ARM GAS  /tmp/ccBlimDp.s 			page 29
+ARM GAS  /tmp/ccLyemJV.s 			page 29
 
 
  380 0e17 2C0AC728 		.ascii	",\012\307(\2754>\3241XE\211\236\304\037?\033wH\352\031"
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  391      F0A386C6 
  391      EA3E601C 
  391      45AD2C75 
-ARM GAS  /tmp/ccBlimDp.s 			page 30
+ARM GAS  /tmp/ccLyemJV.s 			page 30
 
 
  391      CA81A5
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  403      D414
  404 0fc2 41AF6955 		.ascii	"A\257iU\246\374\273\002\253o\202y\266\005\237\371e\372"
  404      A6FCBB02 
-ARM GAS  /tmp/ccBlimDp.s 			page 31
+ARM GAS  /tmp/ccLyemJV.s 			page 31
 
 
  404      AB6F8279 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  416      F385424A 
  416      F7414201 
  416      3216
-ARM GAS  /tmp/ccBlimDp.s 			page 32
+ARM GAS  /tmp/ccLyemJV.s 			page 32
 
 
  417 10a1 43624926 		.ascii	"CbI&\341\252\370jE\272\212\312)\243\213\002\223'\227"
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  428 1167 82E80957 		.ascii	"\202\350\011W\013|\214\235\344\236P\021\014\272'\027"
  428      0B7C8C9D 
  428      E49E5011 
-ARM GAS  /tmp/ccBlimDp.s 			page 33
+ARM GAS  /tmp/ccLyemJV.s 			page 33
 
 
  428      0CBA2717 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  439      48855C75 
  439      0C
  440 1241 2EA33DF5 		.ascii	".\243=\365!\3406\233(f\256\020\203k]uD\210\271\303U"
-ARM GAS  /tmp/ccBlimDp.s 			page 34
+ARM GAS  /tmp/ccLyemJV.s 			page 34
 
 
  440      21E0369B 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  451      409B424C 
  451      A80D83B4 
  452 131b 5972D543 		.ascii	"Yr\325C\231\020\201\245@\361\224\212\262\012\010\"\001"
-ARM GAS  /tmp/ccBlimDp.s 			page 35
+ARM GAS  /tmp/ccLyemJV.s 			page 35
 
 
  452      991081A5 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  463      874830CD 
  463      0ECA576F 
  463      A552C891 
-ARM GAS  /tmp/ccBlimDp.s 			page 36
+ARM GAS  /tmp/ccLyemJV.s 			page 36
 
 
  463      7B47
@@ -2135,7 +2135,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  471 146c ECFF00BE 		.ascii	"\354\377\000\276\313\005\235"
  471      CB059D
  472              		.text
- 473              		.section	.gnu.lto_.symtab.cc41e3c6fbfb1e37,"",%progbits
+ 473              		.section	.gnu.lto_.symtab.2c208c4382682be9,"",%progbits
  474 0000 72666D32 		.ascii	"rfm23_init\000\000\000\000\000\000\000\000\000\000\000"
  474      335F696E 
  474      69740000 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  478 004d 0072666D 		.ascii	"\000rfm23_SHUTDOWN\000\000\000\000\000\000\000\000\000"
  478      32335F53 
  478      48555444 
-ARM GAS  /tmp/ccBlimDp.s 			page 37
+ARM GAS  /tmp/ccLyemJV.s 			page 37
 
 
  478      4F574E00 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  491      74657227 
  491      20272D66 
  492 0099 2D736563 		.ascii	"-sections' '-fdata-sections' '-fno-common' '-flto' "
-ARM GAS  /tmp/ccBlimDp.s 			page 38
+ARM GAS  /tmp/ccLyemJV.s 			page 38
 
 
  492      74696F6E 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  537 0018 AFF30080 		.section	.text.rfm23_RXEN,"ax",%progbits
  537      AFF30080 
  538              		.align	2
-ARM GAS  /tmp/ccBlimDp.s 			page 39
+ARM GAS  /tmp/ccLyemJV.s 			page 39
 
 
  539              		.p2align 4,,15
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  590              		.p2align 4,,15
  591              		.global	rfm23_readRegister
  592              		.thumb
-ARM GAS  /tmp/ccBlimDp.s 			page 40
+ARM GAS  /tmp/ccLyemJV.s 			page 40
 
 
  593              		.thumb_func
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  641 0000 0020     		movs	r0, #0
  642 0002 7047     		bx	lr
  643              		.size	rfm23_writeBurst, .-rfm23_writeBurst
-ARM GAS  /tmp/ccBlimDp.s 			page 41
+ARM GAS  /tmp/ccLyemJV.s 			page 41
 
 
  644 0004 AFF30080 		.section	.text.rfm23_sendByte,"ax",%progbits
@@ -2421,35 +2421,35 @@ ARM GAS  /tmp/ccBlimDp.s 			page 1
  659 0004 AFF30080 		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
  659      AFF30080 
  659      AFF30080 
-ARM GAS  /tmp/ccBlimDp.s 			page 42
+ARM GAS  /tmp/ccLyemJV.s 			page 42
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 rfm23bp.c
-     /tmp/ccBlimDp.s:496    .text.rfm23_init:0000000000000000 $t
-     /tmp/ccBlimDp.s:502    .text.rfm23_init:0000000000000000 rfm23_init
-     /tmp/ccBlimDp.s:511    .text.rfm23_TXEN:0000000000000000 $t
-     /tmp/ccBlimDp.s:517    .text.rfm23_TXEN:0000000000000000 rfm23_TXEN
-     /tmp/ccBlimDp.s:535    .text.rfm23_TXEN:0000000000000014 $d
-     /tmp/ccBlimDp.s:538    .text.rfm23_RXEN:0000000000000000 $t
-     /tmp/ccBlimDp.s:544    .text.rfm23_RXEN:0000000000000000 rfm23_RXEN
-     /tmp/ccBlimDp.s:562    .text.rfm23_RXEN:0000000000000014 $d
-     /tmp/ccBlimDp.s:565    .text.rfm23_SHUTDOWN:0000000000000000 $t
-     /tmp/ccBlimDp.s:571    .text.rfm23_SHUTDOWN:0000000000000000 rfm23_SHUTDOWN
-     /tmp/ccBlimDp.s:586    .text.rfm23_SHUTDOWN:0000000000000010 $d
-     /tmp/ccBlimDp.s:589    .text.rfm23_readRegister:0000000000000000 $t
-     /tmp/ccBlimDp.s:595    .text.rfm23_readRegister:0000000000000000 rfm23_readRegister
-     /tmp/ccBlimDp.s:603    .text.rfm23_writeRegister:0000000000000000 $t
-     /tmp/ccBlimDp.s:609    .text.rfm23_writeRegister:0000000000000000 rfm23_writeRegister
-     /tmp/ccBlimDp.s:617    .text.rfm23_readBurst:0000000000000000 $t
-     /tmp/ccBlimDp.s:623    .text.rfm23_readBurst:0000000000000000 rfm23_readBurst
-     /tmp/ccBlimDp.s:631    .text.rfm23_writeBurst:0000000000000000 $t
-     /tmp/ccBlimDp.s:637    .text.rfm23_writeBurst:0000000000000000 rfm23_writeBurst
-     /tmp/ccBlimDp.s:645    .text.rfm23_sendByte:0000000000000000 $t
-     /tmp/ccBlimDp.s:651    .text.rfm23_sendByte:0000000000000000 rfm23_sendByte
+     /tmp/ccLyemJV.s:496    .text.rfm23_init:0000000000000000 $t
+     /tmp/ccLyemJV.s:502    .text.rfm23_init:0000000000000000 rfm23_init
+     /tmp/ccLyemJV.s:511    .text.rfm23_TXEN:0000000000000000 $t
+     /tmp/ccLyemJV.s:517    .text.rfm23_TXEN:0000000000000000 rfm23_TXEN
+     /tmp/ccLyemJV.s:535    .text.rfm23_TXEN:0000000000000014 $d
+     /tmp/ccLyemJV.s:538    .text.rfm23_RXEN:0000000000000000 $t
+     /tmp/ccLyemJV.s:544    .text.rfm23_RXEN:0000000000000000 rfm23_RXEN
+     /tmp/ccLyemJV.s:562    .text.rfm23_RXEN:0000000000000014 $d
+     /tmp/ccLyemJV.s:565    .text.rfm23_SHUTDOWN:0000000000000000 $t
+     /tmp/ccLyemJV.s:571    .text.rfm23_SHUTDOWN:0000000000000000 rfm23_SHUTDOWN
+     /tmp/ccLyemJV.s:586    .text.rfm23_SHUTDOWN:0000000000000010 $d
+     /tmp/ccLyemJV.s:589    .text.rfm23_readRegister:0000000000000000 $t
+     /tmp/ccLyemJV.s:595    .text.rfm23_readRegister:0000000000000000 rfm23_readRegister
+     /tmp/ccLyemJV.s:603    .text.rfm23_writeRegister:0000000000000000 $t
+     /tmp/ccLyemJV.s:609    .text.rfm23_writeRegister:0000000000000000 rfm23_writeRegister
+     /tmp/ccLyemJV.s:617    .text.rfm23_readBurst:0000000000000000 $t
+     /tmp/ccLyemJV.s:623    .text.rfm23_readBurst:0000000000000000 rfm23_readBurst
+     /tmp/ccLyemJV.s:631    .text.rfm23_writeBurst:0000000000000000 $t
+     /tmp/ccLyemJV.s:637    .text.rfm23_writeBurst:0000000000000000 rfm23_writeBurst
+     /tmp/ccLyemJV.s:645    .text.rfm23_sendByte:0000000000000000 $t
+     /tmp/ccLyemJV.s:651    .text.rfm23_sendByte:0000000000000000 rfm23_sendByte
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccBlimDp.s:537    .text.rfm23_TXEN:0000000000000018 $t
-     /tmp/ccBlimDp.s:564    .text.rfm23_RXEN:0000000000000018 $t
-     /tmp/ccBlimDp.s:588    .text.rfm23_SHUTDOWN:0000000000000014 $t
+     /tmp/ccLyemJV.s:537    .text.rfm23_TXEN:0000000000000018 $t
+     /tmp/ccLyemJV.s:564    .text.rfm23_RXEN:0000000000000018 $t
+     /tmp/ccLyemJV.s:588    .text.rfm23_SHUTDOWN:0000000000000014 $t
 
 NO UNDEFINED SYMBOLS

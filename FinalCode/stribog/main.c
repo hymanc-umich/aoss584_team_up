@@ -25,7 +25,6 @@
 static THD_WORKING_AREA(waBeacon, 64);   // Audio Beacon thread
 static THD_WORKING_AREA(waGps, 1284);	 // GPS thread working area
 static THD_WORKING_AREA(waSensor, 4096); // Sensor thread working area
-static THD_WORKING_AREA(waCom, 4096);	 // Communication thread
 //static THD_WORKING_AREA(waSD, 1024); 	 // SD thread
 
 /* Accelerometer Measurement */
@@ -97,14 +96,14 @@ void initialize(void)
     /* SPI/MMC Logger Startup */
     int8_t sdIni, dlIni;
     
-    chThdSleepMilliseconds(200); // Wait for SD startup
+    chThdSleepMilliseconds(1000); // Wait for SD startup
 
     // XBee Initialization
     xbeePro_init(&xbee, &COM_SERIAL);
     // SD Initialization
-    /*
+    
     sdIni = sdmmcInitialize(&sd, &MMCD1, &DBG_SERIAL);
-   	chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing Datalogger\n");
+   	chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing Datalogger FS\n");
     chThdSleepMilliseconds(100);
     if(!sdIni)
     {
@@ -118,8 +117,8 @@ void initialize(void)
     {
 	   chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nERROR: SD Initialization Failed\n");
     }
-    */
 
+    chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing ADC\n");
     /* ADC Startup */
     adcStart(&ADCD1, NULL);      // Activate ADC driver
     chprintf((BaseSequentialStream *) &DBG_SERIAL, "System Initialization Complete\n");
