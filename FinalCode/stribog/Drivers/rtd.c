@@ -18,7 +18,7 @@ inline float RTD_rawToV(uint16_t raw)
 float RTD_vToTemp(float v)
 {
 	float vbridge = (v-RTD_V0)/RTD_AMPGAIN;
-	return ( 2*vbridge / (RTD_VS - 2*vbridge) ) * RTD_SENS;
+	return ( (2.0f * vbridge) / (RTD_VS - 2*vbridge) ) * RTD_SENS;
 }
 
 /**

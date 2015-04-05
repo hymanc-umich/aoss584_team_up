@@ -1,19 +1,8 @@
 #include "ms5607.h"
 
-/**
- * 
- */
-static I2CConfig ms5607_i2c_cfg = 
-{
-   OPMODE_I2C,
-   400000,
-   FAST_DUTY_CYCLE_2
-};
-
 static uint8_t sensCount = 0;
 
 static systime_t timeout;
-
 
 /**
  * @brief Initialize an MS5607 sensor
@@ -87,13 +76,13 @@ msg_t ms5607_readPressureTemperature(ms5607_t *m, float *pressure, float *temper
 		int32_t praw = (pressureData[0] << 16) + (pressureData[1] << 8) + pressureData[2];
 		int64_t off, sens;
 		int32_t T2 = 0;
-		int32_t dT = traw - (m->cal[4]<<8);
+		int32_t dT = traw - (m->cal[4]*256);
 		
-		int32_t temp = 2000 + (dT*m->cal[5]>>23);
+		int32_t temp = 2000 + (dT * m->cal[5])/8388608;
 		int32_t press;
 		
-		off = (m->cal[1])*(1<<17) +  (m->cal[3]*dT)/(1<<6);
-		sens = (m->cal[0])*(1<<16) + (m->cal[2]*dT)/(1<<7);
+		off = ((m->cal[1])*131072) +  ((m->cal[3]*dT)/64);
+		sens = (m->cal[0])*65536 + (m->cal[2]*dT)/128;
 		// 2nd order Temperature compensation
 		/*
 		if(temp < 20000) // Low temp
@@ -110,14 +99,15 @@ msg_t ms5607_readPressureTemperature(ms5607_t *m, float *pressure, float *temper
 			off -= 15*t1k5;
 			sens -= 8*t1k5;
 		    }
-		}
+		}light 
 		*/
 		temp -= T2;
-		press = ( (praw * sens)/(1 << 21) - off )/(1<<15);
+		off = 0;
+		press = ( ((praw * sens)/2097152)  )/32768;
 		
 		// Convert to C and mbar
 		m->lastTemp = temp*0.01f;
-		m->lastPress = press*0.01f;
+		m->lastPress = press*0.01f - 41.13f;
 		if(pressure != NULL)
 		{
 		    *pressure = m->lastPress;

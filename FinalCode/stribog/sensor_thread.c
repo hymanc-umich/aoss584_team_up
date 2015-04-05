@@ -29,9 +29,9 @@ static const ADCConversionGroup analogGrp =
     NULL,
     0,						                // ADC CR1
     ADC_CR2_SWSTART,				        // ADC CR2
-    ADC_SMPR1_SMP_AN10(ADC_SAMPLE_28) | 	// ADC SMPR1
-    ADC_SMPR1_SMP_AN11(ADC_SAMPLE_28) ,
-    ADC_SMPR2_SMP_AN0(ADC_SAMPLE_28)  ,		// ADC SMPR2
+    ADC_SMPR1_SMP_AN10(ADC_SAMPLE_144) | 	// ADC SMPR1
+    ADC_SMPR1_SMP_AN11(ADC_SAMPLE_144) ,
+    ADC_SMPR2_SMP_AN0(ADC_SAMPLE_144)  ,	// ADC SMPR2
     ADC_SQR1_NUM_CH(ANALOG_CHANNELS)  , 	// ADC SQR1
     0,						                // ADC SQR2
     ADC_SQR3_SQ1_N(ADC_CHANNEL_IN0)  | 		// ADC SQR3 (VINSNS, Pressure, Temperature)
@@ -157,7 +157,7 @@ msg_t sensorThread(void *arg)
     msg_t i7020stat, e7020stat, tmp275stat, ms5607stat, lsm303stat;
     while(thread->running)
     {
-        deadline += MS2ST(100); // Set master sampling rate at ~10Hz
+        deadline += MS2ST(1000); // Set master sampling rate at ~10Hz
         boardSetLED(1);
 
         // Perform ADC read
@@ -169,8 +169,8 @@ msg_t sensorThread(void *arg)
 
         //External Temp 2
     	tmp275stat = tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
-    	if(tmp275stat == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "EXTEMP:%.1fC\n", thread->data.temp275);
+    	/*if(tmp275stat == MSG_OK)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "EXTEMP:%.1fC\n", thread->data.temp275);*/
         // TODO: Internal Pressure (BMP280)    
 
         // Internal Humidity (Si7020)
@@ -178,23 +178,24 @@ msg_t sensorThread(void *arg)
         float tempi7020;
         i7020stat |= si70x0_readTemperature(&(thread->intSi7020), &tempi7020);
     	//chprintf((BaseSequentialStream *) &DBG_SERIAL, "Si7020 Read: %d\n", (int) ihstat);
-        if(i7020stat == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "IHUM:%.1f%% TEMP:%.2fC\n",thread->data.humdInt, tempi7020);
+        /*if(i7020stat == MSG_OK)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "IHUM:%.1f%% TEMP:%.2fC\n",thread->data.humdInt, tempi7020);*/
         
         // External Humidity 1 (Si7020)
         e7020stat = si70x0_readHumidity(&(thread->extSi7020), &(thread->data.humdExt));
         float temp7020ext;
         e7020stat |= si70x0_readTemperature(&(thread->extSi7020), &temp7020ext);
-        if(e7020stat == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "EHUM:%.1f%% ETMP:%.2fC\n",thread->data.humdExt, temp7020ext);
+        /*if(e7020stat == MSG_OK)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "EHUM:%.1f%% ETMP:%.2fC\n",thread->data.humdExt, temp7020ext);*/
 
         // External Humidity 2 (HIH6030)
 
 
         // External Pressure 2
         ms5607stat = ms5607_readPressureTemperature(&(thread->ms5607), &(thread->data.pressMs5607),&(thread->data.tempMs5607));
-        if(ms5607stat == MSG_OK)
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "MPRS:%.2fkPa, MTMP:%.2fC\n", thread->data.pressMs5607, thread->data.tempMs5607);
+        
+        /*if(ms5607stat == MSG_OK)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "MPRS:%.2fkPa, MTMP:%.2fC\n", thread->data.pressMs5607, thread->data.tempMs5607);*/
         // Accelerometer
         //lsm303_readAcceleration(&(thread->lsm303), 1);
         //lsm303_readMagnetometer(&(thread->lsm303), 1);
@@ -207,19 +208,28 @@ msg_t sensorThread(void *arg)
          * ==== Analog processing =====
          */ 
         // Input voltage
-        float vinsns = adcMeanFloat(analogSamples[activeAnalogCh], 0, ANALOG_CHANNELS, ANALOG_DEPTH) * VINSNS_RESOLUTION;
-        chprintf((BaseSequentialStream *) &DBG_SERIAL, "VIN:%.2fV\n",vinsns);
+        float vinsns = adcMeanFloat(analogSamples[activeAnalogCh], 0, ANALOG_CHANNELS, ANALOG_DEPTH) * VINSNS_RESOLUTION - 0.06;
+        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "VIN:%.2fV\n",vinsns);
 
         // Analog pressure
         float anaPressure = mpxmVToPressure(adcMeanV(analogSamples[activeAnalogCh], 1, ANALOG_CHANNELS, ANALOG_DEPTH));
-        chprintf((BaseSequentialStream *) &DBG_SERIAL, "APRESS:%.3fkPa\n", anaPressure);
+        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "APRESS:%.3fkPa\n", anaPressure);
 
         // Analog Temperature
         float anaTemp = RTD_vToTemp(adcMeanV(analogSamples[activeAnalogCh], 2, ANALOG_CHANNELS, ANALOG_DEPTH));
-        chprintf((BaseSequentialStream *) &DBG_SERIAL, "ATEMP:%.3fC\n", anaTemp);
+        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "ATMPRAW:%d\n\n",analogSamples[activeAnalogCh][2]);
+        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "ATEMP:%.3fC\n", anaTemp);
 
         activeAnalogCh ^= 1; // Toggle buffer
 
+        // Printf Dump
+        chprintf((BaseSequentialStream *) &DBG_SERIAL, 
+            "EXTEMP:%.1fC    \nEHUM:%.1f%%    EHTEMP:%.2fC\nIHUM:%.1f%%    IHTEMP:%.2fC\nMPRS:%.2fkPa    MTEMP:%.2fC\nVIN:%.2fV\nAPRESS:%.3fkPa\nATEMP:%.3fC\n",
+            thread->data.temp275,
+            thread->data.humdExt, temp7020ext,
+            thread->data.humdInt, tempi7020,
+            thread->data.pressMs5607, thread->data.tempMs5607,
+            vinsns, anaPressure, anaTemp);
         /* ===== Sleep ==== */
         boardSetLED(0);
         if(chVTGetSystemTimeX() < deadline)
@@ -234,6 +244,7 @@ msg_t sensorThread(void *arg)
     return message;
 }
 
+//142.75 - 101.805 = 39.95
 /**
  * 
  */

@@ -20,7 +20,7 @@
 #include "Drivers/rtd.h"
 #include "Drivers/mpxm2102.h"
 
-#define ANALOG_DEPTH 3
+#define ANALOG_DEPTH 1
 #define ANALOG_CHANNELS  3
 
 #define ADC_VPERC 0.00080566406f            // 3.3V/4096
