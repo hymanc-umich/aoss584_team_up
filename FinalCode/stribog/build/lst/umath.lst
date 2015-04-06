@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccRDjARd.s 			page 1
+ARM GAS  /tmp/ccGRgGWO.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"umath.c"
-  17              		.section	.gnu.lto_.jmpfuncs.3aad53237eb91724,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.d78510f456cea90f,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\0064\2404\013\0033#3\023\020\002\331e"
   18      6062C006 
   18      34A0340B 
@@ -28,7 +28,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   19      3000002A 
   19      89022D
   20              		.text
-  21              		.section	.gnu.lto_.inline.3aad53237eb91724,"",%progbits
+  21              		.section	.gnu.lto_.inline.d78510f456cea90f,"",%progbits
   22 0000 789C6362 		.ascii	"x\234cb`b\300\006\336Ai\026\006\006N5Ff\306\344\010"
   22      6062C006 
   22      DE416916 
@@ -58,12 +58,12 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   27      38189826 
   28 006b 4DF06326 		.ascii	"M\360c&['\003\000\236\304\032^"
   28      5B270300 
-ARM GAS  /tmp/ccRDjARd.s 			page 2
+ARM GAS  /tmp/ccGRgGWO.s 			page 2
 
 
   28      9EC41A5E 
   29              		.text
-  30              		.section	.gnu.lto_.pureconst.3aad53237eb91724,"",%progbits
+  30              		.section	.gnu.lto_.pureconst.d78510f456cea90f,"",%progbits
   31 0000 789C6362 		.ascii	"x\234cb`b\340d\200\000\026\006\006F \227\231\001\000"
   31      6062E064 
   31      80001606 
@@ -71,7 +71,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   31      990100
   32 0013 01360018 		.ascii	"\0016\000\030"
   33              		.text
-  34              		.section	.gnu.lto_pow.part.0.3aad53237eb91724,"",%progbits
+  34              		.section	.gnu.lto_pow.part.0.d78510f456cea90f,"",%progbits
   35 0000 789C8552 		.ascii	"x\234\205R=K\303P\024\275\347}\246V\034t\022\034J\177"
   35      3D4BC350 
   35      14BDE77D 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   44      5A67825C 
   44      0C42FDF6 
   44      37EDBCBA 
-ARM GAS  /tmp/ccRDjARd.s 			page 3
+ARM GAS  /tmp/ccGRgGWO.s 			page 3
 
 
   44      DC
@@ -176,9 +176,9 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   55      A1F20516 
   55      8D76D9
   56              		.text
-  57              		.section	.gnu.lto_powf.part.1.3aad53237eb91724,"",%progbits
+  57              		.section	.gnu.lto_powf.part.1.d78510f456cea90f,"",%progbits
   58 0000 789C8553 		.ascii	"x\234\205S=k\024Q\024\275\347\275y\0373\263\037\250"
-ARM GAS  /tmp/ccRDjARd.s 			page 4
+ARM GAS  /tmp/ccGRgGWO.s 			page 4
 
 
   58      3D6B1451 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   69      FCCCF37A 
   69      1B52D0C9 
   69      FF095F
-ARM GAS  /tmp/ccRDjARd.s 			page 5
+ARM GAS  /tmp/ccGRgGWO.s 			page 5
 
 
   70 00d7 0AB79BE7 		.ascii	"\012\267\233\347\257/\237\000\026\375\233\232X\303<"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   81      A4BBB739 
   81      73603398 
   81      03079F3F 
-ARM GAS  /tmp/ccRDjARd.s 			page 6
+ARM GAS  /tmp/ccGRgGWO.s 			page 6
 
 
   81      CD1C
@@ -325,7 +325,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   86      073E88AF 
   86      6C
   87              		.text
-  88              		.section	.gnu.lto_pow.3aad53237eb91724,"",%progbits
+  88              		.section	.gnu.lto_pow.d78510f456cea90f,"",%progbits
   89 0000 789C5D50 		.ascii	"x\234]P=k\002A\024\234yo\225\343\010b\223N\304_\240"
   89      3D6B0241 
   89      149C796F 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
   95      EFBFD369 
   95      B1D83D96 
   95      898C10
-ARM GAS  /tmp/ccRDjARd.s 			page 7
+ARM GAS  /tmp/ccGRgGWO.s 			page 7
 
 
   96 0076 0E08B546 		.ascii	"\016\010\265F\027\250U\0113\357\363\006\220\026\364"
@@ -388,7 +388,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  101      8A331BD6 
  101      3078
  102              		.text
- 103              		.section	.gnu.lto_powf.3aad53237eb91724,"",%progbits
+ 103              		.section	.gnu.lto_powf.d78510f456cea90f,"",%progbits
  104 0000 789C5D50 		.ascii	"x\234]P\261J\003Q\020\234\331}'g\010\230ZD\374\002\305"
  104      B14A0351 
  104      109CD97D 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  109      68E0E08A 
  109      E58E89CC 
  109      36DBED
-ARM GAS  /tmp/ccRDjARd.s 			page 8
+ARM GAS  /tmp/ccGRgGWO.s 			page 8
 
 
  110 0074 F86BF899 		.ascii	"\370k\370\231\034\0209!\354\021\352\201!\226\216\004"
@@ -452,7 +452,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  116      0CBF5791 
  116      397D
  117              		.text
- 118              		.section	.gnu.lto_.symbol_nodes.3aad53237eb91724,"",%progbits
+ 118              		.section	.gnu.lto_.symbol_nodes.d78510f456cea90f,"",%progbits
  119 0000 789C4DC7 		.ascii	"x\234M\307\261\015\200@\000\303@'\331\216\245\322R\262"
  119      B10D8040 
  119      00C34027 
@@ -470,15 +470,15 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  122 0036 DC034214 		.ascii	"\334\003B\024\247"
  122      A7
  123              		.text
- 124              		.section	.gnu.lto_.refs.3aad53237eb91724,"",%progbits
+ 124              		.section	.gnu.lto_.refs.d78510f456cea90f,"",%progbits
  125 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
  125      60626064 
  125      80020000 
  125      460006
  126              		.text
- 127              		.section	.gnu.lto_.decls.3aad53237eb91724,"",%progbits
+ 127              		.section	.gnu.lto_.decls.d78510f456cea90f,"",%progbits
  128 0000 789C9D94 		.ascii	"x\234\235\224Mh\023Q\020\307g6i\232mB\021\017=\232\036"
-ARM GAS  /tmp/ccRDjARd.s 			page 9
+ARM GAS  /tmp/ccGRgGWO.s 			page 9
 
 
  128      4D681351 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  139 00c9 DAC6F7AD 		.ascii	"\332\306\367\2559\344\367\370\237z\335\003\003\360\200"
  139      39E4F7F8 
  139      9F7ADD03 
-ARM GAS  /tmp/ccRDjARd.s 			page 10
+ARM GAS  /tmp/ccGRgGWO.s 			page 10
 
 
  139      03F080
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  151      CE2EFEF5 
  151      13460C9A 
  151      E10BFA
-ARM GAS  /tmp/ccRDjARd.s 			page 11
+ARM GAS  /tmp/ccGRgGWO.s 			page 11
 
 
  152 01af 770C4B8E 		.ascii	"w\014K\216u\323\245\006\365[\230\305p\345?\220\305\254"
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  163      9AA1
  164 027f 1872342A 		.ascii	"\030r4*\242\364\315\316\\VfYZSF\275\023,\243\366\320"
  164      A2F4CDCE 
-ARM GAS  /tmp/ccRDjARd.s 			page 12
+ARM GAS  /tmp/ccGRgGWO.s 			page 12
 
 
  164      5C566659 
@@ -671,7 +671,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  165      EB77
  166 02a6 60       		.ascii	"`"
  167              		.text
- 168              		.section	.gnu.lto_.symtab.3aad53237eb91724,"",%progbits
+ 168              		.section	.gnu.lto_.symtab.d78510f456cea90f,"",%progbits
  169 0000 706F7700 		.ascii	"pow\000\000\000\000\000\000\000\000\000\000\000\000"
  169      00000000 
  169      00000000 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  185              		.thumb_func
  186              		.type	pow, %function
  187              	pow:
-ARM GAS  /tmp/ccRDjARd.s 			page 13
+ARM GAS  /tmp/ccGRgGWO.s 			page 13
 
 
  188              		@ args = 0, pretend = 0, frame = 0
@@ -775,15 +775,15 @@ ARM GAS  /tmp/ccRDjARd.s 			page 1
  238      0080AFF3 
  238      0080AFF3 
  238      0080
-ARM GAS  /tmp/ccRDjARd.s 			page 14
+ARM GAS  /tmp/ccGRgGWO.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 umath.c
-     /tmp/ccRDjARd.s:181    .text.pow:0000000000000000 $t
-     /tmp/ccRDjARd.s:187    .text.pow:0000000000000000 pow
-     /tmp/ccRDjARd.s:211    .text.powf:0000000000000000 $t
-     /tmp/ccRDjARd.s:217    .text.powf:0000000000000000 powf
+     /tmp/ccGRgGWO.s:181    .text.pow:0000000000000000 $t
+     /tmp/ccGRgGWO.s:187    .text.pow:0000000000000000 pow
+     /tmp/ccGRgGWO.s:211    .text.powf:0000000000000000 $t
+     /tmp/ccGRgGWO.s:217    .text.powf:0000000000000000 powf
                             *COM*:0000000000000001 __gnu_lto_v1
 
 NO UNDEFINED SYMBOLS

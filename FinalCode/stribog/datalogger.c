@@ -2,11 +2,11 @@
 
 #include "chprintf.h"
 
-static SerialDriver *DEBUG; // Debug
+static SerialDriver *DEBUG; // Debug serial port
 
 /**
  * @brief Initializes a Data Logger instance
- * @param logger
+ * @param logger Data logger struct
  * @param logPath Path to store logs to
  * @param sd SD Card container
  * @param dbg Debug Serial Port
@@ -15,10 +15,10 @@ static SerialDriver *DEBUG; // Debug
 int8_t dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd, SerialDriver *dbg)
 {
     if(sd == NULL || logger == NULL)
-	return false;
+	   return false;
     DEBUG = dbg;
     if(logPath == NULL)
-	logPath = "";
+	   logPath = "";
     FRESULT err;
     logger->sdc = sd;
     logger->filesys = sdmmcGetFS(sd);
@@ -26,8 +26,8 @@ int8_t dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd, Se
     err = f_mount(logger->filesys, logPath, 1);
     if(err != FR_OK)
     {
-	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error Mounting Filesystem,ERR%20d\n",err);
-	return -1;
+    	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error Mounting Filesystem,ERR%20d\n",err);
+    	return -1;
     }
     logger->driveMounted = true;
     chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Datalogger Started\n");
@@ -36,14 +36,16 @@ int8_t dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd, Se
 
 /**
  * @brief Stops an ongoing data logging process
+ * @param logger Data logger struct
+ * @return 
  */
-bool dataLoggerStop(datalogger_t *logger)
+int8_t dataLoggerStop(datalogger_t *logger)
 {
     // TODO: Close all files
     chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Datalogger Stopped\n");
     f_mount(NULL, NULL, 0);
     logger->driveMounted = false;
-    return false;
+    return 0;
 }
 
 /**
@@ -51,19 +53,25 @@ bool dataLoggerStop(datalogger_t *logger)
  */
 int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file, char *fname)
 {
-    chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Creating New Logfile\n");
+    chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Creating New Logfile %s\n", fname);
     FRESULT res;
     log->open = FALSE;
     if(!(logger->driveMounted))
-	return false;
+    {
+       chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Driver not mounted\n");
+	   return false;
+    }
     log->file = file;
     log->wrCount = 0;
     log->name = fname;
+    chThdSleepMilliseconds(100);
     res = f_open(log->file, fname, FA_CREATE_ALWAYS | FA_WRITE);
+    chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: FILE OPEN\n");
+    chThdSleepMilliseconds(100);
     if(res)
     {
-	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error creating Logfile, ERR%02d\n",res);
-	return res;
+    	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error creating Logfile, ERR%02d\n",res);
+    	return res;
     }
     log->open = TRUE;
     return 0;
@@ -87,19 +95,19 @@ int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length, bool openClose)
     int written;
     if(openClose)
     {
-	res = logfileOpenAppend(log);
-	if(res)
-	    return res;
+    	res = logfileOpenAppend(log);
+    	if(res)
+    	    return res;
     }
     res = f_write(log->file, buf, length, &written);
     if(res || (written != length))
-	return 1;
+	   return 1;
     log->wrCount++;
     if(openClose)
     {
-	res = f_close(log->file);
-	if(res)
-	    return res;
+    	res = f_close(log->file);
+    	if(res)
+    	    return res;
     }
     return 0;
 }
@@ -121,12 +129,12 @@ int8_t logfileWriteCsv(logfile_t *log, char **items, char separator, uint16_t ni
     uint16_t i, j;
     for(i = 0; i < nitems; i++)
     {
-	j = 0;
-	while(items[i][j] != '\0')
-	{
-	    buf[length++] = items[i][j++];
-	}
-	buf[length++] = separator;
+    	j = 0;
+    	while(items[i][j] != '\0')
+    	{
+    	    buf[length++] = items[i][j++];
+    	}
+    	buf[length++] = separator;
     }
     // TODO: Write CSV line to buffer
     //res = f_write(log->file, bufLen, &written);
@@ -152,9 +160,9 @@ int8_t logfileClose(logfile_t *log)
 {
     if(f_close(log->file))
     {
-	log->wrCount = 0;
-	log->open = FALSE;
-	return 1;
+    	log->wrCount = 0;
+    	log->open = FALSE;
+    	return 1;
     }
     return 0;
 }
@@ -170,24 +178,9 @@ int8_t logfileOpenAppend(logfile_t *log)
     res = f_open(log->file, log->name, FA_WRITE | FA_OPEN_ALWAYS);
     if(res == FR_OK)
     {
-	res = f_lseek(log->file, f_size(log->file));
-	if(res != FR_OK)
-	    f_close(log->file);
+    	res = f_lseek(log->file, f_size(log->file));
+    	if(res != FR_OK)
+    	    f_close(log->file);
     }
     return res;
-}
-
-/**
- * @brief Data Logger Thread
- * @param arg Data thread structure pointer
- */
-msg_t dataloggerThread(void *arg)
-{
-    dataThread_t *thread = (dataThread_t *) arg;
-    while(thread->running)
-    {
-	// Write data to storage
-	chThdSleepMilliseconds(thread->sleepTime); // Sleep
-    }
-    return MSG_OK;
 }

@@ -1,46 +1,54 @@
 Archive member included because of file (symbol)
 
 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
-                              /tmp/cceyJzH9.ltrans0.ltrans.o (__aeabi_dsub)
+                              /tmp/cceO0zFi.ltrans6.ltrans.o (__aeabi_dsub)
 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
-                              /tmp/cceyJzH9.ltrans0.ltrans.o (__aeabi_dmul)
+                              /tmp/cceO0zFi.ltrans6.ltrans.o (__aeabi_dmul)
 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
-                              /tmp/cceyJzH9.ltrans0.ltrans.o (__aeabi_d2iz)
+                              /tmp/cceO0zFi.ltrans6.ltrans.o (__aeabi_d2iz)
 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
-                              /tmp/cceyJzH9.ltrans0.ltrans.o (__aeabi_d2f)
+                              /tmp/cceO0zFi.ltrans6.ltrans.o (__aeabi_d2f)
+/usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+                              /tmp/cceO0zFi.ltrans6.ltrans.o (memcpy)
 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
-                              /tmp/cceyJzH9.ltrans1.ltrans.o (strcpy)
+                              /tmp/cceO0zFi.ltrans2.ltrans.o (strcpy)
 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
-                              /tmp/cceyJzH9.ltrans2.ltrans.o (strlen)
+                              /tmp/cceO0zFi.ltrans1.ltrans.o (strlen)
 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
-                              /tmp/cceyJzH9.ltrans2.ltrans.o (strncmp)
+                              /tmp/cceO0zFi.ltrans1.ltrans.o (strncmp)
 
 Discarded input sections
 
  .data          0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
  .bss           0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
  .text          0x0000000000000000        0x0 build/obj/crt0.o (symbol from plugin)
- .text          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans0.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans0.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans0.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans1.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans1.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans2.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans2.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans2.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans3.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans3.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans3.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans4.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans4.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans5.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans5.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans5.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans6.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans6.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/cceyJzH9.ltrans6.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans1.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans1.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans1.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans3.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans3.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans3.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans4.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans4.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans4.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans5.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans5.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans5.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans6.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans6.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans6.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans7.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans7.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans7.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans8.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans8.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cceO0zFi.ltrans8.ltrans.o
  .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
  .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
  .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
@@ -49,6 +57,8 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
  .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
  .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
  .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
  .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
  .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
@@ -176,13 +186,15 @@ Linker script and memory map
 
 LOAD build/obj/chcoreasm_v7m.o
 LOAD build/obj/crt0.o
-LOAD /tmp/cceyJzH9.ltrans0.ltrans.o
-LOAD /tmp/cceyJzH9.ltrans1.ltrans.o
-LOAD /tmp/cceyJzH9.ltrans2.ltrans.o
-LOAD /tmp/cceyJzH9.ltrans3.ltrans.o
-LOAD /tmp/cceyJzH9.ltrans4.ltrans.o
-LOAD /tmp/cceyJzH9.ltrans5.ltrans.o
-LOAD /tmp/cceyJzH9.ltrans6.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans0.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans1.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans2.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans3.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans4.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans5.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans6.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans7.ltrans.o
+LOAD /tmp/cceO0zFi.ltrans8.ltrans.o
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a
 LOAD build/obj/vectors.o
@@ -299,7 +311,7 @@ LOAD build/obj/main.o
 
 startup         0x0000000008000000      0x1c0
  *(vectors)
- vectors        0x0000000008000000      0x1c0 /tmp/cceyJzH9.ltrans3.ltrans.o
+ vectors        0x0000000008000000      0x1c0 /tmp/cceO0zFi.ltrans4.ltrans.o
                 0x0000000008000000                _vectors
 
 constructors    0x00000000080001c0        0x0
@@ -314,616 +326,694 @@ destructors     0x00000000080001c0        0x0
  *(SORT(.fini_array.*))
                 0x00000000080001c0                PROVIDE (__fini_array_end, .)
 
-.text           0x00000000080001c0     0x5d44
+.text           0x00000000080001c0     0x7160
  *(.text.startup.*)
  .text.startup.main
-                0x00000000080001c0      0xa40 /tmp/cceyJzH9.ltrans1.ltrans.o
+                0x00000000080001c0      0xbc0 /tmp/cceO0zFi.ltrans2.ltrans.o
                 0x00000000080001c0                main
  *(.text)
- .text          0x0000000008000c00       0x2e build/obj/chcoreasm_v7m.o
-                0x0000000008000c00                _port_switch
-                0x0000000008000c18                _port_thread_start
-                0x0000000008000c26                _port_switch_from_isr
-                0x0000000008000c2a                _port_exit_from_isr
- *fill*         0x0000000008000c2e        0x2 
- .text          0x0000000008000c30      0x370 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
-                0x0000000008000c30                __aeabi_drsub
-                0x0000000008000c38                __aeabi_dsub
-                0x0000000008000c38                __subdf3
-                0x0000000008000c3c                __adddf3
-                0x0000000008000c3c                __aeabi_dadd
-                0x0000000008000eb4                __aeabi_ui2d
-                0x0000000008000eb4                __floatunsidf
-                0x0000000008000ed4                __floatsidf
-                0x0000000008000ed4                __aeabi_i2d
-                0x0000000008000ef8                __extendsfdf2
-                0x0000000008000ef8                __aeabi_f2d
-                0x0000000008000f34                __aeabi_ul2d
-                0x0000000008000f34                __floatundidf
-                0x0000000008000f44                __floatdidf
-                0x0000000008000f44                __aeabi_l2d
- .text          0x0000000008000fa0      0x424 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
-                0x0000000008000fa0                __aeabi_dmul
-                0x0000000008000fa0                __muldf3
-                0x00000000080011f4                __aeabi_ddiv
-                0x00000000080011f4                __divdf3
- *fill*         0x00000000080013c4        0xc 
- .text          0x00000000080013d0       0x50 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
-                0x00000000080013d0                __fixdfsi
-                0x00000000080013d0                __aeabi_d2iz
- .text          0x0000000008001420       0xa0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
-                0x0000000008001420                __aeabi_d2f
-                0x0000000008001420                __truncdfsf2
+ .text          0x0000000008000d80       0x2e build/obj/chcoreasm_v7m.o
+                0x0000000008000d80                _port_switch
+                0x0000000008000d98                _port_thread_start
+                0x0000000008000da6                _port_switch_from_isr
+                0x0000000008000daa                _port_exit_from_isr
+ *fill*         0x0000000008000dae        0x2 
+ .text          0x0000000008000db0      0x370 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                0x0000000008000db0                __aeabi_drsub
+                0x0000000008000db8                __aeabi_dsub
+                0x0000000008000db8                __subdf3
+                0x0000000008000dbc                __adddf3
+                0x0000000008000dbc                __aeabi_dadd
+                0x0000000008001034                __aeabi_ui2d
+                0x0000000008001034                __floatunsidf
+                0x0000000008001054                __floatsidf
+                0x0000000008001054                __aeabi_i2d
+                0x0000000008001078                __extendsfdf2
+                0x0000000008001078                __aeabi_f2d
+                0x00000000080010b4                __aeabi_ul2d
+                0x00000000080010b4                __floatundidf
+                0x00000000080010c4                __floatdidf
+                0x00000000080010c4                __aeabi_l2d
+ .text          0x0000000008001120      0x424 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+                0x0000000008001120                __aeabi_dmul
+                0x0000000008001120                __muldf3
+                0x0000000008001374                __aeabi_ddiv
+                0x0000000008001374                __divdf3
+ *fill*         0x0000000008001544        0xc 
+ .text          0x0000000008001550       0x50 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+                0x0000000008001550                __fixdfsi
+                0x0000000008001550                __aeabi_d2iz
+ .text          0x00000000080015a0       0xa0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+                0x00000000080015a0                __aeabi_d2f
+                0x00000000080015a0                __truncdfsf2
+ .text          0x0000000008001640      0x134 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+                0x0000000008001640                memcpy
  *(.text.*)
- .text.long_to_string_with_divisor.13045.4048
-                0x00000000080014c0       0x50 /tmp/cceyJzH9.ltrans0.ltrans.o
- .text.mmc_lld_is_write_protected
-                0x0000000008001510       0x10 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001510                mmc_lld_is_write_protected
- .text.mmc_lld_is_card_inserted
-                0x0000000008001520       0x10 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001520                mmc_lld_is_card_inserted
- .text.notify6.12010
-                0x0000000008001530       0x10 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001530                notify6.12010
- .text.notify2.12013
-                0x0000000008001540       0x10 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001540                notify2.12013
- .text.adc_lld_stop_conversion.4466
-                0x0000000008001550       0x40 /tmp/cceyJzH9.ltrans0.ltrans.o
- .text.mmcGetInfo
-                0x0000000008001590       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001590                mmcGetInfo
- .text.chCoreAlloc
-                0x00000000080015b0       0x40 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080015b0                chCoreAlloc
- .text.wakeup.4718
-                0x00000000080015f0       0x70 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080015f0                wakeup.4718
- .text._idle_thread.4338
-                0x0000000008001660       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001660                _idle_thread.4338
- .text.SVC_Handler
-                0x0000000008001680       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001680                SVC_Handler
- .text.chvprintf
-                0x00000000080016a0      0x3a0 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080016a0                chvprintf
- .text.get_ldnumber.12784
-                0x0000000008001a40       0x40 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001a40                get_ldnumber.12784
- .text.usart_stop.12171
-                0x0000000008001a80       0x50 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001a80                usart_stop.12171
- .text.spiUnselect
-                0x0000000008001ad0       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001ad0                spiUnselect
- .text.spiSelect
-                0x0000000008001af0       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001af0                spiSelect
- .text.dmaStreamRelease
-                0x0000000008001b10       0x70 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001b10                dmaStreamRelease
- .text.spiStop  0x0000000008001b80       0x50 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001b80                spiStop
- .text.dmaStreamAllocate
-                0x0000000008001bd0       0xc0 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001bd0                dmaStreamAllocate
- .text.spiStart
-                0x0000000008001c90       0xb0 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001c90                spiStart
- .text.chSchDoRescheduleAhead
-                0x0000000008001d40       0x40 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001d40                chSchDoRescheduleAhead
- .text.chSchRescheduleS
-                0x0000000008001d80       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001d80                chSchRescheduleS
- .text.chSchGoSleepS
-                0x0000000008001da0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001da0                chSchGoSleepS
- .text.chThdSuspendS
-                0x0000000008001dd0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001dd0                chThdSuspendS
- .text._port_irq_epilogue
-                0x0000000008001e00       0x70 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001e00                _port_irq_epilogue
- .text.Vector158
-                0x0000000008001e70       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001e70                Vector158
- .text.Vector154
-                0x0000000008001ea0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001ea0                Vector154
- .text.Vector150
-                0x0000000008001ed0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001ed0                Vector150
- .text.Vector130
-                0x0000000008001f00       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001f00                Vector130
- .text.Vector12C
-                0x0000000008001f30       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001f30                Vector12C
- .text.Vector128
-                0x0000000008001f60       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001f60                Vector128
- .text.Vector124
-                0x0000000008001f90       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001f90                Vector124
- .text.Vector120
-                0x0000000008001fc0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001fc0                Vector120
- .text.VectorFC
-                0x0000000008001ff0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008001ff0                VectorFC
- .text.Vector84
-                0x0000000008002020       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002020                Vector84
- .text.Vector80
-                0x0000000008002050       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002050                Vector80
- .text.Vector7C
-                0x0000000008002080       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002080                Vector7C
- .text.Vector78
-                0x00000000080020b0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080020b0                Vector78
- .text.Vector74
-                0x00000000080020e0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080020e0                Vector74
- .text.Vector70
-                0x0000000008002110       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002110                Vector70
- .text.Vector6C
-                0x0000000008002140       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002140                Vector6C
- .text.chSchReadyI
-                0x0000000008002170       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002170                chSchReadyI
- .text.chEvtBroadcastFlagsI
-                0x00000000080021a0       0x60 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080021a0                chEvtBroadcastFlagsI
- .text.chMtxLockS
-                0x0000000008002200       0xd0 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002200                chMtxLockS
- .text.chThdResumeI
-                0x00000000080022d0       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080022d0                chThdResumeI
- .text.i2c_lld_serve_error_interrupt.11412.4355
-                0x00000000080022f0       0xb0 /tmp/cceyJzH9.ltrans0.ltrans.o
- .text.Vector164
-                0x00000000080023a0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080023a0                Vector164
- .text.VectorC0
-                0x00000000080023d0       0x30 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080023d0                VectorC0
- .text.i2c_lld_serve_event_interrupt.11409.4398
-                0x0000000008002400      0x100 /tmp/cceyJzH9.ltrans0.ltrans.o
- .text.Vector160
-                0x0000000008002500       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002500                Vector160
- .text.VectorBC
-                0x0000000008002520       0x20 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002520                VectorBC
- .text.Vector88
-                0x0000000008002540       0x70 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002540                Vector88
- .text.adc_lld_serve_rx_interrupt.11091
-                0x00000000080025b0       0xd0 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080025b0                adc_lld_serve_rx_interrupt.11091
- .text.chTMStopMeasurementX
-                0x0000000008002680       0x50 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x0000000008002680                chTMStopMeasurementX
- .text._unhandled_exception.4609
-                0x00000000080026d0       0x10 /tmp/cceyJzH9.ltrans0.ltrans.o
-                0x00000000080026d0                Vector58
-                0x00000000080026d0                VectorE8
-                0x00000000080026d0                Vector9C
-                0x00000000080026d0                VectorAC
-                0x00000000080026d0                DebugMon_Handler
-                0x00000000080026d0                Vector1A0
-                0x00000000080026d0                Vector5C
-                0x00000000080026d0                Vector11C
-                0x00000000080026d0                HardFault_Handler
-                0x00000000080026d0                Vector1B8
-                0x00000000080026d0                Vector19C
-                0x00000000080026d0                Vector8C
-                0x00000000080026d0                SysTick_Handler
-                0x00000000080026d0                VectorDC
-                0x00000000080026d0                PendSV_Handler
-                0x00000000080026d0                Vector168
-                0x00000000080026d0                NMI_Handler
-                0x00000000080026d0                Vector110
-                0x00000000080026d0                VectorC8
-                0x00000000080026d0                Vector94
-                0x00000000080026d0                VectorA8
-                0x00000000080026d0                VectorB4
-                0x00000000080026d0                Vector1B0
-                0x00000000080026d0                UsageFault_Handler
-                0x00000000080026d0                VectorEC
-                0x00000000080026d0                Vector40
-                0x00000000080026d0                VectorF8
-                0x00000000080026d0                Vector108
-                0x00000000080026d0                Vector190
-                0x00000000080026d0                Vector148
-                0x00000000080026d0                Vector188
-                0x00000000080026d0                Vector198
-                0x00000000080026d0                Vector118
-                0x00000000080026d0                Vector64
-                0x00000000080026d0                VectorCC
-                0x00000000080026d0                Vector54
-                0x00000000080026d0                Vector98
-                0x00000000080026d0                Vector138
-                0x00000000080026d0                Vector24
-                0x00000000080026d0                Vector1AC
-                0x00000000080026d0                Vector178
-                0x00000000080026d0                Vector1A4
-                0x00000000080026d0                VectorD0
-                0x00000000080026d0                Vector1B4
-                0x00000000080026d0                Vector140
-                0x00000000080026d0                VectorE4
-                0x00000000080026d0                Vector134
-                0x00000000080026d0                VectorF0
-                0x00000000080026d0                Vector13C
-                0x00000000080026d0                Vector100
-                0x00000000080026d0                VectorE0
-                0x00000000080026d0                VectorF4
-                0x00000000080026d0                MemManage_Handler
-                0x00000000080026d0                VectorA0
-                0x00000000080026d0                VectorC4
-                0x00000000080026d0                Vector180
-                0x00000000080026d0                Vector90
-                0x00000000080026d0                Vector114
-                0x00000000080026d0                Vector60
-                0x00000000080026d0                Vector1C
-                0x00000000080026d0                Vector1BC
-                0x00000000080026d0                Vector17C
-                0x00000000080026d0                Vector48
-                0x00000000080026d0                Vector1A8
-                0x00000000080026d0                Vector16C
-                0x00000000080026d0                Vector4C
-                0x00000000080026d0                Vector144
-                0x00000000080026d0                Vector68
-                0x00000000080026d0                Vector170
-                0x00000000080026d0                Vector104
-                0x00000000080026d0                Vector184
-                0x00000000080026d0                Vector10C
-                0x00000000080026d0                Vector14C
-                0x00000000080026d0                BusFault_Handler
-                0x00000000080026d0                Vector50
-                0x00000000080026d0                Vector194
-                0x00000000080026d0                Vector44
-                0x00000000080026d0                Vector28
-                0x00000000080026d0                VectorB8
-                0x00000000080026d0                Vector34
-                0x00000000080026d0                VectorA4
-                0x00000000080026d0                Vector20
-                0x00000000080026d0                Vector18C
-                0x00000000080026d0                Vector174
- .text.I2CSensor_transact
-                0x00000000080026e0      0x130 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x00000000080026e0                I2CSensor_transact
- .text.I2CSensor_transact_buf
-                0x0000000008002810       0x20 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000008002810                I2CSensor_transact_buf
- .text.si70x0_init
-                0x0000000008002830       0x90 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000008002830                si70x0_init
- .text.si70x0_heaterEnable
-                0x00000000080028c0       0x50 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x00000000080028c0                si70x0_heaterEnable
- .text.si70x0_readTemperature
-                0x0000000008002910       0x60 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000008002910                si70x0_readTemperature
- .text.si70x0_readHumidity
-                0x0000000008002970       0x70 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000008002970                si70x0_readHumidity
- .text.check_fs.12818.4348
-                0x00000000080029e0       0xa0 /tmp/cceyJzH9.ltrans2.ltrans.o
- .text.mmcConnect
-                0x0000000008002a80      0x170 /tmp/cceyJzH9.ltrans2.ltrans.o
-                0x0000000008002a80                mmcConnect
- .text.gpsThread
-                0x0000000008002bf0      0x3e0 /tmp/cceyJzH9.ltrans2.ltrans.o
-                0x0000000008002bf0                gpsThread
- .text.f_mount  0x0000000008002fd0      0x360 /tmp/cceyJzH9.ltrans2.ltrans.o
-                0x0000000008002fd0                f_mount
- .text.sd_lld_start
-                0x0000000008003330       0xd0 /tmp/cceyJzH9.ltrans2.ltrans.o
-                0x0000000008003330                sd_lld_start
- .text.sensorThread
-                0x0000000008003400      0x8e0 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x0000000008003400                sensorThread
- .text.mmc_write.9978
-                0x0000000008003ce0       0x60 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x0000000008003ce0                mmc_write.9978
- .text.serve_interrupt.12020.4587
-                0x0000000008003d40      0x1a0 /tmp/cceyJzH9.ltrans3.ltrans.o
- .text.Vector15C.4582
-                0x0000000008003ee0       0x20 /tmp/cceyJzH9.ltrans3.ltrans.o
- .text.VectorD8.4585
-                0x0000000008003f00       0x20 /tmp/cceyJzH9.ltrans3.ltrans.o
- .text.Reset_Handler
-                0x0000000008003f20      0x1c0 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x0000000008003f20                Reset_Handler
- .text.gpsRxErr.16067
-                0x00000000080040e0       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080040e0                gpsRxErr.16067
- .text.gpsRxEnd.16064
-                0x00000000080040f0       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080040f0                gpsRxEnd.16064
- .text.gpsTxC.16061
-                0x0000000008004100       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004100                gpsTxC.16061
- .text.gpsTxbufEnd.16058
-                0x0000000008004110       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004110                gpsTxbufEnd.16058
- .text.VectorB0
-                0x0000000008004120       0x90 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004120                VectorB0
- .text.VectorD4
-                0x00000000080041b0       0x70 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080041b0                VectorD4
- .text.chSchWakeupS.constprop.52.4355
-                0x0000000008004220       0x60 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.i2c_lld_serve_rx_end_irq.11402
-                0x0000000008004280       0x70 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004280                i2c_lld_serve_rx_end_irq.11402
- .text.gpsRxChar.16076
-                0x00000000080042f0       0x90 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080042f0                gpsRxChar.16076
- .text.chSchGoSleepTimeoutS
-                0x0000000008004380       0xe0 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004380                chSchGoSleepTimeoutS
+ *fill*         0x0000000008001774        0xc 
+ .text.chIQGetTimeout.4406
+                0x0000000008001780       0x50 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .text.gett.10196
+                0x00000000080017d0       0x10 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x00000000080017d0                gett.10196
+ .text.get.10200
+                0x00000000080017e0       0x10 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x00000000080017e0                get.10200
+ .text.chIQReadTimeout.4434
+                0x00000000080017f0       0x80 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .text.readt.10173
+                0x0000000008001870       0x10 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001870                readt.10173
+ .text.read.10180
+                0x0000000008001880       0x10 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001880                read.10180
+ .text.putt.10203
+                0x0000000008001890       0x10 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001890                putt.10203
+ .text.put.10208
+                0x00000000080018a0       0x10 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x00000000080018a0                put.10208
  .text.chThdSleep
-                0x0000000008004460       0x20 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004460                chThdSleep
- .text.chThdSleepUntil
-                0x0000000008004480       0x20 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004480                chThdSleepUntil
- .text.chThdEnqueueTimeoutS.4295
-                0x00000000080044a0       0x30 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.chIQGetTimeout.4240
-                0x00000000080044d0       0x50 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.gett.10196.4233
-                0x0000000008004520       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.get.10200.4237
-                0x0000000008004530       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.chIQReadTimeout.4255
-                0x0000000008004540       0x80 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.readt.10173.4244
-                0x00000000080045c0       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.read.10180.4250
-                0x00000000080045d0       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.chOQPutTimeout.4270
-                0x00000000080045e0       0x50 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.putt.10203.4261
-                0x0000000008004630       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.put.10208.4266
-                0x0000000008004640       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.chOQWriteTimeout.4289
-                0x0000000008004650       0x80 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.writet.10185.4278
-                0x00000000080046d0       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.write.10191.4284
-                0x00000000080046e0       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
- .text.chThdCreateStatic
-                0x00000000080046f0       0x80 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080046f0                chThdCreateStatic
- .text.chMtxUnlock
-                0x0000000008004770       0x60 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004770                chMtxUnlock
- .text.spiSend  0x00000000080047d0       0x50 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080047d0                spiSend
- .text.spiReceive
-                0x0000000008004820       0x50 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004820                spiReceive
- .text.recvr1.isra.0.9868
-                0x0000000008004870       0x30 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004870                recvr1.isra.0.9868
- .text.mmcStopSequentialRead.part.7.9923
-                0x00000000080048a0       0x30 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080048a0                mmcStopSequentialRead.part.7.9923
- .text.spiIgnore
-                0x00000000080048d0       0x60 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080048d0                spiIgnore
- .text.mmcSequentialRead
-                0x0000000008004930       0x60 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004930                mmcSequentialRead
- .text.chTMStartMeasurementX.constprop.32
-                0x0000000008004990       0x10 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004990                chTMStartMeasurementX.constprop.32
- .text.sdObjectInit.constprop.27
-                0x00000000080049a0       0x70 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x00000000080049a0                sdObjectInit.constprop.27
- .text.chprintf.13294.constprop.14
-                0x0000000008004a10       0x30 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004a10                chprintf.13294.constprop.14
- .text.I2CSensor_init
-                0x0000000008004a40       0x60 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004a40                I2CSensor_init
- .text.chprintf.13613.constprop.13
-                0x0000000008004aa0       0x30 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004aa0                chprintf.13613.constprop.13
- .text.uStrCpy.constprop.3
-                0x0000000008004ad0       0x40 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004ad0                uStrCpy.constprop.3
- .text.uStrInsertChar.constprop.2
-                0x0000000008004b10       0x40 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004b10                uStrInsertChar.constprop.2
- .text.chprintf.17284
-                0x0000000008004b50       0x20 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004b50                chprintf.17284
- .text.chprintf.16716
-                0x0000000008004b70       0x20 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004b70                chprintf.16716
- .text.chprintf.16358
-                0x0000000008004b90       0x20 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004b90                chprintf.16358
- .text.uStrPrependChar
-                0x0000000008004bb0       0x30 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004bb0                uStrPrependChar
- .text.chprintf.15697
-                0x0000000008004be0       0x20 /tmp/cceyJzH9.ltrans4.ltrans.o
-                0x0000000008004be0                chprintf.15697
- .text.i2c_lld_serve_tx_end_irq.11398.4250
-                0x0000000008004c00       0x50 /tmp/cceyJzH9.ltrans5.ltrans.o
- .text.spi_lld_serve_tx_interrupt.11700
-                0x0000000008004c50       0x20 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008004c50                spi_lld_serve_tx_interrupt.11700
- .text.uart_lld_serve_rx_end_irq.12164
-                0x0000000008004c70       0x90 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008004c70                uart_lld_serve_rx_end_irq.12164
- .text.uart_lld_serve_tx_end_irq.12160
-                0x0000000008004d00       0x60 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008004d00                uart_lld_serve_tx_end_irq.12160
- .text.spi_lld_serve_rx_interrupt.11704
-                0x0000000008004d60       0x90 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008004d60                spi_lld_serve_rx_interrupt.11704
- .text.beaconThread
-                0x0000000008004df0       0x40 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008004df0                beaconThread
- .text.wait.isra.1.9875.4458
-                0x0000000008004e30       0x40 /tmp/cceyJzH9.ltrans5.ltrans.o
- .text.send_hdr.9878.4453
-                0x0000000008004e70       0x70 /tmp/cceyJzH9.ltrans5.ltrans.o
- .text.sync.isra.2.9902.4473
-                0x0000000008004ee0       0x40 /tmp/cceyJzH9.ltrans5.ltrans.o
- .text.mmcStartSequentialRead.4426
-                0x0000000008004f20       0x60 /tmp/cceyJzH9.ltrans5.ltrans.o
- .text.mmcSync  0x0000000008004f80       0x30 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008004f80                mmcSync
- .text.mmcDisconnect
-                0x0000000008004fb0       0x50 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008004fb0                mmcDisconnect
- .text.mmc_read.9961
-                0x0000000008005000       0x40 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008005000                mmc_read.9961
- .text.i2c_lld_start
-                0x0000000008005040      0x200 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008005040                i2c_lld_start
+                0x00000000080018b0       0x20 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x00000000080018b0                chThdSleep
+ .text.wait.isra.1.9875.4372
+                0x00000000080018d0       0x40 /tmp/cceO0zFi.ltrans0.ltrans.o
  .text.mmcSequentialWrite
-                0x0000000008005240       0x80 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008005240                mmcSequentialWrite
+                0x0000000008001910       0x80 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001910                mmcSequentialWrite
+ .text.send_hdr.9878.4367
+                0x0000000008001990       0x70 /tmp/cceO0zFi.ltrans0.ltrans.o
  .text.mmcStartSequentialWrite
-                0x00000000080052c0       0x60 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x00000000080052c0                mmcStartSequentialWrite
- .text.disk_write.constprop.44.4377
-                0x0000000008005320       0x60 /tmp/cceyJzH9.ltrans5.ltrans.o
+                0x0000000008001a00       0x60 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001a00                mmcStartSequentialWrite
+ .text.disk_write
+                0x0000000008001a60       0x80 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001a60                disk_write
  .text.sync_window.part.3.12801
-                0x0000000008005380       0x60 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008005380                sync_window.part.3.12801
- .text.disk_read.constprop.46
-                0x00000000080053e0       0x50 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x00000000080053e0                disk_read.constprop.46
+                0x0000000008001ae0       0x60 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001ae0                sync_window.part.3.12801
+ .text.mmcStartSequentialRead.4340
+                0x0000000008001b40       0x60 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .text.disk_read.constprop.53
+                0x0000000008001ba0       0x50 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001ba0                disk_read.constprop.53
+ .text.move_window.12811
+                0x0000000008001bf0       0x40 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001bf0                move_window.12811
+ .text.get_fat.part.6.12827
+                0x0000000008001c30       0xd0 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001c30                get_fat.part.6.12827
+ .text.dir_sdi.12831.constprop.51
+                0x0000000008001d00       0x80 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001d00                dir_sdi.12831.constprop.51
+ .text.check_fs.12818.4269
+                0x0000000008001d80       0x90 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .text.find_volume.12822
+                0x0000000008001e10      0x320 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008001e10                find_volume.12822
+ .text.f_mount  0x0000000008002130       0x60 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008002130                f_mount
+ .text.mmc_read.9961
+                0x0000000008002190       0x40 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008002190                mmc_read.9961
  .text.read_CxD.9894
-                0x0000000008005430       0xb0 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008005430                read_CxD.9894
+                0x00000000080021d0       0xb0 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x00000000080021d0                read_CxD.9894
  .text.send_command_R1.9889
-                0x00000000080054e0       0x30 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x00000000080054e0                send_command_R1.9889
+                0x0000000008002280       0x30 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008002280                send_command_R1.9889
  .text.send_command_R3.9883
-                0x0000000008005510       0x40 /tmp/cceyJzH9.ltrans5.ltrans.o
-                0x0000000008005510                send_command_R3.9883
+                0x00000000080022b0       0x40 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x00000000080022b0                send_command_R3.9883
+ .text.sync.isra.2.9902.4387
+                0x00000000080022f0       0x40 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .text.mmcSync  0x0000000008002330       0x30 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008002330                mmcSync
+ .text.mmcDisconnect
+                0x0000000008002360       0x50 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008002360                mmcDisconnect
+ .text.chThdSleepUntil
+                0x00000000080023b0       0x20 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x00000000080023b0                chThdSleepUntil
+ .text.gpsThread
+                0x00000000080023d0      0x3d0 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x00000000080023d0                gpsThread
+ .text.VectorB0
+                0x00000000080027a0       0x90 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x00000000080027a0                VectorB0
+ .text.chSchGoSleepTimeoutS
+                0x0000000008002830       0xe0 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002830                chSchGoSleepTimeoutS
+ .text.chThdEnqueueTimeoutS
+                0x0000000008002910       0x30 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002910                chThdEnqueueTimeoutS
+ .text.chOQPutTimeout
+                0x0000000008002940       0x50 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002940                chOQPutTimeout
+ .text.chOQWriteTimeout.4260
+                0x0000000008002990       0x80 /tmp/cceO0zFi.ltrans1.ltrans.o
+ .text.writet.10185
+                0x0000000008002a10       0x10 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002a10                writet.10185
+ .text.write.10191
+                0x0000000008002a20       0x10 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002a20                write.10191
+ .text.sd_lld_start
+                0x0000000008002a30       0xd0 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002a30                sd_lld_start
+ .text.i2c_lld_start
+                0x0000000008002b00      0x200 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002b00                i2c_lld_start
+ .text.disk_status
+                0x0000000008002d00       0x20 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002d00                disk_status
+ .text.validate.12787
+                0x0000000008002d20       0x30 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002d20                validate.12787
+ .text.chprintf.17297.constprop.61
+                0x0000000008002d50       0x30 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002d50                chprintf.17297.constprop.61
+ .text.spiSend  0x0000000008002d80       0x50 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002d80                spiSend
+ .text.spiReceive
+                0x0000000008002dd0       0x50 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002dd0                spiReceive
+ .text.recvr1.isra.0.9868
+                0x0000000008002e20       0x30 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002e20                recvr1.isra.0.9868
+ .text.mmcStopSequentialRead.part.7.9923
+                0x0000000008002e50       0x30 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002e50                mmcStopSequentialRead.part.7.9923
+ .text.spiIgnore
+                0x0000000008002e80       0x60 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002e80                spiIgnore
+ .text.mmcSequentialRead
+                0x0000000008002ee0       0x60 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002ee0                mmcSequentialRead
+ .text.chsnprintf
+                0x0000000008002f40       0x60 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002f40                chsnprintf
+ .text.chThdCreateStatic
+                0x0000000008002fa0       0x80 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000008002fa0                chThdCreateStatic
+ .text.I2CSensor_transact_buf
+                0x0000000008003020       0x20 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000008003020                I2CSensor_transact_buf
+ .text.si70x0_init
+                0x0000000008003040       0x90 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000008003040                si70x0_init
+ .text.si70x0_heaterEnable
+                0x00000000080030d0       0x50 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x00000000080030d0                si70x0_heaterEnable
+ .text.si70x0_readTemperature
+                0x0000000008003120       0x60 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000008003120                si70x0_readTemperature
+ .text.si70x0_readHumidity
+                0x0000000008003180       0x70 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000008003180                si70x0_readHumidity
+ .text.uart_lld_serve_tx_end_irq.12160
+                0x00000000080031f0       0x60 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x00000000080031f0                uart_lld_serve_tx_end_irq.12160
+ .text.i2c_lld_serve_tx_end_irq.11398
+                0x0000000008003250       0x50 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x0000000008003250                i2c_lld_serve_tx_end_irq.11398
+ .text.spi_lld_serve_tx_interrupt.11700
+                0x00000000080032a0       0x20 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x00000000080032a0                spi_lld_serve_tx_interrupt.11700
+ .text.uart_lld_serve_rx_end_irq.12164
+                0x00000000080032c0       0x90 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x00000000080032c0                uart_lld_serve_rx_end_irq.12164
+ .text.beaconThread
+                0x0000000008003350       0x40 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x0000000008003350                beaconThread
+ .text.mmcConnect
+                0x0000000008003390      0x170 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x0000000008003390                mmcConnect
+ .text.spi_lld_serve_rx_interrupt.11704
+                0x0000000008003500       0x90 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x0000000008003500                spi_lld_serve_rx_interrupt.11704
+ .text.I2CSensor_transact
+                0x0000000008003590      0x130 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x0000000008003590                I2CSensor_transact
+ .text.openNewLogfile
+                0x00000000080036c0       0xf0 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x00000000080036c0                openNewLogfile
+ .text.writeHeader
+                0x00000000080037b0      0x210 /tmp/cceO0zFi.ltrans3.ltrans.o
+                0x00000000080037b0                writeHeader
+ .text.sensorThread
+                0x00000000080039c0      0x8e0 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x00000000080039c0                sensorThread
+ .text.mmc_write.9978
+                0x00000000080042a0       0x60 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x00000000080042a0                mmc_write.9978
+ .text.serve_interrupt.12020.4587
+                0x0000000008004300      0x1a0 /tmp/cceO0zFi.ltrans4.ltrans.o
+ .text.Vector15C.4582
+                0x00000000080044a0       0x20 /tmp/cceO0zFi.ltrans4.ltrans.o
+ .text.VectorD8.4585
+                0x00000000080044c0       0x20 /tmp/cceO0zFi.ltrans4.ltrans.o
+ .text.Reset_Handler
+                0x00000000080044e0      0x1c0 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x00000000080044e0                Reset_Handler
+ .text.adc_lld_stop_conversion.4231
+                0x00000000080046a0       0x40 /tmp/cceO0zFi.ltrans5.ltrans.o
+ .text.mmcGetInfo
+                0x00000000080046e0       0x20 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x00000000080046e0                mmcGetInfo
+ .text.chCoreAlloc
+                0x0000000008004700       0x40 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004700                chCoreAlloc
+ .text.wakeup.4718
+                0x0000000008004740       0x70 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004740                wakeup.4718
+ .text._idle_thread.4338
+                0x00000000080047b0       0x20 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x00000000080047b0                _idle_thread.4338
+ .text.SVC_Handler
+                0x00000000080047d0       0x20 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x00000000080047d0                SVC_Handler
+ .text.dmaStreamRelease
+                0x00000000080047f0       0x70 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x00000000080047f0                dmaStreamRelease
+ .text.dmaStreamAllocate
+                0x0000000008004860       0xc0 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004860                dmaStreamAllocate
+ .text.chSchDoRescheduleAhead
+                0x0000000008004920       0x40 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004920                chSchDoRescheduleAhead
+ .text.chSchRescheduleS
+                0x0000000008004960       0x20 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004960                chSchRescheduleS
+ .text.chSchGoSleepS
+                0x0000000008004980       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004980                chSchGoSleepS
+ .text.chThdSuspendS
+                0x00000000080049b0       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x00000000080049b0                chThdSuspendS
+ .text._port_irq_epilogue
+                0x00000000080049e0       0x70 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x00000000080049e0                _port_irq_epilogue
+ .text.Vector158
+                0x0000000008004a50       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004a50                Vector158
+ .text.Vector154
+                0x0000000008004a80       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004a80                Vector154
+ .text.Vector150
+                0x0000000008004ab0       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004ab0                Vector150
+ .text.Vector130
+                0x0000000008004ae0       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004ae0                Vector130
+ .text.Vector12C
+                0x0000000008004b10       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004b10                Vector12C
+ .text.Vector128
+                0x0000000008004b40       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004b40                Vector128
+ .text.Vector124
+                0x0000000008004b70       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004b70                Vector124
+ .text.Vector120
+                0x0000000008004ba0       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004ba0                Vector120
+ .text.VectorFC
+                0x0000000008004bd0       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004bd0                VectorFC
+ .text.Vector84
+                0x0000000008004c00       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004c00                Vector84
+ .text.Vector80
+                0x0000000008004c30       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004c30                Vector80
+ .text.Vector7C
+                0x0000000008004c60       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004c60                Vector7C
+ .text.Vector78
+                0x0000000008004c90       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004c90                Vector78
+ .text.Vector74
+                0x0000000008004cc0       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004cc0                Vector74
+ .text.Vector70
+                0x0000000008004cf0       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004cf0                Vector70
+ .text.Vector6C
+                0x0000000008004d20       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004d20                Vector6C
+ .text.chSchReadyI
+                0x0000000008004d50       0x30 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004d50                chSchReadyI
+ .text.chEvtBroadcastFlagsI
+                0x0000000008004d80       0x60 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004d80                chEvtBroadcastFlagsI
+ .text.chMtxLockS
+                0x0000000008004de0       0xd0 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004de0                chMtxLockS
+ .text.chThdResumeI
+                0x0000000008004eb0       0x20 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004eb0                chThdResumeI
+ .text.i2c_lld_serve_error_interrupt.11412
+                0x0000000008004ed0       0xb0 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004ed0                i2c_lld_serve_error_interrupt.11412
+ .text.i2c_lld_serve_event_interrupt.11409
+                0x0000000008004f80      0x100 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008004f80                i2c_lld_serve_event_interrupt.11409
+ .text.Vector88
+                0x0000000008005080       0x70 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008005080                Vector88
+ .text.adc_lld_serve_rx_interrupt.11091
+                0x00000000080050f0       0xd0 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x00000000080050f0                adc_lld_serve_rx_interrupt.11091
+ .text.chTMStopMeasurementX
+                0x00000000080051c0       0x50 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x00000000080051c0                chTMStopMeasurementX
+ .text._unhandled_exception.4457
+                0x0000000008005210       0x10 /tmp/cceO0zFi.ltrans5.ltrans.o
+                0x0000000008005210                Vector58
+                0x0000000008005210                VectorE8
+                0x0000000008005210                Vector9C
+                0x0000000008005210                VectorAC
+                0x0000000008005210                DebugMon_Handler
+                0x0000000008005210                Vector1A0
+                0x0000000008005210                Vector5C
+                0x0000000008005210                Vector11C
+                0x0000000008005210                HardFault_Handler
+                0x0000000008005210                Vector1B8
+                0x0000000008005210                Vector19C
+                0x0000000008005210                Vector8C
+                0x0000000008005210                SysTick_Handler
+                0x0000000008005210                VectorDC
+                0x0000000008005210                PendSV_Handler
+                0x0000000008005210                Vector168
+                0x0000000008005210                NMI_Handler
+                0x0000000008005210                Vector110
+                0x0000000008005210                VectorC8
+                0x0000000008005210                Vector94
+                0x0000000008005210                VectorA8
+                0x0000000008005210                VectorB4
+                0x0000000008005210                Vector1B0
+                0x0000000008005210                UsageFault_Handler
+                0x0000000008005210                VectorEC
+                0x0000000008005210                Vector40
+                0x0000000008005210                VectorF8
+                0x0000000008005210                Vector108
+                0x0000000008005210                Vector190
+                0x0000000008005210                Vector148
+                0x0000000008005210                Vector188
+                0x0000000008005210                Vector198
+                0x0000000008005210                Vector118
+                0x0000000008005210                Vector64
+                0x0000000008005210                VectorCC
+                0x0000000008005210                Vector54
+                0x0000000008005210                Vector98
+                0x0000000008005210                Vector138
+                0x0000000008005210                Vector24
+                0x0000000008005210                Vector1AC
+                0x0000000008005210                Vector178
+                0x0000000008005210                Vector1A4
+                0x0000000008005210                VectorD0
+                0x0000000008005210                Vector1B4
+                0x0000000008005210                Vector140
+                0x0000000008005210                VectorE4
+                0x0000000008005210                Vector134
+                0x0000000008005210                VectorF0
+                0x0000000008005210                Vector13C
+                0x0000000008005210                Vector100
+                0x0000000008005210                VectorE0
+                0x0000000008005210                VectorF4
+                0x0000000008005210                MemManage_Handler
+                0x0000000008005210                VectorA0
+                0x0000000008005210                VectorC4
+                0x0000000008005210                Vector180
+                0x0000000008005210                Vector90
+                0x0000000008005210                Vector114
+                0x0000000008005210                Vector60
+                0x0000000008005210                Vector1C
+                0x0000000008005210                Vector1BC
+                0x0000000008005210                Vector17C
+                0x0000000008005210                Vector48
+                0x0000000008005210                Vector1A8
+                0x0000000008005210                Vector16C
+                0x0000000008005210                Vector4C
+                0x0000000008005210                Vector144
+                0x0000000008005210                Vector68
+                0x0000000008005210                Vector170
+                0x0000000008005210                Vector104
+                0x0000000008005210                Vector184
+                0x0000000008005210                Vector10C
+                0x0000000008005210                Vector14C
+                0x0000000008005210                BusFault_Handler
+                0x0000000008005210                Vector50
+                0x0000000008005210                Vector194
+                0x0000000008005210                Vector44
+                0x0000000008005210                Vector28
+                0x0000000008005210                VectorB8
+                0x0000000008005210                Vector34
+                0x0000000008005210                VectorA4
+                0x0000000008005210                Vector20
+                0x0000000008005210                Vector18C
+                0x0000000008005210                Vector174
+ .text.gpsRxErr.16067
+                0x0000000008005220       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005220                gpsRxErr.16067
+ .text.gpsRxEnd.16064
+                0x0000000008005230       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005230                gpsRxEnd.16064
+ .text.gpsTxC.16061
+                0x0000000008005240       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005240                gpsTxC.16061
+ .text.gpsTxbufEnd.16058
+                0x0000000008005250       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005250                gpsTxbufEnd.16058
+ .text.get.13121
+                0x0000000008005260       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005260                get.13121
+ .text.put.13111
+                0x0000000008005280       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005280                put.13111
+ .text.long_to_string_with_divisor.13045.4461
+                0x00000000080052a0       0x50 /tmp/cceO0zFi.ltrans6.ltrans.o
+ .text.mmc_lld_is_write_protected
+                0x00000000080052f0       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x00000000080052f0                mmc_lld_is_write_protected
+ .text.mmc_lld_is_card_inserted
+                0x0000000008005300       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005300                mmc_lld_is_card_inserted
+ .text.notify6.12010
+                0x0000000008005310       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005310                notify6.12010
+ .text.notify2.12013
+                0x0000000008005320       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005320                notify2.12013
+ .text.i2c_lld_serve_rx_end_irq.11402
+                0x0000000008005330       0x70 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005330                i2c_lld_serve_rx_end_irq.11402
+ .text.VectorD4
+                0x00000000080053a0       0x70 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x00000000080053a0                VectorD4
+ .text.gpsRxChar.16076
+                0x0000000008005410       0x90 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005410                gpsRxChar.16076
+ .text.writes.13130
+                0x00000000080054a0       0x30 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x00000000080054a0                writes.13130
+ .text.reads.13124
+                0x00000000080054d0       0x30 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x00000000080054d0                reads.13124
+ .text.Vector164
+                0x0000000008005500       0x30 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005500                Vector164
+ .text.VectorC0
+                0x0000000008005530       0x30 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005530                VectorC0
+ .text.Vector160
+                0x0000000008005560       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005560                Vector160
+ .text.VectorBC
+                0x0000000008005580       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005580                VectorBC
+ .text.chSchWakeupS.constprop.44
+                0x00000000080055a0       0x60 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x00000000080055a0                chSchWakeupS.constprop.44
+ .text.chMtxUnlock
+                0x0000000008005600       0x60 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005600                chMtxUnlock
+ .text.chTMStartMeasurementX.constprop.31
+                0x0000000008005660       0x10 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005660                chTMStartMeasurementX.constprop.31
+ .text.sdObjectInit.constprop.26
+                0x0000000008005670       0x70 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005670                sdObjectInit.constprop.26
+ .text.uStrInsertChar.constprop.2
+                0x00000000080056e0       0x40 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x00000000080056e0                uStrInsertChar.constprop.2
+ .text.uStrPrependChar
+                0x0000000008005720       0x30 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005720                uStrPrependChar
+ .text.uStrCpy  0x0000000008005750       0x30 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005750                uStrCpy
+ .text.chvprintf
+                0x0000000008005780      0x3a0 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005780                chvprintf
+ .text.chprintf.13294.constprop.13
+                0x0000000008005b20       0x30 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005b20                chprintf.13294.constprop.13
+ .text.I2CSensor_init
+                0x0000000008005b50       0x60 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005b50                I2CSensor_init
+ .text.chprintf.13613.constprop.12
+                0x0000000008005bb0       0x30 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005bb0                chprintf.13613.constprop.12
+ .text.chprintf.16716
+                0x0000000008005be0       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005be0                chprintf.16716
+ .text.chprintf.16358
+                0x0000000008005c00       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005c00                chprintf.16358
+ .text.chprintf.15697
+                0x0000000008005c20       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005c20                chprintf.15697
+ .text.get_ldnumber.12784
+                0x0000000008005c40       0x50 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005c40                get_ldnumber.12784
+ .text.usart_stop.12171
+                0x0000000008005c90       0x50 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005c90                usart_stop.12171
+ .text.spiUnselect
+                0x0000000008005ce0       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005ce0                spiUnselect
+ .text.spiSelect
+                0x0000000008005d00       0x20 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005d00                spiSelect
+ .text.spiStop  0x0000000008005d20       0x50 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005d20                spiStop
+ .text.spiStart
+                0x0000000008005d70       0xb0 /tmp/cceO0zFi.ltrans6.ltrans.o
+                0x0000000008005d70                spiStart
+ .text.put_fat.part.8.12841.4133
+                0x0000000008005e20      0x100 /tmp/cceO0zFi.ltrans7.ltrans.o
+ .text.f_close  0x0000000008005f20      0x170 /tmp/cceO0zFi.ltrans7.ltrans.o
+                0x0000000008005f20                f_close
+ .text.create_chain.12846
+                0x0000000008006090       0xd0 /tmp/cceO0zFi.ltrans7.ltrans.o
+                0x0000000008006090                create_chain.12846
+ .text.dir_next.12850.4100
+                0x0000000008006160      0x140 /tmp/cceO0zFi.ltrans7.ltrans.o
+ .text.f_open   0x00000000080062a0      0x470 /tmp/cceO0zFi.ltrans7.ltrans.o
+                0x00000000080062a0                f_open
  .text.chThdExit
-                0x0000000008005550       0x50 /tmp/cceyJzH9.ltrans6.ltrans.o
-                0x0000000008005550                chThdExit
+                0x0000000008006710       0x50 /tmp/cceO0zFi.ltrans8.ltrans.o
+                0x0000000008006710                chThdExit
  .text.chSchDoReschedule
-                0x00000000080055a0       0x10 /tmp/cceyJzH9.ltrans6.ltrans.o
-                0x00000000080055a0                chSchDoReschedule
- .text.strcpy   0x00000000080055b0       0xbc /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
-                0x00000000080055b0                strcpy
- *fill*         0x000000000800566c        0x4 
- .text.strlen   0x0000000008005670       0x60 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
-                0x0000000008005670                strlen
- .text.strncmp  0x00000000080056d0       0xb4 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
-                0x00000000080056d0                strncmp
+                0x0000000008006760       0x10 /tmp/cceO0zFi.ltrans8.ltrans.o
+                0x0000000008006760                chSchDoReschedule
+ .text.strcpy   0x0000000008006770       0xbc /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+                0x0000000008006770                strcpy
+ *fill*         0x000000000800682c        0x4 
+ .text.strlen   0x0000000008006830       0x60 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+                0x0000000008006830                strlen
+ .text.strncmp  0x0000000008006890       0xb4 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+                0x0000000008006890                strncmp
  *(.rodata)
- *fill*         0x0000000008005784        0xc 
- .rodata        0x0000000008005790        0xc /tmp/cceyJzH9.ltrans1.ltrans.o
- *fill*         0x000000000800579c        0x4 
- .rodata        0x00000000080057a0       0x18 /tmp/cceyJzH9.ltrans3.ltrans.o
+ *fill*         0x0000000008006944        0xc 
+ .rodata        0x0000000008006950        0xc /tmp/cceO0zFi.ltrans2.ltrans.o
+ *fill*         0x000000000800695c        0x4 
+ .rodata        0x0000000008006960       0x18 /tmp/cceO0zFi.ltrans4.ltrans.o
  *(.rodata.*)
- *fill*         0x00000000080057b8        0x8 
+ *fill*         0x0000000008006978        0x8 
+ .rodata.vmt.10284
+                0x0000000008006980       0x20 /tmp/cceO0zFi.ltrans0.ltrans.o
+                0x0000000008006980                vmt.10284
+ .rodata.crc7_lookup_table.10006.4524
+                0x00000000080069a0      0x100 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .rodata.start.7726.10005.4523
+                0x0000000008006aa0        0x4 /tmp/cceO0zFi.ltrans0.ltrans.o
+ *fill*         0x0000000008006aa4        0xc 
+ .rodata.default_config.12051.4770
+                0x0000000008006ab0        0xc /tmp/cceO0zFi.ltrans1.ltrans.o
+ *fill*         0x0000000008006abc        0x4 
+ .rodata.stopcmd.7715.10003.4775
+                0x0000000008006ac0        0x8 /tmp/cceO0zFi.ltrans1.ltrans.o
+ *fill*         0x0000000008006ac8        0x8 
  .rodata.str1.4
-                0x00000000080057c0        0xf /tmp/cceyJzH9.ltrans0.ltrans.o
-                                         0x10 (size before relaxing)
- *fill*         0x00000000080057cf        0x1 
- .rodata.pow10.13096.4705
-                0x00000000080057d0       0x24 /tmp/cceyJzH9.ltrans0.ltrans.o
- *fill*         0x00000000080057f4        0xc 
+                0x0000000008006ad0        0xc /tmp/cceO0zFi.ltrans1.ltrans.o
+ *fill*         0x0000000008006adc        0x4 
+ .rodata.vmt.13154.4781
+                0x0000000008006ae0       0x10 /tmp/cceO0zFi.ltrans1.ltrans.o
  .rodata._stm32_dma_streams
-                0x0000000008005800       0xc0 /tmp/cceyJzH9.ltrans1.ltrans.o
+                0x0000000008006af0       0xc0 /tmp/cceO0zFi.ltrans2.ltrans.o
  .rodata.ch_debug
-                0x00000000080058c0       0x18 /tmp/cceyJzH9.ltrans1.ltrans.o
- *fill*         0x00000000080058d8        0x8 
+                0x0000000008006bb0       0x18 /tmp/cceO0zFi.ltrans2.ltrans.o
+ *fill*         0x0000000008006bc8        0x8 
  .rodata.str1.4
-                0x00000000080058e0      0x261 /tmp/cceyJzH9.ltrans1.ltrans.o
-                                        0x268 (size before relaxing)
- *fill*         0x0000000008005b41        0xf 
+                0x0000000008006bd0      0x2b6 /tmp/cceO0zFi.ltrans2.ltrans.o
+                                        0x2c0 (size before relaxing)
+ *fill*         0x0000000008006e86        0xa 
  .rodata.str1.4
-                0x0000000008005b50        0xc /tmp/cceyJzH9.ltrans2.ltrans.o
- *fill*         0x0000000008005b5c        0x4 
- .rodata.default_config.12051.4625
-                0x0000000008005b60        0xc /tmp/cceyJzH9.ltrans2.ltrans.o
- *fill*         0x0000000008005b6c        0x4 
+                0x0000000008006e90      0x169 /tmp/cceO0zFi.ltrans3.ltrans.o
+                                        0x16c (size before relaxing)
+ *fill*         0x0000000008006ff9        0x7 
  .rodata.analogGrp.15810.4879
-                0x0000000008005b70       0x28 /tmp/cceyJzH9.ltrans3.ltrans.o
- *fill*         0x0000000008005b98        0x8 
+                0x0000000008007000       0x28 /tmp/cceO0zFi.ltrans4.ltrans.o
+ *fill*         0x0000000008007028        0x8 
  .rodata.ei2cCfg.15813.4883
-                0x0000000008005ba0        0xc /tmp/cceyJzH9.ltrans3.ltrans.o
- *fill*         0x0000000008005bac        0x4 
+                0x0000000008007030        0xc /tmp/cceO0zFi.ltrans4.ltrans.o
+ *fill*         0x000000000800703c        0x4 
  .rodata.str1.4
-                0x0000000008005bb0      0x1af /tmp/cceyJzH9.ltrans3.ltrans.o
+                0x0000000008007040      0x1af /tmp/cceO0zFi.ltrans4.ltrans.o
                                         0x1b0 (size before relaxing)
- *fill*         0x0000000008005d5f        0x1 
+ *fill*         0x00000000080071ef        0x1 
  .rodata.ii2cCfg.15814.4882
-                0x0000000008005d60        0xc /tmp/cceyJzH9.ltrans3.ltrans.o
- *fill*         0x0000000008005d6c        0x4 
+                0x00000000080071f0        0xc /tmp/cceO0zFi.ltrans4.ltrans.o
+ *fill*         0x00000000080071fc        0x4 
  .rodata.mmc_vmt.10007
-                0x0000000008005d70       0x20 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x0000000008005d70                mmc_vmt.10007
+                0x0000000008007200       0x20 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x0000000008007200                mmc_vmt.10007
  .rodata.stop.7732.10004
-                0x0000000008005d90        0x4 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x0000000008005d90                stop.7732.10004
- *fill*         0x0000000008005d94        0xc 
- .rodata.stopcmd.7715.10003.4751
-                0x0000000008005da0        0x8 /tmp/cceyJzH9.ltrans4.ltrans.o
- *fill*         0x0000000008005da8        0x8 
- .rodata.vmt.10284.4757
-                0x0000000008005db0       0x20 /tmp/cceyJzH9.ltrans4.ltrans.o
+                0x0000000008007220        0x4 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x0000000008007220                stop.7732.10004
+ *fill*         0x0000000008007224        0xc 
  .rodata.str1.4
-                0x0000000008005dd0       0x24 /tmp/cceyJzH9.ltrans4.ltrans.o
- *fill*         0x0000000008005df4        0xc 
- .rodata.crc7_lookup_table.10006.4573
-                0x0000000008005e00      0x100 /tmp/cceyJzH9.ltrans5.ltrans.o
+                0x0000000008007230        0x5 /tmp/cceO0zFi.ltrans5.ltrans.o
+                                          0x8 (size before relaxing)
+ *fill*         0x0000000008007235        0xb 
+ .rodata.pow10.13096.4742
+                0x0000000008007240       0x24 /tmp/cceO0zFi.ltrans6.ltrans.o
+ *fill*         0x0000000008007264        0xc 
  .rodata.str1.4
-                0x0000000000000000        0xc /tmp/cceyJzH9.ltrans5.ltrans.o
- .rodata.start.7726.10005.4572
-                0x0000000008005f00        0x4 /tmp/cceyJzH9.ltrans5.ltrans.o
+                0x0000000008007270       0x1f /tmp/cceO0zFi.ltrans6.ltrans.o
+                                         0x2c (size before relaxing)
+ *fill*         0x000000000800728f        0x1 
+ .rodata.str1.4
+                0x0000000008007290       0x10 /tmp/cceO0zFi.ltrans7.ltrans.o
+ .rodata.ExCvt.12997.4168
+                0x00000000080072a0       0x80 /tmp/cceO0zFi.ltrans7.ltrans.o
  *(.glue_7t)
  .glue_7t       0x0000000000000000        0x0 linker stubs
  *(.glue_7)
  .glue_7        0x0000000000000000        0x0 linker stubs
  *(.gcc*)
 
-.vfp11_veneer   0x0000000008005f04        0x0
+.vfp11_veneer   0x0000000008007320        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000008005f04        0x0
+.v4_bx          0x0000000008007320        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000008005f04        0x0
+.iplt           0x0000000008007320        0x0
  .iplt          0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
 
-.rel.dyn        0x0000000008005f04        0x0
+.rel.dyn        0x0000000008007320        0x0
  .rel.iplt      0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x0000000008005f04        0x0
-                0x0000000008005f04                PROVIDE (__exidx_start, .)
+.ARM.exidx      0x0000000008007320        0x0
+                0x0000000008007320                PROVIDE (__exidx_start, .)
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000008005f04                PROVIDE (__exidx_end, .)
+                0x0000000008007320                PROVIDE (__exidx_end, .)
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -931,14 +1021,13 @@ destructors     0x00000000080001c0        0x0
 .eh_frame
  *(.eh_frame)
 
-.textalign      0x0000000008005f04        0x4
-                0x0000000008005f08                . = ALIGN (0x8)
- *fill*         0x0000000008005f04        0x4 
-                0x0000000008005f08                . = ALIGN (0x4)
-                0x0000000008005f08                _etext = .
-                0x0000000008005f08                _textdata = _etext
+.textalign      0x0000000008007320        0x0
+                0x0000000008007320                . = ALIGN (0x8)
+                0x0000000008007320                . = ALIGN (0x4)
+                0x0000000008007320                _etext = .
+                0x0000000008007320                _textdata = _etext
 
-.stacks         0x0000000020000000      0x800
+.stacks         0x0000000020000000      0xa00
                 0x0000000020000000                . = ALIGN (0x8)
                 0x0000000020000000                __main_stack_base__ = .
                 0x0000000020000400                . = (. + __main_stack_size__)
@@ -947,146 +1036,156 @@ destructors     0x00000000080001c0        0x0
                 0x0000000020000400                __main_stack_end__ = .
                 0x0000000020000400                __process_stack_base__ = .
                 0x0000000020000400                __main_thread_stack_base__ = .
-                0x0000000020000800                . = (. + __process_stack_size__)
- *fill*         0x0000000020000400      0x400 
-                0x0000000020000800                . = ALIGN (0x8)
-                0x0000000020000800                __process_stack_end__ = .
-                0x0000000020000800                __main_thread_stack_end__ = .
+                0x0000000020000a00                . = (. + __process_stack_size__)
+ *fill*         0x0000000020000400      0x600 
+                0x0000000020000a00                . = ALIGN (0x8)
+                0x0000000020000a00                __process_stack_end__ = .
+                0x0000000020000a00                __main_thread_stack_end__ = .
 
-.data           0x0000000020000800       0x5c load address 0x0000000008005f08
-                0x0000000020000800                . = ALIGN (0x4)
-                0x0000000020000800                PROVIDE (_data, .)
+.data           0x0000000020000a00       0x5c load address 0x0000000008007320
+                0x0000000020000a00                . = ALIGN (0x4)
+                0x0000000020000a00                PROVIDE (_data, .)
  *(.data)
  *(.data.*)
- .data.hsCfg.16496.4962
-                0x0000000020000800        0xc /tmp/cceyJzH9.ltrans1.ltrans.o
- .data.lsCfg.16495.4961
-                0x000000002000080c        0xc /tmp/cceyJzH9.ltrans1.ltrans.o
- .data.mmcCfg.16493.4959
-                0x0000000020000818        0xc /tmp/cceyJzH9.ltrans1.ltrans.o
- .data.serCfg.17356.4995
-                0x0000000020000824        0xc /tmp/cceyJzH9.ltrans1.ltrans.o
- .data.xbeeSerCfg.15021.4998
-                0x0000000020000830        0xc /tmp/cceyJzH9.ltrans1.ltrans.o
- .data.serGpsCfg.16144.4966
-                0x000000002000083c       0x20 /tmp/cceyJzH9.ltrans1.ltrans.o
+ .data.serCfg.17364.5021
+                0x0000000020000a00        0xc /tmp/cceO0zFi.ltrans2.ltrans.o
+ .data.hsCfg.16496.4988
+                0x0000000020000a0c        0xc /tmp/cceO0zFi.ltrans2.ltrans.o
+ .data.mmcCfg.16493.4985
+                0x0000000020000a18        0xc /tmp/cceO0zFi.ltrans2.ltrans.o
+ .data.lsCfg.16495.4987
+                0x0000000020000a24        0xc /tmp/cceO0zFi.ltrans2.ltrans.o
+ .data.serGpsCfg.16144.4992
+                0x0000000020000a30       0x20 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .data.xbeeSerCfg.15021.5024
+                0x0000000020000a50        0xc /tmp/cceO0zFi.ltrans2.ltrans.o
  *(.ramtext)
-                0x000000002000085c                . = ALIGN (0x4)
-                0x000000002000085c                PROVIDE (_edata, .)
+                0x0000000020000a5c                . = ALIGN (0x4)
+                0x0000000020000a5c                PROVIDE (_edata, .)
 
-.igot.plt       0x000000002000085c        0x0 load address 0x0000000008005f64
+.igot.plt       0x0000000020000a5c        0x0 load address 0x000000000800737c
  .igot.plt      0x0000000000000000        0x0 build/obj/chcoreasm_v7m.o
 
-.bss            0x000000002000085c     0x2988
-                0x000000002000085c                . = ALIGN (0x4)
-                0x000000002000085c                PROVIDE (_bss_start, .)
+.bss            0x0000000020000a5c     0x2ca4
+                0x0000000020000a5c                . = ALIGN (0x4)
+                0x0000000020000a5c                PROVIDE (_bss_start, .)
  *(.bss)
  *(.bss.*)
- .bss.xbee.17354.4963
-                0x000000002000085c        0x8 /tmp/cceyJzH9.ltrans1.ltrans.o
- *fill*         0x0000000020000864        0x4 
- .bss.default_heap.6947.5075
-                0x0000000020000868       0x20 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.nextmem.6820
-                0x0000000020000888        0x4 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000020000888                nextmem.6820
- .bss.SD.16498.4952
-                0x000000002000088c        0x4 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.SPID3     0x0000000020000890       0x30 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000020000890                SPID3
- .bss.FS.16492.4996
-                0x00000000200008c0      0x230 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.dummytx.11757
-                0x0000000020000af0        0x2 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000020000af0                dummytx.11757
- *fill*         0x0000000020000af2        0x2 
- .bss.dma_isr_redir.10833
-                0x0000000020000af4       0x80 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000020000af4                dma_isr_redir.10833
- .bss.GPS.16145
-                0x0000000020000b74      0x140 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000020000b74                GPS.16145
- *fill*         0x0000000020000cb4        0x4 
- .bss._idle_thread_wa.4385.5074
-                0x0000000020000cb8      0x160 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.logger.17348.4955
-                0x0000000020000e18       0x10 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.waGps.17360.4982
-                0x0000000020000e28      0x658 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.MMCD1     0x0000000020001480       0x34 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000020001480                MMCD1
- .bss.serialPort.16497.4951
-                0x00000000200014b4        0x4 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.waSensor.17359.4984
-                0x00000000200014b8     0x1150 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.dma_streams_mask.10838
-                0x0000000020002608        0x4 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000020002608                dma_streams_mask.10838
- .bss.sd.17352.4956
-                0x000000002000260c       0x10 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.errors.13409.4949
-                0x000000002000261c        0x4 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.waBeacon.17358.4985
-                0x0000000020002620      0x190 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.sensCount.13865.4950
-                0x00000000200027b0        0x1 /tmp/cceyJzH9.ltrans1.ltrans.o
- *fill*         0x00000000200027b1        0x3 
- .bss.endmem.6822
-                0x00000000200027b4        0x4 /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x00000000200027b4                endmem.6822
- .bss.mainthread.6320.4386.4967
-                0x00000000200027b8       0x44 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.DEBUG.16872.4953
-                0x00000000200027fc        0x4 /tmp/cceyJzH9.ltrans1.ltrans.o
- .bss.UARTD1    0x0000000020002800       0x1c /tmp/cceyJzH9.ltrans1.ltrans.o
-                0x0000000020002800                UARTD1
+ .bss.FatFs.12998.4518
+                0x0000000020000a5c        0x4 /tmp/cceO0zFi.ltrans0.ltrans.o
+ .bss.Fsid.12999.4519
+                0x0000000020000a60        0x2 /tmp/cceO0zFi.ltrans0.ltrans.o
+ *fill*         0x0000000020000a62        0x2 
  .bss.tokBuf.16146
-                0x000000002000281c       0x14 /tmp/cceyJzH9.ltrans2.ltrans.o
-                0x000000002000281c                tokBuf.16146
- .bss.Fsid.12999.4580
-                0x0000000020002830        0x2 /tmp/cceyJzH9.ltrans2.ltrans.o
- *fill*         0x0000000020002832        0x2 
- .bss.gpsSem    0x0000000020002834        0xc /tmp/cceyJzH9.ltrans2.ltrans.o
-                0x0000000020002834                gpsSem
- .bss.FatFs.12998.4579
-                0x0000000020002840        0x4 /tmp/cceyJzH9.ltrans2.ltrans.o
+                0x0000000020000a64       0x14 /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000020000a64                tokBuf.16146
+ .bss.dummyrx.11759.4779
+                0x0000000020000a78        0x2 /tmp/cceO0zFi.ltrans1.ltrans.o
+ *fill*         0x0000000020000a7a        0x2 
+ .bss.gpsSem    0x0000000020000a7c        0xc /tmp/cceO0zFi.ltrans1.ltrans.o
+                0x0000000020000a7c                gpsSem
+ .bss.sd.17360.4982
+                0x0000000020000a88       0x10 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.nextmem.6820
+                0x0000000020000a98        0x4 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000a98                nextmem.6820
+ .bss.sensCount.13865.4974
+                0x0000000020000a9c        0x1 /tmp/cceO0zFi.ltrans2.ltrans.o
+ *fill*         0x0000000020000a9d        0x3 
+ .bss.SPID3     0x0000000020000aa0       0x30 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000aa0                SPID3
+ .bss.dummytx.11757
+                0x0000000020000ad0        0x2 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000ad0                dummytx.11757
+ *fill*         0x0000000020000ad2        0x2 
+ .bss.GPS.16145
+                0x0000000020000ad4      0x140 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000ad4                GPS.16145
+ .bss.endmem.6822
+                0x0000000020000c14        0x4 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000c14                endmem.6822
+ .bss.logger.17359
+                0x0000000020000c18       0x10 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000c18                logger.17359
+ .bss.SD.16498.4976
+                0x0000000020000c28        0x4 /tmp/cceO0zFi.ltrans2.ltrans.o
+ *fill*         0x0000000020000c2c        0x4 
+ .bss.waBeacon.17368.5011
+                0x0000000020000c30      0x190 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.mainthread.6320.4386.4993
+                0x0000000020000dc0       0x44 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.MMCD1     0x0000000020000e04       0x34 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000e04                MMCD1
+ .bss.xbee.17362.4989
+                0x0000000020000e38        0x8 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.dma_isr_redir.10833
+                0x0000000020000e40       0x80 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000e40                dma_isr_redir.10833
+ .bss.dma_streams_mask.10838
+                0x0000000020000ec0        0x4 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020000ec0                dma_streams_mask.10838
+ *fill*         0x0000000020000ec4        0x4 
+ .bss._idle_thread_wa.4385.5100
+                0x0000000020000ec8      0x160 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.FS.16492.5022
+                0x0000000020001028      0x230 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.masterSample.17371.4979
+                0x0000000020001258       0xe0 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.waSensor.17369.5010
+                0x0000000020001338     0x1150 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.serialPort.16497.4975
+                0x0000000020002488        0x4 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.DEBUG.16866
+                0x000000002000248c        0x4 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x000000002000248c                DEBUG.16866
+ .bss.default_heap.6947.5101
+                0x0000000020002490       0x20 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.sensorLog.17366
+                0x00000000200024b0       0x18 /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x00000000200024b0                sensorLog.17366
+ .bss.waGps.17370.5008
+                0x00000000200024c8      0x658 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .bss.UARTD1    0x0000000020002b20       0x1c /tmp/cceO0zFi.ltrans2.ltrans.o
+                0x0000000020002b20                UARTD1
+ .bss.errors.13409.4661
+                0x0000000020002b3c        0x4 /tmp/cceO0zFi.ltrans3.ltrans.o
+ .bss.lFile.4666
+                0x0000000020002b40      0x224 /tmp/cceO0zFi.ltrans3.ltrans.o
+ .bss.lfNum.17372.4663
+                0x0000000020002d64        0x2 /tmp/cceO0zFi.ltrans3.ltrans.o
  .bss.activeAnalogCh.15815.4875
-                0x0000000020002844        0x1 /tmp/cceyJzH9.ltrans3.ltrans.o
+                0x0000000020002d66        0x1 /tmp/cceO0zFi.ltrans4.ltrans.o
  .bss.sensCount.14811.4874
-                0x0000000020002845        0x1 /tmp/cceyJzH9.ltrans3.ltrans.o
- *fill*         0x0000000020002846        0x2 
- .bss.ADCD1     0x0000000020002848       0x34 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x0000000020002848                ADCD1
- .bss.SD6       0x000000002000287c      0x458 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x000000002000287c                SD6
+                0x0000000020002d67        0x1 /tmp/cceO0zFi.ltrans4.ltrans.o
+ .bss.ADCD1     0x0000000020002d68       0x34 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x0000000020002d68                ADCD1
+ .bss.SD6       0x0000000020002d9c      0x458 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x0000000020002d9c                SD6
  .bss.analogSamples.15816.4884
-                0x0000000020002cd4        0xc /tmp/cceyJzH9.ltrans3.ltrans.o
+                0x00000000200031f4        0xc /tmp/cceO0zFi.ltrans4.ltrans.o
  .bss.sensCount.14409.4873
-                0x0000000020002ce0        0x1 /tmp/cceyJzH9.ltrans3.ltrans.o
+                0x0000000020003200        0x1 /tmp/cceO0zFi.ltrans4.ltrans.o
  .bss.sensCount.13663.4871
-                0x0000000020002ce1        0x1 /tmp/cceyJzH9.ltrans3.ltrans.o
+                0x0000000020003201        0x1 /tmp/cceO0zFi.ltrans4.ltrans.o
  .bss.sensCount.14051.4872
-                0x0000000020002ce2        0x1 /tmp/cceyJzH9.ltrans3.ltrans.o
- *fill*         0x0000000020002ce3        0x1 
- .bss.SD2       0x0000000020002ce4      0x458 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x0000000020002ce4                SD2
- .bss.I2CD1     0x000000002000313c       0x38 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x000000002000313c                I2CD1
- .bss.I2CD3     0x0000000020003174       0x38 /tmp/cceyJzH9.ltrans3.ltrans.o
-                0x0000000020003174                I2CD3
- .bss.dummyrx.11759.4755
-                0x00000000200031ac        0x2 /tmp/cceyJzH9.ltrans4.ltrans.o
- *fill*         0x00000000200031ae        0x2 
- .bss.ch        0x00000000200031b0       0x34 /tmp/cceyJzH9.ltrans6.ltrans.o
-                0x00000000200031b0                ch
+                0x0000000020003202        0x1 /tmp/cceO0zFi.ltrans4.ltrans.o
+ *fill*         0x0000000020003203        0x1 
+ .bss.SD2       0x0000000020003204      0x458 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x0000000020003204                SD2
+ .bss.I2CD1     0x000000002000365c       0x38 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x000000002000365c                I2CD1
+ .bss.I2CD3     0x0000000020003694       0x38 /tmp/cceO0zFi.ltrans4.ltrans.o
+                0x0000000020003694                I2CD3
+ .bss.ch        0x00000000200036cc       0x34 /tmp/cceO0zFi.ltrans8.ltrans.o
+                0x00000000200036cc                ch
  *(COMMON)
-                0x00000000200031e4                . = ALIGN (0x4)
-                0x00000000200031e4                PROVIDE (_bss_end, .)
-                0x00000000200031e4                PROVIDE (end, .)
-                0x00000000200031e4                _end = .
-                0x00000000200031e4                __heap_base__ = _end
+                0x0000000020003700                . = ALIGN (0x4)
+                0x0000000020003700                PROVIDE (_bss_end, .)
+                0x0000000020003700                PROVIDE (end, .)
+                0x0000000020003700                _end = .
+                0x0000000020003700                __heap_base__ = _end
                 0x0000000020010000                __heap_end__ = __ram_end__
-                0x0000000000000400                __process_stack_size__ = 0x400
+                0x0000000000000600                __process_stack_size__ = 0x600
                 0x0000000000000400                __main_stack_size__ = 0x400
 START GROUP
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a
@@ -1099,43 +1198,51 @@ OUTPUT(build/stribog.elf elf32-littlearm)
  .ARM.attributes
                 0x0000000000000000       0x25 build/obj/chcoreasm_v7m.o
  .ARM.attributes
-                0x0000000000000025       0x37 /tmp/cceyJzH9.ltrans0.ltrans.o
+                0x0000000000000025       0x37 /tmp/cceO0zFi.ltrans0.ltrans.o
  .ARM.attributes
-                0x000000000000005c       0x37 /tmp/cceyJzH9.ltrans1.ltrans.o
+                0x000000000000005c       0x37 /tmp/cceO0zFi.ltrans1.ltrans.o
  .ARM.attributes
-                0x0000000000000093       0x37 /tmp/cceyJzH9.ltrans2.ltrans.o
+                0x0000000000000093       0x37 /tmp/cceO0zFi.ltrans2.ltrans.o
  .ARM.attributes
-                0x00000000000000ca       0x37 /tmp/cceyJzH9.ltrans3.ltrans.o
+                0x00000000000000ca       0x37 /tmp/cceO0zFi.ltrans3.ltrans.o
  .ARM.attributes
-                0x0000000000000101       0x37 /tmp/cceyJzH9.ltrans4.ltrans.o
+                0x0000000000000101       0x37 /tmp/cceO0zFi.ltrans4.ltrans.o
  .ARM.attributes
-                0x0000000000000138       0x37 /tmp/cceyJzH9.ltrans5.ltrans.o
+                0x0000000000000138       0x37 /tmp/cceO0zFi.ltrans5.ltrans.o
  .ARM.attributes
-                0x000000000000016f       0x37 /tmp/cceyJzH9.ltrans6.ltrans.o
+                0x000000000000016f       0x37 /tmp/cceO0zFi.ltrans6.ltrans.o
  .ARM.attributes
-                0x00000000000001a6       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                0x00000000000001a6       0x37 /tmp/cceO0zFi.ltrans7.ltrans.o
  .ARM.attributes
-                0x00000000000001c8       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+                0x00000000000001dd       0x37 /tmp/cceO0zFi.ltrans8.ltrans.o
  .ARM.attributes
-                0x00000000000001ea       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+                0x0000000000000214       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x000000000000020c       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
+                0x0000000000000236       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x000000000000022e       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+                0x0000000000000258       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
  .ARM.attributes
-                0x0000000000000262       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+                0x000000000000027a       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
  .ARM.attributes
-                0x0000000000000296       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
+                0x000000000000029c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000000000002bc       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000000000002f0       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000000000000324       0x34 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
 
 .comment        0x0000000000000000       0x70
- .comment       0x0000000000000000       0x70 /tmp/cceyJzH9.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x70 /tmp/cceO0zFi.ltrans0.ltrans.o
                                          0x71 (size before relaxing)
- .comment       0x0000000000000000       0x71 /tmp/cceyJzH9.ltrans1.ltrans.o
- .comment       0x0000000000000000       0x71 /tmp/cceyJzH9.ltrans2.ltrans.o
- .comment       0x0000000000000000       0x71 /tmp/cceyJzH9.ltrans3.ltrans.o
- .comment       0x0000000000000000       0x71 /tmp/cceyJzH9.ltrans4.ltrans.o
- .comment       0x0000000000000000       0x71 /tmp/cceyJzH9.ltrans5.ltrans.o
- .comment       0x0000000000000000       0x71 /tmp/cceyJzH9.ltrans6.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/cceO0zFi.ltrans1.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/cceO0zFi.ltrans2.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/cceO0zFi.ltrans3.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/cceO0zFi.ltrans4.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/cceO0zFi.ltrans5.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/cceO0zFi.ltrans6.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/cceO0zFi.ltrans7.ltrans.o
+ .comment       0x0000000000000000       0x71 /tmp/cceO0zFi.ltrans8.ltrans.o
 
 .debug_frame    0x0000000000000000       0x68
  .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
@@ -1145,279 +1252,283 @@ OUTPUT(build/stribog.elf elf32-littlearm)
 Cross Reference Table
 
 Symbol                                            File
-ADCD1                                             /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-BusFault_Handler                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-DebugMon_Handler                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-GPS.16145                                         /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-HardFault_Handler                                 /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-I2CD1                                             /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-I2CD3                                             /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-I2CSensor_init                                    /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-I2CSensor_transact                                /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-I2CSensor_transact_buf                            /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-MMCD1                                             /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-MemManage_Handler                                 /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-NMI_Handler                                       /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-PendSV_Handler                                    /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Reset_Handler                                     /tmp/cceyJzH9.ltrans3.ltrans.o
-SD2                                               /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-SD6                                               /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-SPID3                                             /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-SVC_Handler                                       /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-SysTick_Handler                                   /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-UARTD1                                            /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-UsageFault_Handler                                /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector100                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector104                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector108                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector10C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector110                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector114                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector118                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector11C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector120                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector124                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector128                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector12C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector130                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector134                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector138                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector13C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector140                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector144                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector148                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector14C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector150                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector154                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector158                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector160                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector164                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector168                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector16C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector170                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector174                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector178                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector17C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector180                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector184                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector188                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector18C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector190                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector194                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector198                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector19C                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1A0                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1A4                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1A8                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1AC                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1B0                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1B4                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1B8                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1BC                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector1C                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector20                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector24                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector28                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector34                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector40                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector44                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector48                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector4C                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector50                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector54                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector58                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector5C                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector60                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector64                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector68                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector6C                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector70                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector74                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector78                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector7C                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector80                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector84                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector88                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector8C                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector90                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector94                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector98                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-Vector9C                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorA0                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorA4                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorA8                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorAC                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorB0                                          /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorB4                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorB8                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorBC                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorC0                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorC4                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorC8                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorCC                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorD0                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorD4                                          /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorDC                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorE0                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorE4                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorE8                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorEC                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorF0                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorF4                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorF8                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-VectorFC                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
+ADCD1                                             /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+BusFault_Handler                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+DEBUG.16866                                       /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+DebugMon_Handler                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+GPS.16145                                         /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+HardFault_Handler                                 /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+I2CD1                                             /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+I2CD3                                             /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+I2CSensor_init                                    /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+I2CSensor_transact                                /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+I2CSensor_transact_buf                            /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+MMCD1                                             /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+MemManage_Handler                                 /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+NMI_Handler                                       /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+PendSV_Handler                                    /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Reset_Handler                                     /tmp/cceO0zFi.ltrans4.ltrans.o
+SD2                                               /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+SD6                                               /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+SPID3                                             /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+SVC_Handler                                       /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+SysTick_Handler                                   /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+UARTD1                                            /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+UsageFault_Handler                                /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector100                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector104                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector108                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector10C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector110                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector114                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector118                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector11C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector120                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector124                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector128                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector12C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector130                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector134                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector138                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector13C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector140                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector144                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector148                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector14C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector150                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector154                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector158                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector160                                         /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector164                                         /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector168                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector16C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector170                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector174                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector178                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector17C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector180                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector184                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector188                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector18C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector190                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector194                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector198                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector19C                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1A0                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1A4                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1A8                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1AC                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1B0                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1B4                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1B8                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1BC                                         /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector1C                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector20                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector24                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector28                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector34                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector40                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector44                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector48                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector4C                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector50                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector54                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector58                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector5C                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector60                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector64                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector68                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector6C                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector70                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector74                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector78                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector7C                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector80                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector84                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector88                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector8C                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector90                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector94                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector98                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+Vector9C                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorA0                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorA4                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorA8                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorAC                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorB0                                          /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorB4                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorB8                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorBC                                          /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorC0                                          /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorC4                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorC8                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorCC                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorD0                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorD4                                          /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorDC                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorE0                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorE4                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorE8                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorEC                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorF0                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorF4                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorF8                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+VectorFC                                          /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
 __adddf3                                          /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
 __aeabi_d2f                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
 __aeabi_d2iz                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
 __aeabi_dadd                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
 __aeabi_ddiv                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
 __aeabi_dmul                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
 __aeabi_drsub                                     /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
 __aeabi_dsub                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
 __aeabi_f2d                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
 __aeabi_i2d                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
 __aeabi_l2d                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
 __aeabi_ui2d                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
 __aeabi_ul2d                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
 __divdf3                                          /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
 __extendsfdf2                                     /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
@@ -1426,255 +1537,327 @@ __floatdidf                                       /usr/bin/../lib/gcc/arm-none-e
 __floatsidf                                       /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
 __floatundidf                                     /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
 __floatunsidf                                     /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
-__heap_base__                                     /tmp/cceyJzH9.ltrans1.ltrans.o
-__heap_end__                                      /tmp/cceyJzH9.ltrans1.ltrans.o
-__init_array_end                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-__init_array_start                                /tmp/cceyJzH9.ltrans3.ltrans.o
-__main_stack_base__                               /tmp/cceyJzH9.ltrans3.ltrans.o
-__main_stack_end__                                /tmp/cceyJzH9.ltrans3.ltrans.o
+__heap_base__                                     /tmp/cceO0zFi.ltrans2.ltrans.o
+__heap_end__                                      /tmp/cceO0zFi.ltrans2.ltrans.o
+__init_array_end                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+__init_array_start                                /tmp/cceO0zFi.ltrans4.ltrans.o
+__main_stack_base__                               /tmp/cceO0zFi.ltrans4.ltrans.o
+__main_stack_end__                                /tmp/cceO0zFi.ltrans4.ltrans.o
 __muldf3                                          /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
-__process_stack_base__                            /tmp/cceyJzH9.ltrans3.ltrans.o
-__process_stack_end__                             /tmp/cceyJzH9.ltrans3.ltrans.o
+__process_stack_base__                            /tmp/cceO0zFi.ltrans4.ltrans.o
+__process_stack_end__                             /tmp/cceO0zFi.ltrans4.ltrans.o
 __subdf3                                          /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
 __truncdfsf2                                      /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/fpu/libgcc.a(_arm_truncdfsf2.o)
-_bss_end                                          /tmp/cceyJzH9.ltrans3.ltrans.o
-_bss_start                                        /tmp/cceyJzH9.ltrans3.ltrans.o
-_data                                             /tmp/cceyJzH9.ltrans3.ltrans.o
-_edata                                            /tmp/cceyJzH9.ltrans3.ltrans.o
-_idle_thread.4338                                 /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
+_bss_end                                          /tmp/cceO0zFi.ltrans4.ltrans.o
+_bss_start                                        /tmp/cceO0zFi.ltrans4.ltrans.o
+_data                                             /tmp/cceO0zFi.ltrans4.ltrans.o
+_edata                                            /tmp/cceO0zFi.ltrans4.ltrans.o
+_idle_thread.4338                                 /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
 _port_exit_from_isr                               build/obj/chcoreasm_v7m.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-_port_irq_epilogue                                /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+_port_irq_epilogue                                /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
 _port_switch                                      build/obj/chcoreasm_v7m.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
 _port_switch_from_isr                             build/obj/chcoreasm_v7m.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
 _port_thread_start                                build/obj/chcoreasm_v7m.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-_textdata                                         /tmp/cceyJzH9.ltrans3.ltrans.o
-_vectors                                          /tmp/cceyJzH9.ltrans3.ltrans.o
-adc_lld_serve_rx_interrupt.11091                  /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-beaconThread                                      /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-ch                                                /tmp/cceyJzH9.ltrans6.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-chCoreAlloc                                       /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chEvtBroadcastFlagsI                              /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-chMtxLockS                                        /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chMtxUnlock                                       /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chSchDoReschedule                                 /tmp/cceyJzH9.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+_textdata                                         /tmp/cceO0zFi.ltrans4.ltrans.o
+_vectors                                          /tmp/cceO0zFi.ltrans4.ltrans.o
+adc_lld_serve_rx_interrupt.11091                  /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+beaconThread                                      /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+ch                                                /tmp/cceO0zFi.ltrans8.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+chCoreAlloc                                       /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chEvtBroadcastFlagsI                              /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+chMtxLockS                                        /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+chMtxUnlock                                       /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+chOQPutTimeout                                    /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+chSchDoReschedule                                 /tmp/cceO0zFi.ltrans8.ltrans.o
                                                   build/obj/chcoreasm_v7m.o
-chSchDoRescheduleAhead                            /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans6.ltrans.o
-chSchGoSleepS                                     /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans6.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-chSchGoSleepTimeoutS                              /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chSchReadyI                                       /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans6.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-chSchRescheduleS                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-chTMStartMeasurementX.constprop.32                /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chTMStopMeasurementX                              /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chThdCreateStatic                                 /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chThdExit                                         /tmp/cceyJzH9.ltrans6.ltrans.o
+chSchDoRescheduleAhead                            /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans8.ltrans.o
+chSchGoSleepS                                     /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans8.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+chSchGoSleepTimeoutS                              /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+chSchReadyI                                       /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans8.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+chSchRescheduleS                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+chSchWakeupS.constprop.44                         /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+chTMStartMeasurementX.constprop.31                /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chTMStopMeasurementX                              /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chThdCreateStatic                                 /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chThdEnqueueTimeoutS                              /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+chThdExit                                         /tmp/cceO0zFi.ltrans8.ltrans.o
                                                   build/obj/chcoreasm_v7m.o
-chThdResumeI                                      /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-chThdSleep                                        /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chThdSleepUntil                                   /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chThdSuspendS                                     /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-chprintf.13294.constprop.14                       /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chprintf.13613.constprop.13                       /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-chprintf.15697                                    /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-chprintf.16358                                    /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chprintf.16716                                    /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chprintf.17284                                    /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-chvprintf                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-disk_read.constprop.46                            /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-dmaStreamAllocate                                 /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-dmaStreamRelease                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-dma_isr_redir.10833                               /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-dma_streams_mask.10838                            /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-dummytx.11757                                     /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-endmem.6822                                       /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-f_mount                                           /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-get_ldnumber.12784                                /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-gpsRxChar.16076                                   /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-gpsRxEnd.16064                                    /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-gpsRxErr.16067                                    /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-gpsSem                                            /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-gpsThread                                         /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-gpsTxC.16061                                      /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-gpsTxbufEnd.16058                                 /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-i2c_lld_serve_rx_end_irq.11402                    /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-i2c_lld_start                                     /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-main                                              /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-mmcConnect                                        /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-mmcDisconnect                                     /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-mmcGetInfo                                        /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-mmcSequentialRead                                 /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-mmcSequentialWrite                                /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-mmcStartSequentialWrite                           /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-mmcStopSequentialRead.part.7.9923                 /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-mmcSync                                           /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-mmc_lld_is_card_inserted                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-mmc_lld_is_write_protected                        /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-mmc_read.9961                                     /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-mmc_vmt.10007                                     /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-mmc_write.9978                                    /tmp/cceyJzH9.ltrans3.ltrans.o
-nextmem.6820                                      /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-notify2.12013                                     /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-notify6.12010                                     /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-read_CxD.9894                                     /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-recvr1.isra.0.9868                                /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-sdObjectInit.constprop.27                         /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-sd_lld_start                                      /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-send_command_R1.9889                              /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-send_command_R3.9883                              /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-sensorThread                                      /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-si70x0_heaterEnable                               /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-si70x0_init                                       /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-si70x0_readHumidity                               /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-si70x0_readTemperature                            /tmp/cceyJzH9.ltrans1.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-spiIgnore                                         /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-spiReceive                                        /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-spiSelect                                         /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-spiSend                                           /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-spiStart                                          /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-spiStop                                           /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-spiUnselect                                       /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans3.ltrans.o
-spi_lld_serve_rx_interrupt.11704                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-spi_lld_serve_tx_interrupt.11700                  /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-stop.7732.10004                                   /tmp/cceyJzH9.ltrans3.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans5.ltrans.o
+chThdResumeI                                      /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+chThdSleep                                        /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chThdSleepUntil                                   /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chThdSuspendS                                     /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+chprintf.13294.constprop.13                       /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+chprintf.13613.constprop.12                       /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+chprintf.15697                                    /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+chprintf.16358                                    /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chprintf.16716                                    /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chprintf.17297.constprop.61                       /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+chsnprintf                                        /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+chvprintf                                         /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+create_chain.12846                                /tmp/cceO0zFi.ltrans7.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+dir_sdi.12831.constprop.51                        /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans7.ltrans.o
+disk_read.constprop.53                            /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+disk_status                                       /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+disk_write                                        /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans7.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+dmaStreamAllocate                                 /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+dmaStreamRelease                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+dma_isr_redir.10833                               /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+dma_streams_mask.10838                            /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+dummytx.11757                                     /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+endmem.6822                                       /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+f_close                                           /tmp/cceO0zFi.ltrans7.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+f_mount                                           /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+f_open                                            /tmp/cceO0zFi.ltrans7.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+find_volume.12822                                 /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans7.ltrans.o
+get.10200                                         /tmp/cceO0zFi.ltrans0.ltrans.o
+get.13121                                         /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+get_fat.part.6.12827                              /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans7.ltrans.o
+get_ldnumber.12784                                /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+gett.10196                                        /tmp/cceO0zFi.ltrans0.ltrans.o
+gpsRxChar.16076                                   /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+gpsRxEnd.16064                                    /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+gpsRxErr.16067                                    /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+gpsSem                                            /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+gpsThread                                         /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+gpsTxC.16061                                      /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+gpsTxbufEnd.16058                                 /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+i2c_lld_serve_error_interrupt.11412               /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+i2c_lld_serve_event_interrupt.11409               /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+i2c_lld_serve_rx_end_irq.11402                    /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+i2c_lld_serve_tx_end_irq.11398                    /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+i2c_lld_start                                     /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+logger.17359                                      /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+main                                              /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+memcpy                                            /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+mmcConnect                                        /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+mmcDisconnect                                     /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+mmcGetInfo                                        /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+mmcSequentialRead                                 /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+mmcSequentialWrite                                /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+mmcStartSequentialWrite                           /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+mmcStopSequentialRead.part.7.9923                 /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+mmcSync                                           /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+mmc_lld_is_card_inserted                          /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+mmc_lld_is_write_protected                        /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+mmc_read.9961                                     /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+mmc_vmt.10007                                     /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+mmc_write.9978                                    /tmp/cceO0zFi.ltrans4.ltrans.o
+move_window.12811                                 /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans7.ltrans.o
+nextmem.6820                                      /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans5.ltrans.o
+notify2.12013                                     /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+notify6.12010                                     /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+openNewLogfile                                    /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+put.10208                                         /tmp/cceO0zFi.ltrans0.ltrans.o
+put.13111                                         /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+putt.10203                                        /tmp/cceO0zFi.ltrans0.ltrans.o
+read.10180                                        /tmp/cceO0zFi.ltrans0.ltrans.o
+read_CxD.9894                                     /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+reads.13124                                       /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+readt.10173                                       /tmp/cceO0zFi.ltrans0.ltrans.o
+recvr1.isra.0.9868                                /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+sdObjectInit.constprop.26                         /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+sd_lld_start                                      /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+send_command_R1.9889                              /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+send_command_R3.9883                              /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+sensorLog.17366                                   /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+sensorThread                                      /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+si70x0_heaterEnable                               /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+si70x0_init                                       /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+si70x0_readHumidity                               /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+si70x0_readTemperature                            /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+spiIgnore                                         /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+spiReceive                                        /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+spiSelect                                         /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+spiSend                                           /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+spiStart                                          /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+spiStop                                           /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+spiUnselect                                       /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+spi_lld_serve_rx_interrupt.11704                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+spi_lld_serve_tx_interrupt.11700                  /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+stop.7732.10004                                   /tmp/cceO0zFi.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
 strcpy                                            /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strcpy.o)
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
 strlen                                            /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
 strncmp                                           /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strncmp.o)
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-sync_window.part.3.12801                          /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-tokBuf.16146                                      /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
-uStrCpy.constprop.3                               /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-uStrInsertChar.constprop.2                        /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-uStrPrependChar                                   /tmp/cceyJzH9.ltrans4.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-uart_lld_serve_rx_end_irq.12164                   /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-uart_lld_serve_tx_end_irq.12160                   /tmp/cceyJzH9.ltrans5.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-usart_stop.12171                                  /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans2.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans1.ltrans.o
-wakeup.4718                                       /tmp/cceyJzH9.ltrans0.ltrans.o
-                                                  /tmp/cceyJzH9.ltrans4.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+sync_window.part.3.12801                          /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans7.ltrans.o
+tokBuf.16146                                      /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+uStrCpy                                           /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+uStrInsertChar.constprop.2                        /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+uStrPrependChar                                   /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+uart_lld_serve_rx_end_irq.12164                   /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+uart_lld_serve_tx_end_irq.12160                   /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+usart_stop.12171                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+validate.12787                                    /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans7.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans3.ltrans.o
+vmt.10284                                         /tmp/cceO0zFi.ltrans0.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans6.ltrans.o
+wakeup.4718                                       /tmp/cceO0zFi.ltrans5.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+write.10191                                       /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o
+writeHeader                                       /tmp/cceO0zFi.ltrans3.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans2.ltrans.o
+writes.13130                                      /tmp/cceO0zFi.ltrans6.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans1.ltrans.o
+writet.10185                                      /tmp/cceO0zFi.ltrans1.ltrans.o
+                                                  /tmp/cceO0zFi.ltrans0.ltrans.o

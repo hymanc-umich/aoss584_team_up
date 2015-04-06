@@ -6,7 +6,7 @@
  */
 void datasample_init(dataSample_t *s)
 {
-    char * emptyStr = "-";
+    char *emptyStr = "-";
     // TODO: Update write to sample
     uStrCpy(s->time, "-:-:-");
     uStrCpy(s->gps.latitude, emptyStr);
