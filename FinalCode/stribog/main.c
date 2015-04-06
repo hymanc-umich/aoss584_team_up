@@ -113,9 +113,11 @@ void initialize(void)
  */
 int8_t openNewLogfile(void)
 {
-    lfNum++;
+    int8_t status = -99;
     if(!sensorLog.open)
     {
+        int8_t status;
+        lfNum++;
     	char fname[36];
     	if(lfNum < 10)
     	    chsnprintf(fname, 80, "LOGS/DAT00%d.csv", lfNum);
@@ -123,9 +125,14 @@ int8_t openNewLogfile(void)
     	    chsnprintf(fname, 80, "LOGS/DAT0%d.csv", lfNum);
     	else
     	    chsnprintf(fname, 80, "LOGS/DAT%d.csv", lfNum);
-    	return logfileNew(&sensorLog, &logger, &lFile, fname); 
+    	status = logfileNew(&sensorLog, &logger, &lFile, fname); 
+        if(status != 0)
+        {
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "ERROR: Could not open new logfile (%d)\n", status);
+            lfNum--;    // Undo filenumber increment
+        }
     }
-    return 2;
+    return status;
 }
 
 /**
@@ -133,8 +140,19 @@ int8_t openNewLogfile(void)
  */
 int8_t closeLog(void)
 {
-    logfileClose(&sensorLog);
-    return 0;
+    int8_t status = -99;
+    uint8_t i;
+    if(sensorLog.open)
+    {
+        for(i = 0; i < 10; i++)
+        {
+            status = logfileClose(&sensorLog);
+            if(status == FR_OK)
+                return status;
+            chThdSleepMilliseconds(2);
+        }
+    }
+    return status;
 }
 
 /**
@@ -199,8 +217,19 @@ int main(void)
     bool audioBeaconFlag;
     uint32_t timeCounter = 0;
 
-    chThdSleepMilliseconds(100);    
-    int8_t lfStatus = openNewLogfile();
+    uint8_t i;
+    int8_t lfStatus;
+    for(i = 0; i < 5; i++)
+    {
+        lfStatus = openNewLogfile();
+        if(lfStatus != -99)
+            break;
+        else
+        {
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "Previous log still open, retrying\n");
+            chThdSleepMilliseconds(10);
+        }
+    }
     chThdSleepMilliseconds(1000);
     if(lfStatus == 0)
     {
@@ -241,22 +270,31 @@ int main(void)
         chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
 
 		// Write GPS Data to MasterSample
-		//datasample_gpsToSample(&location, &masterSample);
+		datasample_gpsToSample(&location, &masterSample);
 		
 		// TODO: Write sensor data to MasterSample
 		
         /* ===== Data file handling ===== */
-		if(sampleCounter > SAMPLE_MAX) // Close file and open a new one
+		if(sampleCounter >= SAMPLE_MAX) // Close file and open a new one
 		{
-		    chprintf((BaseSequentialStream *) &DBG_SERIAL, "Reached sample limit, closing current logfile\n");
-		    closeLog();
-		    openNewLogfile();
-		    writeHeader();
-		    sampleCounter = 0;
+    	    chprintf((BaseSequentialStream *) &DBG_SERIAL, "Reached sample limit, closing current logfile\n");
+    	    closeLog();
+            chThdSleepMilliseconds(70);
+    	    int8_t newLogStatus = openNewLogfile();
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n\nLOGFILE: New file status%d\n\n", newLogStatus);
+            sampleCounter = 0;
+            if(newLogStatus == 0)
+            {
+    	      writeHeader();
+              //sampleCounter = 0;
+            }
 		}
 		chprintf((BaseSequentialStream *) &DBG_SERIAL, "Writing sample data to log\n");
-		//datasample_writeToLog(&masterSample, &sensorLog);
-		chprintf((BaseSequentialStream *) &DBG_SERIAL, "Log written\n");
+		int8_t lfWriteStatus = datasample_writeToLog(&masterSample, &sensorLog);
+        if(lfWriteStatus)
+            chprintf((BaseSequentialStream *) &DBG_SERIAL, "Error Writing to Log:%d\n",lfWriteStatus);
+        else
+		  chprintf((BaseSequentialStream *) &DBG_SERIAL, "Log written\n");
 		sampleCounter++;
 		
         timeCounter++; // Increment time counter

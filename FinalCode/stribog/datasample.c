@@ -39,9 +39,11 @@ void datasample_init(dataSample_t *s)
 static char dataPrintBuf[384];
 int8_t datasample_writeToLog(dataSample_t *s, logfile_t *log)
 {
+    s->sn++; // Increment sample counter
     //TIME,LAT,LONG,ALT,SAT,TMPI,TMPE1,TMPE2,PRESSI,PRESSE1,PRESSE2,HUMDI,HUMDE1,HUMDE2,ACCX,ACCY,ACCZ,MAGX,MAGY,MAGZ
-    int len = chsnprintf(dataPrintBuf, 256, "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
-			 (char *)(s->time),
+    int len = chsnprintf(dataPrintBuf, 256, "%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
+			 s->sn,
+             (char *)(s->time),
 			 (char *)(s->gps.latitude),
 			 (char *)(s->gps.longitude),
 			 (char *)(s->gps.altitude),
@@ -62,8 +64,7 @@ int8_t datasample_writeToLog(dataSample_t *s, logfile_t *log)
 			 (char *)(s->mag.y),
 			 (char *)(s->mag.z)
     );  
-    logfileWrite(log, dataPrintBuf, len, false);
-    return 0;
+    return logfileWrite(log, dataPrintBuf, len, false);
 }
 
 /**

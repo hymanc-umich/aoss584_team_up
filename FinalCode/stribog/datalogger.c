@@ -1,5 +1,12 @@
-#include "datalogger.h"
+/**
+ * Simple FATFS Data-Logger for ChibiOS
+ *
+ *
+ * @author Cody hyman
+ *
+ */
 
+#include "datalogger.h"
 #include "chprintf.h"
 
 static SerialDriver *DEBUG; // Debug serial port
@@ -58,16 +65,16 @@ int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file, char *fname)
     log->open = FALSE;
     if(!(logger->driveMounted))
     {
-       chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Driver not mounted\n");
+       chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: ERROR Drive not mounted\n");
 	   return false;
     }
     log->file = file;
     log->wrCount = 0;
     log->name = fname;
-    chThdSleepMilliseconds(100);
+    //chThdSleepMilliseconds(100);
     res = f_open(log->file, fname, FA_CREATE_ALWAYS | FA_WRITE);
-    chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: FILE OPEN\n");
-    chThdSleepMilliseconds(100);
+    //chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: FILE OPEN\n");
+    //chThdSleepMilliseconds(100);
     if(res)
     {
     	chprintf((BaseSequentialStream *) DEBUG, "DATALOGGER: Error creating Logfile, ERR%02d\n",res);
@@ -88,6 +95,10 @@ size_t logfileSize(logfile_t *log)
 
 /**
  * @brief Writes a buffer to a logfile
+ * @param log
+ * @param buf
+ * @param length
+ * @param openClose
  */
 int8_t logfileWrite(logfile_t *log, char *buf, uint16_t length, bool openClose)
 {
@@ -145,6 +156,8 @@ int8_t logfileWriteCsv(logfile_t *log, char **items, char separator, uint16_t ni
 
 /**
  * @brief Accessor for logfile write count
+ * @param log Logfile container
+ * @return Number of lines written to logfile
  */
 uint32_t logfileGetWrCount(logfile_t *log)
 {
@@ -158,13 +171,13 @@ uint32_t logfileGetWrCount(logfile_t *log)
  */
 int8_t logfileClose(logfile_t *log)
 {
-    if(f_close(log->file))
+    if(f_close(log->file) == FR_OK)
     {
     	log->wrCount = 0;
     	log->open = FALSE;
-    	return 1;
+    	return FR_OK;
     }
-    return 0;
+    return -1;
 }
 
 /**

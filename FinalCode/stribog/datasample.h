@@ -6,7 +6,7 @@
 #include "ustr.h"
 #include "gps.h"
 
-static char * TELEMETRY_HEADER = "TIME,LAT,LONG,ALT,SAT,TMPI,TMPE1,TMPE2,PRESSI,PRESSE1,PRESSE2,HUMDI,HUMDE1,HUMDE2,ACCX,ACCY,ACCZ,MAGX,MAGY,MAGZ\n";
+static char * TELEMETRY_HEADER = "SN,TIME,LAT,LONG,ALT,SAT,TMPI,TMPE1,TMPE2,PRESSI,PRESSE1,PRESSE2,HUMDI,HUMDE1,HUMDE2,ACCX,ACCY,ACCZ,MAGX,MAGY,MAGZ\n";
 
 // GPS location sample struct
 typedef struct
@@ -28,7 +28,8 @@ typedef struct
 // Data sample struct
 typedef struct
 {
-    char time[10];		// HH:MM:SS
+    uint32_t sn;            // Sample number
+    char time[10];		    // HH:MM:SS
     gpsSample_t gps;		// GPS subsample
     char tempBMP[8]; 		// +TTT.T	(C)
     char pressBMP[8];		//
