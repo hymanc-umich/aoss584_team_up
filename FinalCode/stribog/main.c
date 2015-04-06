@@ -175,8 +175,8 @@ void printGps(BaseSequentialStream *stream, gpsLocation_t *loc)
  */
 int8_t writeHeader(void)
 {
-    char line[73];
-    int len = chsnprintf(line, 72, TELEMETRY_HEADER);
+    char line[512];
+    int len = chsnprintf(line, 512, TELEMETRY_HEADER);
     return logfileWrite(&sensorLog, line, len, FALSE);
 }
 
@@ -231,9 +231,10 @@ int main(void)
         }
     }
     chThdSleepMilliseconds(1000);
+    writeHeader();
     if(lfStatus == 0)
     {
-         writeHeader();
+         //writeHeader();
          chprintf((BaseSequentialStream *) &DBG_SERIAL, "New logfile header written\n");
     }
     else
@@ -271,7 +272,7 @@ int main(void)
 
 		// Write GPS Data to MasterSample
 		datasample_gpsToSample(&location, &masterSample);
-		
+		datasample_sensorsToSample(&(sensorThd.data),&masterSample);
 		// TODO: Write sensor data to MasterSample
 		
         /* ===== Data file handling ===== */

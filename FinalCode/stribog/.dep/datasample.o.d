@@ -100,7 +100,11 @@ build/obj/datasample.o: datasample.c datasample.h \
  /home/cody/dev/chibios/trunk/os/hal/include/serial_usb.h \
  /home/cody/dev/chibios/trunk/os/ext/fatfs/src/ff.h \
  /home/cody/dev/chibios/trunk/os/ext/fatfs/src/integer.h ffconf.h \
- sdmmcsimple.h board.h ustr.h gps.h \
+ sdmmcsimple.h board.h sensor_thread.h \
+ /home/cody/dev/chibios/trunk/os/rt/include/chmtx.h Drivers/bmp280.h \
+ Drivers/i2c_sensor.h Drivers/../board.h Drivers/hih6030.h \
+ Drivers/lsm303.h Drivers/ms5607.h Drivers/si70x0.h Drivers/tmp275.h \
+ Drivers/rtd.h Drivers/mpxm2102.h ustr.h gps.h \
  /home/cody/dev/chibios/trunk/os/various/chprintf.h \
  /usr/lib/gcc/arm-none-eabi/4.8.4/include/stdarg.h
 
@@ -325,6 +329,30 @@ ffconf.h:
 sdmmcsimple.h:
 
 board.h:
+
+sensor_thread.h:
+
+/home/cody/dev/chibios/trunk/os/rt/include/chmtx.h:
+
+Drivers/bmp280.h:
+
+Drivers/i2c_sensor.h:
+
+Drivers/../board.h:
+
+Drivers/hih6030.h:
+
+Drivers/lsm303.h:
+
+Drivers/ms5607.h:
+
+Drivers/si70x0.h:
+
+Drivers/tmp275.h:
+
+Drivers/rtd.h:
+
+Drivers/mpxm2102.h:
 
 ustr.h:
 
