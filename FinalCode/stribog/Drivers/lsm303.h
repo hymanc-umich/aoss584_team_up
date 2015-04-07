@@ -14,6 +14,8 @@
 #define ACC_BUFFER_SIZE 16
 #define MAG_BUFFER_SIZE 8
 
+#define LSM303_ACC_ADDR 0b0011101
+#define LSM303_MAG_ADDR 0b0011110
 /**
  * Register Definitions
  */
@@ -95,7 +97,7 @@ typedef struct
     uint8_t rxmBuffer[16];
 }lsm303_t;
 
-msg_t lsm303_init(lsm303_t *lsm, I2CDriver *driver, uint8_t accAddr, uint8_t magAddr);
+msg_t lsm303_init(lsm303_t *lsm, I2CDriver *driver);
 msg_t lsm303_stop(lsm303_t *lsm);
 msg_t lsm303_readAcceleration(lsm303_t *lsm, uint8_t nread);
 msg_t lsm303_readMagnetometer(lsm303_t *lsm, uint8_t nread);

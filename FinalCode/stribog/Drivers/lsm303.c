@@ -6,15 +6,15 @@ static uint8_t sensCount = 0;
 /**
  * 
  */
-msg_t lsm303_init(lsm303_t *lsm, I2CDriver *driver, uint8_t accAddr, uint8_t magAddr)
+msg_t lsm303_init(lsm303_t *lsm, I2CDriver *driver)
 {
     systime_t timeout = MS2ST(5);
     char nameA[11] = "LSM303_A-X";
     char nameM[11] = "LSM303_M-X";
     nameA[9] = '0' + sensCount;
     nameM[9] = '0' + sensCount++;
-    I2CSensor_init(&lsm->accSensor, driver, accAddr, lsm->txaBuffer, lsm->rxaBuffer, timeout, nameA);
-    I2CSensor_init(&lsm->magSensor, driver, magAddr, lsm->txmBuffer, lsm->rxmBuffer, timeout, nameM);
+    I2CSensor_init(&lsm->accSensor, driver, LSM303_ACC_ADDR, lsm->txaBuffer, lsm->rxaBuffer, timeout, nameA);
+    I2CSensor_init(&lsm->magSensor, driver, LSM303_MAG_ADDR, lsm->txmBuffer, lsm->rxmBuffer, timeout, nameM);
 
     // Enable Accelerometer
     lsm->txaBuffer[0] = CTRL_REG1_A;

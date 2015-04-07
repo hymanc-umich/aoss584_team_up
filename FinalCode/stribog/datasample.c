@@ -48,7 +48,7 @@ int8_t datasample_writeToLog(dataSample_t *s, logfile_t *log)
 	s->sn++; // Increment sample counter
   //"SN,GPS_TIME,GPS_LAT,GPS_LONG,GPS_ALT,GPS_SAT,TEMP_TMP275,TEMP_SI7020I,HUM_SI7020I,TEMP_BMP280,PRESS_BMP280,TEMP_SI7020E,HUM_SI7020E,TEMP_HIH6030,HUM_HIH6030,TEMP_MS5607,PRESS_MS5607,PRESS_MPXM,TEMP_RTD,VIN,AX,AY,AZ,MX,MY,MZ\n"
 
-	int len = chsnprintf(dataPrintBuf, 256, "%d,%s,%s,%s,%s,%.1f,%.2f,%.2f,%.2f,%.2f,%.1f,%.2f,%.2f,%.2f,%.3f,%.3f,%.2f,%.6f,%.6f,%.6f,%.6f,%.6f,%.6f\n",
+	int len = chsnprintf(dataPrintBuf, 256, "%d,%s,%s,%s,%s,%s,%.2f,%.2f,%.1f,%.2f,%.2f,%.2f,%.1f,%.2f,%.2f,%.3f,%.3f,%.2f,%.2f,%.2f,%.6f,%.6f,%.6f,%.6f,%.6f,%.6f\n",
 						s->sn,
 						(char *)(s->time),
 						(char *)(s->gps.latitude),

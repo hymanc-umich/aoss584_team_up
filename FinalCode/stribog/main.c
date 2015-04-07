@@ -264,8 +264,8 @@ int main(void)
     {
     	deadline += MS2ST(1000); 
 		boardSetLED(1);
-		gpsGetLocation(&location);// Check for new GPS NMEA sentence
-		//printGps((BaseSequentialStream *) &COM_SERIAL, &location);
+		gpsGetLocation(&location);    // Check for new GPS NMEA sentence
+		printGps((BaseSequentialStream *) &COM_SERIAL, &location);
         //printGps((BaseSequentialStream *) &DBG_SERIAL, &location);
         //sensorThread_publishData(&sensorThd, (BaseSequentialStream *) &COM_SERIAL);
         chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
@@ -284,11 +284,12 @@ int main(void)
     	    int8_t newLogStatus = openNewLogfile();
             chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n\nLOGFILE: New file status%d\n\n", newLogStatus);
             sampleCounter = 0;
-            if(newLogStatus == 0)
+            writeHeader();
+            /*if(newLogStatus == 0)
             {
     	      writeHeader();
               //sampleCounter = 0;
-            }
+            }*/
 		}
 		chprintf((BaseSequentialStream *) &DBG_SERIAL, "Writing sample data to log\n");
 		int8_t lfWriteStatus = datasample_writeToLog(&masterSample, &sensorLog);

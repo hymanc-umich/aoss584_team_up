@@ -186,7 +186,7 @@ msg_t sensorThread(void *arg)
     si70x0_init(&(thread->extSi7020), &EI2C_I2CD);                      // Initialize External Si7020
     si70x0_init(&(thread->intSi7020), &II2C_I2CD);                      // Initialize Internal Si7020
     ms5607_init(&(thread->ms5607), &EI2C_I2CD, 0b1110111);              // Initialize MS5607
-    lsm303_init(&(thread->lsm303), &II2C_I2CD, 0b0011101, 0b0011110);   // Initialize LSM303
+    lsm303_init(&(thread->lsm303), &II2C_I2CD);   // Initialize LSM303
     bmp280_init(&(thread->bmp280), &II2C_I2CD, 0b1110110);              // Initialize BMP280
     hih6030_init(&(thread->hih6030), &EI2C_I2CD);
     // Run Si70x0 heaters
@@ -281,9 +281,10 @@ msg_t sensorThread(void *arg)
 
         // Analog Temperature
         //thread->data.tempRtd = RTD_vToTemp(adcMeanV(analogSamples[activeAnalogCh], 2, ANALOG_CHANNELS, ANALOG_DEPTH));
-        thread->data.tempRtd = analogSamples[activeAnalogCh][2]*1.0f;
+        thread->data.tempRtd = RTD_vToTemp(ADC_VPERC*analogSamples[activeAnalogCh][2]);
+        //thread->data.tempRtd = analogSamples[activeAnalogCh][2]*1.0f; // ADC output test
 
-        activeAnalogCh ^= 1; // Toggle buffer
+        activeAnalogCh ^= 1; // Toggle analog buffer
 
         /* ===== Printf Dump ===== */
         sensorThread_publishDebug(thread, (BaseSequentialStream *) &DBG_SERIAL);
