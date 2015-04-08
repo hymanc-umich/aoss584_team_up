@@ -82,9 +82,9 @@ def parseLine(line):
     elif '<DATA>' in line:
         parseSensors(line)
 
-def subplotData(data, key):
+def subplotData(data, key, color='b'):
     try:
-        plt.plot((data[key])[0,:],(data[key])[1,:],color='b')
+        plt.plot((data[key])[0,:],(data[key])[1,:],color)
     except Exception, e:
         print 'Error plotting subplot', str(e)
 
@@ -98,6 +98,43 @@ def plotGps():
     subplotData(gpsData,'alt')
     plt.subplot(224)
     subplotData(gpsData,'sat')
+    plt.draw()
+    plt.show(block=False)
+
+def plotSensors():
+    plt.figure(2)
+    plt.subplot(421) # External Temperature
+    subplotData(sensorData,'ET','b')
+    plt.hold(True)
+    subplotData(sensorData,'EHT','r')
+    subplotData(sensorData,'MT','g')
+    subplotData(sensorData,'HT','y')
+    plt.hold(False)
+
+    plt.subplot(422) # Internal Temperature
+    subplotData(sensorData,'IHT', 'b')
+    plt.hold(True)
+    subplotData(sensorData,'BT','r')
+    plt.hold(False)
+
+    plt.subplot(423) # External Humidity
+    subplotData(sensorData,'EH','b')
+    plt.hold(True)
+    subplotData(sensorData,'HH','r')
+    plt.hold(False)
+
+    plt.subplot(424) # Internal Humidity
+    subplotData(sensorData, 'IH')
+
+    plt.subplot(425) # External Pressure
+    subplotData(sensorData,'MP','b')
+    plt.hold(True)
+    subplotData(sensorData,'AP','r')
+    plt.hold(False)
+
+    plt.subplot(426)
+    subplotData(sensorData, 'BP')
+
     plt.draw()
     plt.show(block=False)
 
@@ -118,6 +155,7 @@ def serialThread():
         parseLine(line)
         time.sleep(0.01)
 
+print ''
 print 'TrakTor Balloon Ground Station'
 print '(C) 2015 Cody Hyman'
 print 'Opening serial port to ground radio at', str(sys.argv[1])
@@ -126,18 +164,16 @@ if(port.isOpen()):
     print 'Serial port opened successfully'
 print 'Acquiring Data'
 
-#plt.plot([0],[0])
-#plt.show()
-#plt.xlabel('Time (s)')
-
 gpsFig = plt.figure(1)
 plt.subplot(221)
 plt.title('GPS Latitude')
 plt.xlabel('Time')
 plt.ylabel('Latitude (Deg)')
+plt.ylim(35,50)
 plt.subplot(222)
 plt.title('GPS Longitude')
 plt.ylabel('Longitude (Deg)')
+plt.ylim(-90,-70)
 plt.subplot(223)
 plt.title('GPS Altitude')
 plt.xlabel('Time')
@@ -146,9 +182,35 @@ plt.subplot(224)
 plt.title('GPS Satellite Count')
 plt.xlabel('Time')
 plt.ylabel('Sat. Count')
+plt.ylim(0,20)
+plt.tight_layout()
 plt.ion()
 plt.show(block=False)
+
 sensorFig = plt.figure(2)
+plt.subplot(421)
+plt.title('Ext. Temp.')
+plt.ylabel(u'Temp. (\u2103)')
+plt.subplot(422)
+plt.title('Int Temp.')
+plt.ylabel(u'Temp. (\u2103)')
+plt.subplot(423)
+plt.title('Ext. Humidity')
+plt.ylabel('Rel. Humidity [%]')
+plt.ylim(0,100)
+plt.subplot(424)
+plt.title('Int. Humidity')
+plt.ylabel('Rel. Humidity [%]')
+plt.ylim(0,100)
+plt.subplot(425)
+plt.title('Ext. Pressure')
+plt.ylabel('Pressure [kPa]')
+plt.subplot(426)
+plt.title('Int. Pressure')
+plt.ylabel('Pressure [kPa]')
+plt.tight_layout()
+plt.ion()
+plt.show(block=False)
 
 healthFig = plt.figure(3)
 plt.subplot(211)
@@ -157,16 +219,18 @@ plt.xlabel('Time')
 plt.ylabel('Voltage (V)')
 plt.ylim(5,8)
 plt.subplot(212)
+plt.tight_layout()
+plt.ion()
+plt.show(block=False)
 
 
 serThread = threading.Thread(name='serial_thread', target=serialThread)
 serThread.daemon = True
 serThread.start()
 
-plt.ion()
-plt.show(block=False)
 while(True):
     plotGps()
+    plotSensors()
     plotHealth()
     figMan = plt.get_current_fig_manager()
     #figMan.window.state('zoomed')
