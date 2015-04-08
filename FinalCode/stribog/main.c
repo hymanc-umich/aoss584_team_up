@@ -21,7 +21,7 @@
 #include "board.h"
 #include "datasample.h"
 
-#define SAMPLE_MAX 10
+#define SAMPLE_MAX 60
 
 static THD_WORKING_AREA(waBeacon, 64);   // Audio Beacon thread
 static THD_WORKING_AREA(waGps, 1284);	 // GPS thread working area
@@ -160,7 +160,7 @@ int8_t closeLog(void)
  */
 void printGps(BaseSequentialStream *stream, gpsLocation_t *loc)
 {
-    chprintf(stream, "TIME:%s, LAT:%s, LONG:%s, ALT:%s, SAT:%s\n",
+    chprintf(stream, "<GPS>TIME:%s, LAT:%s, LONG:%s, ALT:%s, SAT:%s<\\GPS>\n",
 	     (char *)(loc->time),
 	     (char *)(loc->latitude),
 	     (char *)(loc->longitude),
@@ -246,7 +246,7 @@ int main(void)
     chThdCreateStatic(waGps, sizeof(waGps), NORMALPRIO, gpsThread, &gpsThd); 			// Create GPS Thread
     chThdCreateStatic(waSensor, sizeof(waSensor), NORMALPRIO, sensorThread, &sensorThd);	// Create sensor thread
     chThdCreateStatic(waBeacon, sizeof(waBeacon), NORMALPRIO, beaconThread, &audioBeaconFlag);
-    uint16_t logfileCounter = 0; 	// Logfile number counter
+    //uint16_t logfileCounter = 0; 	// Logfile number counter
     uint32_t sampleCounter = 0;		// Sample counter (resets per file)
     
     gpsLocation_t location;		    // GPS location
@@ -266,7 +266,7 @@ int main(void)
 		boardSetLED(1);
 		gpsGetLocation(&location);    // Check for new GPS NMEA sentence
 		printGps((BaseSequentialStream *) &COM_SERIAL, &location);
-        //printGps((BaseSequentialStream *) &DBG_SERIAL, &location);
+        printGps((BaseSequentialStream *) &DBG_SERIAL, &location);
         //sensorThread_publishData(&sensorThd, (BaseSequentialStream *) &COM_SERIAL);
         chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
 

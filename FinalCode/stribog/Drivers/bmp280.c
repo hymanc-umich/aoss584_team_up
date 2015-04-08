@@ -47,6 +47,17 @@ void bmp280_init(bmp280_t *bmp, I2CDriver *driver, uint8_t baseAddr)
         else
             chprintf((BaseSequentialStream *) &DBG_SERIAL, "BMP280: ERROR READING P-PARAMETER");
     }
+    // Write configuration register
+    bmp->txBuffer[0] = BMP280_CONFIG;
+    bmp->txBuffer[1] = BMP280_T_SB_62M5 | BMP280_FILTER_OFF;
+    I2CSensor_transact_buf(&bmp->sensor, 2, 0);
+    chThdSleepMilliseconds(10);
+    // Write measurement control register
+    bmp->txBuffer[0] = BMP280_CTRL_MEAS; 
+    bmp->txBuffer[1] = BMP280_OSRS_T_X2 | BMP280_OSRS_P_X2 | BMP280_MODE_NORMAL;
+    I2CSensor_transact_buf(&bmp->sensor, 2, 0);
+    bmp->lastTemp = 0;
+    bmp->lastPressure = 0;
 }
 
 /**
@@ -78,8 +89,7 @@ msg_t bmp280_reset(bmp280_t *bmp)
  */
 msg_t bmp280_readPressure(bmp280_t *bmp, float *pressure)
 {
-    msg_t status;
-    uint8_t pressData[3];
+    msg_t status;;
     // TODO: read and align pressure registers
     bmp->txBuffer[0] = BMP280_PRESS_MSB;
     status = I2CSensor_transact_buf(&(bmp->sensor),1,3);
@@ -87,10 +97,20 @@ msg_t bmp280_readPressure(bmp280_t *bmp, float *pressure)
     {
         int32_t rawPressure = (bmp->rxBuffer[0]<<12) + (bmp->rxBuffer[1]<<4)+ (bmp->rxBuffer[2]>>4);
 	   // TODO: compensation
-        float compPress;
+
+        float v1 = bmp->lastTemp*2560.0f - 64000.0f;
+        float v2 = v1*v1*(bmp->P[5])/32768.0f + v1*(bmp->P[4])*2.0f;
+        v2 = v2/4.0f + (bmp->P[3]*65536.0f);
+        v1 = ( (bmp->P[2])*v1*v1 + (bmp->P[1])*v1 )/524288.0f;
+        v1 = (1.0f + v1/32768.0f)*(bmp->P[0]);
+        float compPress = 1048576.0f - ((float)rawPressure);
+        v1 = (bmp->P[8])*compPress*compPress/2147483648.0f;
+        v2 = compPress * ((bmp->P[7])/32768.0f);
+        compPress = compPress + (v1 + v2 + (bmp->P[6])/16.0f);
+        bmp->lastPressure = compPress/1000.0f;
         if(pressure != NULL)
         {
-            *pressure = compPress;
+            *pressure = bmp->lastPressure;
         }
     }
     return status;
@@ -105,17 +125,20 @@ msg_t bmp280_readPressure(bmp280_t *bmp, float *pressure)
 msg_t bmp280_readTemperature(bmp280_t *bmp, float *temp)
 {
     msg_t status;
-    uint8_t tempData[3];
     bmp->txBuffer[0] = BMP280_TEMP_MSB;
     status = I2CSensor_transact_buf(&(bmp->sensor),1,3);
     if(status == MSG_OK)
     {
         int32_t rawTemp = (bmp->rxBuffer[0]<<12) + (bmp->rxBuffer[1]<<4)+ (bmp->rxBuffer[2]>>4);
-	    // TODO: compensation
-        float compTemp = 0;
+        // Compensation
+
+        float v1 = (rawTemp/16384.0f - bmp->T[0]/1024.0f) * bmp->T[1];
+        float v2 = (rawTemp/131072.0f - bmp->T[0]/8192.0f) * (rawTemp/131072.0f - bmp->T[0]/8192.0f) * (bmp->T[2]);
+        //float compTemp = (v1 + v2)/5120.0f;
+        bmp->lastTemp = (v1+v2)/5120.0f;
         if(temp != NULL)
         {
-            *temp = compTemp;
+            *temp = bmp->lastTemp;
         }
     }
     return status;

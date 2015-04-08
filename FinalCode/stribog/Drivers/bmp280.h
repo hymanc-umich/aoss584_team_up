@@ -23,6 +23,40 @@
 #define BMP280_CALIB00		0x88
 #define BMP280_CALIB(CPARAM)	(0x88+2*CPARAM)	
 
+// BMP280 Configuration Register Definitions
+#define BMP280_FILTER_OFF	(0b000<<2)
+#define BMP280_FILTER_2		(0b001<<2)
+#define BMP280_FILTER_4		(0b010<<2)
+#define BMP280_FILTER_8		(0b011<<2)
+#define BMP280_FILTER_16	(0b100<<2)
+
+#define BMP280_T_SB_0M5		(0b000<<5)
+#define BMP280_T_SB_62M5	(0b001<<5)
+#define BMP280_T_SB_125M	(0b010<<5)
+#define BMP280_T_SB_250M	(0b011<<5)
+#define BMP280_T_SB_500M	(0b100<<5)
+#define BMP280_T_SB_1000M	(0b101<<5)
+#define BMP280_T_SB_2000M	(0b110<<5)
+#define BMP280_T_SB_4000M	(0b111<<5)
+
+// BMP280 Measurement Control Register Definitions
+#define BMP280_MODE_SLEEP  0b00
+#define BMP280_MODE_FORCED 0b01
+#define BMP280_MODE_NORMAL 0b11
+
+#define BMP280_OSRS_T_SKIP	(0b000<<5)
+#define BMP280_OSRS_T_X1	(0b001<<5)
+#define BMP280_OSRS_T_X2	(0b010<<5)
+#define BMP280_OSRS_T_X4	(0b011<<5)
+#define BMP280_OSRS_T_X8	(0b100<<5)
+#define BMP280_OSRS_T_X16	(0b101<<5)
+
+#define BMP280_OSRS_P_SKIP	(0b000<<2)
+#define BMP280_OSRS_P_X1	(0b001<<2)
+#define BMP280_OSRS_P_X2	(0b010<<2)
+#define BMP280_OSRS_P_X4	(0b011<<2)
+#define BMP280_OSRS_P_X8	(0b100<<2)
+#define BMP280_OSRS_P_X16	(0b101<<2)
 /**
  * BMP280 Pressure Sensor struct
  */

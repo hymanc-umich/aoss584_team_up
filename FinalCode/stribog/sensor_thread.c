@@ -122,9 +122,10 @@ uint16_t adcMean(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, ui
 void sensorThread_publishDebug(sensorThread_t *thread, BaseSequentialStream *stream)
 {
     chprintf(stream, 
-    "EXTEMP:%.1fC    \nEHUM:%.1f%%    EHTEMP:%.2fC\nIHUM:%.1f%%    \
+    "BMPTEMP:%.2fC    BMPPRESS:%.2fkPa\nEXTEMP:%.1fC    \nEHUM:%.1f%%    EHTEMP:%.2fC\nIHUM:%.1f%%    \
     IHTEMP:%.2fC\nMPRS:%.2fkPa    MTEMP:%.2fC\nHIHHUM:%.2f%%    \
     HIHTEMP:%.2fC\nVIN:%.2fV\nAPRESS:%.3fkPa\nATEMP:%.3fC\n",
+    thread->data.tempBmp, thread->data.pressBmp,
     thread->data.temp275,
     thread->data.humd7020Ext, thread->data.temp7020Ext,
     thread->data.humd7020Int, thread->data.temp7020Int,
@@ -244,6 +245,8 @@ msg_t sensorThread(void *arg)
     	tmp275stat = tmp275_readTemperature(&(thread->tmp275), &(thread->data.temp275));
 
         // TODO: Internal Pressure (BMP280)    
+        bmp280_readTemperature(&(thread->bmp280), &(thread->data.tempBmp));
+        bmp280_readPressure(&(thread->bmp280), &(thread->data.pressBmp));
 
         // Internal Humidity (Si7020)
         i7020stat = si70x0_readHumidity(&(thread->intSi7020), &(thread->data.humd7020Int));
