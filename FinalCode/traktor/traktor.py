@@ -1,37 +1,38 @@
 import sys
 import serial
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib
+from matplotlib import pyplot as plt
 import time
 import datetime as dt
-import re
+import threading
 
-gpsData = {'systime':[],'time':[],'lat':[],'long':[],'alt':[],'sat':[]}
-sensorData = {'systime':[],'ET':[],'EH':[],'EHT':[],'IH':[],'IHT':[],'MP':[],'MT':[],'HH':[],'HT':[],'V':[],'AP':[],'AT':[],'BP':[],'BT':[]}
+gpsData = {'systime':np.array([[],[]]),'time':np.array([[],[]]),'lat':np.array([[],[]]),'long':np.array([[],[]]),'alt':np.array([[],[]]),'sat':np.array([[],[]])}
+sensorData = {'systime':np.array([[],[]]),'ET':np.array([[],[]]),'EH':np.array([[],[]]),'EHT':np.array([[],[]]),'IH':np.array([[],[]]),'IHT':np.array([[],[]]),'MP':np.array([[],[]]),'MT':np.array([[],[]]),'HH':np.array([[],[]]),'HT':np.array([[],[]]),'V':np.array([[],[]]),'AP':np.array([[],[]]),'AT':np.array([[],[]]),'BP':np.array([[],[]]),'BT':np.array([[],[]])}
 
 # GPS Data Parser
 def parseGPS(gpsStr):
     global gpsData
     print 'Parsing GPS string'
-    splitGps = (gpsStr.replace('<GPS>','').replace('</GPS>','').lower()).split(',')
-    now = dt.datetime.now().time()
+    splitGps = (gpsStr.replace('<GPS>','').replace('<\GPS>','').replace('</GPS>','').lower()).split(',')
+    now = dt.datetime.now()
     for el in splitGps:
         try:
             pair = el.split(':') # Split element
             if pair[0] is 'time':
-                gpsData['time'].append((now,pair[1]))
+                gpsData['time'] = np.append(gpsData['time'],[[now],[pair[1]]],axis=1)
             elif 'lat' in pair[0]:
                 lat = pair[1].split(' ')
                 lat = float(lat[0]) + float(lat[1])/60.0
-                gpsData['lat'].append((now,lat))
+                gpsData['lat'] = np.append(gpsData['lat'],[[now],[lat]],axis=1)
             elif 'lon' in pair[0]:
                 lon = pair[1].split(' ')
                 lon = float(lon[0]) + float(lon[1])/60.0
-                gpsData['long'].append((now,lon))
-            elif pair[0] is 'alt':
-                gpsData['alt'].append((now,float(pair[1])))
-            elif pair[0] is 'sat':
-                gpsData['sat'].append((now,int(pair[1])))
+                gpsData['long'] = np.append(gpsData['long'],[[now],[lon]],axis=1)
+            elif 'alt' in pair[0]:
+                gpsData['alt'] = np.append(gpsData['alt'],[[now],[float(pair[1])/1000.0]],axis=1)
+            elif 'sat' in pair[0]:
+                gpsData['sat'] = np.append(gpsData['sat'],[[now],[int(pair[1])]],axis=1)
         except Exception, e:
             print 'Exception in parsing GPS string', str(e)
 
@@ -39,54 +40,41 @@ def parseGPS(gpsStr):
 def parseSensors(dataStr):
     global sensorData
     print 'Parsing data string'
-    splitData = (gpsStr.replace('<DATA>','').replace('</DATA>','').lower()).split(',')
-    now = dt.datetime.now().time()
+    splitData = (dataStr.replace('<DATA>','').replace('</DATA>','').lower()).split(',')
+    now = dt.datetime.now()
     for el in splitData:
         try:
             pair = el.split(':')
             if pair[0] is 'et':
-                sensorData['ET'].append((now,float(pair[1])))
+                sensorData['ET'] = np.append(sensorData['ET'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'eh':
-                sensorData['EH'].append((now,float(pair[1])))
+                sensorData['EH'] = np.append(sensorData['EH'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'eht':
-                sensorData['EHT'].append((now,float(pair[1]))
+                sensorData['EHT'] = np.append(sensorData['EHT'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'ih':
-                sensorData['IH'].append((now,float(pair[1])))
+                sensorData['IH'] = np.append(sensorData['IH'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'iht':
-                sensorData['IHT'].append((now,float(pair[1])))
+                sensorData['IHT'] = np.append(sensorData['IHT'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'mp':
-                sensorData['MP'].append((now,float(pair[1])))
+                sensorData['MP'] = np.append(sensorData['MP'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'mt':
-                sensorData['MT'].append((now,float(pair[1])))
+                sensorData['MT'] = np.append(sensorData['MT'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'hh':
-                sensorData['HH'].append((now,float(pair[1])))
+                sensorData['HH'] = np.append(sensorData['HH'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'ht':
-                sensorData['HT'].append((now,float(pair[1])))
+                sensorData['HT'] = np.append(sensorData['HT'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'v':
-                sensorData['V'].append((now,float(pair[1])))
+                sensorData['V'] = np.append(sensorData['V'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'ap':
-                sensorData['AP'].append((now,float(pair[1])))
+                sensorData['AP'] = np.append(sensorData['AP'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'AT':
-                sensorData['AT'].append((now,float(pair[1])))
+                sensorData['AT'] = np.append(sensorData['AT'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'bp':
-                sensorData['BP'].append((now,float(pair[1])))
+                sensorData['BP'] = np.append(sensorData['BP'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] is 'bt':
-                sensorData['BT'].append((now,float(pair[1])))
+                sensorData['BT'] = np.append(sensorData['BT'],[[now],[float(pair[1])]],axis=1)
         except Exception, e:
             print 'Exception in parsing Data string', str(e)
-
-
-    sensorData['EH'].append(0)
-    sensorData['EHT'].append(0)
-    sensorData['IH'].append(0)
-    sensorData['IHT'].append(0)
-    sensorData['MP'].append(0)
-    sensorData['MT'].append(0)
-    sensorData['HH'].append(0)
-    sensorData['HT'].append(0)
-    sensorData['V'].append(0)
-    sensorData['AP'].append(0)
-    sensorData['AT'].append(0)
 
 def parseLine(line):
     if '<GPS>' in line:
@@ -94,6 +82,41 @@ def parseLine(line):
     elif '<DATA>' in line:
         parseSensors(line)
 
+def subplotData(data, key):
+    try:
+        plt.plot((data[key])[0,:],(data[key])[1,:],color='b')
+    except Exception, e:
+        print 'Error plotting subplot', str(e)
+
+def plotGps():
+    plt.figure(1)
+    plt.subplot(221)
+    subplotData(gpsData,'lat')
+    plt.subplot(222)
+    subplotData(gpsData,'long')
+    plt.subplot(223)
+    subplotData(gpsData,'alt')
+    plt.subplot(224)
+    subplotData(gpsData,'sat')
+    plt.draw()
+    plt.show(block=False)
+
+def plotHealth():
+    plt.figure(3)
+    plt.subplot(211)
+    subplotData(sensorData,'V')
+    plt.subplot(212)
+    plt.draw()
+    plt.show(block=False)
+
+def serialThread():
+    print 'Starting serial thread'
+    while(True):
+        #print 'Reading line'
+        line = port.readline()
+        print '>:',line
+        parseLine(line)
+        time.sleep(0.01)
 
 print 'TrakTor Balloon Ground Station'
 print '(C) 2015 Cody Hyman'
@@ -107,8 +130,45 @@ print 'Acquiring Data'
 #plt.show()
 #plt.xlabel('Time (s)')
 
+gpsFig = plt.figure(1)
+plt.subplot(221)
+plt.title('GPS Latitude')
+plt.xlabel('Time')
+plt.ylabel('Latitude (Deg)')
+plt.subplot(222)
+plt.title('GPS Longitude')
+plt.ylabel('Longitude (Deg)')
+plt.subplot(223)
+plt.title('GPS Altitude')
+plt.xlabel('Time')
+plt.ylabel('Altitude (km)')
+plt.subplot(224)
+plt.title('GPS Satellite Count')
+plt.xlabel('Time')
+plt.ylabel('Sat. Count')
+plt.ion()
+plt.show(block=False)
+sensorFig = plt.figure(2)
+
+healthFig = plt.figure(3)
+plt.subplot(211)
+plt.title('Battery Voltage')
+plt.xlabel('Time')
+plt.ylabel('Voltage (V)')
+plt.ylim(5,8)
+plt.subplot(212)
+
+
+serThread = threading.Thread(name='serial_thread', target=serialThread)
+serThread.daemon = True
+serThread.start()
+
+plt.ion()
+plt.show(block=False)
 while(True):
-    print 'Reading line'
-    line = port.readline()
-    #print 'Received line', str(line)
-    parseLine(line)
+    plotGps()
+    plotHealth()
+    figMan = plt.get_current_fig_manager()
+    #figMan.window.state('zoomed')
+    plt.draw()
+    time.sleep(0.1)
