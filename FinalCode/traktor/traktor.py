@@ -19,6 +19,7 @@ from PyQt4 import QtGui, QtCore
 # Global Data
 gpsData = {'systime':np.array([[],[]]),'time':np.array([[],[]]),'lat':np.array([[],[]]),'long':np.array([[],[]]),'alt':np.array([[],[]]),'sat':np.array([[],[]])}
 sensorData = {'systime':np.array([[],[]]),'ET':np.array([[],[]]),'EH':np.array([[],[]]),'EHT':np.array([[],[]]),'IH':np.array([[],[]]),'IHT':np.array([[],[]]),'MP':np.array([[],[]]),'MT':np.array([[],[]]),'HH':np.array([[],[]]),'HT':np.array([[],[]]),'V':np.array([[],[]]),'AP':np.array([[],[]]),'AT':np.array([[],[]]),'BP':np.array([[],[]]),'BT':np.array([[],[]])}
+
 # Serial port
 port = None 
 
@@ -231,7 +232,7 @@ def parseGPS(gpsStr):
     for el in splitGps:
         try:
             pair = el.split(':') # Split element
-            if pair[0] is 'time':
+            if pair[0] == 'time':
                 gpsData['time'] = np.append(gpsData['time'],[[now],[pair[1]]],axis=1)
             elif 'lat' in pair[0]:
                 lat = pair[1].split(' ')
@@ -252,39 +253,39 @@ def parseGPS(gpsStr):
 # Sensor Data Parser
 def parseSensors(dataStr):
     global sensorData
-    print 'Parsing data string\n\n\n\n\n\n'
+    #print 'Parsing data string\n\n\n\n\n\n'
     splitData = (dataStr.replace('<DATA>','').replace('</DATA>','').lower()).split(',')
     now = dt.datetime.now()
     for el in splitData:
         try:
             pair = el.split(':')
-            if pair[0] is 'et':
+            if pair[0] == 'et':
                 sensorData['ET'] = np.append(sensorData['ET'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'eh':
+            elif pair[0] == 'eh':
                 sensorData['EH'] = np.append(sensorData['EH'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'eht':
+            elif pair[0] == 'eht':
                 sensorData['EHT'] = np.append(sensorData['EHT'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'ih':
+            elif pair[0] == 'ih':
                 sensorData['IH'] = np.append(sensorData['IH'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'iht':
+            elif pair[0] == 'iht':
                 sensorData['IHT'] = np.append(sensorData['IHT'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'mp':
+            elif pair[0] == 'mp':
                 sensorData['MP'] = np.append(sensorData['MP'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'mt':
+            elif pair[0] == 'mt':
                 sensorData['MT'] = np.append(sensorData['MT'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'hh':
+            elif pair[0] == 'hh':
                 sensorData['HH'] = np.append(sensorData['HH'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'ht':
+            elif pair[0] == 'ht':
                 sensorData['HT'] = np.append(sensorData['HT'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'v':
+            elif pair[0] == 'v':
                 sensorData['V'] = np.append(sensorData['V'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'ap':
+            elif pair[0] == 'ap':
                 sensorData['AP'] = np.append(sensorData['AP'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'AT':
+            elif pair[0] == 'AT':
                 sensorData['AT'] = np.append(sensorData['AT'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'bp':
+            elif pair[0] == 'bp':
                 sensorData['BP'] = np.append(sensorData['BP'],[[now],[float(pair[1])]],axis=1)
-            elif pair[0] is 'bt':
+            elif pair[0] == 'bt':
                 sensorData['BT'] = np.append(sensorData['BT'],[[now],[float(pair[1])]],axis=1)
         except Exception, e:
             print 'Exception in parsing Data string', str(e)
@@ -323,12 +324,13 @@ def plotGps():
 def plotSensors():
     global sensorData
     plt.figure(2)
-    print 'Plotting sensors\n\n\n\n\n'
+    #print 'Plotting sensors', np.size(sensorData['EH']),'\n\n\n\n\n'
     plt.subplot(321) # External Temperature
     subplotData(sensorData,'ET','b')
     subplotData(sensorData,'EHT','r')
     subplotData(sensorData,'MT','g')
     subplotData(sensorData,'HT','y')
+    np.median
     plt.draw()
     plt.subplot(322) # Internal Temperature
     subplotData(sensorData,'IHT', 'b')
@@ -340,6 +342,7 @@ def plotSensors():
     plt.draw()
     plt.subplot(324) # Internal Humidity
     subplotData(sensorData, 'IH')
+    plt.title('Int. Humidity ('+str(sensorData['IH'][1,-1])+'%)')
     plt.draw()
     plt.subplot(325) # External Pressure
     subplotData(sensorData,'MP','b')
@@ -370,6 +373,7 @@ def plotHealth():
 def initializePlots():
     plt.figure(1)
     plt.subplot(221)
+    plt.ion()
     plt.title('GPS Latitude')
     plt.xlabel('Time')
     plt.ylabel('Latitude (Deg)')
@@ -377,16 +381,19 @@ def initializePlots():
     plt.xticks(rotation='vertical')
     plt.grid()
     plt.subplot(222)
+    plt.ion()
     plt.title('GPS Longitude')
     plt.ylabel('Longitude (Deg)')
     plt.ylim(-90,-70)
     plt.grid()
     plt.subplot(223)
+    plt.ion()
     plt.title('GPS Altitude')
     plt.xlabel('Time')
     plt.ylabel('Altitude (km)')
     plt.grid()
     plt.subplot(224)
+    plt.ion()
     plt.title('GPS Satellite Count')
     plt.xlabel('Time')
     plt.ylabel('Sat. Count')
@@ -398,28 +405,34 @@ def initializePlots():
 
     plt.figure(2)
     plt.subplot(321)
+    plt.ion()
     plt.title('Ext. Temp.')
     plt.ylabel(u'Temp. (\u2103)')
     plt.grid()
     plt.subplot(322)
+    plt.ion()
     plt.title('Int Temp.')
     plt.ylabel(u'Temp. (\u2103)')
     plt.grid()
     plt.subplot(323)
+    plt.ion()
     plt.title('Ext. Humidity')
     plt.ylabel('Rel. Humidity [%]')
     plt.ylim(0,100)
     plt.grid()
     plt.subplot(324)
+    plt.ion()
     plt.title('Int. Humidity')
     plt.ylabel('Rel. Humidity [%]')
     plt.ylim(0,100)
     plt.grid()
     plt.subplot(325)
+    plt.ion()
     plt.title('Ext. Pressure')
     plt.ylabel('Pressure [kPa]')
     plt.grid()
     plt.subplot(326)
+    plt.ion()
     plt.title('Int. Pressure')
     plt.ylabel('Pressure [kPa]')
     plt.grid()
@@ -473,7 +486,7 @@ def qtThread():
 def main():
     global port
     print ''
-    print 'TrakTor Balloon Ground Station'
+    print '===== TrakTor Balloon Ground Station ====='
     print '(C) 2015 Cody Hyman'
     if len(sys.argv) > 1:
         portName = str(sys.argv[1])
@@ -508,6 +521,7 @@ def main():
 
     while(True):
         plotRoutine()
+        time.sleep(0.2)
 
 if __name__ == '__main__':
     main()
