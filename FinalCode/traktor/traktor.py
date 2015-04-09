@@ -324,28 +324,28 @@ def plotSensors():
     global sensorData
     plt.figure(2)
     print 'Plotting sensors\n\n\n\n\n'
-    plt.subplot(421) # External Temperature
+    plt.subplot(321) # External Temperature
     subplotData(sensorData,'ET','b')
     subplotData(sensorData,'EHT','r')
     subplotData(sensorData,'MT','g')
     subplotData(sensorData,'HT','y')
     plt.draw()
-    plt.subplot(422) # Internal Temperature
+    plt.subplot(322) # Internal Temperature
     subplotData(sensorData,'IHT', 'b')
     subplotData(sensorData,'BT','r')
     plt.draw()
-    plt.subplot(423) # External Humidity
+    plt.subplot(323) # External Humidity
     subplotData(sensorData,'EH','b')
     subplotData(sensorData,'HH','r')
     plt.draw()
-    plt.subplot(424) # Internal Humidity
+    plt.subplot(324) # Internal Humidity
     subplotData(sensorData, 'IH')
     plt.draw()
-    plt.subplot(425) # External Pressure
+    plt.subplot(325) # External Pressure
     subplotData(sensorData,'MP','b')
     subplotData(sensorData,'AP','r')
     plt.draw()
-    plt.subplot(426)
+    plt.subplot(326)
     subplotData(sensorData, 'BP')
 
     plt.draw()
@@ -397,29 +397,29 @@ def initializePlots():
     plt.show(block=False)
 
     plt.figure(2)
-    plt.subplot(421)
+    plt.subplot(321)
     plt.title('Ext. Temp.')
     plt.ylabel(u'Temp. (\u2103)')
     plt.grid()
-    plt.subplot(422)
+    plt.subplot(322)
     plt.title('Int Temp.')
     plt.ylabel(u'Temp. (\u2103)')
     plt.grid()
-    plt.subplot(423)
+    plt.subplot(323)
     plt.title('Ext. Humidity')
     plt.ylabel('Rel. Humidity [%]')
     plt.ylim(0,100)
     plt.grid()
-    plt.subplot(424)
+    plt.subplot(324)
     plt.title('Int. Humidity')
     plt.ylabel('Rel. Humidity [%]')
     plt.ylim(0,100)
     plt.grid()
-    plt.subplot(425)
+    plt.subplot(325)
     plt.title('Ext. Pressure')
     plt.ylabel('Pressure [kPa]')
     plt.grid()
-    plt.subplot(426)
+    plt.subplot(326)
     plt.title('Int. Pressure')
     plt.ylabel('Pressure [kPa]')
     plt.grid()
