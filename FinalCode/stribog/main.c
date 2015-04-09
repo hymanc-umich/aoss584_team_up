@@ -160,7 +160,7 @@ int8_t closeLog(void)
  */
 void printGps(BaseSequentialStream *stream, gpsLocation_t *loc)
 {
-    chprintf(stream, "<GPS>TIME:%s, LAT:%s, LONG:%s, ALT:%s, SAT:%s<\\GPS>\n",
+    chprintf(stream, "<GPS>TIME:%s, LAT:%s, LONG:%s, ALT:%s, SAT:%s</GPS>\n",
 	     (char *)(loc->time),
 	     (char *)(loc->latitude),
 	     (char *)(loc->longitude),

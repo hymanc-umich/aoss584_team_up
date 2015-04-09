@@ -142,12 +142,13 @@ void sensorThread_publishData(sensorThread_t *thread, BaseSequentialStream *stre
 {
     // Print to XBee
     chprintf(stream, 
-        "<DATA>ET:%.1f,EH:%.1f,EHT:%.2f,IH:%.1f,IHT:%.2f,MP:%.2f,MT:%.2f,HH:%.2f,HT:%.2f,V:%.2f,AP:%.3f,AT:%.3f</DATA>\n",
+        "<DATA>ET:%.1f,EH:%.1f,EHT:%.2f,IH:%.1f,IHT:%.2f,MP:%.2f,MT:%.2f,HH:%.2f,HT:%.2f,BT:%.2f,BP:%2f,V:%.2f,AP:%.3f,AT:%.3f</DATA>\n",
         thread->data.temp275,
         thread->data.humd7020Ext, thread->data.temp7020Ext,
         thread->data.humd7020Int, thread->data.temp7020Int,
         thread->data.pressMs5607, thread->data.tempMs5607,
         thread->data.humd6030, thread->data.temp6030,
+        thread->data.tempBmp, thread->data.pressBmp,
         thread->data.vin, thread->data.pressMpxm, thread->data.tempRtd);
 }
 
