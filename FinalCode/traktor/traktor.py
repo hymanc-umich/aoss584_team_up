@@ -301,7 +301,7 @@ def parseLine(line):
 # Subplot data
 def subplotData(data, key, color='b'):
     try:
-        plt.plot((data[key])[0,:],(data[key])[1,:],color)
+        return plt.plot((data[key])[0,:],(data[key])[1,:],color, label=key)
     except Exception, e:
         print 'Error plotting subplot', str(e)
 
@@ -326,31 +326,37 @@ def plotSensors():
     plt.figure(2)
     #print 'Plotting sensors', np.size(sensorData['EH']),'\n\n\n\n\n'
     plt.subplot(321) # External Temperature
-    subplotData(sensorData,'ET','b')
-    subplotData(sensorData,'EHT','r')
-    subplotData(sensorData,'MT','g')
-    subplotData(sensorData,'HT','y')
-    np.median
+    etplt, = subplotData(sensorData,'ET','b')
+    ehtplt, = subplotData(sensorData,'EHT','r')
+    mtplt, = subplotData(sensorData,'MT','g')
+    htplt, = subplotData(sensorData,'HT','y')
+    plt.legend([etplt, ehtplt, mtplt, htplt],['TMP275','Si7020','MS5607','HIH6030'])
     plt.draw()
     plt.subplot(322) # Internal Temperature
-    subplotData(sensorData,'IHT', 'b')
-    subplotData(sensorData,'BT','r')
+    ihtplt, = subplotData(sensorData,'IHT', 'b')
+    btplt, = subplotData(sensorData,'BT','r')
+    plt.legend([ihtplt,btplt],['Si7020','BMP280'])
+    plt.title('Int. Temperature ('+str(sensorData['IHT'][1,-1])+u'\u2103)')
     plt.draw()
     plt.subplot(323) # External Humidity
-    subplotData(sensorData,'EH','b')
-    subplotData(sensorData,'HH','r')
+    ehplt, = subplotData(sensorData,'EH','b')
+    hhplt, = subplotData(sensorData,'HH','r')
+    plt.legend([ehplt,hhplt],['Si7020','HIH6030'])
+    plt.title('Ext. Humidity ('+str(sensorData['EH'][1,-1])+'/'+str(sensorData['HH'][1,-1])+'%)')
     plt.draw()
     plt.subplot(324) # Internal Humidity
-    subplotData(sensorData, 'IH')
+    ihplt, = subplotData(sensorData, 'IH')
     plt.title('Int. Humidity ('+str(sensorData['IH'][1,-1])+'%)')
     plt.draw()
     plt.subplot(325) # External Pressure
-    subplotData(sensorData,'MP','b')
-    subplotData(sensorData,'AP','r')
+    mpplt, = subplotData(sensorData,'MP','b')
+    applt, = subplotData(sensorData,'AP','r')
+    plt.legend([mpplt, applt],['MS5607','MPXM2102'])
+    plt.title('Ext. Pressure ('+str(sensorData['MP'][1,-1])+'/'+str(sensorData['AP'][1,-1])+'kPa)')
     plt.draw()
     plt.subplot(326)
-    subplotData(sensorData, 'BP')
-
+    bpplt = subplotData(sensorData, 'BP')
+    #plt.title('Int. Pressure ('+str(sensorData['BP'][1,-1])+'%)')
     plt.draw()
     plt.show(block=False)
 
