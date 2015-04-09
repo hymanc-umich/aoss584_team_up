@@ -1,3 +1,9 @@
+#!/usr/bin/python
+
+# TrakTor Balloon Ground Station
+# (C) 2015 Cody Hyman
+# Last Modified 9 APR 2015
+
 import sys
 import serial
 import numpy as np
@@ -6,10 +12,215 @@ from matplotlib import pyplot as plt
 import time
 import datetime as dt
 import threading
+import signal
 
-# Data
+from PyQt4 import QtGui, QtCore
+
+# Global Data
 gpsData = {'systime':np.array([[],[]]),'time':np.array([[],[]]),'lat':np.array([[],[]]),'long':np.array([[],[]]),'alt':np.array([[],[]]),'sat':np.array([[],[]])}
 sensorData = {'systime':np.array([[],[]]),'ET':np.array([[],[]]),'EH':np.array([[],[]]),'EHT':np.array([[],[]]),'IH':np.array([[],[]]),'IHT':np.array([[],[]]),'MP':np.array([[],[]]),'MT':np.array([[],[]]),'HH':np.array([[],[]]),'HT':np.array([[],[]]),'V':np.array([[],[]]),'AP':np.array([[],[]]),'AT':np.array([[],[]]),'BP':np.array([[],[]]),'BT':np.array([[],[]])}
+# Serial port
+port = None 
+
+def sigint(signum, frame):
+    sys.exit()
+signal.signal(signal.SIGINT, sigint)
+
+## Telemetry Textwindow
+class Traktor_TelemetryTextWindow(QtGui.QWidget):
+    def __init__(self):
+        super(Traktor_TelemetryTextWindow, self).__init__()
+        self.initGUI()
+        self.timer = QtCore.QTimer(self)
+        self.timer.setInterval(50)
+        self.timer.timeout.connect(self.updateGUI)
+        self.start()
+
+    def start(self):
+        self.timer.start()
+
+    def stop(self):
+        self.timer.stop()
+
+    def initGUI(self):
+        self.resize(300,600)
+        self.setWindowTitle('TrakTor Ground Station Telemetry')
+
+        grid = QtGui.QGridLayout()
+        etgrid = QtGui.QGridLayout()
+        ehgrid = QtGui.QGridLayout()
+        epgrid = QtGui.QGridLayout()
+        itgrid = QtGui.QGridLayout()
+        ihgrid = QtGui.QGridLayout()
+        ipgrid = QtGui.QGridLayout()
+        hlthgrid = QtGui.QGridLayout()
+        gpsgrid = QtGui.QGridLayout()
+
+        self.setLayout(grid)
+
+        # External Temperature
+        extTempLabel = QtGui.QLabel('External Temperature')
+        etLabel = QtGui.QLabel(u'TMP275 [\u2103]')
+        ehtLabel = QtGui.QLabel(u'Si7020 [\u2103]')
+        htLabel = QtGui.QLabel(u'HIH6030 [\u2103]')
+        mtLabel = QtGui.QLabel(u'MS5607 [\u2103]')
+
+        self.etValue = QtGui.QLineEdit()
+        self.etValue.setReadOnly(True)
+        self.ehtValue = QtGui.QLineEdit()
+        self.ehtValue.setReadOnly(True)
+        self.htValue = QtGui.QLineEdit()
+        self.htValue.setReadOnly(True)
+        self.mtValue = QtGui.QLineEdit()
+        self.mtValue.setReadOnly(True)
+
+        # External Humidity
+        extHumLabel = QtGui.QLabel('External Humidity')
+        ehLabel = QtGui.QLabel('Si7020 [%RH]')
+        hhLabel = QtGui.QLabel('HIH6030 [%RH]')
+
+        self.ehValue = QtGui.QLineEdit()
+        self.ehValue.setReadOnly(True)
+        self.hhValue = QtGui.QLineEdit()
+        self.hhValue.setReadOnly(True)
+
+        # External Pressure
+        extPressLabel = QtGui.QLabel('External Pressure')
+        mpLabel = QtGui.QLabel('MS5607 [kPa]')
+        apLabel = QtGui.QLabel('MPXM2102 [kPa]')
+
+        self.mpValue = QtGui.QLineEdit()
+        self.mpValue.setReadOnly(True)
+        self.apValue = QtGui.QLineEdit()
+        self.apValue.setReadOnly(True)
+
+        # Internal Temperature
+        intTempLabel = QtGui.QLabel('Internal Temperature')
+        btLabel = QtGui.QLabel(u'BMP280 [\u2103]')
+        ihtLabel = QtGui.QLabel(u'Si7020 [\u2103]')
+
+        self.btValue = QtGui.QLineEdit()
+        self.btValue.setReadOnly(True)
+        self.ihtValue = QtGui.QLineEdit()
+        self.ihtValue.setReadOnly(True)
+
+        # Internal Humidity
+        intHumLabel = QtGui.QLabel('Internal Humidity')
+        ihLabel = QtGui.QLabel('Si7020 [%RH]')
+
+        self.ihValue = QtGui.QLineEdit()
+        self.ihValue.setReadOnly(True)
+
+        #Internal Pressure
+        intPressLabel = QtGui.QLabel('Internal Pressure')
+        bpLabel = QtGui.QLabel('BMP280 [kPa]')
+        self.bpValue = QtGui.QLineEdit()
+        self.bpValue.setReadOnly(True)
+
+        #Internal Voltage
+        hlthLabel = QtGui.QLabel('System Health')
+        vLabel = QtGui.QLabel('Battery Volt. [V]')
+        self.vValue = QtGui.QLineEdit()
+        self.vValue.setReadOnly(True)
+
+        gpsLabel = QtGui.QLabel('GPS')
+        latLabel = QtGui.QLabel(u'Latitude [\u00B0]')
+        lonLabel = QtGui.QLabel(u'Longitude [\u00B0]')
+        altLabel = QtGui.QLabel('Altitude [km]')
+        satLabel = QtGui.QLabel('Satellites [#]')
+        self.latValue = QtGui.QLineEdit()
+        self.latValue.setReadOnly(True)
+        self.lonValue = QtGui.QLineEdit()
+        self.lonValue.setReadOnly(True)
+        self.altValue = QtGui.QLineEdit()
+        self.altValue.setReadOnly(True)
+        self.satValue = QtGui.QLineEdit()
+        self.satValue.setReadOnly(True)
+
+        grid.addWidget(extTempLabel,0,0,1,2,QtCore.Qt.AlignCenter)
+        grid.addWidget(etLabel,1,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.etValue,1,1)
+        grid.addWidget(ehtLabel,2,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.ehtValue,2,1)
+        grid.addWidget(htLabel,3,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.htValue,3,1)
+        grid.addWidget(mtLabel,4,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.mtValue,4,1)
+
+        grid.addWidget(extHumLabel,5,0,1,2,QtCore.Qt.AlignCenter)
+        grid.addWidget(ehLabel,6,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.ehValue,6,1)
+        grid.addWidget(hhLabel,7,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.hhValue,7,1)
+
+        grid.addWidget(extPressLabel,8,0,1,2,QtCore.Qt.AlignCenter)
+        grid.addWidget(mpLabel,9,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.mpValue,9,1)
+        grid.addWidget(apLabel,10,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.apValue,10,1)
+
+        grid.addWidget(intTempLabel,11,0,1,2,QtCore.Qt.AlignCenter)
+        grid.addWidget(btLabel,12,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.btValue,12,1)
+        grid.addWidget(ihtLabel,13,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.ihtValue,13,1)
+
+        grid.addWidget(intHumLabel,14,0,1,2,QtCore.Qt.AlignCenter)
+        grid.addWidget(ihLabel,15,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.ihValue,15,1)
+
+        grid.addWidget(intPressLabel,16,0,1,2,QtCore.Qt.AlignCenter)
+        grid.addWidget(bpLabel,17,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.bpValue,17,1)
+
+        grid.addWidget(hlthLabel,18,0,1,2,QtCore.Qt.AlignCenter)
+        grid.addWidget(vLabel,19,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.vValue,19,1)
+
+        grid.addWidget(gpsLabel,20,0,1,2,QtCore.Qt.AlignCenter)
+        grid.addWidget(latLabel,21,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.latValue,21,1)
+        grid.addWidget(lonLabel,22,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.lonValue,22,1)
+        grid.addWidget(altLabel,23,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.altValue,23,1)
+        grid.addWidget(satLabel,24,0,QtCore.Qt.AlignRight)
+        grid.addWidget(self.satValue,24,1)
+
+        self.show()
+
+    @QtCore.pyqtSlot()
+    def updateGUI(self):
+        global gpsData
+        global sensorData
+        self.updateSensors(sensorData)
+        self.updateGPS(gpsData)
+
+    def updateSensors(self, data):
+        self.etValue.setText((data['ET'])[1,-1])
+        self.ehtValue.setText((data['EHT'])[1,-1])
+        self.htValue.setText((data['HT'])[1,-1])
+        self.mtValue.setText((data['MT'])[1,-1])
+
+        self.ehValue.setText((data['EH'])[1,-1])
+        self.hhValue.setText((data['HH'])[1,-1])
+
+        self.mpValue.setText((data['MP'])[1,-1])
+        self.apValue.setText((data['AP'])[1,-1])
+
+        self.ihtValue.setText((data['IHT'])[1,-1])
+        self.btValue.setText((data['BT'])[1,-1])
+
+        self.ihValue.setText((data['IH'])[1,-1])
+        self.bpValue.setText((data['BP'])[1,-1])
+
+        self.vValue.setText((data['V'])[1,-1])
+
+    def updateGPS(self, data):
+        self.latValue.setText(str((data['lat'])[1,-1]))
+        self.lonValue.setText(str((data['lon'])[1,-1]))
+        self.altValue.setText(str((data['alt'])[1,-1]))
+        self.satValue.setText(str((data['sat'])[1,-1]))
 
 # GPS Data Parser
 def parseGPS(gpsStr):
@@ -41,7 +252,7 @@ def parseGPS(gpsStr):
 # Sensor Data Parser
 def parseSensors(dataStr):
     global sensorData
-    #print 'Parsing data string'
+    print 'Parsing data string\n\n\n\n\n\n'
     splitData = (dataStr.replace('<DATA>','').replace('</DATA>','').lower()).split(',')
     now = dt.datetime.now()
     for el in splitData:
@@ -76,7 +287,7 @@ def parseSensors(dataStr):
             elif pair[0] is 'bt':
                 sensorData['BT'] = np.append(sensorData['BT'],[[now],[float(pair[1])]],axis=1)
         except Exception, e:
-            #print 'Exception in parsing Data string', str(e)
+            print 'Exception in parsing Data string', str(e)
             continue
 
 # Top level Rx line parser
@@ -95,6 +306,7 @@ def subplotData(data, key, color='b'):
 
 # Plot GPS fields figure
 def plotGps():
+    global gpsData
     plt.figure(1)
     plt.subplot(221)
     subplotData(gpsData,'lat')
@@ -109,61 +321,52 @@ def plotGps():
 
 # Plot sensor data figure
 def plotSensors():
+    global sensorData
     plt.figure(2)
+    print 'Plotting sensors\n\n\n\n\n'
     plt.subplot(421) # External Temperature
     subplotData(sensorData,'ET','b')
-    #plt.hold(True)
-    #subplotData(sensorData,'EHT','r')
-    #subplotData(sensorData,'MT','g')
-    #subplotData(sensorData,'HT','y')
-    #plt.hold(False)
-
+    subplotData(sensorData,'EHT','r')
+    subplotData(sensorData,'MT','g')
+    subplotData(sensorData,'HT','y')
+    plt.draw()
     plt.subplot(422) # Internal Temperature
     subplotData(sensorData,'IHT', 'b')
-    #plt.hold(True)
-    #subplotData(sensorData,'BT','r')
-    #plt.hold(False)
-
+    subplotData(sensorData,'BT','r')
+    plt.draw()
     plt.subplot(423) # External Humidity
     subplotData(sensorData,'EH','b')
-    #plt.hold(True)
-    #subplotData(sensorData,'HH','r')
-    #plt.hold(False)
-
+    subplotData(sensorData,'HH','r')
+    plt.draw()
     plt.subplot(424) # Internal Humidity
     subplotData(sensorData, 'IH')
-
+    plt.draw()
     plt.subplot(425) # External Pressure
     subplotData(sensorData,'MP','b')
-    #plt.hold(True)
-    #subplotData(sensorData,'AP','r')
-    #plt.hold(False)
-
+    subplotData(sensorData,'AP','r')
+    plt.draw()
     plt.subplot(426)
     subplotData(sensorData, 'BP')
 
     plt.draw()
     plt.show(block=False)
 
+# Plot system health figure
 def plotHealth():
-    plt.figure(3)
-    plt.subplot(211)
-    subplotData(sensorData,'V')
-    currentVoltage = (sensorData['V'])[1,-1]
-    plt.title('Battery Voltage ('+str(currentVoltage)+'V)')
-    plt.subplot(212)
-    plt.draw()
-    plt.show(block=False)
+    global sensorData
+    try:
+        plt.figure(3)
+        plt.subplot(211)
+        subplotData(sensorData,'V')
+        currentVoltage = (sensorData['V'])[1,-1]
+        plt.title('Battery Voltage ('+str(currentVoltage)+'V)')
+        plt.subplot(212)
+        plt.draw()
+        plt.show(block=False)
+    except Exception, e:
+        pass
 
-def serialThread():
-    print 'Starting serial thread'
-    while(True):
-        #print 'Reading line'
-        line = port.readline()
-        print '>:',line
-        parseLine(line)
-        time.sleep(0.01)
-
+# Plot initialization
 def initializePlots():
     plt.figure(1)
     plt.subplot(221)
@@ -240,40 +443,71 @@ def initializePlots():
     plt.ion()
     plt.show(block=False)
 
-## Main Entry Point
-print ''
-print 'TrakTor Balloon Ground Station'
-print '(C) 2015 Cody Hyman'
-if len(sys.argv) > 1:
-    portName = str(sys.argv[1])
-else:
-    portName = '/dev/ttyACM0'
-print 'Opening serial port to ground radio at', portName
-port = serial.Serial(portName, 460800, timeout=1)
-if(port.isOpen()):
-    print 'Serial port opened successfully'
-print 'Acquiring Data'
+# Serial Daemon Thread
+def serialThread():
+    global port
+    print 'Starting serial thread'
+    while(True):
+        if(port != None):
+            #print 'Reading line'
+            line = port.readline()
+            print '>:',line
+            parseLine(line)
+            time.sleep(0.01)
 
-plt.switch_backend('GtkAgg')
-# Logfile
-fWriteFlag = False
-log = None
-if(len(sys.argv) > 2):
-    fWriteFlag = True
-    log = open('logFile.txt','w+')
-
-initializePlots() # Initliali
-
-# Start serial daemon
-serThread = threading.Thread(name='serial_thread', target=serialThread)
-serThread.daemon = True
-serThread.start()
-
-# Update plots
-while(True):
+# Plotting Daemon Thread
+def plotRoutine(args=None):
+    # Update plots:
     plotGps()
     plotSensors()
     plotHealth()
-    figMan = plt.get_current_fig_manager()
-    #figMan.window.state('zoomed')
-    time.sleep(0.05)
+
+# Qt App thread
+def qtThread():
+    print 'Starting Qt Application'
+    app = QtGui.QApplication(sys.argv)
+    tele = Traktor_TelemetryTextWindow()
+    sys.exit(app.exec_())
+
+## Main Entry Point
+def main():
+    global port
+    print ''
+    print 'TrakTor Balloon Ground Station'
+    print '(C) 2015 Cody Hyman'
+    if len(sys.argv) > 1:
+        portName = str(sys.argv[1])
+    else:
+        portName = '/dev/ttyACM0'
+    print 'Opening serial port to ground radio at', portName
+    port = serial.Serial(portName, 460800, timeout=1)
+    if(port.isOpen()):
+        print 'Serial port opened successfully'
+    print 'Acquiring Data'
+
+    plt.switch_backend('GtkAgg')
+    # Logfile
+    fWriteFlag = False
+    log = None
+    if(len(sys.argv) > 2):
+        fWriteFlag = True
+        log = open('logFile.txt','w+')
+
+
+    # Start serial daemon
+    serThread = threading.Thread(name='serial_thread', target=serialThread)
+    serThread.daemon = True
+    serThread.start()
+
+    initializePlots() # Initlialize plots
+
+    #app = QtGui.QApplication(sys.argv)
+    #tele = Traktor_TelemetryTextWindow()
+    #sys.exit(app.exec_())
+
+
+    while(True):
+        plotRoutine()
+
+if __name__ == '__main__':
+    main()
