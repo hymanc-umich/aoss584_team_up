@@ -44,7 +44,7 @@
 
 #define F_CPU 1000000UL;
 
-#define CUT_TIME 5000
+#define CUT_TIME 6500
 
 typedef enum
 {
