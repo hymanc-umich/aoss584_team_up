@@ -228,6 +228,7 @@ def parseGPS(gpsStr):
     global gpsData
     #print 'Parsing GPS string'
     splitGps = (gpsStr.replace('<GPS>','').replace('<\GPS>','').replace('</GPS>','').lower()).split(',')
+    # TODO: Verify correct string
     now = dt.datetime.now()
     for el in splitGps:
         try:
@@ -284,7 +285,7 @@ def parseSensors(dataStr):
             elif pair[0] == 'AT':
                 sensorData['AT'] = np.append(sensorData['AT'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] == 'bp':
-                sensorData['BP'] = np.append(sensorData['BP'],[[now],[float(pair[1])]],axis=1)
+                sensorData['BP'] = np.append(sensorData['BP'],[[now],[float(pair[1])/10.0]],axis=1)
             elif pair[0] == 'bt':
                 sensorData['BT'] = np.append(sensorData['BT'],[[now],[float(pair[1])]],axis=1)
         except Exception, e:
@@ -311,12 +312,28 @@ def plotGps():
     plt.figure(1)
     plt.subplot(221)
     subplotData(gpsData,'lat')
+    try:
+        plt.title('GPS Latitude ('+str(gpsData['lat'][1,-1]+')'))
+    except Exception, e:
+        print ''
     plt.subplot(222)
     subplotData(gpsData,'long')
+    try:
+        plt.title('GPS Longitude ('+str(gpsData['lon'][1,-1]+')'))
+    except Exception, e:
+        print ''
     plt.subplot(223)
     subplotData(gpsData,'alt')
+    try:
+        plt.title('GPS Altitude ('+str(gpsData['alt'][1,-1]+')'))
+    except Exception, e:
+        print ''
     plt.subplot(224)
     subplotData(gpsData,'sat')
+    try:
+        plt.title('GPS Satellites ('+str(gpsData['sat'][1,-1]+')'))
+    except Exception, e:
+        print ''
     plt.draw()
     plt.show(block=False)
 
@@ -330,33 +347,52 @@ def plotSensors():
     ehtplt, = subplotData(sensorData,'EHT','r')
     mtplt, = subplotData(sensorData,'MT','g')
     htplt, = subplotData(sensorData,'HT','y')
-    plt.legend([etplt, ehtplt, mtplt, htplt],['TMP275','Si7020','MS5607','HIH6030'])
+    plt.legend([etplt, ehtplt, mtplt, htplt],['TMP275','Si7020','MS5607','HIH6030'],loc='lower left')
+    try:
+        plt.title('Ext. Temperature ('+str(sensorData['ET'][1,-1])+'/'+str(sensorData['EHT'][1,-1])+'/'+str(sensorData['MT'][1,-1])+'/'+str(sensorData['HT'][1,-1])+u'\u2103)')
+    except:
+        print ''
     plt.draw()
     plt.subplot(322) # Internal Temperature
     ihtplt, = subplotData(sensorData,'IHT', 'b')
     btplt, = subplotData(sensorData,'BT','r')
     plt.legend([ihtplt,btplt],['Si7020','BMP280'])
-    plt.title('Int. Temperature ('+str(sensorData['IHT'][1,-1])+u'\u2103)')
+    try:
+        plt.title('Int. Temperature ('+str(sensorData['IHT'][1,-1])+u'\u2103)')
+    except:
+        print ''
     plt.draw()
     plt.subplot(323) # External Humidity
     ehplt, = subplotData(sensorData,'EH','b')
     hhplt, = subplotData(sensorData,'HH','r')
     plt.legend([ehplt,hhplt],['Si7020','HIH6030'])
-    plt.title('Ext. Humidity ('+str(sensorData['EH'][1,-1])+'/'+str(sensorData['HH'][1,-1])+'%)')
+    try:
+        plt.title('Ext. Humidity ('+str(sensorData['EH'][1,-1])+'/'+str(sensorData['HH'][1,-1])+'%)')
+    except:
+        print ''
     plt.draw()
     plt.subplot(324) # Internal Humidity
     ihplt, = subplotData(sensorData, 'IH')
-    plt.title('Int. Humidity ('+str(sensorData['IH'][1,-1])+'%)')
+    try:
+        plt.title('Int. Humidity ('+str(sensorData['IH'][1,-1])+'%)')
+    except:
+        print ''
     plt.draw()
     plt.subplot(325) # External Pressure
     mpplt, = subplotData(sensorData,'MP','b')
     applt, = subplotData(sensorData,'AP','r')
     plt.legend([mpplt, applt],['MS5607','MPXM2102'])
-    plt.title('Ext. Pressure ('+str(sensorData['MP'][1,-1])+'/'+str(sensorData['AP'][1,-1])+'kPa)')
+    try:
+        plt.title('Ext. Pressure ('+str(sensorData['MP'][1,-1])+'/'+str(sensorData['AP'][1,-1])+'kPa)')
+    except:
+        print ''
     plt.draw()
     plt.subplot(326)
     bpplt = subplotData(sensorData, 'BP')
-    #plt.title('Int. Pressure ('+str(sensorData['BP'][1,-1])+'%)')
+    try:
+        plt.title('Int. Pressure ('+str(sensorData['BP'][1,-1])+'kPa)')
+    except:
+        print ''
     plt.draw()
     plt.show(block=False)
 
@@ -416,12 +452,14 @@ def initializePlots():
     plt.subplot(321)
     plt.ion()
     plt.title('Ext. Temp.')
+    plt.ylim(-70,40)
     plt.ylabel(u'Temp. (\u2103)')
     plt.xticks(rotation='vertical')
     plt.grid()
     plt.subplot(322)
     plt.ion()
     plt.title('Int Temp.')
+    plt.ylim(-70,50)
     plt.ylabel(u'Temp. (\u2103)')
     plt.xticks(rotation='vertical')
     plt.grid()
@@ -436,6 +474,7 @@ def initializePlots():
     plt.ion()
     plt.title('Int. Humidity')
     plt.ylabel('Rel. Humidity [%]')
+    plt.ylim(0,100)
     plt.xticks(rotation='vertical')
     plt.ylim(0,100)
     plt.grid()
@@ -443,6 +482,7 @@ def initializePlots():
     plt.ion()
     plt.title('Ext. Pressure')
     plt.ylabel('Pressure [kPa]')
+    plt.ylim(0,120)
     plt.xticks(rotation='vertical')
     plt.grid()
     plt.subplot(326)
@@ -450,6 +490,7 @@ def initializePlots():
     plt.title('Int. Pressure')
     plt.ylabel('Pressure [kPa]')
     plt.xticks(rotation='vertical')
+    plt.ylim(0,120)
     plt.grid()
     plt.tight_layout()
     plt.ion()
@@ -474,14 +515,71 @@ def initializePlots():
 # Serial Daemon Thread
 def serialThread():
     global port
+    global gpsData
+    [log,lograw] = newLogs()
+    gpslog = newGpsLog()
     print 'Starting serial thread'
+    serCounter = 0
+    gpsCounter = 0
     while(True):
         if(port != None):
             #print 'Reading line'
             line = port.readline()
+            if(len(line) > 0):
+                serCounter = serCounter + 1
+                #if(serCounter > 500):
+                #    log.close()
+                #    lograw.close()
+                #    [log, lograw] = newLogs()
+            if(lograw != None):
+                lograw.write(line)
+            # TODO: Log formatted data as CSV
             print '>:',line
             parseLine(line)
+            
+            gpsCounter = gpsCounter + 1
+            if(gpsCounter >= 60):
+                gpsCounter = 0
+                gpslog.close()
+                gpslog = newGpsLog()
+            lat = ''
+            alt = ''
+            lon = ''
+            gtime = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            try:
+                lat = str(gpsData['lat'][1,-1])
+            except Exception, e:
+                print 'Error parsing Lat for file'
+            try:
+                lon = str(gpsData['lon'][1,-1])
+            except Exception, e:
+                print 'Error parsing Lon for file'  
+            try:
+                alt = str(1000.0*gpsData['alt'][1,-1])
+            except Exception, e:
+                print 'Error parsing Alt for file'
+            try:
+                gpslog.write(str(gpsCounter)+','+ gtime + ',' + lat +','+ lon + ',' + alt +'\n')
+            except Exception, e:
+                print 'Error writing GPS log'
+
             time.sleep(0.01)
+
+def newGpsLog():
+    ftime = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    dir = '/home/cody/school/aoss584/traktorlogs/gps/'
+    gpslog = open(dir+'gps_' + ftime + '.csv','w+')
+    gpslog.write('name,time,latitude,longitude,altitude\n')
+    return gpslog
+
+def newLogs():
+    log = None
+    lograw = None
+    ftime = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    dir = '/home/cody/school/aoss584/traktorlogs/'
+    lograw = open(dir+'lograw_'+ ftime+'.txt', 'w+')
+    log = open(dir+'logfile_' + ftime + '.txt','w+')
+    return [log, lograw]
 
 # Plotting Daemon Thread
 def plotRoutine(args=None):
@@ -514,12 +612,6 @@ def main():
     print 'Acquiring Data'
 
     plt.switch_backend('GtkAgg')
-    # Logfile
-    fWriteFlag = False
-    log = None
-    if(len(sys.argv) > 2):
-        fWriteFlag = True
-        log = open('logFile.txt','w+')
 
 
     # Start serial daemon

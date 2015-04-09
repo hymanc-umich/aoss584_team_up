@@ -8006,7 +8006,7 @@ Disassembly of section .text:
  80055e4:	4605      	mov	r5, r0
  80055e6:	782b      	ldrb	r3, [r5, #0]
  80055e8:	2408      	movs	r4, #8
- 80055ea:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+ 80055ea:	f44f 60fa 	mov.w	r0, #2000	; 0x7d0
  80055ee:	b163      	cbz	r3, 800560a <beaconThread+0x2a>
  80055f0:	8334      	strh	r4, [r6, #24]
  80055f2:	f7fd f875 	bl	80026e0 <chThdSleep>
@@ -8015,7 +8015,7 @@ Disassembly of section .text:
  80055fa:	f7fd f871 	bl	80026e0 <chThdSleep>
  80055fe:	782b      	ldrb	r3, [r5, #0]
  8005600:	2408      	movs	r4, #8
- 8005602:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+ 8005602:	f44f 60fa 	mov.w	r0, #2000	; 0x7d0
  8005606:	2b00      	cmp	r3, #0
  8005608:	d1f2      	bne.n	80055f0 <beaconThread+0x10>
  800560a:	f241 3088 	movw	r0, #5000	; 0x1388

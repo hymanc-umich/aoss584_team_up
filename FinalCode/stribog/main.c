@@ -193,7 +193,7 @@ msg_t beaconThread(void *args)
         if(*beaconFlag)
         {
             boardSetBuzzer(1);
-            chThdSleepMilliseconds(100);
+            chThdSleepMilliseconds(200);
             boardSetBuzzer(0);
             chThdSleepMilliseconds(9900);
         }
