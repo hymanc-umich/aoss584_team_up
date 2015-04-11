@@ -285,7 +285,7 @@ def parseSensors(dataStr):
             elif pair[0] == 'AT':
                 sensorData['AT'] = np.append(sensorData['AT'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] == 'bp':
-                sensorData['BP'] = np.append(sensorData['BP'],[[now],[float(pair[1])/10.0]],axis=1)
+                sensorData['BP'] = np.append(sensorData['BP'],[[now],[float(pair[1])]],axis=1)
             elif pair[0] == 'bt':
                 sensorData['BT'] = np.append(sensorData['BT'],[[now],[float(pair[1])]],axis=1)
         except Exception, e:

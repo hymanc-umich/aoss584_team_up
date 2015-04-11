@@ -107,7 +107,7 @@ msg_t bmp280_readPressure(bmp280_t *bmp, float *pressure)
         v1 = (bmp->P[8])*compPress*compPress/2147483648.0f;
         v2 = compPress * ((bmp->P[7])/32768.0f);
         compPress = compPress + (v1 + v2 + (bmp->P[6])/16.0f);
-        bmp->lastPressure = compPress/1000.0f;
+        bmp->lastPressure = compPress/10000.0f; // TODO: Check for correct compensation (off by a factor of 10?)
         if(pressure != NULL)
         {
             *pressure = bmp->lastPressure;

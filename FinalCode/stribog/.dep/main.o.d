@@ -111,7 +111,7 @@ build/obj/main.o: main.c /home/cody/dev/chibios/trunk/os/rt/include/ch.h \
  /usr/arm-none-eabi/include/stdlib.h \
  /usr/arm-none-eabi/include/machine/stdlib.h \
  /usr/arm-none-eabi/include/alloca.h /usr/arm-none-eabi/include/math.h \
- datasample.h
+ datasample.h watchdog.h
 
 /home/cody/dev/chibios/trunk/os/rt/include/ch.h:
 
@@ -380,3 +380,5 @@ Drivers/xbeepro.h:
 /usr/arm-none-eabi/include/math.h:
 
 datasample.h:
+
+watchdog.h:

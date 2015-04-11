@@ -21,6 +21,8 @@
 #include "board.h"
 #include "datasample.h"
 
+#include "watchdog.h"
+
 #define SAMPLE_MAX 60
 
 static THD_WORKING_AREA(waBeacon, 64);   // Audio Beacon thread
@@ -102,7 +104,7 @@ void initialize(void)
     /* ===== ADC Startup ===== */
     chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing ADC\n");
     adcStart(&ADCD1, NULL);      // Activate ADC driver
-    
+    watchdog_init(IWDG_PRESCALER_DIV256,256,true); // Initialize watchdog
     chprintf((BaseSequentialStream *) &DBG_SERIAL, "System Initialization Complete\n");
 }
 
@@ -303,6 +305,7 @@ int main(void)
         if(timeCounter > 2500)
             audioBeaconFlag = TRUE;
         // Sleep for remaining slack (to 1s)
+        watchdog_throwBone();
 		if(chVTGetSystemTimeX() < deadline)
 			chThdSleepUntil(deadline);
 	}

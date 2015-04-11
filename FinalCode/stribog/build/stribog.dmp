@@ -3,28 +3,28 @@ build/stribog.elf:     file format elf32-littlearm
 build/stribog.elf
 architecture: arm, flags 0x00000112:
 EXEC_P, HAS_SYMS, D_PAGED
-start address 0x08006a11
+start address 0x08006a71
 
 Program Header:
     LOAD off    0x00008000 vaddr 0x08000000 paddr 0x08000000 align 2**15
-         filesz 0x000078f0 memsz 0x000078f0 flags rwx
-    LOAD off    0x00011400 vaddr 0x20001400 paddr 0x080078f0 align 2**15
+         filesz 0x00007950 memsz 0x00007950 flags rwx
+    LOAD off    0x00011400 vaddr 0x20001400 paddr 0x08007950 align 2**15
          filesz 0x0000005c memsz 0x0000005c flags rw-
     LOAD off    0x00018000 vaddr 0x20000000 paddr 0x20000000 align 2**15
-         filesz 0x00000000 memsz 0x000043b4 flags rw-
+         filesz 0x00000000 memsz 0x000043bc flags rw-
 private flags = 5000002: [Version5 EABI] [has entry point]
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 startup       000001c0  08000000  08000000  00008000  2**4
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         00007730  080001c0  080001c0  000081c0  2**4
+  1 .text         00007790  080001c0  080001c0  000081c0  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   2 .stacks       00001400  20000000  20000000  00018000  2**0
                   ALLOC
-  3 .data         0000005c  20001400  080078f0  00011400  2**2
+  3 .data         0000005c  20001400  08007950  00011400  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  4 .bss          00002f58  2000145c  2000145c  00018000  2**3
+  4 .bss          00002f60  2000145c  2000145c  00018000  2**3
                   ALLOC
   5 .ARM.attributes 00000035  00000000  00000000  0001145c  2**0
                   CONTENTS, READONLY
@@ -41,30 +41,30 @@ SYMBOL TABLE:
 00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
 00000000 l    d  .comment	00000000 .comment
 00000000 l    d  .debug_frame	00000000 .debug_frame
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans8.o
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans0.o
-20001464 l     O .bss	00000008 xbee.17553.5070
-20001400 l     O .data	0000000c lsCfg.16520.5068
-2000140c l     O .data	0000000c xbeeSerCfg.15028.5105
-200018f4 l     O .bss	00000300 dataPrintBuf.15345.5092
-20002050 l     O .bss	00000190 waBeacon.17558.5091
-20001418 l     O .data	0000000c serCfg.17555.5102
-08006e40 l     O .text	000000c0 _stm32_dma_streams.5201
-08006f00 l     O .text	00000016 ch_debug.5141
-200021f4 l     O .bss	00000044 mainthread.6320.4386.5073
-20002238 l     O .bss	00000160 _idle_thread_wa.4385.5181
-200024d8 l     O .bss	00000098 masterSample.17557.5058
-200025f8 l     O .bss	00001150 waSensor.17559.5090
-080072a0 l     O .text	00000020 mmc_vmt.10007.5104
-20003748 l     O .bss	00000010 sd.17551.5063
-20003758 l     O .bss	00000004 serialPort.16522.5055
-20003790 l     O .bss	00000020 default_heap.6947.5182
-200037b0 l     O .bss	00000658 waGps.17560.5088
-20001424 l     O .data	0000000c hsCfg.16521.5069
-20001430 l     O .data	0000000c mmcCfg.16518.5066
-20003e8c l     O .bss	00000230 FS.16517.5103
-200040f4 l     O .bss	00000004 SD.16523.5056
-2000143c l     O .data	00000020 serGpsCfg.16168.5072
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans8.o
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans0.o
+20001400 l     O .data	0000000c hsCfg.16521.5078
+20001460 l     O .bss	00000004 SD.16523.5065
+2000140c l     O .data	00000020 serGpsCfg.16168.5081
+2000142c l     O .data	0000000c xbeeSerCfg.15028.5114
+200018c8 l     O .bss	00000190 waBeacon.17562.5100
+20001a58 l     O .bss	00000008 xbee.17557.5079
+20001ebc l     O .bss	00000098 masterSample.17561.5067
+08006ea0 l     O .text	000000c0 _stm32_dma_streams.5210
+20001f54 l     O .bss	00000300 dataPrintBuf.15345.5101
+20001438 l     O .data	0000000c serCfg.17559.5111
+20002254 l     O .bss	00000230 FS.16517.5112
+20002484 l     O .bss	00000004 serialPort.16522.5064
+080072e0 l     O .text	00000016 ch_debug.5150
+200025c8 l     O .bss	00001150 waSensor.17563.5099
+20003798 l     O .bss	00000044 mainthread.6320.4386.5082
+20003858 l     O .bss	00000160 _idle_thread_wa.4385.5190
+200039b8 l     O .bss	00000010 sd.17555.5072
+200039c8 l     O .bss	00000020 default_heap.6947.5191
+20001444 l     O .data	0000000c lsCfg.16520.5077
+08007300 l     O .text	00000020 mmc_vmt.10007.5113
+20003a38 l     O .bss	00000658 waGps.17564.5097
+20001450 l     O .data	0000000c mmcCfg.16518.5075
 00000000 l    df *ABS*	00000000 build/obj/chcoreasm_v7m.o
 0000000c l       *ABS*	00000000 CONTEXT_OFFSET
 e000ed04 l       *ABS*	00000000 SCB_ICSR
@@ -74,364 +74,364 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 00000000 l    df *ABS*	00000000 _arm_fixdfsi.o
 00000000 l    df *ABS*	00000000 _arm_truncdfsf2.o
 00000000 l    df *ABS*	00000000 lib_a-memcpy.o
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans1.o
-080022c0 l     F .text	00000088 check_fs.12818.4335
-20004114 l     O .bss	00000004 FatFs.12998.4375
-20004118 l     O .bss	00000002 Fsid.12999.4376
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans2.o
-080026d0 l     F .text	00000050 spiReceive.4498
-08002720 l     F .text	00000024 recvr1.isra.0.9868.4488
-08002850 l     F .text	00000040 wait.isra.1.9875.4325
-08002890 l     F .text	00000036 sync.isra.2.9902.4340
-08002970 l     F .text	0000002c chThdEnqueueTimeoutS.4427
-080029a0 l     F .text	0000004e chIQGetTimeout.4359
-08002a10 l     F .text	00000078 chIQReadTimeout.4386
-08002ab0 l     F .text	00000050 chOQPutTimeout.4401
-08002b20 l     F .text	0000007a chOQWriteTimeout.4421
-08002c60 l     F .text	00000064 send_hdr.9878.4320
-08002d30 l     F .text	00000052 mmcStartSequentialRead.4293
-08002e00 l     F .text	00000030 mmcStopSequentialRead.part.7.9923.4472
-080030a0 l     F .text	00000060 mmcSequentialRead.4491
-2000411a l     O .bss	00000002 dummyrx.11759.4649
-080072c0 l     O .text	00000007 stopcmd.7715.10003.4648
-080072f0 l     O .text	00000010 vmt.13154.4651
-08007300 l     O .text	00000100 crc7_lookup_table.10006.4619
-08007400 l     O .text	00000002 start.7726.10005.4618
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans3.o
-08007410 l     O .text	0000000c default_config.12051.4721
-2000413c l     O .bss	00000004 errors.13409.4677
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans4.o
-08003d50 l     F .text	00000090 si70x0_init.4697
-08004840 l     F .text	00000192 serve_interrupt.12020.4673
-20004140 l     O .bss	00000001 sensCount.13672.4809
-08007470 l     O .text	0000000c ii2cCfg.15776.4822
-20004141 l     O .bss	00000001 sensCount.14060.4811
-08007480 l     O .text	0000000c ei2cCfg.15775.4823
-20004142 l     O .bss	00000001 activeAnalogCh.15777.4814
-08007490 l     O .text	00000028 analogGrp.15772.4817
-20004143 l     O .bss	00000001 sensCount.14818.4813
-20004144 l     O .bss	00000001 sensCount.14416.4812
-20004148 l     O .bss	0000000c analogSamples.15778.4824
-20004154 l     O .bss	00000001 sensCount.13874.4810
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans5.o
-08004a70 l     F .text	00000032 adc_lld_stop_conversion.4231
-080055e0 l     F .text	00000002 _unhandled_exception.4457
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans6.o
-080056c0 l     F .text	00000462 f_open.4375
-20004158 l     O .bss	00000224 lFile.4569
-08007730 l     O .text	00000080 ExCvt.12997.4610
-2000437c l     O .bss	00000002 lfNum.17561.4566
-00000000 l    df *ABS*	00000000 ccLwtHdD.ltrans7.o
-08005ea0 l     F .text	0000004e long_to_string_with_divisor.13045.4467
-080078a0 l     O .text	00000024 pow10.13096.4748
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans1.o
+08001ba0 l     F .text	00000050 spiReceive.4505
+08001bf0 l     F .text	00000024 recvr1.isra.0.9868.4495
+08001d20 l     F .text	00000040 wait.isra.1.9875.4325
+08001d60 l     F .text	00000036 sync.isra.2.9902.4340
+08001e40 l     F .text	0000002c chThdEnqueueTimeoutS.4427
+08001e70 l     F .text	0000004e chIQGetTimeout.4359
+08001ee0 l     F .text	00000078 chIQReadTimeout.4386
+08001f80 l     F .text	00000050 chOQPutTimeout.4401
+08001ff0 l     F .text	0000007a chOQWriteTimeout.4421
+08002130 l     F .text	00000064 send_hdr.9878.4320
+08002200 l     F .text	00000052 mmcStartSequentialRead.4293
+080022d0 l     F .text	00000030 mmcStopSequentialRead.part.7.9923.4479
+08002570 l     F .text	00000060 mmcSequentialRead.4498
+2000411c l     O .bss	00000002 dummyrx.11759.4654
+08007320 l     O .text	00000007 stopcmd.7715.10003.4653
+08007350 l     O .text	00000100 crc7_lookup_table.10006.4624
+08007450 l     O .text	00000010 vmt.13154.4656
+08007460 l     O .text	00000002 start.7726.10005.4623
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans2.o
+08002f20 l     F .text	00000088 check_fs.12818.4335
+20004120 l     O .bss	00000004 FatFs.12998.4375
+20004124 l     O .bss	00000002 Fsid.12999.4376
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans3.o
+08007470 l     O .text	0000000c default_config.12051.4721
+20004148 l     O .bss	00000004 errors.13409.4677
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans4.o
+08003db0 l     F .text	00000090 si70x0_init.4697
+080048d0 l     F .text	00000192 serve_interrupt.12020.4673
+2000414c l     O .bss	00000001 sensCount.14060.4811
+2000414d l     O .bss	00000001 sensCount.13672.4809
+080074d0 l     O .text	0000000c ii2cCfg.15776.4823
+080074e0 l     O .text	0000000c ei2cCfg.15775.4824
+080074f0 l     O .text	00000028 analogGrp.15772.4818
+2000414e l     O .bss	00000001 sensCount.14818.4813
+20004150 l     O .bss	0000000c analogSamples.15778.4825
+2000415c l     O .bss	00000001 activeAnalogCh.15777.4814
+2000415d l     O .bss	00000001 sensCount.14416.4812
+2000415e l     O .bss	00000001 sensCount.13874.4810
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans5.o
+08004b00 l     F .text	00000032 adc_lld_stop_conversion.4231
+08005670 l     F .text	00000002 _unhandled_exception.4457
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans6.o
+08005700 l     F .text	0000004e long_to_string_with_divisor.13045.4471
+08007790 l     O .text	00000024 pow10.13096.4752
+00000000 l    df *ABS*	00000000 cc1G1iwv.ltrans7.o
+08006310 l     F .text	00000462 f_open.4361
+20004160 l     O .bss	00000224 lFile.4554
+20004384 l     O .bss	00000002 lfNum.17565.4551
+080078d0 l     O .text	00000080 ExCvt.12997.4559
 00000000 l    df *ABS*	00000000 strcpy.c
 00000000 l    df *ABS*	00000000 strlen.c
 00000000 l    df *ABS*	00000000 strncmp.c
 00000000 l    df *ABS*	00000000 
-080078f0 l       .stacks	00000000 _etext
+08007950 l       .stacks	00000000 _etext
 080001c0 l       startup	00000000 __fini_array_end
 00010000 l       *ABS*	00000000 __ram_size__
 00000000 l       startup	00000000 _text
 080001c0 l       startup	00000000 __fini_array_start
 20000000 l       startup	00000000 __ram_start__
 20010000 l       *ABS*	00000000 __ram_end__
-200043b4 l       .bss	00000000 _end
+200043bc l       .bss	00000000 _end
 00000400 l       *ABS*	00000000 __main_stack_size__
 00001000 l       *ABS*	00000000 __process_stack_size__
-08003630 g     F .text	000003e0 .hidden gpsThread
-08006280 g     F .text	00000040 .hidden uStrInsertChar.constprop.3
-080055e0 g     F .text	00000002 .hidden Vector58
-080055e0 g     F .text	00000002 .hidden VectorE8
-080055e0 g     F .text	00000002 .hidden Vector9C
-08006c30 g     F .text	000000ba strcpy
-080062c0 g     F .text	00000030 .hidden uStrPrependChar
-08002240 g     F .text	00000080 .hidden dir_sdi.12831.constprop.55
-080055e0 g     F .text	00000002 .hidden VectorAC
-08006bd0 g     F .text	00000048 chThdExit
-08005150 g     F .text	0000005c .hidden chEvtBroadcastFlagsI
-08004a20 g     F .text	0000004c .hidden writeHeader
-08002750 g     F .text	000000e0 .hidden chSchGoSleepTimeoutS
-080055e0 g     F .text	00000002 .hidden DebugMon_Handler
-080055e0 g     F .text	00000002 .hidden Vector1A0
-080051b0 g     F .text	000000c4 .hidden chMtxLockS
-08003100 g     F .text	00000044 .hidden disk_read.constprop.57
-080055e0 g     F .text	00000002 .hidden Vector5C
-080047e0 g     F .text	00000054 .hidden mmc_write.9978
-08001424 g     F .text	0000005a .hidden __floatdidf
-080055e0 g     F .text	00000002 .hidden Vector11C
-080055e0 g     F .text	00000002 .hidden HardFault_Handler
-080055e0 g     F .text	00000002 .hidden Vector1B8
-080055e0 g     F .text	00000002 .hidden Vector19C
-08001c90 g     F .text	000000f2 .hidden put_fat.part.8.12841
-08003c10 g     F .text	00000068 .hidden si70x0_readHumidity
-08006780 g     F .text	00000028 .hidden chprintf.16082.constprop.1
-080055e0 g     F .text	00000002 .hidden Vector8C
-080055e0 g     F .text	00000002 .hidden SysTick_Handler
+08003690 g     F .text	000003e0 .hidden gpsThread
+08005b40 g     F .text	00000040 .hidden uStrInsertChar.constprop.3
+08005670 g     F .text	00000002 .hidden Vector58
+08005670 g     F .text	00000002 .hidden VectorE8
+08005670 g     F .text	00000002 .hidden Vector9C
+08006c90 g     F .text	000000ba strcpy
+08005b80 g     F .text	00000030 .hidden uStrPrependChar
+08005670 g     F .text	00000002 .hidden VectorAC
+08006c30 g     F .text	00000048 chThdExit
+080051e0 g     F .text	0000005c .hidden chEvtBroadcastFlagsI
+08004ab0 g     F .text	0000004c .hidden writeHeader
+08001c20 g     F .text	000000e0 .hidden chSchGoSleepTimeoutS
+08005670 g     F .text	00000002 .hidden DebugMon_Handler
+08005670 g     F .text	00000002 .hidden Vector1A0
+08005240 g     F .text	000000c4 .hidden chMtxLockS
+08005670 g     F .text	00000002 .hidden Vector5C
+08004870 g     F .text	00000054 .hidden mmc_write.9978
+08001454 g     F .text	0000005a .hidden __floatdidf
+08005670 g     F .text	00000002 .hidden Vector11C
+08005670 g     F .text	00000002 .hidden HardFault_Handler
+08005670 g     F .text	00000002 .hidden Vector1B8
+08005670 g     F .text	00000002 .hidden Vector19C
+080028f0 g     F .text	000000f2 .hidden put_fat.part.8.12841
+08003c70 g     F .text	00000068 .hidden si70x0_readHumidity
+08006040 g     F .text	00000028 .hidden chprintf.16082.constprop.1
+08005670 g     F .text	00000002 .hidden Vector8C
+08005670 g     F .text	00000002 .hidden SysTick_Handler
 2000145c g     O .bss	00000004 .hidden DEBUG.16890
-080055e0 g     F .text	00000002 .hidden VectorDC
-080055e0 g     F .text	00000002 .hidden PendSV_Handler
-080055e0 g     F .text	00000002 .hidden Vector168
-080055e0 g     F .text	00000002 .hidden NMI_Handler
+08005670 g     F .text	00000002 .hidden VectorDC
+08005670 g     F .text	00000002 .hidden PendSV_Handler
+08005670 g     F .text	00000002 .hidden Vector168
+08005670 g     F .text	00000002 .hidden NMI_Handler
 08000000 g     O startup	000001c0 _vectors
-200040bc g     O .bss	00000038 .hidden I2CD3
-080067f0 g     F .text	0000001c .hidden chprintf.16383
-08004d50 g     F .text	00000024 .hidden chSchGoSleepS
-08005f10 g     F .text	00000010 .hidden notify6.12010
-080055e0 g     F .text	00000002 .hidden Vector110
-08002900 g     F .text	00000048 .hidden mmcDisconnect
-20003e54 g     O .bss	00000038 .hidden I2CD1
-200043b4 g       .bss	00000000 __heap_base__
-2000146c g     O .bss	00000030 .hidden SPID3
-08004f70 g     F .text	00000028 .hidden Vector120
-08002be0 g     F .text	0000002a .hidden validate.12787
-080055e0 g     F .text	00000002 .hidden VectorC8
-08002ff0 g     F .text	000000a6 .hidden read_CxD.9894
-08005ef0 g     F .text	00000004 .hidden mmc_lld_is_write_protected
-080031f0 g     F .text	0000007c .hidden chThdCreateStatic
-08004d30 g     F .text	00000018 .hidden chSchRescheduleS
-080035a0 g     F .text	0000008c .hidden spi_lld_serve_rx_interrupt.11704
-080055e0 g     F .text	00000002 .hidden Vector94
-08003340 g     F .text	00000090 .hidden uart_lld_serve_rx_end_irq.12164
-080055e0 g     F .text	00000002 .hidden VectorA8
-08003b40 g     F .text	00000016 .hidden I2CSensor_transact_buf
-20002570 g     O .bss	00000080 .hidden dma_isr_redir.10833
-080019a0 g     F .text	00000134 memcpy
-080055e0 g     F .text	00000002 .hidden VectorB4
-080013b4 g     F .text	00000022 .hidden __floatsidf
-08004d80 g     F .text	00000024 .hidden chThdSuspendS
-08005f00 g     F .text	00000004 .hidden mmc_lld_is_card_inserted
-080032d0 g     F .text	00000048 .hidden i2c_lld_serve_tx_end_irq.11398
-2000149c g     O .bss	00000458 .hidden SD2
-08005120 g     F .text	0000002c .hidden chSchReadyI
-200040f8 g     O .bss	0000001c .hidden UARTD1
-08005590 g     F .text	00000044 .hidden chTMStopMeasurementX
-08005b30 g     F .text	00000218 .hidden i2cStart
-08003190 g     F .text	00000060 .hidden chsnprintf
+200040c8 g     O .bss	00000038 .hidden I2CD3
+080060b0 g     F .text	0000001c .hidden chprintf.16383
+08004de0 g     F .text	00000024 .hidden chSchGoSleepS
+08005770 g     F .text	00000010 .hidden notify6.12010
+08005670 g     F .text	00000002 .hidden Vector110
+08001dd0 g     F .text	00000048 .hidden mmcDisconnect
+20004090 g     O .bss	00000038 .hidden I2CD1
+200043bc g       .bss	00000000 __heap_base__
+200037e0 g     O .bss	00000030 .hidden SPID3
+08005000 g     F .text	00000028 .hidden Vector120
+080020b0 g     F .text	0000002a .hidden validate.12787
+08005670 g     F .text	00000002 .hidden VectorC8
+080024c0 g     F .text	000000a6 .hidden read_CxD.9894
+08005750 g     F .text	00000004 .hidden mmc_lld_is_write_protected
+080026c0 g     F .text	0000007c .hidden chThdCreateStatic
+08004dc0 g     F .text	00000018 .hidden chSchRescheduleS
+08003600 g     F .text	0000008c .hidden spi_lld_serve_rx_interrupt.11704
+08005670 g     F .text	00000002 .hidden Vector94
+080033a0 g     F .text	00000090 .hidden uart_lld_serve_rx_end_irq.12164
+08005670 g     F .text	00000002 .hidden VectorA8
+08003ba0 g     F .text	00000016 .hidden I2CSensor_transact_buf
+20003718 g     O .bss	00000080 .hidden dma_isr_redir.10833
+080019d0 g     F .text	00000134 memcpy
+08005670 g     F .text	00000002 .hidden VectorB4
+080013e4 g     F .text	00000022 .hidden __floatsidf
+08004e10 g     F .text	00000024 .hidden chThdSuspendS
+08005760 g     F .text	00000004 .hidden mmc_lld_is_card_inserted
+08003330 g     F .text	00000048 .hidden i2c_lld_serve_tx_end_irq.11398
+2000146c g     O .bss	00000458 .hidden SD2
+080051b0 g     F .text	0000002c .hidden chSchReadyI
+20004100 g     O .bss	0000001c .hidden UARTD1
+08005620 g     F .text	00000044 .hidden chTMStopMeasurementX
+08006780 g     F .text	00000218 .hidden i2cStart
+08002660 g     F .text	00000060 .hidden chsnprintf
 20001400 g       .stacks	00000000 __main_thread_stack_end__
-080068d0 g     F .text	0000001e .hidden spiUnselect
-08005090 g     F .text	0000002c .hidden Vector74
-08006160 g     F .text	00000014 .hidden Vector160
-080055e0 g     F .text	00000002 .hidden Vector1B0
-080055e0 g     F .text	00000002 .hidden UsageFault_Handler
-080055e0 g     F .text	00000002 .hidden VectorEC
+08006070 g     F .text	0000001c .hidden chprintf.17351
+08006190 g     F .text	0000001e .hidden spiUnselect
+08005120 g     F .text	0000002c .hidden Vector74
+080025d0 g     F .text	00000044 .hidden disk_read.constprop.58
+080059c0 g     F .text	00000014 .hidden Vector160
+08005670 g     F .text	00000002 .hidden Vector1B0
+08005670 g     F .text	00000002 .hidden UsageFault_Handler
+08005670 g     F .text	00000002 .hidden VectorEC
 2000145c g       .bss	00000000 _bss_start
-080060a0 g     F .text	00000024 .hidden writes.13130
-08002bc0 g     F .text	00000018 .hidden disk_status
-2000411c g     O .bss	00000014 .hidden tokBuf.16170
+08005900 g     F .text	00000024 .hidden writes.13130
+08002090 g     F .text	00000018 .hidden disk_status
+20004128 g     O .bss	00000014 .hidden tokBuf.16170
 20010000 g       *ABS*	00000000 __heap_end__
-08001394 g     F .text	0000001e .hidden __aeabi_ui2d
-20003e20 g     O .bss	00000034 .hidden MMCD1
-08001110 g     F .text	00000000 .hidden __aeabi_drsub
-080055e0 g     F .text	00000002 .hidden Vector40
-08005d50 g     F .text	000000c8 .hidden openNewLogfile.part.0.17361
-080055e0 g     F .text	00000002 .hidden VectorF8
-080055e0 g     F .text	00000002 .hidden Vector108
-08001ae0 g     F .text	00000032 .hidden move_window.12811
-08006180 g     F .text	00000014 .hidden VectorBC
-080055e0 g     F .text	00000002 .hidden Vector190
-08004e80 g     F .text	0000002c .hidden Vector150
-08004f40 g     F .text	0000002c .hidden Vector124
-08002a00 g     F .text	0000000a .hidden get.10200
-080013d8 g     F .text	0000003a .hidden __extendsfdf2
-080016d4 g     F .text	000001d0 .hidden __aeabi_ddiv
-0800111c g     F .text	00000276 .hidden __adddf3
-08001480 g     F .text	00000254 .hidden __aeabi_dmul
-080055e0 g     F .text	00000002 .hidden Vector148
-080055e0 g     F .text	00000002 .hidden Vector188
-08001394 g     F .text	0000001e .hidden __floatunsidf
-08006320 g     F .text	00000394 .hidden chvprintf
-08002d90 g     F .text	00000030 .hidden send_command_R1.9889
-080055e0 g     F .text	00000002 .hidden Vector198
-080055e0 g     F .text	00000002 .hidden Vector118
-08001900 g     F .text	0000009e .hidden __aeabi_d2f
-080055e0 g     F .text	00000002 .hidden Vector64
-200043b4 g       .bss	00000000 _bss_end
-08006a10 g     F .text	000001b8 Reset_Handler
-080055e0 g     F .text	00000002 .hidden VectorCC
-080018b0 g     F .text	0000004e .hidden __fixdfsi
-080055e0 g     F .text	00000002 .hidden Vector54
-08005e30 g     F .text	00000002 .hidden gpsRxEnd.16072
-080055e0 g     F .text	00000002 .hidden Vector98
-2000375c g     O .bss	00000034 .hidden ADCD1
-08004a00 g     F .text	00000014 .hidden VectorD8
-200021e4 g     O .bss	00000010 .hidden logger.17547
-080055e0 g     F .text	00000002 .hidden Vector138
-0800111c g     F .text	00000276 .hidden __aeabi_dadd
-080055e0 g     F .text	00000002 .hidden Vector24
-200025f0 g     O .bss	00000004 .hidden dma_streams_mask.10838
-080055e0 g     F .text	00000002 .hidden Vector1AC
-08001414 g     F .text	0000006a .hidden __aeabi_ul2d
-08006c20 g     F .text	00000004 chSchDoReschedule
-080055e0 g     F .text	00000002 .hidden Vector178
-08002830 g     F .text	00000018 .hidden chThdSleep
-20001bf4 g     O .bss	00000002 .hidden dummytx.11757
-08004fd0 g     F .text	0000002c .hidden Vector84
-08005e60 g     F .text	0000001a .hidden get.13121
-080055e0 g     F .text	00000002 .hidden Vector1A4
-08005e80 g     F .text	0000001c .hidden put.13111
-08005350 g     F .text	000000f8 .hidden i2c_lld_serve_event_interrupt.11409
-08001b20 g     F .text	0000016c .hidden f_close
-08001118 g     F .text	0000027a .hidden __aeabi_dsub
-080055e0 g     F .text	00000002 .hidden VectorD0
-08004ab0 g     F .text	00000018 .hidden mmcGetInfo
-080055e0 g     F .text	00000002 .hidden Vector1B4
-08001414 g     F .text	0000006a .hidden __floatundidf
-080055e0 g     F .text	00000002 .hidden Vector140
-080055e0 g     F .text	00000002 .hidden VectorE4
-08006130 g     F .text	00000024 .hidden VectorC0
-08002bb0 g     F .text	0000000a .hidden write.10191
-08006d50 g     F .text	000000b4 strncmp
-08004e20 g     F .text	0000002c .hidden Vector158
-08002aa0 g     F .text	0000000a .hidden read.10180
-08004eb0 g     F .text	00000028 .hidden Vector130
-080010e0 g     F .text	00000000 _port_switch
-08001d90 g     F .text	000000c2 .hidden get_fat.part.6.12827
-08004db0 g     F .text	00000064 .hidden _port_irq_epilogue
-080055e0 g     F .text	00000002 .hidden Vector134
-080067b0 g     F .text	0000001c .hidden chprintf.17349
-08006210 g     F .text	00000064 .hidden sdObjectInit.constprop.26
-08002b10 g     F .text	0000000a .hidden put.10208
-08004ad0 g     F .text	00000034 .hidden chCoreAlloc
-080013b4 g     F .text	00000022 .hidden __aeabi_i2d
-080055e0 g     F .text	00000002 .hidden VectorF0
-08004ee0 g     F .text	0000002c .hidden Vector12C
-08003de0 g     F .text	000009f8 .hidden sensorThread
-080055e0 g     F .text	00000002 .hidden Vector13C
-080016d4 g     F .text	000001d0 .hidden __divdf3
-080055e0 g     F .text	00000002 .hidden Vector100
-08001480 g     F .text	00000254 .hidden __muldf3
-080078f0 g       .stacks	00000000 _textdata
-080055e0 g     F .text	00000002 .hidden VectorE0
-080055e0 g     F .text	00000002 .hidden VectorF4
-080028d0 g     F .text	0000002c .hidden mmcSync
-08002a90 g     F .text	00000006 .hidden readt.10173
-080029f0 g     F .text	00000006 .hidden gett.10196
-08002950 g     F .text	00000020 .hidden chThdSleepUntil
-08001e60 g     F .text	000000c6 .hidden create_chain.12846
-080055e0 g     F .text	00000002 .hidden MemManage_Handler
-080001c0 g     F .text	00000f18 .hidden main
-080050f0 g     F .text	00000028 .hidden Vector6C
-080055e0 g     F .text	00000002 .hidden VectorA0
-08002350 g     F .text	0000031c .hidden find_volume.12822
-20002398 g     O .bss	00000140 .hidden GPS.16169
-08004ba0 g     F .text	00000020 .hidden SVC_Handler
-080033d0 g     F .text	00000058 .hidden uart_lld_serve_tx_end_irq.12160
-08001900 g     F .text	0000009e .hidden __truncdfsf2
+080013c4 g     F .text	0000001e .hidden __aeabi_ui2d
+20003a00 g     O .bss	00000034 .hidden MMCD1
+08001140 g     F .text	00000000 .hidden __aeabi_drsub
+08005670 g     F .text	00000002 .hidden Vector40
+08005670 g     F .text	00000002 .hidden VectorF8
+08005670 g     F .text	00000002 .hidden Vector108
+08002740 g     F .text	00000032 .hidden move_window.12811
+080059e0 g     F .text	00000014 .hidden VectorBC
+08005670 g     F .text	00000002 .hidden Vector190
+08004f10 g     F .text	0000002c .hidden Vector150
+08004fd0 g     F .text	0000002c .hidden Vector124
+08001ed0 g     F .text	0000000a .hidden get.10200
+08001408 g     F .text	0000003a .hidden __extendsfdf2
+08001704 g     F .text	000001d0 .hidden __aeabi_ddiv
+0800114c g     F .text	00000276 .hidden __adddf3
+080014b0 g     F .text	00000254 .hidden __aeabi_dmul
+08005670 g     F .text	00000002 .hidden Vector148
+08005670 g     F .text	00000002 .hidden Vector188
+080013c4 g     F .text	0000001e .hidden __floatunsidf
+08005be0 g     F .text	00000394 .hidden chvprintf
+08002260 g     F .text	00000030 .hidden send_command_R1.9889
+08005670 g     F .text	00000002 .hidden Vector198
+08005670 g     F .text	00000002 .hidden Vector118
+08001930 g     F .text	0000009e .hidden __aeabi_d2f
+08005670 g     F .text	00000002 .hidden Vector64
+200043bc g       .bss	00000000 _bss_end
+08006a70 g     F .text	000001b8 Reset_Handler
+08005670 g     F .text	00000002 .hidden VectorCC
+080018e0 g     F .text	0000004e .hidden __fixdfsi
+08005670 g     F .text	00000002 .hidden Vector54
+08005690 g     F .text	00000002 .hidden gpsRxEnd.16072
+08005670 g     F .text	00000002 .hidden Vector98
+20003820 g     O .bss	00000034 .hidden ADCD1
+08004a90 g     F .text	00000014 .hidden VectorD8
+08005670 g     F .text	00000002 .hidden Vector138
+0800114c g     F .text	00000276 .hidden __aeabi_dadd
+08005670 g     F .text	00000002 .hidden Vector24
+200037dc g     O .bss	00000004 .hidden dma_streams_mask.10838
+08005670 g     F .text	00000002 .hidden Vector1AC
+08001444 g     F .text	0000006a .hidden __aeabi_ul2d
+08006c80 g     F .text	00000004 chSchDoReschedule
+08002ea0 g     F .text	00000080 .hidden dir_sdi.12831.constprop.56
+08005670 g     F .text	00000002 .hidden Vector178
+08001d00 g     F .text	00000018 .hidden chThdSleep
+20001468 g     O .bss	00000002 .hidden dummytx.11757
+08005060 g     F .text	0000002c .hidden Vector84
+080056c0 g     F .text	0000001a .hidden get.13121
+08005670 g     F .text	00000002 .hidden Vector1A4
+080056e0 g     F .text	0000001c .hidden put.13111
+080053e0 g     F .text	000000f8 .hidden i2c_lld_serve_event_interrupt.11409
+08002780 g     F .text	0000016c .hidden f_close
+08001148 g     F .text	0000027a .hidden __aeabi_dsub
+08005670 g     F .text	00000002 .hidden VectorD0
+08004b40 g     F .text	00000018 .hidden mmcGetInfo
+08005670 g     F .text	00000002 .hidden Vector1B4
+08001444 g     F .text	0000006a .hidden __floatundidf
+08005670 g     F .text	00000002 .hidden Vector140
+08005670 g     F .text	00000002 .hidden VectorE4
+08005990 g     F .text	00000024 .hidden VectorC0
+08002080 g     F .text	0000000a .hidden write.10191
+08006db0 g     F .text	000000b4 strncmp
+08004eb0 g     F .text	0000002c .hidden Vector158
+08001f70 g     F .text	0000000a .hidden read.10180
+08004f40 g     F .text	00000028 .hidden Vector130
+08001110 g     F .text	00000000 _port_switch
+08005a00 g     F .text	00000060 .hidden chSchWakeupS.constprop.45
+080029f0 g     F .text	000000c2 .hidden get_fat.part.6.12827
+08004e40 g     F .text	00000064 .hidden _port_irq_epilogue
+08005670 g     F .text	00000002 .hidden Vector134
+20003810 g     O .bss	00000010 .hidden logger.17551
+08005ad0 g     F .text	00000064 .hidden sdObjectInit.constprop.26
+08001fe0 g     F .text	0000000a .hidden put.10208
+08004b60 g     F .text	00000034 .hidden chCoreAlloc
+080013e4 g     F .text	00000022 .hidden __aeabi_i2d
+08005670 g     F .text	00000002 .hidden VectorF0
+08004f70 g     F .text	0000002c .hidden Vector12C
+08003e40 g     F .text	00000a2c .hidden sensorThread
+08005670 g     F .text	00000002 .hidden Vector13C
+08001704 g     F .text	000001d0 .hidden __divdf3
+08005670 g     F .text	00000002 .hidden Vector100
+080014b0 g     F .text	00000254 .hidden __muldf3
+08007950 g       .stacks	00000000 _textdata
+08005670 g     F .text	00000002 .hidden VectorE0
+08005670 g     F .text	00000002 .hidden VectorF4
+08001da0 g     F .text	0000002c .hidden mmcSync
+08001f60 g     F .text	00000006 .hidden readt.10173
+08001ec0 g     F .text	00000006 .hidden gett.10196
+08001e20 g     F .text	00000020 .hidden chThdSleepUntil
+08002ac0 g     F .text	000000c6 .hidden create_chain.12846
+08005670 g     F .text	00000002 .hidden MemManage_Handler
+080001c0 g     F .text	00000f48 .hidden main
+08005180 g     F .text	00000028 .hidden Vector6C
+08005670 g     F .text	00000002 .hidden VectorA0
+08002fb0 g     F .text	0000031c .hidden find_volume.12822
+20002488 g     O .bss	00000140 .hidden GPS.16169
+08004c30 g     F .text	00000020 .hidden SVC_Handler
+08003430 g     F .text	00000058 .hidden uart_lld_serve_tx_end_irq.12160
+08001930 g     F .text	0000009e .hidden __truncdfsf2
 080001c0 g       startup	00000000 __init_array_end
-08001424 g     F .text	0000005a .hidden __aeabi_l2d
-080055e0 g     F .text	00000002 .hidden VectorC4
-08005030 g     F .text	00000028 .hidden Vector7C
-08002670 g     F .text	00000058 .hidden f_mount
-080055e0 g     F .text	00000002 .hidden Vector180
-08004bc0 g     F .text	00000068 .hidden dmaStreamRelease
-080060d0 g     F .text	00000026 .hidden reads.13124
-20004130 g     O .bss	0000000c .hidden gpsSem
-080055f0 g     F .text	00000084 .hidden VectorB0
-080055e0 g     F .text	00000002 .hidden Vector90
-08002ba0 g     F .text	00000006 .hidden writet.10185
-080055e0 g     F .text	00000002 .hidden Vector114
-080010f8 g     F .text	00000000 _port_thread_start
-08006100 g     F .text	00000024 .hidden Vector164
-080055e0 g     F .text	00000002 .hidden Vector60
-080055e0 g     F .text	00000002 .hidden Vector1C
-08004cf0 g     F .text	0000003c .hidden chSchDoRescheduleAhead
-080055e0 g     F .text	00000002 .hidden Vector1BC
-08006810 g     F .text	0000001c .hidden chprintf.15657
-080055e0 g     F .text	00000002 .hidden Vector17C
-08002cd0 g     F .text	00000052 .hidden mmcStartSequentialWrite
-080055e0 g     F .text	00000002 .hidden Vector48
-20001bf8 g     O .bss	00000458 .hidden SD6
+08001454 g     F .text	0000005a .hidden __aeabi_l2d
+08005670 g     F .text	00000002 .hidden VectorC4
+080050c0 g     F .text	00000028 .hidden Vector7C
+080032d0 g     F .text	00000058 .hidden f_mount
+08005670 g     F .text	00000002 .hidden Vector180
+08004c50 g     F .text	00000068 .hidden dmaStreamRelease
+08005930 g     F .text	00000026 .hidden reads.13124
+2000413c g     O .bss	0000000c .hidden gpsSem
+08001b10 g     F .text	00000084 .hidden VectorB0
+08005670 g     F .text	00000002 .hidden Vector90
+08002070 g     F .text	00000006 .hidden writet.10185
+08005670 g     F .text	00000002 .hidden Vector114
+08001128 g     F .text	00000000 _port_thread_start
+08005960 g     F .text	00000024 .hidden Vector164
+08005670 g     F .text	00000002 .hidden Vector60
+08005670 g     F .text	00000002 .hidden Vector1C
+08004d80 g     F .text	0000003c .hidden chSchDoRescheduleAhead
+08005670 g     F .text	00000002 .hidden Vector1BC
+080060d0 g     F .text	0000001c .hidden chprintf.15657
+080069a0 g     F .text	000000c8 .hidden openNewLogfile.part.0.17363
+08005670 g     F .text	00000002 .hidden Vector17C
+080021a0 g     F .text	00000052 .hidden mmcStartSequentialWrite
+08005670 g     F .text	00000002 .hidden Vector48
+20001a60 g     O .bss	00000458 .hidden SD6
 20000400 g       .stacks	00000000 __process_stack_base__
-080055e0 g     F .text	00000002 .hidden Vector1A8
-080055e0 g     F .text	00000002 .hidden Vector16C
-08001f30 g     F .text	0000013c .hidden dir_next.12850
-080050c0 g     F .text	0000002c .hidden Vector70
-08005fa0 g     F .text	00000070 .hidden VectorD4
-08006010 g     F .text	00000090 .hidden gpsRxChar.16096
-08006910 g     F .text	0000004c .hidden spiStop
-08004b10 g     F .text	00000070 .hidden wakeup.4718
-08002e30 g     F .text	00000054 .hidden spiIgnore
-08005e40 g     F .text	00000002 .hidden gpsTxC.16069
+08005670 g     F .text	00000002 .hidden Vector1A8
+08005670 g     F .text	00000002 .hidden Vector16C
+08002b90 g     F .text	0000013c .hidden dir_next.12850
+08005150 g     F .text	0000002c .hidden Vector70
+08005800 g     F .text	00000070 .hidden VectorD4
+08005870 g     F .text	00000090 .hidden gpsRxChar.16096
+080061d0 g     F .text	0000004c .hidden spiStop
+08004ba0 g     F .text	00000070 .hidden wakeup.4718
+08002300 g     F .text	00000054 .hidden spiIgnore
+200039e8 g     O .bss	00000018 .hidden sensorLog.17550
+080056a0 g     F .text	00000002 .hidden gpsTxC.16069
 20001400 g       .data	00000000 _data
-200021e0 g     O .bss	00000004 .hidden endmem.6822
-080055e0 g     F .text	00000002 .hidden Vector4C
-080055e0 g     F .text	00000002 .hidden Vector144
-08005000 g     F .text	0000002c .hidden Vector80
-08005280 g     F .text	00000012 .hidden chThdResumeI
-08001106 g     F .text	00000000 _port_switch_from_isr
-20001460 g     O .bss	00000004 .hidden nextmem.6820
-080049e0 g     F .text	00000014 .hidden Vector15C
-080052a0 g     F .text	000000ae .hidden i2c_lld_serve_error_interrupt.11412
-08006750 g     F .text	00000024 .hidden chprintf.13613.constprop.12
-08003bb0 g     F .text	00000054 .hidden si70x0_readTemperature
-080055e0 g     F .text	00000002 .hidden Vector68
-08003270 g     F .text	00000060 .hidden chMtxUnlock
-080068f0 g     F .text	0000001e .hidden spiSelect
-08002c10 g     F .text	00000050 .hidden spiSend
+20001eb8 g     O .bss	00000004 .hidden endmem.6822
+08005670 g     F .text	00000002 .hidden Vector4C
+08005670 g     F .text	00000002 .hidden Vector144
+08005090 g     F .text	0000002c .hidden Vector80
+08005310 g     F .text	00000012 .hidden chThdResumeI
+08001136 g     F .text	00000000 _port_switch_from_isr
+20001464 g     O .bss	00000004 .hidden nextmem.6820
+08004a70 g     F .text	00000014 .hidden Vector15C
+08005330 g     F .text	000000ae .hidden i2c_lld_serve_error_interrupt.11412
+08006010 g     F .text	00000024 .hidden chprintf.13613.constprop.12
+08003c10 g     F .text	00000054 .hidden si70x0_readTemperature
+08005670 g     F .text	00000002 .hidden Vector68
+08005a60 g     F .text	00000060 .hidden chMtxUnlock
+080061b0 g     F .text	0000001e .hidden spiSelect
+080020e0 g     F .text	00000050 .hidden spiSend
 20000400 g       .stacks	00000000 __main_stack_end__
-08005060 g     F .text	0000002c .hidden Vector78
-08003430 g     F .text	00000164 .hidden mmcConnect
-08006880 g     F .text	00000048 .hidden usart_stop.12171
+080050f0 g     F .text	0000002c .hidden Vector78
+08003490 g     F .text	00000164 .hidden mmcConnect
+08006140 g     F .text	00000048 .hidden usart_stop.12171
 2000145c g       .data	00000000 _edata
-08002b00 g     F .text	00000006 .hidden putt.10203
-08005f20 g     F .text	00000010 .hidden notify2.12013
-08006200 g     F .text	0000000c .hidden chTMStartMeasurementX.constprop.31
-08002070 g     F .text	000001c8 .hidden f_write
-08003b60 g     F .text	00000042 .hidden si70x0_heaterEnable
-080066f0 g     F .text	00000058 .hidden I2CSensor_init
-08002dc0 g     F .text	0000003e .hidden send_command_R3.9883
-080055e0 g     F .text	00000002 .hidden Vector170
-08003320 g     F .text	0000001c .hidden spi_lld_serve_tx_interrupt.11700
-08004b80 g     F .text	00000014 .hidden _idle_thread.4338
-08005450 g     F .text	00000068 .hidden Vector88
-08005f30 g     F .text	00000068 .hidden i2c_lld_serve_rx_end_irq.11402
-08002f10 g     F .text	00000074 .hidden disk_write
-08002f90 g     F .text	00000056 .hidden sync_window.part.3.12801
+08001fd0 g     F .text	00000006 .hidden putt.10203
+08005780 g     F .text	00000010 .hidden notify2.12013
+08005ac0 g     F .text	0000000c .hidden chTMStartMeasurementX.constprop.31
+08002cd0 g     F .text	000001c8 .hidden f_write
+08003bc0 g     F .text	00000042 .hidden si70x0_heaterEnable
+08005fb0 g     F .text	00000058 .hidden I2CSensor_init
+08002290 g     F .text	0000003e .hidden send_command_R3.9883
+08005670 g     F .text	00000002 .hidden Vector170
+08003380 g     F .text	0000001c .hidden spi_lld_serve_tx_interrupt.11700
+08004c10 g     F .text	00000014 .hidden _idle_thread.4338
+080054e0 g     F .text	00000068 .hidden Vector88
+08005790 g     F .text	00000068 .hidden i2c_lld_serve_rx_end_irq.11402
+080023e0 g     F .text	00000074 .hidden disk_write
+08002460 g     F .text	00000056 .hidden sync_window.part.3.12801
 20000400 g       .stacks	00000000 __main_thread_stack_base__
-080018b0 g     F .text	0000004e .hidden __aeabi_d2iz
-080055e0 g     F .text	00000002 .hidden Vector104
-080055e0 g     F .text	00000002 .hidden Vector184
-08005680 g     F .text	0000003c .hidden beaconThread
-080055e0 g     F .text	00000002 .hidden Vector10C
-0800110a g       .text	00000000 _port_exit_from_isr
-080067d0 g     F .text	0000001c .hidden chprintf.16741
+080018e0 g     F .text	0000004e .hidden __aeabi_d2iz
+08005670 g     F .text	00000002 .hidden Vector104
+08005670 g     F .text	00000002 .hidden Vector184
+080062d0 g     F .text	0000003c .hidden beaconThread
+08005670 g     F .text	00000002 .hidden Vector10C
+0800113a g       .text	00000000 _port_exit_from_isr
+08006090 g     F .text	0000001c .hidden chprintf.16741
 080001c0 g       startup	00000000 __init_array_start
-08007710 g     O .text	00000002 .hidden stop.7732.10004
-080066c0 g     F .text	00000024 .hidden chprintf.13294.constprop.13
-20003e08 g     O .bss	00000018 .hidden sensorLog.17546
-08006960 g     F .text	000000a4 .hidden spiStart
-08005e50 g     F .text	00000002 .hidden gpsTxbufEnd.16066
-080055e0 g     F .text	00000002 .hidden Vector14C
-08006830 g     F .text	00000042 .hidden get_ldnumber.12784
-080055e0 g     F .text	00000002 .hidden BusFault_Handler
-080055e0 g     F .text	00000002 .hidden Vector50
-20004380 g     O .bss	00000034 .hidden ch
-08006cf0 g     F .text	0000005e strlen
-08004c30 g     F .text	000000c0 .hidden dmaStreamAllocate
-080055e0 g     F .text	00000002 .hidden Vector194
-08004e50 g     F .text	0000002c .hidden Vector154
-080061a0 g     F .text	00000060 .hidden chSchWakeupS.constprop.44
-080054c0 g     F .text	000000ca .hidden adc_lld_serve_rx_interrupt.11091
+08007770 g     O .text	00000002 .hidden stop.7732.10004
+08005f80 g     F .text	00000024 .hidden chprintf.13294.constprop.13
+08006220 g     F .text	000000a4 .hidden spiStart
+080056b0 g     F .text	00000002 .hidden gpsTxbufEnd.16066
+08005670 g     F .text	00000002 .hidden Vector14C
+080060f0 g     F .text	00000042 .hidden get_ldnumber.12784
+08005670 g     F .text	00000002 .hidden BusFault_Handler
+08005670 g     F .text	00000002 .hidden Vector50
+20004388 g     O .bss	00000034 .hidden ch
+08006d50 g     F .text	0000005e strlen
+08004cc0 g     F .text	000000c0 .hidden dmaStreamAllocate
+08005670 g     F .text	00000002 .hidden Vector194
+08004ee0 g     F .text	0000002c .hidden Vector154
+08005550 g     F .text	000000ca .hidden adc_lld_serve_rx_interrupt.11091
 20000000 g       .stacks	00000000 __main_stack_base__
-080055e0 g     F .text	00000002 .hidden Vector44
-080013d8 g     F .text	0000003a .hidden __aeabi_f2d
-080055e0 g     F .text	00000002 .hidden Vector28
-08002e90 g     F .text	0000007c .hidden mmcSequentialWrite
-080055e0 g     F .text	00000002 .hidden VectorB8
-08003c80 g     F .text	000000cc .hidden sd_lld_start
-08004fa0 g     F .text	0000002c .hidden VectorFC
-080062f0 g     F .text	00000028 .hidden uStrCpy
-08001118 g     F .text	0000027a .hidden __subdf3
+08005670 g     F .text	00000002 .hidden Vector44
+08001408 g     F .text	0000003a .hidden __aeabi_f2d
+08005670 g     F .text	00000002 .hidden Vector28
+08002360 g     F .text	0000007c .hidden mmcSequentialWrite
+08005670 g     F .text	00000002 .hidden VectorB8
+08003ce0 g     F .text	000000cc .hidden sd_lld_start
+08005030 g     F .text	0000002c .hidden VectorFC
+08005bb0 g     F .text	00000028 .hidden uStrCpy
+08001148 g     F .text	0000027a .hidden __subdf3
 20001400 g       .stacks	00000000 __process_stack_end__
-080055e0 g     F .text	00000002 .hidden Vector34
-08003150 g     F .text	0000003a .hidden mmc_read.9961
-08004f10 g     F .text	0000002c .hidden Vector128
-080055e0 g     F .text	00000002 .hidden VectorA4
-080055e0 g     F .text	00000002 .hidden Vector20
-080072d0 g     O .text	00000020 .hidden vmt.10284
-080055e0 g     F .text	00000002 .hidden Vector18C
-08005e20 g     F .text	00000002 .hidden gpsRxErr.16075
-080055e0 g     F .text	00000002 .hidden Vector174
-08003a10 g     F .text	00000128 .hidden I2CSensor_transact
+08005670 g     F .text	00000002 .hidden Vector34
+08002620 g     F .text	0000003a .hidden mmc_read.9961
+08004fa0 g     F .text	0000002c .hidden Vector128
+08005670 g     F .text	00000002 .hidden VectorA4
+08005670 g     F .text	00000002 .hidden Vector20
+08007330 g     O .text	00000020 .hidden vmt.10284
+08005670 g     F .text	00000002 .hidden Vector18C
+08005680 g     F .text	00000002 .hidden gpsRxErr.16075
+08005670 g     F .text	00000002 .hidden Vector174
+08003a70 g     F .text	00000128 .hidden I2CSensor_transact
 
 
