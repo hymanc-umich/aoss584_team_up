@@ -56,6 +56,34 @@ int8_t dataLoggerStop(datalogger_t *logger)
 }
 
 /**
+ *
+ *
+ */
+FRESULT dataLoggerFileCount(datalogger_t *logger, char *dirpath, uint16_t *count)
+{
+    FRESULT res;
+    FILINFO fno;
+    DIR dir;
+    uint16_t fcount = 0;
+
+    res = f_opendir(&dir, dirpath);
+    if(res == FR_OK)
+    {
+        while(fcount < 32768)
+        {
+            res = f_readdir(&dir, &fno);
+            if(res != FR_OK || fno.fname[0] == NULL)
+                break;
+            fcount++;
+        }
+        *count = fcount;
+        return FR_OK;
+    }
+    else
+        return res;
+}
+
+/**
  * @brief Creates a new logfile instance
  */
 int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file, char *fname)

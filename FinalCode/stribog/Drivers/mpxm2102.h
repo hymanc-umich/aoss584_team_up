@@ -8,7 +8,7 @@
 
 #include <stdint.h>
 
-#define MPXM2102_MAXV	1.253f	// Amplified output (V) at 1atm
+#define MPXM2102_MAXV	1.24f	// Amplified output (V) at 1atm
 #define MPXM2102_MAXP	101.3f   // 
 
 #define MPXM2102_VPERC	0.000805664062f	// Volts per count

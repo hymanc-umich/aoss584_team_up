@@ -61,6 +61,7 @@ typedef struct separatedLog separatedLog_t;
 
 int8_t dataLoggerInitialize(datalogger_t *logger, char *logPath, sdmmc_t *sd, SerialDriver *dbg);
 int8_t dataLoggerStop(datalogger_t *logger);
+FRESULT dataLoggerFileCount(datalogger_t *logger, char *dirpath, uint16_t *count);
 
 int8_t logfileNew(logfile_t *log, datalogger_t *logger, FIL *file, char *fname);
 size_t logfileSize(logfile_t *log);

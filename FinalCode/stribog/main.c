@@ -101,6 +101,16 @@ void initialize(void)
 	   chprintf((BaseSequentialStream *) &DBG_SERIAL, "\nERROR: SD Initialization Failed\n");
     }
 
+    int16_t fcount = 0;
+    FRESULT fcstatus = dataLoggerFileCount(&logger, "LOGS", &fcount);
+    if(fcstatus == FR_OK)
+    {
+        lfNum = fcount + 1;
+        chprintf((BaseSequentialStream *) &COM_SERIAL,"FILECOUNT: %d\n",fcount);
+    }
+    else
+        chprintf((BaseSequentialStream *) &COM_SERIAL, "FILECOUNT ERROR: %d\n",fcstatus);
+    //chThdSleepMilliseconds(2000);
     /* ===== ADC Startup ===== */
     chprintf((BaseSequentialStream *) &DBG_SERIAL, "Initializing ADC\n");
     adcStart(&ADCD1, NULL);      // Activate ADC driver

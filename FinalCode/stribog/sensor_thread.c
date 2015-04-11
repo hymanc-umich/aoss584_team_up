@@ -213,8 +213,7 @@ msg_t sensorThread(void *arg)
     si70x0_heaterEnable(&(thread->intSi7020), false);
     si70x0_heaterEnable(&(thread->extSi7020), false);
 
-    adcSTM32EnableTSVREFE();
-    //ADC->CCR |= (1<<23);
+    adcSTM32EnableTSVREFE();    // Enable internal temp sensor/vref
 
     thread->data.temp275 = STARTUP_VALUE;
     thread->data.tempRtd = STARTUP_VALUE;
@@ -236,7 +235,7 @@ msg_t sensorThread(void *arg)
     thread->data.magY = STARTUP_VALUE;
     thread->data.magZ = STARTUP_VALUE;
     thread->data.vin = STARTUP_VALUE;
-    thread->data.vref = STARTUP_VALUE;
+    thread->data.vref = ADC_VREF0;
 
     /*
      * ===== Sensor Loop =====
