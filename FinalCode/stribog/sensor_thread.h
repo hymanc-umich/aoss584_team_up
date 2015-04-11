@@ -21,11 +21,14 @@
 #include "Drivers/rtd.h"
 #include "Drivers/mpxm2102.h"
 
-#define ANALOG_DEPTH 1
-#define ANALOG_CHANNELS  3
+#define ANALOG_DEPTH 32
+#define ANALOG_CHANNELS  4
 
-#define ADC_VPERC 0.00080566406f            // 3.3V/4096
+#define ADC_VPERC0 0.00080566406f            // 3.3V/4096
 #define VINSNS_RESOLUTION 0.00346435547f
+
+#define ADC_VREF0     1.20f     // 1.2V bandgap reference
+
 typedef struct
 {
     mutex_t mtx; // Mutex
@@ -49,6 +52,7 @@ typedef struct
     float magY;             // LSM303D Y-Magnetic Field
     float magZ;             // LSM303D Z-Magnetic Field
     float vin;              // Input voltage measurement
+    float vref;
 }sensorData_t;
 
 // Sensor Thread

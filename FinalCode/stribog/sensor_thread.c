@@ -3,6 +3,7 @@
 #include "chprintf.h"
 
 #define STARTUP_VALUE -99.0f
+
 // External I2C configuration
 static const I2CConfig ei2cCfg = {
     OPMODE_I2C,
@@ -30,6 +31,7 @@ static const ADCConversionGroup analogGrp =
     NULL,
     0,						                // ADC CR1
     ADC_CR2_SWSTART,				        // ADC CR2
+    ADC_SMPR1_SMP_VREF(ADC_SAMPLE_144) |
     ADC_SMPR1_SMP_AN10(ADC_SAMPLE_144) | 	// ADC SMPR1
     ADC_SMPR1_SMP_AN11(ADC_SAMPLE_144) ,
     ADC_SMPR2_SMP_AN0(ADC_SAMPLE_144)  ,	// ADC SMPR2
@@ -37,12 +39,15 @@ static const ADCConversionGroup analogGrp =
     0,						                // ADC SQR2
     ADC_SQR3_SQ1_N(ADC_CHANNEL_IN0)  | 		// ADC SQR3 (VINSNS, Pressure, Temperature)
     ADC_SQR3_SQ2_N(ADC_CHANNEL_IN10) |
-    ADC_SQR3_SQ3_N(ADC_CHANNEL_IN11)
+    ADC_SQR3_SQ3_N(ADC_CHANNEL_IN11) |
+    ADC_SQR3_SQ4_N(ADC_CHANNEL_VREFINT)
 };
 
 // ADC data storage
 static adcsample_t analogSamples[2][ANALOG_DEPTH * ANALOG_CHANNELS];
 static uint8_t activeAnalogCh = 0;
+
+static float adcVperC = ADC_VPERC0;
 
 /*
  * {
@@ -91,7 +96,7 @@ float adcMeanFloat(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, 
  */
 inline float adcMeanV(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, uint16_t bufferDepth)
 {
-    return adcMeanFloat(buffer, bufferOffset, nChannels, bufferDepth)*ADC_VPERC;
+    return adcMeanFloat(buffer, bufferOffset, nChannels, bufferDepth)*adcVperC;
 }
 
 /**
@@ -115,6 +120,13 @@ uint16_t adcMean(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, ui
     return (uint16_t) (analogSum/count);
 }
 
+float adcVrefHandler(uint16_t *buffer, uint16_t bufferOffset, uint16_t nChannels, uint16_t bufferDepth)
+{
+    float mVref = adcMeanV(buffer, bufferOffset, nChannels, bufferDepth);
+    float eADC = ADC_VREF0-mVref;
+    adcVperC += ADC_VPERC0 * 0.05 * eADC;
+    return mVref;
+}
 /**
  *
  *
@@ -142,14 +154,15 @@ void sensorThread_publishData(sensorThread_t *thread, BaseSequentialStream *stre
 {
     // Print to XBee
     chprintf(stream, 
-        "<DATA>ET:%.1f,EH:%.1f,EHT:%.2f,IH:%.1f,IHT:%.2f,MP:%.2f,MT:%.2f,HH:%.2f,HT:%.2f,BT:%.2f,BP:%.2f,V:%.2f,AP:%.3f,AT:%.3f</DATA>\n",
+        "<DATA>ET:%.1f,EH:%.1f,EHT:%.2f,IH:%.1f,IHT:%.2f,MP:%.2f,MT:%.2f,HH:%.2f,HT:%.2f,BT:%.2f,BP:%.2f,V:%.2f,AP:%.3f,AT:%.3f,VR:%.3f</DATA>\n",
         thread->data.temp275,
         thread->data.humd7020Ext, thread->data.temp7020Ext,
         thread->data.humd7020Int, thread->data.temp7020Int,
         thread->data.pressMs5607, thread->data.tempMs5607,
         thread->data.humd6030, thread->data.temp6030,
         thread->data.tempBmp, thread->data.pressBmp,
-        thread->data.vin, thread->data.pressMpxm, thread->data.tempRtd);
+        thread->data.vin, thread->data.pressMpxm, thread->data.tempRtd,
+        thread->data.vref);
 }
 
 /**
@@ -200,6 +213,9 @@ msg_t sensorThread(void *arg)
     si70x0_heaterEnable(&(thread->intSi7020), false);
     si70x0_heaterEnable(&(thread->extSi7020), false);
 
+    adcSTM32EnableTSVREFE();
+    //ADC->CCR |= (1<<23);
+
     thread->data.temp275 = STARTUP_VALUE;
     thread->data.tempRtd = STARTUP_VALUE;
     thread->data.tempMs5607 = STARTUP_VALUE;
@@ -220,6 +236,7 @@ msg_t sensorThread(void *arg)
     thread->data.magY = STARTUP_VALUE;
     thread->data.magZ = STARTUP_VALUE;
     thread->data.vin = STARTUP_VALUE;
+    thread->data.vref = STARTUP_VALUE;
 
     /*
      * ===== Sensor Loop =====
@@ -285,9 +302,11 @@ msg_t sensorThread(void *arg)
 
         // Analog Temperature
         //thread->data.tempRtd = RTD_vToTemp(adcMeanV(analogSamples[activeAnalogCh], 2, ANALOG_CHANNELS, ANALOG_DEPTH));
-        thread->data.tempRtd = RTD_vToTemp(ADC_VPERC*analogSamples[activeAnalogCh][2]);
+        thread->data.tempRtd = RTD_vToTemp(adcVperC*analogSamples[activeAnalogCh][2]);
         //thread->data.tempRtd = analogSamples[activeAnalogCh][2]*1.0f; // ADC output test
 
+        thread->data.vref = adcVrefHandler(analogSamples[activeAnalogCh], 3, ANALOG_CHANNELS, ANALOG_DEPTH);
+        
         activeAnalogCh ^= 1; // Toggle analog buffer
 
         /* ===== Printf Dump ===== */
