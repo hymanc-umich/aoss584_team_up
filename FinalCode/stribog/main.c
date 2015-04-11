@@ -71,7 +71,7 @@ void initialize(void)
     /* ===== Debug Serial Port Startup ===== */
     sdStart(&DBG_SERIAL, &serCfg);	// Activate Debug serial driver
     chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n\n=== Stribog v1 ===\n(C) 2015, Cody Hyman\n\nInitializing System...\n");
-
+    chprintf((BaseSequentialStream *) &COM_SERIAL, "\n\n=== Stribog v1 ===\n(C) 2015, Cody Hyman\n\nInitializing System...\n");
     chThdSleepMilliseconds(250); // Wait for SD startup
 
     /* ===== XBee Initialization ===== */
@@ -226,7 +226,7 @@ int main(void)
             break;
         else
         {
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "Previous log still open, retrying\n");
+            //chprintf((BaseSequentialStream *) &DBG_SERIAL, "Previous log still open, retrying\n");
             chThdSleepMilliseconds(10);
         }
     }
@@ -235,11 +235,11 @@ int main(void)
     if(lfStatus == 0)
     {
          //writeHeader();
-         chprintf((BaseSequentialStream *) &DBG_SERIAL, "New logfile header written\n");
+         //chprintf((BaseSequentialStream *) &DBG_SERIAL, "New logfile header written\n");
     }
     else
     {
-        chprintf((BaseSequentialStream *) &DBG_SERIAL, "Error opening new logfile: %d\n", lfStatus);
+        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "Error opening new logfile: %d\n", lfStatus);
     }
     chThdSleepMilliseconds(300);
 
@@ -266,9 +266,9 @@ int main(void)
 		boardSetLED(1);
 		gpsGetLocation(&location);    // Check for new GPS NMEA sentence
 		printGps((BaseSequentialStream *) &COM_SERIAL, &location);
-        printGps((BaseSequentialStream *) &DBG_SERIAL, &location);
-        //sensorThread_publishData(&sensorThd, (BaseSequentialStream *) &COM_SERIAL);
-        chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
+        //printGps((BaseSequentialStream *) &DBG_SERIAL, &location);
+        sensorThread_publishData(&sensorThd, (BaseSequentialStream *) &COM_SERIAL);
+        //chprintf((BaseSequentialStream *) &DBG_SERIAL, "LOOP\n");
 
 		// Write GPS Data to MasterSample
 		datasample_gpsToSample(&location, &masterSample);
@@ -278,11 +278,11 @@ int main(void)
         /* ===== Data file handling ===== */
 		if(sampleCounter >= SAMPLE_MAX) // Close file and open a new one
 		{
-    	    chprintf((BaseSequentialStream *) &DBG_SERIAL, "Reached sample limit, closing current logfile\n");
+    	    //chprintf((BaseSequentialStream *) &DBG_SERIAL, "Reached sample limit, closing current logfile\n");
     	    closeLog();
             chThdSleepMilliseconds(70);
     	    int8_t newLogStatus = openNewLogfile();
-            chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n\nLOGFILE: New file status%d\n\n", newLogStatus);
+            //chprintf((BaseSequentialStream *) &DBG_SERIAL, "\n\nLOGFILE: New file status%d\n\n", newLogStatus);
             sampleCounter = 0;
             writeHeader();
             /*if(newLogStatus == 0)
@@ -291,7 +291,7 @@ int main(void)
               //sampleCounter = 0;
             }*/
 		}
-		chprintf((BaseSequentialStream *) &DBG_SERIAL, "Writing sample data to log\n");
+		//chprintf((BaseSequentialStream *) &DBG_SERIAL, "Writing sample data to log\n");
 		int8_t lfWriteStatus = datasample_writeToLog(&masterSample, &sensorLog);
         if(lfWriteStatus)
             chprintf((BaseSequentialStream *) &DBG_SERIAL, "Error Writing to Log:%d\n",lfWriteStatus);
@@ -300,7 +300,7 @@ int main(void)
 		sampleCounter++;
 		
         timeCounter++; // Increment time counter
-        if(timeCounter > 4000)
+        if(timeCounter > 2500)
             audioBeaconFlag = TRUE;
         // Sleep for remaining slack (to 1s)
 		if(chVTGetSystemTimeX() < deadline)

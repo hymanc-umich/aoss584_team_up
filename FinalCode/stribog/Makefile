@@ -129,6 +129,7 @@ CSRC = $(PORTSRC) \
        gps.c \
        sdmmcsimple.c \
        datalogger.c \
+       watchdog.c \
        main.c \
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global

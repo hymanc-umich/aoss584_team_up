@@ -42,9 +42,9 @@
 #define SW_PORT	PORTD
 #define SW_PIN	6
 
-#define F_CPU 1000000UL;
+#define F_CPU 1000000UL
 
-#define CUT_TIME 5700
+#define CUT_TIME 8000 // Burn time
 
 typedef enum
 {
@@ -55,7 +55,7 @@ typedef enum
     FIRED,
 }state_t;
 
-static uint32_t RTC_CUT = 60; // 6000=100 min RTC cut threshold
+static uint32_t RTC_CUT = 5700; // 6000=100 min RTC cut threshold
 volatile uint32_t rtcCount = 0;
 volatile state_t state;
 

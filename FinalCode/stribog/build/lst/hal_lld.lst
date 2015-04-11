@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccLB3RFy.s 			page 1
+ARM GAS  /tmp/cc4PZmuF.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   14              		.eabi_attribute 18, 4
   15              		.thumb
   16              		.file	"hal_lld.c"
-  17              		.section	.gnu.lto_.jmpfuncs.abaa26255bfdd264,"",%progbits
+  17              		.section	.gnu.lto_.jmpfuncs.47818605af8884d9,"",%progbits
   18 0000 789C6362 		.ascii	"x\234cb`b\300\006\330\2414H\226\221\201\001\000\001"
   18      6062C006 
   18      D8A13448 
@@ -25,7 +25,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   18      0001
   19 0012 39000F   		.ascii	"9\000\017"
   20              		.text
-  21              		.section	.gnu.lto_.inline.abaa26255bfdd264,"",%progbits
+  21              		.section	.gnu.lto_.inline.47818605af8884d9,"",%progbits
   22 0000 789C6362 		.ascii	"x\234cb`b\300\006\014\2404PVA\203\221\201\311b\301z"
   22      6062C006 
   22      0CA03450 
@@ -40,14 +40,14 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   24      B80C0300 
   24      A94E0715 
   25              		.text
-  26              		.section	.gnu.lto_.pureconst.abaa26255bfdd264,"",%progbits
+  26              		.section	.gnu.lto_.pureconst.47818605af8884d9,"",%progbits
   27 0000 789C6362 		.ascii	"x\234cb`b`e\200\000&\006)F)\000\001\006\000A"
   27      60626065 
   27      80002606 
   27      29462900 
   27      01060041 
   28              		.text
-  29              		.section	.gnu.lto_hal_lld_init.abaa26255bfdd264,"",%progbits
+  29              		.section	.gnu.lto_hal_lld_init.47818605af8884d9,"",%progbits
   30 0000 789CAD55 		.ascii	"x\234\255UMh\023A\024~of\267IKj\202\364'\301\203\245"
   30      4D681341 
   30      147E6F66 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   31      89E2A1A7 
   31      A6504F92 
   32 0026 26A50946 		.ascii	"&\245\011FS\332Z\252=t\326T(V0x*z\261\210(\275\364\032"
-ARM GAS  /tmp/ccLB3RFy.s 			page 2
+ARM GAS  /tmp/cc4PZmuF.s 			page 2
 
 
   32      53DA5AAA 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   43      2E221D99 
   43      0E0B42E4 
   44 0105 7B403220 		.ascii	"{@2 \213\221\227\271\032F&[\376\022\236\356,\357\205"
-ARM GAS  /tmp/ccLB3RFy.s 			page 3
+ARM GAS  /tmp/cc4PZmuF.s 			page 3
 
 
   44      8B9197B9 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   55      5D463F57 
   55      1B4AF6B9 
   55      B5F718C7 
-ARM GAS  /tmp/ccLB3RFy.s 			page 4
+ARM GAS  /tmp/cc4PZmuF.s 			page 4
 
 
   55      4D5B4027 
@@ -238,14 +238,14 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   66      B372E642 
   66      2693EC4B 
   67 02ab 3E93CDF4 		.ascii	">\223\315\364\035\263}\277\355\243\277\001y!\344]"
-ARM GAS  /tmp/ccLB3RFy.s 			page 5
+ARM GAS  /tmp/cc4PZmuF.s 			page 5
 
 
   67      1DB37DBF 
   67      EDA3BF01 
   67      7921E45D 
   68              		.text
-  69              		.section	.gnu.lto_stm32_clock_init.abaa26255bfdd264,"",%progbits
+  69              		.section	.gnu.lto_stm32_clock_init.47818605af8884d9,"",%progbits
   70 0000 789CA595 		.ascii	"x\234\245\225Mh\023A\024\307\337\233\335\315n\276\323"
   70      4D681341 
   70      14C7DF9B 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   80 00bc 620C53F4 		.ascii	"b\014S\364\211)\226\226\345\270(\247\345p1\216\0119"
   80      89299696 
   80      E5B828A7 
-ARM GAS  /tmp/ccLB3RFy.s 			page 6
+ARM GAS  /tmp/cc4PZmuF.s 			page 6
 
 
   80      E570318E 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
   92 019e 4AABD43F 		.ascii	"J\253\324?{\362\022\374\026\246\036\032\336lkL\3762"
   92      7BF212FC 
   92      16A61E1A 
-ARM GAS  /tmp/ccLB3RFy.s 			page 7
+ARM GAS  /tmp/cc4PZmuF.s 			page 7
 
 
   92      DE6C6B4C 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  104      C0BE3615 
  104      B0
  105 0274 9C072CAC 		.ascii	"\234\007,\254\201\325\036\371\300\362-\002\253k\261"
-ARM GAS  /tmp/ccLB3RFy.s 			page 8
+ARM GAS  /tmp/cc4PZmuF.s 			page 8
 
 
  105      81D51EF9 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  116      0CF6A7D1 
  116      CB1D9AFC 
  116      69F48A
-ARM GAS  /tmp/ccLB3RFy.s 			page 9
+ARM GAS  /tmp/cc4PZmuF.s 			page 9
 
 
  117 0348 71E78FF7 		.ascii	"q\347\217\367\327\246\336_\322;\001\253?\327x\317oj"
@@ -516,7 +516,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  123      0746E037 
  123      A959B6D2 
  124              		.text
- 125              		.section	.gnu.lto_.symbol_nodes.abaa26255bfdd264,"",%progbits
+ 125              		.section	.gnu.lto_.symbol_nodes.47818605af8884d9,"",%progbits
  126 0000 789C6362 		.ascii	"x\234cb`b0c\200\002\246\006\246z\006\206\011\347\030"
  126      60623063 
  126      8002A606 
@@ -532,16 +532,16 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  128      0C00AA78 
  128      0FAE
  129              		.text
- 130              		.section	.gnu.lto_.refs.abaa26255bfdd264,"",%progbits
+ 130              		.section	.gnu.lto_.refs.47818605af8884d9,"",%progbits
  131 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
  131      60626064 
  131      80020000 
  131      460006
  132              		.text
-ARM GAS  /tmp/ccLB3RFy.s 			page 10
+ARM GAS  /tmp/cc4PZmuF.s 			page 10
 
 
- 133              		.section	.gnu.lto_.decls.abaa26255bfdd264,"",%progbits
+ 133              		.section	.gnu.lto_.decls.47818605af8884d9,"",%progbits
  134 0000 789C9D97 		.ascii	"x\234\235\227ml\024E\030\307g\266\205\353\321\312\233"
  134      6D6C1445 
  134      18C767B6 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  144      30A647A8 
  145 00c8 4B65EF81 		.ascii	"Ke\357\201\330\017q\025b\237\322\217\005\352\234\205"
  145      D80F7115 
-ARM GAS  /tmp/ccLB3RFy.s 			page 11
+ARM GAS  /tmp/cc4PZmuF.s 			page 11
 
 
  145      629FD28F 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  157 01a2 9928B0FC 		.ascii	"\231(\260\374\036\301\346>\226d\324\000^q\264c\345\201"
  157      1EC1E63E 
  157      9664D400 
-ARM GAS  /tmp/ccLB3RFy.s 			page 12
+ARM GAS  /tmp/cc4PZmuF.s 			page 12
 
 
  157      5E71B463 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  168      A998D63E 
  168      5C1EB052 
  168      739A361B 
-ARM GAS  /tmp/ccLB3RFy.s 			page 13
+ARM GAS  /tmp/cc4PZmuF.s 			page 13
 
 
  169 0289 44FA031D 		.ascii	"D\372\003\035\205%|#I\312\033\011k\350}[NPk\242\357"
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  180 035a 24AA4F5B 		.ascii	"$\252O[\313\323.\232\247\331\210\356\301/\344D\272\033"
  180      CBD32E9A 
  180      A7D988EE 
-ARM GAS  /tmp/ccLB3RFy.s 			page 14
+ARM GAS  /tmp/cc4PZmuF.s 			page 14
 
 
  180      C12FE444 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  192 042b 5873F70A 		.ascii	"Xs\367\012e\233~X\242\211\375\351\255\244\233\231z\017"
  192      659B7E58 
  192      A289FDE9 
-ARM GAS  /tmp/ccLB3RFy.s 			page 15
+ARM GAS  /tmp/cc4PZmuF.s 			page 15
 
 
  192      ADA49B99 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  204 04fd EB6AEB43 		.ascii	"\353j\353C\015vw\345\214\374<YK\012\232\232\330\025"
  204      0D7677E5 
  204      8CFC3C59 
-ARM GAS  /tmp/ccLB3RFy.s 			page 16
+ARM GAS  /tmp/cc4PZmuF.s 			page 16
 
 
  204      4B0A9A9A 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  216      F394733E 
  216      9C1335F2 
  216      2CAC
-ARM GAS  /tmp/ccLB3RFy.s 			page 17
+ARM GAS  /tmp/cc4PZmuF.s 			page 17
 
 
  217 05e7 355E7162 		.ascii	"5^qb\215\304\225|+k[\341d\377\261\326\211R\276\\R\353"
@@ -993,7 +993,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  223      FE0F1DF1 
  223      5417
  224              		.text
- 225              		.section	.gnu.lto_.symtab.abaa26255bfdd264,"",%progbits
+ 225              		.section	.gnu.lto_.symtab.47818605af8884d9,"",%progbits
  226 0000 68616C5F 		.ascii	"hal_lld_init\000\000\000\000\000\000\000\000\000\000"
  226      6C6C645F 
  226      696E6974 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  231              		.text
  232              		.section	.gnu.lto_.opts,"",%progbits
  233 0000 272D6D63 		.ascii	"'-mcpu=cortex-m4' '-mfloat-abi=hard' '-mfpu=fpv4-sp"
-ARM GAS  /tmp/ccLB3RFy.s 			page 18
+ARM GAS  /tmp/cc4PZmuF.s 			page 18
 
 
  233      70753D63 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  268 0028 196C     		ldr	r1, [r3, #64]
  269 002a 41F08051 		orr	r1, r1, #268435456
  270 002e 1964     		str	r1, [r3, #64]
-ARM GAS  /tmp/ccLB3RFy.s 			page 19
+ARM GAS  /tmp/cc4PZmuF.s 			page 19
 
 
  271 0030 0168     		ldr	r1, [r0]
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  324 002c 9360     		str	r3, [r2, #8]
  325              	.L13:
  326 002e 8B68     		ldr	r3, [r1, #8]
-ARM GAS  /tmp/ccLB3RFy.s 			page 20
+ARM GAS  /tmp/cc4PZmuF.s 			page 20
 
 
  327 0030 1F4A     		ldr	r2, .L24
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  381 00a2 5364     		str	r3, [r2, #68]
  382 00a4 536E     		ldr	r3, [r2, #100]
  383 00a6 43F48043 		orr	r3, r3, #16384
-ARM GAS  /tmp/ccLB3RFy.s 			page 21
+ARM GAS  /tmp/cc4PZmuF.s 			page 21
 
 
  384 00aa 5366     		str	r3, [r2, #100]
@@ -1216,20 +1216,20 @@ ARM GAS  /tmp/ccLB3RFy.s 			page 1
  396 00c4 AFF30080 		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
  396      AFF30080 
  396      AFF30080 
-ARM GAS  /tmp/ccLB3RFy.s 			page 22
+ARM GAS  /tmp/cc4PZmuF.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 hal_lld.c
-     /tmp/ccLB3RFy.s:240    .text.hal_lld_init:0000000000000000 $t
-     /tmp/ccLB3RFy.s:246    .text.hal_lld_init:0000000000000000 hal_lld_init
-     /tmp/ccLB3RFy.s:291    .text.hal_lld_init:0000000000000060 $d
-     /tmp/ccLB3RFy.s:295    .text.stm32_clock_init:0000000000000000 $t
-     /tmp/ccLB3RFy.s:301    .text.stm32_clock_init:0000000000000000 stm32_clock_init
-     /tmp/ccLB3RFy.s:389    .text.stm32_clock_init:00000000000000b0 $d
+     /tmp/cc4PZmuF.s:240    .text.hal_lld_init:0000000000000000 $t
+     /tmp/cc4PZmuF.s:246    .text.hal_lld_init:0000000000000000 hal_lld_init
+     /tmp/cc4PZmuF.s:291    .text.hal_lld_init:0000000000000060 $d
+     /tmp/cc4PZmuF.s:295    .text.stm32_clock_init:0000000000000000 $t
+     /tmp/cc4PZmuF.s:301    .text.stm32_clock_init:0000000000000000 stm32_clock_init
+     /tmp/cc4PZmuF.s:389    .text.stm32_clock_init:00000000000000b0 $d
                             *COM*:0000000000000001 __gnu_lto_v1
-     /tmp/ccLB3RFy.s:294    .text.hal_lld_init:0000000000000068 $t
-     /tmp/ccLB3RFy.s:396    .text.stm32_clock_init:00000000000000c4 $t
+     /tmp/cc4PZmuF.s:294    .text.hal_lld_init:0000000000000068 $t
+     /tmp/cc4PZmuF.s:396    .text.stm32_clock_init:00000000000000c4 $t
 
 UNDEFINED SYMBOLS
 dmaInit

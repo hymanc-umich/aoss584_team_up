@@ -294,7 +294,7 @@ msg_t sensorThread(void *arg)
         sensorThread_publishDebug(thread, (BaseSequentialStream *) &DBG_SERIAL);
         if(publishFlag)
         {
-            sensorThread_publishData(thread, (BaseSequentialStream *) &COM_SERIAL);
+            //sensorThread_publishData(thread, (BaseSequentialStream *) &COM_SERIAL);
         }
         publishFlag = !publishFlag;
 

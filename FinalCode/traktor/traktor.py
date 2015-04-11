@@ -356,7 +356,7 @@ def plotSensors():
     plt.subplot(322) # Internal Temperature
     ihtplt, = subplotData(sensorData,'IHT', 'b')
     btplt, = subplotData(sensorData,'BT','r')
-    plt.legend([ihtplt,btplt],['Si7020','BMP280'])
+    plt.legend([ihtplt,btplt],['Si7020','BMP280'],loc='lower left')
     try:
         plt.title('Int. Temperature ('+str(sensorData['IHT'][1,-1])+u'\u2103)')
     except:
@@ -381,7 +381,7 @@ def plotSensors():
     plt.subplot(325) # External Pressure
     mpplt, = subplotData(sensorData,'MP','b')
     applt, = subplotData(sensorData,'AP','r')
-    plt.legend([mpplt, applt],['MS5607','MPXM2102'])
+    plt.legend([mpplt, applt],['MS5607','MPXM2102'],loc='lower left')
     try:
         plt.title('Ext. Pressure ('+str(sensorData['MP'][1,-1])+'/'+str(sensorData['AP'][1,-1])+'kPa)')
     except:
