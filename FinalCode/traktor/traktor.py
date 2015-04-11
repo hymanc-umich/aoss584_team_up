@@ -237,11 +237,11 @@ def parseGPS(gpsStr):
                 gpsData['time'] = np.append(gpsData['time'],[[now],[pair[1]]],axis=1)
             elif 'lat' in pair[0]:
                 lat = pair[1].split(' ')
-                lat = float(lat[0]) + float(lat[1])/60.0
+                lat = float(lat[0]) + np.sign(float(lat[0]))*float(lat[1])/60.0
                 gpsData['lat'] = np.append(gpsData['lat'],[[now],[lat]],axis=1)
             elif 'lon' in pair[0]:
                 lon = pair[1].split(' ')
-                lon = float(lon[0]) + float(lon[1])/60.0
+                lon = float(lon[0]) + np.sign(float(lon[0]))*float(lon[1])/60.0
                 gpsData['long'] = np.append(gpsData['long'],[[now],[lon]],axis=1)
             elif 'alt' in pair[0]:
                 gpsData['alt'] = np.append(gpsData['alt'],[[now],[float(pair[1])/1000.0]],axis=1)
@@ -313,25 +313,25 @@ def plotGps():
     plt.subplot(221)
     subplotData(gpsData,'lat')
     try:
-        plt.title('GPS Latitude ('+str(gpsData['lat'][1,-1]+')'))
+        plt.title('GPS Latitude ('+str(gpsData['lat'][1,-1])+u'\u00b0)')
     except Exception, e:
-        print ''
+        print 'Exception titling GPS lat:',str(e)
     plt.subplot(222)
     subplotData(gpsData,'long')
     try:
-        plt.title('GPS Longitude ('+str(gpsData['lon'][1,-1]+')'))
+        plt.title('GPS Longitude ('+str(gpsData['long'][1,-1])+u'\u00b0)')
     except Exception, e:
         print ''
     plt.subplot(223)
     subplotData(gpsData,'alt')
     try:
-        plt.title('GPS Altitude ('+str(gpsData['alt'][1,-1]+')'))
+        plt.title('GPS Altitude ('+str(gpsData['alt'][1,-1])+'km)')
     except Exception, e:
         print ''
     plt.subplot(224)
     subplotData(gpsData,'sat')
     try:
-        plt.title('GPS Satellites ('+str(gpsData['sat'][1,-1]+')'))
+        plt.title('GPS Satellites ('+str(gpsData['sat'][1,-1])+')')
     except Exception, e:
         print ''
     plt.draw()
@@ -549,11 +549,11 @@ def serialThread():
             try:
                 lat = str(gpsData['lat'][1,-1])
             except Exception, e:
-                print 'Error parsing Lat for file'
+                print 'Error parsing Lat for file:',str(e)
             try:
-                lon = str(gpsData['lon'][1,-1])
+                lon = str(gpsData['long'][1,-1])
             except Exception, e:
-                print 'Error parsing Lon for file'  
+                print 'Error parsing Lon for file:',str(e)  
             try:
                 alt = str(1000.0*gpsData['alt'][1,-1])
             except Exception, e:
